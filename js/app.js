@@ -7,13 +7,26 @@ const grid = document.getElementById("giftGrid");
 
 let cards = [];
 
+/* =========================
+   FORMAT RUPIAH
+========================= */
+function formatIDR(number) {
+  return "Rp" + Number(number).toLocaleString("id-ID");
+}
+
+/* =========================
+   LOAD DATA JSON
+========================= */
 fetch("data.json")
   .then(res => res.json())
   .then(data => {
     grid.innerHTML = "";
+
     data.forEach(nft => {
       const div = document.createElement("div");
       div.className = "card";
+
+      /* dataset untuk filter */
       div.dataset.id = nft.id;
       div.dataset.name = nft.name.toLowerCase();
       div.dataset.slug = nft.slug;
@@ -22,17 +35,36 @@ fetch("data.json")
       div.dataset.bg = nft.bg;
       div.dataset.price = nft.price;
 
+      /* isi card */
       div.innerHTML = `
         <img src="${nft.image}">
         <h3>${nft.name}</h3>
         <p>#${nft.id}</p>
-        <span class="price">💎 ${nft.price} TON</span>
+
+        <span class="price">
+          💰 ${formatIDR(nft.price)}
+        </span>
+
+        <p style="margin-top:6px;font-size:12px;opacity:.7">
+          Saldo: <b>${formatIDR(nft.saldo)}</b>
+        </p>
+
+        <a href="${nft.posting}" target="_blank"
+          style="display:inline-block;margin-top:6px;
+          font-size:12px;color:#4da3ff;text-decoration:none">
+          🔗 Posting
+        </a>
       `;
+
       grid.appendChild(div);
     });
+
     cards = document.querySelectorAll(".card");
   });
 
+/* =========================
+   FILTER FUNCTION
+========================= */
 function filterNFT() {
   const search = searchInput.value.toLowerCase();
   const model = modelFilter.value;
@@ -42,6 +74,7 @@ function filterNFT() {
 
   cards.forEach(card => {
     let show = true;
+
     if (search && !(
       card.dataset.id.includes(search) ||
       card.dataset.name.includes(search) ||
@@ -57,6 +90,9 @@ function filterNFT() {
   });
 }
 
-document.querySelectorAll("input, select").forEach(el =>
-  el.addEventListener("input", filterNFT)
-);
+/* =========================
+   EVENT LISTENER
+========================= */
+document.querySelectorAll("input, select").forEach(el => {
+  el.addEventListener("input", filterNFT);
+});
