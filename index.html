@@ -5,33 +5,30 @@
   <meta charset="UTF-8">
   <title>NFT Gift Telegram</title>
   <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<div id="giftDetailPanel" class="gift-detail-panel">
-  <div class="panel-content">
-    <img id="detailImg" src="" alt="">
-    <h3 id="detailName"></h3>
-    <p id="detailModel"></p>
-    <p id="detailSymbol"></p>
-    <p id="detailBg"></p>
-    <p id="detailPrice"></p>
-    <a id="detailPost" href="#" target="_blank">Post</a>
-    <div class="panel-buttons">
-      <a id="btnBeli" href="#" target="_blank">BELI</a>
-      <a id="btnNego" href="#" target="_blank">NEGO</a>
-    </div>
-    <span id="closePanel" class="close-panel">×</span>
-  </div>
-</div>
-
 <body>
 
-  <!-- TOP BAR -->
+  <div id="giftDetailPanel" class="gift-detail-panel">
+    <div class="panel-content">
+      <img id="detailImg" src="" alt="">
+      <h3 id="detailName"></h3>
+      <p id="detailModel"></p>
+      <p id="detailSymbol"></p>
+      <p id="detailBg"></p>
+      <p id="detailPrice"></p>
+      <a id="detailPost" href="#" target="_blank">Post</a>
+      <div class="panel-buttons">
+        <a id="btnBeli" href="#" target="_blank">BELI</a>
+        <a id="btnNego" href="#" target="_blank">NEGO</a>
+      </div>
+      <span id="closePanel" class="close-panel">×</span>
+    </div>
+  </div>
+
   <div class="topbar">
     <h1>🎁 WINEDASH GIFT</h1>
-  
     <div class="gift-search-container">
       <div id="giftSelected" class="gift-bubbles"></div>
       <input type="text" id="giftSearchInput" placeholder="Search gift...">
@@ -41,28 +38,10 @@
 
   <!-- FILTER -->
   <div class="giftfilters">
-    <select id="giftFilter">
-      <option value="">Gift</option>
-    </select>
-  
-    <select id="modelFilter">
-      <option value="">Model</option>
-      <option value="ice">Ice</option>
-      <option value="clover">Clover</option>
-    </select>
-  
-    <select id="symbolFilter">
-      <option value="">Symbol</option>
-      <option value="paw">Paw</option>
-      <option value="luck">Luck</option>
-    </select>
-  
-    <select id="bgFilter">
-      <option value="">Background</option>
-      <option value="blue">Blue</option>
-      <option value="gold">Gold</option>
-    </select>
-  
+    <select id="giftFilter"><option value="">Gift</option></select>
+    <select id="modelFilter"><option value="">Model</option><option value="ice">Ice</option><option value="clover">Clover</option></select>
+    <select id="symbolFilter"><option value="">Symbol</option><option value="paw">Paw</option><option value="luck">Luck</option></select>
+    <select id="bgFilter"><option value="">Background</option><option value="blue">Blue</option><option value="gold">Gold</option></select>
     <input type="number" id="maxPrice" placeholder="Max TON">
   </div>
 
