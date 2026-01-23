@@ -13,11 +13,8 @@ function formatIDR(number) {
   return "Rp" + Number(number || 0).toLocaleString("id-ID");
 }
 
-/* =========================
-   IMAGE HANDLER (NO IMGUR)
-   ========================= */
 function getPreviewImage(nft) {
-  if (nft.image && nft.image.includes("/previews/")) return nft.image;
+  if (nft.image && nft.image.trim() !== "") return nft.image;
   return `previews/${nft.slug}.jpg`;
 }
 
