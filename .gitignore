@@ -11,8 +11,7 @@
 __pycache__/
 *.pyc
 
-# preview & backup
-previews/
+# backup only
 backup_*.db
 
 # backend source
