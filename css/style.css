@@ -55,6 +55,62 @@ body {
   color: white;
 }
 
+.gift-search-container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #2c2c2e;
+}
+
+.gift-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.gift-bubble {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #007aff;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.15s ease;
+}
+
+.gift-bubble:hover {
+  transform: scale(1.05);
+  background: #3399ff;
+}
+
+.gift-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #1c1c1e;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 8px;
+  margin-top: 5px;
+  display: none;
+  z-index: 10;
+}
+
+.gift-dropdown div {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.gift-dropdown div:hover {
+  background: #007aff;
+}
+
 /* GRID */
 .grid {
   display: grid;
