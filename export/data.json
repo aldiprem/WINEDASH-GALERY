@@ -1,0 +1,14 @@
+[
+  {
+    "id": "214731",
+    "name": "Ice Cream",
+    "slug": "ice-cream",
+    "model": "ice",
+    "symbol": "paw",
+    "bg": "blue",
+    "price": 100700,
+    "posting": "https://t.me/market_wine/338/1215",
+    "saldo": 88950,
+    "image": "https://i.imgur.com/0Z8FQxR.png"
+  }
+]
