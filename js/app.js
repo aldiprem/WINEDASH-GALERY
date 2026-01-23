@@ -1,4 +1,5 @@
 const searchInput = document.getElementById("searchInput");
+const giftFilter = document.getElementById("giftFilter");
 const modelFilter = document.getElementById("modelFilter");
 const symbolFilter = document.getElementById("symbolFilter");
 const bgFilter = document.getElementById("bgFilter");
@@ -35,6 +36,36 @@ fetch("export/data.json")
   })
   .then(data => {
     grid.innerHTML = "";
+    
+    const gift = giftFilter.value; // ambil nilai gift
+    
+    cards.forEach(card => {
+      let show = true;
+    
+      if (search && !(
+          card.dataset.id.includes(search) ||
+          card.dataset.name.includes(search) ||
+          card.dataset.slug.includes(search)
+        )) show = false;
+    
+      if (gift && !card.dataset.name.includes(gift)) show = false; // ⬅️ Tambahkan ini
+      if (model && model !== card.dataset.model) show = false;
+      if (symbol && symbol !== card.dataset.symbol) show = false;
+      if (bg && bg !== card.dataset.bg) show = false;
+      if (parseFloat(card.dataset.price) > max) show = false;
+    
+      card.style.display = show ? "block" : "none";
+    });
+    
+    const giftSet = new Set();
+    data.forEach(g => {
+      const nameOnly = g.name.replace(/ #\d+$/, '');
+      giftSet.add(nameOnly);
+    });
+    
+    giftSet.forEach(g => {
+      giftFilter.innerHTML += `<option value="${g}">${g}</option>`;
+    });
 
     data.forEach(nft => {
       const div = document.createElement("div");
@@ -87,11 +118,9 @@ fetch("export/data.json")
     grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
   });
 
-/* =========================
-   FILTER
-   ========================= */
 function filterNFT() {
   const search = searchInput.value.toLowerCase();
+  const gift = giftFilter.value.toLowerCase();
   const model = modelFilter.value;
   const symbol = symbolFilter.value;
   const bg = bgFilter.value;
@@ -106,6 +135,7 @@ function filterNFT() {
         card.dataset.slug.includes(search)
       )) show = false;
 
+    if (gift && !card.dataset.name.includes(gift)) show = false;
     if (model && model !== card.dataset.model) show = false;
     if (symbol && symbol !== card.dataset.symbol) show = false;
     if (bg && bg !== card.dataset.bg) show = false;
@@ -115,6 +145,6 @@ function filterNFT() {
   });
 }
 
-document.querySelectorAll("input, select").forEach(el => {
+[giftFilter, searchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
   el.addEventListener("input", filterNFT);
 });
