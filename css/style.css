@@ -48,6 +48,13 @@ body {
   background: #2c2c2e;
   border: none;
   color: white;
+  appearance: none; /* agar dropdown konsisten di semua browser */
+  cursor: pointer;
+}
+
+/* Tambahan style untuk placeholder di select */
+.filters select option {
+  color: black;
 }
 
 /* GRID */
