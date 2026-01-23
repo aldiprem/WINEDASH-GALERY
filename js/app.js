@@ -7,16 +7,12 @@ const grid = document.getElementById("giftGrid");
 
 let cards = [];
 
-/* =========================
-   FORMAT RUPIAH
-========================= */
+/* FORMAT RUPIAH */
 function formatIDR(number) {
   return "Rp" + Number(number).toLocaleString("id-ID");
 }
 
-/* =========================
-   LOAD DATA JSON
-========================= */
+/* LOAD JSON */
 fetch("export/data.json")
   .then(res => {
     if (!res.ok) throw new Error("JSON not found");
@@ -25,18 +21,11 @@ fetch("export/data.json")
   .then(data => {
     console.log("DATA:", data);
     grid.innerHTML = "";
-    ...
-  })
-  .catch(err => {
-    console.error("FETCH ERROR:", err);
-    grid.innerHTML = "<p style='color:red'>Gagal load data.json</p>";
-  });
 
     data.forEach(nft => {
       const div = document.createElement("div");
       div.className = "card";
 
-      /* dataset untuk filter */
       div.dataset.id = nft.id;
       div.dataset.name = nft.name.toLowerCase();
       div.dataset.slug = nft.slug;
@@ -45,9 +34,8 @@ fetch("export/data.json")
       div.dataset.bg = nft.bg;
       div.dataset.price = nft.price;
 
-      /* isi card */
       div.innerHTML = `
-        <img src="${nft.image}">
+        <img src="${nft.image || 'https://via.placeholder.com/300'}">
         <h3>${nft.name}</h3>
         <p>#${nft.id}</p>
 
@@ -70,11 +58,13 @@ fetch("export/data.json")
     });
 
     cards = document.querySelectorAll(".card");
+  })
+  .catch(err => {
+    console.error("FETCH ERROR:", err);
+    grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
   });
 
-/* =========================
-   FILTER FUNCTION
-========================= */
+/* FILTER */
 function filterNFT() {
   const search = searchInput.value.toLowerCase();
   const model = modelFilter.value;
@@ -100,9 +90,6 @@ function filterNFT() {
   });
 }
 
-/* =========================
-   EVENT LISTENER
-========================= */
 document.querySelectorAll("input, select").forEach(el => {
   el.addEventListener("input", filterNFT);
 });
