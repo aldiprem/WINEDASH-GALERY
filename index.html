@@ -103,7 +103,7 @@ async function loadGifts() {
         <p>Model: ${g.model || '-'}</p>
         <p>Symbol: ${g.symbol || '-'}</p>
         <p>BG: ${g.bg || '-'}</p>
-        <span class="price">${g.price} TON</span>
+        <span class="price">${formatRupiah(g.price)}</span>
       `;
       grid.appendChild(div);
     });
