@@ -1,0 +1,19 @@
+# database
+*.db
+*.db-shm
+*.db-wal
+
+# telegram sessions
+*.session*
+*.journal
+
+# python
+__pycache__/
+*.pyc
+
+# preview & backup
+previews/
+backup_*.db
+
+# backend source
+b.py
