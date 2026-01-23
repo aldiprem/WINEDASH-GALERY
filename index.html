@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>NFT Gift Telegram</title>
 
-<link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <title>NFT Gift Telegram</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="topbar">
-  <h1>🎁 NFT Gift</h1>
-  <input type="text" id="searchInput" placeholder="Search name / slug / ID">
-</div>
+  <!-- HEADER -->
+  <div class="topbar">
+    <h1>🎁 NFT Gift</h1>
+    <input type="text" id="searchInput" placeholder="Search name / slug / ID">
+  </div>
 
-<!-- FILTER -->
-<div class="filters">
-  <select id="modelFilter">
-    <option value="">Model</option>
-    <option value="ice">Ice</option>
-    <option value="clover">Clover</option>
-  </select>
+  <!-- FILTER -->
+  <div class="filters">
+    <select id="modelFilter">
+      <option value="">Model</option>
+      <option value="ice">Ice</option>
+      <option value="clover">Clover</option>
+    </select>
 
-  <select id="symbolFilter">
-    <option value="">Symbol</option>
-    <option value="paw">Paw</option>
-    <option value="luck">Luck</option>
-  </select>
+    <select id="symbolFilter">
+      <option value="">Symbol</option>
+      <option value="paw">Paw</option>
+      <option value="luck">Luck</option>
+    </select>
 
-  <select id="bgFilter">
-    <option value="">Background</option>
-    <option value="blue">Blue</option>
-    <option value="gold">Gold</option>
-  </select>
+    <select id="bgFilter">
+      <option value="">Background</option>
+      <option value="blue">Blue</option>
+      <option value="gold">Gold</option>
+    </select>
 
-  <input type="number" id="maxPrice" placeholder="Max TON">
-</div>
+    <input type="number" id="maxPrice" placeholder="Max TON">
+  </div>
 
-<!-- NFT GRID -->
-<div class="grid" id="giftGrid"></div>
+  <!-- NFT GRID -->
+  <div class="grid" id="giftGrid"></div>
 
-<script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
