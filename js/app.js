@@ -38,13 +38,13 @@ fetch("export/data.json")
       giftSet.add(nameOnly);
     });
 
-    // 2️⃣ Masukkan ke dropdown
+    // 2️⃣ Populate dropdown Gift
     giftFilter.innerHTML = `<option value="">Gift</option>`; // reset dulu
     giftSet.forEach(g => {
       giftFilter.innerHTML += `<option value="${g.toLowerCase()}">${g}</option>`;
     });
 
-    // 3️⃣ Loop JSON → buat cards
+    // 3️⃣ Loop JSON → buat card
     data.forEach(nft => {
       const div = document.createElement("div");
       div.className = "card";
