@@ -16,27 +16,22 @@
 
 <!-- FILTER -->
 <div class="filters">
-  <!-- Nama gift unik -->
   <select id="nameFilter">
     <option value="">Nama Gift</option>
   </select>
 
-  <!-- Model -->
   <select id="modelFilter">
     <option value="">Model</option>
   </select>
 
-  <!-- Symbol -->
   <select id="symbolFilter">
     <option value="">Symbol</option>
   </select>
 
-  <!-- Background -->
   <select id="bgFilter">
     <option value="">Background</option>
   </select>
 
-  <!-- Harga -->
   <input type="number" id="maxPrice" placeholder="Max TON">
 </div>
 
@@ -45,12 +40,10 @@
 
 <script>
 async function loadGifts() {
-  const res = await fetch('export/data.json'); // sesuaikan path
+  const res = await fetch('export/data.json');
   const giftsRaw = await res.json();
 
-  // ===============================
   // Ambil nama gift unik (hapus #ID)
-  // ===============================
   const giftsMap = {};
   giftsRaw.forEach(gift => {
     const nameOnly = gift.name.replace(/ #\d+$/, '');
@@ -58,9 +51,7 @@ async function loadGifts() {
   });
   const gifts = Object.values(giftsMap);
 
-  // ===============================
-  // Isi dropdown filter
-  // ===============================
+  // Ambil set untuk filter
   const nameSet = new Set(), modelSet = new Set(), symbolSet = new Set(), bgSet = new Set();
   gifts.forEach(g => {
     nameSet.add(g.name);
@@ -69,6 +60,7 @@ async function loadGifts() {
     if(g.bg) bgSet.add(g.bg);
   });
 
+  // Populate dropdown
   const nameFilter = document.getElementById("nameFilter");
   nameSet.forEach(n => nameFilter.innerHTML += `<option value="${n}">${n}</option>`);
 
@@ -81,9 +73,7 @@ async function loadGifts() {
   const bgFilter = document.getElementById("bgFilter");
   bgSet.forEach(b => bgFilter.innerHTML += `<option value="${b}">${b}</option>`);
 
-  // ===============================
   // Render function
-  // ===============================
   function renderGifts() {
     const grid = document.getElementById("giftGrid");
     grid.innerHTML = "";
