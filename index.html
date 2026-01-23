@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>NFT Gift Telegram</title>
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,20 +17,22 @@
 
 <!-- FILTER -->
 <div class="filters">
-  <select id="nameFilter">
-    <option value="">Nama Gift</option>
-  </select>
-
   <select id="modelFilter">
     <option value="">Model</option>
+    <option value="ice">Ice</option>
+    <option value="clover">Clover</option>
   </select>
 
   <select id="symbolFilter">
     <option value="">Symbol</option>
+    <option value="paw">Paw</option>
+    <option value="luck">Luck</option>
   </select>
 
   <select id="bgFilter">
     <option value="">Background</option>
+    <option value="blue">Blue</option>
+    <option value="gold">Gold</option>
   </select>
 
   <input type="number" id="maxPrice" placeholder="Max TON">
@@ -38,90 +41,6 @@
 <!-- NFT GRID -->
 <div class="grid" id="giftGrid"></div>
 
-<script>
-async function loadGifts() {
-  const res = await fetch('export/data.json');
-  const giftsRaw = await res.json();
-
-  // Ambil nama gift unik (hapus #ID)
-  const giftsMap = {};
-  giftsRaw.forEach(gift => {
-    const nameOnly = gift.name.replace(/ #\d+$/, '');
-    if (!giftsMap[nameOnly]) giftsMap[nameOnly] = {...gift, name: nameOnly};
-  });
-  const gifts = Object.values(giftsMap);
-
-  // Ambil set untuk filter
-  const nameSet = new Set(), modelSet = new Set(), symbolSet = new Set(), bgSet = new Set();
-  gifts.forEach(g => {
-    nameSet.add(g.name);
-    if(g.model) modelSet.add(g.model);
-    if(g.symbol) symbolSet.add(g.symbol);
-    if(g.bg) bgSet.add(g.bg);
-  });
-
-  // Populate dropdown
-  const nameFilter = document.getElementById("nameFilter");
-  nameSet.forEach(n => nameFilter.innerHTML += `<option value="${n}">${n}</option>`);
-
-  const modelFilter = document.getElementById("modelFilter");
-  modelSet.forEach(m => modelFilter.innerHTML += `<option value="${m}">${m}</option>`);
-
-  const symbolFilter = document.getElementById("symbolFilter");
-  symbolSet.forEach(s => symbolFilter.innerHTML += `<option value="${s}">${s}</option>`);
-
-  const bgFilter = document.getElementById("bgFilter");
-  bgSet.forEach(b => bgFilter.innerHTML += `<option value="${b}">${b}</option>`);
-
-  // Render function
-  function renderGifts() {
-    const grid = document.getElementById("giftGrid");
-    grid.innerHTML = "";
-
-    const search = document.getElementById("searchInput").value.toLowerCase();
-    const name = nameFilter.value;
-    const model = modelFilter.value;
-    const symbol = symbolFilter.value;
-    const bg = bgFilter.value;
-    const maxPrice = document.getElementById("maxPrice").value;
-
-    const filtered = gifts.filter(g => 
-      (g.name.toLowerCase().includes(search) || g.slug.toLowerCase().includes(search)) &&
-      (name === "" || g.name === name) &&
-      (model === "" || g.model === model) &&
-      (symbol === "" || g.symbol === symbol) &&
-      (bg === "" || g.bg === bg) &&
-      (maxPrice === "" || g.price <= parseFloat(maxPrice))
-    );
-
-    filtered.forEach(g => {
-      const div = document.createElement("div");
-      div.className = "card";
-      div.innerHTML = `
-        <img src="${g.image}" alt="${g.name}">
-        <h3>${g.name}</h3>
-        <p>Model: ${g.model || '-'}</p>
-        <p>Symbol: ${g.symbol || '-'}</p>
-        <p>BG: ${g.bg || '-'}</p>
-        <span class="price">${formatRupiah(g.price)}</span>
-      `;
-      grid.appendChild(div);
-    });
-  }
-
-  // Event listeners
-  document.getElementById("searchInput").addEventListener("input", renderGifts);
-  nameFilter.addEventListener("change", renderGifts);
-  modelFilter.addEventListener("change", renderGifts);
-  symbolFilter.addEventListener("change", renderGifts);
-  bgFilter.addEventListener("change", renderGifts);
-  document.getElementById("maxPrice").addEventListener("input", renderGifts);
-
-  renderGifts();
-}
-
-loadGifts();
-</script>
-
+<script src="js/app.js"></script>
 </body>
 </html>
