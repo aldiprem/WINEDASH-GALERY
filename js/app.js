@@ -97,6 +97,26 @@ fetch("export/data.json")
     grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
   });
 
+div.addEventListener("click", () => {
+  // Ambil elemen panel
+  const panel = document.getElementById("giftDetailPanel");
+  document.getElementById("detailImg").src = getPreviewImage(nft);
+  document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
+  document.getElementById("detailModel").textContent = "Model: " + nft.model;
+  document.getElementById("detailSymbol").textContent = "Simbol: " + nft.symbol;
+  document.getElementById("detailBg").textContent = "Background: " + nft.bg;
+  document.getElementById("detailPrice").textContent = "Price: " + formatIDR(nft.price);
+  document.getElementById("detailPost").href = nft.posting;
+
+  // Tombol BELI & NEGO
+  const baseUrl = "https://t.me/marketaldibot?start=";
+  const slug = nft.name.replace(/\s+/g, '') + "_" + nft.id;
+  document.getElementById("btnBeli").href = baseUrl + "beli_" + slug;
+  document.getElementById("btnNego").href = baseUrl + "nego_" + slug;
+
+  panel.classList.add("active");
+});
+
 function addGiftBubble(gift) {
   if (selectedGifts.has(gift)) return;
   selectedGifts.add(gift);
@@ -122,6 +142,10 @@ document.addEventListener("click", e => {
   if (!giftSearchInput.contains(e.target) && !giftDropdown.contains(e.target)) {
     giftDropdown.style.display = "none";
   }
+});
+
+document.getElementById("closePanel").addEventListener("click", () => {
+  document.getElementById("giftDetailPanel").classList.remove("active");
 });
 
 function filterNFT() {
