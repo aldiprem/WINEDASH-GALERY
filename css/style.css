@@ -31,11 +31,12 @@ body {
 
 .topbar input {
   flex: 1;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 14px 16px;
+  border-radius: 12px;
   border: none;
   background: #2c2c2e;
-  color: white;
+  color: dimgrey;
+  font-size: 16px;
 }
 
 /* FILTERS */
@@ -73,10 +74,10 @@ body {
 }
 
 .gift-bubble {
-  padding: 5px 10px;
+  padding: 8px 14px;
   border-radius: 999px;
   background: #007aff;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   white-space: nowrap;
   transition: transform 0.15s ease;
@@ -102,9 +103,9 @@ body {
 }
 
 .gift-dropdown div {
-  padding: 8px 10px;
+  padding: 10px 14px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .gift-dropdown div:hover {
@@ -121,7 +122,7 @@ body {
 
 /* CARD */
 .card {
-  background: #4DA7B1;
+  background: #488C9E;
   border-radius: 16px;
   padding: 10px;
   text-align: center;
