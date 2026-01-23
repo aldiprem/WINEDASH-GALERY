@@ -1,4 +1,3 @@
-const searchInput = document.getElementById("searchInput");
 const giftFilter = document.getElementById("giftFilter");
 const modelFilter = document.getElementById("modelFilter");
 const symbolFilter = document.getElementById("symbolFilter");
@@ -100,7 +99,6 @@ fetch("export/data.json")
 
 function addGiftBubble(gift) {
   if (selectedGifts.has(gift)) return;
-
   selectedGifts.add(gift);
 
   const bubble = document.createElement("div");
@@ -136,7 +134,7 @@ function filterNFT() {
 
   cards.forEach(card => {
     let show = true;
-  
+
     // cek bubble gift
     if (selectedGifts.size > 0) {
       let matched = false;
@@ -145,15 +143,15 @@ function filterNFT() {
       });
       if (!matched) show = false;
     }
-  
+
     if (model && model !== card.dataset.model) show = false;
     if (symbol && symbol !== card.dataset.symbol) show = false;
     if (bg && bg !== card.dataset.bg) show = false;
     if (parseFloat(card.dataset.price) > max) show = false;
-  
+
     card.style.display = show ? "block" : "none";
   });
-  }
+}
 
 [searchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
   el.addEventListener("input", filterNFT);
