@@ -17,10 +17,20 @@ function formatIDR(number) {
 /* =========================
    LOAD DATA JSON
 ========================= */
-fetch("data.json")
-  .then(res => res.json())
+fetch("https://aldiprem.github.io/WINEDASH-GALERY/export/data.json")
+  .then(res => {
+    if (!res.ok) throw new Error("JSON not found");
+    return res.json();
+  })
   .then(data => {
+    console.log("DATA:", data);
     grid.innerHTML = "";
+    ...
+  })
+  .catch(err => {
+    console.error("FETCH ERROR:", err);
+    grid.innerHTML = "<p style='color:red'>Gagal load data.json</p>";
+  });
 
     data.forEach(nft => {
       const div = document.createElement("div");
