@@ -16,13 +16,12 @@ function formatIDR(number) {
    IMAGE HANDLER (NO IMGUR)
    ========================= */
 function getPreviewImage(nft) {
-  // 1️⃣ pakai dari data.json (GitHub Pages)
-  if (nft.image && nft.image.includes("/previews/")) {
+  // pakai dari data.json kalau ada
+  if (nft.image && nft.image.trim() !== "") {
     return nft.image;
   }
-
-  // 2️⃣ fallback langsung ke folder previews
-  return previews/${nft.slug}.jpg;
+  // fallback ke folder previews
+  return `previews/${nft.slug}.jpg`;
 }
 
 /* =========================
@@ -99,10 +98,10 @@ function filterNFT() {
     let show = true;
 
     if (search && !(
-      card.dataset.id.includes(search) ||
-      card.dataset.name.includes(search) ||
-      card.dataset.slug.includes(search)
-    )) show = false;
+        card.dataset.id.includes(search) ||
+        card.dataset.name.includes(search) ||
+        card.dataset.slug.includes(search)
+      )) show = false;
 
     if (model && model !== card.dataset.model) show = false;
     if (symbol && symbol !== card.dataset.symbol) show = false;
