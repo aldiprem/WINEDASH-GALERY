@@ -51,27 +51,29 @@ fetch("export/data.json")
       const imgSrc = getPreviewImage(nft);
 
       div.innerHTML = `
-        <img 
-          src="${imgSrc}"
-          alt="${nft.name}"
-          onerror="this.src='https://via.placeholder.com/300?text=No+Preview'"
-        >
-
+        <a href="https://t.me/nft/${nft.slug}" target="_blank">
+          <img 
+            src="${imgSrc}" 
+            alt="${nft.name}" 
+            onerror="this.src='https://via.placeholder.com/300?text=No+Preview'"
+          >
+        </a>
+      
         <h3>${nft.name}</h3>
         <p>#${nft.id}</p>
-
+      
         <span class="price">
           💰 ${formatIDR(nft.price)}
         </span>
-
+      
         <p style="margin-top:6px;font-size:12px;opacity:.7">
           Saldo: <b>${formatIDR(nft.saldo)}</b>
         </p>
-
+      
         <a href="${nft.posting}" target="_blank"
-          style="display:inline-block;margin-top:6px;
-          font-size:12px;color:#4da3ff;text-decoration:none">
-          🔗 Posting
+           style="display:inline-block;margin-top:6px;
+           font-size:12px;color:#4da3ff;text-decoration:none">
+           🔗 Posting
         </a>
       `;
 
@@ -99,10 +101,10 @@ function filterNFT() {
     let show = true;
 
     if (search && !(
-      card.dataset.id.includes(search) ||
-      card.dataset.name.includes(search) ||
-      card.dataset.slug.includes(search)
-    )) show = false;
+        card.dataset.id.includes(search) ||
+        card.dataset.name.includes(search) ||
+        card.dataset.slug.includes(search)
+      )) show = false;
 
     if (model && model !== card.dataset.model) show = false;
     if (symbol && symbol !== card.dataset.symbol) show = false;
