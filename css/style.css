@@ -3,6 +3,55 @@
   font-family: Inter, system-ui, sans-serif;
 }
 
+.gift-detail-panel {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: #1c1c1e;
+  color: #fff;
+  z-index: 999;
+  transition: bottom 0.3s ease;
+  padding: 15px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.gift-detail-panel.active {
+  bottom: 0;
+}
+
+.panel-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.panel-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.panel-buttons a {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background: #007aff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.close-panel {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
 html, body {
   touch-action: pan-x pan-y;
   overflow-x: hidden;
@@ -122,7 +171,7 @@ body {
 
 /* CARD */
 .card {
-  background: #488C9E;
+  background: #567780;
   border-radius: 16px;
   padding: 10px;
   text-align: center;
