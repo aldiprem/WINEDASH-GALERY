@@ -26,47 +26,25 @@ function getPreviewImage(nft) {
   return `previews/${nft.slug}.jpg`;
 }
 
-/* =========================
-   LOAD JSON
-   ========================= */
 fetch("export/data.json")
-  .then(res => {
-    if (!res.ok) throw new Error("JSON not found");
-    return res.json();
-  })
+  .then(res => res.json())
   .then(data => {
     grid.innerHTML = "";
-    
-    const gift = giftFilter.value; // ambil nilai gift
-    
-    cards.forEach(card => {
-      let show = true;
-    
-      if (search && !(
-          card.dataset.id.includes(search) ||
-          card.dataset.name.includes(search) ||
-          card.dataset.slug.includes(search)
-        )) show = false;
-    
-      if (gift && !card.dataset.name.includes(gift)) show = false; // ⬅️ Tambahkan ini
-      if (model && model !== card.dataset.model) show = false;
-      if (symbol && symbol !== card.dataset.symbol) show = false;
-      if (bg && bg !== card.dataset.bg) show = false;
-      if (parseFloat(card.dataset.price) > max) show = false;
-    
-      card.style.display = show ? "block" : "none";
-    });
-    
+
+    // 1️⃣ Ambil nama gift unik
     const giftSet = new Set();
     data.forEach(g => {
       const nameOnly = g.name.replace(/ #\d+$/, '');
       giftSet.add(nameOnly);
     });
-    
+
+    // 2️⃣ Masukkan ke dropdown
+    giftFilter.innerHTML = `<option value="">Gift</option>`; // reset dulu
     giftSet.forEach(g => {
-      giftFilter.innerHTML += `<option value="${g}">${g}</option>`;
+      giftFilter.innerHTML += `<option value="${g.toLowerCase()}">${g}</option>`;
     });
 
+    // 3️⃣ Loop JSON → buat cards
     data.forEach(nft => {
       const div = document.createElement("div");
       div.className = "card";
@@ -111,6 +89,7 @@ fetch("export/data.json")
       grid.appendChild(div);
     });
 
+    // 4️⃣ Simpan semua card
     cards = document.querySelectorAll(".card");
   })
   .catch(err => {
