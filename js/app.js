@@ -9,33 +9,54 @@ let cards = [];
 
 /* FORMAT RUPIAH */
 function formatIDR(number) {
-  return "Rp" + Number(number).toLocaleString("id-ID");
+  return "Rp" + Number(number || 0).toLocaleString("id-ID");
 }
 
-/* LOAD JSON */
+/* =========================
+   IMAGE HANDLER (NO IMGUR)
+   ========================= */
+function getPreviewImage(nft) {
+  // 1️⃣ pakai dari data.json (GitHub Pages)
+  if (nft.image && nft.image.includes("/previews/")) {
+    return nft.image;
+  }
+
+  // 2️⃣ fallback langsung ke folder previews
+  return `previews/${nft.slug}.jpg`;
+}
+
+/* =========================
+   LOAD JSON
+   ========================= */
 fetch("export/data.json")
   .then(res => {
     if (!res.ok) throw new Error("JSON not found");
     return res.json();
   })
   .then(data => {
-    console.log("DATA:", data);
     grid.innerHTML = "";
 
     data.forEach(nft => {
       const div = document.createElement("div");
       div.className = "card";
 
-      div.dataset.id = nft.id;
+      div.dataset.id = String(nft.id);
       div.dataset.name = nft.name.toLowerCase();
-      div.dataset.slug = nft.slug;
-      div.dataset.model = nft.model;
-      div.dataset.symbol = nft.symbol;
-      div.dataset.bg = nft.bg;
-      div.dataset.price = nft.price;
+      div.dataset.slug = nft.slug.toLowerCase();
+      div.dataset.model = nft.model || "";
+      div.dataset.symbol = nft.symbol || "";
+      div.dataset.bg = nft.bg || "";
+      div.dataset.price = nft.price || 0;
+
+      const imgSrc = getPreviewImage(nft);
 
       div.innerHTML = `
-        <img src="${nft.image || 'https://via.placeholder.com/300'}">
+        <img 
+          src="${imgSrc}"
+          alt="${nft.name}"
+          onerror="this.src='https://via.placeholder.com/300?text=No+Preview'"
+        >
+
         <h3>${nft.name}</h3>
         <p>#${nft.id}</p>
 
@@ -64,7 +85,9 @@ fetch("export/data.json")
     grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
   });
 
-/* FILTER */
+/* =========================
+   FILTER
+   ========================= */
 function filterNFT() {
   const search = searchInput.value.toLowerCase();
   const model = modelFilter.value;
