@@ -13,12 +13,11 @@ function formatIDR(number) {
   return "Rp" + Number(number || 0).toLocaleString("id-ID");
 }
 
-/* =========================
-   IMAGE HANDLER (NO IMGUR)
-   ========================= */
 function getPreviewImage(nft) {
-  if (nft.image && nft.image.includes("/previews/")) return nft.image;
-  return `previews/${nft.slug}.jpg`;
+  // cek jika ada URL gambar langsung di data.json
+  if (nft.image && nft.image.startsWith("http")) return nft.image;
+  // fallback ke folder previews
+  return `https://aldiprem.github.io/WINEDASH-GALERY/previews/${nft.slug}.jpg`;
 }
 
 /* =========================
