@@ -17,7 +17,7 @@ function formatIDR(number) {
 /* =========================
    LOAD DATA JSON
 ========================= */
-fetch("https://aldiprem.github.io/WINEDASH-GALERY/export/data.json")
+fetch("export/data.json")
   .then(res => {
     if (!res.ok) throw new Error("JSON not found");
     return res.json();
