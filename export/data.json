@@ -1,17 +1,5 @@
 [
   {
-    "id": "22999",
-    "name": "HangingStar #22999",
-    "slug": "HangingStar-22999",
-    "model": "Cucumber",
-    "symbol": "Shooting Star",
-    "bg": "Carrot Juice",
-    "price": 1000000,
-    "saldo": 1000000,
-    "posting": "https://t.me/market_wine/57/None",
-    "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/HangingStar-22999.jpg"
-  },
-  {
     "id": "322253",
     "name": "IceCream #322253",
     "slug": "IceCream-322253",
