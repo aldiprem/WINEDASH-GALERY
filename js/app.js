@@ -75,7 +75,7 @@ fetch("export/data.json")
       div.dataset.symbol = nft.symbol || "";
       div.dataset.bg = nft.bg || "";
       div.dataset.price = nft.price || 0;
-
+    
       div.innerHTML = `
         <a href="https://t.me/nft/${nft.slug}" target="_blank">
           <img src="${getPreviewImage(nft)}" alt="${nft.name}" 
@@ -88,34 +88,33 @@ fetch("export/data.json")
         <a href="${nft.posting}" target="_blank" style="display:inline-block;margin-top:6px;font-size:12px;color:#4da3ff;text-decoration:none">🔗 Posting</a>
       `;
       grid.appendChild(div);
+    
+      div.addEventListener("click", () => {
+        const panel = document.getElementById("giftDetailPanel");
+        document.getElementById("detailImg").src = getPreviewImage(nft);
+        document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
+        document.getElementById("detailModel").textContent = "Model: " + nft.model;
+        document.getElementById("detailSymbol").textContent = "Simbol: " + nft.symbol;
+        document.getElementById("detailBg").textContent = "Background: " + nft.bg;
+        document.getElementById("detailPrice").textContent = "Price: " + formatIDR(nft.price);
+        document.getElementById("detailPost").href = nft.posting;
+    
+        const baseUrl = "https://t.me/marketaldibot?start=";
+        const slug = nft.name.replace(/\s+/g, '') + "_" + nft.id;
+        document.getElementById("btnBeli").href = baseUrl + "beli_" + slug;
+        document.getElementById("btnNego").href = baseUrl + "nego_" + slug;
+    
+        panel.classList.add("active");
+      });
     });
-
+    
+    // Panggil setelah loop selesai
     cards = document.querySelectorAll(".card");
   })
   .catch(err => {
     console.error("FETCH ERROR:", err);
     grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
   });
-
-div.addEventListener("click", () => {
-  // Ambil elemen panel
-  const panel = document.getElementById("giftDetailPanel");
-  document.getElementById("detailImg").src = getPreviewImage(nft);
-  document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
-  document.getElementById("detailModel").textContent = "Model: " + nft.model;
-  document.getElementById("detailSymbol").textContent = "Simbol: " + nft.symbol;
-  document.getElementById("detailBg").textContent = "Background: " + nft.bg;
-  document.getElementById("detailPrice").textContent = "Price: " + formatIDR(nft.price);
-  document.getElementById("detailPost").href = nft.posting;
-
-  // Tombol BELI & NEGO
-  const baseUrl = "https://t.me/marketaldibot?start=";
-  const slug = nft.name.replace(/\s+/g, '') + "_" + nft.id;
-  document.getElementById("btnBeli").href = baseUrl + "beli_" + slug;
-  document.getElementById("btnNego").href = baseUrl + "nego_" + slug;
-
-  panel.classList.add("active");
-});
 
 function addGiftBubble(gift) {
   if (selectedGifts.has(gift)) return;
@@ -149,7 +148,7 @@ document.getElementById("closePanel").addEventListener("click", () => {
 });
 
 function filterNFT() {
-  const search = searchInput.value.toLowerCase();
+  const search = giftSearchInput.value.toLowerCase();
   const gift = giftFilter.value.toLowerCase();
   const model = modelFilter.value;
   const symbol = symbolFilter.value;
@@ -177,6 +176,6 @@ function filterNFT() {
   });
 }
 
-[searchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
+[giftSearchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
   el.addEventListener("input", filterNFT);
 });
