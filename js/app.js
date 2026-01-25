@@ -7,6 +7,8 @@ const grid = document.getElementById("giftGrid");
 const giftSearchInput = document.getElementById("giftSearchInput");
 const giftDropdown = document.getElementById("giftDropdown");
 const giftSelected = document.getElementById("giftSelected");
+const panel = document.getElementById("giftDetailPanel");
+const overlay = document.getElementById("panelOverlay");
 
 let cards = [];
 let giftList = [];
@@ -15,6 +17,17 @@ let selectedGifts = new Set();
 /* FORMAT RUPIAH */
 function formatIDR(number) {
   return "Rp" + Number(number || 0).toLocaleString("id-ID");
+}
+
+function openPanel() {
+  panel.classList.add("active");
+  overlay.classList.add("active");
+}
+
+function closePanel() {
+  panel.classList.remove("active");
+  overlay.classList.remove("active");
+  panel.style.bottom = "";
 }
 
 /* =========================
