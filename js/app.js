@@ -78,7 +78,6 @@ fetch("export/data.json")
     });
     giftList = Array.from(set);
 
-    // 2️⃣ Buat NFT cards
     grid.innerHTML = "";
     data.forEach(nft => {
       const div = document.createElement("div");
@@ -99,13 +98,11 @@ fetch("export/data.json")
         <h3>${nft.name}</h3>
         <p>#${nft.id}</p>
         <span class="price">💰 ${formatIDR(nft.price)}</span>
-        <p style="margin-top:6px;font-size:12px;opacity:.7">Saldo: <b>${formatIDR(nft.saldo)}</b></p>
-        <a href="${nft.posting}" target="_blank" style="display:inline-block;margin-top:6px;font-size:12px;color:#4da3ff;text-decoration:none">🔗 Posting</a>
       `;
       grid.appendChild(div);
     
       div.addEventListener("click", (e) => {
-        if (e.target.closest("a")) return;
+      if (e.target.closest("a")) return;
         document.getElementById("detailImg").src = getPreviewImage(nft);
         document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
         document.getElementById("detailModel").textContent = "Model: " + nft.model;
