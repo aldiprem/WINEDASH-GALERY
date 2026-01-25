@@ -93,11 +93,10 @@ fetch("export/data.json")
     
       div.innerHTML = `
         <a href="https://t.me/nft/${nft.slug}" target="_blank">
-          <img src="${getPreviewImage(nft)}" alt="${cleanName}"
-            onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
+          <img src="${getPreviewImage(nft)}" alt="${nft.name}" 
+          onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
         </a>
-      
-        <h3>${cleanName}</h3>
+        <h3>${nft.name}</h3>
         <p>#${nft.id}</p>
         <span class="price">💰 ${formatIDR(nft.price)}</span>
       `;
@@ -106,7 +105,7 @@ fetch("export/data.json")
       div.addEventListener("click", (e) => {
       if (e.target.closest("a")) return;
         document.getElementById("detailImg").src = getPreviewImage(nft);
-        document.getElementById("detailName").textContent = cleanName + " #" + nft.id;
+        document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
         document.getElementById("detailModel").textContent = "Model: " + nft.model;
         document.getElementById("detailSymbol").textContent = "Simbol: " + nft.symbol;
         document.getElementById("detailBg").textContent = "Background: " + nft.bg;
