@@ -43,6 +43,8 @@ function getPreviewImage(nft) {
   return `previews/${nft.slug}.jpg`;
 }
 
+overlay.addEventListener("click", closePanel);
+
 giftSearchInput.addEventListener("input", () => {
   const val = giftSearchInput.value.toLowerCase();
   giftDropdown.innerHTML = "";
@@ -102,8 +104,8 @@ fetch("export/data.json")
       `;
       grid.appendChild(div);
     
-      div.addEventListener("click", () => {
-        const panel = document.getElementById("giftDetailPanel");
+      div.addEventListener("click", (e) => {
+        if (e.target.closest("a")) return;
         document.getElementById("detailImg").src = getPreviewImage(nft);
         document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
         document.getElementById("detailModel").textContent = "Model: " + nft.model;
@@ -117,7 +119,7 @@ fetch("export/data.json")
         document.getElementById("btnBeli").href = baseUrl + "beli_" + slug;
         document.getElementById("btnNego").href = baseUrl + "nego_" + slug;
     
-        panel.classList.add("active");
+        openPanel();
       });
     });
     
@@ -156,13 +158,10 @@ document.addEventListener("click", e => {
   }
 });
 
-document.getElementById("closePanel").addEventListener("click", () => {
-  document.getElementById("giftDetailPanel").classList.remove("active");
-});
+document.getElementById("closePanel").addEventListener("click", closePanel);
 
 function filterNFT() {
   const search = giftSearchInput.value.toLowerCase();
-  const gift = giftFilter.value.toLowerCase();
   const model = modelFilter.value;
   const symbol = symbolFilter.value;
   const bg = bgFilter.value;
@@ -191,4 +190,40 @@ function filterNFT() {
 
 [giftSearchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
   el.addEventListener("input", filterNFT);
+});
+
+let startY = 0;
+let currentY = 0;
+let isDragging = false;
+
+panel.addEventListener("touchstart", e => {
+  startY = e.touches[0].clientY;
+  isDragging = true;
+  panel.classList.add("dragging");
+});
+
+panel.addEventListener("touchmove", e => {
+  if (!isDragging) return;
+  e.preventDefault();
+  currentY = e.touches[0].clientY;
+  const diff = currentY - startY;
+
+  if (diff > 0) {
+    panel.style.bottom = `-${diff}px`;
+  }
+});
+
+panel.addEventListener("touchend", () => {
+  panel.classList.remove("dragging");
+  const diff = currentY - startY;
+
+  if (diff > 120) {
+    closePanel();
+  } else {
+    panel.style.bottom = "0";
+  }
+
+  isDragging = false;
+  startY = 0;
+  currentY = 0;
 });
