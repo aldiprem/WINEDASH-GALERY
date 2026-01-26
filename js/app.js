@@ -13,6 +13,7 @@ const btnBeli = document.getElementById("btnBeli");
 const btnNego = document.getElementById("btnNego");
 const pageLoader = document.getElementById("pageLoader");
 const scrollTopBtn = document.getElementById("scrollTopBtn");
+const privacyCover = document.getElementById("privacyCover");
 
 let cards = [];
 let giftList = [];
@@ -182,6 +183,22 @@ function addGiftBubble(gift) {
 
   filterNFT();
 }
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    privacyCover.classList.add("active");
+  } else {
+    privacyCover.classList.remove("active");
+  }
+});
+
+window.addEventListener("blur", () => {
+  privacyCover.classList.add("active");
+});
+
+window.addEventListener("focus", () => {
+  privacyCover.classList.remove("active");
+});
 
 document.addEventListener("click", e => {
   if (!giftSearchInput.contains(e.target) && !giftDropdown.contains(e.target)) {
