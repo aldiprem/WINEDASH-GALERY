@@ -93,31 +93,26 @@ fetch("export/data.json")
 
       div.innerHTML = `
         <a href="https://t.me/nft/${nft.slug}" target="_blank">
-          <img src="${getPreviewImage(nft)}" alt="${nft.name}"
-            onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
+          <img src="${getPreviewImage(nft)}" alt="${nft.name}" 
+          onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
         </a>
         <h3>${nft.name}</h3>
         <p>#${nft.id}</p>
         <span class="price">💰 ${formatIDR(nft.price)}</span>
-        <p style="margin-top:6px;font-size:12px;opacity:.7">
-          Saldo: <b>${formatIDR(nft.saldo || 0)}</b>
-        </p>
-        ${nft.posting ? `<a ...>🔗 Posting</a>` : ""}
+        <p style="margin-top:6px;font-size:12px;opacity:.7">Saldo: <b>${formatIDR(nft.saldo)}</b></p>
+        <a href="${nft.posting}" target="_blank" style="display:inline-block;margin-top:6px;font-size:12px;color:#4da3ff;text-decoration:none">🔗 Posting</a>
       `;
-
       grid.appendChild(div);
 
-      div.addEventListener("click", (e) => {
+      div.addEventListener("click", () => {
         if (e.target.closest("a")) return;
-
         document.getElementById("detailImg").src = getPreviewImage(nft);
         document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
         document.getElementById("detailModel").textContent = "Model: " + nft.model;
         document.getElementById("detailSymbol").textContent = "Simbol: " + nft.symbol;
         document.getElementById("detailBg").textContent = "Background: " + nft.bg;
-        document.getElementById("detailPrice").textContent =
-          "Price: " + formatIDR(nft.price);
-        document.getElementById("detailPost").href = nft.posting || "#";
+        document.getElementById("detailPrice").textContent = "Price: " + formatIDR(nft.price);
+        document.getElementById("detailPost").href = nft.posting;
 
         const baseUrl = "https://t.me/marketaldibot?start=";
         const slug = nft.name.replace(/\s+/g, '') + "_" + nft.id;
@@ -128,7 +123,7 @@ fetch("export/data.json")
       });
     });
 
-    // ✅ POSISI BENAR
+    // Panggil setelah loop selesai
     cards = document.querySelectorAll(".card");
   })
   .catch(err => {
@@ -193,6 +188,10 @@ function filterNFT() {
   });
 }
 
+[giftSearchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
+  el.addEventListener("input", filterNFT);
+});
+
 let startY = 0;
 let currentY = 0;
 let isDragging = false;
@@ -227,8 +226,4 @@ panel.addEventListener("touchend", () => {
   isDragging = false;
   startY = 0;
   currentY = 0;
-});
-
-[giftSearchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
-  el.addEventListener("input", filterNFT);
 });
