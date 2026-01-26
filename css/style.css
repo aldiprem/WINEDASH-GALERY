@@ -42,16 +42,40 @@
   bottom: 0;
 }
 
+.detail-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.chip {
+  background: #2c2c2e;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.panel-content {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.image-wrap {
+  padding: 10px;
+}
+
 .panel-content img {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 10px;
+  border-radius: 18px;
 }
 
 .panel-buttons {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .panel-buttons a {
@@ -63,6 +87,24 @@
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+.panel-content::before {
+  content: "";
+  width: 36px;
+  height: 4px;
+  background: rgba(255, 255, 255, .3);
+  border-radius: 999px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+#btnBeli {
+  background: #007aff;
+}
+
+#btnNego {
+  background: #2c2c2e;
 }
 
 .close-panel {
