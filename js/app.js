@@ -277,17 +277,3 @@ panel.addEventListener("touchend", () => {
   startY = 0;
   currentY = 0;
 });
-
-document.addEventListener("contextmenu", e => {
-  e.preventDefault();
-});
-
-document.addEventListener("selectstart", e => {
-  e.preventDefault();
-});
-
-document.addEventListener("touchstart", e => {
-  if (e.touches.length > 1) {
-    e.preventDefault();
-  }
-}, { passive: false });
