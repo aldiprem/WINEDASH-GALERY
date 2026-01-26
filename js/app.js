@@ -11,6 +11,7 @@ const panel = document.getElementById("giftDetailPanel");
 const overlay = document.getElementById("panelOverlay");
 const btnBeli = document.getElementById("btnBeli");
 const btnNego = document.getElementById("btnNego");
+const pageLoader = document.getElementById("pageLoader");
 
 let cards = [];
 let giftList = [];
@@ -43,7 +44,6 @@ function closePanel() {
    IMAGE HANDLER (NO IMGUR)
    ========================= */
 function getPreviewImage(nft) {
-  // 1️⃣ pakai dari data.json (GitHub Pages)
   if (nft.image && nft.image.includes("/previews/")) {
     return nft.image;
   }
@@ -79,7 +79,6 @@ giftSearchInput.addEventListener("input", () => {
 fetch("export/data.json")
   .then(res => res.json())
   .then(data => {
-    // 1️⃣ Buat giftList
     const set = new Set();
     data.forEach(g => {
       const nameOnly = g.name.replace(/ #\d+$/, '');
@@ -133,7 +132,9 @@ fetch("export/data.json")
       });
     });
 
-    // Panggil setelah loop selesai
+    setTimeout(() => {
+      pageLoader.classList.add("hide");
+    }, 400);
     cards = document.querySelectorAll(".card");
   })
   .catch(err => {
