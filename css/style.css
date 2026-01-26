@@ -3,6 +3,62 @@
   font-family: Inter, system-ui, sans-serif;
 }
 
+.panel-info-card {
+  background: rgba(20, 20, 30, 0.9);
+  border-radius: 14px;
+  padding: 14px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.panel-info-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.panel-info-card p {
+  margin: 2px 0 10px;
+  opacity: .7;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #555, transparent);
+  margin: 10px 0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.info-row span {
+  opacity: .7;
+}
+
+.info-row.price b {
+  color: #7cf9ff;
+}
+
+.panel-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.panel-buttons a {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #7cf9ff, #9b7bff);
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .gift-detail-panel {
   position: fixed;
   bottom: -100%;
@@ -17,15 +73,43 @@
   border-top-right-radius: 16px;
 }
 
-/* OVERLAY */
+.giftfilters {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: rgba(15, 15, 20, 0.9);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 60px;
+  z-index: 10;
+}
+
+.giftfilters select,
+.giftfilters input {
+  flex: 1;
+  padding: 8px 10px;
+  background: #1c1c26;
+  color: #fff;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+}
+
+.giftfilters select:focus,
+.giftfilters input:focus {
+  border-color: #4da3ff;
+}
+
 .panel-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, .45);
-  z-index: 998;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
   opacity: 0;
   pointer-events: none;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
+  z-index: 99;
 }
 
 .panel-overlay.active {
@@ -33,9 +117,13 @@
   pointer-events: auto;
 }
 
-/* DRAG EFFECT */
-.gift-detail-panel.dragging {
-  transition: none;
+.gift-detail-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  z-index: 999;
+  transition: bottom .35s ease;
 }
 
 .gift-detail-panel.active {
