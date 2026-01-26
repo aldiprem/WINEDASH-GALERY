@@ -12,6 +12,7 @@ const overlay = document.getElementById("panelOverlay");
 const btnBeli = document.getElementById("btnBeli");
 const btnNego = document.getElementById("btnNego");
 const pageLoader = document.getElementById("pageLoader");
+const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 let cards = [];
 let giftList = [];
@@ -40,17 +41,34 @@ function closePanel() {
   panel.style.bottom = "";
 }
 
-/* =========================
-   IMAGE HANDLER (NO IMGUR)
-   ========================= */
 function getPreviewImage(nft) {
   if (nft.image && nft.image.includes("/previews/")) {
     return nft.image;
   }
 
-  // 2️⃣ fallback langsung ke folder previews
   return `previews/${nft.slug}.jpg`;
 }
+
+window.addEventListener("scroll", () => {
+  const card = document.querySelector(".card");
+  if (!card) return;
+
+  const cardHeight = card.offsetHeight;
+  const threshold = cardHeight * 3;
+
+  if (window.scrollY > threshold) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 
 overlay.addEventListener("click", closePanel);
 
@@ -115,22 +133,21 @@ fetch("export/data.json")
       div.querySelector(".open-panel").addEventListener("click", (e) => {
         e.stopPropagation();
         e.preventDefault();
-    
+      
         document.getElementById("detailImg").src = getPreviewImage(nft);
-        document.getElementById("detailName").textContent = formatNFTName(nft.name);
-        document.getElementById("detailId").textContent = "#" + nft.id;
-    
+        document.getElementById("detailTitle").textContent =
+          `${formatNFTName(nft.name)} #${nft.id}`;
         document.getElementById("detailModel").textContent = nft.model || "-";
         document.getElementById("detailBg").textContent = nft.bg || "-";
         document.getElementById("detailSymbol").textContent = nft.symbol || "-";
         document.getElementById("detailPrice").textContent = formatIDR(nft.price);
-    
+      
         const baseUrl = "https://t.me/marketaldibot?start=";
         const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
-    
+      
         btnBeli.href = baseUrl + "beli_" + slug;
         btnNego.href = baseUrl + "nego_" + slug;
-    
+      
         openPanel();
       });
     });
