@@ -92,21 +92,9 @@ fetch("export/data.json")
       div.dataset.price = nft.price || 0;
 
       div.innerHTML = `
-        <a href="https://t.me/nft/${nft.slug}" target="_blank">
-          <img src="${getPreviewImage(nft)}" alt="${nft.name}"
-            onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
-        </a>
-        <h3>${nft.name}</h3>
-        <p>#${nft.id}</p>
+        <h3 class="gift-name">${nft.name}</h3>
+        <p class="gift-id">#${nft.id}</p>
         <span class="price">💰 ${formatIDR(nft.price)}</span>
-        <p style="margin-top:6px;font-size:12px;opacity:.7">
-          Saldo: <b>${formatIDR(nft.saldo || 0)}</b>
-        </p>
-        ${nft.posting ? `
-          <a href="${nft.posting}" target="_blank"
-            style="display:inline-block;margin-top:6px;font-size:12px;color:#4da3ff;text-decoration:none">
-            🔗 Posting
-          </a>` : ""}
       `;
 
       grid.appendChild(div);
