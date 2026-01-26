@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>NFT Gift Telegram</title>
@@ -8,73 +7,73 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<div id="scrollTopBtn" class="scroll-top-btn">
-  <div class="arrow-up"></div>
-</div>
-
 <body>
+
+  <!-- SCROLL TO TOP -->
+  <div id="scrollTopBtn" class="scroll-top-btn">
+    <div class="arrow-up"></div>
+  </div>
+
+  <!-- LOADER -->
   <div id="pageLoader">
     <div class="loader-box">
       <div class="loader-logo">
         <span>W</span><span>G</span>
       </div>
       <div class="loader-text">WINEDASH GIFT</div>
-      <div class="loader-bar">
-        <span></span>
-      </div>
+      <div class="loader-bar"><span></span></div>
     </div>
   </div>
 
+  <!-- OVERLAY -->
+  <div id="panelOverlay" class="panel-overlay"></div>
+
+  <!-- CLOSE BTN -->
+  <span id="closePanel" class="close-panel">×</span>
+
+  <!-- DETAIL PANEL -->
   <div id="giftDetailPanel" class="gift-detail-panel">
     <div class="panel-content no-select">
-  
+
       <div class="image-wrap">
         <img id="detailImg" src="" alt="">
-  
         <div class="image-banner">
-          <div id="detailTitle" class="banner-title"></div>
+          <div id="detailTitle"></div>
         </div>
       </div>
-  
+
       <div class="panel-info-card">
-        ...
+
+        <div class="info-row">
+          <span>Model</span>
+          <b id="detailModel"></b>
+        </div>
+
+        <div class="info-row">
+          <span>Backdrop</span>
+          <b id="detailBg"></b>
+        </div>
+
+        <div class="info-row">
+          <span>Symbol</span>
+          <b id="detailSymbol"></b>
+        </div>
+
+        <div class="info-row price">
+          <span>Price</span>
+          <b id="detailPrice"></b>
+        </div>
+
+        <div class="panel-buttons">
+          <a id="btnBeli" target="_blank">BELI</a>
+          <a id="btnNego" target="_blank">NEGO</a>
+        </div>
+
       </div>
-  
     </div>
   </div>
 
-  <div class="info-row">
-    <span>Model</span>
-    <b id="detailModel"></b>
-  </div>
-
-  <div class="info-row">
-    <span>Backdrop</span>
-    <b id="detailBg"></b>
-  </div>
-
-  <div class="info-row">
-    <span>Symbol</span>
-    <b id="detailSymbol"></b>
-  </div>
-
-  <div class="info-row price">
-    <span>Price</span>
-    <b id="detailPrice"></b>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="panel-buttons">
-    <a id="btnBeli" href="#" target="_blank">BELI</a>
-    <a id="btnNego" href="#" target="_blank">NEGO</a>
-  </div>
-</div>
-
-  <span id="closePanel" class="close-panel">×</span>
-</div>
-  </div>
-
+  <!-- TOP BAR -->
   <div class="topbar">
     <h1>🎁 WINEDASH GIFT</h1>
     <div class="gift-search-container">
@@ -84,45 +83,30 @@
     </div>
   </div>
 
-  <!-- FILTER BAR -->
+  <!-- FILTERS -->
   <div class="giftfilters">
-    <select id="giftFilter">
-      <option value="">All Gifts</option>
-    </select>
-  
+    <select id="giftFilter"><option value="">All Gifts</option></select>
     <select id="modelFilter">
       <option value="">All Models</option>
       <option value="ice">Ice</option>
       <option value="clover">Clover</option>
     </select>
-  
     <select id="symbolFilter">
       <option value="">All Symbols</option>
       <option value="paw">Paw</option>
       <option value="luck">Luck</option>
     </select>
-  
     <select id="bgFilter">
       <option value="">All Backdrops</option>
       <option value="blue">Blue</option>
       <option value="gold">Gold</option>
     </select>
-  
-    <input
-      type="number"
-      id="maxPrice"
-      placeholder="Max Price"
-      min="0"
-    >
+    <input type="number" id="maxPrice" placeholder="Max Price" min="0">
   </div>
-  
-  <!-- OVERLAY (BLUR BACKGROUND SAAT PANEL AKTIF) -->
-  <div id="panelOverlay" class="panel-overlay"></div>
 
-  <!-- NFT GRID -->
+  <!-- GRID -->
   <div class="grid" id="giftGrid"></div>
 
   <script src="js/app.js"></script>
 </body>
-
 </html>
