@@ -13,7 +13,6 @@ const btnBeli = document.getElementById("btnBeli");
 const btnNego = document.getElementById("btnNego");
 const pageLoader = document.getElementById("pageLoader");
 const scrollTopBtn = document.getElementById("scrollTopBtn");
-const privacyCover = document.getElementById("privacyCover");
 
 let cards = [];
 let giftList = [];
@@ -184,22 +183,6 @@ function addGiftBubble(gift) {
   filterNFT();
 }
 
-document.addEventListener("visibilitychange", () => {
-  if (document.hidden) {
-    privacyCover.classList.add("active");
-  } else {
-    privacyCover.classList.remove("active");
-  }
-});
-
-window.addEventListener("blur", () => {
-  privacyCover.classList.add("active");
-});
-
-window.addEventListener("focus", () => {
-  privacyCover.classList.remove("active");
-});
-
 document.addEventListener("click", e => {
   if (!giftSearchInput.contains(e.target) && !giftDropdown.contains(e.target)) {
     giftDropdown.style.display = "none";
@@ -294,3 +277,17 @@ panel.addEventListener("touchend", () => {
   startY = 0;
   currentY = 0;
 });
+
+document.addEventListener("contextmenu", e => {
+  e.preventDefault();
+});
+
+document.addEventListener("selectstart", e => {
+  e.preventDefault();
+});
+
+document.addEventListener("touchstart", e => {
+  if (e.touches.length > 1) {
+    e.preventDefault();
+  }
+}, { passive: false });
