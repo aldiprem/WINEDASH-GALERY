@@ -9,6 +9,8 @@ const giftDropdown = document.getElementById("giftDropdown");
 const giftSelected = document.getElementById("giftSelected");
 const panel = document.getElementById("giftDetailPanel");
 const overlay = document.getElementById("panelOverlay");
+const btnBeli = document.getElementById("btnBeli");
+const btnNego = document.getElementById("btnNego");
 
 let cards = [];
 let giftList = [];
@@ -107,24 +109,26 @@ fetch("export/data.json")
       
         <h3>${formatNFTName(nft.name)}</h3>
         <p>#${nft.id}</p>
-        <span class="price">💰 ${formatIDR(nft.price)}</span>
+        <span class="price open-panel">💰 ${formatIDR(nft.price)}</span>
       `;
       grid.appendChild(div);
 
-      div.addEventListener("click", (e) => {
-        if (e.target.closest("a")) return;
+      div.querySelector(".open-panel").addEventListener("click", (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+      
         document.getElementById("detailImg").src = getPreviewImage(nft);
-        document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
-        document.getElementById("detailModel").textContent = "Model: " + nft.model;
-        document.getElementById("detailSymbol").textContent = "Simbol: " + nft.symbol;
-        document.getElementById("detailBg").textContent = "Background: " + nft.bg;
-        document.getElementById("detailPrice").textContent = "Price: " + formatIDR(nft.price);
-
+        document.getElementById("detailName").textContent = formatNFTName(nft.name);
+        document.getElementById("detailModel").textContent = nft.model || "";
+        document.getElementById("detailSymbol").textContent = nft.symbol || "";
+        document.getElementById("detailBg").textContent = nft.bg || "";
+        document.getElementById("detailPrice").textContent = "💰 " + formatIDR(nft.price);
+      
         const baseUrl = "https://t.me/marketaldibot?start=";
         const slug = nft.name.replace(/\s+/g, '') + "_" + nft.id;
-        document.getElementById("btnBeli").href = baseUrl + "beli_" + slug;
-        document.getElementById("btnNego").href = baseUrl + "nego_" + slug;
-
+        btnBeli.href = baseUrl + "beli_" + slug;
+        btnNego.href = baseUrl + "nego_" + slug;
+      
         openPanel();
       });
     });
