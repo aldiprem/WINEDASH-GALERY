@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<div id="scrollTopBtn" class="scroll-top-btn">
+  <div class="arrow-up"></div>
+</div>
+
 <body>
   <div id="pageLoader">
     <div class="loader-box">
@@ -23,43 +27,46 @@
 
   <div id="giftDetailPanel" class="gift-detail-panel">
 <div class="panel-content">
-  <div class="image-wrap">
-    <img id="detailImg" src="" alt="">
+<div class="image-wrap">
+  <img id="detailImg" src="" alt="">
+
+  <!-- BANNER OVERLAY -->
+  <div class="image-banner">
+    <span id="detailName"></span>
+    <span id="detailId"></span>
+  </div>
+</div>
+
+<div class="panel-info-card">
+  <div class="divider"></div>
+
+  <div class="info-row">
+    <span>Model</span>
+    <b id="detailModel"></b>
   </div>
 
-  <div class="panel-info-card">
-    <h3 id="detailName"></h3>
-    <p id="detailId"></p>
-
-    <div class="divider"></div>
-
-    <div class="info-row">
-      <span>Model</span>
-      <b id="detailModel"></b>
-    </div>
-
-    <div class="info-row">
-      <span>Backdrop</span>
-      <b id="detailBg"></b>
-    </div>
-
-    <div class="info-row">
-      <span>Symbol</span>
-      <b id="detailSymbol"></b>
-    </div>
-
-    <div class="info-row price">
-      <span>Price</span>
-      <b id="detailPrice"></b>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="panel-buttons">
-      <a id="btnBeli" href="#" target="_blank">BELI</a>
-      <a id="btnNego" href="#" target="_blank">NEGO</a>
-    </div>
+  <div class="info-row">
+    <span>Backdrop</span>
+    <b id="detailBg"></b>
   </div>
+
+  <div class="info-row">
+    <span>Symbol</span>
+    <b id="detailSymbol"></b>
+  </div>
+
+  <div class="info-row price">
+    <span>Price</span>
+    <b id="detailPrice"></b>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="panel-buttons">
+    <a id="btnBeli" href="#" target="_blank">BELI</a>
+    <a id="btnNego" href="#" target="_blank">NEGO</a>
+  </div>
+</div>
 
   <span id="closePanel" class="close-panel">×</span>
 </div>
