@@ -573,18 +573,21 @@ body {
   transform: scale(1.08);
 }
 
-/* privacy layer */
-.privacy-cover {
-  position: absolute;
-  inset: 0;
-  background: #000;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 5;
-  transition: opacity .15s ease;
+.no-select, 
+.no-select * {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-/* aktif = layar hitam */
-.privacy-cover.active {
-  opacity: 1;
+.secure-text {
+  user-select: none;
+  pointer-events: none;
+}
+
+.secure-name::before {
+  content: attr(data-text);
+  user-select: none;
 }
