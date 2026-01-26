@@ -100,16 +100,18 @@ fetch("export/data.json")
 
       div.innerHTML = `
         <a href="https://t.me/nft/${nft.slug}" target="_blank">
-          <img src="${getPreviewImage(nft)}" alt="${nft.name}" 
-          onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
+          <img src="${getPreviewImage(nft)}"
+            alt="${formatNFTName(nft.name)}"
+            onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
         </a>
+      
         <h3>${formatNFTName(nft.name)}</h3>
         <p>#${nft.id}</p>
         <span class="price">💰 ${formatIDR(nft.price)}</span>
       `;
       grid.appendChild(div);
 
-      div.addEventListener("click", () => {
+      div.addEventListener("click", (e) => {
         if (e.target.closest("a")) return;
         document.getElementById("detailImg").src = getPreviewImage(nft);
         document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
@@ -117,7 +119,6 @@ fetch("export/data.json")
         document.getElementById("detailSymbol").textContent = "Simbol: " + nft.symbol;
         document.getElementById("detailBg").textContent = "Background: " + nft.bg;
         document.getElementById("detailPrice").textContent = "Price: " + formatIDR(nft.price);
-        document.getElementById("detailPost").href = nft.posting;
 
         const baseUrl = "https://t.me/marketaldibot?start=";
         const slug = nft.name.replace(/\s+/g, '') + "_" + nft.id;
