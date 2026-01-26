@@ -102,11 +102,7 @@ fetch("export/data.json")
         <p style="margin-top:6px;font-size:12px;opacity:.7">
           Saldo: <b>${formatIDR(nft.saldo || 0)}</b>
         </p>
-        ${nft.posting ? `
-          <a href="${nft.posting}" target="_blank"
-            style="display:inline-block;margin-top:6px;font-size:12px;color:#4da3ff;text-decoration:none">
-            🔗 Posting
-          </a>` : ""}
+        ${nft.posting ? `<a ...>🔗 Posting</a>` : ""}
       `;
 
       grid.appendChild(div);
