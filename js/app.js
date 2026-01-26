@@ -92,8 +92,12 @@ fetch("export/data.json")
       div.dataset.price = nft.price || 0;
 
       div.innerHTML = `
-        <h3 class="gift-name">${nft.name}</h3>
-        <p class="gift-id">#${nft.id}</p>
+        <a href="https://t.me/nft/${nft.slug}" target="_blank">
+          <img src="${getPreviewImage(nft)}" alt="${nft.name}"
+            onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
+        </a>
+        <h3>${nft.name}</h3>
+        <p>#${nft.id}</p>
         <span class="price">💰 ${formatIDR(nft.price)}</span>
       `;
 
