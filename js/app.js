@@ -98,7 +98,7 @@ fetch("export/data.json")
       div.dataset.symbol = nft.symbol || "";
       div.dataset.bg = nft.bg || "";
       div.dataset.price = nft.price || 0;
-
+    
       div.innerHTML = `
         <a href="https://t.me/nft/${nft.slug}" target="_blank">
           <img src="${getPreviewImage(nft)}"
@@ -111,23 +111,26 @@ fetch("export/data.json")
         <span class="price open-panel">💰 ${formatIDR(nft.price)}</span>
       `;
       grid.appendChild(div);
-
+    
       div.querySelector(".open-panel").addEventListener("click", (e) => {
         e.stopPropagation();
         e.preventDefault();
-      
+    
         document.getElementById("detailImg").src = getPreviewImage(nft);
         document.getElementById("detailName").textContent = formatNFTName(nft.name);
-        document.getElementById("detailModel").textContent = nft.model || "";
-        document.getElementById("detailSymbol").textContent = nft.symbol || "";
-        document.getElementById("detailBg").textContent = nft.bg || "";
-        document.getElementById("detailPrice").textContent = "💰 " + formatIDR(nft.price);
-      
+        document.getElementById("detailId").textContent = "#" + nft.id;
+    
+        document.getElementById("detailModel").textContent = nft.model || "-";
+        document.getElementById("detailBg").textContent = nft.bg || "-";
+        document.getElementById("detailSymbol").textContent = nft.symbol || "-";
+        document.getElementById("detailPrice").textContent = formatIDR(nft.price);
+    
         const baseUrl = "https://t.me/marketaldibot?start=";
-        const slug = nft.name.replace(/\s+/g, '') + "_" + nft.id;
+        const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
+    
         btnBeli.href = baseUrl + "beli_" + slug;
         btnNego.href = baseUrl + "nego_" + slug;
-      
+    
         openPanel();
       });
     });
@@ -169,10 +172,13 @@ document.addEventListener("click", e => {
   }
 });
 
-document.getElementById("closePanel").addEventListener("click", closePanel);
+const closeBtn = document.getElementById("closePanel");
+if (closeBtn) {
+  closeBtn.addEventListener("click", closePanel);
+}
 
 function filterNFT() {
-  const search = giftSearchInput.value.toLowerCase();
+  const searchText = giftSearchInput.value.toLowerCase().trim();
   const model = modelFilter.value;
   const symbol = symbolFilter.value;
   const bg = bgFilter.value;
@@ -181,25 +187,41 @@ function filterNFT() {
   cards.forEach(card => {
     let show = true;
 
-    // cek bubble gift
+    const cardName = card.dataset.name || "";
+    const cardModel = card.dataset.model || "";
+    const cardSymbol = card.dataset.symbol || "";
+    const cardBg = card.dataset.bg || "";
+    const cardPrice = parseFloat(card.dataset.price) || 0;
+
+    if (searchText && !cardName.includes(searchText)) {
+      show = false;
+    }
     if (selectedGifts.size > 0) {
       let matched = false;
-      selectedGifts.forEach(g => {
-        if (card.dataset.name.includes(g.toLowerCase())) matched = true;
+
+      selectedGifts.forEach(gift => {
+        if (cardName.includes(gift.toLowerCase())) {
+          matched = true;
+        }
       });
       if (!matched) show = false;
     }
-
-    if (model && model !== card.dataset.model) show = false;
-    if (symbol && symbol !== card.dataset.symbol) show = false;
-    if (bg && bg !== card.dataset.bg) show = false;
-    if (parseFloat(card.dataset.price) > max) show = false;
+    if (model && cardModel !== model) show = false;
+    if (symbol && cardSymbol !== symbol) show = false;
+    if (bg && cardBg !== bg) show = false;
+    if (cardPrice > max) show = false;
 
     card.style.display = show ? "block" : "none";
   });
 }
 
-[giftSearchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
+[
+  giftSearchInput,
+  modelFilter,
+  symbolFilter,
+  bgFilter,
+  maxPrice
+].forEach(el => {
   el.addEventListener("input", filterNFT);
 });
 
