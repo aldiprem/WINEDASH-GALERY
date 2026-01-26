@@ -14,9 +14,16 @@ let cards = [];
 let giftList = [];
 let selectedGifts = new Set();
 
-/* FORMAT RUPIAH */
 function formatIDR(number) {
   return "Rp" + Number(number || 0).toLocaleString("id-ID");
+}
+
+function formatNFTName(name) {
+  if (!name) return "";
+
+  return name
+    .replace(/[\s#_-]*\d+$/g, "")
+    .trim();
 }
 
 function openPanel() {
@@ -96,11 +103,9 @@ fetch("export/data.json")
           <img src="${getPreviewImage(nft)}" alt="${nft.name}" 
           onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
         </a>
-        <h3>${nft.name}</h3>
+        <h3>${formatNFTName(nft.name)}</h3>
         <p>#${nft.id}</p>
         <span class="price">💰 ${formatIDR(nft.price)}</span>
-        <p style="margin-top:6px;font-size:12px;opacity:.7">Saldo: <b>${formatIDR(nft.saldo)}</b></p>
-        <a href="${nft.posting}" target="_blank" style="display:inline-block;margin-top:6px;font-size:12px;color:#4da3ff;text-decoration:none">🔗 Posting</a>
       `;
       grid.appendChild(div);
 
