@@ -9,7 +9,6 @@ const giftDropdown = document.getElementById("giftDropdown");
 const giftSelected = document.getElementById("giftSelected");
 const panel = document.getElementById("giftDetailPanel");
 const overlay = document.getElementById("panelOverlay");
-const cleanName = nft.name.replace(/\s*#\d+$/, "");
 
 let cards = [];
 let giftList = [];
@@ -79,6 +78,7 @@ fetch("export/data.json")
     });
     giftList = Array.from(set);
 
+    // 2️⃣ Buat NFT cards
     grid.innerHTML = "";
     data.forEach(nft => {
       const div = document.createElement("div");
@@ -90,7 +90,7 @@ fetch("export/data.json")
       div.dataset.symbol = nft.symbol || "";
       div.dataset.bg = nft.bg || "";
       div.dataset.price = nft.price || 0;
-    
+
       div.innerHTML = `
         <a href="https://t.me/nft/${nft.slug}" target="_blank">
           <img src="${getPreviewImage(nft)}" alt="${nft.name}" 
@@ -99,11 +99,13 @@ fetch("export/data.json")
         <h3>${nft.name}</h3>
         <p>#${nft.id}</p>
         <span class="price">💰 ${formatIDR(nft.price)}</span>
+        <p style="margin-top:6px;font-size:12px;opacity:.7">Saldo: <b>${formatIDR(nft.saldo)}</b></p>
+        <a href="${nft.posting}" target="_blank" style="display:inline-block;margin-top:6px;font-size:12px;color:#4da3ff;text-decoration:none">🔗 Posting</a>
       `;
       grid.appendChild(div);
-    
-      div.addEventListener("click", (e) => {
-      if (e.target.closest("a")) return;
+
+      div.addEventListener("click", () => {
+        if (e.target.closest("a")) return;
         document.getElementById("detailImg").src = getPreviewImage(nft);
         document.getElementById("detailName").textContent = nft.name + " #" + nft.id;
         document.getElementById("detailModel").textContent = "Model: " + nft.model;
@@ -111,16 +113,16 @@ fetch("export/data.json")
         document.getElementById("detailBg").textContent = "Background: " + nft.bg;
         document.getElementById("detailPrice").textContent = "Price: " + formatIDR(nft.price);
         document.getElementById("detailPost").href = nft.posting;
-    
+
         const baseUrl = "https://t.me/marketaldibot?start=";
         const slug = nft.name.replace(/\s+/g, '') + "_" + nft.id;
         document.getElementById("btnBeli").href = baseUrl + "beli_" + slug;
         document.getElementById("btnNego").href = baseUrl + "nego_" + slug;
-    
+
         openPanel();
       });
     });
-    
+
     // Panggil setelah loop selesai
     cards = document.querySelectorAll(".card");
   })
