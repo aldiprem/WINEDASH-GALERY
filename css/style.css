@@ -11,7 +11,7 @@
   background: #1c1c1e;
   color: #fff;
   z-index: 999;
-  transition: bottom 0.3s ease;
+  transition: bottom 0.5s ease;
   padding: 15px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -235,7 +235,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  background: #1c1c1e;
+  background: #1C1C1E;
   max-height: 200px;
   overflow-y: auto;
   border-radius: 8px;
@@ -263,7 +263,7 @@ body {
 }
 
 .card {
-  background: #97C9D7;
+  background: #515A5E;
   border-radius: 16px;
   padding: 10px;
   text-align: left;
@@ -293,7 +293,7 @@ body {
 .price {
   display: inline-block;
   margin-top: 8px;
-  background: #464D53;
+  background: #0089FF;
   padding: 6px 12px;
   border-radius: 999px;
   font-weight: bold;
