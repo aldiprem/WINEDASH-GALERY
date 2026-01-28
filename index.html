@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<div id="scrollTopBtn" class="scroll-top-btn">
-  <div class="arrow-up"></div>
-</div>
-
 <body>
+
+  <!-- Scroll Top Button -->
+  <div id="scrollTopBtn" class="scroll-top-btn">
+    <div class="arrow-up"></div>
+  </div>
+
+  <!-- Page Loader -->
   <div id="pageLoader">
     <div class="loader-box">
       <div class="loader-logo">
@@ -25,88 +28,89 @@
     </div>
   </div>
 
+  <!-- Gift Detail Panel -->
   <div id="giftDetailPanel" class="gift-detail-panel">
-<div class="panel-content">
-<div class="image-wrap">
-  <img id="detailImg" src="" alt="">
+    <div class="panel-content">
+      <div class="image-wrap">
+        <img id="detailImg" src="" alt="">
 
-  <div class="image-banner">
-    <div id="detailTitle" class="banner-title"></div>
+        <div class="image-banner">
+          <div id="detailTitle" class="banner-title"></div>
+        </div>
+      </div>
+
+      <div class="panel-info-card">
+        <div class="divider"></div>
+
+        <div class="info-row">
+          <span>Model</span>
+          <b id="detailModel"></b>
+        </div>
+
+        <div class="info-row">
+          <span>Backdrop</span>
+          <b id="detailBg"></b>
+        </div>
+
+        <div class="info-row">
+          <span>Symbol</span>
+          <b id="detailSymbol"></b>
+        </div>
+
+        <div class="info-row price">
+          <span>Price</span>
+          <b id="detailPrice"></b>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="panel-buttons">
+          <a id="btnBeli" href="#" target="_blank">BELI</a>
+          <a id="btnNego" href="#" target="_blank">NEGO</a>
+        </div>
+      </div>
+
+      <span id="closePanel" class="close-panel">×</span>
+    </div>
   </div>
-</div>
 
-<div class="panel-info-card">
-  <div class="divider"></div>
-
-  <div class="info-row">
-    <span>Model</span>
-    <b id="detailModel"></b>
-  </div>
-
-  <div class="info-row">
-    <span>Backdrop</span>
-    <b id="detailBg"></b>
-  </div>
-
-  <div class="info-row">
-    <span>Symbol</span>
-    <b id="detailSymbol"></b>
-  </div>
-
-  <div class="info-row price">
-    <span>Price</span>
-    <b id="detailPrice"></b>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="panel-buttons">
-    <a id="btnBeli" href="#" target="_blank">BELI</a>
-    <a id="btnNego" href="#" target="_blank">NEGO</a>
-  </div>
-</div>
-
-  <span id="closePanel" class="close-panel">×</span>
-</div>
-  </div>
-
+  <!-- Topbar & Search -->
   <div class="topbar">
     <h1>🎁 WINEDASH GIFT</h1>
-  
+
     <div class="gift-search-container">
       <input type="text" id="giftSearchInput" placeholder="Search gift...">
       <input type="number" id="maxPrice" placeholder="Max Price" min="0">
       <button id="giftSearchBtn">Search</button>
       <div id="giftDropdown" class="gift-dropdown"></div>
     </div>
-  
-  <!-- FILTER BAR -->
-  <div class="giftfilters">
-    <select id="giftFilter">
-      <option value="">All Gifts</option>
-    </select>
-  
-    <select id="modelFilter">
-      <option value="">All Models</option>
-      <option value="ice">Ice</option>
-      <option value="clover">Clover</option>
-    </select>
-  
-    <select id="symbolFilter">
-      <option value="">All Symbols</option>
-      <option value="paw">Paw</option>
-      <option value="luck">Luck</option>
-    </select>
-  
-    <select id="bgFilter">
-      <option value="">All Backdrops</option>
-      <option value="blue">Blue</option>
-      <option value="gold">Gold</option>
-    </select>
-  
+
+    <!-- FILTER BAR -->
+    <div class="giftfilters">
+      <select id="giftFilter">
+        <option value="">All Gifts</option>
+      </select>
+
+      <select id="modelFilter">
+        <option value="">All Models</option>
+        <option value="ice">Ice</option>
+        <option value="clover">Clover</option>
+      </select>
+
+      <select id="symbolFilter">
+        <option value="">All Symbols</option>
+        <option value="paw">Paw</option>
+        <option value="luck">Luck</option>
+      </select>
+
+      <select id="bgFilter">
+        <option value="">All Backdrops</option>
+        <option value="blue">Blue</option>
+        <option value="gold">Gold</option>
+      </select>
+    </div>
   </div>
-  
-  <!-- OVERLAY (BLUR BACKGROUND SAAT PANEL AKTIF) -->
+
   <div id="panelOverlay" class="panel-overlay"></div>
 
   <!-- NFT GRID -->
