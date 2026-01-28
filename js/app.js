@@ -189,6 +189,20 @@ document.addEventListener("click", e => {
   }
 });
 
+document.getElementById("giftSearchBtn").addEventListener("click", function() {
+  const query = document.getElementById("giftSearchInput").value.trim();
+  const maxPrice = parseInt(document.getElementById("maxPrice").value) || Infinity;
+
+  // contoh filter sederhana
+  const gifts = document.querySelectorAll(".gift-item");
+  gifts.forEach(gift => {
+    const price = parseInt(gift.getAttribute("data-price")) || 0;
+    const name = gift.getAttribute("data-name").toLowerCase();
+    const match = name.includes(query.toLowerCase()) && price <= maxPrice;
+    gift.style.display = match ? "block" : "none";
+  });
+});
+
 const closeBtn = document.getElementById("closePanel");
 if (closeBtn) {
   closeBtn.addEventListener("click", closePanel);
