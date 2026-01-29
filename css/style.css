@@ -398,6 +398,33 @@ body {
   font-size: 1px;
 }
 
+.selected-gifts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 15px;
+  min-height: 40px;
+  justify-content: center;
+}
+
+.gift-bubble {
+  background: linear-gradient(135deg, #7cf9ff, #9b7bff);
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.gift-bubble:hover {
+  background: linear-gradient(135deg, #ff7c7c, #ff9b9b);
+  transform: scale(1.05);
+}
+
 /* ===== PAGE LOADER ===== */
 #pageLoader {
   position: fixed;
