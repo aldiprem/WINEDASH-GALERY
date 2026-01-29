@@ -27,31 +27,35 @@
     <!-- Search Section -->
     <section class="search-section">
         <div class="gift-search-container">
-            <form onsubmit="return false">
-                <input type="text" id="giftSearchInput" placeholder="Search gift...">
-                <input type="number" id="maxPrice" placeholder="Max Price" min="0">
-                <button id="giftSearchBtn" type="button">Search</button>
+            <form onsubmit="return false" class="search-form">
+                <div class="search-input-group">
+                    <input type="text" id="giftSearchInput" placeholder="Search gift..." class="search-input">
+                    <input type="number" id="maxPrice" placeholder="Max Price" min="0" class="price-input">
+                    <button id="giftSearchBtn" type="button" class="search-button">Search</button>
+                </div>
             </form>
             <div id="giftDropdown" class="gift-dropdown"></div>
+            <div id="giftBubbleBoard" class="gift-bubble-board"></div>
         </div>
 
         <div class="giftfilters">
-            <button id="btnAllGifts" type="button">All Gifts</button>
-            
-            <div id="subFilters" style="display:none;">
-                <button id="btnAllModels" type="button">All Models</button>
-                <button id="btnAllSymbols" type="button">All Symbols</button>
-                <button id="btnAllBackdrops" type="button">All Backdrops</button>
+            <div class="filter-row">
+                <button id="btnAllGifts" type="button" class="filter-btn">All Gifts</button>
+                <button id="btnAllModels" type="button" class="filter-btn">All Models</button>
+                <button id="btnAllSymbols" type="button" class="filter-btn">All Symbols</button>
+                <button id="btnAllBackdrops" type="button" class="filter-btn">All Backdrops</button>
             </div>
-
-            <div class="sort-dropdown">
-                <button id="btnSort" type="button">Sort By ⏬</button>
-                <div id="sortOptions" class="sort-options" style="display:none;">
-                    <div data-sort="lasted">⏰ Lasted</div>
-                    <div data-sort="low">💸 Low To High</div>
-                    <div data-sort="high">💸 High To Low</div>
-                    <div data-sort="idAsc">🆔 ID Ascending</div>
-                    <div data-sort="idDesc">🆔 ID Descending</div>
+            
+            <div class="sort-row">
+                <div class="sort-dropdown">
+                    <button id="btnSort" type="button" class="sort-btn">Sort By ⏬</button>
+                    <div id="sortOptions" class="sort-options">
+                        <div data-sort="lasted">⏰ Lasted</div>
+                        <div data-sort="low">💸 Low To High</div>
+                        <div data-sort="high">💸 High To Low</div>
+                        <div data-sort="idAsc">🆔 ID Ascending</div>
+                        <div data-sort="idDesc">🆔 ID Descending</div>
+                    </div>
                 </div>
             </div>
         </div>
