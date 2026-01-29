@@ -9,11 +9,18 @@ const giftDropdown = document.getElementById("giftDropdown");
 const giftSelected = document.getElementById("giftSelected");
 const panel = document.getElementById("giftDetailPanel");
 const overlay = document.getElementById("panelOverlay");
-const overlay = document.getElementById("panelOverlay");
 const btnBeli = document.getElementById("btnBeli");
 const btnNego = document.getElementById("btnNego");
 const pageLoader = document.getElementById("pageLoader");
 const scrollTopBtn = document.getElementById("scrollTopBtn");
+const btnAllGifts = document.getElementById("btnAllGifts");
+const btnAllModels = document.getElementById("btnAllModels");
+const btnAllSymbols = document.getElementById("btnAllSymbols");
+const btnAllBackdrops = document.getElementById("btnAllBackdrops");
+const sortOptions = document.getElementById("sortOptions");
+const subFilters = document.getElementById("subFilters");
+
+overlay.addEventListener("click", closePanel);
 
 let giftsData = [];
 let cards = [];
