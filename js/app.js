@@ -1,22 +1,3 @@
-// DEBUG: Cek semua elements
-console.log("=== DEBUG ELEMENTS ===");
-console.log("grid:", grid);
-console.log("pageLoader:", pageLoader);
-console.log("loaderStatus:", loaderStatus);
-console.log("btnSort:", btnSort);
-console.log("sortOptions:", sortOptions);
-
-// Cek apakah file JS berhasil load
-console.log("main.js loaded successfully");
-
-// Force hide loader after 5 seconds as backup
-setTimeout(() => {
-  if (pageLoader && !pageLoader.classList.contains("hide")) {
-    console.warn("Forcing loader hide after 5s timeout");
-    pageLoader.classList.add("hide");
-  }
-}, 5000);
-
 const grid = document.getElementById("giftGrid");
 const giftSearchInput = document.getElementById("giftSearchInput");
 const giftDropdown = document.getElementById("giftDropdown");
