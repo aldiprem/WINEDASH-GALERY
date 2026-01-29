@@ -173,20 +173,19 @@ sortOptions.querySelectorAll('div').forEach(opt => {
   });
 });
 
-// ===== Fetch Data & Render Grid Langsung =====
 fetch("export/data.json")
   .then(res => res.json())
   .then(data => {
     giftsData = data;
     filteredGifts = [...giftsData];
 
-    // build gift list untuk search
     const set = new Set();
     giftsData.forEach(g => set.add(g.name.replace(/ #\d+$/, '')));
     giftList = Array.from(set);
 
-    renderGrid(giftsData); // langsung tampil semua card
-    pageLoader.classList.add("hide"); // hide loader
+    renderGrid(giftsData);
+    buildBubbles();
+    pageLoader.classList.add("hide");
   })
   .catch(err => {
     console.error("FETCH ERROR:", err);
@@ -194,7 +193,6 @@ fetch("export/data.json")
     pageLoader.classList.add("hide");
   });
 
-// ===== Grid Card Click Event (Delegation) =====
 grid.addEventListener("click", e => {
   const card = e.target.closest(".card");
   if (!card) return;
@@ -232,12 +230,96 @@ function addGiftBubble(gift) {
     selectedGifts.delete(gift);
     bubble.remove();
     filterNFT();
+    updateSubFiltersForSelectedGifts();
   });
 
   giftSelected.appendChild(bubble);
   giftSearchInput.value = "";
   giftDropdown.style.display = "none";
   filterNFT();
+  updateSubFiltersForSelectedGifts();
+}
+
+function buildBubbles() {
+  giftBubbleBoard.innerHTML = "";
+
+  // ===== Gifts =====
+  const giftCounts = {};
+  giftsData.forEach(g => giftCounts[g.name.replace(/ #\d+$/, '')] = (giftCounts[g.name.replace(/ #\d+$/, '')] || 0) + 1);
+  Object.entries(giftCounts).forEach(([name, count]) => {
+    const bubble = createBubble(name, count, "gift");
+    giftBubbleBoard.appendChild(bubble);
+  });
+
+  // ===== Models =====
+  const modelsSet = new Set(giftsData.map(g => g.model).filter(Boolean));
+  modelsSet.forEach(m => {
+    const bubble = createBubble(m, "", "model");
+    giftBubbleBoard.appendChild(bubble);
+  });
+
+  // ===== Symbols =====
+  const symbolsSet = new Set(giftsData.map(g => g.symbol).filter(Boolean));
+  symbolsSet.forEach(s => {
+    const bubble = createBubble(s, "", "symbol");
+    giftBubbleBoard.appendChild(bubble);
+  });
+
+  // ===== Backdrops =====
+  const bgsSet = new Set(giftsData.map(g => g.background).filter(Boolean));
+  bgsSet.forEach(b => {
+    const bubble = createBubble(b, "", "bg");
+    giftBubbleBoard.appendChild(bubble);
+  });
+}
+
+// Helper buat buat bubble
+function createBubble(name, count = "", type = "gift") {
+  const bubble = document.createElement("div");
+  bubble.className = "gift-bubble";
+  bubble.textContent = count ? `${name} (${count})` : name;
+
+  bubble.addEventListener("click", () => {
+    switch (type) {
+      case "gift":
+        addGiftBubble(name); // pilih gift
+        break;
+      case "model":
+        modelFilter.value = name;
+        filterNFT();
+        break;
+      case "symbol":
+        symbolFilter.value = name;
+        filterNFT();
+        break;
+      case "bg":
+        bgFilter.value = name;
+        filterNFT();
+        break;
+    }
+  });
+
+  return bubble;
+}
+
+function updateSubFiltersForSelectedGifts() {
+  let relevantGifts = giftsData;
+  if (selectedGifts.size > 0) {
+    relevantGifts = giftsData.filter(g => {
+      for (let gift of selectedGifts) {
+        if (g.name.replace(/ #\d+$/, '') === gift) return true;
+      }
+      return false;
+    });
+  }
+
+  const models = [...new Set(relevantGifts.map(g => g.model).filter(Boolean))];
+  const symbols = [...new Set(relevantGifts.map(g => g.symbol).filter(Boolean))];
+  const bgs = [...new Set(relevantGifts.map(g => g.background).filter(Boolean))];
+
+  btnAllModels.innerHTML = 'All Models ⬇<br>' + models.join('<br>');
+  btnAllSymbols.innerHTML = 'All Symbols ⬇<br>' + symbols.join('<br>');
+  btnAllBackdrops.innerHTML = 'All Backdrops ⬇<br>' + bgs.join('<br>');
 }
 
 // ===== Click Outside Dropdown =====
