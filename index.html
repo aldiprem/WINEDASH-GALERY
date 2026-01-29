@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>NFT Gift Telegram</title>
@@ -22,15 +21,17 @@
         <span>W</span><span>G</span>
       </div>
       <div class="loader-text">WINEDASH GIFT</div>
-      <div class="loader-bar">
-        <span></span>
-      </div>
+      <div class="loader-bar"><span></span></div>
     </div>
   </div>
 
-  <!-- Topbar & Search -->
-  <div class="topbar">
-    <h1>🎁 WINEDASH GIFT</h1>
+  <!-- ===== HEADER BACKGROUND ONLY ===== -->
+  <header class="header-bg">
+    <h1 class="header-title">🎁 WINEDASH GIFT</h1>
+  </header>
+
+  <!-- ===== SEARCH & FILTER (NORMAL FLOW) ===== -->
+  <section class="search-section">
 
     <div class="gift-search-container">
       <input type="text" id="giftSearchInput" placeholder="Search gift...">
@@ -39,7 +40,6 @@
       <div id="giftDropdown" class="gift-dropdown"></div>
     </div>
 
-    <!-- FILTER BAR -->
     <div class="giftfilters">
       <select id="giftFilter">
         <option value="">All Gifts</option>
@@ -63,16 +63,18 @@
         <option value="gold">Gold</option>
       </select>
     </div>
-  </div>
 
+  </section>
+
+  <!-- Overlay -->
   <div id="panelOverlay" class="panel-overlay"></div>
 
   <!-- Gift Detail Panel -->
   <div id="giftDetailPanel" class="gift-detail-panel">
     <div class="panel-content">
+
       <div class="image-wrap">
         <img id="detailImg" src="" alt="">
-
         <div class="image-banner">
           <div id="detailTitle" class="banner-title"></div>
         </div>
@@ -81,24 +83,12 @@
       <div class="panel-info-card">
         <div class="divider"></div>
 
-        <div class="info-row">
-          <span>Model</span>
-          <b id="detailModel"></b>
-        </div>
-
-        <div class="info-row">
-          <span>Backdrop</span>
-          <b id="detailBg"></b>
-        </div>
-
-        <div class="info-row">
-          <span>Symbol</span>
-          <b id="detailSymbol"></b>
-        </div>
+        <div class="info-row"><span>Model</span><b id="detailModel"></b></div>
+        <div class="info-row"><span>Backdrop</span><b id="detailBg"></b></div>
+        <div class="info-row"><span>Symbol</span><b id="detailSymbol"></b></div>
 
         <div class="info-row price">
-          <span>Price</span>
-          <b id="detailPrice"></b>
+          <span>Price</span><b id="detailPrice"></b>
         </div>
 
         <div class="divider"></div>
@@ -118,5 +108,4 @@
 
   <script src="js/app.js"></script>
 </body>
-
 </html>
