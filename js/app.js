@@ -1,421 +1,326 @@
-// ===== SIMPLE VARIABLES =====
-let gifts = [];
+const giftFilter = document.getElementById("giftFilter") || { value: "" };
+const modelFilter = document.getElementById("modelFilter") || { value: "" };
+const symbolFilter = document.getElementById("symbolFilter") || { value: "" };
+const bgFilter = document.getElementById("bgFilter") || { value: "" };
+const maxPrice = document.getElementById("maxPrice") || { value: "" };
+const grid = document.getElementById("giftGrid") || document.createElement("div");
+const giftSearchInput = document.getElementById("giftSearchInput") || { value: "" };
+const giftDropdown = document.getElementById("giftDropdown") || { style: {}, innerHTML: "" };
+const giftSelected = document.getElementById("giftSelected") || document.createElement("div");
+const panel = document.getElementById("giftDetailPanel") || document.createElement("div");
+const overlay = document.getElementById("panelOverlay") || document.createElement("div");
+const btnBeli = document.getElementById("btnBeli") || document.createElement("a");
+const btnNego = document.getElementById("btnNego") || document.createElement("a");
+const pageLoader = document.getElementById("pageLoader") || document.createElement("div");
+const scrollTopBtn = document.getElementById("scrollTopBtn") || document.createElement("div");
+const btnAllGifts = document.getElementById("btnAllGifts") || document.createElement("button");
+const btnAllModels = document.getElementById("btnAllModels") || document.createElement("button");
+const btnAllSymbols = document.getElementById("btnAllSymbols") || document.createElement("button");
+const btnAllBackdrops = document.getElementById("btnAllBackdrops") || document.createElement("button");
+const sortOptions = document.getElementById("sortOptions") || document.createElement("div");
+const subFilters = document.getElementById("subFilters") || document.createElement("div");
+
+overlay.addEventListener("click", closePanel);
+
+let giftsData = [];
+let cards = [];
+let giftList = [];
 let filteredGifts = [];
 let selectedGifts = new Set();
-let currentSort = 'newest';
+let selectedGift = null;
 
-// ===== DOM ELEMENTS =====
-const grid = document.getElementById('giftGrid');
-const searchInput = document.getElementById('giftSearchInput');
-const searchDropdown = document.getElementById('giftDropdown');
-const selectedContainer = document.getElementById('giftSelected');
-const detailPanel = document.getElementById('giftDetailPanel');
-const overlay = document.getElementById('panelOverlay');
-const pageLoader = document.getElementById('pageLoader');
+function formatIDR(number) {
+  return "Rp" + Number(number || 0).toLocaleString("id-ID");
+}
 
-// ===== START APP =====
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('🎁 Loading gifts...');
-  loadGifts();
-  setupEventListeners();
+function formatNFTName(name) {
+  if (!name) return "";
+
+  return name
+    .replace(/[\s#_-]*\d+$/g, "")
+    .trim();
+}
+
+function openPanel() {
+  panel.classList.add("active");
+  overlay.classList.add("active");
+}
+
+function closePanel() {
+  panel.classList.remove("active");
+  overlay.classList.remove("active");
+  panel.style.bottom = "";
+}
+
+function getPreviewImage(nft) {
+  if (nft.image && nft.image.includes("/previews/")) {
+    return nft.image;
+  }
+
+  return `previews/${nft.slug}.jpg`;
+}
+
+function renderGrid(data) {
+  grid.innerHTML = "";
+  data.forEach(nft => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.dataset.id = String(nft.id);
+    div.dataset.name = nft.name.toLowerCase();
+    div.dataset.slug = nft.slug.toLowerCase();
+    div.dataset.model = nft.model || "";
+    div.dataset.symbol = nft.symbol || "";
+    div.dataset.bg = nft.bg || "";
+    div.dataset.price = nft.price || 0;
+
+    div.innerHTML = `
+      <a href="https://t.me/nft/${nft.slug}" target="_blank">
+        <img src="${getPreviewImage(nft)}" alt="${formatNFTName(nft.name)}" onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
+      </a>
+      <h3>${formatNFTName(nft.name)}</h3>
+      <p>#${nft.id}</p>
+      <span class="price open-panel">💰 ${formatIDR(nft.price)}</span>
+    `;
+    grid.appendChild(div);
+
+    div.querySelector(".open-panel").addEventListener("click", (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      document.getElementById("detailImg").src = getPreviewImage(nft);
+      document.getElementById("detailTitle").textContent = `${formatNFTName(nft.name)} #${nft.id}`;
+      document.getElementById("detailModel").textContent = nft.model || "-";
+      document.getElementById("detailBg").textContent = nft.bg || "-";
+      document.getElementById("detailSymbol").textContent = nft.symbol || "-";
+      document.getElementById("detailPrice").textContent = formatIDR(nft.price);
+
+      const baseUrl = "https://t.me/marketaldibot?start=";
+      const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
+      btnBeli.href = baseUrl + "beli_" + slug;
+      btnNego.href = baseUrl + "nego_" + slug;
+
+      openPanel();
+    });
+  });
+  cards = document.querySelectorAll(".card");
+}
+
+window.addEventListener("scroll", () => {
+  const card = document.querySelector(".card");
+  if (!card) return;
+
+  const cardHeight = card.offsetHeight;
+  const threshold = cardHeight * 3;
+
+  if (window.scrollY > threshold) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
 });
 
-// ===== LOAD DATA =====
-async function loadGifts() {
-  try {
-    console.log('📥 Fetching data.json...');
-    
-    const response = await fetch('export/data.json');
-    
-    if (!response.ok) {
-      throw new Error(`Failed to load data.json (${response.status})`);
-    }
-    
-    const data = await response.json();
-    
-    if (!Array.isArray(data)) {
-      throw new Error('data.json should contain an array');
-    }
-    
-    console.log(`✅ Loaded ${data.length} gifts`);
-    
-    // Simple data processing
-    gifts = data.map(gift => ({
-      id: gift.id || 0,
-      name: gift.name || `Gift #${gift.id}`,
-      slug: gift.slug || `gift-${gift.id}`,
-      model: gift.model || 'Unknown',
-      symbol: gift.symbol || 'None',
-      bg: gift.bg || gift.background || 'Default',
-      price: Number(gift.price) || 0,
-      image: gift.image || `previews/${gift.slug || gift.id}.jpg`,
-      created_at: gift.created_at || new Date().toISOString()
-    }));
-    
-    filteredGifts = [...gifts];
-    
-    // Hide loader immediately
-    setTimeout(() => {
-      if (pageLoader) pageLoader.classList.add('hide');
-    }, 300);
-    
-    // Render grid
-    renderGrid();
-    
-  } catch (error) {
-    console.error('❌ Error:', error);
-    showError(error.message);
-  }
-}
-
-// ===== RENDER FUNCTIONS =====
-function renderGrid() {
-  if (!grid) return;
-  
-  grid.innerHTML = '';
-  
-  if (filteredGifts.length === 0) {
-    grid.innerHTML = `
-      <div style="grid-column: 1/-1; text-align:center; padding:40px; color:#aaa;">
-        <h3>😔 No gifts found</h3>
-        <p>Try different search or filter</p>
-      </div>
-    `;
-    return;
-  }
-  
-  // Sort before rendering
-  const sortedGifts = sortGifts([...filteredGifts]);
-  
-  sortedGifts.forEach(gift => {
-    const card = createCard(gift);
-    grid.appendChild(card);
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
-}
+});
 
-function createCard(gift) {
-  const div = document.createElement('div');
-  div.className = 'card';
-  
-  const name = formatName(gift.name);
-  const price = formatPrice(gift.price);
-  const imageSrc = getImage(gift);
-  
-  div.innerHTML = `
-    <div class="card-image">
-      <img src="${imageSrc}" alt="${name}" 
-           onerror="this.src='https://via.placeholder.com/300/2c2c2e/ffffff?text=Image'">
-      <span class="card-badge">#${gift.id}</span>
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">${name}</h3>
-      <p class="card-id">ID: ${gift.id}</p>
-      <div class="card-price">
-        <span class="price-amount">${price}</span>
-        <button class="btn-view" onclick="showDetail(${gift.id})">
-          <i class="fas fa-eye"></i> View
-        </button>
-      </div>
-    </div>
-  `;
-  
-  return div;
-}
+giftSearchInput.addEventListener("input", () => {
+  const val = giftSearchInput.value.toLowerCase();
+  giftDropdown.innerHTML = "";
 
-// ===== FILTER & SORT =====
-function filterGifts() {
-  const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
-  const maxPrice = document.getElementById('maxPrice') ? document.getElementById('maxPrice').value : '';
-  const modelFilter = document.getElementById('modelFilter') ? document.getElementById('modelFilter').value : '';
-  const symbolFilter = document.getElementById('symbolFilter') ? document.getElementById('symbolFilter').value : '';
-  const bgFilter = document.getElementById('bgFilter') ? document.getElementById('bgFilter').value : '';
-  
-  filteredGifts = gifts.filter(gift => {
-    // Search by name or ID
-    if (searchTerm && !gift.name.toLowerCase().includes(searchTerm) && 
-        !gift.id.toString().includes(searchTerm)) {
-      return false;
-    }
-    
-    // Max price filter
-    if (maxPrice && gift.price > parseFloat(maxPrice)) {
-      return false;
-    }
-    
-    // Model filter
-    if (modelFilter && gift.model !== modelFilter) {
-      return false;
-    }
-    
-    // Symbol filter
-    if (symbolFilter && gift.symbol !== symbolFilter) {
-      return false;
-    }
-    
-    // Background filter
-    if (bgFilter && gift.bg !== bgFilter) {
-      return false;
-    }
-    
-    // Selected gifts filter
-    if (selectedGifts.size > 0) {
-      const baseName = gift.name.replace(/#\d+$/, '').trim();
-      const hasMatch = Array.from(selectedGifts).some(selected => 
-        baseName.toLowerCase().includes(selected.toLowerCase())
-      );
-      if (!hasMatch) return false;
-    }
-    
-    return true;
+  if (!val) { giftDropdown.style.display = "none"; return; }
+
+  const filtered = giftList.filter(g => g.toLowerCase().includes(val) && !selectedGifts.has(g));
+  filtered.forEach(g => {
+    const div = document.createElement("div");
+    div.textContent = g;
+    div.addEventListener("click", () => addGiftBubble(g));
+    giftDropdown.appendChild(div);
   });
-  
-  renderGrid();
-}
 
-function sortGifts(giftsArray) {
-  switch (currentSort) {
-    case 'price-low':
-      return giftsArray.sort((a, b) => a.price - b.price);
-    case 'price-high':
-      return giftsArray.sort((a, b) => b.price - a.price);
-    case 'id-asc':
-      return giftsArray.sort((a, b) => a.id - b.id);
-    case 'id-desc':
-      return giftsArray.sort((a, b) => b.id - a.id);
-    case 'oldest':
-      return giftsArray.sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
-    case 'newest':
-    default:
-      return giftsArray.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-  }
-}
+  giftDropdown.style.display = filtered.length ? "block" : "none";
+});
 
-// ===== SEARCH DROPDOWN =====
-function updateSearchDropdown() {
-  if (!searchInput || !searchDropdown) return;
-  
-  const searchTerm = searchInput.value.toLowerCase().trim();
-  
-  if (!searchTerm) {
-    searchDropdown.style.display = 'none';
-    return;
-  }
-  
-  // Get unique gift names (without IDs)
-  const uniqueNames = [...new Set(gifts.map(g => g.name.replace(/#\d+$/, '').trim()))];
-  
-  const filtered = uniqueNames.filter(name => 
-    name.toLowerCase().includes(searchTerm) && !selectedGifts.has(name)
-  );
-  
-  if (filtered.length === 0) {
-    searchDropdown.style.display = 'none';
-    return;
-  }
-  
-  searchDropdown.innerHTML = '';
-  filtered.forEach(name => {
-    const div = document.createElement('div');
-    div.textContent = name;
-    div.onclick = () => addSelectedGift(name);
-    searchDropdown.appendChild(div);
+btnAllGifts.addEventListener('click', () => {
+  subFilters.style.display = 'flex';
+  const counts = {};
+  giftsData.forEach(g => counts[g.slug] = (counts[g.slug] || 0) + 1);
+  btnAllGifts.innerHTML = 'All Gifts ⬇<br>' + Object.entries(counts).map(([slug, count]) => `${slug} (${count})`).join('<br>');
+  selectedGift = null;
+  renderGrid(giftsData);
+});
+
+// ===== SUBFILTERS =====
+btnAllModels.addEventListener('click', () => {
+  const models = [...new Set(giftsData.map(g => g.model).filter(Boolean))];
+  btnAllModels.innerHTML = 'All Models ⬇<br>' + models.join('<br>');
+});
+
+btnAllSymbols.addEventListener('click', () => {
+  const symbols = [...new Set(giftsData.map(g => g.symbol).filter(Boolean))];
+  btnAllSymbols.innerHTML = 'All Symbols ⬇<br>' + symbols.join('<br>');
+});
+
+btnAllBackdrops.addEventListener('click', () => {
+  const bgs = [...new Set(giftsData.map(g => g.background).filter(Boolean))];
+  btnAllBackdrops.innerHTML = 'All Backdrops ⬇<br>' + bgs.join('<br>');
+});
+
+// ===== SORT =====
+btnSort.addEventListener('click', () => {
+  sortOptions.style.display = sortOptions.style.display === 'block' ? 'none' : 'block';
+});
+
+sortOptions.querySelectorAll('div').forEach(opt => {
+  opt.addEventListener('click', () => {
+    const sortType = opt.dataset.sort;
+    let sorted = [...giftsData];
+
+    switch (sortType) {
+      case 'lasted':
+        sorted.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+        break;
+      case 'low':
+        sorted.sort((a, b) => a.price - b.price);
+        break;
+      case 'high':
+        sorted.sort((a, b) => b.price - a.price);
+        break;
+      case 'idAsc':
+        sorted.sort((a, b) => a.id - b.id);
+        break;
+      case 'idDesc':
+        sorted.sort((a, b) => b.id - a.id);
+        break;
+    }
+
+    renderGrid(sorted);
+    sortOptions.style.display = 'none';
   });
-  
-  searchDropdown.style.display = 'block';
-}
+});
 
-function addSelectedGift(giftName) {
-  if (selectedGifts.has(giftName)) return;
-  
-  selectedGifts.add(giftName);
-  
-  const bubble = document.createElement('div');
-  bubble.className = 'gift-bubble';
-  bubble.innerHTML = `${giftName} <span class="remove-bubble">×</span>`;
-  
-  bubble.onclick = () => {
-    selectedGifts.delete(giftName);
+fetch("export/data.json")
+  .then(res => res.json())
+  .then(data => {
+    giftsData = data;
+    filteredGifts = [...giftsData];
+
+    const set = new Set();
+    giftsData.forEach(g => set.add(g.name.replace(/ #\d+$/, '')));
+    giftList = Array.from(set);
+
+    renderGrid(giftsData);
+    setTimeout(() => pageLoader.classList.add("hide"), 400);
+  })
+  .catch(err => {
+    console.error("FETCH ERROR:", err);
+    grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
+  });
+
+function addGiftBubble(gift) {
+  if (selectedGifts.has(gift)) return;
+  selectedGifts.add(gift);
+
+  const bubble = document.createElement("div");
+  bubble.className = "gift-bubble";
+  bubble.textContent = gift;
+  bubble.addEventListener("click", () => {
+    selectedGifts.delete(gift);
     bubble.remove();
-    filterGifts();
-  };
-  
-  if (selectedContainer) {
-    selectedContainer.appendChild(bubble);
+    filterNFT();
+  });
+
+  giftSelected.appendChild(bubble);
+  giftSearchInput.value = "";
+  giftDropdown.style.display = "none";
+
+  filterNFT();
+}
+
+document.addEventListener("click", e => {
+  if (!giftSearchInput.contains(e.target) && !giftDropdown.contains(e.target)) {
+    giftDropdown.style.display = "none";
   }
-  
-  if (searchInput) searchInput.value = '';
-  if (searchDropdown) searchDropdown.style.display = 'none';
-  
-  filterGifts();
+});
+
+const closeBtn = document.getElementById("closePanel");
+if (closeBtn) {
+  closeBtn.addEventListener("click", closePanel);
 }
 
-// ===== DETAIL PANEL =====
-function showDetail(giftId) {
-  const gift = gifts.find(g => g.id === giftId);
-  if (!gift || !detailPanel || !overlay) return;
-  
-  // Update panel content
-  document.getElementById('detailImg').src = getImage(gift);
-  document.getElementById('detailTitle').textContent = formatName(gift.name);
-  document.getElementById('detailModel').textContent = gift.model || '-';
-  document.getElementById('detailBg').textContent = gift.bg || '-';
-  document.getElementById('detailSymbol').textContent = gift.symbol || '-';
-  document.getElementById('detailPrice').textContent = formatPrice(gift.price);
-  document.getElementById('detailId').textContent = `#${gift.id}`;
-  
-  // Update buttons
-  const baseUrl = 'https://t.me/marketaldibot?start=';
-  const slug = gift.name.replace(/\s+/g, '') + '_' + gift.id;
-  document.getElementById('btnBeli').href = baseUrl + 'beli_' + slug;
-  document.getElementById('btnNego').href = baseUrl + 'nego_' + slug;
-  
-  // Show panel
-  detailPanel.classList.add('active');
-  overlay.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
+function filterNFT() {
+  const searchText = giftSearchInput.value.toLowerCase().trim();
+  const model = modelFilter.value;
+  const symbol = symbolFilter.value;
+  const bg = bgFilter.value;
+  const max = maxPrice.value ? parseFloat(maxPrice.value) : Infinity;
 
-function closeDetail() {
-  if (detailPanel && overlay) {
-    detailPanel.classList.remove('active');
-    overlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-}
+  cards.forEach(card => {
+    let show = true;
+    const cardName = card.dataset.name || "";
+    const cardModel = card.dataset.model || "";
+    const cardSymbol = card.dataset.symbol || "";
+    const cardBg = card.dataset.bg || "";
+    const cardPrice = parseFloat(card.dataset.price) || 0;
 
-// ===== UTILITY FUNCTIONS =====
-function formatPrice(price) {
-  return `Rp${Number(price).toLocaleString('id-ID')}`;
-}
+    if (searchText && !cardName.includes(searchText)) show = false;
 
-function formatName(name) {
-  return name.replace(/#\d+$/, '').trim();
-}
-
-function getImage(gift) {
-  if (gift.image && (gift.image.startsWith('http') || gift.image.includes('/'))) {
-    return gift.image;
-  }
-  return `previews/${gift.slug || gift.id}.jpg`;
-}
-
-function showError(message) {
-  console.error('Error:', message);
-  
-  if (grid) {
-    grid.innerHTML = `
-      <div style="grid-column: 1/-1; text-align:center; padding:40px; color:#ff6b6b;">
-        <h3>⚠️ Error Loading Data</h3>
-        <p>${message}</p>
-        <p style="font-size:14px; color:#aaa; margin-top:20px;">
-          Make sure <strong>export/data.json</strong> exists and has correct format
-        </p>
-        <button onclick="location.reload()" style="
-          margin-top:20px;
-          padding:10px 20px;
-          background:#7cf9ff;
-          color:#000;
-          border:none;
-          border-radius:8px;
-          cursor:pointer;
-          font-weight:bold;
-        ">
-          🔄 Try Again
-        </button>
-      </div>
-    `;
-  }
-  
-  if (pageLoader) pageLoader.classList.add('hide');
-}
-
-// ===== EVENT LISTENERS =====
-function setupEventListeners() {
-  // Search input
-  if (searchInput) {
-    let searchTimeout;
-    searchInput.addEventListener('input', () => {
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(() => {
-        updateSearchDropdown();
-        filterGifts();
-      }, 300);
-    });
-  }
-  
-  // Close search dropdown when clicking outside
-  document.addEventListener('click', (e) => {
-    if (searchDropdown && !searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
-      searchDropdown.style.display = 'none';
+    if (selectedGifts.size > 0) {
+      let matched = false;
+      selectedGifts.forEach(gift => { if (cardName.includes(gift.toLowerCase())) matched = true; });
+      if (!matched) show = false;
     }
-  });
-  
-  // Filter inputs
-  const filterInputs = ['maxPrice', 'modelFilter', 'symbolFilter', 'bgFilter'];
-  filterInputs.forEach(id => {
-    const input = document.getElementById(id);
-    if (input) {
-      input.addEventListener('change', filterGifts);
-      input.addEventListener('input', filterGifts);
-    }
-  });
-  
-  // Sort buttons
-  const sortButtons = document.querySelectorAll('[data-sort]');
-  sortButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      currentSort = btn.dataset.sort;
-      filterGifts();
-    });
-  });
-  
-  // Close detail panel
-  if (overlay) overlay.addEventListener('click', closeDetail);
-  
-  const closeBtn = document.getElementById('closePanel');
-  if (closeBtn) closeBtn.addEventListener('click', closeDetail);
-  
-  // Clear filters button
-  const clearBtn = document.getElementById('clearFilters');
-  if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-      selectedGifts.clear();
-      if (selectedContainer) selectedContainer.innerHTML = '';
-      if (searchInput) searchInput.value = '';
-      
-      filterInputs.forEach(id => {
-        const input = document.getElementById(id);
-        if (input) input.value = '';
-      });
-      
-      filterGifts();
-    });
-  }
-  
-  // Scroll to top button
-  const scrollTopBtn = document.getElementById('scrollTopBtn');
-  if (scrollTopBtn) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 500) {
-        scrollTopBtn.classList.add('show');
-      } else {
-        scrollTopBtn.classList.remove('show');
-      }
-    });
-    
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-  
-  // Escape key closes detail panel
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && detailPanel.classList.contains('active')) {
-      closeDetail();
-    }
+
+    if (model && cardModel !== model) show = false;
+    if (symbol && cardSymbol !== symbol) show = false;
+    if (bg && cardBg !== bg) show = false;
+    if (cardPrice > max) show = false;
+
+    card.style.display = show ? "block" : "none";
   });
 }
 
-// ===== EXPORT TO WINDOW =====
-window.showDetail = showDetail;
-window.closeDetail = closeDetail;
+[
+  giftSearchInput,
+  modelFilter,
+  symbolFilter,
+  bgFilter,
+  maxPrice
+].forEach(el => {
+  el.addEventListener("input", filterNFT);
+});
+
+let startY = 0;
+let currentY = 0;
+let isDragging = false;
+
+panel.addEventListener("touchstart", e => {
+  if (e.target.closest("a") || e.target.closest(".close-panel")) return;
+
+  startY = e.touches[0].clientY;
+  isDragging = true;
+  panel.classList.add("dragging");
+});
+
+panel.addEventListener("touchmove", e => {
+  if (!isDragging) return;
+  e.preventDefault();
+  currentY = e.touches[0].clientY;
+  const diff = currentY - startY;
+  if (diff > 0) {
+    panel.style.bottom = `-${diff}px`;
+  }
+});
+
+panel.addEventListener("touchend", e => {
+  if (!isDragging) return;
+  panel.classList.remove("dragging");
+  const diff = currentY - startY;
+  if (diff > 120) closePanel();
+  else panel.style.bottom = "0";
+
+  isDragging = false;
+  startY = 0;
+  currentY = 0;
+});
