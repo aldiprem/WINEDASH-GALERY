@@ -517,13 +517,13 @@ body {
 
 .gift-bubble-board {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  max-height: 150px; /* scrollable */
+  flex-direction: column; /* vertikal */
+  gap: 6px;
+  max-height: 250px; /* scrollable */
   overflow-y: auto;
   padding: 8px;
   margin-top: 6px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(6px);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -539,19 +539,20 @@ body {
 }
 
 .gift-bubble {
-  display: inline-block;
-  padding: 6px 10px;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: #fff;
   font-size: 14px;
   font-weight: 500;
-  border-radius: 20px;
+  border-radius: 12px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  white-space: nowrap;
 }
 
 .gift-bubble:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
