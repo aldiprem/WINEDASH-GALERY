@@ -33,7 +33,6 @@
   <section class="search-section">
   
     <div class="gift-search-container">
-      <!-- Bungkus input & button dalam form untuk cegah reload saat Enter -->
       <form onsubmit="return false">
         <input type="text" id="giftSearchInput" placeholder="Search gift...">
         <input type="number" id="maxPrice" placeholder="Max Price" min="0">
@@ -41,8 +40,7 @@
       </form>
       <div id="giftDropdown" class="gift-dropdown"></div>
     </div>
-  
-    <!-- NEW FILTER BUTTONS -->
+    
     <div class="giftfilters">
       <button id="btnAllGifts" type="button">All Gifts</button>
       <div id="subFilters" style="display:none;">
@@ -50,7 +48,7 @@
         <button id="btnAllSymbols" type="button">All Symbols</button>
         <button id="btnAllBackdrops" type="button">All Backdrops</button>
       </div>
-      
+    
       <button id="btnSort" type="button">Sort By ⏬</button>
       <div id="sortOptions" class="sort-options" style="display:none;">
         <div data-sort="lasted">⏰ Lasted</div>
