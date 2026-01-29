@@ -35,10 +35,7 @@ function formatIDR(number) {
 
 function formatNFTName(name) {
   if (!name) return "";
-
-  return name
-    .replace(/[\s#_-]*\d+$/g, "")
-    .trim();
+  return name.replace(/[\s#_-]*\d+$/g, "").trim();
 }
 
 function openPanel() {
@@ -53,10 +50,7 @@ function closePanel() {
 }
 
 function getPreviewImage(nft) {
-  if (nft.image && nft.image.includes("/previews/")) {
-    return nft.image;
-  }
-
+  if (nft.image && nft.image.includes("/previews/")) return nft.image;
   return `previews/${nft.slug}.jpg`;
 }
 
@@ -69,7 +63,7 @@ function renderGrid(data) {
     div.dataset.name = nft.name.toLowerCase();
     div.dataset.model = nft.model || "";
     div.dataset.symbol = nft.symbol || "";
-    div.dataset.bg = nft.bg || "";
+    div.dataset.bg = nft.bg || nft.background || ""; // pastikan match JSON
     div.dataset.price = nft.price || 0;
     div.innerHTML = `
       <a href="https://t.me/nft/${nft.slug}" target="_blank">
@@ -85,31 +79,22 @@ function renderGrid(data) {
   cards = Array.from(document.querySelectorAll(".card"));
 }
 
+// ===== Scroll Top Button =====
 window.addEventListener("scroll", () => {
   const card = document.querySelector(".card");
   if (!card) return;
-
-  const cardHeight = card.offsetHeight;
-  const threshold = cardHeight * 3;
-
-  if (window.scrollY > threshold) {
-    scrollTopBtn.classList.add("show");
-  } else {
-    scrollTopBtn.classList.remove("show");
-  }
+  const threshold = card.offsetHeight * 3;
+  scrollTopBtn.classList.toggle("show", window.scrollY > threshold);
 });
 
 scrollTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+// ===== Gift Search Dropdown =====
 giftSearchInput.addEventListener("input", () => {
   const val = giftSearchInput.value.toLowerCase();
   giftDropdown.innerHTML = "";
-
   if (!val) { giftDropdown.style.display = "none"; return; }
 
   const filtered = giftList.filter(g => g.toLowerCase().includes(val) && !selectedGifts.has(g));
@@ -123,16 +108,17 @@ giftSearchInput.addEventListener("input", () => {
   giftDropdown.style.display = filtered.length ? "block" : "none";
 });
 
+// ===== All Gifts Button =====
 btnAllGifts.addEventListener('click', () => {
   subFilters.style.display = 'flex';
   const counts = {};
   giftsData.forEach(g => counts[g.slug] = (counts[g.slug] || 0) + 1);
   btnAllGifts.innerHTML = 'All Gifts ⬇<br>' + Object.entries(counts).map(([slug, count]) => `${slug} (${count})`).join('<br>');
   selectedGift = null;
-  renderGrid(giftsData);
+  renderGrid(giftsData); // render langsung
 });
 
-// ===== SUBFILTERS =====
+// ===== Subfilters =====
 btnAllModels.addEventListener('click', () => {
   const models = [...new Set(giftsData.map(g => g.model).filter(Boolean))];
   btnAllModels.innerHTML = 'All Models ⬇<br>' + models.join('<br>');
@@ -148,7 +134,7 @@ btnAllBackdrops.addEventListener('click', () => {
   btnAllBackdrops.innerHTML = 'All Backdrops ⬇<br>' + bgs.join('<br>');
 });
 
-// ===== SORT =====
+// ===== Sort =====
 btnSort.addEventListener('click', () => {
   sortOptions.style.display = sortOptions.style.display === 'block' ? 'none' : 'block';
 });
@@ -156,38 +142,33 @@ btnSort.addEventListener('click', () => {
 sortOptions.querySelectorAll('div').forEach(opt => {
   opt.addEventListener('click', () => {
     const sortType = opt.dataset.sort;
-    let sorted = [...giftsData];
-
+    const sorted = [...giftsData];
     switch (sortType) {
-      case 'lasted':
-        sorted.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-        break;
-      case 'low':
-        sorted.sort((a, b) => a.price - b.price);
-        break;
-      case 'high':
-        sorted.sort((a, b) => b.price - a.price);
-        break;
-      case 'idAsc':
-        sorted.sort((a, b) => a.id - b.id);
-        break;
-      case 'idDesc':
-        sorted.sort((a, b) => b.id - a.id);
-        break;
+      case 'lasted': sorted.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at)); break;
+      case 'low': sorted.sort((a,b)=>a.price-b.price); break;
+      case 'high': sorted.sort((a,b)=>b.price-a.price); break;
+      case 'idAsc': sorted.sort((a,b)=>a.id-b.id); break;
+      case 'idDesc': sorted.sort((a,b)=>b.id-a.id); break;
     }
-
     renderGrid(sorted);
     sortOptions.style.display = 'none';
   });
 });
 
+// ===== Fetch Data & Render Grid Langsung =====
 fetch("export/data.json")
   .then(res => res.json())
   .then(data => {
     giftsData = data;
-    renderGrid(giftsData);
-    console.log("Data loaded:", giftsData.length, "items"); // debug
-    pageLoader.classList.add("hide");
+    filteredGifts = [...giftsData];
+
+    // build gift list untuk search
+    const set = new Set();
+    giftsData.forEach(g => set.add(g.name.replace(/ #\d+$/, '')));
+    giftList = Array.from(set);
+
+    renderGrid(giftsData); // langsung tampil semua card
+    pageLoader.classList.add("hide"); // hide loader
   })
   .catch(err => {
     console.error("FETCH ERROR:", err);
@@ -195,38 +176,31 @@ fetch("export/data.json")
     pageLoader.classList.add("hide");
   });
 
-    renderGrid(giftsData); // render grid pertama kali
-    setTimeout(() => pageLoader.classList.add("hide"), 400);
+// ===== Grid Card Click Event (Delegation) =====
+grid.addEventListener("click", e => {
+  const card = e.target.closest(".card");
+  if (!card) return;
 
-    // PASANG EVENT DELEGATION DI SINI
-    grid.addEventListener("click", e => {
-      const card = e.target.closest(".card");
-      if (!card) return;
+  const nftId = card.dataset.id;
+  const nft = giftsData.find(g => String(g.id) === nftId);
+  if (!nft) return;
 
-      const nftId = card.dataset.id;
-      const nft = giftsData.find(g => String(g.id) === nftId);
-      if (!nft) return;
+  document.getElementById("detailImg").src = getPreviewImage(nft);
+  document.getElementById("detailTitle").textContent = `${formatNFTName(nft.name)} #${nft.id}`;
+  document.getElementById("detailModel").textContent = nft.model || "-";
+  document.getElementById("detailBg").textContent = nft.bg || "-";
+  document.getElementById("detailSymbol").textContent = nft.symbol || "-";
+  document.getElementById("detailPrice").textContent = formatIDR(nft.price);
 
-      document.getElementById("detailImg").src = getPreviewImage(nft);
-      document.getElementById("detailTitle").textContent = `${formatNFTName(nft.name)} #${nft.id}`;
-      document.getElementById("detailModel").textContent = nft.model || "-";
-      document.getElementById("detailBg").textContent = nft.bg || "-";
-      document.getElementById("detailSymbol").textContent = nft.symbol || "-";
-      document.getElementById("detailPrice").textContent = formatIDR(nft.price);
+  const baseUrl = "https://t.me/marketaldibot?start=";
+  const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
+  btnBeli.href = baseUrl + "beli_" + slug;
+  btnNego.href = baseUrl + "nego_" + slug;
 
-      const baseUrl = "https://t.me/marketaldibot?start=";
-      const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
-      btnBeli.href = baseUrl + "beli_" + slug;
-      btnNego.href = baseUrl + "nego_" + slug;
+  openPanel();
+});
 
-      openPanel();
-    });
-  })
-  .catch(err => {
-    console.error("FETCH ERROR:", err);
-    grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
-  });
-
+// ===== Gift Bubble =====
 function addGiftBubble(gift) {
   if (selectedGifts.has(gift)) return;
   selectedGifts.add(gift);
@@ -243,26 +217,26 @@ function addGiftBubble(gift) {
   giftSelected.appendChild(bubble);
   giftSearchInput.value = "";
   giftDropdown.style.display = "none";
-
   filterNFT();
 }
 
+// ===== Click Outside Dropdown =====
 document.addEventListener("click", e => {
   if (!giftSearchInput.contains(e.target) && !giftDropdown.contains(e.target)) {
     giftDropdown.style.display = "none";
   }
 });
 
+// ===== Close Panel Button =====
 const closeBtn = document.getElementById("closePanel");
-if (closeBtn) {
-  closeBtn.addEventListener("click", closePanel);
-}
+if (closeBtn) closeBtn.addEventListener("click", closePanel);
 
+// ===== Filter NFT =====
 function filterNFT() {
   const searchText = giftSearchInput.value.toLowerCase().trim();
-  const model = modelFilter.value;
-  const symbol = symbolFilter.value;
-  const bg = bgFilter.value;
+  const model = modelFilter.value || "";
+  const symbol = symbolFilter.value || "";
+  const bg = bgFilter.value || "";
   const max = maxPrice.value ? parseFloat(maxPrice.value) : Infinity;
 
   cards.forEach(card => {
@@ -290,46 +264,30 @@ function filterNFT() {
   });
 }
 
-[
-  giftSearchInput,
-  modelFilter,
-  symbolFilter,
-  bgFilter,
-  maxPrice
-].forEach(el => {
-  el.addEventListener("input", filterNFT);
+[giftSearchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
+  if(el) el.addEventListener("input", filterNFT);
 });
 
-let startY = 0;
-let currentY = 0;
-let isDragging = false;
-
+// ===== Panel Dragging Touch =====
+let startY = 0, currentY = 0, isDragging = false;
 panel.addEventListener("touchstart", e => {
   if (e.target.closest("a") || e.target.closest(".close-panel")) return;
-
   startY = e.touches[0].clientY;
   isDragging = true;
   panel.classList.add("dragging");
 });
-
 panel.addEventListener("touchmove", e => {
   if (!isDragging) return;
   e.preventDefault();
   currentY = e.touches[0].clientY;
   const diff = currentY - startY;
-  if (diff > 0) {
-    panel.style.bottom = `-${diff}px`;
-  }
+  if (diff > 0) panel.style.bottom = `-${diff}px`;
 });
-
 panel.addEventListener("touchend", e => {
   if (!isDragging) return;
   panel.classList.remove("dragging");
   const diff = currentY - startY;
-  if (diff > 120) closePanel();
-  else panel.style.bottom = "0";
-
+  if (diff > 120) closePanel(); else panel.style.bottom = "0";
   isDragging = false;
-  startY = 0;
-  currentY = 0;
+  startY = currentY = 0;
 });
