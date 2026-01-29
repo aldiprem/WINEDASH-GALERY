@@ -19,6 +19,7 @@ const btnAllSymbols = document.getElementById("btnAllSymbols") || document.creat
 const btnAllBackdrops = document.getElementById("btnAllBackdrops") || document.createElement("button");
 const sortOptions = document.getElementById("sortOptions") || document.createElement("div");
 const subFilters = document.getElementById("subFilters") || document.createElement("div");
+const giftBubbleBoard = document.getElementById("giftBubbleBoard");
 
 overlay.addEventListener("click", closePanel);
 
@@ -108,14 +109,25 @@ giftSearchInput.addEventListener("input", () => {
   giftDropdown.style.display = filtered.length ? "block" : "none";
 });
 
-// ===== All Gifts Button =====
 btnAllGifts.addEventListener('click', () => {
   subFilters.style.display = 'flex';
+  giftBubbleBoard.innerHTML = "";
+
   const counts = {};
-  giftsData.forEach(g => counts[g.slug] = (counts[g.slug] || 0) + 1);
-  btnAllGifts.innerHTML = 'All Gifts ⬇<br>' + Object.entries(counts).map(([slug, count]) => `${slug} (${count})`).join('<br>');
+  giftsData.forEach(g => counts[g.name.replace(/ #\d+$/, '')] = (counts[g.name.replace(/ #\d+$/, '')] || 0) + 1);
+
+  Object.entries(counts).forEach(([name, count]) => {
+    const bubble = document.createElement("div");
+    bubble.className = "gift-bubble";
+    bubble.textContent = `${name} (${count})`;
+    bubble.addEventListener("click", () => {
+      addGiftBubble(name);
+    });
+    giftBubbleBoard.appendChild(bubble);
+  });
+
   selectedGift = null;
-  renderGrid(giftsData); // render langsung
+  renderGrid(giftsData);
 });
 
 // ===== Subfilters =====
@@ -152,6 +164,12 @@ sortOptions.querySelectorAll('div').forEach(opt => {
     }
     renderGrid(sorted);
     sortOptions.style.display = 'none';
+
+    giftBubbleBoard.innerHTML = "";
+    const bubble = document.createElement("div");
+    bubble.className = "gift-bubble";
+    bubble.textContent = `Sorted: ${opt.textContent}`;
+    giftBubbleBoard.appendChild(bubble);
   });
 });
 
