@@ -19,12 +19,12 @@ const btnAllSymbols = document.getElementById("btnAllSymbols");
 const btnAllBackdrops = document.getElementById("btnAllBackdrops");
 const sortOptions = document.getElementById("sortOptions");
 const subFilters = document.getElementById("subFilters");
-const modelFilter = document.getElementById("modelFilter") || { value: "" };
-const symbolFilter = document.getElementById("symbolFilter") || { value: "" };
-const bgFilter = document.getElementById("bgFilter") || { value: "" };
 
 overlay.addEventListener("click", closePanel);
 
+let modelFilterValue = "";
+let symbolFilterValue = "";
+let bgFilterValue = "";
 let giftsData = [];
 let cards = [];
 let giftList = [];
@@ -254,9 +254,9 @@ if (closeBtn) {
 
 function filterNFT() {
   const searchText = giftSearchInput.value.toLowerCase().trim();
-  const model = modelFilter.value;
-  const symbol = symbolFilter.value;
-  const bg = bgFilter.value;
+  const model = modelFilter ? modelFilter.value : modelFilterValue;
+  const symbol = symbolFilter ? symbolFilter.value : symbolFilterValue;
+  const bg = bgFilter ? bgFilter.value : bgFilterValue;
   const max = maxPrice.value ? parseFloat(maxPrice.value) : Infinity;
 
   cards.forEach(card => {
@@ -271,7 +271,9 @@ function filterNFT() {
 
     if (selectedGifts.size > 0) {
       let matched = false;
-      selectedGifts.forEach(gift => { if (cardName.includes(gift.toLowerCase())) matched = true; });
+      selectedGifts.forEach(gift => {
+        if (cardName.includes(gift.toLowerCase())) matched = true;
+      });
       if (!matched) show = false;
     }
 
@@ -284,13 +286,15 @@ function filterNFT() {
   });
 }
 
-[
+const filterElements = [
   giftSearchInput,
   modelFilter,
   symbolFilter,
   bgFilter,
   maxPrice
-].forEach(el => {
+].filter(el => el !== null);
+
+filterElements.forEach(el => {
   el.addEventListener("input", filterNFT);
 });
 
