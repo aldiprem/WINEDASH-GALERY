@@ -19,6 +19,9 @@ const btnAllSymbols = document.getElementById("btnAllSymbols");
 const btnAllBackdrops = document.getElementById("btnAllBackdrops");
 const sortOptions = document.getElementById("sortOptions");
 const subFilters = document.getElementById("subFilters");
+const modelFilter = document.getElementById("modelFilter") || { value: "" };
+const symbolFilter = document.getElementById("symbolFilter") || { value: "" };
+const bgFilter = document.getElementById("bgFilter") || { value: "" };
 
 overlay.addEventListener("click", closePanel);
 
