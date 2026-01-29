@@ -227,6 +227,10 @@ document.addEventListener("click", e => {
   }
 });
 
+document.querySelectorAll('button').forEach(btn => {
+  btn.addEventListener('click', e => e.preventDefault());
+});
+
 // ===== Close Panel Button =====
 const closeBtn = document.getElementById("closePanel");
 if (closeBtn) closeBtn.addEventListener("click", closePanel);
