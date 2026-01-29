@@ -28,6 +28,45 @@
     </div>
   </div>
 
+  <!-- Topbar & Search -->
+  <div class="topbar">
+    <h1>🎁 WINEDASH GIFT</h1>
+
+    <div class="gift-search-container">
+      <input type="text" id="giftSearchInput" placeholder="Search gift...">
+      <input type="number" id="maxPrice" placeholder="Max Price" min="0">
+      <button id="giftSearchBtn">Search</button>
+      <div id="giftDropdown" class="gift-dropdown"></div>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="giftfilters">
+      <select id="giftFilter">
+        <option value="">All Gifts</option>
+      </select>
+
+      <select id="modelFilter">
+        <option value="">All Models</option>
+        <option value="ice">Ice</option>
+        <option value="clover">Clover</option>
+      </select>
+
+      <select id="symbolFilter">
+        <option value="">All Symbols</option>
+        <option value="paw">Paw</option>
+        <option value="luck">Luck</option>
+      </select>
+
+      <select id="bgFilter">
+        <option value="">All Backdrops</option>
+        <option value="blue">Blue</option>
+        <option value="gold">Gold</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="panelOverlay" class="panel-overlay"></div>
+
   <!-- Gift Detail Panel -->
   <div id="giftDetailPanel" class="gift-detail-panel">
     <div class="panel-content">
@@ -73,45 +112,6 @@
       <span id="closePanel" class="close-panel">×</span>
     </div>
   </div>
-
-  <!-- Topbar & Search -->
-  <div class="topbar">
-    <h1>🎁 WINEDASH GIFT</h1>
-
-    <div class="gift-search-container">
-      <input type="text" id="giftSearchInput" placeholder="Search gift...">
-      <input type="number" id="maxPrice" placeholder="Max Price" min="0">
-      <button id="giftSearchBtn">Search</button>
-      <div id="giftDropdown" class="gift-dropdown"></div>
-    </div>
-
-    <!-- FILTER BAR -->
-    <div class="giftfilters">
-      <select id="giftFilter">
-        <option value="">All Gifts</option>
-      </select>
-
-      <select id="modelFilter">
-        <option value="">All Models</option>
-        <option value="ice">Ice</option>
-        <option value="clover">Clover</option>
-      </select>
-
-      <select id="symbolFilter">
-        <option value="">All Symbols</option>
-        <option value="paw">Paw</option>
-        <option value="luck">Luck</option>
-      </select>
-
-      <select id="bgFilter">
-        <option value="">All Backdrops</option>
-        <option value="blue">Blue</option>
-        <option value="gold">Gold</option>
-      </select>
-    </div>
-  </div>
-
-  <div id="panelOverlay" class="panel-overlay"></div>
 
   <!-- NFT GRID -->
   <div class="grid" id="giftGrid"></div>
