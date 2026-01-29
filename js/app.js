@@ -65,43 +65,24 @@ function renderGrid(data) {
   data.forEach(nft => {
     const div = document.createElement("div");
     div.className = "card";
-    div.dataset.id = String(nft.id);
+    div.dataset.id = nft.id;
     div.dataset.name = nft.name.toLowerCase();
-    div.dataset.slug = nft.slug.toLowerCase();
     div.dataset.model = nft.model || "";
     div.dataset.symbol = nft.symbol || "";
     div.dataset.bg = nft.bg || "";
     div.dataset.price = nft.price || 0;
-
     div.innerHTML = `
       <a href="https://t.me/nft/${nft.slug}" target="_blank">
         <img src="${getPreviewImage(nft)}" alt="${formatNFTName(nft.name)}" onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
       </a>
       <h3>${formatNFTName(nft.name)}</h3>
       <p>#${nft.id}</p>
-      <span class="price open-panel">💰 ${formatIDR(nft.price)}</span>
+      <span class="price">💰 ${formatIDR(nft.price)}</span>
     `;
     grid.appendChild(div);
-
-    div.querySelector(".open-panel").addEventListener("click", (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      document.getElementById("detailImg").src = getPreviewImage(nft);
-      document.getElementById("detailTitle").textContent = `${formatNFTName(nft.name)} #${nft.id}`;
-      document.getElementById("detailModel").textContent = nft.model || "-";
-      document.getElementById("detailBg").textContent = nft.bg || "-";
-      document.getElementById("detailSymbol").textContent = nft.symbol || "-";
-      document.getElementById("detailPrice").textContent = formatIDR(nft.price);
-
-      const baseUrl = "https://t.me/marketaldibot?start=";
-      const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
-      btnBeli.href = baseUrl + "beli_" + slug;
-      btnNego.href = baseUrl + "nego_" + slug;
-
-      openPanel();
-    });
   });
-  cards = document.querySelectorAll(".card");
+
+  cards = Array.from(document.querySelectorAll(".card"));
 }
 
 window.addEventListener("scroll", () => {
@@ -204,11 +185,15 @@ fetch("export/data.json")
   .then(res => res.json())
   .then(data => {
     giftsData = data;
-    filteredGifts = [...giftsData];
-
-    const set = new Set();
-    giftsData.forEach(g => set.add(g.name.replace(/ #\d+$/, '')));
-    giftList = Array.from(set);
+    renderGrid(giftsData);
+    console.log("Data loaded:", giftsData.length, "items"); // debug
+    pageLoader.classList.add("hide");
+  })
+  .catch(err => {
+    console.error("FETCH ERROR:", err);
+    grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
+    pageLoader.classList.add("hide");
+  });
 
     renderGrid(giftsData); // render grid pertama kali
     setTimeout(() => pageLoader.classList.add("hide"), 400);
