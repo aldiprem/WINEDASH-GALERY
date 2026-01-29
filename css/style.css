@@ -53,7 +53,7 @@
   width: 100%;
   background: #1c1c1e;
   color: #fff;
-  z-index: 10000;
+  z-index: 1010;
   isolation: isolate;
   transition: bottom .35s ease;
   padding: 15px;
@@ -352,12 +352,13 @@ body {
   background: #007aff;
 }
 
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 15px;
   padding: 15px;
+  min-height: 100px;
+  z-index: 1;
 }
 
 .card {
@@ -395,7 +396,8 @@ body {
   padding: 6px 12px;
   border-radius: 999px;
   font-weight: bold;
-  font-size: 1px;
+  font-size: 14px; /* diperbaiki */
+  color: #fff; /* biar terlihat */
 }
 
 /* ===== PAGE LOADER ===== */
