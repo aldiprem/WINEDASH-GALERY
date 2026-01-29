@@ -200,14 +200,16 @@ grid.addEventListener("click", e => {
   openPanel();
 });
 
-// ===== Gift Bubble =====
 function addGiftBubble(gift) {
   if (selectedGifts.has(gift)) return;
   selectedGifts.add(gift);
 
+  const nft = giftsData.find(g => g.name.replace(/ #\d+$/, '') === gift);
+  const priceText = nft ? ` 💰 ${formatIDR(nft.price)}` : "";
+
   const bubble = document.createElement("div");
   bubble.className = "gift-bubble";
-  bubble.textContent = gift;
+  bubble.textContent = gift + priceText;
   bubble.addEventListener("click", () => {
     selectedGifts.delete(gift);
     bubble.remove();
