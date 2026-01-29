@@ -9,6 +9,7 @@ const giftDropdown = document.getElementById("giftDropdown");
 const giftSelected = document.getElementById("giftSelected");
 const panel = document.getElementById("giftDetailPanel");
 const overlay = document.getElementById("panelOverlay");
+const overlay = document.getElementById("panelOverlay");
 const btnBeli = document.getElementById("btnBeli");
 const btnNego = document.getElementById("btnNego");
 const pageLoader = document.getElementById("pageLoader");
@@ -116,8 +117,6 @@ scrollTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
-
-overlay.addEventListener("click", closePanel);
 
 giftSearchInput.addEventListener("input", () => {
   const val = giftSearchInput.value.toLowerCase();
@@ -290,6 +289,8 @@ let currentY = 0;
 let isDragging = false;
 
 panel.addEventListener("touchstart", e => {
+  if (e.target.closest("a") || e.target.closest(".close-panel")) return;
+
   startY = e.touches[0].clientY;
   isDragging = true;
   panel.classList.add("dragging");
@@ -300,21 +301,17 @@ panel.addEventListener("touchmove", e => {
   e.preventDefault();
   currentY = e.touches[0].clientY;
   const diff = currentY - startY;
-
   if (diff > 0) {
     panel.style.bottom = `-${diff}px`;
   }
 });
 
-panel.addEventListener("touchend", () => {
+panel.addEventListener("touchend", e => {
+  if (!isDragging) return;
   panel.classList.remove("dragging");
   const diff = currentY - startY;
-
-  if (diff > 120) {
-    closePanel();
-  } else {
-    panel.style.bottom = "0";
-  }
+  if (diff > 120) closePanel();
+  else panel.style.bottom = "0";
 
   isDragging = false;
   startY = 0;
