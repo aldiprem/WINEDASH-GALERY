@@ -210,8 +210,32 @@ fetch("export/data.json")
     giftsData.forEach(g => set.add(g.name.replace(/ #\d+$/, '')));
     giftList = Array.from(set);
 
-    renderGrid(giftsData);
+    renderGrid(giftsData); // render grid pertama kali
     setTimeout(() => pageLoader.classList.add("hide"), 400);
+
+    // PASANG EVENT DELEGATION DI SINI
+    grid.addEventListener("click", e => {
+      const card = e.target.closest(".card");
+      if (!card) return;
+
+      const nftId = card.dataset.id;
+      const nft = giftsData.find(g => String(g.id) === nftId);
+      if (!nft) return;
+
+      document.getElementById("detailImg").src = getPreviewImage(nft);
+      document.getElementById("detailTitle").textContent = `${formatNFTName(nft.name)} #${nft.id}`;
+      document.getElementById("detailModel").textContent = nft.model || "-";
+      document.getElementById("detailBg").textContent = nft.bg || "-";
+      document.getElementById("detailSymbol").textContent = nft.symbol || "-";
+      document.getElementById("detailPrice").textContent = formatIDR(nft.price);
+
+      const baseUrl = "https://t.me/marketaldibot?start=";
+      const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
+      btnBeli.href = baseUrl + "beli_" + slug;
+      btnNego.href = baseUrl + "nego_" + slug;
+
+      openPanel();
+    });
   })
   .catch(err => {
     console.error("FETCH ERROR:", err);
