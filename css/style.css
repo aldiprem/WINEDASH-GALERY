@@ -127,29 +127,31 @@
 
 .panel-overlay {
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(10px);
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 9999;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  z-index: 1000;
 }
 
 .panel-overlay.active {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
 
 .gift-detail-panel {
   position: fixed;
-  left: 0;
-  right: 0;
   bottom: -100%;
-  z-index: 999;
-  transition: bottom .35s ease;
+  left: 0;
+  width: 100%;
+  max-height: 90%;
+  background: #fff;
+  z-index: 1010;
+  transition: bottom 0.3s;
 }
-
 .gift-detail-panel.active {
   bottom: 0;
 }
@@ -300,7 +302,7 @@ body {
   margin-left: 6px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  background-color: #4CAF50;
+  background-color: #335C54;
   color: white;
   cursor: pointer;
   font-size: 14px;
@@ -329,7 +331,7 @@ body {
 
 .gift-dropdown {
   position: absolute;
-  background-color: #fff;
+  background-color: #4D7697;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 100%;
