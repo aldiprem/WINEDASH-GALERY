@@ -2,142 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WINEDASH GIFT</title>
+  <title>NFT Gift Telegram</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- Simple Loader -->
+  <!-- Scroll Top Button -->
+  <div id="scrollTopBtn" class="scroll-top-btn">
+    <div class="arrow-up"></div>
+  </div>
+
+  <!-- Page Loader -->
   <div id="pageLoader">
-    <div class="loader">
-      <div class="loader-spin">
-        <i class="fas fa-gift"></i>
+    <div class="loader-box">
+      <div class="loader-logo">
+        <span>W</span><span>G</span>
       </div>
-      <p>Loading gifts...</p>
+      <div class="loader-text">WINEDASH GIFT</div>
+      <div class="loader-bar"><span></span></div>
     </div>
   </div>
 
-  <!-- Scroll Top -->
-  <button id="scrollTopBtn" class="scroll-top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- Header -->
-  <header class="header">
-    <h1><i class="fas fa-gift"></i> WINEDASH GIFT</h1>
+  <!-- ===== HEADER BACKGROUND ONLY ===== -->
+  <header class="header-bg">
+    <h1 class="header-title">🎁 WINEDASH GIFT</h1>
   </header>
 
-  <!-- Main Content -->
-  <main class="container">
-    
-    <!-- Selected Gifts -->
-    <div class="selected-gifts" id="giftSelected"></div>
-    
-    <!-- Search Box -->
-    <div class="search-box">
-      <div class="search-input">
-        <i class="fas fa-search"></i>
-        <input type="text" id="giftSearchInput" placeholder="Search gift name...">
-        <div id="giftDropdown" class="search-dropdown"></div>
+  <section class="search-section">
+  
+    <div class="gift-search-container">
+      <input type="text" id="giftSearchInput" placeholder="Search gift...">
+      <input type="number" id="maxPrice" placeholder="Max Price" min="0">
+      <button id="giftSearchBtn">Search</button>
+      <div id="giftDropdown" class="gift-dropdown"></div>
+    </div>
+  
+    <!-- NEW FILTER BUTTONS -->
+    <div class="giftfilters">
+      <button id="btnAllGifts">All Gifts</button>
+      <div id="subFilters" style="display:none;">
+        <button id="btnAllModels">All Models</button>
+        <button id="btnAllSymbols">All Symbols</button>
+        <button id="btnAllBackdrops">All Backdrops</button>
       </div>
-      <div class="search-options">
-        <input type="number" id="maxPrice" placeholder="Max Price" min="0">
-        <button id="clearFilters" class="btn-clear">
-          <i class="fas fa-times"></i> Clear
-        </button>
+      
+      <button id="btnSort">Sort By ⏬</button>
+      <div id="sortOptions" class="sort-options" style="display:none;">
+  
+      <div class="sort-dropdown">
+        <button id="btnSort">Sort By ⏬</button>
+        <div id="sortOptions" class="sort-options" style="display:none;">
+          <div data-sort="lasted">⏰ Lasted</div>
+          <div data-sort="low">💸 Low To High</div>
+          <div data-sort="high">💸 High To Low</div>
+          <div data-sort="idAsc">🆔 ID Ascending</div>
+          <div data-sort="idDesc">🆔 ID Descending</div>
+        </div>
       </div>
     </div>
-    
-    <!-- Quick Filters -->
-    <div class="quick-filters">
-      <button id="btnAllGifts" class="filter-btn active">
-        <i class="fas fa-gifts"></i> All
-      </button>
-      <select id="modelFilter" class="filter-select">
-        <option value="">All Models</option>
-      </select>
-      <select id="symbolFilter" class="filter-select">
-        <option value="">All Symbols</option>
-      </select>
-      <select id="bgFilter" class="filter-select">
-        <option value="">All Backgrounds</option>
-      </select>
-    </div>
-    
-    <!-- Sort Options -->
-    <div class="sort-options">
-      <button data-sort="newest" class="sort-btn active">
-        <i class="fas fa-clock"></i> Newest
-      </button>
-      <button data-sort="oldest" class="sort-btn">
-        <i class="fas fa-history"></i> Oldest
-      </button>
-      <button data-sort="price-low" class="sort-btn">
-        <i class="fas fa-arrow-up"></i> Price Low
-      </button>
-      <button data-sort="price-high" class="sort-btn">
-        <i class="fas fa-arrow-down"></i> Price High
-      </button>
-      <button data-sort="id-asc" class="sort-btn">
-        <i class="fas fa-hashtag"></i> ID Asc
-      </button>
-      <button data-sort="id-desc" class="sort-btn">
-        <i class="fas fa-hashtag"></i> ID Desc
-      </button>
-    </div>
-    
-    <!-- Grid -->
-    <div class="grid" id="giftGrid">
-      <!-- Cards will be loaded here -->
-    </div>
-    
-  </main>
+  </section>
 
-  <!-- Detail Panel -->
-  <div id="panelOverlay" class="overlay"></div>
-  <div id="giftDetailPanel" class="detail-panel">
-    <div class="panel-header">
-      <h3>Gift Details</h3>
-      <button id="closePanel" class="close-btn">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
+  <!-- Overlay -->
+  <div id="panelOverlay" class="panel-overlay"></div>
+
+  <!-- Gift Detail Panel -->
+  <div id="giftDetailPanel" class="gift-detail-panel">
     <div class="panel-content">
-      <div class="nft-image">
+
+      <div class="image-wrap">
         <img id="detailImg" src="" alt="">
-        <div class="image-badge">
-          <span id="detailId">#000</span>
-          <span id="detailPrice" class="price-badge">Rp0</span>
+        <div class="image-banner">
+          <div id="detailTitle" class="banner-title"></div>
         </div>
       </div>
-      <h2 id="detailTitle" class="nft-title">Gift Name</h2>
-      <div class="nft-info">
-        <div class="info-row">
-          <span><i class="fas fa-cube"></i> Model</span>
-          <strong id="detailModel">-</strong>
+
+      <div class="panel-info-card">
+        <div class="divider"></div>
+
+        <div class="info-row"><span>Model</span><b id="detailModel"></b></div>
+        <div class="info-row"><span>Backdrop</span><b id="detailBg"></b></div>
+        <div class="info-row"><span>Symbol</span><b id="detailSymbol"></b></div>
+
+        <div class="info-row price">
+          <span>Price</span><b id="detailPrice"></b>
         </div>
-        <div class="info-row">
-          <span><i class="fas fa-star"></i> Symbol</span>
-          <strong id="detailSymbol">-</strong>
-        </div>
-        <div class="info-row">
-          <span><i class="fas fa-image"></i> Background</span>
-          <strong id="detailBg">-</strong>
+
+        <div class="divider"></div>
+
+        <div class="panel-buttons">
+          <a id="btnBeli" href="#" target="_blank">BELI</a>
+          <a id="btnNego" href="#" target="_blank">NEGO</a>
         </div>
       </div>
-      <div class="panel-actions">
-        <a id="btnBeli" href="#" target="_blank" class="btn-action btn-buy">
-          <i class="fas fa-shopping-cart"></i> BUY
-        </a>
-        <a id="btnNego" href="#" target="_blank" class="btn-action btn-nego">
-          <i class="fas fa-handshake"></i> NEGO
-        </a>
-      </div>
+
+      <span id="closePanel" class="close-panel">×</span>
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <!-- NFT GRID -->
+  <div class="grid" id="giftGrid"></div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
