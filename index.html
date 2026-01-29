@@ -1,121 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>NFT Gift Telegram</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🎁 Winedash Gift - NFT Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
-  <!-- Scroll Top Button -->
-  <div id="scrollTopBtn" class="scroll-top-btn">
-    <div class="arrow-up"></div>
-  </div>
-
-  <!-- Page Loader -->
-  <div id="pageLoader">
-    <div class="loader-box">
-      <div class="loader-logo">
-        <span>W</span><span>G</span>
-      </div>
-      <div class="loader-text">WINEDASH GIFT</div>
-      <div class="loader-status" id="loaderStatus">
-        Initializing...
-        <span class="loading-dots">
-          <span></span><span></span><span></span>
-        </span>
-      </div>
-      <div class="loader-bar-container">
-        <div class="loader-bar"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== HEADER ===== -->
-  <header class="header-bg">
-    <h1 class="header-title">🎁 WINEDASH GIFT</h1>
-  </header>
-
-  <section class="search-section">
-    <!-- Selected Gifts Container -->
-    <div class="selected-gifts" id="giftSelected"></div>
-  
-    <!-- Search Bar -->
-    <div class="gift-search-container">
-      <input type="text" id="giftSearchInput" placeholder="Search gift name...">
-      <input type="number" id="maxPrice" placeholder="Max Price" min="0">
-      <button id="giftSearchBtn">Search</button>
-      <div id="giftDropdown" class="gift-dropdown"></div>
-    </div>
-  
-    <!-- Filter Buttons -->
-    <div class="giftfilters">
-      <button id="btnAllGifts">All Gifts</button>
-      
-      <div id="subFilters" style="display:none;">
-        <button id="btnAllModels">All Models</button>
-        <button id="btnAllSymbols">All Symbols</button>
-        <button id="btnAllBackdrops">All Backdrops</button>
-      </div>
-  
-      <!-- Sort Dropdown - HANYA SATU -->
-      <div class="sort-dropdown">
-        <button id="btnSort">Sort By ⏬</button>
-        <div id="sortOptions" class="sort-options" style="display:none;">
-          <div data-sort="lasted">⏰ Lasted</div>
-          <div data-sort="low">💸 Low To High</div>
-          <div data-sort="high">💸 High To Low</div>
-          <div data-sort="idAsc">🆔 ID Ascending</div>
-          <div data-sort="idDesc">🆔 ID Descending</div>
+    <!-- Loader -->
+    <div id="pageLoader" class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-w">W</span>
+                <span class="logo-g">G</span>
+            </div>
+            <h2 class="loader-title">WINEDASH GIFT</h2>
+            <div class="loader-text" id="loaderStatus">Loading marketplace...</div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- NFT GRID -->
-  <div class="grid" id="giftGrid"></div>
+    <!-- Scroll to Top -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
-  <!-- Overlay -->
-  <div id="panelOverlay" class="panel-overlay"></div>
-
-  <!-- Gift Detail Panel -->
-  <div id="giftDetailPanel" class="gift-detail-panel">
-    <div class="panel-content">
-      <div class="image-wrap">
-        <img id="detailImg" src="" alt="">
-        <div class="image-banner">
-          <div id="detailTitle" class="banner-title"></div>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-gift"></i>
+                <h1>WINEDASH <span class="highlight">GIFT</span></h1>
+            </div>
+            <div class="stats">
+                <span id="giftCount">0</span> Gifts Available
+            </div>
         </div>
-      </div>
+    </header>
 
-      <div class="panel-info-card">
-        <div class="divider"></div>
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-input-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="giftSearchInput" placeholder="Search gifts by name, model, symbol...">
+                    <button id="clearSearch" class="clear-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label><i class="fas fa-tag"></i> Max Price</label>
+                        <div class="price-input">
+                            <input type="number" id="maxPrice" placeholder="Any price" min="0">
+                            <span class="currency">IDR</span>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label><i class="fas fa-cube"></i> Model</label>
+                        <select id="modelFilter">
+                            <option value="">All Models</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label><i class="fas fa-star"></i> Symbol</label>
+                        <select id="symbolFilter">
+                            <option value="">All Symbols</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label><i class="fas fa-image"></i> Backdrop</label>
+                        <select id="bgFilter">
+                            <option value="">All Backdrops</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="selected-filters" id="giftSelected"></div>
+                
+                <div class="search-dropdown" id="giftDropdown"></div>
+            </div>
+        </section>
 
-        <div class="info-row"><span>Model</span><b id="detailModel"></b></div>
-        <div class="info-row"><span>Backdrop</span><b id="detailBg"></b></div>
-        <div class="info-row"><span>Symbol</span><b id="detailSymbol"></b></div>
+        <!-- Filters Bar -->
+        <section class="filters-bar">
+            <div class="filters-container">
+                <div class="filter-buttons">
+                    <button id="btnAllGifts" class="filter-btn active">
+                        <i class="fas fa-gifts"></i> All Gifts
+                    </button>
+                    <button id="btnSort" class="filter-btn">
+                        <i class="fas fa-sort-amount-down"></i> Sort
+                    </button>
+                    <div class="sort-dropdown" id="sortOptions">
+                        <div data-sort="newest"><i class="fas fa-clock"></i> Newest First</div>
+                        <div data-sort="oldest"><i class="fas fa-history"></i> Oldest First</div>
+                        <div data-sort="price-low"><i class="fas fa-arrow-up"></i> Price: Low to High</div>
+                        <div data-sort="price-high"><i class="fas fa-arrow-down"></i> Price: High to Low</div>
+                        <div data-sort="id-low"><i class="fas fa-sort-numeric-down"></i> ID: Low to High</div>
+                        <div data-sort="id-high"><i class="fas fa-sort-numeric-down-alt"></i> ID: High to Low</div>
+                    </div>
+                </div>
+                
+                <div class="results-info">
+                    <span id="resultsCount">0</span> results
+                </div>
+            </div>
+        </section>
 
-        <div class="info-row price">
-          <span>Price</span><b id="detailPrice"></b>
+        <!-- Gifts Grid -->
+        <section class="gifts-section">
+            <div class="grid" id="giftGrid">
+                <!-- Cards will be loaded here -->
+            </div>
+            
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No gifts found</h3>
+                <p>Try adjusting your search or filters</p>
+                <button id="resetFilters" class="reset-btn">
+                    <i class="fas fa-redo"></i> Reset Filters
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Gift Detail Panel -->
+    <div id="panelOverlay" class="panel-overlay"></div>
+    
+    <div id="giftDetailPanel" class="gift-detail-panel">
+        <div class="panel-header">
+            <button class="close-panel" id="closePanel">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="panel-title">Gift Details</div>
         </div>
-
-        <div class="divider"></div>
-
-        <div class="panel-buttons">
-          <a id="btnBeli" href="#" target="_blank">BELI</a>
-          <a id="btnNego" href="#" target="_blank">NEGO</a>
+        
+        <div class="panel-content">
+            <div class="gift-image">
+                <img id="detailImg" src="" alt="Gift Image">
+                <div class="image-overlay">
+                    <div class="gift-name" id="detailTitle"></div>
+                    <div class="gift-id">#<span id="detailId"></span></div>
+                </div>
+            </div>
+            
+            <div class="gift-info">
+                <div class="info-section">
+                    <h3><i class="fas fa-info-circle"></i> Information</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-cube"></i> Model</span>
+                            <span class="info-value" id="detailModel">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-star"></i> Symbol</span>
+                            <span class="info-value" id="detailSymbol">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-image"></i> Backdrop</span>
+                            <span class="info-value" id="detailBg">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-hashtag"></i> Slug</span>
+                            <span class="info-value" id="detailSlug">-</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-section">
+                    <div class="price-tag">
+                        <span class="price-label">Current Price</span>
+                        <span class="price-amount" id="detailPrice">Rp 0</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a id="btnBeli" href="#" target="_blank" class="action-btn buy-btn">
+                        <i class="fas fa-shopping-cart"></i> Buy Now
+                    </a>
+                    <a id="btnNego" href="#" target="_blank" class="action-btn negotiate-btn">
+                        <i class="fas fa-handshake"></i> Negotiate
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <span id="closePanel" class="close-panel">×</span>
     </div>
-  </div>
 
-  <!-- GANTI INI: app.js MENJADI main.js -->
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
