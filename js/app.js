@@ -20,6 +20,8 @@ const btnAllBackdrops = document.getElementById("btnAllBackdrops") || document.c
 const sortOptions = document.getElementById("sortOptions") || document.createElement("div");
 const subFilters = document.getElementById("subFilters") || document.createElement("div");
 const giftBubbleBoard = document.getElementById("giftBubbleBoard");
+const filterOverlay = document.getElementById("filterOverlay");
+const filterBubbleBoard = document.getElementById("filterBubbleBoard");
 
 overlay.addEventListener("click", closePanel);
 
@@ -110,45 +112,49 @@ giftSearchInput.addEventListener("input", () => {
 });
 
 btnAllGifts.addEventListener('click', () => {
-  subFilters.style.display = 'flex';
-  giftBubbleBoard.innerHTML = "";
-
-  const counts = {};
-  giftsData.forEach(g => counts[g.name.replace(/ #\d+$/, '')] = (counts[g.name.replace(/ #\d+$/, '')] || 0) + 1);
-
-  Object.entries(counts).forEach(([name, count]) => {
-    const bubble = document.createElement("div");
-    bubble.className = "gift-bubble";
-    bubble.textContent = `${name} (${count})`;
-    bubble.addEventListener("click", () => {
-      addGiftBubble(name);
-    });
-    giftBubbleBoard.appendChild(bubble);
-  });
-
-  selectedGift = null;
-  renderGrid(giftsData);
+  const gifts = [...new Set(giftsData.map(g => g.name.replace(/ #\d+$/, '')))];
+  openFilterModal(gifts, "gift");
 });
 
-// ===== Subfilters =====
 btnAllModels.addEventListener('click', () => {
   const models = [...new Set(giftsData.map(g => g.model).filter(Boolean))];
-  btnAllModels.innerHTML = 'All Models ⬇<br>' + models.join('<br>');
+  openFilterModal(models, "model");
 });
 
 btnAllSymbols.addEventListener('click', () => {
   const symbols = [...new Set(giftsData.map(g => g.symbol).filter(Boolean))];
-  btnAllSymbols.innerHTML = 'All Symbols ⬇<br>' + symbols.join('<br>');
+  openFilterModal(symbols, "symbol");
 });
 
 btnAllBackdrops.addEventListener('click', () => {
   const bgs = [...new Set(giftsData.map(g => g.background).filter(Boolean))];
-  btnAllBackdrops.innerHTML = 'All Backdrops ⬇<br>' + bgs.join('<br>');
+  openFilterModal(bgs, "bg");
 });
 
-// ===== Sort =====
+function applySort(sortTypeText) {
+  const sortTypeMap = {
+    "⏰ Lasted": "lasted",
+    "💸 Low To High": "low",
+    "💸 High To Low": "high",
+    "🆔 ID Ascending": "idAsc",
+    "🆔 ID Descending": "idDesc"
+  };
+  const sortType = sortTypeMap[sortTypeText];
+
+  const sorted = [...giftsData];
+  switch(sortType) {
+    case 'lasted': sorted.sort((a,b)=>new Date(b.created_at)-new Date(a.created_at)); break;
+    case 'low': sorted.sort((a,b)=>a.price-b.price); break;
+    case 'high': sorted.sort((a,b)=>b.price-a.price); break;
+    case 'idAsc': sorted.sort((a,b)=>a.id-b.id); break;
+    case 'idDesc': sorted.sort((a,b)=>b.id-a.id); break;
+  }
+  renderGrid(sorted);
+}
+
 btnSort.addEventListener('click', () => {
-  sortOptions.style.display = sortOptions.style.display === 'block' ? 'none' : 'block';
+  const sorts = ["⏰ Lasted", "💸 Low To High", "💸 High To Low", "🆔 ID Ascending", "🆔 ID Descending"];
+  openFilterModal(sorts, "sort");
 });
 
 sortOptions.querySelectorAll('div').forEach(opt => {
@@ -321,6 +327,38 @@ function updateSubFiltersForSelectedGifts() {
   btnAllSymbols.innerHTML = 'All Symbols ⬇<br>' + symbols.join('<br>');
   btnAllBackdrops.innerHTML = 'All Backdrops ⬇<br>' + bgs.join('<br>');
 }
+
+function openFilterModal(items, type) {
+  filterBubbleBoard.innerHTML = "";
+  items.forEach(item => {
+    const bubble = document.createElement("div");
+    bubble.className = "filter-bubble";
+    bubble.textContent = item;
+
+    bubble.addEventListener("click", () => {
+      switch(type) {
+        case "gift": addGiftBubble(item); break;
+        case "model": modelFilter.value = item; filterNFT(); break;
+        case "symbol": symbolFilter.value = item; filterNFT(); break;
+        case "bg": bgFilter.value = item; filterNFT(); break;
+        case "sort": applySort(item); break;
+      }
+      closeFilterModal();
+    });
+
+    filterBubbleBoard.appendChild(bubble);
+  });
+
+  filterOverlay.style.display = "flex";
+}
+
+function closeFilterModal() {
+  filterOverlay.style.display = "none";
+}
+
+filterOverlay.addEventListener("click", e => {
+  if(e.target === filterOverlay) closeFilterModal();
+});
 
 // ===== Click Outside Dropdown =====
 document.addEventListener("click", e => {
