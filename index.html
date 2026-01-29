@@ -30,40 +30,36 @@
     <h1 class="header-title">🎁 WINEDASH GIFT</h1>
   </header>
 
-  <!-- ===== SEARCH & FILTER (NORMAL FLOW) ===== -->
   <section class="search-section">
-
+  
     <div class="gift-search-container">
       <input type="text" id="giftSearchInput" placeholder="Search gift...">
       <input type="number" id="maxPrice" placeholder="Max Price" min="0">
       <button id="giftSearchBtn">Search</button>
       <div id="giftDropdown" class="gift-dropdown"></div>
     </div>
-
+  
+    <!-- NEW FILTER BUTTONS -->
     <div class="giftfilters">
-      <select id="giftFilter">
-        <option value="">All Gifts</option>
-      </select>
-
-      <select id="modelFilter">
-        <option value="">All Models</option>
-        <option value="ice">Ice</option>
-        <option value="clover">Clover</option>
-      </select>
-
-      <select id="symbolFilter">
-        <option value="">All Symbols</option>
-        <option value="paw">Paw</option>
-        <option value="luck">Luck</option>
-      </select>
-
-      <select id="bgFilter">
-        <option value="">All Backdrops</option>
-        <option value="blue">Blue</option>
-        <option value="gold">Gold</option>
-      </select>
+      <button id="btnAllGifts">All Gifts</button>
+  
+      <div id="subFilters" style="display:none;">
+        <button id="btnAllModels">All Models</button>
+        <button id="btnAllSymbols">All Symbols</button>
+        <button id="btnAllBackdrops">All Backdrops</button>
+      </div>
+  
+      <div class="sort-dropdown">
+        <button id="btnSort">Sort By ⏬</button>
+        <div id="sortOptions" class="sort-options" style="display:none;">
+          <div data-sort="lasted">⏰ Lasted</div>
+          <div data-sort="low">💸 Low To High</div>
+          <div data-sort="high">💸 High To Low</div>
+          <div data-sort="idAsc">🆔 ID Ascending</div>
+          <div data-sort="idDesc">🆔 ID Descending</div>
+        </div>
+      </div>
     </div>
-
   </section>
 
   <!-- Overlay -->
