@@ -3,97 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <title>NFT Gift Telegram</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-  <!-- Scroll Top Button -->
-  <div id="scrollTopBtn" class="scroll-top-btn">
-    <div class="arrow-up"></div>
-  </div>
-
-  <!-- Page Loader -->
-  <div id="pageLoader">
-    <div class="loader-box">
-      <div class="loader-logo">
-        <span>W</span><span>G</span>
-      </div>
-      <div class="loader-text">WINEDASH GIFT</div>
-      <div class="loader-bar"><span></span></div>
-    </div>
-  </div>
-
-  <!-- ===== HEADER BACKGROUND ONLY ===== -->
-  <header class="header-bg">
-    <h1 class="header-title">🎁 WINEDASH GIFT</h1>
-  </header>
-
-  <section class="search-section">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   
-    <div class="gift-search-container">
-      <form onsubmit="return false">
-        <input type="text" id="giftSearchInput" placeholder="Search gift...">
-        <input type="number" id="maxPrice" placeholder="Max Price" min="0">
-        <button id="giftSearchBtn" type="button">Search</button>
-      </form>
-      <div id="giftDropdown" class="gift-dropdown"></div>
+  <body>
+  
+    <!-- Scroll Top Button -->
+    <div id="scrollTopBtn" class="scroll-top-btn">
+      <div class="arrow-up"></div>
     </div>
-    
-    <div class="giftfilters">
-      <button id="btnAllGifts" type="button">All Gifts</button>
-      <div id="subFilters" style="display:none;">
-        <button id="btnAllModels" type="button">All Models</button>
-        <button id="btnAllSymbols" type="button">All Symbols</button>
-        <button id="btnAllBackdrops" type="button">All Backdrops</button>
-      </div>
-    
-      <button id="btnSort" type="button">Sort By ⏬</button>
-      <div id="sortOptions" class="sort-options" style="display:none;">
-        <div data-sort="lasted">⏰ Lasted</div>
-        <div data-sort="low">💸 Low To High</div>
-        <div data-sort="high">💸 High To Low</div>
-        <div data-sort="idAsc">🆔 ID Ascending</div>
-        <div data-sort="idDesc">🆔 ID Descending</div>
+  
+    <!-- Page Loader -->
+    <div id="pageLoader">
+      <div class="loader-box">
+        <div class="loader-logo">
+          <span>W</span><span>G</span>
+        </div>
+        <div class="loader-text">WINEDASH GIFT</div>
+        <div class="loader-bar"><span></span></div>
       </div>
     </div>
-  </section>
+  
+    <!-- ===== HEADER BACKGROUND ONLY ===== -->
+    <header class="header-bg">
+      <h1 class="header-title">🎁 WINEDASH GIFT</h1>
+    </header>
+  
+    <section class="search-section">
+    
+      <div class="gift-search-container">
+        <form onsubmit="return false">
+          <input type="text" id="giftSearchInput" placeholder="Search gift...">
+          <input type="number" id="maxPrice" placeholder="Max Price" min="0">
+          <button id="giftSearchBtn" type="button">Search</button>
+        </form>
+        <div id="giftDropdown" class="gift-dropdown"></div>
+      </div>
 
-  <!-- Overlay -->
-  <div id="panelOverlay" class="panel-overlay"></div>
+      <div class="gift-search-container">
+        <form onsubmit="return false">
+          <input type="text" id="giftSearchInput" placeholder="Search gift...">
+          <input type="number" id="maxPrice" placeholder="Max Price" min="0">
+          <button id="giftSearchBtn" type="button">Search</button>
+        </form>
+        <div id="giftDropdown" class="gift-dropdown"></div>
+      
+        <div id="giftBubbleBoard" class="gift-bubble-board"></div>
+      </div>
 
+      <div class="giftfilters">
+        <button id="btnAllGifts" type="button">All Gifts</button>
+        <div id="subFilters" style="display:none;">
+          <button id="btnAllModels" type="button">All Models</button>
+          <button id="btnAllSymbols" type="button">All Symbols</button>
+          <button id="btnAllBackdrops" type="button">All Backdrops</button>
+        </div>
+      
+        <button id="btnSort" type="button">Sort By ⏬</button>
+        <div id="sortOptions" class="sort-options" style="display:none;">
+          <div data-sort="lasted">⏰ Lasted</div>
+          <div data-sort="low">💸 Low To High</div>
+          <div data-sort="high">💸 High To Low</div>
+          <div data-sort="idAsc">🆔 ID Ascending</div>
+          <div data-sort="idDesc">🆔 ID Descending</div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Overlay -->
+    <div id="panelOverlay" class="panel-overlay"></div>
+  
   <!-- Gift Detail Panel -->
   <div id="giftDetailPanel" class="gift-detail-panel">
+  
+    <span id="closePanel" class="close-panel">×</span> <!-- pindahkan ke sini -->
+  
     <div class="panel-content">
-
+  
       <div class="image-wrap">
         <img id="detailImg" src="" alt="">
         <div class="image-banner">
           <div id="detailTitle" class="banner-title"></div>
         </div>
       </div>
-
+  
       <div class="panel-info-card">
         <div class="divider"></div>
-
+  
         <div class="info-row"><span>Model</span><b id="detailModel"></b></div>
         <div class="info-row"><span>Backdrop</span><b id="detailBg"></b></div>
         <div class="info-row"><span>Symbol</span><b id="detailSymbol"></b></div>
-
+  
         <div class="info-row price">
           <span>Price</span><b id="detailPrice"></b>
         </div>
-
+  
         <div class="divider"></div>
-
+  
         <div class="panel-buttons">
           <a id="btnBeli" href="#" target="_blank">BELI</a>
           <a id="btnNego" href="#" target="_blank">NEGO</a>
         </div>
       </div>
-
-      <span id="closePanel" class="close-panel">×</span>
+  
     </div>
   </div>
 
