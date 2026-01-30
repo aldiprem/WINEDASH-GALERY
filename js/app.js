@@ -1,3 +1,4 @@
+// ===== ELEMENT REFERENCES =====
 const giftFilter = document.getElementById("giftFilter") || { value: "" };
 const modelFilter = document.getElementById("modelFilter") || { value: "" };
 const symbolFilter = document.getElementById("symbolFilter") || { value: "" };
@@ -23,6 +24,26 @@ const subFilters = document.getElementById("subFilters") || document.createEleme
 const giftBubbleBoard = document.getElementById("giftBubbleBoard");
 const filterOverlay = document.getElementById("filterOverlay");
 const filterBubbleBoard = document.getElementById("filterBubbleBoard");
+
+// ===== NEW ELEMENTS FOR FILTER PANEL =====
+const filterToggleBtn = document.getElementById("filterToggleBtn") || document.createElement("button");
+const filterPanel = document.getElementById("filterPanel") || document.createElement("div");
+const closeFilterPanel = document.getElementById("closeFilterPanel") || document.createElement("button");
+const applyFilterBtn = document.getElementById("applyFilterBtn") || document.createElement("button");
+const cancelFilterBtn = document.getElementById("cancelFilterBtn") || document.createElement("button");
+
+// Filter select elements
+const giftFilterSelect = document.getElementById("giftFilterSelect") || document.createElement("select");
+const modelFilterSelect = document.getElementById("modelFilterSelect") || document.createElement("select");
+const symbolFilterSelect = document.getElementById("symbolFilterSelect") || document.createElement("select");
+const bgFilterSelect = document.getElementById("bgFilterSelect") || document.createElement("select");
+const maxPriceFilter = document.getElementById("maxPriceFilter") || document.createElement("input");
+
+// Search inputs for filter
+const giftSearchFilter = document.getElementById("giftSearchFilter") || document.createElement("input");
+const modelSearchFilter = document.getElementById("modelSearchFilter") || document.createElement("input");
+const symbolSearchFilter = document.getElementById("symbolSearchFilter") || document.createElement("input");
+const bgSearchFilter = document.getElementById("bgSearchFilter") || document.createElement("input");
 
 // ===== VARIABLES =====
 let giftsData = [];
@@ -73,13 +94,15 @@ function renderGrid(data) {
         div.dataset.price = nft.price || 0;
         
         div.innerHTML = `
-            <a href="https://t.me/nft/${nft.slug}" target="_blank">
+            <div class="card-image-container">
                 <img src="${getPreviewImage(nft)}" alt="${formatNFTName(nft.name)}" 
                      onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
-            </a>
-            <h3>${formatNFTName(nft.name)}</h3>
-            <p>#${nft.id}</p>
-            <span class="price">💰 ${formatIDR(nft.price)}</span>
+            </div>
+            <div class="card-content">
+                <h3>${formatNFTName(nft.name)}</h3>
+                <p>#${nft.id}</p>
+                <span class="price">💰 ${formatIDR(nft.price)}</span>
+            </div>
         `;
         grid.appendChild(div);
     });
@@ -197,84 +220,261 @@ function createBubble(name, count = "", type = "gift") {
 }
 
 function buildBubbles() {
-    if (!giftBubbleBoard) return;
-    
-    giftBubbleBoard.innerHTML = "";
+    if (giftBubbleBoard) {
+        giftBubbleBoard.innerHTML = "";
 
-    // Gifts
-    const giftCounts = {};
-    giftsData.forEach(g => {
-        const name = g.name.replace(/ #\d+$/, '');
-        giftCounts[name] = (giftCounts[name] || 0) + 1;
-    });
-    
-    Object.entries(giftCounts).forEach(([name, count]) => {
-        const bubble = createBubble(name, count, "gift");
-        giftBubbleBoard.appendChild(bubble);
-    });
-
-    // Models
-    const modelsSet = new Set(giftsData.map(g => g.model).filter(Boolean));
-    modelsSet.forEach(m => {
-        const bubble = createBubble(m, "", "model");
-        giftBubbleBoard.appendChild(bubble);
-    });
-
-    // Symbols
-    const symbolsSet = new Set(giftsData.map(g => g.symbol).filter(Boolean));
-    symbolsSet.forEach(s => {
-        const bubble = createBubble(s, "", "symbol");
-        giftBubbleBoard.appendChild(bubble);
-    });
-
-    // Backdrops
-    const bgsSet = new Set(giftsData.map(g => g.background).filter(Boolean));
-    bgsSet.forEach(b => {
-        const bubble = createBubble(b, "", "bg");
-        giftBubbleBoard.appendChild(bubble);
-    });
-}
-
-// ===== FILTER MODAL FUNCTIONS =====
-function openFilterModal(items, type) {
-    if (!filterBubbleBoard) return;
-    
-    filterBubbleBoard.innerHTML = "";
-    
-    items.forEach(item => {
-        const bubble = document.createElement("div");
-        bubble.className = "filter-bubble";
-        bubble.textContent = item;
-
-        bubble.addEventListener("click", () => {
-            switch(type) {
-                case "gift": 
-                    addGiftBubble(item); 
-                    break;
-                case "model": 
-                    modelFilter.value = item; 
-                    filterNFT(); 
-                    break;
-                case "symbol": 
-                    symbolFilter.value = item; 
-                    filterNFT(); 
-                    break;
-                case "bg": 
-                    bgFilter.value = item; 
-                    filterNFT(); 
-                    break;
-                case "sort": 
-                    applySort(item); 
-                    break;
-            }
-            closeFilterModal();
+        // Gifts
+        const giftCounts = {};
+        giftsData.forEach(g => {
+            const name = g.name.replace(/ #\d+$/, '');
+            giftCounts[name] = (giftCounts[name] || 0) + 1;
+        });
+        
+        Object.entries(giftCounts).forEach(([name, count]) => {
+            const bubble = createBubble(name, count, "gift");
+            giftBubbleBoard.appendChild(bubble);
         });
 
-        filterBubbleBoard.appendChild(bubble);
-    });
+        // Models
+        const modelsSet = new Set(giftsData.map(g => g.model).filter(Boolean));
+        modelsSet.forEach(m => {
+            const bubble = createBubble(m, "", "model");
+            giftBubbleBoard.appendChild(bubble);
+        });
 
-    if (filterOverlay) {
-        filterOverlay.style.display = "flex";
+        // Symbols
+        const symbolsSet = new Set(giftsData.map(g => g.symbol).filter(Boolean));
+        symbolsSet.forEach(s => {
+            const bubble = createBubble(s, "", "symbol");
+            giftBubbleBoard.appendChild(bubble);
+        });
+
+        // Backdrops
+        const bgsSet = new Set(giftsData.map(g => g.background).filter(Boolean));
+        bgsSet.forEach(b => {
+            const bubble = createBubble(b, "", "bg");
+            giftBubbleBoard.appendChild(bubble);
+        });
+    }
+}
+
+// ===== FILTER PANEL FUNCTIONS =====
+function openFilterPanel() {
+    if (filterPanel) {
+        filterPanel.classList.add("active");
+        document.body.style.overflow = "hidden";
+    }
+}
+
+function closeFilterPanelFunc() {
+    if (filterPanel) {
+        filterPanel.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+}
+
+function populateFilterOptions() {
+    // Populate gift options
+    if (giftFilterSelect) {
+        const giftSet = new Set(giftsData.map(g => g.name.replace(/ #\d+$/, '')));
+        giftSet.forEach(gift => {
+            const option = document.createElement("option");
+            option.value = gift;
+            option.textContent = gift;
+            
+            // Mark as selected if already in selectedGifts
+            if (selectedGifts.has(gift)) {
+                option.selected = true;
+            }
+            
+            giftFilterSelect.appendChild(option);
+        });
+    }
+
+    // Populate model options
+    if (modelFilterSelect) {
+        const modelSet = new Set(giftsData.map(g => g.model).filter(Boolean));
+        modelSet.forEach(model => {
+            const option = document.createElement("option");
+            option.value = model;
+            option.textContent = model;
+            
+            // Mark as selected if matches current filter
+            if (modelFilter.value === model) {
+                option.selected = true;
+            }
+            
+            modelFilterSelect.appendChild(option);
+        });
+    }
+
+    // Populate symbol options
+    if (symbolFilterSelect) {
+        const symbolSet = new Set(giftsData.map(g => g.symbol).filter(Boolean));
+        symbolSet.forEach(symbol => {
+            const option = document.createElement("option");
+            option.value = symbol;
+            option.textContent = symbol;
+            
+            // Mark as selected if matches current filter
+            if (symbolFilter.value === symbol) {
+                option.selected = true;
+            }
+            
+            symbolFilterSelect.appendChild(option);
+        });
+    }
+
+    // Populate backdrop options
+    if (bgFilterSelect) {
+        const bgSet = new Set(giftsData.map(g => g.background).filter(Boolean));
+        bgSet.forEach(bg => {
+            const option = document.createElement("option");
+            option.value = bg;
+            option.textContent = bg;
+            
+            // Mark as selected if matches current filter
+            if (bgFilter.value === bg) {
+                option.selected = true;
+            }
+            
+            bgFilterSelect.appendChild(option);
+        });
+    }
+
+    // Set max price
+    if (maxPriceFilter && maxPrice.value) {
+        maxPriceFilter.value = maxPrice.value;
+    }
+}
+
+function setupFilterSearch(inputElement, selectElement) {
+    if (inputElement && selectElement) {
+        inputElement.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const options = selectElement.options;
+            
+            for (let i = 0; i < options.length; i++) {
+                const option = options[i];
+                const text = option.textContent.toLowerCase();
+                option.style.display = text.includes(searchTerm) ? '' : 'none';
+            }
+        });
+    }
+}
+
+function applyFilters() {
+    // Clear existing selected gifts
+    selectedGifts.clear();
+    if (giftSelected) giftSelected.innerHTML = "";
+
+    // Get selected gifts from filter panel
+    if (giftFilterSelect) {
+        Array.from(giftFilterSelect.selectedOptions).forEach(option => {
+            addGiftBubble(option.value);
+        });
+    }
+
+    // Get selected model
+    if (modelFilterSelect) {
+        const selectedModels = Array.from(modelFilterSelect.selectedOptions).map(opt => opt.value);
+        modelFilter.value = selectedModels.length > 0 ? selectedModels[0] : "";
+    }
+
+    // Get selected symbol
+    if (symbolFilterSelect) {
+        const selectedSymbols = Array.from(symbolFilterSelect.selectedOptions).map(opt => opt.value);
+        symbolFilter.value = selectedSymbols.length > 0 ? selectedSymbols[0] : "";
+    }
+
+    // Get selected backdrop
+    if (bgFilterSelect) {
+        const selectedBgs = Array.from(bgFilterSelect.selectedOptions).map(opt => opt.value);
+        bgFilter.value = selectedBgs.length > 0 ? selectedBgs[0] : "";
+    }
+
+    // Get max price
+    if (maxPriceFilter && maxPrice) {
+        maxPrice.value = maxPriceFilter.value;
+    }
+
+    // Apply filters
+    filterNFT();
+    closeFilterPanelFunc();
+}
+
+function resetFilters() {
+    // Clear all selections in filter panel
+    if (giftFilterSelect) giftFilterSelect.selectedIndex = -1;
+    if (modelFilterSelect) modelFilterSelect.selectedIndex = -1;
+    if (symbolFilterSelect) symbolFilterSelect.selectedIndex = -1;
+    if (bgFilterSelect) bgFilterSelect.selectedIndex = -1;
+    if (maxPriceFilter) maxPriceFilter.value = "";
+    
+    // Clear search inputs in filter panel
+    if (giftSearchFilter) giftSearchFilter.value = "";
+    if (modelSearchFilter) modelSearchFilter.value = "";
+    if (symbolSearchFilter) symbolSearchFilter.value = "";
+    if (bgSearchFilter) bgSearchFilter.value = "";
+    
+    // Reset main filter inputs
+    modelFilter.value = "";
+    symbolFilter.value = "";
+    bgFilter.value = "";
+    maxPrice.value = "";
+    
+    // Reset selected gifts
+    selectedGifts.clear();
+    if (giftSelected) giftSelected.innerHTML = "";
+    
+    // Reset search input
+    if (giftSearchInput) giftSearchInput.value = "";
+    
+    // Show all gifts
+    filterNFT();
+    closeFilterPanelFunc();
+}
+
+// ===== FILTER MODAL FUNCTIONS (KEEPING OLD FUNCTIONALITY) =====
+function openFilterModal(items, type) {
+    if (filterBubbleBoard) {
+        filterBubbleBoard.innerHTML = "";
+        
+        items.forEach(item => {
+            const bubble = document.createElement("div");
+            bubble.className = "filter-bubble";
+            bubble.textContent = item;
+
+            bubble.addEventListener("click", () => {
+                switch(type) {
+                    case "gift": 
+                        addGiftBubble(item); 
+                        break;
+                    case "model": 
+                        modelFilter.value = item; 
+                        filterNFT(); 
+                        break;
+                    case "symbol": 
+                        symbolFilter.value = item; 
+                        filterNFT(); 
+                        break;
+                    case "bg": 
+                        bgFilter.value = item; 
+                        filterNFT(); 
+                        break;
+                    case "sort": 
+                        applySort(item); 
+                        break;
+                }
+                closeFilterModal();
+            });
+
+            filterBubbleBoard.appendChild(bubble);
+        });
+
+        if (filterOverlay) {
+            filterOverlay.style.display = "flex";
+        }
     }
 }
 
@@ -316,6 +516,7 @@ function applySort(sortTypeText) {
     renderGrid(sorted);
 }
 
+// ===== EVENT LISTENERS =====
 if (overlay) {
     overlay.addEventListener("click", closePanel);
 }
@@ -338,33 +539,31 @@ if (scrollTopBtn) {
 if (giftSearchInput) {
     giftSearchInput.addEventListener("input", () => {
         const val = giftSearchInput.value.toLowerCase();
-        giftDropdown.innerHTML = "";
-        
-        if (!val) { 
-            if (giftDropdown.style) {
+        if (giftDropdown) {
+            giftDropdown.innerHTML = "";
+            
+            if (!val) { 
                 giftDropdown.style.display = "none"; 
+                return; 
             }
-            return; 
-        }
 
-        const filtered = giftList.filter(g => 
-            g.toLowerCase().includes(val) && !selectedGifts.has(g)
-        );
-        
-        filtered.forEach(g => {
-            const div = document.createElement("div");
-            div.textContent = g;
-            div.addEventListener("click", () => addGiftBubble(g));
-            giftDropdown.appendChild(div);
-        });
+            const filtered = giftList.filter(g => 
+                g.toLowerCase().includes(val) && !selectedGifts.has(g)
+            );
+            
+            filtered.forEach(g => {
+                const div = document.createElement("div");
+                div.textContent = g;
+                div.addEventListener("click", () => addGiftBubble(g));
+                giftDropdown.appendChild(div);
+            });
 
-        if (giftDropdown.style) {
             giftDropdown.style.display = filtered.length ? "block" : "none";
         }
     });
 }
 
-// Filter Buttons
+// Filter Buttons (old)
 if (btnAllGifts) {
     btnAllGifts.addEventListener('click', () => {
         const gifts = [...new Set(giftsData.map(g => g.name.replace(/ #\d+$/, '')))];
@@ -466,8 +665,8 @@ if (grid) {
 
         const baseUrl = "https://t.me/marketaldibot?start=";
         const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
-        if (btnBeli.href) btnBeli.href = baseUrl + "beli_" + slug;
-        if (btnNego.href) btnNego.href = baseUrl + "nego_" + slug;
+        if (btnBeli) btnBeli.href = baseUrl + "beli_" + slug;
+        if (btnNego) btnNego.href = baseUrl + "nego_" + slug;
 
         openPanel();
     });
@@ -502,6 +701,49 @@ if (closeBtn) closeBtn.addEventListener("click", closePanel);
 [giftSearchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
     if(el && el.addEventListener) el.addEventListener("input", filterNFT);
 });
+
+// ===== NEW FILTER PANEL EVENT LISTENERS =====
+if (filterToggleBtn) {
+    filterToggleBtn.addEventListener('click', openFilterPanel);
+}
+
+if (closeFilterPanel) {
+    closeFilterPanel.addEventListener('click', closeFilterPanelFunc);
+}
+
+if (applyFilterBtn) {
+    applyFilterBtn.addEventListener('click', applyFilters);
+}
+
+if (cancelFilterBtn) {
+    cancelFilterBtn.addEventListener('click', resetFilters);
+}
+
+// Setup search for filter select boxes
+if (giftSearchFilter && giftFilterSelect) {
+    setupFilterSearch(giftSearchFilter, giftFilterSelect);
+}
+
+if (modelSearchFilter && modelFilterSelect) {
+    setupFilterSearch(modelSearchFilter, modelFilterSelect);
+}
+
+if (symbolSearchFilter && symbolFilterSelect) {
+    setupFilterSearch(symbolSearchFilter, symbolFilterSelect);
+}
+
+if (bgSearchFilter && bgFilterSelect) {
+    setupFilterSearch(bgSearchFilter, bgFilterSelect);
+}
+
+// Close filter panel when clicking outside
+if (filterPanel) {
+    filterPanel.addEventListener('click', (e) => {
+        if (e.target === filterPanel) {
+            closeFilterPanelFunc();
+        }
+    });
+}
 
 // ===== PANEL DRAGGING (TOUCH) =====
 let startY = 0, currentY = 0, isDragging = false;
@@ -545,6 +787,14 @@ fetch("export/data.json")
 
         renderGrid(giftsData);
         buildBubbles();
+        populateFilterOptions(); // Initialize filter options
+        
+        // Hide old filter buttons
+        if (btnAllGifts) btnAllGifts.style.display = 'none';
+        if (btnAllModels) btnAllModels.style.display = 'none';
+        if (btnAllSymbols) btnAllSymbols.style.display = 'none';
+        if (btnAllBackdrops) btnAllBackdrops.style.display = 'none';
+        
         if (pageLoader) pageLoader.classList.add("hide");
     })
     .catch(err => {
