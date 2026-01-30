@@ -42,8 +42,8 @@
         "model": "Cold Feet 0.55%",
         "symbol": "Mittens 0.55%",
         "bg": "Shamrock Green 0.55%",
-        "price": 0,
-        "saldo": 0,
+        "price": 100000,
+        "saldo": 100000,
         "posting": "https://t.me/market_wine/57/None",
         "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/XmasStocking-11214.jpg"
     },
