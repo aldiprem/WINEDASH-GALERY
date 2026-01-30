@@ -122,9 +122,11 @@ function renderGrid(data) {
                      onerror="this.src='https://via.placeholder.com/400x300?text=No+Preview'">
             </div>
             <div class="card-content">
-                <h3>${giftName}</h3>
-                <p>#${giftId}</p>
-                <span class="price">${giftPrice}</span>
+                <div class="card-text">
+                    <h3 class="gift-name">${giftName}</h3>
+                    <p class="gift-id">#${giftId}</p>
+                </div>
+                <span class="price-bubble">${giftPrice}</span>
             </div>
         `;
         
