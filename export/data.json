@@ -18,8 +18,8 @@
         "model": "Slurp-Slurp 0.55%",
         "symbol": "Cupcake 0.55%",
         "bg": "Battleship Grey 3.87%",
-        "price": 0,
-        "saldo": 0,
+        "price": 100000,
+        "saldo": 100000,
         "posting": "https://t.me/market_wine/57/None",
         "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/InstantRamen-307901.jpg"
     },
