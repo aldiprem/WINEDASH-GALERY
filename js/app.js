@@ -45,6 +45,14 @@ const modelSearchFilter = document.getElementById("modelSearchFilter") || docume
 const symbolSearchFilter = document.getElementById("symbolSearchFilter") || document.createElement("input");
 const bgSearchFilter = document.getElementById("bgSearchFilter") || document.createElement("input");
 
+// Detail Panel Elements
+const detailImg = document.getElementById("detailImg") || document.createElement("img");
+const detailTitle = document.getElementById("detailTitle") || document.createElement("div");
+const detailModel = document.getElementById("detailModel") || document.createElement("b");
+const detailBg = document.getElementById("detailBg") || document.createElement("b");
+const detailSymbol = document.getElementById("detailSymbol") || document.createElement("b");
+const detailPrice = document.getElementById("detailPrice") || document.createElement("b");
+
 // ===== VARIABLES =====
 let giftsData = [];
 let cards = [];
@@ -60,12 +68,20 @@ function formatIDR(number) {
 
 function formatNFTName(name) {
     if (!name) return "";
-    return name.replace(/[\s#_-]*\d+$/g, "").trim();
+    // Hapus angka dan karakter khusus di akhir nama
+    return name.replace(/\s*#\d+$/, "").trim();
 }
 
 function getPreviewImage(nft) {
-    if (nft.image && nft.image.includes("/previews/")) return nft.image;
-    return `previews/${nft.slug}.jpg`;
+    // Prioritaskan gambar dari data jika ada
+    if (nft.image && (nft.image.includes("/previews/") || nft.image.includes("http"))) {
+        return nft.image;
+    }
+    // Fallback ke file preview berdasarkan slug atau ID
+    if (nft.slug) {
+        return `previews/${nft.slug}.jpg`;
+    }
+    return `previews/${nft.id}.jpg`;
 }
 
 // ===== PANEL FUNCTIONS =====
@@ -83,6 +99,7 @@ function closePanel() {
 // ===== GRID FUNCTIONS =====
 function renderGrid(data) {
     grid.innerHTML = "";
+    
     data.forEach(nft => {
         const div = document.createElement("div");
         div.className = "card";
@@ -93,21 +110,29 @@ function renderGrid(data) {
         div.dataset.bg = nft.bg || nft.background || "";
         div.dataset.price = nft.price || 0;
         
+        // Format data untuk ditampilkan
+        const giftName = formatNFTName(nft.name);
+        const giftId = nft.id;
+        const giftPrice = formatIDR(nft.price);
+        const previewImage = getPreviewImage(nft);
+        
         div.innerHTML = `
             <div class="card-image-container">
-                <img src="${getPreviewImage(nft)}" alt="${formatNFTName(nft.name)}" 
-                     onerror="this.src='https://via.placeholder.com/300?text=No+Preview'">
+                <img src="${previewImage}" alt="${giftName}" 
+                     onerror="this.src='https://via.placeholder.com/400x300?text=No+Preview'">
             </div>
             <div class="card-content">
-                <h3>${formatNFTName(nft.name)}</h3>
-                <p>#${nft.id}</p>
-                <span class="price">💰 ${formatIDR(nft.price)}</span>
+                <h3>${giftName}</h3>
+                <p>#${giftId}</p>
+                <span class="price">${giftPrice}</span>
             </div>
         `;
+        
         grid.appendChild(div);
     });
 
     cards = Array.from(document.querySelectorAll(".card"));
+    filterNFT(); // Apply any existing filters after rendering
 }
 
 // ===== FILTER FUNCTIONS =====
@@ -126,8 +151,10 @@ function filterNFT() {
         const cardBg = card.dataset.bg || "";
         const cardPrice = parseFloat(card.dataset.price) || 0;
 
+        // Search by name
         if (searchText && !cardName.includes(searchText)) show = false;
 
+        // Filter by selected gifts
         if (selectedGifts.size > 0) {
             let matched = false;
             selectedGifts.forEach(gift => {
@@ -136,9 +163,16 @@ function filterNFT() {
             if (!matched) show = false;
         }
 
+        // Filter by model
         if (model && cardModel !== model) show = false;
+        
+        // Filter by symbol
         if (symbol && cardSymbol !== symbol) show = false;
+        
+        // Filter by backdrop
         if (bg && cardBg !== bg) show = false;
+        
+        // Filter by max price
         if (cardPrice > max) show = false;
 
         card.style.display = show ? "block" : "none";
@@ -161,9 +195,9 @@ function updateSubFiltersForSelectedGifts() {
     const symbols = [...new Set(relevantGifts.map(g => g.symbol).filter(Boolean))];
     const bgs = [...new Set(relevantGifts.map(g => g.background).filter(Boolean))];
 
-    btnAllModels.innerHTML = 'All Models ⬇<br>' + models.join('<br>');
-    btnAllSymbols.innerHTML = 'All Symbols ⬇<br>' + symbols.join('<br>');
-    btnAllBackdrops.innerHTML = 'All Backdrops ⬇<br>' + bgs.join('<br>');
+    if (btnAllModels) btnAllModels.innerHTML = 'All Models ⬇<br>' + models.join('<br>');
+    if (btnAllSymbols) btnAllSymbols.innerHTML = 'All Symbols ⬇<br>' + symbols.join('<br>');
+    if (btnAllBackdrops) btnAllBackdrops.innerHTML = 'All Backdrops ⬇<br>' + bgs.join('<br>');
 }
 
 // ===== GIFT BUBBLE FUNCTIONS =====
@@ -171,22 +205,34 @@ function addGiftBubble(gift) {
     if (selectedGifts.has(gift)) return;
     selectedGifts.add(gift);
 
-    const nft = giftsData.find(g => g.name.replace(/ #\d+$/, '') === gift);
-    const priceText = nft ? ` 💰 ${formatIDR(nft.price)}` : "";
-
+    // Create bubble element
     const bubble = document.createElement("div");
     bubble.className = "gift-bubble";
-    bubble.textContent = gift + priceText;
-    bubble.addEventListener("click", () => {
-        selectedGifts.delete(gift);
-        bubble.remove();
-        filterNFT();
-        updateSubFiltersForSelectedGifts();
+    bubble.textContent = gift;
+    
+    // Add close button
+    const closeBtn = document.createElement("span");
+    closeBtn.textContent = " ×";
+    closeBtn.style.cursor = "pointer";
+    closeBtn.style.fontWeight = "bold";
+    bubble.appendChild(closeBtn);
+
+    // Add click event to remove bubble
+    bubble.addEventListener("click", (e) => {
+        if (e.target === closeBtn || e.target === bubble) {
+            selectedGifts.delete(gift);
+            bubble.remove();
+            filterNFT();
+            updateSubFiltersForSelectedGifts();
+        }
     });
 
-    giftSelected.appendChild(bubble);
+    if (giftSelected) {
+        giftSelected.appendChild(bubble);
+    }
+    
     giftSearchInput.value = "";
-    giftDropdown.style.display = "none";
+    if (giftDropdown) giftDropdown.style.display = "none";
     filterNFT();
     updateSubFiltersForSelectedGifts();
 }
@@ -195,6 +241,7 @@ function createBubble(name, count = "", type = "gift") {
     const bubble = document.createElement("div");
     bubble.className = "gift-bubble";
     bubble.textContent = count ? `${name} (${count})` : name;
+    bubble.dataset.type = type;
 
     bubble.addEventListener("click", () => {
         switch (type) {
@@ -202,15 +249,15 @@ function createBubble(name, count = "", type = "gift") {
                 addGiftBubble(name);
                 break;
             case "model":
-                modelFilter.value = name;
+                modelFilter.value = modelFilter.value === name ? "" : name;
                 filterNFT();
                 break;
             case "symbol":
-                symbolFilter.value = name;
+                symbolFilter.value = symbolFilter.value === name ? "" : name;
                 filterNFT();
                 break;
             case "bg":
-                bgFilter.value = name;
+                bgFilter.value = bgFilter.value === name ? "" : name;
                 filterNFT();
                 break;
         }
@@ -274,6 +321,12 @@ function closeFilterPanelFunc() {
 }
 
 function populateFilterOptions() {
+    // Clear existing options
+    if (giftFilterSelect) giftFilterSelect.innerHTML = "";
+    if (modelFilterSelect) modelFilterSelect.innerHTML = "";
+    if (symbolFilterSelect) symbolFilterSelect.innerHTML = "";
+    if (bgFilterSelect) bgFilterSelect.innerHTML = "";
+
     // Populate gift options
     if (giftFilterSelect) {
         const giftSet = new Set(giftsData.map(g => g.name.replace(/ #\d+$/, '')));
@@ -282,7 +335,6 @@ function populateFilterOptions() {
             option.value = gift;
             option.textContent = gift;
             
-            // Mark as selected if already in selectedGifts
             if (selectedGifts.has(gift)) {
                 option.selected = true;
             }
@@ -299,7 +351,6 @@ function populateFilterOptions() {
             option.value = model;
             option.textContent = model;
             
-            // Mark as selected if matches current filter
             if (modelFilter.value === model) {
                 option.selected = true;
             }
@@ -316,7 +367,6 @@ function populateFilterOptions() {
             option.value = symbol;
             option.textContent = symbol;
             
-            // Mark as selected if matches current filter
             if (symbolFilter.value === symbol) {
                 option.selected = true;
             }
@@ -333,7 +383,6 @@ function populateFilterOptions() {
             option.value = bg;
             option.textContent = bg;
             
-            // Mark as selected if matches current filter
             if (bgFilter.value === bg) {
                 option.selected = true;
             }
@@ -395,7 +444,7 @@ function applyFilters() {
 
     // Get max price
     if (maxPriceFilter && maxPrice) {
-        maxPrice.value = maxPriceFilter.value;
+        maxPrice.value = maxPriceFilter.value || "";
     }
 
     // Apply filters
@@ -498,19 +547,19 @@ function applySort(sortTypeText) {
     const sorted = [...giftsData];
     switch(sortType) {
         case 'lasted': 
-            sorted.sort((a,b) => new Date(b.created_at) - new Date(a.created_at)); 
+            sorted.sort((a,b) => new Date(b.created_at || 0) - new Date(a.created_at || 0)); 
             break;
         case 'low': 
-            sorted.sort((a,b) => a.price - b.price); 
+            sorted.sort((a,b) => (a.price || 0) - (b.price || 0)); 
             break;
         case 'high': 
-            sorted.sort((a,b) => b.price - a.price); 
+            sorted.sort((a,b) => (b.price || 0) - (a.price || 0)); 
             break;
         case 'idAsc': 
-            sorted.sort((a,b) => a.id - b.id); 
+            sorted.sort((a,b) => (a.id || 0) - (b.id || 0)); 
             break;
         case 'idDesc': 
-            sorted.sort((a,b) => b.id - a.id); 
+            sorted.sort((a,b) => (b.id || 0) - (a.id || 0)); 
             break;
     }
     renderGrid(sorted);
@@ -563,7 +612,7 @@ if (giftSearchInput) {
     });
 }
 
-// Filter Buttons (old)
+// Filter Buttons (old - kept for compatibility)
 if (btnAllGifts) {
     btnAllGifts.addEventListener('click', () => {
         const gifts = [...new Set(giftsData.map(g => g.name.replace(/ #\d+$/, '')))];
@@ -609,19 +658,19 @@ if (sortOptions && sortOptions.children.length) {
             
             switch (sortType) {
                 case 'lasted': 
-                    sorted.sort((a,b) => new Date(b.created_at) - new Date(a.created_at)); 
+                    sorted.sort((a,b) => new Date(b.created_at || 0) - new Date(a.created_at || 0)); 
                     break;
                 case 'low': 
-                    sorted.sort((a,b) => a.price - b.price); 
+                    sorted.sort((a,b) => (a.price || 0) - (b.price || 0)); 
                     break;
                 case 'high': 
-                    sorted.sort((a,b) => b.price - a.price); 
+                    sorted.sort((a,b) => (b.price || 0) - (a.price || 0)); 
                     break;
                 case 'idAsc': 
-                    sorted.sort((a,b) => a.id - b.id); 
+                    sorted.sort((a,b) => (a.id || 0) - (b.id || 0)); 
                     break;
                 case 'idDesc': 
-                    sorted.sort((a,b) => b.id - a.id); 
+                    sorted.sort((a,b) => (b.id || 0) - (a.id || 0)); 
                     break;
             }
             
@@ -649,24 +698,31 @@ if (grid) {
         const nft = giftsData.find(g => String(g.id) === nftId);
         if (!nft) return;
 
-        const detailImg = document.getElementById("detailImg");
-        const detailTitle = document.getElementById("detailTitle");
-        const detailModel = document.getElementById("detailModel");
-        const detailBg = document.getElementById("detailBg");
-        const detailSymbol = document.getElementById("detailSymbol");
-        const detailPrice = document.getElementById("detailPrice");
-
-        if (detailImg) detailImg.src = getPreviewImage(nft);
+        // Update detail panel with NFT data
+        if (detailImg) {
+            detailImg.src = getPreviewImage(nft);
+            detailImg.alt = formatNFTName(nft.name);
+        }
+        
         if (detailTitle) detailTitle.textContent = `${formatNFTName(nft.name)} #${nft.id}`;
         if (detailModel) detailModel.textContent = nft.model || "-";
-        if (detailBg) detailBg.textContent = nft.bg || "-";
+        if (detailBg) detailBg.textContent = nft.bg || nft.background || "-";
         if (detailSymbol) detailSymbol.textContent = nft.symbol || "-";
         if (detailPrice) detailPrice.textContent = formatIDR(nft.price);
 
+        // Generate Telegram links
         const baseUrl = "https://t.me/marketaldibot?start=";
         const slug = nft.name.replace(/\s+/g, "") + "_" + nft.id;
-        if (btnBeli) btnBeli.href = baseUrl + "beli_" + slug;
-        if (btnNego) btnNego.href = baseUrl + "nego_" + slug;
+        
+        if (btnBeli) {
+            btnBeli.href = baseUrl + "beli_" + slug;
+            btnBeli.textContent = "BELI";
+        }
+        
+        if (btnNego) {
+            btnNego.href = baseUrl + "nego_" + slug;
+            btnNego.textContent = "NEGO";
+        }
 
         openPanel();
     });
@@ -701,6 +757,11 @@ if (closeBtn) closeBtn.addEventListener("click", closePanel);
 [giftSearchInput, modelFilter, symbolFilter, bgFilter, maxPrice].forEach(el => {
     if(el && el.addEventListener) el.addEventListener("input", filterNFT);
 });
+
+// Search Button Event
+if (document.getElementById("giftSearchBtn")) {
+    document.getElementById("giftSearchBtn").addEventListener("click", filterNFT);
+}
 
 // ===== NEW FILTER PANEL EVENT LISTENERS =====
 if (filterToggleBtn) {
@@ -776,29 +837,86 @@ if (panel) {
 
 // ===== INITIAL LOAD =====
 fetch("export/data.json")
-    .then(res => res.json())
+    .then(res => {
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+    })
     .then(data => {
-        giftsData = data;
+        giftsData = Array.isArray(data) ? data : [];
         filteredGifts = [...giftsData];
 
+        // Create gift list without numbers
         const set = new Set();
-        giftsData.forEach(g => set.add(g.name.replace(/ #\d+$/, '')));
+        giftsData.forEach(g => {
+            const giftName = g.name.replace(/ #\d+$/, '');
+            if (giftName) set.add(giftName);
+        });
         giftList = Array.from(set);
 
         renderGrid(giftsData);
         buildBubbles();
-        populateFilterOptions(); // Initialize filter options
+        populateFilterOptions();
         
-        // Hide old filter buttons
+        // Hide old filter buttons if they exist
         if (btnAllGifts) btnAllGifts.style.display = 'none';
         if (btnAllModels) btnAllModels.style.display = 'none';
         if (btnAllSymbols) btnAllSymbols.style.display = 'none';
         if (btnAllBackdrops) btnAllBackdrops.style.display = 'none';
         
-        if (pageLoader) pageLoader.classList.add("hide");
+        if (pageLoader) {
+            pageLoader.classList.add("hide");
+        }
     })
     .catch(err => {
         console.error("FETCH ERROR:", err);
-        grid.innerHTML = "<p style='color:red'>Gagal load data</p>";
-        if (pageLoader) pageLoader.classList.add("hide");
+        
+        // Show error message in grid
+        if (grid) {
+            grid.innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: var(--accent);">
+                    <h3>⚠️ Gagal Memuat Data</h3>
+                    <p>Periksa koneksi internet Anda atau file data.json</p>
+                    <button onclick="location.reload()" style="
+                        margin-top: 1rem;
+                        padding: 0.75rem 1.5rem;
+                        background: var(--gradient);
+                        border: none;
+                        border-radius: var(--radius);
+                        color: var(--darker);
+                        font-weight: bold;
+                        cursor: pointer;
+                    ">
+                        Coba Lagi
+                    </button>
+                </div>
+            `;
+        }
+        
+        if (pageLoader) {
+            pageLoader.classList.add("hide");
+        }
     });
+
+// ===== UTILITY FUNCTIONS =====
+// Function to handle Enter key in search input
+if (giftSearchInput) {
+    giftSearchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            filterNFT();
+        }
+    });
+}
+
+// Function to clear all filters
+window.clearAllFilters = function() {
+    resetFilters();
+};
+
+// Function to show all gifts
+window.showAllGifts = function() {
+    if (giftSearchInput) giftSearchInput.value = "";
+    resetFilters();
+    filterNFT();
+};
