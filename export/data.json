@@ -66,8 +66,8 @@
         "model": "Cheese 0.55%",
         "symbol": "Mushroom 0.55%",
         "bg": "Deep Cyan 0.55%",
-        "price": 0,
-        "saldo": 0,
+        "price": 150000,
+        "saldo": 150000,
         "posting": "https://t.me/market_wine/57/None",
         "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/CloverPin-37908.jpg"
     },
