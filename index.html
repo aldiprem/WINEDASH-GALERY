@@ -24,7 +24,7 @@
         <h1 class="header-title">🎁 WINEDASH GIFT</h1>
     </header>
 
-    <!-- Hidden filter inputs for JavaScript -->
+    <!-- Hidden filter inputs -->
     <input type="hidden" id="modelFilter">
     <input type="hidden" id="symbolFilter">
     <input type="hidden" id="bgFilter">
@@ -32,46 +32,100 @@
 
     <!-- Search Section -->
     <section class="search-section">
-        <div class="gift-search-container">
-            <form onsubmit="return false" class="search-form">
-                <div class="search-input-group">
-                    <input type="text" id="giftSearchInput" placeholder="Search gift..." class="search-input">
-                    <input type="number" id="maxPrice" placeholder="Max Price" min="0" class="price-input">
-                    <button id="giftSearchBtn" type="button" class="search-button">Search</button>
-                </div>
-            </form>
-            <div id="giftDropdown" class="gift-dropdown"></div>
-            <div id="giftBubbleBoard" class="gift-bubble-board"></div>
-            <div id="giftSelected" class="gift-selected"></div>
+        <!-- Search input dan Filter button -->
+        <div class="search-filter-wrapper">
+            <div class="gift-search-container">
+                <form onsubmit="return false" class="search-form">
+                    <div class="search-input-group">
+                        <input type="text" id="giftSearchInput" placeholder="Search gift..." class="search-input">
+                        <button id="giftSearchBtn" type="button" class="search-button">Search</button>
+                    </div>
+                </form>
+                <div id="giftDropdown" class="gift-dropdown"></div>
+                <div id="giftSelected" class="gift-selected"></div>
+            </div>
+
+            <!-- Filter Button -->
+            <button id="filterToggleBtn" class="filter-toggle-btn">
+                <span class="filter-icon">⚙️</span>
+                Filter
+            </button>
         </div>
 
-        <div class="giftfilters">
-            <div class="filter-row">
-                <button id="btnAllGifts" type="button" class="filter-btn">All Gifts</button>
-                <button id="btnAllModels" type="button" class="filter-btn">All Models</button>
-                <button id="btnAllSymbols" type="button" class="filter-btn">All Symbols</button>
-                <button id="btnAllBackdrops" type="button" class="filter-btn">All Backdrops</button>
+        <!-- Filter Panel (Awalnya tersembunyi) -->
+        <div id="filterPanel" class="filter-panel">
+            <div class="filter-panel-header">
+                <h3>Filter Options</h3>
+                <button id="closeFilterPanel" class="close-filter-panel">×</button>
             </div>
-            
-            <div class="sort-row">
-                <div class="sort-dropdown">
-                    <button id="btnSort" type="button" class="sort-btn">Sort By ⏬</button>
-                    <div id="sortOptions" class="sort-options">
-                        <div data-sort="lasted">⏰ Lasted</div>
-                        <div data-sort="low">💸 Low To High</div>
-                        <div data-sort="high">💸 High To Low</div>
-                        <div data-sort="idAsc">🆔 ID Ascending</div>
-                        <div data-sort="idDesc">🆔 ID Descending</div>
+
+            <div class="filter-panel-content">
+                <!-- Gift Filter -->
+                <div class="filter-group">
+                    <label for="giftFilterSelect">Gift Type</label>
+                    <div class="filter-input-group">
+                        <input type="text" id="giftSearchFilter" placeholder="Search gift type..." 
+                               class="filter-search-input">
+                        <select id="giftFilterSelect" class="filter-select" multiple>
+                            <!-- Options akan diisi oleh JavaScript -->
+                        </select>
                     </div>
                 </div>
+
+                <!-- Model Filter -->
+                <div class="filter-group">
+                    <label for="modelFilterSelect">Model</label>
+                    <div class="filter-input-group">
+                        <input type="text" id="modelSearchFilter" placeholder="Search model..." 
+                               class="filter-search-input">
+                        <select id="modelFilterSelect" class="filter-select" multiple>
+                            <!-- Options akan diisi oleh JavaScript -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Symbol Filter -->
+                <div class="filter-group">
+                    <label for="symbolFilterSelect">Symbol</label>
+                    <div class="filter-input-group">
+                        <input type="text" id="symbolSearchFilter" placeholder="Search symbol..." 
+                               class="filter-search-input">
+                        <select id="symbolFilterSelect" class="filter-select" multiple>
+                            <!-- Options akan diisi oleh JavaScript -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Backdrop Filter -->
+                <div class="filter-group">
+                    <label for="bgFilterSelect">Backdrop</label>
+                    <div class="filter-input-group">
+                        <input type="text" id="bgSearchFilter" placeholder="Search backdrop..." 
+                               class="filter-search-input">
+                        <select id="bgFilterSelect" class="filter-select" multiple>
+                            <!-- Options akan diisi oleh JavaScript -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Max Price -->
+                <div class="filter-group">
+                    <label for="maxPriceFilter">Max Price (Rp)</label>
+                    <input type="number" id="maxPriceFilter" placeholder="Maximum price" 
+                           min="0" class="price-input-filter">
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="filter-action-buttons">
+                    <button id="applyFilterBtn" class="btn-apply">SEARCH</button>
+                    <button id="cancelFilterBtn" class="btn-cancel">BATALKAN</button>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Overlay Bubble Filter -->
-    <div id="filterOverlay" class="filter-overlay">
-        <div id="filterBubbleBoard" class="filter-bubble-board"></div>
-    </div>
+        <!-- Gift Bubble Board -->
+        <div id="giftBubbleBoard" class="gift-bubble-board"></div>
+    </section>
 
     <!-- NFT Grid -->
     <div class="grid" id="giftGrid"></div>
