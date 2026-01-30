@@ -14,5 +14,11 @@ __pycache__/
 # backup only
 backup_*.db
 
+*.tgs
+photo_*.jpg
+__pycache__/
+*.log
+.env
+
 # backend source
 b.py
