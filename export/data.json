@@ -1,17 +1,5 @@
 [
   {
-    "id": "267272",
-    "name": "InstantRamen #267272",
-    "slug": "InstantRamen-267272",
-    "model": "First Date 0.54%",
-    "symbol": "Kite 0.54%",
-    "bg": "Dark Lilac 1.08%",
-    "price": 0,
-    "saldo": 0,
-    "posting": "https://t.me/market_wine/57/None",
-    "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/InstantRamen-267272.jpg"
-  },
-  {
     "id": "18343",
     "name": "JellyBunny #18343",
     "slug": "JellyBunny-18343",
@@ -262,6 +250,18 @@
     "saldo": 169000,
     "posting": "https://t.me/market_wine/57/None",
     "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/MousseCake-41470.jpg"
+  },
+  {
+    "id": "19476",
+    "name": "LowRider #19476",
+    "slug": "LowRider-19476",
+    "model": "Alpine Gold 0.54%",
+    "symbol": "Pumpkin Coach 1.08%",
+    "bg": "Black 0.54%",
+    "price": 0,
+    "saldo": 0,
+    "posting": "https://t.me/market_wine/57/None",
+    "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/LowRider-19476.jpg"
   },
   {
     "id": "24603",
@@ -905,7 +905,7 @@
     "slug": "CookieHeart-160955",
     "model": "Toasted 0.54%",
     "symbol": "Pegasus 0.54%",
-    "bg": "Dark Lilac 1.08%",
+    "bg": "Dark Lilac 0.54%",
     "price": 135000,
     "saldo": 135000,
     "posting": "https://t.me/market_wine/57/None",
@@ -1948,7 +1948,7 @@
     "name": "SwagBag #138763",
     "slug": "SwagBag-138763",
     "model": "Money Bag 0.54%",
-    "symbol": "Pumpkin Coach 0.54%",
+    "symbol": "Pumpkin Coach 1.08%",
     "bg": "Raspberry 12.9%",
     "price": 180000,
     "saldo": 180000,
