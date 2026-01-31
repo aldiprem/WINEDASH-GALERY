@@ -2082,8 +2082,8 @@
         "model": "Princess Cut 0.54%",
         "symbol": "Calm Wolf 0.54%",
         "bg": "Burgundy 4.84%",
-        "price": 0,
-        "saldo": 0,
+        "price": 1000000,
+        "saldo": 1000000,
         "posting": "https://t.me/market_wine/57/None",
         "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/DiamondRing-9381.jpg"
     },
