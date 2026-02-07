@@ -642,8 +642,8 @@
         "model": "Vanilla 1.07%",
         "symbol": "Star 0.53%",
         "bg": "Mystic Pearl 2.14%",
-        "price": 200000,
-        "saldo": 200000,
+        "price": 0,
+        "saldo": 0,
         "posting": "https://t.me/market_wine/57/None",
         "image": "https://aldiprem.github.io/WINEDASH-GALERY/previews/GingerCookie-138709.jpg"
     },
