@@ -2,211 +2,295 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NFT Gift Telegram</title>
+    <title>WINEDASH GIFT - NFT Marketplace</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Marketplace NFT Gift Telegram - Temukan koleksi eksklusif dengan harga terbaik">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Page Loader -->
+    <!-- PAGE LOADER -->
     <div id="pageLoader">
         <div class="loader-box">
             <div class="loader-logo">
                 <span>W</span><span>G</span>
             </div>
             <div class="loader-text">WINEDASH GIFT</div>
-            <div class="loader-bar"><span></span></div>
+            <div class="loader-bar">
+                <span></span>
+            </div>
         </div>
     </div>
 
-    <!-- Header -->
-    <header class="header-bg">
-        <h1 class="header-title">🎁 WINEDASH GIFT</h1>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <h1 class="header-title">
+                <span class="header-icon">🎁</span>
+                WINEDASH GIFT
+            </h1>
+        </div>
     </header>
 
-    <!-- Hidden filter inputs -->
+    <!-- HIDDEN FILTER INPUTS -->
     <input type="hidden" id="modelFilter">
     <input type="hidden" id="symbolFilter">
     <input type="hidden" id="bgFilter">
     <input type="hidden" id="giftFilter">
+    <input type="hidden" id="maxPrice">
 
-    <!-- Search Section -->
-    <section class="search-section">
-        <!-- Search input dan Filter button -->
-        <div class="search-filter-wrapper">
-            <div class="gift-search-container">
-                <form onsubmit="return false" class="search-form">
-                    <div class="search-input-group">
-                        <input type="text" id="giftSearchInput" placeholder="Search gift..." class="search-input">
-                        <button id="giftSearchBtn" type="button" class="search-button">Search</button>
-                    </div>
-                </form>
-                <div id="giftDropdown" class="gift-dropdown"></div>
-                <div id="giftSelected" class="gift-selected"></div>
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <!-- SEARCH & FILTER SECTION -->
+        <section class="search-section">
+            <div class="search-wrapper">
+                <!-- Search Container -->
+                <div class="search-container">
+                    <form onsubmit="return false" class="search-form">
+                        <div class="search-group">
+                            <input 
+                                type="text" 
+                                id="giftSearchInput" 
+                                placeholder="Cari gift..." 
+                                class="search-input"
+                                autocomplete="off"
+                            >
+                            <button type="button" id="giftSearchBtn" class="search-btn">
+                                <span>🔍</span>
+                                Cari
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Search Dropdown -->
+                    <div id="giftDropdown" class="search-dropdown"></div>
+                    
+                    <!-- Selected Gifts Bubbles -->
+                    <div id="giftSelected" class="selected-bubbles"></div>
+                </div>
+
+                <!-- Filter Button -->
+                <button id="filterToggleBtn" class="filter-btn">
+                    <span class="filter-icon">⚙️</span>
+                    <span>Filter</span>
+                </button>
             </div>
 
-            <!-- Filter Button -->
-            <button id="filterToggleBtn" class="filter-toggle-btn">
-                <span class="filter-icon">⚙️</span>
-                Filter
-            </button>
-        </div>
+            <!-- FILTER PANEL -->
+            <div id="filterPanel" class="filter-panel">
+                <div class="filter-panel-header">
+                    <h2>Filter Options</h2>
+                    <button id="closeFilterPanel" class="filter-close-btn">×</button>
+                </div>
 
-        <!-- Filter Panel (Awalnya tersembunyi) -->
-        <div id="filterPanel" class="filter-panel">
-            <div class="filter-panel-header">
-                <h3>Filter Options</h3>
-                <button id="closeFilterPanel" class="close-filter-panel">×</button>
+                <div class="filter-panel-body">
+                    <!-- Gift Type Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">
+                            <span>🎁 Gift Type</span>
+                        </label>
+                        <div class="filter-search-wrapper">
+                            <input 
+                                type="text" 
+                                id="giftSearchFilter" 
+                                placeholder="Cari gift type..." 
+                                class="filter-search-input"
+                            >
+                            <select id="giftFilterSelect" class="filter-select" multiple>
+                                <!-- JS will populate -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Model Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">
+                            <span>📦 Model</span>
+                        </label>
+                        <div class="filter-search-wrapper">
+                            <input 
+                                type="text" 
+                                id="modelSearchFilter" 
+                                placeholder="Cari model..." 
+                                class="filter-search-input"
+                            >
+                            <select id="modelFilterSelect" class="filter-select" multiple>
+                                <!-- JS will populate -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Symbol Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">
+                            <span>✨ Symbol</span>
+                        </label>
+                        <div class="filter-search-wrapper">
+                            <input 
+                                type="text" 
+                                id="symbolSearchFilter" 
+                                placeholder="Cari symbol..." 
+                                class="filter-search-input"
+                            >
+                            <select id="symbolFilterSelect" class="filter-select" multiple>
+                                <!-- JS will populate -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Backdrop Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">
+                            <span>🎨 Backdrop</span>
+                        </label>
+                        <div class="filter-search-wrapper">
+                            <input 
+                                type="text" 
+                                id="bgSearchFilter" 
+                                placeholder="Cari backdrop..." 
+                                class="filter-search-input"
+                            >
+                            <select id="bgFilterSelect" class="filter-select" multiple>
+                                <!-- JS will populate -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Max Price Filter -->
+                    <div class="filter-group">
+                        <label class="filter-label">
+                            <span>💰 Max Price</span>
+                        </label>
+                        <input 
+                            type="number" 
+                            id="maxPriceFilter" 
+                            placeholder="Rp 0" 
+                            min="0" 
+                            class="filter-price-input"
+                        >
+                    </div>
+
+                    <!-- Filter Actions -->
+                    <div class="filter-actions">
+                        <button id="applyFilterBtn" class="btn btn-primary">
+                            <span>✓</span>
+                            Terapkan Filter
+                        </button>
+                        <button id="cancelFilterBtn" class="btn btn-secondary">
+                            <span>↺</span>
+                            Reset
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <div class="filter-panel-content">
-                <!-- Gift Filter -->
-                <div class="filter-group">
-                    <label for="giftFilterSelect">Gift Type</label>
-                    <div class="filter-input-group">
-                        <input type="text" id="giftSearchFilter" placeholder="Search gift type..." 
-                               class="filter-search-input">
-                        <select id="giftFilterSelect" class="filter-select" multiple>
-                            <!-- Options akan diisi oleh JavaScript -->
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Model Filter -->
-                <div class="filter-group">
-                    <label for="modelFilterSelect">Model</label>
-                    <div class="filter-input-group">
-                        <input type="text" id="modelSearchFilter" placeholder="Search model..." 
-                               class="filter-search-input">
-                        <select id="modelFilterSelect" class="filter-select" multiple>
-                            <!-- Options akan diisi oleh JavaScript -->
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Symbol Filter -->
-                <div class="filter-group">
-                    <label for="symbolFilterSelect">Symbol</label>
-                    <div class="filter-input-group">
-                        <input type="text" id="symbolSearchFilter" placeholder="Search symbol..." 
-                               class="filter-search-input">
-                        <select id="symbolFilterSelect" class="filter-select" multiple>
-                            <!-- Options akan diisi oleh JavaScript -->
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Backdrop Filter -->
-                <div class="filter-group">
-                    <label for="bgFilterSelect">Backdrop</label>
-                    <div class="filter-input-group">
-                        <input type="text" id="bgSearchFilter" placeholder="Search backdrop..." 
-                               class="filter-search-input">
-                        <select id="bgFilterSelect" class="filter-select" multiple>
-                            <!-- Options akan diisi oleh JavaScript -->
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Max Price -->
-                <div class="filter-group">
-                    <label for="maxPriceFilter">Max Price (Rp)</label>
-                    <input type="number" id="maxPriceFilter" placeholder="Maximum price" 
-                           min="0" class="price-input-filter">
-                </div>
-
-                <!-- Action Buttons -->
-                <div class="filter-action-buttons">
-                    <button id="applyFilterBtn" class="btn-apply">SEARCH</button>
-                    <button id="cancelFilterBtn" class="btn-cancel">BATALKAN</button>
-                </div>
+            <!-- FILTER OVERLAY (OLD - COMPATIBILITY) -->
+            <div id="filterOverlay" class="filter-overlay">
+                <div id="filterBubbleBoard" class="filter-bubble-board"></div>
             </div>
-        </div>
 
-        <!-- Gift Bubble Board -->
-        <div id="giftBubbleBoard" class="gift-bubble-board"></div>
-    </section>
+            <!-- GIFT BUBBLE BOARD -->
+            <div id="giftBubbleBoard" class="bubble-board"></div>
+        </section>
 
-    <!-- NFT Grid - 2 Cards Per Baris -->
-    <div class="gift-grid" id="giftGrid"></div>
+        <!-- NFT GRID - 2 CARDS PER ROW -->
+        <section class="grid-section">
+            <div id="giftGrid" class="gift-grid"></div>
+        </section>
+    </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">WINEDASH GIFT</div>
-            <p class="footer-tagline">
-                Marketplace khusus untuk NFT Gift Telegram. Temukan koleksi eksklusif dengan harga terbaik.
-            </p>
-            <div class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">Gifts</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">FAQ</a>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">WINEDASH GIFT</div>
+                <p class="footer-desc">
+                    Marketplace khusus untuk NFT Gift Telegram. 
+                    Temukan koleksi eksklusif dengan harga terbaik.
+                </p>
             </div>
+            
+            <div class="footer-links">
+                <a href="#" class="footer-link">Home</a>
+                <a href="#" class="footer-link">Gifts</a>
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">FAQ</a>
+            </div>
+            
             <div class="footer-bottom">
                 <span>© 2024 WINEDASH GIFT. All rights reserved.</span>
-                <div>
-                    <a href="#">Privacy Policy</a> | 
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">|</span>
                     <a href="#">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Gift Detail Panel Overlay -->
+    <!-- GIFT DETAIL PANEL OVERLAY -->
     <div id="panelOverlay" class="panel-overlay"></div>
 
-    <!-- Gift Detail Panel -->
-    <div id="giftDetailPanel" class="gift-detail-panel">
-        <span id="closePanel" class="close-panel">×</span>
+    <!-- GIFT DETAIL PANEL -->
+    <div id="giftDetailPanel" class="detail-panel">
+        <button id="closePanel" class="detail-close-btn">×</button>
         
-        <div class="panel-content">
-            <div class="image-wrap">
-                <img id="detailImg" src="" alt="">
-                <div class="image-banner">
-                    <div id="detailTitle" class="banner-title"></div>
+        <div class="detail-content">
+            <div class="detail-image-wrapper">
+                <img id="detailImg" src="" alt="" class="detail-image">
+                <div class="detail-banner">
+                    <h3 id="detailTitle" class="detail-title"></h3>
                 </div>
             </div>
 
-            <div class="panel-info-card">
-                <div class="divider"></div>
+            <div class="detail-info">
+                <div class="detail-divider"></div>
 
-                <div class="info-row">
-                    <span>Model</span>
-                    <b id="detailModel"></b>
+                <div class="detail-row">
+                    <span class="detail-label">Model</span>
+                    <b id="detailModel" class="detail-value"></b>
                 </div>
-                <div class="info-row">
-                    <span>Backdrop</span>
-                    <b id="detailBg"></b>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Backdrop</span>
+                    <b id="detailBg" class="detail-value"></b>
                 </div>
-                <div class="info-row">
-                    <span>Symbol</span>
-                    <b id="detailSymbol"></b>
-                </div>
-
-                <div class="info-row price">
-                    <span>Price</span>
-                    <b id="detailPrice"></b>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Symbol</span>
+                    <b id="detailSymbol" class="detail-value"></b>
                 </div>
 
-                <div class="divider"></div>
+                <div class="detail-row price">
+                    <span class="detail-label">Price</span>
+                    <b id="detailPrice" class="detail-value price-value"></b>
+                </div>
 
-                <div class="panel-buttons">
-                    <a id="btnBeli" href="#" target="_blank">BELI</a>
-                    <a id="btnNego" href="#" target="_blank">NEGO</a>
+                <div class="detail-divider"></div>
+
+                <div class="detail-actions">
+                    <a id="btnBeli" href="#" target="_blank" class="btn-buy">
+                        <span>🛒</span>
+                        BELI
+                    </a>
+                    <a id="btnNego" href="#" target="_blank" class="btn-nego">
+                        <span>💬</span>
+                        NEGO
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Scroll Top Button -->
-    <div id="scrollTopBtn" class="scroll-top-btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <!-- SCROLL TO TOP BUTTON -->
+    <div id="scrollTopBtn" class="scroll-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
             <path d="M12 19V5M5 12l7-7 7 7"/>
         </svg>
     </div>
 
+    <!-- SCRIPT -->
     <script src="js/app.js"></script>
 </body>
 </html>
