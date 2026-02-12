@@ -107,7 +107,7 @@ function getLottieUrl(slug) {
     return `https://nft.fragment.com/gift/${slug}.lottie.json`;
 }
 
-// Load Lottie animation
+// Load Lottie animation - PLAY ONLY ONCE
 async function loadLottieAnimation(lottieContainer, slug) {
     if (!lottieContainer) return;
     
@@ -152,7 +152,7 @@ async function loadLottieAnimation(lottieContainer, slug) {
     }
 }
 
-// Render Lottie player
+// Render Lottie player - CONFIGURED FOR SINGLE PLAY
 function renderLottiePlayer(container, lottieData) {
     // Clear container
     container.innerHTML = '';
@@ -160,15 +160,23 @@ function renderLottiePlayer(container, lottieData) {
     // Create Lottie player
     const player = document.createElement('lottie-player');
     player.setAttribute('autoplay', '');
-    player.setAttribute('loop', '');
+    player.setAttribute('loop', 'false'); // IMPORTANT: Set to false for single play
     player.setAttribute('mode', 'normal');
     player.setAttribute('style', 'width: 100%; height: 100%;');
+    player.setAttribute('count', '1'); // Play only once
     
     // Stringify the lottie data and set as src
     const lottieJson = JSON.stringify(lottieData);
     player.setAttribute('src', `data:application/json;charset=utf-8,${encodeURIComponent(lottieJson)}`);
     
     container.appendChild(player);
+    
+    // Add event listener to ensure it doesn't loop
+    player.addEventListener('load', () => {
+        // Force single play
+        player.setAttribute('loop', 'false');
+        player.setAttribute('count', '1');
+    });
 }
 
 // Setup event listeners
@@ -855,7 +863,7 @@ function filterAndSortGifts() {
     updateStats();
 }
 
-// Render gifts to grid with Lottie animations
+// Render gifts to grid with Lottie animations - SINGLE PLAY
 function renderGifts() {
     const giftsToRender = filteredGifts.length > 0 ? filteredGifts : gifts;
     
@@ -896,7 +904,7 @@ function renderGifts() {
         </div>
     `}).join('');
     
-    // Initialize Lottie animations for each card
+    // Initialize Lottie animations for each card - SINGLE PLAY ONLY
     setTimeout(() => {
         document.querySelectorAll('.lottie-container').forEach(container => {
             const slug = container.dataset.slug;
@@ -915,7 +923,7 @@ function renderGifts() {
     }
 }
 
-// Open bottom sheet with gift details
+// Open bottom sheet with gift details - SINGLE PLAY
 window.openBottomSheet = function(gift) {
     const cleanName = gift.nama || gift.name.split('#')[0].trim();
     
@@ -927,7 +935,8 @@ window.openBottomSheet = function(gift) {
                     background="transparent"
                     speed="1"
                     style="width: 100%; height: 100%;"
-                    loop
+                    loop="false"
+                    count="1"
                     autoplay>
                 </lottie-player>
             </div>
@@ -1026,6 +1035,24 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && elements.filterPopupOverlay.classList.contains('active')) {
         closeFilterPopup();
     }
+});
+
+// Reset all Lottie animations on page load - ENSURE SINGLE PLAY
+window.addEventListener('load', () => {
+    // Force all lottie-players to play only once
+    setTimeout(() => {
+        document.querySelectorAll('lottie-player').forEach(player => {
+            player.setAttribute('loop', 'false');
+            player.setAttribute('count', '1');
+            
+            // Replay the animation from start
+            try {
+                player.load(player.getAttribute('src'));
+            } catch (e) {
+                console.warn('Could not reload lottie player');
+            }
+        });
+    }, 500);
 });
 
 // Lazy load Lottie animations when cards are in viewport
