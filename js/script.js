@@ -107,23 +107,82 @@ function getLottieUrl(slug) {
     return `https://nft.fragment.com/gift/${slug}.lottie.json`;
 }
 
+// Toggle Lottie animation - Tombol Play di pojok kanan atas
+window.toggleLottie = function(button, slug, event) {
+    if (event) {
+        event.stopPropagation(); // Prevent card click
+    }
+    
+    const card = button.closest('.gift-card');
+    const imageWrapper = card.querySelector('.card-image-wrapper');
+    const lottieContainer = imageWrapper.querySelector('.lottie-container');
+    const fallbackImage = imageWrapper.querySelector('.fallback-image');
+    const skeleton = lottieContainer.querySelector('.lottie-skeleton');
+    
+    // Toggle active class on button
+    button.classList.toggle('active');
+    
+    if (button.classList.contains('active')) {
+        // Show Lottie, hide fallback image
+        lottieContainer.classList.add('active');
+        if (fallbackImage) {
+            fallbackImage.style.display = 'none';
+        }
+        
+        // Show skeleton loader
+        if (skeleton) {
+            skeleton.classList.add('active');
+        } else {
+            // Create skeleton if not exists
+            const newSkeleton = document.createElement('div');
+            newSkeleton.className = 'lottie-skeleton active';
+            lottieContainer.appendChild(newSkeleton);
+        }
+        
+        // Load Lottie animation
+        loadLottieAnimation(lottieContainer, slug, button);
+    } else {
+        // Hide Lottie, show fallback image
+        lottieContainer.classList.remove('active');
+        if (fallbackImage) {
+            fallbackImage.style.display = 'block';
+        }
+        
+        // Hide skeleton
+        const currentSkeleton = lottieContainer.querySelector('.lottie-skeleton');
+        if (currentSkeleton) {
+            currentSkeleton.classList.remove('active');
+        }
+        
+        // Clear Lottie player
+        lottieContainer.innerHTML = '';
+        
+        // Re-add skeleton for next time
+        const newSkeleton = document.createElement('div');
+        newSkeleton.className = 'lottie-skeleton';
+        lottieContainer.appendChild(newSkeleton);
+    }
+};
+
 // Load Lottie animation - PLAY ONLY ONCE
-async function loadLottieAnimation(lottieContainer, slug) {
+async function loadLottieAnimation(lottieContainer, slug, button) {
     if (!lottieContainer) return;
     
     const lottieUrl = getLottieUrl(slug);
+    const skeleton = lottieContainer.querySelector('.lottie-skeleton');
     
     // Check cache first
     if (lottieCache.has(lottieUrl)) {
         const cachedData = lottieCache.get(lottieUrl);
+        
+        // Hide skeleton
+        if (skeleton) {
+            skeleton.classList.remove('active');
+        }
+        
         renderLottiePlayer(lottieContainer, cachedData);
         return;
     }
-    
-    // Show skeleton loader
-    const skeleton = document.createElement('div');
-    skeleton.className = 'lottie-skeleton';
-    lottieContainer.appendChild(skeleton);
     
     try {
         const response = await fetch(lottieUrl);
@@ -132,30 +191,51 @@ async function loadLottieAnimation(lottieContainer, slug) {
         const lottieData = await response.json();
         lottieCache.set(lottieUrl, lottieData);
         
-        // Remove skeleton
-        skeleton.remove();
+        // Hide skeleton
+        if (skeleton) {
+            skeleton.classList.remove('active');
+        }
         
-        // Render Lottie player
         renderLottiePlayer(lottieContainer, lottieData);
     } catch (error) {
         console.warn(`Failed to load Lottie for ${slug}:`, error);
-        skeleton.remove();
         
-        // Mark as error and show fallback
-        lottieContainer.classList.add('lottie-error');
+        // Hide skeleton
+        if (skeleton) {
+            skeleton.classList.remove('active');
+        }
         
-        // Try to load fallback image
-        const fallbackImg = lottieContainer.querySelector('.fallback-image');
-        if (fallbackImg) {
-            fallbackImg.style.display = 'block';
+        // Reset button state
+        if (button) {
+            button.classList.remove('active');
+        }
+        
+        // Hide Lottie container, show fallback
+        lottieContainer.classList.remove('active');
+        const imageWrapper = lottieContainer.closest('.card-image-wrapper');
+        if (imageWrapper) {
+            const fallbackImg = imageWrapper.querySelector('.fallback-image');
+            if (fallbackImg) {
+                fallbackImg.style.display = 'block';
+            }
+        }
+        
+        // Show error state on button
+        if (button) {
+            button.style.opacity = '0.5';
+            button.style.cursor = 'not-allowed';
         }
     }
 }
 
 // Render Lottie player - CONFIGURED FOR SINGLE PLAY
 function renderLottiePlayer(container, lottieData) {
-    // Clear container
+    // Clear container but keep skeleton
+    const skeleton = container.querySelector('.lottie-skeleton');
     container.innerHTML = '';
+    if (skeleton) {
+        container.appendChild(skeleton);
+    }
     
     // Create Lottie player
     const player = document.createElement('lottie-player');
@@ -176,6 +256,17 @@ function renderLottiePlayer(container, lottieData) {
         // Force single play
         player.setAttribute('loop', 'false');
         player.setAttribute('count', '1');
+        
+        // Hide skeleton
+        if (skeleton) {
+            skeleton.classList.remove('active');
+        }
+    });
+    
+    // Animation complete event
+    player.addEventListener('complete', () => {
+        // Animation finished playing once
+        console.log('Animation completed');
     });
 }
 
@@ -863,7 +954,7 @@ function filterAndSortGifts() {
     updateStats();
 }
 
-// Render gifts to grid with Lottie animations - SINGLE PLAY
+// Render gifts to grid with Lottie animations - Tombol Play di pojok kanan atas
 function renderGifts() {
     const giftsToRender = filteredGifts.length > 0 ? filteredGifts : gifts;
     
@@ -887,9 +978,15 @@ function renderGifts() {
         return `
         <div class="gift-card" onclick="openBottomSheet(${JSON.stringify(gift).replace(/"/g, '&quot;')})">
             <div class="card-image-wrapper">
+                <img class="fallback-image" src="${gift.image}" alt="${gift.name}" style="display: block; width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
                 <div class="lottie-container" data-slug="${gift.slug}">
-                    <img class="fallback-image" src="${gift.image}" alt="${gift.name}" loading="lazy">
+                    <div class="lottie-skeleton"></div>
                 </div>
+                <button class="lottie-play-btn" onclick="toggleLottie(this, '${gift.slug}', event)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
             <div class="card-content">
                 <div class="card-name-container">
@@ -903,14 +1000,6 @@ function renderGifts() {
             </div>
         </div>
     `}).join('');
-    
-    // Initialize Lottie animations for each card - SINGLE PLAY ONLY
-    setTimeout(() => {
-        document.querySelectorAll('.lottie-container').forEach(container => {
-            const slug = container.dataset.slug;
-            loadLottieAnimation(container, slug);
-        });
-    }, 100);
     
     // Fix for single card layout
     if (giftsToRender.length === 1) {
@@ -1044,36 +1133,14 @@ window.addEventListener('load', () => {
         document.querySelectorAll('lottie-player').forEach(player => {
             player.setAttribute('loop', 'false');
             player.setAttribute('count', '1');
-            
-            // Replay the animation from start
-            try {
-                player.load(player.getAttribute('src'));
-            } catch (e) {
-                console.warn('Could not reload lottie player');
-            }
         });
     }, 500);
 });
 
-// Lazy load Lottie animations when cards are in viewport
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const container = entry.target;
-            const slug = container.dataset.slug;
-            if (slug && !container.hasAttribute('data-loaded')) {
-                loadLottieAnimation(container, slug);
-                container.setAttribute('data-loaded', 'true');
-            }
-        }
-    });
-}, { threshold: 0.1 });
-
-// Observe new Lottie containers
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        document.querySelectorAll('.lottie-container').forEach(container => {
-            observer.observe(container);
-        });
-    }, 500);
+// Prevent card click when clicking on Lottie play button
+document.addEventListener('click', (e) => {
+    const playButton = e.target.closest('.lottie-play-btn');
+    if (playButton) {
+        e.stopPropagation();
+    }
 });
