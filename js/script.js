@@ -978,7 +978,7 @@ function renderGifts() {
         return `
         <div class="gift-card" onclick="openBottomSheet(${JSON.stringify(gift).replace(/"/g, '&quot;')})">
             <div class="card-image-wrapper">
-                <img class="fallback-image" src="${gift.image}" alt="${gift.name}" style="display: block; width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                <img class="fallback-image" src="https://nft.fragment.com/gift/${gift.slug}.medium.jpg" alt="${gift.name}" style="display: block; width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.src='https://via.placeholder.com/400?text=NFT+Gift'">
                 <div class="lottie-container" data-slug="${gift.slug}">
                     <div class="lottie-skeleton"></div>
                 </div>
