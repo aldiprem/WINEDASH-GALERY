@@ -700,7 +700,25 @@ body {
     margin: 0 auto;
 }
 
-/* ===== GIFT CARD - LOTTIE ANIMATION ===== */
+/* ===== GIFT CARD ===== */
+.gift-card {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(31, 44, 51, 0.48);
+    width: 100%;
+}
+
+.gift-card:hover {
+    transform: translateY(-4px);
+    background: rgba(31, 44, 51, 0.8);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
 .card-image-wrapper {
     position: relative;
     width: 100%;
@@ -710,15 +728,30 @@ body {
     background: linear-gradient(135deg, rgba(31,44,51,0.8) 0%, rgba(10,15,20,0.9) 100%);
 }
 
+/* Fallback image */
+.fallback-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Lottie Container - Default tersembunyi */
 .lottie-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+}
+
+.lottie-container.active {
+    display: flex;
 }
 
 lottie-player {
@@ -728,23 +761,48 @@ lottie-player {
     background: transparent;
 }
 
-/* Fallback image when Lottie fails */
-.fallback-image {
+/* Tombol Play Lottie - Custom Design */
+.lottie-play-btn {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(31, 44, 51, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.lottie-error .fallback-image {
-    display: block;
+.lottie-play-btn:hover {
+    background: var(--tg-primary);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(135, 116, 225, 0.4);
 }
 
-.lottie-error lottie-player {
-    display: none;
+.lottie-play-btn svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.lottie-play-btn.active {
+    background: var(--tg-accent-green);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.lottie-play-btn.active svg {
+    transform: scale(0.9);
 }
 
 /* Loading skeleton for Lottie */
@@ -761,6 +819,11 @@ lottie-player {
     background-size: 200% 100%;
     animation: loading 1.5s infinite;
     border-radius: 8px;
+    display: none;
+}
+
+.lottie-skeleton.active {
+    display: block;
 }
 
 @keyframes loading {
@@ -1107,6 +1170,18 @@ lottie-player {
     .sheet-lottie-container {
         width: 70px;
         height: 70px;
+    }
+    
+    .lottie-play-btn {
+        width: 36px;
+        height: 36px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .lottie-play-btn svg {
+        width: 18px;
+        height: 18px;
     }
 }
 
