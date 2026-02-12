@@ -2,295 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WINEDASH GIFT - NFT Marketplace</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Marketplace NFT Gift Telegram - Temukan koleksi eksklusif dengan harga terbaik">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>NFT GIFT • TON Market</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lottie Web Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.7.1/dist/lottie-player.js"></script>
 </head>
 <body>
-    <!-- PAGE LOADER -->
-    <div id="pageLoader">
-        <div class="loader-box">
-            <div class="loader-logo">
-                <span>W</span><span>G</span>
-            </div>
-            <div class="loader-text">WINEDASH GIFT</div>
-            <div class="loader-bar">
-                <span></span>
-            </div>
-        </div>
-    </div>
-
-    <!-- HEADER -->
-    <header class="header">
-        <div class="header-container">
-            <h1 class="header-title">
-                <span class="header-icon">🎁</span>
-                WINEDASH GIFT
-            </h1>
-        </div>
-    </header>
-
-    <!-- HIDDEN FILTER INPUTS -->
-    <input type="hidden" id="modelFilter">
-    <input type="hidden" id="symbolFilter">
-    <input type="hidden" id="bgFilter">
-    <input type="hidden" id="giftFilter">
-    <input type="hidden" id="maxPrice">
-
-    <!-- MAIN CONTENT -->
-    <main class="main">
-        <!-- SEARCH & FILTER SECTION -->
-        <section class="search-section">
-            <div class="search-wrapper">
-                <!-- Search Container -->
-                <div class="search-container">
-                    <form onsubmit="return false" class="search-form">
-                        <div class="search-group">
-                            <input 
-                                type="text" 
-                                id="giftSearchInput" 
-                                placeholder="Cari gift..." 
-                                class="search-input"
-                                autocomplete="off"
-                            >
-                            <button type="button" id="giftSearchBtn" class="search-btn">
-                                <span>🔍</span>
-                                Cari
-                            </button>
-                        </div>
-                    </form>
-                    
-                    <!-- Search Dropdown -->
-                    <div id="giftDropdown" class="search-dropdown"></div>
-                    
-                    <!-- Selected Gifts Bubbles -->
-                    <div id="giftSelected" class="selected-bubbles"></div>
+    <div class="noise"></div>
+    <div class="gradient-bg"></div>
+    
+    <main class="container">
+        <!-- Header Glassmorphism -->
+        <header class="glass-header">
+            <div class="logo-wrapper">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 12V8H16V4H12V8H8V12H4V16H8V20H12V16H16V12H20Z" fill="url(#grad1)" stroke="white" stroke-width="0.5"/>
+                        <defs>
+                            <linearGradient id="grad1" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8774E1"/>
+                                <stop offset="1" stop-color="#5C8BE6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
                 </div>
+                <div class="logo-text">
+                    <span class="brand">NFT GIFT</span>
+                    <span class="brand-sub">TON Market</span>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Items</span>
+                    <span class="stat-value" id="total-items">0</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-label">Floor</span>
+                    <span class="stat-value" id="floor-price">0</span>
+                </div>
+            </div>
+        </header>
 
-                <!-- Filter Button -->
-                <button id="filterToggleBtn" class="filter-btn">
-                    <span class="filter-icon">⚙️</span>
-                    <span>Filter</span>
+        <!-- ID Search Section - Simple Input -->
+        <div class="id-search-section glass-panel">
+            <div class="id-search-container">
+                <div class="id-search-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="7" stroke-width="1.5"/>
+                        <path d="M16 16L21 21" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <input type="text" id="idSearchInput" class="id-search-input" placeholder="Search by ID...">
+                <button class="id-search-clear" id="idSearchClear">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 6L6 18M6 6L18 18" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
                 </button>
             </div>
+        </div>
 
-            <!-- FILTER PANEL -->
-            <div id="filterPanel" class="filter-panel">
-                <div class="filter-panel-header">
-                    <h2>Filter Options</h2>
-                    <button id="closeFilterPanel" class="filter-close-btn">×</button>
-                </div>
-
-                <div class="filter-panel-body">
-                    <!-- Gift Type Filter -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span>🎁 Gift Type</span>
-                        </label>
-                        <div class="filter-search-wrapper">
-                            <input 
-                                type="text" 
-                                id="giftSearchFilter" 
-                                placeholder="Cari gift type..." 
-                                class="filter-search-input"
-                            >
-                            <select id="giftFilterSelect" class="filter-select" multiple>
-                                <!-- JS will populate -->
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Model Filter -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span>📦 Model</span>
-                        </label>
-                        <div class="filter-search-wrapper">
-                            <input 
-                                type="text" 
-                                id="modelSearchFilter" 
-                                placeholder="Cari model..." 
-                                class="filter-search-input"
-                            >
-                            <select id="modelFilterSelect" class="filter-select" multiple>
-                                <!-- JS will populate -->
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Symbol Filter -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span>✨ Symbol</span>
-                        </label>
-                        <div class="filter-search-wrapper">
-                            <input 
-                                type="text" 
-                                id="symbolSearchFilter" 
-                                placeholder="Cari symbol..." 
-                                class="filter-search-input"
-                            >
-                            <select id="symbolFilterSelect" class="filter-select" multiple>
-                                <!-- JS will populate -->
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Backdrop Filter -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span>🎨 Backdrop</span>
-                        </label>
-                        <div class="filter-search-wrapper">
-                            <input 
-                                type="text" 
-                                id="bgSearchFilter" 
-                                placeholder="Cari backdrop..." 
-                                class="filter-search-input"
-                            >
-                            <select id="bgFilterSelect" class="filter-select" multiple>
-                                <!-- JS will populate -->
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Max Price Filter -->
-                    <div class="filter-group">
-                        <label class="filter-label">
-                            <span>💰 Max Price</span>
-                        </label>
-                        <input 
-                            type="number" 
-                            id="maxPriceFilter" 
-                            placeholder="Rp 0" 
-                            min="0" 
-                            class="filter-price-input"
-                        >
-                    </div>
-
-                    <!-- Filter Actions -->
-                    <div class="filter-actions">
-                        <button id="applyFilterBtn" class="btn btn-primary">
-                            <span>✓</span>
-                            Terapkan Filter
-                        </button>
-                        <button id="cancelFilterBtn" class="btn btn-secondary">
-                            <span>↺</span>
-                            Reset
-                        </button>
-                    </div>
+        <!-- Filter Categories - Bubble Style -->
+        <div class="filter-section glass-panel">
+            <div class="filter-header">
+                <button class="filter-toggle" id="filterToggle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M4 6H20M4 12H16M4 18H10" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>Filters</span>
+                    <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9L12 15L18 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                
+                <div class="filter-actions">
+                    <button class="filter-clear-btn" id="clearAllFilters">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 6L6 18M6 6L18 18" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        Clear
+                    </button>
+                    <button class="filter-apply-btn" id="applyFiltersBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12H19M19 12L15 8M19 12L15 16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Apply
+                    </button>
                 </div>
             </div>
 
-            <!-- FILTER OVERLAY (OLD - COMPATIBILITY) -->
-            <div id="filterOverlay" class="filter-overlay">
-                <div id="filterBubbleBoard" class="filter-bubble-board"></div>
+            <!-- Filter Bubbles -->
+            <div class="filter-bubbles" id="filterPanel">
+                <!-- Gift Name Bubble -->
+                <div class="filter-bubble" data-filter="gift">
+                    <span class="bubble-label">Gift Name</span>
+                    <span class="bubble-count" id="giftCount">0</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9L12 16L5 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <!-- Model Bubble (disabled by default) -->
+                <div class="filter-bubble disabled" data-filter="model" id="modelBubble">
+                    <span class="bubble-label">Model</span>
+                    <span class="bubble-count" id="modelCount">0</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9L12 16L5 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <!-- Symbol Bubble (disabled by default) -->
+                <div class="filter-bubble disabled" data-filter="symbol" id="symbolBubble">
+                    <span class="bubble-label">Symbol</span>
+                    <span class="bubble-count" id="symbolCount">0</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9L12 16L5 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <!-- Backdrop Bubble (disabled by default) -->
+                <div class="filter-bubble disabled" data-filter="bg" id="bgBubble">
+                    <span class="bubble-label">Backdrop</span>
+                    <span class="bubble-count" id="bgCount">0</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9L12 16L5 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <!-- Sort Bubble -->
+                <div class="filter-bubble" data-filter="sort">
+                    <span class="bubble-label">Sort By</span>
+                    <span class="bubble-value" id="sortValue">Low to High</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9L12 16L5 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
             </div>
 
-            <!-- GIFT BUBBLE BOARD -->
-            <div id="giftBubbleBoard" class="bubble-board"></div>
-        </section>
+            <!-- Active Filters Tags -->
+            <div class="active-filters-container" id="activeFiltersContainer">
+                <div class="active-filters-title">Active:</div>
+                <div class="active-filters" id="activeFilters"></div>
+            </div>
+        </div>
 
-        <!-- NFT GRID - 2 CARDS PER ROW -->
-        <section class="grid-section">
-            <div id="giftGrid" class="gift-grid"></div>
-        </section>
+        <!-- Filter Popup Panel (Slide out from left) -->
+        <div class="filter-popup-overlay" id="filterPopupOverlay">
+            <div class="filter-popup glass-panel" id="filterPopup">
+                <div class="filter-popup-header">
+                    <span class="filter-popup-title" id="filterPopupTitle">Select Gift Name</span>
+                    <button class="filter-popup-close" id="filterPopupClose">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="filter-popup-search" id="filterPopupSearch">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="7" stroke-width="1.5"/>
+                        <path d="M16 16L21 21" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" id="popupSearchInput" class="popup-search-input" placeholder="Search...">
+                </div>
+                
+                <div class="filter-popup-list" id="filterPopupList">
+                    <!-- Dynamic content will be injected here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Grid Container -->
+        <div class="cards-grid-container" id="cardsGridContainer">
+            <div class="cards-grid" id="cardsGrid"></div>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <div class="scroll-top" id="scrollTopBtn">
+            <div class="scroll-top-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="rgba(31,44,51,0.9)"/>
+                    <path d="M12 16V8M12 8L8 12M12 8L16 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <span class="scroll-top-text">Top</span>
+        </div>
+
+        <!-- Bottom Sheet Panel -->
+        <div class="bottom-sheet-overlay" id="bottomSheetOverlay">
+            <div class="bottom-sheet glass-panel" id="bottomSheet">
+                <div class="sheet-handle"></div>
+                <div class="sheet-content" id="sheetContent">
+                    <!-- Dynamic content will be injected here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading-state" id="loadingState">
+            <div class="loading-spinner"></div>
+            <span>Loading gifts...</span>
+        </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <div class="footer-logo">WINEDASH GIFT</div>
-                <p class="footer-desc">
-                    Marketplace khusus untuk NFT Gift Telegram. 
-                    Temukan koleksi eksklusif dengan harga terbaik.
-                </p>
-            </div>
-            
-            <div class="footer-links">
-                <a href="#" class="footer-link">Home</a>
-                <a href="#" class="footer-link">Gifts</a>
-                <a href="#" class="footer-link">About</a>
-                <a href="#" class="footer-link">Contact</a>
-                <a href="#" class="footer-link">FAQ</a>
-            </div>
-            
-            <div class="footer-bottom">
-                <span>© 2024 WINEDASH GIFT. All rights reserved.</span>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <span class="separator">|</span>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- GIFT DETAIL PANEL OVERLAY -->
-    <div id="panelOverlay" class="panel-overlay"></div>
-
-    <!-- GIFT DETAIL PANEL -->
-    <div id="giftDetailPanel" class="detail-panel">
-        <button id="closePanel" class="detail-close-btn">×</button>
-        
-        <div class="detail-content">
-            <div class="detail-image-wrapper">
-                <img id="detailImg" src="" alt="" class="detail-image">
-                <div class="detail-banner">
-                    <h3 id="detailTitle" class="detail-title"></h3>
-                </div>
-            </div>
-
-            <div class="detail-info">
-                <div class="detail-divider"></div>
-
-                <div class="detail-row">
-                    <span class="detail-label">Model</span>
-                    <b id="detailModel" class="detail-value"></b>
-                </div>
-                
-                <div class="detail-row">
-                    <span class="detail-label">Backdrop</span>
-                    <b id="detailBg" class="detail-value"></b>
-                </div>
-                
-                <div class="detail-row">
-                    <span class="detail-label">Symbol</span>
-                    <b id="detailSymbol" class="detail-value"></b>
-                </div>
-
-                <div class="detail-row price">
-                    <span class="detail-label">Price</span>
-                    <b id="detailPrice" class="detail-value price-value"></b>
-                </div>
-
-                <div class="detail-divider"></div>
-
-                <div class="detail-actions">
-                    <a id="btnBeli" href="#" target="_blank" class="btn-buy">
-                        <span>🛒</span>
-                        BELI
-                    </a>
-                    <a id="btnNego" href="#" target="_blank" class="btn-nego">
-                        <span>💬</span>
-                        NEGO
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SCROLL TO TOP BUTTON -->
-    <div id="scrollTopBtn" class="scroll-top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-            <path d="M12 19V5M5 12l7-7 7 7"/>
-        </svg>
-    </div>
-
-    <!-- SCRIPT -->
-    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
