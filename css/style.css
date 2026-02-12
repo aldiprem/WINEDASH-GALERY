@@ -407,6 +407,11 @@ body {
     animation: tagPop 0.2s ease;
 }
 
+@keyframes tagPop {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
 .filter-tag-category {
     color: var(--tg-primary-light);
     font-weight: 600;
@@ -695,25 +700,6 @@ body {
     margin: 0 auto;
 }
 
-/* ===== GIFT CARD ===== */
-.gift-card {
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background: rgba(31, 44, 51, 0.48);
-    width: 100%;
-}
-
-.gift-card:hover {
-    transform: translateY(-4px);
-    background: rgba(31, 44, 51, 0.8);
-    border-color: rgba(255, 255, 255, 0.12);
-}
-
 /* ===== GIFT CARD - LOTTIE ANIMATION ===== */
 .card-image-wrapper {
     position: relative;
@@ -786,45 +772,6 @@ lottie-player {
 .gift-card:hover lottie-player {
     transform: scale(1.05);
     transition: transform 0.5s ease;
-}
-
-/* Bottom sheet Lottie */
-.sheet-lottie-container {
-    width: 80px;
-    height: 80px;
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    background: linear-gradient(135deg, rgba(31,44,51,0.8) 0%, rgba(10,15,20,0.9) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sheet-lottie-container lottie-player {
-    width: 100%;
-    height: 100%;
-}
-
-/* Responsive Lottie */
-@media (max-width: 600px) {
-    .sheet-lottie-container {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-.card-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.gift-card:hover .card-image {
-    transform: scale(1.05);
 }
 
 .card-content {
@@ -1002,6 +949,23 @@ lottie-player {
     object-fit: cover;
 }
 
+/* Bottom sheet Lottie */
+.sheet-lottie-container {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(31,44,51,0.8) 0%, rgba(10,15,20,0.9) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sheet-lottie-container lottie-player {
+    width: 100%;
+    height: 100%;
+}
+
 .sheet-info {
     flex: 1;
 }
@@ -1137,6 +1101,12 @@ lottie-player {
         right: 16px;
         width: 48px;
         height: 48px;
+    }
+    
+    /* Responsive Lottie */
+    .sheet-lottie-container {
+        width: 70px;
+        height: 70px;
     }
 }
 
