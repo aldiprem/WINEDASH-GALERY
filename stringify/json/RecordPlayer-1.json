@@ -1,26 +1,55 @@
 {
+  "id": 5895448822624027330,
+  "gift_id": 5856973938650776169,
   "slug": "RecordPlayer-1",
   "title": "Record Player",
   "num": 1,
-  "availability_issued": 33096,
+  "availability_issued": 33097,
   "availability_total": 46888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 632890800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Dark Noir",
       "rarity": 5,
-      "document_id": 5296327367600399541
+      "document": {
+        "id": 5296327367600399541,
+        "access_hash": -132270102308457645,
+        "date": "2025-02-15T12:00:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28832,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Moto Helmet",
       "rarity": 3,
-      "document_id": 5312444266738377449
+      "document": {
+        "id": 5312444266738377449,
+        "access_hash": -5226227276862401904,
+        "date": "2025-02-20T17:31:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 801,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

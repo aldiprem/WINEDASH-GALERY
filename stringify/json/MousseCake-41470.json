@@ -1,26 +1,55 @@
 {
+  "id": 6005773321138865037,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-41470",
   "title": "Mousse Cake",
   "num": 41470,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sweet Music",
       "rarity": 30,
-      "document_id": 5334863411907952552
+      "document": {
+        "id": 5334863411907952552,
+        "access_hash": -2026444910714600984,
+        "date": "2025-09-09T18:37:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19547,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spanner",
       "rarity": 4,
-      "document_id": 5433627000923252069
+      "document": {
+        "id": 5433627000923252069,
+        "access_hash": -6404392970154867009,
+        "date": "2024-12-26T14:00:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 658,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Persimmon",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 26,
+      "center_color": 15181658,
+      "edge_color": 12937055,
+      "pattern_color": 11341312,
+      "text_color": 16770263
     }
   ]
 }

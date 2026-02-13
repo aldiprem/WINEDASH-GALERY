@@ -1,26 +1,55 @@
 {
+  "id": 6028075565888571303,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-616",
   "title": "Spiced Wine",
   "num": 616,
-  "availability_issued": 101427,
+  "availability_issued": 101432,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "being with Kadipat is where I belong, Fayemel",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15563300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "The Grinch",
       "rarity": 13,
-      "document_id": 5429432458552565132
+      "document": {
+        "id": 5429432458552565132,
+        "access_hash": -4942905325543639221,
+        "date": "2024-12-24T20:45:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26751,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Vortex",
       "rarity": 5,
-      "document_id": 5436036168338660466
+      "document": {
+        "id": 5436036168338660466,
+        "access_hash": 6026164539530323734,
+        "date": "2024-12-26T12:09:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2486,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

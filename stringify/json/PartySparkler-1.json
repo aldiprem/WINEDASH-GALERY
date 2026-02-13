@@ -1,26 +1,55 @@
 {
+  "id": 5821332642171192334,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-1",
   "title": "Party Sparkler",
   "num": 1,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Burst",
       "rarity": 14,
-      "document_id": 5231056981531320962
+      "document": {
+        "id": 5231056981531320962,
+        "access_hash": 4455113477162205013,
+        "date": "2025-01-23T11:18:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31972,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bishop",
       "rarity": 2,
-      "document_id": 5440508895741109239
+      "document": {
+        "id": 5440508895741109239,
+        "access_hash": -5833468852612325389,
+        "date": "2024-12-28T11:10:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 603,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

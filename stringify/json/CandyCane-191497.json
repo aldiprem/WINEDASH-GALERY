@@ -1,26 +1,55 @@
 {
+  "id": 5848433520736732374,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-191497",
   "title": "Candy Cane",
   "num": 191497,
-  "availability_issued": 209557,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10965100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Violet Berry",
       "rarity": 26,
-      "document_id": 5292010749374258102
+      "document": {
+        "id": 5292010749374258102,
+        "access_hash": -1574407046695249581,
+        "date": "2025-02-13T13:25:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44521,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cupcake",
       "rarity": 24,
-      "document_id": 5436346024459266141
+      "document": {
+        "id": 5436346024459266141,
+        "access_hash": -4330855651740504955,
+        "date": "2024-12-26T14:48:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1205,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

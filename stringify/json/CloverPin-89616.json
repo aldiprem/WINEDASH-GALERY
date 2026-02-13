@@ -1,26 +1,55 @@
 {
+  "id": 5900109532155085533,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-89616",
   "title": "Clover Pin",
   "num": 89616,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sangria",
       "rarity": 20,
-      "document_id": 5251562495432226987
+      "document": {
+        "id": 5251562495432226987,
+        "access_hash": 8920807898011109874,
+        "date": "2025-08-13T08:15:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20200,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Nemes",
       "rarity": 2,
-      "document_id": 5316549306285582483
+      "document": {
+        "id": 5316549306285582483,
+        "access_hash": -3400698739147458641,
+        "date": "2025-02-21T12:36:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1159,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

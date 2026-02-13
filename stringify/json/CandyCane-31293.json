@@ -1,26 +1,55 @@
 {
+  "id": 5938130266286458081,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-31293",
   "title": "Candy Cane",
   "num": 31293,
-  "availability_issued": 209552,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": ".",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12615700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Polka Pop",
       "rarity": 26,
-      "document_id": 5341713867565198160
+      "document": {
+        "id": 5341713867565198160,
+        "access_hash": -3479125666966240595,
+        "date": "2025-03-02T00:25:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 51897,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sea Horse",
       "rarity": 2,
-      "document_id": 5435936074125828771
+      "document": {
+        "id": 5435936074125828771,
+        "access_hash": -7421461532876422329,
+        "date": "2024-12-26T14:46:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1106,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6005684917827011530,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-58818",
   "title": "Mousse Cake",
   "num": 58818,
-  "availability_issued": 160706,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Meatcake",
       "rarity": 20,
-      "document_id": 5386628917559852070
+      "document": {
+        "id": 5386628917559852070,
+        "access_hash": 8158995517327229061,
+        "date": "2025-09-27T16:11:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 62700,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rose",
       "rarity": 4,
-      "document_id": 5548919496699281419
+      "document": {
+        "id": 5548919496699281419,
+        "access_hash": 7251546779413233798,
+        "date": "2025-02-02T17:53:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1588,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pistachio",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 36,
+      "center_color": 9941116,
+      "edge_color": 6062412,
+      "pattern_color": 2639643,
+      "text_color": 14283465
     }
   ]
 }

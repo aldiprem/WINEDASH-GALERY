@@ -1,26 +1,55 @@
 {
+  "id": 6005967054228685886,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-125764",
   "title": "Instant Ramen",
   "num": 125764,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Slurp-Slurp",
       "rarity": 25,
-      "document_id": 5319286205475489134
+      "document": {
+        "id": 5319286205475489134,
+        "access_hash": -8269083545859771712,
+        "date": "2025-09-05T09:04:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22719,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower Sun",
       "rarity": 5,
-      "document_id": 5546618291876790280
+      "document": {
+        "id": 5546618291876790280,
+        "access_hash": 2322692579278126917,
+        "date": "2025-02-01T17:42:41+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 4145,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

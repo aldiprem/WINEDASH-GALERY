@@ -1,26 +1,55 @@
 {
+  "id": 5852694858438804710,
+  "gift_id": 6005880141270483700,
   "slug": "JollyChimp-88298",
   "title": "Jolly Chimp",
   "num": 88298,
-  "availability_issued": 115521,
+  "availability_issued": 115522,
   "availability_total": 132155,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 21138500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chimp Imp",
       "rarity": 15,
-      "document_id": 5348214133063974947
+      "document": {
+        "id": 5348214133063974947,
+        "access_hash": 2618264196904568743,
+        "date": "2025-06-09T23:50:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52994,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sprout",
       "rarity": 5,
-      "document_id": 5435900468846945304
+      "document": {
+        "id": 5435900468846945304,
+        "access_hash": 3832870546125513410,
+        "date": "2024-12-26T14:46:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 802,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     }
   ]
 }

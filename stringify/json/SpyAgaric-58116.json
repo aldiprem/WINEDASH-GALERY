@@ -1,26 +1,55 @@
 {
+  "id": 5800704240666018567,
+  "gift_id": 5821261908354794038,
   "slug": "SpyAgaric-58116",
   "title": "Spy Agaric",
   "num": 58116,
-  "availability_issued": 86677,
+  "availability_issued": 86678,
   "availability_total": 89438,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 24591400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Polka Dot",
       "rarity": 15,
-      "document_id": 5429514445183280108
+      "document": {
+        "id": 5429514445183280108,
+        "access_hash": 3481071726065806522,
+        "date": "2024-12-25T10:51:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24642,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Coin Purse",
       "rarity": 4,
-      "document_id": 5434033386433830171
+      "document": {
+        "id": 5434033386433830171,
+        "access_hash": -2086486808159018450,
+        "date": "2024-12-26T12:08:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1536,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

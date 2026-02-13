@@ -1,26 +1,55 @@
 {
+  "id": 6015078625483687632,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-142743",
   "title": "Snoop Dogg",
   "num": 142743,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Eunola M.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Shower Cap",
       "rarity": 25,
-      "document_id": 5386801390561554882
+      "document": {
+        "id": 5386801390561554882,
+        "access_hash": 508604924948380970,
+        "date": "2025-06-22T17:01:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58819,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Doberman",
       "rarity": 5,
-      "document_id": 5721848477902700557
+      "document": {
+        "id": 5721848477902700557,
+        "access_hash": 8943721828425766300,
+        "date": "2024-12-26T12:03:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1847,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Seal Brown",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 64,
+      "center_color": 6704453,
+      "edge_color": 4666926,
+      "pattern_color": 656901,
+      "text_color": 13941941
     }
   ]
 }

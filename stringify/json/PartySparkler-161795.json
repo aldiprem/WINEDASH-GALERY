@@ -1,26 +1,55 @@
 {
+  "id": 5784895849028912986,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-161795",
   "title": "Party Sparkler",
   "num": 161795,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lord Vader",
       "rarity": 9,
-      "document_id": 5238117791801827446
+      "document": {
+        "id": 5238117791801827446,
+        "access_hash": 1654255863516386075,
+        "date": "2025-01-26T06:49:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32703,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cocktail",
       "rarity": 15,
-      "document_id": 5424853890271044722
+      "document": {
+        "id": 5424853890271044722,
+        "access_hash": -3685348669706753930,
+        "date": "2024-12-23T14:51:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 822,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Indigo",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 4,
+      "center_color": 11108595,
+      "edge_color": 5989080,
+      "pattern_color": 3613355,
+      "text_color": 14211327
     }
   ]
 }

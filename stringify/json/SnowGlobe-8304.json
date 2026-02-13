@@ -1,26 +1,55 @@
 {
+  "id": 5935889732171990250,
+  "gift_id": 5981132629905245483,
   "slug": "SnowGlobe-8304",
   "title": "Snow Globe",
   "num": 8304,
   "availability_issued": 52013,
   "availability_total": 72788,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16708700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Orange Tale",
       "rarity": 30,
-      "document_id": 5336959042415779693
+      "document": {
+        "id": 5336959042415779693,
+        "access_hash": 7083810314732150509,
+        "date": "2025-02-28T09:40:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33554,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Snowman",
       "rarity": 18,
-      "document_id": 5197201682777266057
+      "document": {
+        "id": 5197201682777266057,
+        "access_hash": 1806505860606713771,
+        "date": "2024-10-07T19:11:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1172,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burnt Sienna",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 76,
+      "center_color": 14053180,
+      "edge_color": 11881261,
+      "pattern_color": 7014658,
+      "text_color": 16764080
     }
   ]
 }

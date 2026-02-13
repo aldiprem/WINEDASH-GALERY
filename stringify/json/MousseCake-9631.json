@@ -1,26 +1,55 @@
 {
+  "id": 6003535565868238014,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-9631",
   "title": "Mousse Cake",
   "num": 9631,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Константин",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mermaid",
       "rarity": 25,
-      "document_id": 5391368710323731441
+      "document": {
+        "id": 5391368710323731441,
+        "access_hash": 1980401571357923446,
+        "date": "2025-09-29T03:51:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60066,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Valentine",
       "rarity": 6,
-      "document_id": 5285334347266680386
+      "document": {
+        "id": 5285334347266680386,
+        "access_hash": -3066605954858252814,
+        "date": "2025-02-11T18:19:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 893,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tomato",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 72,
+      "center_color": 15104318,
+      "edge_color": 13913663,
+      "pattern_color": 8391424,
+      "text_color": 16764093
     }
   ]
 }

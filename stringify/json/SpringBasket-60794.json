@@ -1,26 +1,55 @@
 {
+  "id": 6003592336745956336,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-60794",
   "title": "Spring Basket",
   "num": 60794,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": "Илья",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Marmot",
       "rarity": 25,
-      "document_id": 5386680839419493267
+      "document": {
+        "id": 5386680839419493267,
+        "access_hash": 530662127543128625,
+        "date": "2025-09-27T15:00:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44576,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lemon",
       "rarity": 5,
-      "document_id": 5440743731667952300
+      "document": {
+        "id": 5440743731667952300,
+        "access_hash": -764870583330188607,
+        "date": "2024-12-28T11:15:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 715,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Indigo",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 4,
+      "center_color": 11108595,
+      "edge_color": 5989080,
+      "pattern_color": 3613355,
+      "text_color": 14211327
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6028140888046175160,
+  "gift_id": 5841689550203650524,
   "slug": "SharpTongue-1425",
   "title": "Sharp Tongue",
   "num": 1425,
   "availability_issued": 8092,
   "availability_total": 8546,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBOZSYWSkCws12GRqCAXuBEM1b6yysVGmcd7eH6I8yCNcgJ",
+  "value_amount": 99173900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sweet Berry",
       "rarity": 20,
-      "document_id": 5429386519582369388
+      "document": {
+        "id": 5429386519582369388,
+        "access_hash": -1742307431149656577,
+        "date": "2024-12-25T08:13:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42059,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Water Drops",
       "rarity": 6,
-      "document_id": 5305716187584282659
+      "document": {
+        "id": 5305716187584282659,
+        "access_hash": 7116767179289022307,
+        "date": "2023-10-21T14:40:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1039,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Hunter Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 35,
+      "center_color": 9416312,
+      "edge_color": 4948571,
+      "pattern_color": 1853727,
+      "text_color": 14218718
     }
   ]
 }

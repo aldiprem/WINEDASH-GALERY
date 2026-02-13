@@ -1,26 +1,55 @@
 {
+  "id": 6019468554506601362,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-113859",
   "title": "Whip Cupcake",
   "num": 113859,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Jd.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Arizona",
       "rarity": 25,
-      "document_id": 5274118877691804873
+      "document": {
+        "id": 5274118877691804873,
+        "access_hash": -1453040463256540326,
+        "date": "2025-05-15T10:00:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40863,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Tie",
       "rarity": 4,
-      "document_id": 5440674853277426823
+      "document": {
+        "id": 5440674853277426823,
+        "access_hash": -3099824621970119601,
+        "date": "2024-12-28T11:33:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 709,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

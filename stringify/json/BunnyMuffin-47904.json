@@ -1,26 +1,55 @@
 {
+  "id": 5778668309658469556,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-47904",
   "title": "Bunny Muffin",
   "num": 47904,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Valentine",
       "rarity": 9,
-      "document_id": 5224688382549977577
+      "document": {
+        "id": 5224688382549977577,
+        "access_hash": 6575586029979741345,
+        "date": "2025-01-21T14:45:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15827,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Heartbeat",
       "rarity": 4,
-      "document_id": 5307536248695436305
+      "document": {
+        "id": 5307536248695436305,
+        "access_hash": 8230795146435906072,
+        "date": "2023-10-22T10:27:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 897,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mint Green",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "pattern_color": 158498,
+      "text_color": 12451788
     }
   ]
 }

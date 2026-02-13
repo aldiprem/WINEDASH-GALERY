@@ -1,26 +1,55 @@
 {
+  "id": 5841650710814393022,
+  "gift_id": 5936017773737018241,
   "slug": "StarNotepad-9788",
   "title": "Star Notepad",
   "num": 9788,
-  "availability_issued": 68895,
+  "availability_issued": 68898,
   "availability_total": 99082,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 47700500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sterling",
       "rarity": 13,
-      "document_id": 5231391649677993239
+      "document": {
+        "id": 5231391649677993239,
+        "access_hash": 9223121367408709973,
+        "date": "2025-01-23T17:46:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15393,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bread",
       "rarity": 3,
-      "document_id": 5436213773826285560
+      "document": {
+        "id": 5436213773826285560,
+        "access_hash": -9035397050173905455,
+        "date": "2024-12-26T14:48:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 716,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5900023903392105068,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-49613",
   "title": "Jelly Bunny",
   "num": 49613,
-  "availability_issued": 102244,
+  "availability_issued": 102249,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pale Squish",
       "rarity": 15,
-      "document_id": 5416014323589865034
+      "document": {
+        "id": 5416014323589865034,
+        "access_hash": 612777774398437983,
+        "date": "2024-12-20T10:51:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31372,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mountain Goat",
       "rarity": 3,
-      "document_id": 5722108314834173965
+      "document": {
+        "id": 5722108314834173965,
+        "access_hash": -7537473076208268691,
+        "date": "2024-12-26T12:03:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2055,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     }
   ]
 }

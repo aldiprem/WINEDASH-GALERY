@@ -1,26 +1,55 @@
 {
+  "id": 6030803759179760538,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-3",
   "title": "Plush Pepe",
   "num": 3,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQB46x-dlgYJEKYuvujs_g1h9Ktdhgyc-FL__QgSxeKipKlW",
+  "gift_address": "EQCixc3s5lqHss8ecss3ORxQOXxFWipvqL4lbdJxAHUeaDB8",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sketchy",
       "rarity": 20,
-      "document_id": 5422563216708365247
+      "document": {
+        "id": 5422563216708365247,
+        "access_hash": 6470343967585240769,
+        "date": "2024-12-22T22:37:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 7590,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Toilet",
       "rarity": 5,
-      "document_id": 5433611053709680326
+      "document": {
+        "id": 5433611053709680326,
+        "access_hash": 10624739696279928,
+        "date": "2024-12-26T14:00:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 867,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

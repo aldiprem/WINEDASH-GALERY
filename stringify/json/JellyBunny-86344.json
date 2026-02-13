@@ -1,26 +1,55 @@
 {
+  "id": 5877373233715479371,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-86344",
   "title": "Jelly Bunny",
   "num": 86344,
-  "availability_issued": 102244,
+  "availability_issued": 102249,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Space Gel",
       "rarity": 15,
-      "document_id": 5429091498278807586
+      "document": {
+        "id": 5429091498278807586,
+        "access_hash": 2365945736442023299,
+        "date": "2024-12-24T18:33:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55067,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Champagne",
       "rarity": 5,
-      "document_id": 5440709011152333768
+      "document": {
+        "id": 5440709011152333768,
+        "access_hash": 6692263612909697897,
+        "date": "2024-12-28T11:35:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1643,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

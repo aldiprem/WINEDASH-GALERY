@@ -1,26 +1,55 @@
 {
+  "id": 5897814791258375578,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-1",
   "title": "Clover Pin",
   "num": 1,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQC7KIJMZt3Hpd0FXhpFUXqtmkMkmxQFAtaD6EyqMc-RmDWN",
+  "gift_address": "EQALm-ic6TmI2ny3bdZqSZ6F-li3Ng5plEZVBqL09wqJXD_b",
+  "value_amount": 1265781500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vinyl Record",
       "rarity": 20,
-      "document_id": 5231095773675942179
+      "document": {
+        "id": 5231095773675942179,
+        "access_hash": -94074731982670608,
+        "date": "2025-08-06T04:44:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 13558,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Beer",
       "rarity": 5,
-      "document_id": 5551062109854367759
+      "document": {
+        "id": 5551062109854367759,
+        "access_hash": -5393047970530005966,
+        "date": "2025-02-03T13:29:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1957,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Gunship Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 62,
+      "center_color": 5605989,
+      "edge_color": 4023895,
+      "pattern_color": 468509,
+      "text_color": 11919572
     }
   ]
 }

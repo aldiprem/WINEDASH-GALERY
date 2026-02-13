@@ -1,26 +1,55 @@
 {
+  "id": 5796541292074763167,
+  "gift_id": 6023679164349940429,
   "slug": "SnakeBox-169968",
   "title": "Snake Box",
   "num": 169968,
-  "availability_issued": 170178,
+  "availability_issued": 170190,
   "availability_total": 273898,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9583900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sketch",
       "rarity": 15,
-      "document_id": 5370988678187344452
+      "document": {
+        "id": 5370988678187344452,
+        "access_hash": 3697618235999824031,
+        "date": "2025-03-12T01:04:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52496,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Winged Helmet",
       "rarity": 8,
-      "document_id": 5314263481740977405
+      "document": {
+        "id": 5314263481740977405,
+        "access_hash": 8846313341861829689,
+        "date": "2025-02-20T17:51:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1053,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

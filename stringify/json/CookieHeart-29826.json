@@ -1,26 +1,55 @@
 {
+  "id": 5832503628769788635,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-29826",
   "title": "Cookie Heart",
   "num": 29826,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Broken Code",
       "rarity": 10,
-      "document_id": 5228832983040944062
+      "document": {
+        "id": 5228832983040944062,
+        "access_hash": 8055901654922859903,
+        "date": "2025-01-22T23:49:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33072,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower Tulip",
       "rarity": 2,
-      "document_id": 5433949381168489107
+      "document": {
+        "id": 5433949381168489107,
+        "access_hash": 4499374774014947072,
+        "date": "2024-12-26T14:47:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 877,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

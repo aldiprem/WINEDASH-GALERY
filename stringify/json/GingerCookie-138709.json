@@ -1,26 +1,55 @@
 {
+  "id": 5962887724795954274,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-138709",
   "title": "Ginger Cookie",
   "num": 138709,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vanilla",
       "rarity": 17,
-      "document_id": 5447458221545513740
+      "document": {
+        "id": 5447458221545513740,
+        "access_hash": 6277520721195924331,
+        "date": "2024-12-31T05:48:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29579,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Star",
       "rarity": 18,
-      "document_id": 5420190079773597190
+      "document": {
+        "id": 5420190079773597190,
+        "access_hash": -8571889126842035861,
+        "date": "2024-12-21T05:44:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 817,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

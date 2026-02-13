@@ -1,26 +1,55 @@
 {
+  "id": 5859384566355067541,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-47511",
   "title": "Xmas Stocking",
   "num": 47511,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wonderland",
       "rarity": 30,
-      "document_id": 5294041053429523900
+      "document": {
+        "id": 5294041053429523900,
+        "access_hash": 5359923660350872909,
+        "date": "2025-02-14T11:31:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40829,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Paschal Lamb",
       "rarity": 4,
-      "document_id": 5483374185478619150
+      "document": {
+        "id": 5483374185478619150,
+        "access_hash": -8065672044266276870,
+        "date": "2025-04-18T17:01:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1267,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Aquamarine",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 11,
+      "center_color": 6336917,
+      "edge_color": 4631476,
+      "pattern_color": 221031,
+      "text_color": 13106686
     }
   ]
 }

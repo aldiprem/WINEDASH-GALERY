@@ -1,26 +1,55 @@
 {
+  "id": 5816624060934652397,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-31688",
   "title": "Jelly Bunny",
   "num": 31688,
-  "availability_issued": 102244,
+  "availability_issued": 102249,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "нева",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18713000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Light Wobble",
       "rarity": 5,
-      "document_id": 5397830175087945499
+      "document": {
+        "id": 5397830175087945499,
+        "access_hash": 8188525905389931788,
+        "date": "2024-12-14T11:45:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53043,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crab",
       "rarity": 5,
-      "document_id": 5424858399986705924
+      "document": {
+        "id": 5424858399986705924,
+        "access_hash": 5717213261743719240,
+        "date": "2024-12-23T14:51:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1511,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

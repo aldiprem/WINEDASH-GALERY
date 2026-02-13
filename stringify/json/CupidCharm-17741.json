@@ -1,26 +1,55 @@
 {
+  "id": 6001553936677339877,
+  "gift_id": 5868561433997870501,
   "slug": "CupidCharm-17741",
   "title": "Cupid Charm",
   "num": 17741,
   "availability_issued": 29861,
   "availability_total": 33112,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "flunmpy.t.me",
+  "gift_address": "EQCr0SiVrYfKE1Jy3ImMlrl_xlH0Td_DdEle1weGfbJHCd4_",
+  "value_amount": 79585100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Blossom",
       "rarity": 15,
-      "document_id": 5422347948652523397
+      "document": {
+        "id": 5422347948652523397,
+        "access_hash": 3822077982177726245,
+        "date": "2025-03-29T14:18:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 46259,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Angel",
       "rarity": 7,
-      "document_id": 5285531885697526496
+      "document": {
+        "id": 5285531885697526496,
+        "access_hash": -3736579685785980037,
+        "date": "2025-02-11T18:10:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1105,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6019225257494184469,
+  "gift_id": 6003456431095808759,
   "slug": "FaithAmulet-105855",
   "title": "Faith Amulet",
   "num": 105855,
-  "availability_issued": 135385,
+  "availability_issued": 135390,
   "availability_total": 172784,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14131600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rose Gold",
       "rarity": 30,
-      "document_id": 5305256196586896388
+      "document": {
+        "id": 5305256196586896388,
+        "access_hash": -7878009367895952826,
+        "date": "2025-08-30T22:42:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30087,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wreath",
       "rarity": 4,
-      "document_id": 5440727526756342476
+      "document": {
+        "id": 5440727526756342476,
+        "access_hash": -5403014624615019531,
+        "date": "2024-12-28T11:05:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1209,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Black",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "pattern_color": 7104616,
+      "text_color": 9211793
     }
   ]
 }

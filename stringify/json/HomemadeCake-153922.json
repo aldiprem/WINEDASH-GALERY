@@ -1,26 +1,55 @@
 {
+  "id": 5999179919274279512,
+  "gift_id": 5783075783622787539,
   "slug": "HomemadeCake-153922",
   "title": "Homemade Cake",
   "num": 153922,
-  "availability_issued": 178568,
+  "availability_issued": 178569,
   "availability_total": 199482,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Çiçi",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17483400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mint Kiss",
       "rarity": 15,
-      "document_id": 5420529884701155456
+      "document": {
+        "id": 5420529884701155456,
+        "access_hash": -5796225381316467551,
+        "date": "2024-12-21T15:47:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16856,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dessert",
       "rarity": 3,
-      "document_id": 5433791150278337082
+      "document": {
+        "id": 5433791150278337082,
+        "access_hash": 3090493827616352506,
+        "date": "2024-12-26T14:49:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 933,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

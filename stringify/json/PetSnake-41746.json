@@ -1,26 +1,55 @@
 {
+  "id": 5863769380071932958,
+  "gift_id": 6023917088358269866,
   "slug": "PetSnake-41746",
   "title": "Pet Snake",
   "num": 41746,
-  "availability_issued": 174528,
+  "availability_issued": 174535,
   "availability_total": 279106,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13137900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Zombie",
       "rarity": 5,
-      "document_id": 5399848251371321088
+      "document": {
+        "id": 5399848251371321088,
+        "access_hash": -4646163937012056138,
+        "date": "2025-03-21T20:28:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27674,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eikthyrnir",
       "rarity": 5,
-      "document_id": 5722379245666172949
+      "document": {
+        "id": 5722379245666172949,
+        "access_hash": -1718693921207800600,
+        "date": "2024-12-26T12:03:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2569,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Old Gold",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 75,
+      "center_color": 11898168,
+      "edge_color": 9726245,
+      "pattern_color": 5190402,
+      "text_color": 16768396
     }
   ]
 }

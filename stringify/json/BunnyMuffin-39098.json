@@ -1,26 +1,55 @@
 {
+  "id": 5972258600406484193,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-39098",
   "title": "Bunny Muffin",
   "num": 39098,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Citrus",
       "rarity": 8,
-      "document_id": 5440415536036995959
+      "document": {
+        "id": 5440415536036995959,
+        "access_hash": 573893694514284444,
+        "date": "2024-12-28T18:15:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19444,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Polar Bear",
       "rarity": 4,
-      "document_id": 5436199355621072900
+      "document": {
+        "id": 5436199355621072900,
+        "access_hash": 8330389706498113020,
+        "date": "2024-12-26T12:22:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1250,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carrot Juice",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 24,
+      "center_color": 14391399,
+      "edge_color": 13070159,
+      "pattern_color": 9314560,
+      "text_color": 16766922
     }
   ]
 }

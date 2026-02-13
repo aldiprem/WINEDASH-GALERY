@@ -1,26 +1,55 @@
 {
+  "id": 5922423746978644630,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-34603",
   "title": "Jingle Bells",
   "num": 34603,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75884,
+  "availability_total": 114946,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "wd",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Shiny Opal",
       "rarity": 14,
-      "document_id": 5237951344639237728
+      "document": {
+        "id": 5237951344639237728,
+        "access_hash": 7415978441208839769,
+        "date": "2025-01-26T07:40:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36147,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ice Pop",
       "rarity": 24,
-      "document_id": 5434148663356054664
+      "document": {
+        "id": 5434148663356054664,
+        "access_hash": -3894290261695072024,
+        "date": "2024-12-26T14:49:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 915,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

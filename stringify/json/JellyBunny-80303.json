@@ -1,26 +1,55 @@
 {
+  "id": 6017071821021512626,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-80303",
   "title": "Jelly Bunny",
   "num": 80303,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "non active.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tropic Twist",
       "rarity": 5,
-      "document_id": 5399932613118942477
+      "document": {
+        "id": 5399932613118942477,
+        "access_hash": 7584435252035975918,
+        "date": "2024-12-14T11:43:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53049,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pizza Slice",
       "rarity": 4,
-      "document_id": 5436241476365344257
+      "document": {
+        "id": 5436241476365344257,
+        "access_hash": 1965465533777700212,
+        "date": "2024-12-26T14:47:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 972,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Hunter Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 35,
+      "center_color": 9416312,
+      "edge_color": 4948571,
+      "pattern_color": 1853727,
+      "text_color": 14218718
     }
   ]
 }

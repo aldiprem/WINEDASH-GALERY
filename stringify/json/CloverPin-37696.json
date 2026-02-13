@@ -1,26 +1,55 @@
 {
+  "id": 5899764800900039701,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-37696",
   "title": "Clover Pin",
   "num": 37696,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sangria",
       "rarity": 20,
-      "document_id": 5251562495432226987
+      "document": {
+        "id": 5251562495432226987,
+        "access_hash": 8920807898011109874,
+        "date": "2025-08-13T08:15:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20200,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Piranha",
       "rarity": 5,
-      "document_id": 5546636489653223478
+      "document": {
+        "id": 5546636489653223478,
+        "access_hash": 3037701951061237141,
+        "date": "2025-02-02T17:53:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1326,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

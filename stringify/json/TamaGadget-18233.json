@@ -1,26 +1,55 @@
 {
+  "id": 5933498375985955714,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-18233",
   "title": "Tama Gadget",
   "num": 18233,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Love Wish",
       "rarity": 8,
-      "document_id": 5265267718893899816
+      "document": {
+        "id": 5265267718893899816,
+        "access_hash": -4589494682462205081,
+        "date": "2025-02-04T11:59:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 11737,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Croissant",
       "rarity": 5,
-      "document_id": 5438553027764052896
+      "document": {
+        "id": 5438553027764052896,
+        "access_hash": 3917189328503103517,
+        "date": "2024-12-28T11:14:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 893,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

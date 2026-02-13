@@ -1,26 +1,55 @@
 {
+  "id": 6008119773441819460,
+  "gift_id": 6005659564635063386,
   "slug": "JackInTheBox-19219",
   "title": "Jack-in-the-Box",
   "num": 19219,
   "availability_issued": 96093,
   "availability_total": 97345,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Doghouse",
       "rarity": 30,
-      "document_id": 5429648405213246511
+      "document": {
+        "id": 5429648405213246511,
+        "access_hash": -2561549685883944384,
+        "date": "2025-03-31T13:17:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40399,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Monstera",
       "rarity": 4,
-      "document_id": 5440538350626823546
+      "document": {
+        "id": 5440538350626823546,
+        "access_hash": 7788511752124799363,
+        "date": "2024-12-28T11:06:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1160,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

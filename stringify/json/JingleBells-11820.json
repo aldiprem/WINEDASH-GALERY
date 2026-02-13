@@ -1,26 +1,55 @@
 {
+  "id": 5827794987403707103,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-11820",
   "title": "Jingle Bells",
   "num": 11820,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75883,
+  "availability_total": 114945,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "tank",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tulip Time",
       "rarity": 9,
-      "document_id": 5237857662812579803
+      "document": {
+        "id": 5237857662812579803,
+        "access_hash": -5712854300910554922,
+        "date": "2025-01-26T07:35:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27250,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candy",
       "rarity": 23,
-      "document_id": 5422574937674115533
+      "document": {
+        "id": 5422574937674115533,
+        "access_hash": -6166631400688415177,
+        "date": "2024-12-22T22:45:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1150,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

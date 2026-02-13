@@ -1,26 +1,55 @@
 {
+  "id": 5818652569693586393,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-158605",
   "title": "Whip Cupcake",
   "num": 158605,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "First Bite",
       "rarity": 30,
-      "document_id": 5334803411214823745
+      "document": {
+        "id": 5334803411214823745,
+        "access_hash": -3315581151888293433,
+        "date": "2025-06-04T13:27:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52382,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Burger",
       "rarity": 7,
-      "document_id": 5434080145742782526
+      "document": {
+        "id": 5434080145742782526,
+        "access_hash": -810063247391715670,
+        "date": "2024-12-26T15:06:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 929,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

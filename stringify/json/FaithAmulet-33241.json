@@ -1,26 +1,55 @@
 {
+  "id": 6005705181482714264,
+  "gift_id": 6003456431095808759,
   "slug": "FaithAmulet-33241",
   "title": "Faith Amulet",
   "num": 33241,
-  "availability_issued": 135385,
+  "availability_issued": 135390,
   "availability_total": 172784,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14131600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Royal Green",
       "rarity": 25,
-      "document_id": 5332306613581676702
+      "document": {
+        "id": 5332306613581676702,
+        "access_hash": 2817141407338560667,
+        "date": "2025-09-09T15:03:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40291,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cactus",
       "rarity": 7,
-      "document_id": 5440665872500809370
+      "document": {
+        "id": 5440665872500809370,
+        "access_hash": -3871307256100794464,
+        "date": "2024-12-28T11:06:41+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 773,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6030560200174338588,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-11",
   "title": "Plush Pepe",
   "num": 11,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQBG-_rsOt7ocQ0CLlJ7ddx5jIJGxfd_TmYCnQzU6Da9swWY",
+  "gift_address": "EQDZ2az7slIhg-XfjM4UzAA9ZTTWgl1Qa3w-lndxizQUFUJ-",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cold Heart",
       "rarity": 30,
-      "document_id": 5424955857089616771
+      "document": {
+        "id": 5424955857089616771,
+        "access_hash": 8591373451987427906,
+        "date": "2024-12-23T01:07:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15948,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Alkonost",
       "rarity": 4,
-      "document_id": 5733143082250010685
+      "document": {
+        "id": 5733143082250010685,
+        "access_hash": 1858406224902891833,
+        "date": "2024-12-29T18:16:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1635,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

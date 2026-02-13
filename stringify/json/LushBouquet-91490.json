@@ -1,26 +1,55 @@
 {
+  "id": 5994517259828069397,
+  "gift_id": 5871002671934079382,
   "slug": "LushBouquet-91490",
   "title": "Lush Bouquet",
   "num": 91490,
-  "availability_issued": 104643,
+  "availability_issued": 104646,
   "availability_total": 140116,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20363700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fisherman",
       "rarity": 15,
-      "document_id": 5242657542168933376
+      "document": {
+        "id": 5242657542168933376,
+        "access_hash": 1013522104061475010,
+        "date": "2025-05-04T12:51:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 45710,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Geisha Fan",
       "rarity": 5,
-      "document_id": 5582495309046480907
+      "document": {
+        "id": 5582495309046480907,
+        "access_hash": 6155952818713121477,
+        "date": "2025-02-14T18:56:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 990,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

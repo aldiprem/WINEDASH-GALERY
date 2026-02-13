@@ -1,26 +1,55 @@
 {
+  "id": 5868245822621090770,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-345392",
   "title": "Instant Ramen",
   "num": 345392,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13272600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Lobster",
       "rarity": 20,
-      "document_id": 5309835190070181567
+      "document": {
+        "id": 5309835190070181567,
+        "access_hash": -4170775769873579876,
+        "date": "2025-09-02T09:16:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38650,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Coat of Arms",
       "rarity": 2,
-      "document_id": 5433846813054494068
+      "document": {
+        "id": 5433846813054494068,
+        "access_hash": -4237594008193001737,
+        "date": "2024-12-26T12:26:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1109,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5818936600175837936,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-58561",
   "title": "Tama Gadget",
   "num": 58561,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Egg Catch",
       "rarity": 3,
-      "document_id": 5330331671654852938
+      "document": {
+        "id": 5330331671654852938,
+        "access_hash": 6461592178260238361,
+        "date": "2025-02-26T13:24:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14136,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Maple Leaf",
       "rarity": 5,
-      "document_id": 5436212648544854698
+      "document": {
+        "id": 5436212648544854698,
+        "access_hash": 2074433650156228043,
+        "date": "2024-12-26T14:46:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1211,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tomato",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 72,
+      "center_color": 15104318,
+      "edge_color": 13913663,
+      "pattern_color": 8391424,
+      "text_color": 16764093
     }
   ]
 }

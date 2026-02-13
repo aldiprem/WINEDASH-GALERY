@@ -1,26 +1,55 @@
 {
+  "id": 6003301666244265104,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-242025",
   "title": "Ice Cream",
   "num": 242025,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fresh Berry",
       "rarity": 30,
-      "document_id": 5368312754648155974
+      "document": {
+        "id": 5368312754648155974,
+        "access_hash": 1835668940166695385,
+        "date": "2025-09-21T11:21:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23387,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Peace Dove",
       "rarity": 7,
-      "document_id": 5483426730108518409
+      "document": {
+        "id": 5483426730108518409,
+        "access_hash": 3183334449081305823,
+        "date": "2025-04-18T17:01:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1035,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

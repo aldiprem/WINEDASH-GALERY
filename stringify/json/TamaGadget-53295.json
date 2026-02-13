@@ -1,26 +1,55 @@
 {
+  "id": 6041880582915360117,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-53295",
   "title": "Tama Gadget",
   "num": 53295,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14653800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Money Wish",
       "rarity": 8,
-      "document_id": 5283254642497579805
+      "document": {
+        "id": 5283254642497579805,
+        "access_hash": 110264265388115404,
+        "date": "2025-02-10T13:10:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 11931,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Skull",
       "rarity": 5,
-      "document_id": 5422475891433304226
+      "document": {
+        "id": 5422475891433304226,
+        "access_hash": -5451927501664372592,
+        "date": "2024-12-22T22:45:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 864,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

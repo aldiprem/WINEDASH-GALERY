@@ -1,26 +1,55 @@
 {
+  "id": 5897530898215076949,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-98684",
   "title": "Jelly Bunny",
   "num": 98684,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Snail Gel",
       "rarity": 15,
-      "document_id": 5429427991786578506
+      "document": {
+        "id": 5429427991786578506,
+        "access_hash": 2536486640391226887,
+        "date": "2024-12-24T18:34:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 56298,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sun",
       "rarity": 4,
-      "document_id": 5440840243878058297
+      "document": {
+        "id": 5440840243878058297,
+        "access_hash": 5608351311609081646,
+        "date": "2024-12-28T12:33:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 931,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Persimmon",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 26,
+      "center_color": 15181658,
+      "edge_color": 12937055,
+      "pattern_color": 11341312,
+      "text_color": 16770263
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5848172824811799042,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-21265",
   "title": "Xmas Stocking",
   "num": 21265,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12632600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wonderland",
       "rarity": 30,
-      "document_id": 5294041053429523900
+      "document": {
+        "id": 5294041053429523900,
+        "access_hash": 5359923660350872909,
+        "date": "2025-02-14T11:31:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40829,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sea Jelly",
       "rarity": 2,
-      "document_id": 5434006117686470301
+      "document": {
+        "id": 5434006117686470301,
+        "access_hash": 4999492127382868880,
+        "date": "2024-12-26T15:09:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1068,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rifle Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 65,
+      "center_color": 6580572,
+      "edge_color": 4936257,
+      "pattern_color": 987659,
+      "text_color": 12830653
     }
   ]
 }

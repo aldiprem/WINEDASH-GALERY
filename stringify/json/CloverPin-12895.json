@@ -1,26 +1,55 @@
 {
+  "id": 5899905010107417384,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-12895",
   "title": "Clover Pin",
   "num": 12895,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Merrow",
       "rarity": 15,
-      "document_id": 5260374746121400933
+      "document": {
+        "id": 5260374746121400933,
+        "access_hash": 45113231046360032,
+        "date": "2025-08-16T06:58:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32165,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bobby Helmet",
       "rarity": 5,
-      "document_id": 5312231485468602152
+      "document": {
+        "id": 5312231485468602152,
+        "access_hash": 1446797598798879049,
+        "date": "2025-02-20T17:33:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 979,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     }
   ]
 }

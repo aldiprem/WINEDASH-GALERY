@@ -1,26 +1,55 @@
 {
+  "id": 5870558490711295382,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-217724",
   "title": "Clover Pin",
   "num": 217724,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ice Cream",
       "rarity": 20,
-      "document_id": 5260677777538971071
+      "document": {
+        "id": 5260677777538971071,
+        "access_hash": -5703300029308193373,
+        "date": "2025-08-15T11:23:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37305,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Corn",
       "rarity": 5,
-      "document_id": 5424903810675924078
+      "document": {
+        "id": 5424903810675924078,
+        "access_hash": 1370797081148707032,
+        "date": "2024-12-23T04:55:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1110,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Aquamarine",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 11,
+      "center_color": 6336917,
+      "edge_color": 4631476,
+      "pattern_color": 221031,
+      "text_color": 13106686
     }
   ]
 }

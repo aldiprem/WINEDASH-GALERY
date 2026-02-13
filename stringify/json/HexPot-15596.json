@@ -1,26 +1,55 @@
 {
+  "id": 6037250221623215187,
+  "gift_id": 5825801628657124140,
   "slug": "HexPot-15596",
   "title": "Hex Pot",
   "num": 15596,
-  "availability_issued": 55280,
+  "availability_issued": 55281,
   "availability_total": 69837,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14788500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Burnt Petals",
       "rarity": 14,
-      "document_id": 5431840517866414025
+      "document": {
+        "id": 5431840517866414025,
+        "access_hash": -3981836588127876632,
+        "date": "2024-12-25T13:43:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 43207,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Evil Pumpkin",
       "rarity": 24,
-      "document_id": 5301253879772494275
+      "document": {
+        "id": 5301253879772494275,
+        "access_hash": 3923879863054012380,
+        "date": "2023-10-19T19:01:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1246,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6008342604935070535,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-274062",
   "title": "Ice Cream",
   "num": 274062,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cyclone",
       "rarity": 30,
-      "document_id": 5239958610489932393
+      "document": {
+        "id": 5239958610489932393,
+        "access_hash": -6258608022726816041,
+        "date": "2025-08-09T15:46:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15394,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bicorne",
       "rarity": 7,
-      "document_id": 5314763729466846098
+      "document": {
+        "id": 5314763729466846098,
+        "access_hash": 4283897202302777076,
+        "date": "2025-02-21T12:34:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1168,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

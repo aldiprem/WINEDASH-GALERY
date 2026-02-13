@@ -1,26 +1,55 @@
 {
+  "id": 6003661343985501381,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-112305",
   "title": "Ice Cream",
   "num": 112305,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Gold Ingot",
       "rarity": 10,
-      "document_id": 5350403234945070109
+      "document": {
+        "id": 5350403234945070109,
+        "access_hash": -837419710704976995,
+        "date": "2025-06-09T21:17:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27724,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sumerian Bird",
       "rarity": 7,
-      "document_id": 5724535083025563683
+      "document": {
+        "id": 5724535083025563683,
+        "access_hash": 7523117530244648058,
+        "date": "2024-12-26T12:00:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3012,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Steel Grey",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 44,
+      "center_color": 9937580,
+      "edge_color": 6517372,
+      "pattern_color": 3360082,
+      "text_color": 14673128
     }
   ]
 }

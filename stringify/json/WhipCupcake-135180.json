@@ -1,26 +1,55 @@
 {
+  "id": 6048830372576233025,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-135180",
   "title": "Whip Cupcake",
   "num": 135180,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Артем ­",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "First Bite",
       "rarity": 30,
-      "document_id": 5334803411214823745
+      "document": {
+        "id": 5334803411214823745,
+        "access_hash": -3315581151888293433,
+        "date": "2025-06-04T13:27:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52382,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Nigiri",
       "rarity": 7,
-      "document_id": 5584758520588271634
+      "document": {
+        "id": 5584758520588271634,
+        "access_hash": 1218595845675508564,
+        "date": "2025-02-14T18:56:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1129,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

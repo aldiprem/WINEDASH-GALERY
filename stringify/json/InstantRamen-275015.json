@@ -1,26 +1,55 @@
 {
+  "id": 6014901161729983397,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-275015",
   "title": "Instant Ramen",
   "num": 275015,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Homemade",
       "rarity": 20,
-      "document_id": 5273928928468171969
+      "document": {
+        "id": 5273928928468171969,
+        "access_hash": 3944304336784319837,
+        "date": "2025-08-20T09:37:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65074,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Kitsune",
       "rarity": 5,
-      "document_id": 5722361541810978822
+      "document": {
+        "id": 5722361541810978822,
+        "access_hash": 5814900965451477302,
+        "date": "2024-12-26T12:00:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1653,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Purple",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 51,
+      "center_color": 11431086,
+      "edge_color": 8669060,
+      "pattern_color": 4656199,
+      "text_color": 15977459
     }
   ]
 }

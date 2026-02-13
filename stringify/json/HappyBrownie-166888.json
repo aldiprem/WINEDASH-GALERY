@@ -1,26 +1,55 @@
 {
+  "id": 6026308100946920358,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-166888",
   "title": "Happy Brownie",
   "num": 166888,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bubble Tea",
       "rarity": 30,
-      "document_id": 5332598031407678278
+      "document": {
+        "id": 5332598031407678278,
+        "access_hash": 8223066900282717570,
+        "date": "2025-09-09T15:26:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39985,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fish Skeleton",
       "rarity": 5,
-      "document_id": 5436257986219631092
+      "document": {
+        "id": 5436257986219631092,
+        "access_hash": -4358980901916551940,
+        "date": "2024-12-26T11:42:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1426,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Hunter Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 35,
+      "center_color": 9416312,
+      "edge_color": 4948571,
+      "pattern_color": 1853727,
+      "text_color": 14218718
     }
   ]
 }

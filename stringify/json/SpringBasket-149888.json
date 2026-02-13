@@ -1,26 +1,55 @@
 {
+  "id": 5825707251045762567,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-149888",
   "title": "Spring Basket",
   "num": 149888,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18898300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Capybara",
       "rarity": 30,
-      "document_id": 5397616676558635042
+      "document": {
+        "id": 5397616676558635042,
+        "access_hash": -3989127547607048640,
+        "date": "2025-10-01T10:10:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19823,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mountain Lion",
       "rarity": 7,
-      "document_id": 5729121412312989726
+      "document": {
+        "id": 5729121412312989726,
+        "access_hash": 8702917075450159014,
+        "date": "2024-12-28T10:07:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1382,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003524837039931985,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-74858",
   "title": "Whip Cupcake",
   "num": 74858,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "︎ ︎ ᅠ ︎ ︎ ︎ ︎ ᅠ ︎ ︎ ︎ ︎ ᅠ",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Biohazard",
       "rarity": 20,
-      "document_id": 5287559307829737300
+      "document": {
+        "id": 5287559307829737300,
+        "access_hash": 2607725056626998954,
+        "date": "2025-05-20T13:06:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32416,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cupid",
       "rarity": 4,
-      "document_id": 5305677962375347073
+      "document": {
+        "id": 5305677962375347073,
+        "access_hash": 7098713431087148489,
+        "date": "2023-10-21T14:36:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2208,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Black",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "pattern_color": 7104616,
+      "text_color": 9211793
     }
   ]
 }

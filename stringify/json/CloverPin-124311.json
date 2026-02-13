@@ -1,26 +1,55 @@
 {
+  "id": 5902102860836897471,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-124311",
   "title": "Clover Pin",
   "num": 124311,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Merrow",
       "rarity": 15,
-      "document_id": 5260374746121400933
+      "document": {
+        "id": 5260374746121400933,
+        "access_hash": 45113231046360032,
+        "date": "2025-08-16T06:58:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32165,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Handset",
       "rarity": 5,
-      "document_id": 5433797377980918182
+      "document": {
+        "id": 5433797377980918182,
+        "access_hash": -7500743813900186608,
+        "date": "2024-12-26T11:45:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 717,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

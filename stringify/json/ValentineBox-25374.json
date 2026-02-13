@@ -1,26 +1,55 @@
 {
+  "id": 6037371752017822561,
+  "gift_id": 5868595669182186720,
   "slug": "ValentineBox-25374",
   "title": "Valentine Box",
   "num": 25374,
   "availability_issued": 34207,
   "availability_total": 41025,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 28212700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pop Art",
       "rarity": 30,
-      "document_id": 5316652883716888689
+      "document": {
+        "id": 5316652883716888689,
+        "access_hash": -3413560059289850308,
+        "date": "2025-02-22T03:40:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15654,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sakura Flower",
       "rarity": 4,
-      "document_id": 5582668065516027912
+      "document": {
+        "id": 5582668065516027912,
+        "access_hash": -4461281412979708756,
+        "date": "2025-02-14T18:56:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1358,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

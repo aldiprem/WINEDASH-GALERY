@@ -1,26 +1,55 @@
 {
+  "id": 6021436362492740665,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-72699",
   "title": "Candy Cane",
   "num": 72699,
-  "availability_issued": 209552,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10965100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Nightmare",
       "rarity": 20,
-      "document_id": 5339424675766231692
+      "document": {
+        "id": 5339424675766231692,
+        "access_hash": 9191675016725471946,
+        "date": "2025-03-01T11:49:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25010,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jingle Bell",
       "rarity": 24,
-      "document_id": 5206464681694217071
+      "document": {
+        "id": 5206464681694217071,
+        "access_hash": 1040973728026945150,
+        "date": "2023-12-24T22:56:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1679,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Light Olive",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "pattern_color": 5852164,
+      "text_color": 16116668
     }
   ]
 }

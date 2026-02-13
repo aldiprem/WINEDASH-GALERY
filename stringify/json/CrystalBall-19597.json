@@ -1,26 +1,55 @@
 {
+  "id": 5989913523038192331,
+  "gift_id": 5841336413697606412,
   "slug": "CrystalBall-19597",
   "title": "Crystal Ball",
   "num": 19597,
   "availability_issued": 26682,
   "availability_total": 27732,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 27656900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Amanita",
       "rarity": 20,
-      "document_id": 5213152877782002887
+      "document": {
+        "id": 5213152877782002887,
+        "access_hash": -5808047419607837614,
+        "date": "2025-01-17T19:52:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32287,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Doberman",
       "rarity": 2,
-      "document_id": 5721848477902700557
+      "document": {
+        "id": 5721848477902700557,
+        "access_hash": 8943721828425766300,
+        "date": "2024-12-26T12:03:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1847,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

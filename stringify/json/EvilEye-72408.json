@@ -1,26 +1,55 @@
 {
+  "id": 5962892968951022546,
+  "gift_id": 5825480571261813595,
   "slug": "EvilEye-72408",
   "title": "Evil Eye",
   "num": 72408,
   "availability_issued": 72951,
   "availability_total": 85204,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16422300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Apex Predator",
       "rarity": 15,
-      "document_id": 5429470494782942290
+      "document": {
+        "id": 5429470494782942290,
+        "access_hash": 7835236997219602259,
+        "date": "2024-12-24T18:37:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15044,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sauron",
       "rarity": 24,
-      "document_id": 5434053869132867742
+      "document": {
+        "id": 5434053869132867742,
+        "access_hash": -5161168758391023720,
+        "date": "2024-12-26T12:09:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 882,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Light Olive",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "pattern_color": 5852164,
+      "text_color": 16116668
     }
   ]
 }

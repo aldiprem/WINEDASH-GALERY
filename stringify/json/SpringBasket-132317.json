@@ -1,26 +1,55 @@
 {
+  "id": 6048392174242891062,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-132317",
   "title": "Spring Basket",
   "num": 132317,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sushi Neko",
       "rarity": 25,
-      "document_id": 5352989913358823083
+      "document": {
+        "id": 5352989913358823083,
+        "access_hash": 7632619994954188893,
+        "date": "2025-06-10T17:15:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23749,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crystal Ball",
       "rarity": 7,
-      "document_id": 5440487188976393935
+      "document": {
+        "id": 5440487188976393935,
+        "access_hash": 3207888872014839332,
+        "date": "2024-12-28T09:54:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 895,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cappuccino",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 39,
+      "center_color": 11636862,
+      "edge_color": 8151894,
+      "pattern_color": 4862502,
+      "text_color": 15455432
     }
   ]
 }

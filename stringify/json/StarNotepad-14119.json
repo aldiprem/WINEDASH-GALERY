@@ -1,26 +1,55 @@
 {
+  "id": 5845917743643099643,
+  "gift_id": 5936017773737018241,
   "slug": "StarNotepad-14119",
   "title": "Star Notepad",
   "num": 14119,
-  "availability_issued": 68895,
+  "availability_issued": 68897,
   "availability_total": 99082,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "H𝑒ra",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15293800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cyprus",
       "rarity": 13,
-      "document_id": 5211203254687392527
+      "document": {
+        "id": 5211203254687392527,
+        "access_hash": -5773264319007754465,
+        "date": "2025-01-17T01:29:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14029,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eye of Horus",
       "rarity": 5,
-      "document_id": 5544416335158575123
+      "document": {
+        "id": 5544416335158575123,
+        "access_hash": -8943677641605534696,
+        "date": "2025-02-01T17:42:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1724,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lemongrass",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 17,
+      "center_color": 11450458,
+      "edge_color": 5608261,
+      "pattern_color": 4614663,
+      "text_color": 14217922
     }
   ]
 }

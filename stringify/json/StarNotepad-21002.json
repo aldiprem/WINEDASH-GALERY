@@ -1,26 +1,55 @@
 {
+  "id": 5870607668086834161,
+  "gift_id": 5936017773737018241,
   "slug": "StarNotepad-21002",
   "title": "Star Notepad",
   "num": 21002,
-  "availability_issued": 68895,
+  "availability_issued": 68898,
   "availability_total": 99082,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18932000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Metallic",
       "rarity": 7,
-      "document_id": 5237781276819220714
+      "document": {
+        "id": 5237781276819220714,
+        "access_hash": -2445194067916774238,
+        "date": "2025-01-26T12:51:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20094,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Heraldic Lily",
       "rarity": 5,
-      "document_id": 5551136193745256466
+      "document": {
+        "id": 5551136193745256466,
+        "access_hash": 41235499608257031,
+        "date": "2025-02-03T13:29:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1860,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5825528438672327120,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-27329",
   "title": "Party Sparkler",
   "num": 27329,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chrome",
       "rarity": 9,
-      "document_id": 5228905353239881621
+      "document": {
+        "id": 5228905353239881621,
+        "access_hash": 7068385201269803954,
+        "date": "2025-01-23T11:27:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37309,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rudolph",
       "rarity": 18,
-      "document_id": 5283265641908824187
+      "document": {
+        "id": 5283265641908824187,
+        "access_hash": -2249235203758051328,
+        "date": "2024-11-05T19:06:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 934,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5841240794840695829,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-104121",
   "title": "Lol Pop",
   "num": 104121,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Foil",
       "rarity": 10,
-      "document_id": 5226938803679162970
+      "document": {
+        "id": 5226938803679162970,
+        "access_hash": -8766694213902917332,
+        "date": "2025-01-22T23:42:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60435,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sakura",
       "rarity": 4,
-      "document_id": 5436157677258431414
+      "document": {
+        "id": 5436157677258431414,
+        "access_hash": -1522431990446713429,
+        "date": "2024-12-26T12:16:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1644,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

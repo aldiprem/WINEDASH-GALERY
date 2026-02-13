@@ -1,26 +1,55 @@
 {
+  "id": 6019454351049753563,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-497017",
   "title": "Snoop Dogg",
   "num": 497017,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Horseman",
       "rarity": 10,
-      "document_id": 5375579714758934187
+      "document": {
+        "id": 5375579714758934187,
+        "access_hash": -7565771067002296649,
+        "date": "2025-06-18T20:14:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 49578,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shield",
       "rarity": 5,
-      "document_id": 5440775819368620198
+      "document": {
+        "id": 5440775819368620198,
+        "access_hash": 9082059527896221205,
+        "date": "2024-12-28T11:09:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 562,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

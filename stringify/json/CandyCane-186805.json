@@ -1,26 +1,55 @@
 {
+  "id": 5794086013890462531,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-186805",
   "title": "Candy Cane",
   "num": 186805,
-  "availability_issued": 209557,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10965100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Negativus",
       "rarity": 26,
-      "document_id": 5339280510893977424
+      "document": {
+        "id": 5339280510893977424,
+        "access_hash": 4704655487854573203,
+        "date": "2025-03-01T18:27:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27553,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Snowman",
       "rarity": 24,
-      "document_id": 5197201682777266057
+      "document": {
+        "id": 5197201682777266057,
+        "access_hash": 1806505860606713771,
+        "date": "2024-10-07T19:11:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1172,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

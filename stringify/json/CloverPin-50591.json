@@ -1,26 +1,55 @@
 {
+  "id": 5899848282179371949,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-50591",
   "title": "Clover Pin",
   "num": 50591,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ice Cream",
       "rarity": 20,
-      "document_id": 5260677777538971071
+      "document": {
+        "id": 5260677777538971071,
+        "access_hash": -5703300029308193373,
+        "date": "2025-08-15T11:23:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37305,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bell Pepper",
       "rarity": 5,
-      "document_id": 5440799905545215818
+      "document": {
+        "id": 5440799905545215818,
+        "access_hash": 7011861148719333894,
+        "date": "2024-12-28T11:15:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1094,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

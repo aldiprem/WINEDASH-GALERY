@@ -1,26 +1,55 @@
 {
+  "id": 6014724763128169331,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-24744",
   "title": "Snoop Cigar",
   "num": 24744,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "The King",
       "rarity": 30,
-      "document_id": 5373020661574826232
+      "document": {
+        "id": 5373020661574826232,
+        "access_hash": 7595399971509809770,
+        "date": "2025-06-18T14:52:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55110,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Moon Eagle",
       "rarity": 5,
-      "document_id": 5722284966839058444
+      "document": {
+        "id": 5722284966839058444,
+        "access_hash": 4069838170467166052,
+        "date": "2024-12-26T12:01:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2308,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Roman Silver",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 43,
+      "center_color": 10725557,
+      "edge_color": 8159370,
+      "pattern_color": 4146512,
+      "text_color": 14344162
     }
   ]
 }

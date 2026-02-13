@@ -1,26 +1,55 @@
 {
+  "id": 5850363717694259835,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-97114",
   "title": "Tama Gadget",
   "num": 97114,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Winter",
       "rarity": 20,
-      "document_id": 5276412686580605204
+      "document": {
+        "id": 5276412686580605204,
+        "access_hash": 6947147734697544788,
+        "date": "2025-02-07T20:18:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14394,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower",
       "rarity": 2,
-      "document_id": 5433932673745708750
+      "document": {
+        "id": 5433932673745708750,
+        "access_hash": 2939297856423211201,
+        "date": "2024-12-26T14:46:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 859,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pine Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 34,
+      "center_color": 7055740,
+      "edge_color": 4094320,
+      "pattern_color": 739379,
+      "text_color": 14218725
     }
   ]
 }

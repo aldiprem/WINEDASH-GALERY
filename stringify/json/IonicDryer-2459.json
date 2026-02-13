@@ -1,26 +1,55 @@
 {
+  "id": 5825747928681022744,
+  "gift_id": 5933937398953018107,
   "slug": "IonicDryer-2459",
   "title": "Ionic Dryer",
   "num": 2459,
   "availability_issued": 19701,
   "availability_total": 25719,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 75795300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wet Styling",
       "rarity": 25,
-      "document_id": 5213167867217870507
+      "document": {
+        "id": 5213167867217870507,
+        "access_hash": -4566121594006803972,
+        "date": "2025-07-30T16:50:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55164,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Diamond",
       "rarity": 5,
-      "document_id": 5440747541303942913
+      "document": {
+        "id": 5440747541303942913,
+        "access_hash": -6918835098295810347,
+        "date": "2024-12-28T11:09:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 865,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Gunmetal",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 69,
+      "center_color": 5004643,
+      "edge_color": 3095362,
+      "pattern_color": 264202,
+      "text_color": 11978188
     }
   ]
 }

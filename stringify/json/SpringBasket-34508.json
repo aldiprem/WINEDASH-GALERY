@@ -1,26 +1,55 @@
 {
+  "id": 6003768859901821661,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-34508",
   "title": "Spring Basket",
   "num": 34508,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "A",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lovely Lamb",
       "rarity": 30,
-      "document_id": 5350799248109633181
+      "document": {
+        "id": 5350799248109633181,
+        "access_hash": 5290976123877670962,
+        "date": "2025-06-10T17:46:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29797,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pumpkin Coach",
       "rarity": 7,
-      "document_id": 5551237516318736388
+      "document": {
+        "id": 5551237516318736388,
+        "access_hash": 2655108118843174848,
+        "date": "2025-02-03T13:27:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2455,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "English Violet",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 32,
+      "center_color": 11634363,
+      "edge_color": 8870545,
+      "pattern_color": 5513823,
+      "text_color": 15124461
     }
   ]
 }

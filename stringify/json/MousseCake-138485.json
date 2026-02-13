@@ -1,26 +1,55 @@
 {
+  "id": 5870717069493798056,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-138485",
   "title": "Mousse Cake",
   "num": 138485,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Italian Pie",
       "rarity": 30,
-      "document_id": 5377479842650423525
+      "document": {
+        "id": 5377479842650423525,
+        "access_hash": 1914713412021797512,
+        "date": "2025-09-24T15:22:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36336,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spring Chick",
       "rarity": 6,
-      "document_id": 5483261236428668939
+      "document": {
+        "id": 5483261236428668939,
+        "access_hash": 6081236476495161915,
+        "date": "2025-04-18T17:02:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1009,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

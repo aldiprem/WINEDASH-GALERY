@@ -1,26 +1,55 @@
 {
+  "id": 5933708507260912432,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-5364",
   "title": "Tama Gadget",
   "num": 5364,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Stanislav",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wooden Dog",
       "rarity": 5,
-      "document_id": 5328069168782667919
+      "document": {
+        "id": 5328069168782667919,
+        "access_hash": -7011781312451186141,
+        "date": "2025-02-25T18:53:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 7946,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Telescope",
       "rarity": 3,
-      "document_id": 5550885238806151178
+      "document": {
+        "id": 5550885238806151178,
+        "access_hash": 5873196392767404143,
+        "date": "2025-02-03T13:30:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2264,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Aquamarine",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 11,
+      "center_color": 6336917,
+      "edge_color": 4631476,
+      "pattern_color": 221031,
+      "text_color": 13106686
     }
   ]
 }

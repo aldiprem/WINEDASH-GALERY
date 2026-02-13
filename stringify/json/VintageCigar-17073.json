@@ -1,26 +1,55 @@
 {
+  "id": 5861994901448688110,
+  "gift_id": 5857140566201991735,
   "slug": "VintageCigar-17073",
   "title": "Vintage Cigar",
   "num": 17073,
   "availability_issued": 26277,
   "availability_total": 31024,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 64965000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cobalt",
       "rarity": 20,
-      "document_id": 5429451068645860401
+      "document": {
+        "id": 5429451068645860401,
+        "access_hash": -4841531302137473624,
+        "date": "2024-12-24T12:44:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19650,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Scorpion",
       "rarity": 5,
-      "document_id": 5440711089916503067
+      "document": {
+        "id": 5440711089916503067,
+        "access_hash": 3386624377165150790,
+        "date": "2024-12-28T11:08:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1652,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Azure Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "pattern_color": 151668,
+      "text_color": 11922687
     }
   ]
 }

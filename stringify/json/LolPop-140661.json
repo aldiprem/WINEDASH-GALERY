@@ -1,26 +1,55 @@
 {
+  "id": 5855004515756933901,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-140661",
   "title": "Lol Pop",
   "num": 140661,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Kyiv Capitalist",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fire Vortex",
       "rarity": 10,
-      "document_id": 5226839516920181422
+      "document": {
+        "id": 5226839516920181422,
+        "access_hash": -3682031372154082651,
+        "date": "2025-01-22T23:41:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 62399,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Melon",
       "rarity": 5,
-      "document_id": 5435931478510822418
+      "document": {
+        "id": 5435931478510822418,
+        "access_hash": 4228186438570305930,
+        "date": "2024-12-26T15:05:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 923,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Onyx Black",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 49,
+      "center_color": 5067348,
+      "edge_color": 3225144,
+      "pattern_color": 0,
+      "text_color": 11119533
     }
   ]
 }

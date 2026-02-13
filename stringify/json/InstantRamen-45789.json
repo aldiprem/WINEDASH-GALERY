@@ -1,26 +1,55 @@
 {
+  "id": 6003352235189207945,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-45789",
   "title": "Instant Ramen",
   "num": 45789,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chicken",
       "rarity": 30,
-      "document_id": 5271869268311441063
+      "document": {
+        "id": 5271869268311441063,
+        "access_hash": 5853462185888695055,
+        "date": "2025-08-20T09:36:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27922,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Galaxy",
       "rarity": 5,
-      "document_id": 5550968350718296080
+      "document": {
+        "id": 5550968350718296080,
+        "access_hash": 560960789524366742,
+        "date": "2025-02-03T13:30:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1633,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     }
   ]
 }

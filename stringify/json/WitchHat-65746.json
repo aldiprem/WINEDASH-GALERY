@@ -1,26 +1,55 @@
 {
+  "id": 5983528968253342305,
+  "gift_id": 5821384757304362229,
   "slug": "WitchHat-65746",
   "title": "Witch Hat",
   "num": 65746,
   "availability_issued": 82318,
   "availability_total": 88480,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16725500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mine Time",
       "rarity": 5,
-      "document_id": 5238109790277758554
+      "document": {
+        "id": 5238109790277758554,
+        "access_hash": 1691303564571295753,
+        "date": "2025-01-26T14:40:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28310,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hammerhead",
       "rarity": 2,
-      "document_id": 5440572770494734727
+      "document": {
+        "id": 5440572770494734727,
+        "access_hash": -6581833577452539293,
+        "date": "2024-12-28T09:55:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

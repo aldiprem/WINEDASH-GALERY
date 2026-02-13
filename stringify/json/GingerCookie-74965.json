@@ -1,26 +1,55 @@
 {
+  "id": 5987710952139654519,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-74965",
   "title": "Ginger Cookie",
   "num": 74965,
-  "availability_issued": 142091,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16809700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Royal Sundae",
       "rarity": 12,
-      "document_id": 5224476954194894349
+      "document": {
+        "id": 5224476954194894349,
+        "access_hash": -2999342748398068659,
+        "date": "2025-01-21T20:50:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30184,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Viper",
       "rarity": 5,
-      "document_id": 5550707431455064112
+      "document": {
+        "id": 5550707431455064112,
+        "access_hash": 7031675804065145908,
+        "date": "2025-02-03T13:26:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1444,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

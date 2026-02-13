@@ -1,26 +1,55 @@
 {
+  "id": 5801036211573228534,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-191924",
   "title": "Happy Brownie",
   "num": 191924,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13929500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sponge Boi",
       "rarity": 15,
-      "document_id": 5260271310424016672
+      "document": {
+        "id": 5260271310424016672,
+        "access_hash": 8284394782531514339,
+        "date": "2025-08-16T14:16:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65318,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Telescope",
       "rarity": 4,
-      "document_id": 5550885238806151178
+      "document": {
+        "id": 5550885238806151178,
+        "access_hash": 5873196392767404143,
+        "date": "2025-02-03T13:30:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2264,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mint Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "pattern_color": 158498,
+      "text_color": 12451788
     }
   ]
 }

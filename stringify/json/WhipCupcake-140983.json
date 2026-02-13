@@ -1,26 +1,55 @@
 {
+  "id": 5774159427221325364,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-140983",
   "title": "Whip Cupcake",
   "num": 140983,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Heaven Seven",
       "rarity": 30,
-      "document_id": 5330357931084904922
+      "document": {
+        "id": 5330357931084904922,
+        "access_hash": 2896690885630745203,
+        "date": "2025-06-03T08:44:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53546,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Paw",
       "rarity": 4,
-      "document_id": 5433671466719668582
+      "document": {
+        "id": 5433671466719668582,
+        "access_hash": -1456296820785587290,
+        "date": "2024-12-26T14:45:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 617,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003408525030589659,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-29570",
   "title": "Instant Ramen",
   "num": 29570,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sewing Stew",
       "rarity": 30,
-      "document_id": 5389060934201279247
+      "document": {
+        "id": 5389060934201279247,
+        "access_hash": 8593973443793865650,
+        "date": "2025-09-28T14:11:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38492,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Onigiri",
       "rarity": 5,
-      "document_id": 5584781618922389518
+      "document": {
+        "id": 5584781618922389518,
+        "access_hash": -8580534969225655109,
+        "date": "2025-02-14T18:57:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 760,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Dark Lilac",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 31,
+      "center_color": 11632037,
+      "edge_color": 9197434,
+      "pattern_color": 6629458,
+      "text_color": 15779042
     }
   ]
 }

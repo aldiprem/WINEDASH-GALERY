@@ -1,26 +1,55 @@
 {
+  "id": 5785037204992558036,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-78755",
   "title": "Restless Jar",
   "num": 78755,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16321300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Aquarium",
       "rarity": 25,
-      "document_id": 5470183103962048494
+      "document": {
+        "id": 5470183103962048494,
+        "access_hash": -9080456641120930378,
+        "date": "2025-04-14T04:51:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22547,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flaming Heart",
       "rarity": 4,
-      "document_id": 5289822124234532044
+      "document": {
+        "id": 5289822124234532044,
+        "access_hash": 4163914641514035907,
+        "date": "2025-02-12T12:14:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1051,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

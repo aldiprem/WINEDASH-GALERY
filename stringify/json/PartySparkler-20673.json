@@ -1,26 +1,55 @@
 {
+  "id": 5823303430864634402,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-20673",
   "title": "Party Sparkler",
   "num": 20673,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Burnt End",
       "rarity": 13,
-      "document_id": 5228769305855811539
+      "document": {
+        "id": 5228769305855811539,
+        "access_hash": -6878214805021154614,
+        "date": "2025-01-23T11:18:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31897,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hammerhead",
       "rarity": 5,
-      "document_id": 5440572770494734727
+      "document": {
+        "id": 5440572770494734727,
+        "access_hash": -6581833577452539293,
+        "date": "2024-12-28T09:55:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Purple",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 51,
+      "center_color": 11431086,
+      "edge_color": 8669060,
+      "pattern_color": 4656199,
+      "text_color": 15977459
     }
   ]
 }

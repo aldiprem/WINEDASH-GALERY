@@ -1,26 +1,55 @@
 {
+  "id": 6001173063272498071,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-31613",
   "title": "Whip Cupcake",
   "num": 31613,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rising Dead",
       "rarity": 30,
-      "document_id": 5217981980095832975
+      "document": {
+        "id": 5217981980095832975,
+        "access_hash": -2652548484356663968,
+        "date": "2025-04-26T08:57:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 34441,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Loving Heart",
       "rarity": 4,
-      "document_id": 5303197949474388339
+      "document": {
+        "id": 5303197949474388339,
+        "access_hash": -2353273227294387306,
+        "date": "2023-10-21T14:42:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 669,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tactical Pine",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 61,
+      "center_color": 4489835,
+      "edge_color": 3105641,
+      "pattern_color": 9764,
+      "text_color": 12052179
     }
   ]
 }

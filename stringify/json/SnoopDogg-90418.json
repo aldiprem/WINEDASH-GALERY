@@ -1,26 +1,55 @@
 {
+  "id": 6016832282105482284,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-90418",
   "title": "Snoop Dogg",
   "num": 90418,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Huggy Bear",
       "rarity": 30,
-      "document_id": 5409192120227491071
+      "document": {
+        "id": 5409192120227491071,
+        "access_hash": 2460120631661626008,
+        "date": "2025-06-30T02:09:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64377,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shark Knife",
       "rarity": 5,
-      "document_id": 5434064559306465934
+      "document": {
+        "id": 5434064559306465934,
+        "access_hash": 7440929945138516317,
+        "date": "2024-12-26T13:58:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 631,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Old Gold",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 75,
+      "center_color": 11898168,
+      "edge_color": 9726245,
+      "pattern_color": 5190402,
+      "text_color": 16768396
     }
   ]
 }

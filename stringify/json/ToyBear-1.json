@@ -1,26 +1,55 @@
 {
+  "id": 5870946631200801632,
+  "gift_id": 5868220813026526561,
   "slug": "ToyBear-1",
   "title": "Toy Bear",
   "num": 1,
   "availability_issued": 55756,
   "availability_total": 57724,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Ferrari Apple",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 90028000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Nurse",
       "rarity": 18,
-      "document_id": 5289889967537940803
+      "document": {
+        "id": 5289889967537940803,
+        "access_hash": 524175392342528545,
+        "date": "2025-02-12T22:22:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14352,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Heart Lock",
       "rarity": 5,
-      "document_id": 5289866611505784233
+      "document": {
+        "id": 5289866611505784233,
+        "access_hash": 5903167040322123545,
+        "date": "2025-02-12T12:15:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 800,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Jade Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 56,
+      "center_color": 5620892,
+      "edge_color": 3905911,
+      "pattern_color": 280881,
+      "text_color": 12517095
     }
   ]
 }

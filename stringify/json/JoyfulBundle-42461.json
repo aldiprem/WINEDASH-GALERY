@@ -1,26 +1,55 @@
 {
+  "id": 5787681831105070594,
+  "gift_id": 5870862540036113469,
   "slug": "JoyfulBundle-42461",
   "title": "Joyful Bundle",
   "num": 42461,
   "availability_issued": 78211,
   "availability_total": 114092,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "вискас",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18325600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Frankenstein",
       "rarity": 15,
-      "document_id": 5429191669801053866
+      "document": {
+        "id": 5429191669801053866,
+        "access_hash": -5181865495470635489,
+        "date": "2025-04-01T08:24:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48755,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crusader",
       "rarity": 7,
-      "document_id": 5440395491424625401
+      "document": {
+        "id": 5440395491424625401,
+        "access_hash": -2768032814879785488,
+        "date": "2024-12-28T09:54:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 600,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cappuccino",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 39,
+      "center_color": 11636862,
+      "edge_color": 8151894,
+      "pattern_color": 4862502,
+      "text_color": 15455432
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

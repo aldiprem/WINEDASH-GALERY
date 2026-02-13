@@ -1,26 +1,55 @@
 {
+  "id": 5848020572516123704,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-134517",
   "title": "Ginger Cookie",
   "num": 134517,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bavarian",
       "rarity": 9,
-      "document_id": 5237835182953752693
+      "document": {
+        "id": 5237835182953752693,
+        "access_hash": -9085809897535234212,
+        "date": "2025-01-26T15:06:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33898,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Inca Sun",
       "rarity": 5,
-      "document_id": 5722165274690453518
+      "document": {
+        "id": 5722165274690453518,
+        "access_hash": -3478135820017506278,
+        "date": "2024-12-26T12:01:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3933,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

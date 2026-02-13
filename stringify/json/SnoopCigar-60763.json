@@ -1,26 +1,55 @@
 {
+  "id": 6016923283872548298,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-60763",
   "title": "Snoop Cigar",
   "num": 60763,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 37847100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hot Rod",
       "rarity": 25,
-      "document_id": 5375216455014970508
+      "document": {
+        "id": 5375216455014970508,
+        "access_hash": 2101627780260226754,
+        "date": "2025-06-18T14:57:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40100,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cavalier Hat",
       "rarity": 7,
-      "document_id": 5314772714538428013
+      "document": {
+        "id": 5314772714538428013,
+        "access_hash": -7516809164396604983,
+        "date": "2025-02-20T17:43:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1171,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

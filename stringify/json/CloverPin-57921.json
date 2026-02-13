@@ -1,26 +1,55 @@
 {
+  "id": 5902087579343258396,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-57921",
   "title": "Clover Pin",
   "num": 57921,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15748600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Watermelon",
       "rarity": 20,
-      "document_id": 5231416169646292048
+      "document": {
+        "id": 5231416169646292048,
+        "access_hash": -5992005636347431844,
+        "date": "2025-08-06T04:45:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54214,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mannaz Rune",
       "rarity": 2,
-      "document_id": 5440522820025081877
+      "document": {
+        "id": 5440522820025081877,
+        "access_hash": 7525422677942125272,
+        "date": "2024-12-28T11:09:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 961,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

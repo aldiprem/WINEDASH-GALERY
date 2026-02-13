@@ -1,26 +1,55 @@
 {
+  "id": 6046416721214964732,
+  "gift_id": 6012607142387778152,
   "slug": "SwagBag-214776",
   "title": "Swag Bag",
   "num": 214776,
   "availability_issued": 231062,
   "availability_total": 237970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQApmmOuGHaeb6xhJbiiywn3aVFm5f3Ib8UDqpXa2FXRtuFJ",
+  "value_amount": 16658100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Doggystyle",
       "rarity": 20,
-      "document_id": 5399947568195080620
+      "document": {
+        "id": 5399947568195080620,
+        "access_hash": 4164766108154830371,
+        "date": "2025-06-26T23:57:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58996,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pirate Scull",
       "rarity": 7,
-      "document_id": 5546410849251360787
+      "document": {
+        "id": 5546410849251360787,
+        "access_hash": 2093854962640529376,
+        "date": "2025-02-01T20:50:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1765,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

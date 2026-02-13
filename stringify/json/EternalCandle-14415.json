@@ -1,26 +1,55 @@
 {
+  "id": 5832528930422129868,
+  "gift_id": 5821205665758053411,
   "slug": "EternalCandle-14415",
   "title": "Eternal Candle",
   "num": 14415,
   "availability_issued": 44951,
   "availability_total": 46590,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 21980600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Toxic Smoke",
       "rarity": 15,
-      "document_id": 5425016162725420735
+      "document": {
+        "id": 5425016162725420735,
+        "access_hash": 711517553943222121,
+        "date": "2024-12-22T14:35:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24063,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Red Deer",
       "rarity": 5,
-      "document_id": 5440904569603255326
+      "document": {
+        "id": 5440904569603255326,
+        "access_hash": -5101722645168208412,
+        "date": "2024-12-28T11:07:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1239,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Midnight Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "pattern_color": 199192,
+      "text_color": 12569824
     }
   ]
 }

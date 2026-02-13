@@ -1,26 +1,55 @@
 {
+  "id": 6028457031998898825,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-2",
   "title": "Plush Pepe",
   "num": 2,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "fugui.t.me",
+  "gift_address": "EQDRKgZuibyhJC3MNIT6Pcyz-Fkqg108JddlVlMkRy6RDQRc",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hothead",
       "rarity": 30,
-      "document_id": 5422676844363149011
+      "document": {
+        "id": 5422676844363149011,
+        "access_hash": -8044633850162109577,
+        "date": "2024-12-22T22:30:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14636,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Calm Wolf",
       "rarity": 4,
-      "document_id": 5433775744230644578
+      "document": {
+        "id": 5433775744230644578,
+        "access_hash": -5202990588888731811,
+        "date": "2024-12-26T12:20:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 761,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

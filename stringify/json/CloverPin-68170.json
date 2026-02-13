@@ -1,26 +1,55 @@
 {
+  "id": 5899759908932290369,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-68170",
   "title": "Clover Pin",
   "num": 68170,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "808",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kaleidoscope",
       "rarity": 20,
-      "document_id": 5231332374834344855
+      "document": {
+        "id": 5231332374834344855,
+        "access_hash": 319360628724085170,
+        "date": "2025-08-06T05:05:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52287,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shield",
       "rarity": 4,
-      "document_id": 5440775819368620198
+      "document": {
+        "id": 5440775819368620198,
+        "access_hash": 9082059527896221205,
+        "date": "2024-12-28T11:09:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 562,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

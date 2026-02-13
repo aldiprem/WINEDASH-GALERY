@@ -1,26 +1,55 @@
 {
+  "id": 5830119818841293573,
+  "gift_id": 5825895989088617224,
   "slug": "HypnoLollipop-1",
   "title": "Hypno Lollipop",
   "num": 1,
-  "availability_issued": 79412,
+  "availability_issued": 79415,
   "availability_total": 116639,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 632267500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Citrus Fresh",
       "rarity": 13,
-      "document_id": 5228855338345718417
+      "document": {
+        "id": 5228855338345718417,
+        "access_hash": 6470519550590112389,
+        "date": "2025-01-23T07:24:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 6843,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Toilet",
       "rarity": 5,
-      "document_id": 5433611053709680326
+      "document": {
+        "id": 5433611053709680326,
+        "access_hash": 10624739696279928,
+        "date": "2024-12-26T14:00:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 867,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Satin Gold",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 19,
+      "center_color": 12557127,
+      "edge_color": 9271097,
+      "pattern_color": 6109952,
+      "text_color": 16704681
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5933608821069972253,
+  "gift_id": 5983259145522906006,
   "slug": "WinterWreath-4740",
   "title": "Winter Wreath",
   "num": 4740,
-  "availability_issued": 71558,
+  "availability_issued": 71559,
   "availability_total": 100846,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12346200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Glimmer",
       "rarity": 20,
-      "document_id": 5278513028667565569
+      "document": {
+        "id": 5278513028667565569,
+        "access_hash": -1577835062129692913,
+        "date": "2025-02-08T18:37:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35892,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Snow Angel",
       "rarity": 24,
-      "document_id": 5282854892711470699
+      "document": {
+        "id": 5282854892711470699,
+        "access_hash": -8677874853082854152,
+        "date": "2024-11-05T19:06:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 820,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "English Violet",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 32,
+      "center_color": 11634363,
+      "edge_color": 8870545,
+      "pattern_color": 5513823,
+      "text_color": 15124461
     }
   ]
 }

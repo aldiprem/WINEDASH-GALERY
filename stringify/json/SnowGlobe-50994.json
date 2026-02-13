@@ -1,26 +1,55 @@
 {
+  "id": 5978822238147707938,
+  "gift_id": 5981132629905245483,
   "slug": "SnowGlobe-50994",
   "title": "Snow Globe",
   "num": 50994,
   "availability_issued": 52013,
   "availability_total": 72788,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16708700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mango Lodge",
       "rarity": 30,
-      "document_id": 5334914685227526166
+      "document": {
+        "id": 5334914685227526166,
+        "access_hash": 6518585547136947515,
+        "date": "2025-02-28T09:42:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33634,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ornament",
       "rarity": 15,
-      "document_id": 5438575529097706726
+      "document": {
+        "id": 5438575529097706726,
+        "access_hash": 8582574510437970443,
+        "date": "2023-12-05T16:27:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2025,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Dark Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 63,
+      "center_color": 5333825,
+      "edge_color": 2835759,
+      "pattern_color": 1281,
+      "text_color": 12571049
     }
   ]
 }

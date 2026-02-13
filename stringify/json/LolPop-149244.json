@@ -1,26 +1,55 @@
 {
+  "id": 5861664425190097826,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-149244",
   "title": "Lol Pop",
   "num": 149244,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Soap Bubbles",
       "rarity": 10,
-      "document_id": 5208943560723820702
+      "document": {
+        "id": 5208943560723820702,
+        "access_hash": -855986616259520699,
+        "date": "2025-01-16T21:19:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 61864,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Inguz Rune",
       "rarity": 5,
-      "document_id": 5440848485920301619
+      "document": {
+        "id": 5440848485920301619,
+        "access_hash": 3176314549888581687,
+        "date": "2024-12-28T11:09:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 901,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cappuccino",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 39,
+      "center_color": 11636862,
+      "edge_color": 8151894,
+      "pattern_color": 4862502,
+      "text_color": 15455432
     }
   ]
 }

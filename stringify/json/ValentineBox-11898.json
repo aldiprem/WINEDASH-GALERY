@@ -1,26 +1,55 @@
 {
+  "id": 6001402912742310892,
+  "gift_id": 5868595669182186720,
   "slug": "ValentineBox-11898",
   "title": "Valentine Box",
   "num": 11898,
   "availability_issued": 34207,
   "availability_total": 41025,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 28195900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Moonlight",
       "rarity": 25,
-      "document_id": 5323317942815844442
+      "document": {
+        "id": 5323317942815844442,
+        "access_hash": -5541004189538286861,
+        "date": "2025-02-24T02:06:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20342,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "French Fries",
       "rarity": 7,
-      "document_id": 5546508349303947280
+      "document": {
+        "id": 5546508349303947280,
+        "access_hash": -3231958544468742769,
+        "date": "2025-02-02T17:52:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1457,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

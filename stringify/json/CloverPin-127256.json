@@ -1,26 +1,55 @@
 {
+  "id": 5902242112266569292,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-127256",
   "title": "Clover Pin",
   "num": 127256,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Purrfect Paw",
       "rarity": 20,
-      "document_id": 5231331764948990717
+      "document": {
+        "id": 5231331764948990717,
+        "access_hash": -8979902165448219044,
+        "date": "2025-08-06T04:59:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33443,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gua Pi Mao",
       "rarity": 5,
-      "document_id": 5314434219575893832
+      "document": {
+        "id": 5314434219575893832,
+        "access_hash": -18743321881041600,
+        "date": "2025-02-21T12:43:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1099,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tomato",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 72,
+      "center_color": 15104318,
+      "edge_color": 13913663,
+      "pattern_color": 8391424,
+      "text_color": 16764093
     }
   ]
 }

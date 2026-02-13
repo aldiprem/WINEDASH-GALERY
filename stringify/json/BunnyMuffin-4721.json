@@ -1,26 +1,55 @@
 {
+  "id": 5829929951222039277,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-4721",
   "title": "Bunny Muffin",
   "num": 4721,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Berry Punch",
       "rarity": 10,
-      "document_id": 5208431677931544195
+      "document": {
+        "id": 5208431677931544195,
+        "access_hash": -4588795801961786354,
+        "date": "2025-01-16T13:46:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 11760,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Celtic Cross",
       "rarity": 4,
-      "document_id": 5731235627144314888
+      "document": {
+        "id": 5731235627144314888,
+        "access_hash": 2463763128114279823,
+        "date": "2024-12-29T17:57:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 5566,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

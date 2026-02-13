@@ -1,26 +1,55 @@
 {
+  "id": 5834891153844994628,
+  "gift_id": 5980789805615678057,
   "slug": "SnowMittens-10504",
   "title": "Snow Mittens",
   "num": 10504,
-  "availability_issued": 38414,
+  "availability_issued": 38416,
   "availability_total": 49969,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 35371100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Honey Wine",
       "rarity": 13,
-      "document_id": 5228684359992630851
+      "document": {
+        "id": 5228684359992630851,
+        "access_hash": -3915023120614481302,
+        "date": "2025-01-23T03:01:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36726,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hand of God",
       "rarity": 2,
-      "document_id": 5434022906713630856
+      "document": {
+        "id": 5434022906713630856,
+        "access_hash": -8630236249608902614,
+        "date": "2024-12-26T12:26:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 838,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

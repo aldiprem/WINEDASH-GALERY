@@ -1,26 +1,55 @@
 {
+  "id": 5900122795014095434,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-98673",
   "title": "Clover Pin",
   "num": 98673,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15664400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Butterfly",
       "rarity": 15,
-      "document_id": 5231255804157402564
+      "document": {
+        "id": 5231255804157402564,
+        "access_hash": -773216927165469741,
+        "date": "2025-08-06T04:59:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 51629,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Visor",
       "rarity": 5,
-      "document_id": 5312457585431967886
+      "document": {
+        "id": 5312457585431967886,
+        "access_hash": 6038214237500548878,
+        "date": "2025-02-20T17:50:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 775,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

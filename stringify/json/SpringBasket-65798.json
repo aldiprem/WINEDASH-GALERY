@@ -1,26 +1,55 @@
 {
+  "id": 6005633842075928001,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-65798",
   "title": "Spring Basket",
   "num": 65798,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16826600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Penguin",
       "rarity": 30,
-      "document_id": 5397904619756092358
+      "document": {
+        "id": 5397904619756092358,
+        "access_hash": 3149576680273980619,
+        "date": "2025-10-01T10:10:41+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14522,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Top Hat",
       "rarity": 2,
-      "document_id": 5424997398013306322
+      "document": {
+        "id": 5424997398013306322,
+        "access_hash": 6230486958597176614,
+        "date": "2024-12-23T04:52:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 669,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mint Green",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "pattern_color": 158498,
+      "text_color": 12451788
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

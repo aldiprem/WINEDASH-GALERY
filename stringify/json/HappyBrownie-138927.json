@@ -1,26 +1,55 @@
 {
+  "id": 6008244765580067527,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-138927",
   "title": "Happy Brownie",
   "num": 138927,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 25265100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Shitty Coffee",
       "rarity": 25,
-      "document_id": 5382084137786048001
+      "document": {
+        "id": 5382084137786048001,
+        "access_hash": -2490296852052424006,
+        "date": "2025-09-26T08:17:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23990,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Unicorn Head",
       "rarity": 4,
-      "document_id": 5440544067228292901
+      "document": {
+        "id": 5440544067228292901,
+        "access_hash": 545998144893487273,
+        "date": "2024-12-28T11:07:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 925,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

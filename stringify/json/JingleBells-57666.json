@@ -1,26 +1,55 @@
 {
+  "id": 5956097020723725322,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-57666",
   "title": "Jingle Bells",
   "num": 57666,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75884,
+  "availability_total": 114946,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Tony",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Heatwave",
-      "rarity": 15,
-      "document_id": 5238247989440440650
+      "rarity": 14,
+      "document": {
+        "id": 5238247989440440650,
+        "access_hash": -7995936910875148576,
+        "date": "2025-01-26T07:40:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36552,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Magic Wand",
       "rarity": 24,
-      "document_id": 5422596236416936455
+      "document": {
+        "id": 5422596236416936455,
+        "access_hash": 1928145755765061782,
+        "date": "2024-12-22T22:46:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1263,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Black",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "pattern_color": 7104616,
+      "text_color": 9211793
     }
   ]
 }

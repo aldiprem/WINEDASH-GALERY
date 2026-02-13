@@ -1,26 +1,55 @@
 {
+  "id": 5883953901002031805,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-64720",
   "title": "Spiced Wine",
   "num": 64720,
-  "availability_issued": 101427,
+  "availability_issued": 101432,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17230800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Blue Burn",
       "rarity": 8,
-      "document_id": 5429565022718160786
+      "document": {
+        "id": 5429565022718160786,
+        "access_hash": -3194215639492714366,
+        "date": "2024-12-24T21:07:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44817,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eikthyrnir",
       "rarity": 3,
-      "document_id": 5722379245666172949
+      "document": {
+        "id": 5722379245666172949,
+        "access_hash": -1718693921207800600,
+        "date": "2024-12-26T12:03:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2569,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Midnight Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "pattern_color": 199192,
+      "text_color": 12569824
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6005718328377607052,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-235574",
   "title": "Lol Pop",
   "num": 235574,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Citrone",
       "rarity": 12,
-      "document_id": 5386579160363721492
+      "document": {
+        "id": 5386579160363721492,
+        "access_hash": -3843875605469509291,
+        "date": "2024-12-10T18:55:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58038,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rose",
       "rarity": 5,
-      "document_id": 5548919496699281419
+      "document": {
+        "id": 5548919496699281419,
+        "access_hash": 7251546779413233798,
+        "date": "2025-02-02T17:53:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1588,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pistachio",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 36,
+      "center_color": 9941116,
+      "edge_color": 6062412,
+      "pattern_color": 2639643,
+      "text_color": 14283465
     }
   ]
 }

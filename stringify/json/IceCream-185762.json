@@ -1,26 +1,55 @@
 {
+  "id": 6003415633201463960,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-185762",
   "title": "Ice Cream",
   "num": 185762,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bubbles",
       "rarity": 20,
-      "document_id": 5314362158614611167
+      "document": {
+        "id": 5314362158614611167,
+        "access_hash": -8855616480604277015,
+        "date": "2025-09-03T18:37:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 10341,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Double Axe",
       "rarity": 4,
-      "document_id": 5551071537307582479
+      "document": {
+        "id": 5551071537307582479,
+        "access_hash": 2097677093777790451,
+        "date": "2025-02-03T13:29:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1804,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

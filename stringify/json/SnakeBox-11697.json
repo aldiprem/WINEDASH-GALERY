@@ -1,26 +1,55 @@
 {
+  "id": 5845907757844136513,
+  "gift_id": 6023679164349940429,
   "slug": "SnakeBox-11697",
   "title": "Snake Box",
   "num": 11697,
-  "availability_issued": 170178,
+  "availability_issued": 170189,
   "availability_total": 273898,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "salucci.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9583900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Seashore",
       "rarity": 30,
-      "document_id": 5368708102092777154
+      "document": {
+        "id": 5368708102092777154,
+        "access_hash": -3463660503559126805,
+        "date": "2025-03-11T16:54:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58223,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pizza Slice",
       "rarity": 10,
-      "document_id": 5436241476365344257
+      "document": {
+        "id": 5436241476365344257,
+        "access_hash": 1965465533777700212,
+        "date": "2024-12-26T14:47:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 972,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

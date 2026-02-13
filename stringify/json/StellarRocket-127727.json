@@ -1,26 +1,55 @@
 {
+  "id": 6012714465030570971,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-127727",
   "title": "Stellar Rocket",
   "num": 127727,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQA4aGti1CQjCPTbsV_pq8b8EwyjF812bXRApM4P5cSY-aXG",
+  "gift_address": "EQBv9MjoBJxgZjNbvauCwHO7xYPcI_1IomEKYEQo1wjxde9a",
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Laika",
       "rarity": 20,
-      "document_id": 5210716733677008867
+      "document": {
+        "id": 5210716733677008867,
+        "access_hash": -8780598936110435851,
+        "date": "2025-07-30T13:58:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42288,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pirate Hat",
       "rarity": 4,
-      "document_id": 5312418230646632393
+      "document": {
+        "id": 5312418230646632393,
+        "access_hash": 6766799625284367391,
+        "date": "2025-02-20T17:27:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1162,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Purple",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 1,
+      "center_color": 13267142,
+      "edge_color": 9855700,
+      "pattern_color": 6426548,
+      "text_color": 15453951
     }
   ]
 }

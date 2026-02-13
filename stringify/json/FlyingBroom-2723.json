@@ -1,26 +1,55 @@
 {
+  "id": 5834758589679403331,
+  "gift_id": 5837063436634161765,
   "slug": "FlyingBroom-2723",
   "title": "Flying Broom",
   "num": 2723,
   "availability_issued": 24697,
   "availability_total": 25916,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQBxUfGfmKs9wn5m0mDWpriv8AL2F2wc6ykHnEoGNqwjsWTI",
+  "gift_address": "EQAS_48VDjJ3sm98cN7gaL2U0Vd4dO0vTbBX-hUWibOH3cmS",
+  "value_amount": 61478400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fire Flight",
       "rarity": 15,
-      "document_id": 5204439140757691587
+      "document": {
+        "id": 5204439140757691587,
+        "access_hash": -2284190500599730372,
+        "date": "2025-01-15T11:00:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36984,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spooky Cat",
       "rarity": 16,
-      "document_id": 5298571372048430494
+      "document": {
+        "id": 5298571372048430494,
+        "access_hash": 1784898000323711602,
+        "date": "2023-10-19T19:04:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2267,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

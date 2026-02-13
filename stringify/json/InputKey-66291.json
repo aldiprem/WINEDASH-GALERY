@@ -1,26 +1,55 @@
 {
+  "id": 5888668486602851278,
+  "gift_id": 5870972044522291836,
   "slug": "InputKey-66291",
   "title": "Input Key",
   "num": 66291,
-  "availability_issued": 128102,
+  "availability_issued": 128104,
   "availability_total": 159750,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18830900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Black Hole",
       "rarity": 20,
-      "document_id": 5289699829335750144
+      "document": {
+        "id": 5289699829335750144,
+        "access_hash": -8201234893243886509,
+        "date": "2025-08-26T13:07:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 8174,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Top Hat",
       "rarity": 4,
-      "document_id": 5424997398013306322
+      "document": {
+        "id": 5424997398013306322,
+        "access_hash": 6230486958597176614,
+        "date": "2024-12-23T04:52:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 669,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

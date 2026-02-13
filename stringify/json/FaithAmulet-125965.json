@@ -1,26 +1,55 @@
 {
+  "id": 5845689753894127036,
+  "gift_id": 6003456431095808759,
   "slug": "FaithAmulet-125965",
   "title": "Faith Amulet",
   "num": 125965,
-  "availability_issued": 135386,
+  "availability_issued": 135390,
   "availability_total": 172784,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14131600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Soft Whisper",
       "rarity": 15,
-      "document_id": 5372925588178764496
+      "document": {
+        "id": 5372925588178764496,
+        "access_hash": 3667219810758852965,
+        "date": "2025-09-22T19:59:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23651,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bee",
       "rarity": 7,
-      "document_id": 5434002913640866822
+      "document": {
+        "id": 5434002913640866822,
+        "access_hash": -1596754924645788942,
+        "date": "2024-12-26T12:23:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1177,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Violet",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 79,
+      "center_color": 12738790,
+      "edge_color": 9522905,
+      "pattern_color": 4850058,
+      "text_color": 15452159
     }
   ]
 }

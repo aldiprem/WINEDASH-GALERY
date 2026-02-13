@@ -1,26 +1,55 @@
 {
+  "id": 5899805826427651001,
+  "gift_id": 5870947077877400011,
   "slug": "SkyStilettos-3656",
   "title": "Sky Stilettos",
   "num": 3656,
   "availability_issued": 50257,
   "availability_total": 58460,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBF1rEXnE9WMWRgoCw8B-Qg67ktksjWTCq6ErrRYe1DZzn-",
+  "value_amount": 40878900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Phantom Blush",
       "rarity": 25,
-      "document_id": 5201707704766202638
+      "document": {
+        "id": 5201707704766202638,
+        "access_hash": -779971168507374705,
+        "date": "2025-07-27T10:51:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31329,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Banner",
       "rarity": 4,
-      "document_id": 5550702217364766734
+      "document": {
+        "id": 5550702217364766734,
+        "access_hash": -4168304009408995491,
+        "date": "2025-02-03T08:41:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 872,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

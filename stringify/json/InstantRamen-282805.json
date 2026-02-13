@@ -1,26 +1,55 @@
 {
+  "id": 6021844642083898634,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-282805",
   "title": "Instant Ramen",
   "num": 282805,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "mиsha😱",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cat Food",
       "rarity": 25,
-      "document_id": 5370699352010425073
+      "document": {
+        "id": 5370699352010425073,
+        "access_hash": -3755952357651235256,
+        "date": "2025-09-22T09:07:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31293,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sailor Hat",
       "rarity": 5,
-      "document_id": 5312256490768197272
+      "document": {
+        "id": 5312256490768197272,
+        "access_hash": 605113819079453566,
+        "date": "2025-02-20T17:49:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 914,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Copper",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 57,
+      "center_color": 13665878,
+      "edge_color": 10315057,
+      "pattern_color": 6301953,
+      "text_color": 16046270
     }
   ]
 }

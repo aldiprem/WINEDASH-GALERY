@@ -1,26 +1,55 @@
 {
+  "id": 5850193482370516669,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-15254",
   "title": "Bunny Muffin",
   "num": 15254,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Macaron",
       "rarity": 14,
-      "document_id": 5235514951426138538
+      "document": {
+        "id": 5235514951426138538,
+        "access_hash": -3398412450434600635,
+        "date": "2025-01-25T19:25:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19374,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower Tulip",
       "rarity": 10,
-      "document_id": 5433949381168489107
+      "document": {
+        "id": 5433949381168489107,
+        "access_hash": 4499374774014947072,
+        "date": "2024-12-26T14:47:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 877,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

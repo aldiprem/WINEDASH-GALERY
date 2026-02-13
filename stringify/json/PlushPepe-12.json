@@ -1,26 +1,55 @@
 {
+  "id": 6028316444834399096,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-12",
   "title": "Plush Pepe",
   "num": 12,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "fugui.t.me",
+  "gift_address": "EQAi-vxHf4jSu0Uf1ELxu-_S1bGPevTTTQxPc7kSkSPm8MFR",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Barcelona",
       "rarity": 20,
-      "document_id": 5422334926311681026
+      "document": {
+        "id": 5422334926311681026,
+        "access_hash": 7376896784166668952,
+        "date": "2024-12-22T22:33:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17388,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cunning Fox",
       "rarity": 5,
-      "document_id": 5316827534267004428
+      "document": {
+        "id": 5316827534267004428,
+        "access_hash": -1260373966618451949,
+        "date": "2023-10-25T17:17:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1541,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Midnight Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "pattern_color": 199192,
+      "text_color": 12569824
     }
   ]
 }

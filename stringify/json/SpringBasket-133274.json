@@ -1,26 +1,55 @@
 {
+  "id": 6050683990266873180,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-133274",
   "title": "Spring Basket",
   "num": 133274,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Triceratops",
       "rarity": 25,
-      "document_id": 5391162440224372449
+      "document": {
+        "id": 5391162440224372449,
+        "access_hash": 2710516654113252168,
+        "date": "2025-09-29T09:17:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29229,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bubble Tea",
       "rarity": 7,
-      "document_id": 5434136946685274641
+      "document": {
+        "id": 5434136946685274641,
+        "access_hash": -4074558057139225958,
+        "date": "2024-12-26T10:37:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1346,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Moonstone",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 33,
+      "center_color": 8303028,
+      "edge_color": 5800848,
+      "pattern_color": 1459538,
+      "text_color": 14349821
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6005883190697264062,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-56342",
   "title": "Mousse Cake",
   "num": 56342,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sugar Bricks",
       "rarity": 25,
-      "document_id": 5314443569719706392
+      "document": {
+        "id": 5314443569719706392,
+        "access_hash": 6922133588679473697,
+        "date": "2025-09-02T22:12:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35345,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spring Chick",
       "rarity": 6,
-      "document_id": 5483261236428668939
+      "document": {
+        "id": 5483261236428668939,
+        "access_hash": 6081236476495161915,
+        "date": "2025-04-18T17:02:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1009,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

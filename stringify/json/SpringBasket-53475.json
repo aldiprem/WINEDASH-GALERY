@@ -1,26 +1,55 @@
 {
+  "id": 6003344396873893557,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-53475",
   "title": "Spring Basket",
   "num": 53475,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Out.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15613800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Balloon Dog",
       "rarity": 30,
-      "document_id": 5397846856740928345
+      "document": {
+        "id": 5397846856740928345,
+        "access_hash": 8943617075827003697,
+        "date": "2025-10-01T12:51:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 18306,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Koala",
       "rarity": 4,
-      "document_id": 5440487373659987419
+      "document": {
+        "id": 5440487373659987419,
+        "access_hash": -8330019994133463198,
+        "date": "2024-12-28T11:48:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 902,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

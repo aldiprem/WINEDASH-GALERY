@@ -1,26 +1,55 @@
 {
+  "id": 6003808201802253576,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-78225",
   "title": "Happy Brownie",
   "num": 78225,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sponge Boi",
       "rarity": 15,
-      "document_id": 5260271310424016672
+      "document": {
+        "id": 5260271310424016672,
+        "access_hash": 8284394782531514339,
+        "date": "2025-08-16T14:16:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65318,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Tribal Shield",
       "rarity": 2,
-      "document_id": 5724247908627251209
+      "document": {
+        "id": 5724247908627251209,
+        "access_hash": -7333567244640099630,
+        "date": "2024-12-26T12:01:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3299,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6021338531727672423,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-298318",
   "title": "Ice Cream",
   "num": 298318,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Gold Ingot",
       "rarity": 10,
-      "document_id": 5350403234945070109
+      "document": {
+        "id": 5350403234945070109,
+        "access_hash": -837419710704976995,
+        "date": "2025-06-09T21:17:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27724,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bottlenose",
       "rarity": 7,
-      "document_id": 5434036581889501237
+      "document": {
+        "id": 5434036581889501237,
+        "access_hash": 1843170051159118244,
+        "date": "2024-12-26T14:46:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 878,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

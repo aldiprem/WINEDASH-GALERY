@@ -1,26 +1,55 @@
 {
+  "id": 5895630821863195942,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-144633",
   "title": "Xmas Stocking",
   "num": 144633,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Shine On!",
       "rarity": 10,
-      "document_id": 5323637922174360411
+      "document": {
+        "id": 5323637922174360411,
+        "access_hash": -8812478835340609112,
+        "date": "2025-02-24T05:54:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53496,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jingle Bell",
       "rarity": 12,
-      "document_id": 5206464681694217071
+      "document": {
+        "id": 5206464681694217071,
+        "access_hash": 1040973728026945150,
+        "date": "2023-12-24T22:56:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1679,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Celtic Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 74,
+      "center_color": 4569325,
+      "edge_color": 3704537,
+      "pattern_color": 16005,
+      "text_color": 12773375
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

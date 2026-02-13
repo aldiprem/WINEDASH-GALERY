@@ -1,26 +1,55 @@
 {
+  "id": 6003679159509844899,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-33546",
   "title": "Mousse Cake",
   "num": 33546,
-  "availability_issued": 160706,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Meringue",
       "rarity": 30,
-      "document_id": 5314381889694366490
+      "document": {
+        "id": 5314381889694366490,
+        "access_hash": 811657786990187509,
+        "date": "2025-09-02T22:12:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27702,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jolly Roger",
       "rarity": 6,
-      "document_id": 5546270326511370267
+      "document": {
+        "id": 5546270326511370267,
+        "access_hash": -4343457181151847359,
+        "date": "2025-02-01T20:50:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2021,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tactical Pine",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 61,
+      "center_color": 4489835,
+      "edge_color": 3105641,
+      "pattern_color": 9764,
+      "text_color": 12052179
     }
   ]
 }

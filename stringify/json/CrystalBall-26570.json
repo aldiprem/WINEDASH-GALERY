@@ -1,26 +1,55 @@
 {
+  "id": 5985715755147068655,
+  "gift_id": 5841336413697606412,
   "slug": "CrystalBall-26570",
   "title": "Crystal Ball",
   "num": 26570,
   "availability_issued": 26682,
   "availability_total": 27732,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 31968800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Past Tell",
       "rarity": 20,
-      "document_id": 5440399730557343479
+      "document": {
+        "id": 5440399730557343479,
+        "access_hash": 7883456778291364736,
+        "date": "2024-12-28T00:56:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31562,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spider Web",
       "rarity": 20,
-      "document_id": 5440362952752389413
+      "document": {
+        "id": 5440362952752389413,
+        "access_hash": 6556168437160999951,
+        "date": "2024-12-28T11:35:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1391,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

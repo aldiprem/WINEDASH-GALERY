@@ -1,26 +1,55 @@
 {
+  "id": 5960968110637842910,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-201542",
   "title": "Lol Pop",
   "num": 201542,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fire Vortex",
       "rarity": 10,
-      "document_id": 5226839516920181422
+      "document": {
+        "id": 5226839516920181422,
+        "access_hash": -3682031372154082651,
+        "date": "2025-01-22T23:41:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 62399,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Winged Helm",
       "rarity": 4,
-      "document_id": 5546722831380774936
+      "document": {
+        "id": 5546722831380774936,
+        "access_hash": 4498546903457699240,
+        "date": "2025-02-01T20:50:09+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1611,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Caramel",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 22,
+      "center_color": 13670706,
+      "edge_color": 12022833,
+      "pattern_color": 8205824,
+      "text_color": 16767411
     }
   ]
 }

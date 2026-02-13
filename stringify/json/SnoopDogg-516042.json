@@ -1,26 +1,55 @@
 {
+  "id": 6023564514492941586,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-516042",
   "title": "Snoop Dogg",
   "num": 516042,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Shower Cap",
       "rarity": 25,
-      "document_id": 5386801390561554882
+      "document": {
+        "id": 5386801390561554882,
+        "access_hash": 508604924948380970,
+        "date": "2025-06-22T17:01:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58819,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sunflower",
       "rarity": 5,
-      "document_id": 5440682657233000387
+      "document": {
+        "id": 5440682657233000387,
+        "access_hash": -2407158409853392433,
+        "date": "2024-12-28T11:05:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1470,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

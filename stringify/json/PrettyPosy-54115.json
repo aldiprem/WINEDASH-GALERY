@@ -1,26 +1,55 @@
 {
+  "id": 5791748465054712532,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-54115",
   "title": "Pretty Posy",
   "num": 54115,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14569500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hollywood",
       "rarity": 30,
-      "document_id": 5197249331144461055
+      "document": {
+        "id": 5197249331144461055,
+        "access_hash": 6350533493881177081,
+        "date": "2025-10-31T11:30:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 50332,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spring Chick",
       "rarity": 7,
-      "document_id": 5483261236428668939
+      "document": {
+        "id": 5483261236428668939,
+        "access_hash": 6081236476495161915,
+        "date": "2025-04-18T17:02:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1009,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

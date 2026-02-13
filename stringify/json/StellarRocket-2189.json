@@ -1,26 +1,55 @@
 {
+  "id": 5825452967507002209,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-2189",
   "title": "Stellar Rocket",
   "num": 2189,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17685600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Astro Peach",
       "rarity": 30,
-      "document_id": 5474226613807773923
+      "document": {
+        "id": 5474226613807773923,
+        "access_hash": -8454052866600443333,
+        "date": "2025-07-22T13:40:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54057,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jumbo Pencil",
       "rarity": 5,
-      "document_id": 5440587119980470792
+      "document": {
+        "id": 5440587119980470792,
+        "access_hash": 7672136212686104821,
+        "date": "2024-12-28T11:47:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1334,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6012755928644846470,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-153637",
   "title": "Happy Brownie",
   "num": 153637,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wrestler",
       "rarity": 20,
-      "document_id": 5345977855262096431
+      "document": {
+        "id": 5345977855262096431,
+        "access_hash": -6111918162188745042,
+        "date": "2025-09-14T14:49:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26336,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spirit Impala",
       "rarity": 4,
-      "document_id": 5728756997222826060
+      "document": {
+        "id": 5728756997222826060,
+        "access_hash": 4656643905432785898,
+        "date": "2024-12-28T13:12:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1801,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cappuccino",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 39,
+      "center_color": 11636862,
+      "edge_color": 8151894,
+      "pattern_color": 4862502,
+      "text_color": 15455432
     }
   ]
 }

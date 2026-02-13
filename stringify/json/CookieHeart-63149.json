@@ -1,26 +1,55 @@
 {
+  "id": 5888549103691891286,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-63149",
   "title": "Cookie Heart",
   "num": 63149,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "fklv",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Crayola",
       "rarity": 15,
-      "document_id": 5222425587620012601
+      "document": {
+        "id": 5222425587620012601,
+        "access_hash": 945732403785242134,
+        "date": "2025-01-21T04:54:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29187,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Butterfly",
       "rarity": 6,
-      "document_id": 5199689881885884783
+      "document": {
+        "id": 5199689881885884783,
+        "access_hash": 6533319067124007227,
+        "date": "2023-12-22T13:45:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1258,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

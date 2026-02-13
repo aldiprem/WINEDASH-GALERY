@@ -1,26 +1,55 @@
 {
+  "id": 6003327212709741261,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-33061",
   "title": "Ice Cream",
   "num": 33061,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "n9obs stars 1.40₽",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kiwi Sorbet",
       "rarity": 30,
-      "document_id": 5195050617126550326
+      "document": {
+        "id": 5195050617126550326,
+        "access_hash": -5248251157745531645,
+        "date": "2025-07-25T12:18:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26676,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cocktail",
       "rarity": 4,
-      "document_id": 5424853890271044722
+      "document": {
+        "id": 5424853890271044722,
+        "access_hash": -3685348669706753930,
+        "date": "2024-12-23T14:51:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 822,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Orange",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 23,
+      "center_color": 13736506,
+      "edge_color": 12611399,
+      "pattern_color": 10303751,
+      "text_color": 16769475
     }
   ]
 }

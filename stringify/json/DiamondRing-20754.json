@@ -1,26 +1,55 @@
 {
+  "id": 5873254866884755922,
+  "gift_id": 5868503709637411929,
   "slug": "DiamondRing-20754",
   "title": "Diamond Ring",
   "num": 20754,
   "availability_issued": 32240,
   "availability_total": 32924,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 58716100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rose Quartz",
       "rarity": 15,
-      "document_id": 5271545827209274799
+      "document": {
+        "id": 5271545827209274799,
+        "access_hash": 3748898890532550347,
+        "date": "2025-02-06T17:19:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29747,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shortsword",
       "rarity": 2,
-      "document_id": 5546589717459369995
+      "document": {
+        "id": 5546589717459369995,
+        "access_hash": -2441677544310914712,
+        "date": "2025-02-02T17:47:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1258,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

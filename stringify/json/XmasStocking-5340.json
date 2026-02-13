@@ -1,26 +1,55 @@
 {
+  "id": 5845828305244128015,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-5340",
   "title": "Xmas Stocking",
   "num": 5340,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tangerine",
       "rarity": 30,
-      "document_id": 5298719093153622611
+      "document": {
+        "id": 5298719093153622611,
+        "access_hash": -3643794503075520988,
+        "date": "2025-02-16T03:40:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40587,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mountain Goat",
       "rarity": 5,
-      "document_id": 5722108314834173965
+      "document": {
+        "id": 5722108314834173965,
+        "access_hash": -7537473076208268691,
+        "date": "2024-12-26T12:03:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2055,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lemongrass",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 17,
+      "center_color": 11450458,
+      "edge_color": 5608261,
+      "pattern_color": 4614663,
+      "text_color": 14217922
     }
   ]
 }

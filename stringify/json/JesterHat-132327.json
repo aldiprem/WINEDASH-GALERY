@@ -1,26 +1,55 @@
 {
+  "id": 5999332944664069196,
+  "gift_id": 5933590374185435592,
   "slug": "JesterHat-132327",
   "title": "Jester Hat",
   "num": 132327,
-  "availability_issued": 134548,
+  "availability_issued": 134551,
   "availability_total": 190222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "^-^",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16422300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Triboulet",
       "rarity": 15,
-      "document_id": 5226474315851001459
+      "document": {
+        "id": 5226474315851001459,
+        "access_hash": -1197711532140562451,
+        "date": "2025-01-22T21:29:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28841,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Key",
       "rarity": 4,
-      "document_id": 5440480222539438655
+      "document": {
+        "id": 5440480222539438655,
+        "access_hash": 5041610550964409221,
+        "date": "2024-12-28T09:51:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 947,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

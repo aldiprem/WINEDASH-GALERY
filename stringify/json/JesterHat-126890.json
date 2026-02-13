@@ -1,26 +1,55 @@
 {
+  "id": 5848020598285927541,
+  "gift_id": 5933590374185435592,
   "slug": "JesterHat-126890",
   "title": "Jester Hat",
   "num": 126890,
-  "availability_issued": 134548,
+  "availability_issued": 134551,
   "availability_total": 190222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13575800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Harley Quinn",
       "rarity": 13,
-      "document_id": 5436150483188210082
+      "document": {
+        "id": 5436150483188210082,
+        "access_hash": 6966381318277250292,
+        "date": "2024-12-26T21:24:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29058,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sea Horse",
       "rarity": 5,
-      "document_id": 5435936074125828771
+      "document": {
+        "id": 5435936074125828771,
+        "access_hash": -7421461532876422329,
+        "date": "2024-12-26T14:46:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1106,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

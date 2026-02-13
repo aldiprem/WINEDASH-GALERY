@@ -1,26 +1,55 @@
 {
+  "id": 5931387957905720205,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-1",
   "title": "Candy Cane",
   "num": 1,
-  "availability_issued": 209552,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 631880200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Final Offer",
       "rarity": 26,
-      "document_id": 5305253310368867020
+      "document": {
+        "id": 5305253310368867020,
+        "access_hash": -8366327349140033298,
+        "date": "2025-02-18T01:46:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37465,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sparks",
       "rarity": 24,
-      "document_id": 5440607637039243262
+      "document": {
+        "id": 5440607637039243262,
+        "access_hash": -3751453711016024631,
+        "date": "2024-12-28T09:49:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 897,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Deep Cyan",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 70,
+      "center_color": 3257770,
+      "edge_color": 1611161,
+      "pattern_color": 20303,
+      "text_color": 13762557
     }
   ]
 }

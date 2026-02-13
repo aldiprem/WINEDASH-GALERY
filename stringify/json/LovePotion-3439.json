@@ -1,26 +1,55 @@
 {
+  "id": 5870871838640308904,
+  "gift_id": 5868348541058942091,
   "slug": "LovePotion-3439",
   "title": "Love Potion",
   "num": 3439,
   "availability_issued": 29073,
   "availability_total": 30412,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "zx zx",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 38706100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ocean Glow",
       "rarity": 25,
-      "document_id": 5285502624085339081
+      "document": {
+        "id": 5285502624085339081,
+        "access_hash": -6159247135186366749,
+        "date": "2025-02-11T16:49:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16548,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Heart",
       "rarity": 2,
-      "document_id": 5440801593467362650
+      "document": {
+        "id": 5440801593467362650,
+        "access_hash": -8427740270004521817,
+        "date": "2024-12-28T09:50:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 617,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

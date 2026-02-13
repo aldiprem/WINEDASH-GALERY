@@ -1,26 +1,55 @@
 {
+  "id": 6017021282141340400,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-77244",
   "title": "Tama Gadget",
   "num": 77244,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wild Hunt",
       "rarity": 11,
-      "document_id": 5276297070355967803
+      "document": {
+        "id": 5276297070355967803,
+        "access_hash": 1282191465716847245,
+        "date": "2025-02-07T20:21:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17099,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Vortex",
       "rarity": 3,
-      "document_id": 5436036168338660466
+      "document": {
+        "id": 5436036168338660466,
+        "access_hash": 6026164539530323734,
+        "date": "2024-12-26T12:09:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2486,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5877314998253912655,
+  "gift_id": 5868348541058942091,
   "slug": "LovePotion-18975",
   "title": "Love Potion",
   "num": 18975,
   "availability_issued": 29073,
   "availability_total": 30412,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 38706100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sunset Serum",
       "rarity": 25,
-      "document_id": 5285248624014421683
+      "document": {
+        "id": 5285248624014421683,
+        "access_hash": 4675280473337579807,
+        "date": "2025-02-11T16:45:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16810,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hamburger",
       "rarity": 2,
-      "document_id": 5440896293201272329
+      "document": {
+        "id": 5440896293201272329,
+        "access_hash": -993797076819138565,
+        "date": "2024-12-28T11:15:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 880,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5785073557595751306,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-4890",
   "title": "Pretty Posy",
   "num": 4890,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14569500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lotus Pay",
       "rarity": 25,
-      "document_id": 5197384841657614998
+      "document": {
+        "id": 5197384841657614998,
+        "access_hash": 5306829917289813292,
+        "date": "2025-10-30T13:46:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54501,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Totem Bear",
       "rarity": 7,
-      "document_id": 5728966707590987806
+      "document": {
+        "id": 5728966707590987806,
+        "access_hash": -2795576097755213880,
+        "date": "2024-12-28T10:07:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2355,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Onyx Black",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 49,
+      "center_color": 5067348,
+      "edge_color": 3225144,
+      "pattern_color": 0,
+      "text_color": 11119533
     }
   ]
 }

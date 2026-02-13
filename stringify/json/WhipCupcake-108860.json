@@ -1,26 +1,55 @@
 {
+  "id": 6014800324487808408,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-108860",
   "title": "Whip Cupcake",
   "num": 108860,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Honey Bee",
       "rarity": 10,
-      "document_id": 5282794234888352522
+      "document": {
+        "id": 5282794234888352522,
+        "access_hash": -6972815882320486329,
+        "date": "2025-05-18T08:49:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54360,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hourglass",
       "rarity": 7,
-      "document_id": 5548506475464228910
+      "document": {
+        "id": 5548506475464228910,
+        "access_hash": -7556666626720549063,
+        "date": "2025-02-02T17:52:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1232,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

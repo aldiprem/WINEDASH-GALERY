@@ -1,26 +1,55 @@
 {
+  "id": 5871003702726230680,
+  "gift_id": 5868503709637411929,
   "slug": "DiamondRing-835",
   "title": "Diamond Ring",
   "num": 835,
   "availability_issued": 32240,
   "availability_total": 32924,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "kain no zäza",
+  "owner_address": null,
+  "gift_address": "EQC1pUbjNjgREsITFkywZHwxDcmfsCpOi93fchYKACDZtbs1",
+  "value_amount": 59019300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Aurora",
       "rarity": 15,
-      "document_id": 5271583549907041807
+      "document": {
+        "id": 5271583549907041807,
+        "access_hash": -688874017062970901,
+        "date": "2025-02-06T17:21:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22424,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Love Scene",
       "rarity": 4,
-      "document_id": 5289591046404073779
+      "document": {
+        "id": 5289591046404073779,
+        "access_hash": -292858419464049937,
+        "date": "2025-02-12T23:10:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1240,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Steel Grey",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 44,
+      "center_color": 9937580,
+      "edge_color": 6517372,
+      "pattern_color": 3360082,
+      "text_color": 14673128
     }
   ]
 }

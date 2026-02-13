@@ -1,26 +1,55 @@
 {
+  "id": 5893159695249572433,
+  "gift_id": 5868455043362980631,
   "slug": "HeartLocket-1",
   "title": "Heart Locket",
   "num": 1,
   "availability_issued": 1948,
   "availability_total": 1973,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "black.ton",
+  "gift_address": "EQBTRrod4uf9aLtJ0tixeufCy5RnC_I_TdRi4vnwjKIbgltg",
+  "value_amount": 2780239000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Valentine",
       "rarity": 10,
-      "document_id": 5228957120480701248
+      "document": {
+        "id": 5228957120480701248,
+        "access_hash": 2102673514601921753,
+        "date": "2025-04-30T06:45:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20455,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Starflower",
       "rarity": 6,
-      "document_id": 5357460750975657975
+      "document": {
+        "id": 5357460750975657975,
+        "access_hash": -888611773502216117,
+        "date": "2025-03-07T09:25:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1045,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fire Engine",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 73,
+      "center_color": 15753039,
+      "edge_color": 12859721,
+      "pattern_color": 6881289,
+      "text_color": 16758694
     }
   ]
 }

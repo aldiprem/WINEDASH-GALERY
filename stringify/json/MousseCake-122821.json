@@ -1,26 +1,55 @@
 {
+  "id": 5791721527019832214,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-122821",
   "title": "Mousse Cake",
   "num": 122821,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Circus Show",
       "rarity": 25,
-      "document_id": 5327978699591549100
+      "document": {
+        "id": 5327978699591549100,
+        "access_hash": -6809122479035939693,
+        "date": "2025-09-07T13:23:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60342,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lion of Babylon",
       "rarity": 4,
-      "document_id": 5544456677786386440
+      "document": {
+        "id": 5544456677786386440,
+        "access_hash": -8558057691141222937,
+        "date": "2025-02-01T17:42:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3633,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Marine Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 60,
+      "center_color": 5138588,
+      "edge_color": 3885946,
+      "pattern_color": 67617,
+      "text_color": 12307442
     }
   ]
 }

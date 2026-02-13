@@ -1,26 +1,55 @@
 {
+  "id": 6003631017221424133,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-65895",
   "title": "Spring Basket",
   "num": 65895,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "hærin.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Magician",
       "rarity": 20,
-      "document_id": 5389082525001874826
+      "document": {
+        "id": 5389082525001874826,
+        "access_hash": 3597866373092701037,
+        "date": "2025-09-28T16:30:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52749,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Axe",
       "rarity": 7,
-      "document_id": 5427371247912641705
+      "document": {
+        "id": 5427371247912641705,
+        "access_hash": -1653461042828890657,
+        "date": "2024-12-23T14:50:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 904,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

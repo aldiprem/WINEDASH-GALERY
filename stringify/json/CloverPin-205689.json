@@ -1,26 +1,55 @@
 {
+  "id": 6024027825500063638,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-205689",
   "title": "Clover Pin",
   "num": 205689,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Watermelon",
       "rarity": 20,
-      "document_id": 5231416169646292048
+      "document": {
+        "id": 5231416169646292048,
+        "access_hash": -5992005636347431844,
+        "date": "2025-08-06T04:45:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54214,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spades",
       "rarity": 5,
-      "document_id": 5440722007723368230
+      "document": {
+        "id": 5440722007723368230,
+        "access_hash": 2034685391757914612,
+        "date": "2024-12-28T11:34:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 668,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

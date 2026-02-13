@@ -1,26 +1,55 @@
 {
+  "id": 6003476333974258761,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-80516",
   "title": "Instant Ramen",
   "num": 80516,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13323100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Eyeballs",
       "rarity": 25,
-      "document_id": 5274120827606956363
+      "document": {
+        "id": 5274120827606956363,
+        "access_hash": 1815790234747902378,
+        "date": "2025-08-20T09:34:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24574,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Kite",
       "rarity": 5,
-      "document_id": 5440869715943644373
+      "document": {
+        "id": 5440869715943644373,
+        "access_hash": 8704595591767719779,
+        "date": "2024-12-28T11:32:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1682,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Satin Gold",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 19,
+      "center_color": 12557127,
+      "edge_color": 9271097,
+      "pattern_color": 6109952,
+      "text_color": 16704681
     }
   ]
 }

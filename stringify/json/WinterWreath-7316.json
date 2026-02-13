@@ -1,26 +1,55 @@
 {
+  "id": 5933627057501110961,
+  "gift_id": 5983259145522906006,
   "slug": "WinterWreath-7316",
   "title": "Winter Wreath",
   "num": 7316,
   "availability_issued": 71559,
   "availability_total": 100846,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12346200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Berry Yogurt",
       "rarity": 20,
-      "document_id": 5330247975627156521
+      "document": {
+        "id": 5330247975627156521,
+        "access_hash": -4436849678377453416,
+        "date": "2025-02-26T18:12:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35295,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mistletoe",
       "rarity": 24,
-      "document_id": 5208465161496578257
+      "document": {
+        "id": 5208465161496578257,
+        "access_hash": 3827083030446361815,
+        "date": "2023-12-24T23:23:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 970,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

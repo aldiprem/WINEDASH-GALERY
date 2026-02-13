@@ -1,26 +1,55 @@
 {
+  "id": 5793902352498951170,
+  "gift_id": 6023679164349940429,
   "slug": "SnakeBox-169966",
   "title": "Snake Box",
   "num": 169966,
-  "availability_issued": 170178,
+  "availability_issued": 170190,
   "availability_total": 273898,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9583900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Bloom",
       "rarity": 30,
-      "document_id": 5379650845539331676
+      "document": {
+        "id": 5379650845539331676,
+        "access_hash": -4167880869456001573,
+        "date": "2025-03-15T02:04:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58178,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Handset",
       "rarity": 8,
-      "document_id": 5433797377980918182
+      "document": {
+        "id": 5433797377980918182,
+        "access_hash": -7500743813900186608,
+        "date": "2024-12-26T11:45:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 717,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

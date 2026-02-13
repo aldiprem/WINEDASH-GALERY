@@ -1,26 +1,55 @@
 {
+  "id": 5940765211542684489,
+  "gift_id": 5983259145522906006,
   "slug": "WinterWreath-46161",
   "title": "Winter Wreath",
   "num": 46161,
   "availability_issued": 71559,
   "availability_total": 100846,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Jd.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12346200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cotton Candy",
       "rarity": 20,
-      "document_id": 5292179266711086378
+      "document": {
+        "id": 5292179266711086378,
+        "access_hash": 8461793395300644688,
+        "date": "2025-02-13T14:34:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35073,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Nordic Wolf",
       "rarity": 24,
-      "document_id": 5722297057171996682
+      "document": {
+        "id": 5722297057171996682,
+        "access_hash": 5878347459228473147,
+        "date": "2024-12-26T12:03:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2302,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Orange",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 23,
+      "center_color": 13736506,
+      "edge_color": 12611399,
+      "pattern_color": 10303751,
+      "text_color": 16769475
     }
   ]
 }

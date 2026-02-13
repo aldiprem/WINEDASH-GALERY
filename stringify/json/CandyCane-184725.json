@@ -1,26 +1,55 @@
 {
+  "id": 5776042804740358908,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-184725",
   "title": "Candy Cane",
   "num": 184725,
-  "availability_issued": 209557,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10965100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hologlow",
       "rarity": 20,
-      "document_id": 5339049853970311443
+      "document": {
+        "id": 5339049853970311443,
+        "access_hash": 6876643349061504029,
+        "date": "2025-03-01T22:41:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44719,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Winter House",
       "rarity": 24,
-      "document_id": 5204181485669597563
+      "document": {
+        "id": 5204181485669597563,
+        "access_hash": -2893956936777347104,
+        "date": "2023-12-23T15:01:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 839,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Cyan",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "pattern_color": 156813,
+      "text_color": 11988991
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

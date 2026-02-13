@@ -1,26 +1,55 @@
 {
+  "id": 5771561904015152480,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-135372",
   "title": "Spring Basket",
   "num": 135372,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lovely Lamb",
       "rarity": 30,
-      "document_id": 5350799248109633181
+      "document": {
+        "id": 5350799248109633181,
+        "access_hash": 5290976123877670962,
+        "date": "2025-06-10T17:46:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29797,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "High Heels",
       "rarity": 4,
-      "document_id": 5436140342770428908
+      "document": {
+        "id": 5436140342770428908,
+        "access_hash": 2676710812525489672,
+        "date": "2024-12-26T15:10:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 891,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Gunmetal",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 69,
+      "center_color": 5004643,
+      "edge_color": 3095362,
+      "pattern_color": 264202,
+      "text_color": 11978188
     }
   ]
 }

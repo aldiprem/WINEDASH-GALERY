@@ -1,26 +1,55 @@
 {
+  "id": 5933975297744438053,
+  "gift_id": 5915733223018594841,
   "slug": "HangingStar-32390",
   "title": "Hanging Star",
   "num": 32390,
-  "availability_issued": 44509,
+  "availability_issued": 44510,
   "availability_total": 58118,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "ᅠ",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 28077900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hot Spring",
       "rarity": 14,
-      "document_id": 5235748576172207919
+      "document": {
+        "id": 5235748576172207919,
+        "access_hash": -419344555019174502,
+        "date": "2025-01-25T23:53:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 13822,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Chest",
       "rarity": 16,
-      "document_id": 5424748805306211426
+      "document": {
+        "id": 5424748805306211426,
+        "access_hash": -7983553628680416513,
+        "date": "2024-12-22T14:12:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1372,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

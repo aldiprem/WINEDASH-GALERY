@@ -1,26 +1,55 @@
 {
+  "id": 5825412865397359113,
+  "gift_id": 6005880141270483700,
   "slug": "JollyChimp-8511",
   "title": "Jolly Chimp",
   "num": 8511,
-  "availability_issued": 115521,
+  "availability_issued": 115522,
   "availability_total": 132155,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 25265100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Farm Girl",
       "rarity": 30,
-      "document_id": 5188673943606688916
+      "document": {
+        "id": 5188673943606688916,
+        "access_hash": 1701326598692069746,
+        "date": "2025-07-22T18:02:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65082,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eagle",
       "rarity": 5,
-      "document_id": 5440518297424518899
+      "document": {
+        "id": 5440518297424518899,
+        "access_hash": -1975715178978209675,
+        "date": "2024-12-28T11:07:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1070,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

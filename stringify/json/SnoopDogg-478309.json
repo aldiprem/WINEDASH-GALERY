@@ -1,26 +1,55 @@
 {
+  "id": 6019415112228537209,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-478309",
   "title": "Snoop Dogg",
   "num": 478309,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Label Lord",
       "rarity": 10,
-      "document_id": 5434131676760408297
+      "document": {
+        "id": 5434131676760408297,
+        "access_hash": 3401516651937388759,
+        "date": "2025-07-08T12:21:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 59845,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Love Lock",
       "rarity": 5,
-      "document_id": 5440749770391969728
+      "document": {
+        "id": 5440749770391969728,
+        "access_hash": -3587055897509111459,
+        "date": "2024-12-28T11:11:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1128,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Gunmetal",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 69,
+      "center_color": 5004643,
+      "edge_color": 3095362,
+      "pattern_color": 264202,
+      "text_color": 11978188
     }
   ]
 }

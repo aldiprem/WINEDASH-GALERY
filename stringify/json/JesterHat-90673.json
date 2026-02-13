@@ -1,26 +1,55 @@
 {
+  "id": 5945311309871448940,
+  "gift_id": 5933590374185435592,
   "slug": "JesterHat-90673",
   "title": "Jester Hat",
   "num": 90673,
-  "availability_issued": 134548,
+  "availability_issued": 134551,
   "availability_total": 190222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13575800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Green Tassels",
       "rarity": 8,
-      "document_id": 5228872672833726912
+      "document": {
+        "id": 5228872672833726912,
+        "access_hash": -1874222899163088407,
+        "date": "2025-01-23T18:34:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26360,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Apple",
       "rarity": 5,
-      "document_id": 5434047181868785167
+      "document": {
+        "id": 5434047181868785167,
+        "access_hash": -6322817599829622862,
+        "date": "2024-12-26T14:49:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 808,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Copper",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 57,
+      "center_color": 13665878,
+      "edge_color": 10315057,
+      "pattern_color": 6301953,
+      "text_color": 16046270
     }
   ]
 }

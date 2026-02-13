@@ -1,26 +1,55 @@
 {
+  "id": 5850348487740228953,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-173701",
   "title": "Cookie Heart",
   "num": 173701,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Winterfell",
       "rarity": 15,
-      "document_id": 5221968680409131814
+      "document": {
+        "id": 5221968680409131814,
+        "access_hash": -6529655553699164017,
+        "date": "2025-01-21T04:53:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28089,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shooting Star",
       "rarity": 12,
-      "document_id": 5434137758434093445
+      "document": {
+        "id": 5434137758434093445,
+        "access_hash": 5125665587446151556,
+        "date": "2024-12-26T14:45:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 945,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

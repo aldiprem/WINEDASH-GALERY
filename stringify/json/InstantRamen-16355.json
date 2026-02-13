@@ -1,26 +1,55 @@
 {
+  "id": 6003419558801572841,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-16355",
   "title": "Instant Ramen",
   "num": 16355,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Classic Ramen",
       "rarity": 25,
-      "document_id": 5316763320210980280
+      "document": {
+        "id": 5316763320210980280,
+        "access_hash": 7224870327099037786,
+        "date": "2025-09-04T05:27:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42789,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Diamonds",
       "rarity": 2,
-      "document_id": 5440666370717017730
+      "document": {
+        "id": 5440666370717017730,
+        "access_hash": 329682687283280169,
+        "date": "2024-12-28T11:32:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 571,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

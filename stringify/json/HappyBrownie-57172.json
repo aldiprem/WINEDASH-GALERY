@@ -1,26 +1,55 @@
 {
+  "id": 6005946236522202107,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-57172",
   "title": "Happy Brownie",
   "num": 57172,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Snowman",
       "rarity": 30,
-      "document_id": 5323777830734037454
+      "document": {
+        "id": 5323777830734037454,
+        "access_hash": 6107886680057507912,
+        "date": "2025-09-06T17:32:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39135,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gold",
       "rarity": 5,
-      "document_id": 5440548920541339106
+      "document": {
+        "id": 5440548920541339106,
+        "access_hash": 5001186766212078007,
+        "date": "2024-12-28T09:51:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 760,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

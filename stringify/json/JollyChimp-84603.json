@@ -1,26 +1,55 @@
 {
+  "id": 5839430917096998679,
+  "gift_id": 6005880141270483700,
   "slug": "JollyChimp-84603",
   "title": "Jolly Chimp",
   "num": 84603,
-  "availability_issued": 115521,
+  "availability_issued": 115522,
   "availability_total": 132155,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "sofia 👀",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17129700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Farm Girl",
       "rarity": 30,
-      "document_id": 5188673943606688916
+      "document": {
+        "id": 5188673943606688916,
+        "access_hash": 1701326598692069746,
+        "date": "2025-07-22T18:02:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65082,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Unicorn",
       "rarity": 5,
-      "document_id": 5440820989539673389
+      "document": {
+        "id": 5440820989539673389,
+        "access_hash": 8153728545972082553,
+        "date": "2024-12-28T11:52:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 867,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

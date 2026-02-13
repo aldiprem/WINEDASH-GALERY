@@ -1,26 +1,55 @@
 {
+  "id": 5856982159218180648,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-39867",
   "title": "Ginger Cookie",
   "num": 39867,
-  "availability_issued": 142089,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20212100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ice Latte",
       "rarity": 17,
-      "document_id": 5240211446624707644
+      "document": {
+        "id": 5240211446624707644,
+        "access_hash": 3653112836411928847,
+        "date": "2025-01-26T15:37:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30345,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rudolph",
       "rarity": 15,
-      "document_id": 5283265641908824187
+      "document": {
+        "id": 5283265641908824187,
+        "access_hash": -2249235203758051328,
+        "date": "2024-11-05T19:06:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 934,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Cyan",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "pattern_color": 156813,
+      "text_color": 11988991
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5807615083563451094,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-193125",
   "title": "Happy Brownie",
   "num": 193125,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12481000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Plunger",
       "rarity": 25,
-      "document_id": 5334700495208483109
+      "document": {
+        "id": 5334700495208483109,
+        "access_hash": 1408312804956094954,
+        "date": "2025-09-09T18:06:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48924,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dice",
       "rarity": 5,
-      "document_id": 5433613007919800239
+      "document": {
+        "id": 5433613007919800239,
+        "access_hash": 790491193472651462,
+        "date": "2024-12-26T11:41:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 964,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

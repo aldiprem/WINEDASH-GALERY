@@ -1,26 +1,55 @@
 {
+  "id": 5924925767292027592,
+  "gift_id": 5897581235231785485,
   "slug": "LightSword-102630",
   "title": "Light Sword",
   "num": 102630,
-  "availability_issued": 124127,
+  "availability_issued": 124128,
   "availability_total": 131222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBF5XnUfC29kSlHVcU3lZ-GA9Dj-LDayhsbmmAET0UC6Qb8",
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Polygon",
       "rarity": 30,
-      "document_id": 5447469890971662862
+      "document": {
+        "id": 5447469890971662862,
+        "access_hash": -102224189427863658,
+        "date": "2025-04-07T10:23:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12842,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "The Eye",
       "rarity": 4,
-      "document_id": 5433680215568048177
+      "document": {
+        "id": 5433680215568048177,
+        "access_hash": 5680003177940397684,
+        "date": "2024-12-26T12:25:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 928,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

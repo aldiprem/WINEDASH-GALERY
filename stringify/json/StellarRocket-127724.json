@@ -1,26 +1,55 @@
 {
+  "id": 6012476038511067960,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-127724",
   "title": "Stellar Rocket",
   "num": 127724,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Neon Fuel",
       "rarity": 30,
-      "document_id": 5188160544690961551
+      "document": {
+        "id": 5188160544690961551,
+        "access_hash": -4966658451276016545,
+        "date": "2025-07-22T13:40:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33681,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crusader",
       "rarity": 4,
-      "document_id": 5440395491424625401
+      "document": {
+        "id": 5440395491424625401,
+        "access_hash": -2768032814879785488,
+        "date": "2024-12-28T09:54:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 600,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Marine Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 60,
+      "center_color": 5138588,
+      "edge_color": 3885946,
+      "pattern_color": 67617,
+      "text_color": 12307442
     }
   ]
 }

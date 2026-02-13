@@ -1,26 +1,55 @@
 {
+  "id": 6007908370856543706,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-274361",
   "title": "Ice Cream",
   "num": 274361,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15159100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vice Dream",
       "rarity": 30,
-      "document_id": 5366129940599178946
+      "document": {
+        "id": 5366129940599178946,
+        "access_hash": 8310863648307072177,
+        "date": "2025-09-20T15:59:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52006,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Avocado",
       "rarity": 5,
-      "document_id": 5433953616006243349
+      "document": {
+        "id": 5433953616006243349,
+        "access_hash": -8942330992440120905,
+        "date": "2024-12-26T14:47:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 694,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

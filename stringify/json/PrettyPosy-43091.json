@@ -1,26 +1,55 @@
 {
+  "id": 5785241877364081801,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-43091",
   "title": "Pretty Posy",
   "num": 43091,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18932000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cinnabon",
       "rarity": 20,
-      "document_id": 5197382505195407641
+      "document": {
+        "id": 5197382505195407641,
+        "access_hash": -5158063957891708826,
+        "date": "2025-10-30T13:08:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54009,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Manta Ray",
       "rarity": 5,
-      "document_id": 5434043848974165995
+      "document": {
+        "id": 5434043848974165995,
+        "access_hash": -2382075585450309197,
+        "date": "2024-12-26T14:46:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carrot Juice",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 24,
+      "center_color": 14391399,
+      "edge_color": 13070159,
+      "pattern_color": 9314560,
+      "text_color": 16766922
     }
   ]
 }

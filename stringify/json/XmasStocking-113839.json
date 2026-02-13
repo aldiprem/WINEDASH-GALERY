@@ -1,26 +1,55 @@
 {
+  "id": 6028433564297593649,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-113839",
   "title": "Xmas Stocking",
   "num": 113839,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Old School",
       "rarity": 22,
-      "document_id": 5300972598069321085
+      "document": {
+        "id": 5300972598069321085,
+        "access_hash": -6969904843557408364,
+        "date": "2025-02-16T03:39:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40815,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Doctor Hat",
       "rarity": 5,
-      "document_id": 5312328349866028119
+      "document": {
+        "id": 5312328349866028119,
+        "access_hash": -4481799142208287347,
+        "date": "2025-02-20T17:37:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1041,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Khaki Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "pattern_color": 3756059,
+      "text_color": 13887163
     }
   ]
 }

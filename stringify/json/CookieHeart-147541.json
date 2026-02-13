@@ -1,26 +1,55 @@
 {
+  "id": 5884306732565398807,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-147541",
   "title": "Cookie Heart",
   "num": 147541,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Honeymoon",
       "rarity": 10,
-      "document_id": 5231306742469515854
+      "document": {
+        "id": 5231306742469515854,
+        "access_hash": 1496780221025575071,
+        "date": "2025-01-24T01:33:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26888,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jingle Bell",
       "rarity": 10,
-      "document_id": 5206464681694217071
+      "document": {
+        "id": 5206464681694217071,
+        "access_hash": 1040973728026945150,
+        "date": "2023-12-24T22:56:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1679,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Emerald",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 13,
+      "center_color": 7914885,
+      "edge_color": 4366705,
+      "pattern_color": 25906,
+      "text_color": 12188121
     }
   ]
 }

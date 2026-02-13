@@ -1,26 +1,55 @@
 {
+  "id": 5823352217398150128,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-12283",
   "title": "Party Sparkler",
   "num": 12283,
-  "availability_issued": 176755,
+  "availability_issued": 176760,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 19403600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bright Flare",
       "rarity": 13,
-      "document_id": 5228784961011607179
+      "document": {
+        "id": 5228784961011607179,
+        "access_hash": 2655154507041730509,
+        "date": "2025-01-23T11:53:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31172,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower Cross",
       "rarity": 5,
-      "document_id": 5722006219166580742
+      "document": {
+        "id": 5722006219166580742,
+        "access_hash": -6152859021891897908,
+        "date": "2024-12-26T12:02:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2154,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Light Olive",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "pattern_color": 5852164,
+      "text_color": 16116668
     }
   ]
 }

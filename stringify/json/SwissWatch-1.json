@@ -1,26 +1,55 @@
 {
+  "id": 5830028602325861749,
+  "gift_id": 5936043693864651359,
   "slug": "SwissWatch-1",
   "title": "Swiss Watch",
   "num": 1,
   "availability_issued": 25664,
   "availability_total": 29323,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Ferrari Apple",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 634154000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Amazon",
       "rarity": 25,
-      "document_id": 5197232297304157073
+      "document": {
+        "id": 5197232297304157073,
+        "access_hash": 394746525292609124,
+        "date": "2025-01-12T18:35:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19122,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mafdet",
       "rarity": 8,
-      "document_id": 5726594038807658503
+      "document": {
+        "id": 5726594038807658503,
+        "access_hash": -7234561998951628291,
+        "date": "2024-12-28T10:07:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2236,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 12,
+      "center_color": 7325587,
+      "edge_color": 3906692,
+      "pattern_color": 24905,
+      "text_color": 13041648
     }
   ]
 }

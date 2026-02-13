@@ -1,26 +1,55 @@
 {
+  "id": 5897988359476741088,
+  "gift_id": 5868595669182186720,
   "slug": "ValentineBox-29927",
   "title": "Valentine Box",
   "num": 29927,
   "availability_issued": 34207,
   "availability_total": 41025,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 28195900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vibrant",
       "rarity": 25,
-      "document_id": 5429178952402891855
+      "document": {
+        "id": 5429178952402891855,
+        "access_hash": -2453986788725507971,
+        "date": "2025-03-31T20:04:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16276,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Greek Helmet",
       "rarity": 7,
-      "document_id": 5546610367662129158
+      "document": {
+        "id": 5546610367662129158,
+        "access_hash": -1897989254056102291,
+        "date": "2025-02-02T17:52:41+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 990,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

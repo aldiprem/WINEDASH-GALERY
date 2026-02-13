@@ -1,26 +1,55 @@
 {
+  "id": 5870624418459288164,
+  "gift_id": 5868503709637411929,
   "slug": "DiamondRing-3680",
   "title": "Diamond Ring",
   "num": 3680,
   "availability_issued": 32240,
   "availability_total": 32924,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQDyMOgHRpYKqN-wMBlMkD7gYjSdhcDQjcsT3Tb_CZ7zToZn",
+  "value_amount": 58716100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Light",
       "rarity": 15,
-      "document_id": 5271904199280453525
+      "document": {
+        "id": 5271904199280453525,
+        "access_hash": -2764303623642238549,
+        "date": "2025-02-06T17:19:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29662,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flaming Heart",
       "rarity": 5,
-      "document_id": 5289822124234532044
+      "document": {
+        "id": 5289822124234532044,
+        "access_hash": 4163914641514035907,
+        "date": "2025-02-12T12:14:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1051,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5803158178820522621,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-28154",
   "title": "Jelly Bunny",
   "num": 28154,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBrEyB4gcsnhLU3rMPRoHZyyUdnPeBkU7swCnwBUilEqJiX",
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Smelly",
       "rarity": 20,
-      "document_id": 5425120882618031408
+      "document": {
+        "id": 5425120882618031408,
+        "access_hash": 879094328101880910,
+        "date": "2024-12-23T14:18:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 56227,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pickaxe",
       "rarity": 5,
-      "document_id": 5427383398375122352
+      "document": {
+        "id": 5427383398375122352,
+        "access_hash": -1090993240082326721,
+        "date": "2024-12-23T14:50:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 857,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

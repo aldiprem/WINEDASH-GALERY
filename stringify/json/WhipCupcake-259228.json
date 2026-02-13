@@ -1,26 +1,55 @@
 {
+  "id": 5783090287727346685,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-259228",
   "title": "Whip Cupcake",
   "num": 259228,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tarot Cards",
       "rarity": 15,
-      "document_id": 5307889965022083941
+      "document": {
+        "id": 5307889965022083941,
+        "access_hash": -9167776417996502832,
+        "date": "2025-05-27T12:07:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36234,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lovely Kiss",
       "rarity": 7,
-      "document_id": 5422575423005417377
+      "document": {
+        "id": 5422575423005417377,
+        "access_hash": -5054981253756117667,
+        "date": "2024-12-22T14:14:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 806,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mint Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "pattern_color": 158498,
+      "text_color": 12451788
     }
   ]
 }

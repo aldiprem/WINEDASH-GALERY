@@ -1,26 +1,55 @@
 {
+  "id": 5827994492929573845,
+  "gift_id": 5782988952268964995,
   "slug": "DeskCalendar-46163",
   "title": "Desk Calendar",
   "num": 46163,
-  "availability_issued": 306379,
-  "availability_total": 337481,
+  "availability_issued": 306309,
+  "availability_total": 337410,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Deleted Account",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10594500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Leather Top",
       "rarity": 15,
-      "document_id": 5233266291233547111
+      "document": {
+        "id": 5233266291233547111,
+        "access_hash": -5527426667834783434,
+        "date": "2025-01-24T23:45:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19853,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sun Lion",
       "rarity": 4,
-      "document_id": 5722053983497879559
+      "document": {
+        "id": 5722053983497879559,
+        "access_hash": 8065561131228852191,
+        "date": "2024-12-26T12:01:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3295,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5924946043832631956,
+  "gift_id": 5871002671934079382,
   "slug": "LushBouquet-8113",
   "title": "Lush Bouquet",
   "num": 8113,
-  "availability_issued": 104643,
+  "availability_issued": 104646,
   "availability_total": 140116,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Maxim",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20363700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cabbage",
       "rarity": 20,
-      "document_id": 5208828734773161823
+      "document": {
+        "id": 5208828734773161823,
+        "access_hash": 3633965635788699951,
+        "date": "2025-04-23T16:09:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53378,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rose Bud",
       "rarity": 5,
-      "document_id": 5357350859942422788
+      "document": {
+        "id": 5357350859942422788,
+        "access_hash": 3784734354974422855,
+        "date": "2025-03-07T09:25:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1224,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mint Green",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "pattern_color": 158498,
+      "text_color": 12451788
     }
   ]
 }

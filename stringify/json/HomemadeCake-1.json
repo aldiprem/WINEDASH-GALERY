@@ -1,26 +1,55 @@
 {
+  "id": 6030458207585960833,
+  "gift_id": 5783075783622787539,
   "slug": "HomemadeCake-1",
   "title": "Homemade Cake",
   "num": 1,
-  "availability_issued": 178568,
+  "availability_issued": 178569,
   "availability_total": 199482,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13272600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "French Yogurt",
       "rarity": 15,
-      "document_id": 5420192231552212025
+      "document": {
+        "id": 5420192231552212025,
+        "access_hash": 4408357331629199215,
+        "date": "2024-12-21T16:03:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16857,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Plume",
       "rarity": 3,
-      "document_id": 5436321727829273227
+      "document": {
+        "id": 5436321727829273227,
+        "access_hash": -8596216967689896428,
+        "date": "2024-12-26T15:09:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 605,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Indigo",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 4,
+      "center_color": 11108595,
+      "edge_color": 5989080,
+      "pattern_color": 3613355,
+      "text_color": 14211327
     }
   ]
 }

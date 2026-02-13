@@ -1,26 +1,55 @@
 {
+  "id": 6017065176707105415,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-74112",
   "title": "Snoop Cigar",
   "num": 74112,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Royalty",
       "rarity": 25,
-      "document_id": 5375364429523220047
+      "document": {
+        "id": 5375364429523220047,
+        "access_hash": -4655021804555163251,
+        "date": "2025-06-18T16:07:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 50075,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Drug",
       "rarity": 7,
-      "document_id": 5440721062830561949
+      "document": {
+        "id": 5440721062830561949,
+        "access_hash": 3967293099937094121,
+        "date": "2024-12-28T11:47:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 732,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

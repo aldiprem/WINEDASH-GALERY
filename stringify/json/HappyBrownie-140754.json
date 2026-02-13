@@ -1,26 +1,55 @@
 {
+  "id": 6008266687093146936,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-140754",
   "title": "Happy Brownie",
   "num": 140754,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Alien",
       "rarity": 30,
-      "document_id": 5292180533726446224
+      "document": {
+        "id": 5292180533726446224,
+        "access_hash": -6868423497307041027,
+        "date": "2025-08-26T14:24:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37887,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Earth",
       "rarity": 5,
-      "document_id": 5551122174972002314
+      "document": {
+        "id": 5551122174972002314,
+        "access_hash": 7621062275565811717,
+        "date": "2025-02-03T13:30:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2301,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

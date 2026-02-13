@@ -1,26 +1,55 @@
 {
+  "id": 5877532701556212523,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-34913",
   "title": "Restless Jar",
   "num": 34913,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16321300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Autumn Candle",
       "rarity": 25,
-      "document_id": 5226770110248678017
+      "document": {
+        "id": 5226770110248678017,
+        "access_hash": 3267648183319593738,
+        "date": "2025-04-29T18:55:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 34328,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Full Moon",
       "rarity": 5,
-      "document_id": 5550987214214660101
+      "document": {
+        "id": 5550987214214660101,
+        "access_hash": 6711635371082572192,
+        "date": "2025-02-03T13:30:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3347,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

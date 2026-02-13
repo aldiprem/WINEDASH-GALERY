@@ -1,26 +1,55 @@
 {
+  "id": 5859459084037653210,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-24909",
   "title": "Jingle Bells",
   "num": 24909,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75884,
+  "availability_total": 114946,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": ".",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Uranium",
       "rarity": 13,
-      "document_id": 5237928731636425619
+      "document": {
+        "id": 5237928731636425619,
+        "access_hash": 6796337887759172514,
+        "date": "2025-01-26T07:39:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36129,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Snow Angel",
       "rarity": 20,
-      "document_id": 5282854892711470699
+      "document": {
+        "id": 5282854892711470699,
+        "access_hash": -8677874853082854152,
+        "date": "2024-11-05T19:06:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 820,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

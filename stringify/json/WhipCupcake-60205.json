@@ -1,26 +1,55 @@
 {
+  "id": 6001158490448462820,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-60205",
   "title": "Whip Cupcake",
   "num": 60205,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Minion",
       "rarity": 25,
-      "document_id": 5352529351130775372
+      "document": {
+        "id": 5352529351130775372,
+        "access_hash": 8456910419403718694,
+        "date": "2025-06-10T16:49:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26262,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sun Lion",
       "rarity": 4,
-      "document_id": 5722053983497879559
+      "document": {
+        "id": 5722053983497879559,
+        "access_hash": 8065561131228852191,
+        "date": "2024-12-26T12:01:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3295,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tactical Pine",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 61,
+      "center_color": 4489835,
+      "edge_color": 3105641,
+      "pattern_color": 9764,
+      "text_color": 12052179
     }
   ]
 }

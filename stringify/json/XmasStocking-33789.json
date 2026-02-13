@@ -1,26 +1,55 @@
 {
+  "id": 5850516124608758946,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-33789",
   "title": "Xmas Stocking",
   "num": 33789,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Caramel Fest",
       "rarity": 22,
-      "document_id": 5352834860744473348
+      "document": {
+        "id": 5352834860744473348,
+        "access_hash": -6809878206751182245,
+        "date": "2025-03-05T18:06:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40671,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wasp",
       "rarity": 2,
-      "document_id": 5440853115895045152
+      "document": {
+        "id": 5440853115895045152,
+        "access_hash": 5715713394055175790,
+        "date": "2024-12-28T11:08:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1260,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Violet",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 79,
+      "center_color": 12738790,
+      "edge_color": 9522905,
+      "pattern_color": 4850058,
+      "text_color": 15452159
     }
   ]
 }

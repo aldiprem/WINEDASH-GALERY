@@ -1,26 +1,55 @@
 {
+  "id": 5825744123339997854,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-57323",
   "title": "Stellar Rocket",
   "num": 57323,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Silver Ride",
       "rarity": 25,
-      "document_id": 5451864196566250830
+      "document": {
+        "id": 5451864196566250830,
+        "access_hash": -3038372810197538428,
+        "date": "2025-07-14T06:34:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 63458,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Teru Bōzu",
       "rarity": 4,
-      "document_id": 5584796500984070156
+      "document": {
+        "id": 5584796500984070156,
+        "access_hash": 6630752961934642452,
+        "date": "2025-02-14T18:57:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1059,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Grape",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 52,
+      "center_color": 10319041,
+      "edge_color": 7949728,
+      "pattern_color": 4065899,
+      "text_color": 14728702
     }
   ]
 }

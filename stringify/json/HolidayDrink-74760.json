@@ -1,26 +1,55 @@
 {
+  "id": 5803159991296721683,
+  "gift_id": 6003735372041814769,
   "slug": "HolidayDrink-74760",
   "title": "Holiday Drink",
   "num": 74760,
-  "availability_issued": 82869,
+  "availability_issued": 82872,
   "availability_total": 120989,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15108500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hot Fuchsia",
       "rarity": 26,
-      "document_id": 5314789748378726724
+      "document": {
+        "id": 5314789748378726724,
+        "access_hash": 3073136114105788717,
+        "date": "2025-02-20T22:07:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48574,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Piranha",
       "rarity": 4,
-      "document_id": 5546636489653223478
+      "document": {
+        "id": 5546636489653223478,
+        "access_hash": 3037701951061237141,
+        "date": "2025-02-02T17:53:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1326,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Deep Cyan",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 70,
+      "center_color": 3257770,
+      "edge_color": 1611161,
+      "pattern_color": 20303,
+      "text_color": 13762557
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

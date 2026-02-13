@@ -1,26 +1,55 @@
 {
+  "id": 5827948425110356368,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-1492",
   "title": "Cookie Heart",
   "num": 1492,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Last Bites",
       "rarity": 10,
-      "document_id": 5229233776504104299
+      "document": {
+        "id": 5229233776504104299,
+        "access_hash": -3114063222559217520,
+        "date": "2025-01-23T11:59:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23246,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mittens",
       "rarity": 12,
-      "document_id": 5195148147243899647
+      "document": {
+        "id": 5195148147243899647,
+        "access_hash": 6571680456281178334,
+        "date": "2024-10-07T13:21:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1427,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

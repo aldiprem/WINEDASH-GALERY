@@ -1,26 +1,55 @@
 {
+  "id": 5899727877066196126,
+  "gift_id": 6028426950047957932,
   "slug": "LunarSnake-157193",
   "title": "Lunar Snake",
   "num": 157193,
-  "availability_issued": 189499,
+  "availability_issued": 189502,
   "availability_total": 259346,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "🇫🇷",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9196500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ender Snake",
       "rarity": 5,
-      "document_id": 5219873685556455142
+      "document": {
+        "id": 5219873685556455142,
+        "access_hash": -6782704316120255213,
+        "date": "2025-01-20T16:06:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65493,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Scissors",
       "rarity": 5,
-      "document_id": 5440515449861202939
+      "document": {
+        "id": 5440515449861202939,
+        "access_hash": 7522209380632968106,
+        "date": "2024-12-28T11:48:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1129,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

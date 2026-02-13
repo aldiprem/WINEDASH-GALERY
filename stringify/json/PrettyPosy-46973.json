@@ -1,26 +1,55 @@
 {
+  "id": 5787623453909582678,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-46973",
   "title": "Pretty Posy",
   "num": 46973,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14586400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Frankfurter",
       "rarity": 30,
-      "document_id": 5465312890221264892
+      "document": {
+        "id": 5465312890221264892,
+        "access_hash": 3432549089197792550,
+        "date": "2025-10-24T10:17:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 50247,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Moai Head",
       "rarity": 2,
-      "document_id": 5548933322199007254
+      "document": {
+        "id": 5548933322199007254,
+        "access_hash": -5577048469487826410,
+        "date": "2025-02-02T17:54:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1137,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     }
   ]
 }

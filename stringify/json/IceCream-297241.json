@@ -1,26 +1,55 @@
 {
+  "id": 6019499753149039263,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-297241",
   "title": "Ice Cream",
   "num": 297241,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12615700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Watermelon",
       "rarity": 30,
-      "document_id": 5195261890862806945
+      "document": {
+        "id": 5195261890862806945,
+        "access_hash": -4641202908457563035,
+        "date": "2025-07-25T12:19:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30249,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ancient Urn",
       "rarity": 7,
-      "document_id": 5548635229993828394
+      "document": {
+        "id": 5548635229993828394,
+        "access_hash": 6696216514423542173,
+        "date": "2025-02-02T17:54:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 985,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Light Olive",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "pattern_color": 5852164,
+      "text_color": 16116668
     }
   ]
 }

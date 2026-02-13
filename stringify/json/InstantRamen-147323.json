@@ -1,26 +1,55 @@
 {
+  "id": 6003551195254228325,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-147323",
   "title": "Instant Ramen",
   "num": 147323,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hotpot",
       "rarity": 20,
-      "document_id": 5379756351410961855
+      "document": {
+        "id": 5379756351410961855,
+        "access_hash": 6822839632422551168,
+        "date": "2025-09-25T08:36:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64850,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ribeye Steak",
       "rarity": 5,
-      "document_id": 5546411141309136921
+      "document": {
+        "id": 5546411141309136921,
+        "access_hash": -5684532119211309505,
+        "date": "2025-02-02T17:54:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1272,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

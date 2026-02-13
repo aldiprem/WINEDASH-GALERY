@@ -1,26 +1,55 @@
 {
+  "id": 5780418968393089684,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-210790",
   "title": "Clover Pin",
   "num": 210790,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Matrix",
       "rarity": 30,
-      "document_id": 5231367640810810236
+      "document": {
+        "id": 5231367640810810236,
+        "access_hash": 7078121740814219761,
+        "date": "2025-08-06T05:37:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 59698,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Egg",
       "rarity": 4,
-      "document_id": 5546293540809605130
+      "document": {
+        "id": 5546293540809605130,
+        "access_hash": -7518743638157796212,
+        "date": "2025-02-02T17:51:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 678,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Indigo",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 4,
+      "center_color": 11108595,
+      "edge_color": 5989080,
+      "pattern_color": 3613355,
+      "text_color": 14211327
     }
   ]
 }

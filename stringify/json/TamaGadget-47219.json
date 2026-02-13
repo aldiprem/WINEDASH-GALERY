@@ -1,26 +1,55 @@
 {
+  "id": 5992361834785538868,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-47219",
   "title": "Tama Gadget",
   "num": 47219,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Crystal View",
       "rarity": 11,
-      "document_id": 5296419331440141338
+      "document": {
+        "id": 5296419331440141338,
+        "access_hash": -8028742964456596337,
+        "date": "2025-02-15T11:05:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17509,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candle",
       "rarity": 5,
-      "document_id": 5440862947075185091
+      "document": {
+        "id": 5440862947075185091,
+        "access_hash": 6542726026572555817,
+        "date": "2024-12-28T11:47:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 875,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

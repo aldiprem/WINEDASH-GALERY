@@ -1,26 +1,55 @@
 {
+  "id": 5870913096096154234,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-340616",
   "title": "Lol Pop",
   "num": 340616,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12632600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Plastic Ice",
       "rarity": 10,
-      "document_id": 5226763178171460533
+      "document": {
+        "id": 5226763178171460533,
+        "access_hash": 9048981978279391646,
+        "date": "2025-01-22T23:42:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60455,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jörmungandr",
       "rarity": 5,
-      "document_id": 5546470136979914792
+      "document": {
+        "id": 5546470136979914792,
+        "access_hash": -4058609021663060271,
+        "date": "2025-02-01T20:50:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2769,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     }
   ]
 }

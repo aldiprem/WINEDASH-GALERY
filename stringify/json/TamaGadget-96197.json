@@ -1,26 +1,55 @@
 {
+  "id": 5816836571621491546,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-96197",
   "title": "Tama Gadget",
   "num": 96197,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tangerine",
       "rarity": 20,
-      "document_id": 5255887252621388754
+      "document": {
+        "id": 5255887252621388754,
+        "access_hash": -6777765406487256577,
+        "date": "2025-02-01T11:52:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14145,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bull of Heaven",
       "rarity": 5,
-      "document_id": 5730890517932146699
+      "document": {
+        "id": 5730890517932146699,
+        "access_hash": -3860095447136541930,
+        "date": "2024-12-29T17:57:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2453,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

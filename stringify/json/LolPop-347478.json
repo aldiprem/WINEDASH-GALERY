@@ -1,26 +1,55 @@
 {
+  "id": 5879544945273995979,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-347478",
   "title": "Lol Pop",
   "num": 347478,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Dark Portal",
       "rarity": 10,
-      "document_id": 5228934185355338030
+      "document": {
+        "id": 5228934185355338030,
+        "access_hash": 2451799385479989787,
+        "date": "2025-01-22T23:41:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 62492,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Double Axe",
       "rarity": 4,
-      "document_id": 5551071537307582479
+      "document": {
+        "id": 5551071537307582479,
+        "access_hash": 2097677093777790451,
+        "date": "2025-02-03T13:29:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1804,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

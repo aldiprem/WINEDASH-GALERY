@@ -1,26 +1,55 @@
 {
+  "id": 6003615392130401834,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-62431",
   "title": "Ice Cream",
   "num": 62431,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Granite",
       "rarity": 15,
-      "document_id": 5348545695949289935
+      "document": {
+        "id": 5348545695949289935,
+        "access_hash": -4860647517384098526,
+        "date": "2025-06-09T21:19:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 11547,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wreath",
       "rarity": 7,
-      "document_id": 5440727526756342476
+      "document": {
+        "id": 5440727526756342476,
+        "access_hash": -5403014624615019531,
+        "date": "2024-12-28T11:05:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1209,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

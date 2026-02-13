@@ -1,26 +1,55 @@
 {
+  "id": 6003609563859780336,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-70961",
   "title": "Whip Cupcake",
   "num": 70961,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Arizona",
       "rarity": 25,
-      "document_id": 5274118877691804873
+      "document": {
+        "id": 5274118877691804873,
+        "access_hash": -1453040463256540326,
+        "date": "2025-05-15T10:00:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40863,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Magic Wand",
       "rarity": 7,
-      "document_id": 5422596236416936455
+      "document": {
+        "id": 5422596236416936455,
+        "access_hash": 1928145755765061782,
+        "date": "2024-12-22T22:46:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1263,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Satin Gold",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 19,
+      "center_color": 12557127,
+      "edge_color": 9271097,
+      "pattern_color": 6109952,
+      "text_color": 16704681
     }
   ]
 }

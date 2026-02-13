@@ -1,26 +1,55 @@
 {
+  "id": 6037520340706394738,
+  "gift_id": 5980789805615678057,
   "slug": "SnowMittens-23416",
   "title": "Snow Mittens",
   "num": 23416,
-  "availability_issued": 38414,
+  "availability_issued": 38416,
   "availability_total": 49969,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15310700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "The Riddler",
       "rarity": 13,
-      "document_id": 5226867872294267038
+      "document": {
+        "id": 5226867872294267038,
+        "access_hash": -7680647680669248211,
+        "date": "2025-01-23T03:02:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36882,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Piggy Bank",
       "rarity": 24,
-      "document_id": 5434106495367144379
+      "document": {
+        "id": 5434106495367144379,
+        "access_hash": -2628147473302736177,
+        "date": "2024-12-26T14:45:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 995,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

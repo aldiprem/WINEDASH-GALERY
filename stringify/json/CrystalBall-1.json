@@ -1,26 +1,55 @@
 {
+  "id": 5832319280183509346,
+  "gift_id": 5841336413697606412,
   "slug": "CrystalBall-1",
   "title": "Crystal Ball",
   "num": 1,
   "availability_issued": 26682,
   "availability_total": 27732,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "uwuwu.ton",
+  "gift_address": "EQBNr9TFnQCtxcElWeVlRJ6y2DiYKNwVibGnnVQ886dVJU1j",
+  "value_amount": 632014900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Seeing Red",
       "rarity": 30,
-      "document_id": 5400344135410410935
+      "document": {
+        "id": 5400344135410410935,
+        "access_hash": 3908695877049217352,
+        "date": "2024-12-15T00:05:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32000,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gravestone",
       "rarity": 24,
-      "document_id": 5298725402460568410
+      "document": {
+        "id": 5298725402460568410,
+        "access_hash": -9170332300564214021,
+        "date": "2023-10-19T19:10:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 776,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6016961487606645415,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-104108",
   "title": "Snoop Dogg",
   "num": 104108,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18595100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chow Wow",
       "rarity": 20,
-      "document_id": 5400124885919893067
+      "document": {
+        "id": 5400124885919893067,
+        "access_hash": 5139328606043624756,
+        "date": "2025-06-27T08:04:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 62197,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Plume",
       "rarity": 4,
-      "document_id": 5436321727829273227
+      "document": {
+        "id": 5436321727829273227,
+        "access_hash": -8596216967689896428,
+        "date": "2024-12-26T15:09:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 605,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Azure Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "pattern_color": 151668,
+      "text_color": 11922687
     }
   ]
 }

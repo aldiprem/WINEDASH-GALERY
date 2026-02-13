@@ -1,26 +1,55 @@
 {
+  "id": 5825834326243148489,
+  "gift_id": 5936085638515261992,
   "slug": "SignetRing-14782",
   "title": "Signet Ring",
   "num": 14782,
   "availability_issued": 16703,
   "availability_total": 18499,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBCfu0xn0HX3EBtyAMlwobQs2Z4suOWnITgO8a86Th1R94I",
+  "value_amount": 176350400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Platinum",
       "rarity": 40,
-      "document_id": 5431694686546854699
+      "document": {
+        "id": 5431694686546854699,
+        "access_hash": -2463446639314540824,
+        "date": "2024-12-25T15:43:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33692,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Oxen of Fire",
       "rarity": 5,
-      "document_id": 5729015485534568475
+      "document": {
+        "id": 5729015485534568475,
+        "access_hash": 4735630565333616818,
+        "date": "2024-12-28T10:07:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2197,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6019117591254008355,
+  "gift_id": 5868503709637411929,
   "slug": "DiamondRing-29465",
   "title": "Diamond Ring",
   "num": 29465,
   "availability_issued": 32240,
   "availability_total": 32924,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "gebinsky.ton",
+  "gift_address": "EQAI4ixl5Cqft4q3l0RLh7dCtIkOrvkz0-uUrku8HQGBSgU1",
+  "value_amount": 76317400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vice City",
       "rarity": 5,
-      "document_id": 5271980250266364895
+      "document": {
+        "id": 5271980250266364895,
+        "access_hash": 5536954431599231156,
+        "date": "2025-02-06T17:20:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30128,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Scorpion",
       "rarity": 4,
-      "document_id": 5440711089916503067
+      "document": {
+        "id": 5440711089916503067,
+        "access_hash": 3386624377165150790,
+        "date": "2024-12-28T11:08:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1652,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

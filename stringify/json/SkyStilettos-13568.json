@@ -1,26 +1,55 @@
 {
+  "id": 5900030388792722529,
+  "gift_id": 5870947077877400011,
   "slug": "SkyStilettos-13568",
   "title": "Sky Stilettos",
   "num": 13568,
   "availability_issued": 50257,
   "availability_total": 58460,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 40878900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rebel",
       "rarity": 20,
-      "document_id": 5474356871575928707
+      "document": {
+        "id": 5474356871575928707,
+        "access_hash": -7918931874173192225,
+        "date": "2025-07-22T18:21:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38315,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Origami",
       "rarity": 5,
-      "document_id": 5582666983184269318
+      "document": {
+        "id": 5582666983184269318,
+        "access_hash": 2358244127092694088,
+        "date": "2025-02-14T18:56:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1116,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Celtic Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 74,
+      "center_color": 4569325,
+      "edge_color": 3704537,
+      "pattern_color": 16005,
+      "text_color": 12773375
     }
   ]
 }

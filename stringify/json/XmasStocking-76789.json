@@ -1,26 +1,55 @@
 {
+  "id": 5924817753159501386,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-76789",
   "title": "Xmas Stocking",
   "num": 76789,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16422300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cherry",
       "rarity": 22,
-      "document_id": 5300815303482039337
+      "document": {
+        "id": 5300815303482039337,
+        "access_hash": -4115458098220931727,
+        "date": "2025-02-16T03:41:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40603,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Stocking",
       "rarity": 12,
-      "document_id": 5199797419277048250
+      "document": {
+        "id": 5199797419277048250,
+        "access_hash": 8996954759895672924,
+        "date": "2024-10-08T07:57:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 949,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "English Violet",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 32,
+      "center_color": 11634363,
+      "edge_color": 8870545,
+      "pattern_color": 5513823,
+      "text_color": 15124461
     }
   ]
 }

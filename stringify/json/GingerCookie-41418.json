@@ -1,26 +1,55 @@
 {
+  "id": 5859326227814285777,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-41418",
   "title": "Ginger Cookie",
   "num": 41418,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Madagascar",
       "rarity": 12,
-      "document_id": 5224259353971812419
+      "document": {
+        "id": 5224259353971812419,
+        "access_hash": 170936173745186770,
+        "date": "2025-01-21T20:55:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30016,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Takoyaki",
       "rarity": 4,
-      "document_id": 5582609220169105413
+      "document": {
+        "id": 5582609220169105413,
+        "access_hash": -3639382810155075387,
+        "date": "2025-02-14T18:56:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1571,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Caramel",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 22,
+      "center_color": 13670706,
+      "edge_color": 12022833,
+      "pattern_color": 8205824,
+      "text_color": 16767411
     }
   ]
 }

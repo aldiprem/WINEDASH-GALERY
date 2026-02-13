@@ -1,26 +1,55 @@
 {
+  "id": 6003641561366136015,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-21489",
   "title": "Mousse Cake",
   "num": 21489,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mermaid",
       "rarity": 25,
-      "document_id": 5391368710323731441
+      "document": {
+        "id": 5391368710323731441,
+        "access_hash": 1980401571357923446,
+        "date": "2025-09-29T03:51:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60066,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Orchid",
       "rarity": 6,
-      "document_id": 5357481031811230968
+      "document": {
+        "id": 5357481031811230968,
+        "access_hash": -8785472010242386125,
+        "date": "2025-03-07T09:24:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1096,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

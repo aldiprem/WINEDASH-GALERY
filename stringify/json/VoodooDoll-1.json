@@ -1,26 +1,55 @@
 {
+  "id": 5827767774490920025,
+  "gift_id": 5836780359634649414,
   "slug": "VoodooDoll-1",
   "title": "Voodoo Doll",
   "num": 1,
   "availability_issued": 26751,
   "availability_total": 27620,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQDpmOrJqAn0VHYjlbTt58MuVCfxemvm7T1YUBT22uB1o7TX",
+  "value_amount": 632014900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Twilight",
       "rarity": 25,
-      "document_id": 5231078379058388326
+      "document": {
+        "id": 5231078379058388326,
+        "access_hash": -3160873951673601982,
+        "date": "2025-01-23T19:13:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candle",
       "rarity": 16,
-      "document_id": 5440862947075185091
+      "document": {
+        "id": 5440862947075185091,
+        "access_hash": 6542726026572555817,
+        "date": "2024-12-28T11:47:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 875,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pistachio",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 36,
+      "center_color": 9941116,
+      "edge_color": 6062412,
+      "pattern_color": 2639643,
+      "text_color": 14283465
     }
   ]
 }

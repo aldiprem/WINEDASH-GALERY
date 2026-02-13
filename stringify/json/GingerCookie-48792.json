@@ -1,26 +1,55 @@
 {
+  "id": 5872995274766418491,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-48792",
   "title": "Ginger Cookie",
   "num": 48792,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rubber Duck",
       "rarity": 17,
-      "document_id": 5238036625509868890
+      "document": {
+        "id": 5238036625509868890,
+        "access_hash": 2881083251416261936,
+        "date": "2025-01-26T15:07:09+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29699,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Evil Dragon",
       "rarity": 4,
-      "document_id": 5551121045395603469
+      "document": {
+        "id": 5551121045395603469,
+        "access_hash": 3197272925802872909,
+        "date": "2025-02-03T13:26:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1764,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Satin Gold",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 19,
+      "center_color": 12557127,
+      "edge_color": 9271097,
+      "pattern_color": 6109952,
+      "text_color": 16704681
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

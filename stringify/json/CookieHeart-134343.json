@@ -1,26 +1,55 @@
 {
+  "id": 6023820013507445787,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-134343",
   "title": "Cookie Heart",
   "num": 134343,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "The Triangle",
       "rarity": 10,
-      "document_id": 5222263426834786717
+      "document": {
+        "id": 5222263426834786717,
+        "access_hash": -8694307024190514141,
+        "date": "2025-01-21T06:27:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16058,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Tulip",
       "rarity": 6,
-      "document_id": 5433924341509152905
+      "document": {
+        "id": 5433924341509152905,
+        "access_hash": 243805332836202811,
+        "date": "2024-12-26T14:46:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 812,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Azure Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "pattern_color": 151668,
+      "text_color": 11922687
     }
   ]
 }

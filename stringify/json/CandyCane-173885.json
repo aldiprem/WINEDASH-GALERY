@@ -1,26 +1,55 @@
 {
+  "id": 5983037495145661631,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-173885",
   "title": "Candy Cane",
   "num": 173885,
-  "availability_issued": 209557,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12262000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Colorfunk",
       "rarity": 26,
-      "document_id": 5339468995533762749
+      "document": {
+        "id": 5339468995533762749,
+        "access_hash": -225350321333363721,
+        "date": "2025-03-01T18:47:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 41294,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cookie",
       "rarity": 24,
-      "document_id": 5201817428295696125
+      "document": {
+        "id": 5201817428295696125,
+        "access_hash": 7597396596605761305,
+        "date": "2023-12-23T15:03:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1429,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Roman Silver",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 43,
+      "center_color": 10725557,
+      "edge_color": 8159370,
+      "pattern_color": 4146512,
+      "text_color": 14344162
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

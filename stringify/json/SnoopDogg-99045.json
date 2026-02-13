@@ -1,26 +1,55 @@
 {
+  "id": 6015112525660555455,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-99045",
   "title": "Snoop Dogg",
   "num": 99045,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chow Wow",
       "rarity": 20,
-      "document_id": 5400124885919893067
+      "document": {
+        "id": 5400124885919893067,
+        "access_hash": 5139328606043624756,
+        "date": "2025-06-27T08:04:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 62197,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Puzzle",
       "rarity": 5,
-      "document_id": 5548888405431025670
+      "document": {
+        "id": 5548888405431025670,
+        "access_hash": -7683912657545180434,
+        "date": "2025-02-03T08:41:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1055,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

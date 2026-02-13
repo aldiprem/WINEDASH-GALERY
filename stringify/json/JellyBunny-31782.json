@@ -1,26 +1,55 @@
 {
+  "id": 5819024187443905340,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-31782",
   "title": "Jelly Bunny",
   "num": 31782,
-  "availability_issued": 102244,
+  "availability_issued": 102249,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 22738600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "First Bite",
       "rarity": 15,
-      "document_id": 5415804106415561729
+      "document": {
+        "id": 5415804106415561729,
+        "access_hash": 8915859552185990985,
+        "date": "2024-12-20T10:50:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65503,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crystal Ball",
       "rarity": 5,
-      "document_id": 5440487188976393935
+      "document": {
+        "id": 5440487188976393935,
+        "access_hash": 3207888872014839332,
+        "date": "2024-12-28T09:54:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 895,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

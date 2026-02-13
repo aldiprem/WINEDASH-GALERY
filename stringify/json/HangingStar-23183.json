@@ -1,26 +1,55 @@
 {
+  "id": 5956502302427710233,
+  "gift_id": 5915733223018594841,
   "slug": "HangingStar-23183",
   "title": "Hanging Star",
   "num": 23183,
-  "availability_issued": 44509,
+  "availability_issued": 44510,
   "availability_total": 58118,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 21205800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fusion",
       "rarity": 14,
-      "document_id": 5235481369076856385
+      "document": {
+        "id": 5235481369076856385,
+        "access_hash": -1057773916329321327,
+        "date": "2025-01-25T23:55:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 13918,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shooting Star",
       "rarity": 24,
-      "document_id": 5434137758434093445
+      "document": {
+        "id": 5434137758434093445,
+        "access_hash": 5125665587446151556,
+        "date": "2024-12-26T14:45:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 945,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

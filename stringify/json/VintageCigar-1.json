@@ -1,26 +1,55 @@
 {
+  "id": 6030572264737472943,
+  "gift_id": 5857140566201991735,
   "slug": "VintageCigar-1",
   "title": "Vintage Cigar",
   "num": 1,
   "availability_issued": 26277,
   "availability_total": 31024,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQCMIP5BsRqlUsxpv7KwxtryXmHS3wSPtnTp-1j8V5-eDyH8",
+  "value_amount": 64965000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Foundry",
       "rarity": 20,
-      "document_id": 5427007713290775577
+      "document": {
+        "id": 5427007713290775577,
+        "access_hash": -331167845891531683,
+        "date": "2024-12-24T12:43:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20489,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cat Mask",
       "rarity": 2,
-      "document_id": 5433934065315110448
+      "document": {
+        "id": 5433934065315110448,
+        "access_hash": 2887814462971614248,
+        "date": "2024-12-26T11:37:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 754,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5926906262611559546,
+  "gift_id": 5821384757304362229,
   "slug": "WitchHat-76479",
   "title": "Witch Hat",
   "num": 76479,
   "availability_issued": 82318,
   "availability_total": 88480,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20212100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Canvas",
       "rarity": 10,
-      "document_id": 5240424283729061388
+      "document": {
+        "id": 5240424283729061388,
+        "access_hash": 5279100486126092235,
+        "date": "2025-01-26T14:43:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25143,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eyeball",
       "rarity": 24,
-      "document_id": 5300841391113387083
+      "document": {
+        "id": 5300841391113387083,
+        "access_hash": 1188870870504710283,
+        "date": "2023-10-19T19:10:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1489,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

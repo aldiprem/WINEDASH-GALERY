@@ -1,26 +1,55 @@
 {
+  "id": 5832576041918399292,
+  "gift_id": 5870947077877400011,
   "slug": "SkyStilettos-48238",
   "title": "Sky Stilettos",
   "num": 48238,
   "availability_issued": 50257,
   "availability_total": 58460,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "𝓐",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 40878900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Serpent",
       "rarity": 20,
-      "document_id": 5199753743754622052
+      "document": {
+        "id": 5199753743754622052,
+        "access_hash": -7062208480350149130,
+        "date": "2025-07-26T09:59:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48448,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Valkyrie",
       "rarity": 4,
-      "document_id": 5544480871337164832
+      "document": {
+        "id": 5544480871337164832,
+        "access_hash": 4125461934052351690,
+        "date": "2025-02-01T20:50:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3320,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Marine Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 60,
+      "center_color": 5138588,
+      "edge_color": 3885946,
+      "pattern_color": 67617,
+      "text_color": 12307442
     }
   ]
 }

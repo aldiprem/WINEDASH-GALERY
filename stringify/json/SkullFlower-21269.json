@@ -1,26 +1,55 @@
 {
+  "id": 5987864492925519167,
+  "gift_id": 5839038009193792264,
   "slug": "SkullFlower-21269",
   "title": "Skull Flower",
   "num": 21269,
   "availability_issued": 21703,
   "availability_total": 24126,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "menhera",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 29526500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Caprice",
       "rarity": 30,
-      "document_id": 5411438126130291567
+      "document": {
+        "id": 5411438126130291567,
+        "access_hash": -4667591918859615355,
+        "date": "2024-12-18T18:55:41+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28561,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Severed Hand",
       "rarity": 10,
-      "document_id": 5301167533749972632
+      "document": {
+        "id": 5301167533749972632,
+        "access_hash": -7517298598585737183,
+        "date": "2023-10-19T19:06:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1676,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

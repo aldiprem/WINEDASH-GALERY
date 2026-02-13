@@ -1,26 +1,55 @@
 {
+  "id": 6003838111954502895,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-107208",
   "title": "Xmas Stocking",
   "num": 107208,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Ceyuy :p",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Emo Love",
       "rarity": 10,
-      "document_id": 5291871841541973357
+      "document": {
+        "id": 5291871841541973357,
+        "access_hash": -5065369886232728277,
+        "date": "2025-02-13T17:49:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29215,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jingle Bell",
       "rarity": 12,
-      "document_id": 5206464681694217071
+      "document": {
+        "id": 5206464681694217071,
+        "access_hash": 1040973728026945150,
+        "date": "2023-12-24T22:56:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1679,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Shamrock Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 16,
+      "center_color": 9089379,
+      "edge_color": 5608261,
+      "pattern_color": 1207040,
+      "text_color": 14023624
     }
   ]
 }

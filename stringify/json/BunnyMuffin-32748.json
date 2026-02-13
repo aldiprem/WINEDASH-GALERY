@@ -1,26 +1,55 @@
 {
+  "id": 5841304248687526747,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-32748",
   "title": "Bunny Muffin",
   "num": 32748,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Aurora Kairisse.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tiffani",
       "rarity": 8,
-      "document_id": 5235995717180351866
+      "document": {
+        "id": 5235995717180351866,
+        "access_hash": -4239632037958708435,
+        "date": "2025-01-25T19:01:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20173,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Book",
       "rarity": 5,
-      "document_id": 5440416579714047896
+      "document": {
+        "id": 5440416579714047896,
+        "access_hash": 5688313608616325321,
+        "date": "2024-12-28T11:47:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1292,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

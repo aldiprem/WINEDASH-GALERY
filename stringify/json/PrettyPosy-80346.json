@@ -1,26 +1,55 @@
 {
+  "id": 5832587805833823095,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-80346",
   "title": "Pretty Posy",
   "num": 80346,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "nksx",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14569500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hollywood",
       "rarity": 30,
-      "document_id": 5197249331144461055
+      "document": {
+        "id": 5197249331144461055,
+        "access_hash": 6350533493881177081,
+        "date": "2025-10-31T11:30:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 50332,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Deerstalker",
       "rarity": 4,
-      "document_id": 5314761564803328059
+      "document": {
+        "id": 5314761564803328059,
+        "access_hash": -524607872305508289,
+        "date": "2025-02-21T12:34:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1259,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Neon Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 5,
+      "center_color": 7706361,
+      "edge_color": 6841060,
+      "pattern_color": 2631868,
+      "text_color": 13622783
     }
   ]
 }

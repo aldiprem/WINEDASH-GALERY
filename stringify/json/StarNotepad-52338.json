@@ -1,26 +1,55 @@
 {
+  "id": 6019354140872803298,
+  "gift_id": 5936017773737018241,
   "slug": "StarNotepad-52338",
   "title": "Star Notepad",
   "num": 52338,
-  "availability_issued": 68895,
+  "availability_issued": 68897,
   "availability_total": 99082,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15293800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lord Byron",
       "rarity": 10,
-      "document_id": 5233595139699535894
+      "document": {
+        "id": 5233595139699535894,
+        "access_hash": 3207539190315480678,
+        "date": "2025-01-24T22:11:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 13789,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bubble Tea",
       "rarity": 5,
-      "document_id": 5434136946685274641
+      "document": {
+        "id": 5434136946685274641,
+        "access_hash": -4074558057139225958,
+        "date": "2024-12-26T10:37:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1346,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

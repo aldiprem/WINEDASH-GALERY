@@ -1,26 +1,55 @@
 {
+  "id": 5821121974025323464,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-7897",
   "title": "Party Sparkler",
   "num": 7897,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "4th of July",
       "rarity": 9,
-      "document_id": 5228799684159499469
+      "document": {
+        "id": 5228799684159499469,
+        "access_hash": -5174918847462961174,
+        "date": "2025-01-23T11:22:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35290,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hedgehog",
       "rarity": 2,
-      "document_id": 5440595495166696665
+      "document": {
+        "id": 5440595495166696665,
+        "access_hash": 6827918704103063293,
+        "date": "2024-12-28T11:48:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 698,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

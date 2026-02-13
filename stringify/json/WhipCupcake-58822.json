@@ -1,26 +1,55 @@
 {
+  "id": 6003491886050837108,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-58822",
   "title": "Whip Cupcake",
   "num": 58822,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11352500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Spiritwood",
       "rarity": 25,
-      "document_id": 5293997884713239147
+      "document": {
+        "id": 5293997884713239147,
+        "access_hash": -1861878911639377286,
+        "date": "2025-05-22T10:37:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 61507,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Maple Leaf",
       "rarity": 4,
-      "document_id": 5436212648544854698
+      "document": {
+        "id": 5436212648544854698,
+        "access_hash": 2074433650156228043,
+        "date": "2024-12-26T14:46:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1211,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

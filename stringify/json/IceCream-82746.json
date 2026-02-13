@@ -1,26 +1,55 @@
 {
+  "id": 6003539963914749160,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-82746",
   "title": "Ice Cream",
   "num": 82746,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vice Dream",
       "rarity": 30,
-      "document_id": 5366129940599178946
+      "document": {
+        "id": 5366129940599178946,
+        "access_hash": 8310863648307072177,
+        "date": "2025-09-20T15:59:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52006,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Royal Turban",
       "rarity": 7,
-      "document_id": 5316541085718175853
+      "document": {
+        "id": 5316541085718175853,
+        "access_hash": 5257866141483608909,
+        "date": "2025-02-21T12:35:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1145,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

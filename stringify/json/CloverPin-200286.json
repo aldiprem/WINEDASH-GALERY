@@ -1,26 +1,55 @@
 {
+  "id": 6003398444742345815,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-200286",
   "title": "Clover Pin",
   "num": 200286,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 36011200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Emo Pin",
       "rarity": 5,
-      "document_id": 5262708992127303727
+      "document": {
+        "id": 5262708992127303727,
+        "access_hash": 6294904643499764368,
+        "date": "2025-08-16T15:09:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 50147,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ghost",
       "rarity": 5,
-      "document_id": 5433912985615624386
+      "document": {
+        "id": 5433912985615624386,
+        "access_hash": 4364014349038041802,
+        "date": "2024-12-26T12:09:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1135,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

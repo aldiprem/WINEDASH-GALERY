@@ -1,26 +1,55 @@
 {
+  "id": 6030578230447047471,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-1",
   "title": "Plush Pepe",
   "num": 1,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQD4cqiFvMZbiLUr9PDWdbdJT2twpysX7ICq4ZvueLti4xHm",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pumpkin",
       "rarity": 30,
-      "document_id": 5424690578434581413
+      "document": {
+        "id": 5424690578434581413,
+        "access_hash": 6765268510737394729,
+        "date": "2024-12-22T22:28:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16143,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Illuminati",
       "rarity": 5,
-      "document_id": 5440508543553788998
+      "document": {
+        "id": 5440508543553788998,
+        "access_hash": -2801714498335260466,
+        "date": "2024-12-28T09:53:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 814,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Onyx Black",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 49,
+      "center_color": 5067348,
+      "edge_color": 3225144,
+      "pattern_color": 0,
+      "text_color": 11119533
     }
   ]
 }

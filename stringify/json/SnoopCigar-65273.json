@@ -1,26 +1,55 @@
 {
+  "id": 6016832703012274795,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-65273",
   "title": "Snoop Cigar",
   "num": 65273,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 37880800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Meteor Impact",
       "rarity": 15,
-      "document_id": 5408889020090449272
+      "document": {
+        "id": 5408889020090449272,
+        "access_hash": 7349097726302344845,
+        "date": "2025-06-29T23:53:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39019,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bascinet",
       "rarity": 7,
-      "document_id": 5548436604936257566
+      "document": {
+        "id": 5548436604936257566,
+        "access_hash": -3391185799722429824,
+        "date": "2025-02-02T17:52:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1318,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tactical Pine",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 61,
+      "center_color": 4489835,
+      "edge_color": 3105641,
+      "pattern_color": 9764,
+      "text_color": 12052179
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5899964100267475920,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-66309",
   "title": "Clover Pin",
   "num": 66309,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Acacia S.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Star Princess",
       "rarity": 20,
-      "document_id": 5231386384048090692
+      "document": {
+        "id": 5231386384048090692,
+        "access_hash": -8813512108265491805,
+        "date": "2025-08-06T04:59:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60708,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Genie Lamp",
       "rarity": 4,
-      "document_id": 5440679027985636145
+      "document": {
+        "id": 5440679027985636145,
+        "access_hash": 6162354837686909142,
+        "date": "2024-12-28T11:33:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1032,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

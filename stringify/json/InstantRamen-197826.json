@@ -1,26 +1,55 @@
 {
+  "id": 6003721726930715855,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-197826",
   "title": "Instant Ramen",
   "num": 197826,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "eza",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Broth Pack",
       "rarity": 15,
-      "document_id": 5393069775070986809
+      "document": {
+        "id": 5393069775070986809,
+        "access_hash": -7775913706885539874,
+        "date": "2025-09-29T13:35:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60421,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shooting Star",
       "rarity": 5,
-      "document_id": 5434137758434093445
+      "document": {
+        "id": 5434137758434093445,
+        "access_hash": 5125665587446151556,
+        "date": "2024-12-26T14:45:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 945,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

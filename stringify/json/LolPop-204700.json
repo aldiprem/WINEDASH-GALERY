@@ -1,26 +1,55 @@
 {
+  "id": 5965414432581354148,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-204700",
   "title": "Lol Pop",
   "num": 204700,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rosebud",
       "rarity": 5,
-      "document_id": 5219696148788307720
+      "document": {
+        "id": 5219696148788307720,
+        "access_hash": 214869811704980405,
+        "date": "2025-01-20T21:28:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42149,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Onigiri",
       "rarity": 5,
-      "document_id": 5584781618922389518
+      "document": {
+        "id": 5584781618922389518,
+        "access_hash": -8580534969225655109,
+        "date": "2025-02-14T18:57:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 760,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5825818718331994877,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-9656",
   "title": "Stellar Rocket",
   "num": 9656,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Jet Bike",
       "rarity": 25,
-      "document_id": 5267483050140266422
+      "document": {
+        "id": 5267483050140266422,
+        "access_hash": 2644277844468036472,
+        "date": "2025-05-12T18:33:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24262,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Grape",
       "rarity": 5,
-      "document_id": 5438330514098381824
+      "document": {
+        "id": 5438330514098381824,
+        "access_hash": 2752355170053262993,
+        "date": "2024-12-28T11:13:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1336,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6028391271754629759,
+  "gift_id": 6003456431095808759,
   "slug": "FaithAmulet-109776",
   "title": "Faith Amulet",
   "num": 109776,
-  "availability_issued": 135385,
+  "availability_issued": 135390,
   "availability_total": 172784,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Shaıtan",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14131600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Frosty Night",
       "rarity": 25,
-      "document_id": 5377488144822205237
+      "document": {
+        "id": 5377488144822205237,
+        "access_hash": -5101671268710304484,
+        "date": "2025-09-24T18:46:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44867,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Oak Leaf",
       "rarity": 7,
-      "document_id": 5433898623244985830
+      "document": {
+        "id": 5433898623244985830,
+        "access_hash": -1009763687881140273,
+        "date": "2024-12-26T12:11:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 901,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

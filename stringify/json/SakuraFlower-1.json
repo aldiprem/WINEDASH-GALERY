@@ -1,26 +1,55 @@
 {
+  "id": 5897525761434190525,
+  "gift_id": 5167939598143193218,
   "slug": "SakuraFlower-1",
   "title": "Sakura Flower",
   "num": 1,
   "availability_issued": 87580,
   "availability_total": 93115,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "sunset.ton",
+  "gift_address": "EQBIqI32oj42EzuUB4tvs4IX7LUqeRmk80-MX8I-jlURV4_d",
+  "value_amount": 632267500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Dahlia",
       "rarity": 12,
-      "document_id": 5305380875192523897
+      "document": {
+        "id": 5305380875192523897,
+        "access_hash": 70996993501527936,
+        "date": "2025-02-18T02:02:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19604,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dagger",
       "rarity": 5,
-      "document_id": 5551096022916136968
+      "document": {
+        "id": 5551096022916136968,
+        "access_hash": 9162557992602099,
+        "date": "2025-02-03T13:27:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1372,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chocolate",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 59,
+      "center_color": 10776152,
+      "edge_color": 7619643,
+      "pattern_color": 4065794,
+      "text_color": 14988972
     }
   ]
 }

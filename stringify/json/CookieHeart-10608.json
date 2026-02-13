@@ -1,26 +1,55 @@
 {
+  "id": 5827698634107388353,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-10608",
   "title": "Cookie Heart",
   "num": 10608,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Lol",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Choco Fudge",
       "rarity": 10,
-      "document_id": 5222190322196438995
+      "document": {
+        "id": 5222190322196438995,
+        "access_hash": -7485126331333226251,
+        "date": "2025-01-21T06:26:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 21222,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lovebirds",
       "rarity": 6,
-      "document_id": 5303390381189117327
+      "document": {
+        "id": 5303390381189117327,
+        "access_hash": -6384133736213836441,
+        "date": "2023-10-21T14:50:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1512,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

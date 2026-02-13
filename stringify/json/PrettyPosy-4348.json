@@ -1,26 +1,55 @@
 {
+  "id": 5782700266042164215,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-4348",
   "title": "Pretty Posy",
   "num": 4348,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14855900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Salami Set",
       "rarity": 25,
-      "document_id": 5197351426812053281
+      "document": {
+        "id": 5197351426812053281,
+        "access_hash": -5861217562589892869,
+        "date": "2025-10-31T10:17:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30513,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sunbloom",
       "rarity": 7,
-      "document_id": 5357289648068520865
+      "document": {
+        "id": 5357289648068520865,
+        "access_hash": 2789581713980649475,
+        "date": "2025-03-07T09:25:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1328,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

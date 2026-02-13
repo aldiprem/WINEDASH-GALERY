@@ -1,26 +1,55 @@
 {
+  "id": 5832190568603582948,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-34540",
   "title": "Spiced Wine",
   "num": 34540,
-  "availability_issued": 101427,
+  "availability_issued": 101431,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "ńņ",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17685600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Flaming Mint",
       "rarity": 8,
-      "document_id": 5429217860511620848
+      "document": {
+        "id": 5429217860511620848,
+        "access_hash": 6577407071428682977,
+        "date": "2024-12-24T21:07:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 47217,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cat Mask",
       "rarity": 3,
-      "document_id": 5433934065315110448
+      "document": {
+        "id": 5433934065315110448,
+        "access_hash": 2887814462971614248,
+        "date": "2024-12-26T11:37:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 754,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Cyan",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "pattern_color": 156813,
+      "text_color": 11988991
     }
   ]
 }

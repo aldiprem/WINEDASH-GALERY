@@ -1,26 +1,55 @@
 {
+  "id": 5825761475007873786,
+  "gift_id": 5998981470310368313,
   "slug": "MoonPendant-20399",
   "title": "Moon Pendant",
   "num": 20399,
-  "availability_issued": 101720,
+  "availability_issued": 101721,
   "availability_total": 111080,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16034900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Liquid Gold",
       "rarity": 30,
-      "document_id": 5215500609985218004
+      "document": {
+        "id": 5215500609985218004,
+        "access_hash": 5015018868813295695,
+        "date": "2025-07-31T22:34:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58191,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Book",
       "rarity": 7,
-      "document_id": 5440416579714047896
+      "document": {
+        "id": 5440416579714047896,
+        "access_hash": 5688313608616325321,
+        "date": "2024-12-28T11:47:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1292,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

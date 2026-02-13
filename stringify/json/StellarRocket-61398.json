@@ -1,26 +1,55 @@
 {
+  "id": 5825704287518327808,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-61398",
   "title": "Stellar Rocket",
   "num": 61398,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20548900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rocket Plush",
       "rarity": 25,
-      "document_id": 5213286202156806623
+      "document": {
+        "id": 5213286202156806623,
+        "access_hash": -6678476621872162327,
+        "date": "2025-07-31T05:21:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23194,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Grape",
       "rarity": 5,
-      "document_id": 5438330514098381824
+      "document": {
+        "id": 5438330514098381824,
+        "access_hash": 2752355170053262993,
+        "date": "2024-12-28T11:13:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1336,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Marine Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 60,
+      "center_color": 5138588,
+      "edge_color": 3885946,
+      "pattern_color": 67617,
+      "text_color": 12307442
     }
   ]
 }

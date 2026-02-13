@@ -1,26 +1,55 @@
 {
+  "id": 5857345938653184728,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-42572",
   "title": "Xmas Stocking",
   "num": 42572,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Swamp Party",
       "rarity": 10,
-      "document_id": 5328215090296544101
+      "document": {
+        "id": 5328215090296544101,
+        "access_hash": 334278583512580285,
+        "date": "2025-02-25T04:39:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 51616,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Potion",
       "rarity": 4,
-      "document_id": 5435902410172163141
+      "document": {
+        "id": 5435902410172163141,
+        "access_hash": 4873673820696983083,
+        "date": "2024-12-26T12:08:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1218,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tomato",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 72,
+      "center_color": 15104318,
+      "edge_color": 13913663,
+      "pattern_color": 8391424,
+      "text_color": 16764093
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

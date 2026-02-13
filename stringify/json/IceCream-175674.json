@@ -1,26 +1,55 @@
 {
+  "id": 6003438757305385734,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-175674",
   "title": "Ice Cream",
   "num": 175674,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18881500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pigeon",
       "rarity": 20,
-      "document_id": 5370557295967112258
+      "document": {
+        "id": 5370557295967112258,
+        "access_hash": 388775311559213117,
+        "date": "2025-09-22T10:12:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19349,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mayan Moth",
       "rarity": 7,
-      "document_id": 5728738168086200327
+      "document": {
+        "id": 5728738168086200327,
+        "access_hash": -4238023349899814338,
+        "date": "2024-12-28T10:08:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2977,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Purple",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 1,
+      "center_color": 13267142,
+      "edge_color": 9855700,
+      "pattern_color": 6426548,
+      "text_color": 15453951
     }
   ]
 }

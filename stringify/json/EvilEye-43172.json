@@ -1,26 +1,55 @@
 {
+  "id": 5875178913449116286,
+  "gift_id": 5825480571261813595,
   "slug": "EvilEye-43172",
   "title": "Evil Eye",
   "num": 43172,
   "availability_issued": 72951,
   "availability_total": 85204,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQD-sT2FjYxS49Hf8n3u1lmJOpQiUWVjxa44G8Az2C9N45ho",
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Succubus",
       "rarity": 30,
-      "document_id": 5425129103185436928
+      "document": {
+        "id": 5425129103185436928,
+        "access_hash": 1591180875315916321,
+        "date": "2024-12-23T16:25:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 11898,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Nice Ghost",
       "rarity": 24,
-      "document_id": 5301072507598550489
+      "document": {
+        "id": 5301072507598550489,
+        "access_hash": 4544391109418358553,
+        "date": "2023-10-19T19:05:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1170,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

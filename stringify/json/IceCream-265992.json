@@ -1,26 +1,55 @@
 {
+  "id": 6008086809567823150,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-265992",
   "title": "Ice Cream",
   "num": 265992,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Æ",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kraken",
       "rarity": 5,
-      "document_id": 5366592753390093400
+      "document": {
+        "id": 5366592753390093400,
+        "access_hash": -3126063277607787359,
+        "date": "2025-09-20T16:08:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30956,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Manta Ray",
       "rarity": 2,
-      "document_id": 5434043848974165995
+      "document": {
+        "id": 5434043848974165995,
+        "access_hash": -2382075585450309197,
+        "date": "2024-12-26T14:46:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fire Engine",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 73,
+      "center_color": 15753039,
+      "edge_color": 12859721,
+      "pattern_color": 6881289,
+      "text_color": 16758694
     }
   ]
 }

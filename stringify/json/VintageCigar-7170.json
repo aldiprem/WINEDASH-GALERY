@@ -1,26 +1,55 @@
 {
+  "id": 6041759456247678624,
+  "gift_id": 5857140566201991735,
   "slug": "VintageCigar-7170",
   "title": "Vintage Cigar",
   "num": 7170,
   "availability_issued": 26277,
   "availability_total": 31024,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 64965000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Desert Night",
       "rarity": 30,
-      "document_id": 5429649689408463436
+      "document": {
+        "id": 5429649689408463436,
+        "access_hash": -5924829335515098660,
+        "date": "2024-12-24T12:40:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20009,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Celtic Wolf",
       "rarity": 10,
-      "document_id": 5721982721400504336
+      "document": {
+        "id": 5721982721400504336,
+        "access_hash": 226457226254106357,
+        "date": "2024-12-26T12:02:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3094,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

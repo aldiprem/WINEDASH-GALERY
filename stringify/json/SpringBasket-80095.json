@@ -1,26 +1,55 @@
 {
+  "id": 6003721434872939952,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-80095",
   "title": "Spring Basket",
   "num": 80095,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Capybara",
       "rarity": 30,
-      "document_id": 5397616676558635042
+      "document": {
+        "id": 5397616676558635042,
+        "access_hash": -3989127547607048640,
+        "date": "2025-10-01T10:10:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19823,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Kite",
       "rarity": 7,
-      "document_id": 5440869715943644373
+      "document": {
+        "id": 5440869715943644373,
+        "access_hash": 8704595591767719779,
+        "date": "2024-12-28T11:32:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1682,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Midnight Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "pattern_color": 199192,
+      "text_color": 12569824
     }
   ]
 }

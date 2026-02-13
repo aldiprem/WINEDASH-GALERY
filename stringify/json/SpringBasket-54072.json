@@ -1,26 +1,55 @@
 {
+  "id": 6005943174210520427,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-54072",
   "title": "Spring Basket",
   "num": 54072,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQDujPxf9MwPDi0Dl41YdRlNQ6l8F0lYGqPSmbtYN3rAoO01",
+  "gift_address": "EQCIkcgbAufW_Y8ommKpkgh-RgPKX0VSu4jZxZsitCi7wjKm",
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Marmot",
       "rarity": 25,
-      "document_id": 5386680839419493267
+      "document": {
+        "id": 5386680839419493267,
+        "access_hash": 530662127543128625,
+        "date": "2025-09-27T15:00:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44576,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Khinkali",
       "rarity": 2,
-      "document_id": 5548733550385168415
+      "document": {
+        "id": 5548733550385168415,
+        "access_hash": -98213367729687220,
+        "date": "2025-02-02T17:53:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1604,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Midnight Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "pattern_color": 199192,
+      "text_color": 12569824
     }
   ]
 }

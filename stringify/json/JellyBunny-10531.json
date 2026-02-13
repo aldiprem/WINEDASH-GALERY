@@ -1,26 +1,55 @@
 {
+  "id": 6037087133125051032,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-10531",
   "title": "Jelly Bunny",
   "num": 10531,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Snowman",
       "rarity": 15,
-      "document_id": 5429261067882620393
+      "document": {
+        "id": 5429261067882620393,
+        "access_hash": 5070526112572068633,
+        "date": "2024-12-24T18:36:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55437,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Like",
       "rarity": 4,
-      "document_id": 5440551390147534212
+      "document": {
+        "id": 5440551390147534212,
+        "access_hash": -5361175105397763825,
+        "date": "2024-12-28T09:52:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 979,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

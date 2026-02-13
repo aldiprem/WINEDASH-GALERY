@@ -1,26 +1,55 @@
 {
+  "id": 6003776178526094187,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-113654",
   "title": "Instant Ramen",
   "num": 113654,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "tank.ton",
+  "gift_address": "EQA4uHdtZ2AlYZE3KHPuHrF36zX6xeCWPddPGZN7qyFte-PC",
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Jelly Brain",
       "rarity": 15,
-      "document_id": 5370623451348367013
+      "document": {
+        "id": 5370623451348367013,
+        "access_hash": 7953605040962068721,
+        "date": "2025-09-22T09:00:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 49474,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Press Hat",
       "rarity": 5,
-      "document_id": 5314289096925932363
+      "document": {
+        "id": 5314289096925932363,
+        "access_hash": -8969124660795959924,
+        "date": "2025-02-20T17:47:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 758,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5870573626176045905,
+  "gift_id": 5841391256135008713,
   "slug": "TrappedHeart-20058",
   "title": "Trapped Heart",
   "num": 20058,
   "availability_issued": 24848,
   "availability_total": 26407,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 32255100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Blood Stains",
       "rarity": 26,
-      "document_id": 5415736005414118123
+      "document": {
+        "id": 5415736005414118123,
+        "access_hash": -7937457827715331609,
+        "date": "2024-12-20T01:23:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20590,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Burger",
       "rarity": 2,
-      "document_id": 5434080145742782526
+      "document": {
+        "id": 5434080145742782526,
+        "access_hash": -810063247391715670,
+        "date": "2024-12-26T15:06:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 929,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5942771854623114233,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-167699",
   "title": "Candy Cane",
   "num": 167699,
-  "availability_issued": 209557,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17466600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lovegood",
       "rarity": 20,
-      "document_id": 5334545983760001883
+      "document": {
+        "id": 5334545983760001883,
+        "access_hash": 4617528406418766248,
+        "date": "2025-02-27T11:50:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25006,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mittens",
       "rarity": 24,
-      "document_id": 5195148147243899647
+      "document": {
+        "id": 5195148147243899647,
+        "access_hash": 6571680456281178334,
+        "date": "2024-10-07T13:21:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1427,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

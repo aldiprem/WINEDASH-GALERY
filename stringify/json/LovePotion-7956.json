@@ -1,26 +1,55 @@
 {
+  "id": 5870869794235875884,
+  "gift_id": 5868348541058942091,
   "slug": "LovePotion-7956",
   "title": "Love Potion",
   "num": 7956,
   "availability_issued": 29073,
   "availability_total": 30412,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 51793500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Old Rum",
       "rarity": 25,
-      "document_id": 5285070649159609808
+      "document": {
+        "id": 5285070649159609808,
+        "access_hash": -3464308205849029002,
+        "date": "2025-02-11T16:48:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15324,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gift Box",
       "rarity": 5,
-      "document_id": 5440353070032641447
+      "document": {
+        "id": 5440353070032641447,
+        "access_hash": -3908679736735730856,
+        "date": "2024-12-28T09:50:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1295,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

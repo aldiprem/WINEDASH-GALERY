@@ -1,26 +1,55 @@
 {
+  "id": 5863755142255346228,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-110962",
   "title": "Party Sparkler",
   "num": 110962,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Marksman",
       "rarity": 11,
-      "document_id": 5229050424350239146
+      "document": {
+        "id": 5229050424350239146,
+        "access_hash": -9104553865247136706,
+        "date": "2025-01-23T11:22:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 34599,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gear",
       "rarity": 5,
-      "document_id": 5440500005158804832
+      "document": {
+        "id": 5440500005158804832,
+        "access_hash": -5586556353866385864,
+        "date": "2024-12-28T11:33:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 943,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

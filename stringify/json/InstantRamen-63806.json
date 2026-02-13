@@ -1,26 +1,55 @@
 {
+  "id": 6003857383472759635,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-63806",
   "title": "Instant Ramen",
   "num": 63806,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kraken",
       "rarity": 5,
-      "document_id": 5388775460610020305
+      "document": {
+        "id": 5388775460610020305,
+        "access_hash": -5002839771704885939,
+        "date": "2025-09-28T09:02:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40357,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Police Badge",
       "rarity": 5,
-      "document_id": 5438576190522681995
+      "document": {
+        "id": 5438576190522681995,
+        "access_hash": 4419327650869855378,
+        "date": "2024-12-28T09:53:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1057,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

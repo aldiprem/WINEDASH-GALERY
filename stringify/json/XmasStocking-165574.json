@@ -1,26 +1,55 @@
 {
+  "id": 5999202343298532928,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-165574",
   "title": "Xmas Stocking",
   "num": 165574,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Ceyuy :p",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bloody",
       "rarity": 30,
-      "document_id": 5303188676640009531
+      "document": {
+        "id": 5303188676640009531,
+        "access_hash": 391551846152979657,
+        "date": "2025-02-17T18:03:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 47069,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Christmas Tree",
       "rarity": 8,
-      "document_id": 5438542608173383432
+      "document": {
+        "id": 5438542608173383432,
+        "access_hash": -5908990877537789111,
+        "date": "2023-12-05T16:28:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 809,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Khaki Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "pattern_color": 3756059,
+      "text_color": 13887163
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5870685432764694996,
+  "gift_id": 5868348541058942091,
   "slug": "LovePotion-5495",
   "title": "Love Potion",
   "num": 5495,
   "availability_issued": 29073,
   "availability_total": 30412,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 38706100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rusty Water",
       "rarity": 25,
-      "document_id": 5287473829390607716
+      "document": {
+        "id": 5287473829390607716,
+        "access_hash": -3427942588831254988,
+        "date": "2025-02-11T16:47:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16569,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Origami",
       "rarity": 5,
-      "document_id": 5582666983184269318
+      "document": {
+        "id": 5582666983184269318,
+        "access_hash": 2358244127092694088,
+        "date": "2025-02-14T18:56:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1116,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5764826377387770621,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-307901",
   "title": "Instant Ramen",
   "num": 307901,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Jd.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Slurp-Slurp",
       "rarity": 25,
-      "document_id": 5319286205475489134
+      "document": {
+        "id": 5319286205475489134,
+        "access_hash": -8269083545859771712,
+        "date": "2025-09-05T09:04:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22719,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cupcake",
       "rarity": 4,
-      "document_id": 5436346024459266141
+      "document": {
+        "id": 5436346024459266141,
+        "access_hash": -4330855651740504955,
+        "date": "2024-12-26T14:48:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1205,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

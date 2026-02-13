@@ -1,26 +1,55 @@
 {
+  "id": 5891247434075472751,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-84789",
   "title": "Restless Jar",
   "num": 84789,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16321300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sweet Dreams",
       "rarity": 15,
-      "document_id": 5231412493154279754
+      "document": {
+        "id": 5231412493154279754,
+        "access_hash": 3279956320773831832,
+        "date": "2025-04-30T23:58:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17169,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Star Crown",
       "rarity": 4,
-      "document_id": 5433690600798970670
+      "document": {
+        "id": 5433690600798970670,
+        "access_hash": -5548331054424250441,
+        "date": "2024-12-26T14:45:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 963,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

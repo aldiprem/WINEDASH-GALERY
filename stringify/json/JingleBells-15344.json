@@ -1,26 +1,55 @@
 {
+  "id": 5830188877620446499,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-15344",
   "title": "Jingle Bells",
   "num": 15344,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75884,
+  "availability_total": 114946,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Sparkle",
       "rarity": 7,
-      "document_id": 5231349000652742406
+      "document": {
+        "id": 5231349000652742406,
+        "access_hash": -1517334441889211603,
+        "date": "2025-01-23T16:32:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27383,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Snowflake",
       "rarity": 16,
-      "document_id": 5438629456707075929
+      "document": {
+        "id": 5438629456707075929,
+        "access_hash": -2578813037183426325,
+        "date": "2023-12-05T16:28:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1571,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

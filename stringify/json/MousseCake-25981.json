@@ -1,26 +1,55 @@
 {
+  "id": 6003433062178751937,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-25981",
   "title": "Mousse Cake",
   "num": 25981,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Honey Cake",
       "rarity": 30,
-      "document_id": 5359795946169337012
+      "document": {
+        "id": 5359795946169337012,
+        "access_hash": -4311518957645226866,
+        "date": "2025-09-18T12:51:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39353,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Oxen of Fire",
       "rarity": 6,
-      "document_id": 5729015485534568475
+      "document": {
+        "id": 5729015485534568475,
+        "access_hash": 4735630565333616818,
+        "date": "2024-12-28T10:07:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2197,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003500205402489494,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-3112",
   "title": "Happy Brownie",
   "num": 3112,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Captain Flush",
       "rarity": 25,
-      "document_id": 5382078790551764670
+      "document": {
+        "id": 5382078790551764670,
+        "access_hash": -4696133180876251332,
+        "date": "2025-09-26T08:10:41+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53821,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eikthyrnir",
       "rarity": 5,
-      "document_id": 5722379245666172949
+      "document": {
+        "id": 5722379245666172949,
+        "access_hash": -1718693921207800600,
+        "date": "2024-12-26T12:03:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2569,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

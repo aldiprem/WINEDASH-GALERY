@@ -1,26 +1,55 @@
 {
+  "id": 5944961463310353561,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-45492",
   "title": "Bunny Muffin",
   "num": 45492,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Winter Dessert",
       "rarity": 14,
-      "document_id": 5235881754518121758
+      "document": {
+        "id": 5235881754518121758,
+        "access_hash": 8201245711289310033,
+        "date": "2025-01-25T19:23:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19022,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crown",
       "rarity": 5,
-      "document_id": 5440489074467037612
+      "document": {
+        "id": 5440489074467037612,
+        "access_hash": 5434989515283623636,
+        "date": "2024-12-28T09:49:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 902,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6005703072653771952,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-49941",
   "title": "Instant Ramen",
   "num": 49941,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Slurp-Slurp",
       "rarity": 25,
-      "document_id": 5319286205475489134
+      "document": {
+        "id": 5319286205475489134,
+        "access_hash": -8269083545859771712,
+        "date": "2025-09-05T09:04:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22719,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pith Helmet",
       "rarity": 4,
-      "document_id": 5316561538352441613
+      "document": {
+        "id": 5316561538352441613,
+        "access_hash": -9210114621590247144,
+        "date": "2025-02-21T12:36:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1074,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carmine",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 77,
+      "center_color": 14702410,
+      "edge_color": 11024443,
+      "pattern_color": 5177600,
+      "text_color": 16758701
     }
   ]
 }

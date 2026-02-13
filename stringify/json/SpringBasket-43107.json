@@ -1,26 +1,55 @@
 {
+  "id": 6003580839118505534,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-43107",
   "title": "Spring Basket",
   "num": 43107,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Panda",
       "rarity": 30,
-      "document_id": 5398074086280690944
+      "document": {
+        "id": 5398074086280690944,
+        "access_hash": -6203272612690241564,
+        "date": "2025-10-01T10:10:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20870,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Love Letter",
       "rarity": 7,
-      "document_id": 5440699386130620745
+      "document": {
+        "id": 5440699386130620745,
+        "access_hash": -7141271332431670569,
+        "date": "2024-12-28T09:50:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1151,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

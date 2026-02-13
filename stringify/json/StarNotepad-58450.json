@@ -1,26 +1,55 @@
 {
+  "id": 5904628924377203841,
+  "gift_id": 5936017773737018241,
   "slug": "StarNotepad-58450",
   "title": "Star Notepad",
   "num": 58450,
-  "availability_issued": 68895,
+  "availability_issued": 68897,
   "availability_total": 99082,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15293800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Skies Above",
       "rarity": 13,
-      "document_id": 5208636642360849170
+      "document": {
+        "id": 5208636642360849170,
+        "access_hash": -437138760421867087,
+        "date": "2025-01-17T01:25:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14191,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hand of God",
       "rarity": 4,
-      "document_id": 5434022906713630856
+      "document": {
+        "id": 5434022906713630856,
+        "access_hash": -8630236249608902614,
+        "date": "2024-12-26T12:26:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 838,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

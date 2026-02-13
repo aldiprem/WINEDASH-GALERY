@@ -1,26 +1,55 @@
 {
+  "id": 6015077745015391093,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-155484",
   "title": "Happy Brownie",
   "num": 155484,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cactus",
       "rarity": 30,
-      "document_id": 5332685137639410309
+      "document": {
+        "id": 5332685137639410309,
+        "access_hash": -3574571655493008650,
+        "date": "2025-09-09T15:25:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48016,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pencil",
       "rarity": 2,
-      "document_id": 5424666243149884414
+      "document": {
+        "id": 5424666243149884414,
+        "access_hash": -4524303877730530426,
+        "date": "2024-12-23T14:49:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 953,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Light Olive",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "pattern_color": 5852164,
+      "text_color": 16116668
     }
   ]
 }

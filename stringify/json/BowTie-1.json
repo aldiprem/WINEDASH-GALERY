@@ -1,26 +1,55 @@
 {
+  "id": 5882102065722819169,
+  "gift_id": 5895544372761461960,
   "slug": "BowTie-1",
   "title": "Bow Tie",
   "num": 1,
   "availability_issued": 54803,
   "availability_total": 65687,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 639207000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Elephant",
       "rarity": 25,
-      "document_id": 5359648645970945235
+      "document": {
+        "id": 5359648645970945235,
+        "access_hash": 4060805085697903731,
+        "date": "2025-03-08T02:19:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12943,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Royal Crown",
       "rarity": 4,
-      "document_id": 5440361101621484148
+      "document": {
+        "id": 5440361101621484148,
+        "access_hash": 1355356403519299063,
+        "date": "2024-12-28T11:10:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 916,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mustard",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 78,
+      "center_color": 13932557,
+      "edge_color": 12875538,
+      "pattern_color": 8004864,
+      "text_color": 16768668
     }
   ]
 }

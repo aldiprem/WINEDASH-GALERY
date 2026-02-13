@@ -1,26 +1,55 @@
 {
+  "id": 5845937869859848913,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-18198",
   "title": "Xmas Stocking",
   "num": 18198,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Universe",
       "rarity": 10,
-      "document_id": 5312317230195696626
+      "document": {
+        "id": 5312317230195696626,
+        "access_hash": -8456754980619875474,
+        "date": "2025-02-20T04:26:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32132,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Piggy Bank",
       "rarity": 12,
-      "document_id": 5434106495367144379
+      "document": {
+        "id": 5434106495367144379,
+        "access_hash": -2628147473302736177,
+        "date": "2024-12-26T14:45:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 995,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chocolate",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 59,
+      "center_color": 10776152,
+      "edge_color": 7619643,
+      "pattern_color": 4065794,
+      "text_color": 14988972
     }
   ]
 }

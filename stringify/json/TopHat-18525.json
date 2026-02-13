@@ -1,26 +1,55 @@
 {
+  "id": 5899749871593718574,
+  "gift_id": 5897593557492957738,
   "slug": "TopHat-18525",
   "title": "Top Hat",
   "num": 18525,
   "availability_issued": 34300,
   "availability_total": 35099,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Maestro",
       "rarity": 30,
-      "document_id": 5314399413160929373
+      "document": {
+        "id": 5314399413160929373,
+        "access_hash": 8190911195636698682,
+        "date": "2025-02-20T20:25:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 8061,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Teru Bōzu",
       "rarity": 4,
-      "document_id": 5584796500984070156
+      "document": {
+        "id": 5584796500984070156,
+        "access_hash": 6630752961934642452,
+        "date": "2025-02-14T18:57:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1059,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5848033002151478228,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-4330",
   "title": "Xmas Stocking",
   "num": 4330,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Banana Love",
       "rarity": 10,
-      "document_id": 5352913166588210796
+      "document": {
+        "id": 5352913166588210796,
+        "access_hash": -5176462385267271028,
+        "date": "2025-03-05T17:58:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35375,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bee",
       "rarity": 5,
-      "document_id": 5434002913640866822
+      "document": {
+        "id": 5434002913640866822,
+        "access_hash": -1596754924645788942,
+        "date": "2024-12-26T12:23:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1177,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

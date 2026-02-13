@@ -1,26 +1,55 @@
 {
+  "id": 5904374258586354699,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-69519",
   "title": "Xmas Stocking",
   "num": 69519,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Swamp Party",
       "rarity": 10,
-      "document_id": 5328215090296544101
+      "document": {
+        "id": 5328215090296544101,
+        "access_hash": 334278583512580285,
+        "date": "2025-02-25T04:39:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 51616,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Obon Lantern",
       "rarity": 4,
-      "document_id": 5584801955592536074
+      "document": {
+        "id": 5584801955592536074,
+        "access_hash": 3282685863183693680,
+        "date": "2025-02-14T18:55:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1923,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

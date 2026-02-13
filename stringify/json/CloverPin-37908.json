@@ -1,26 +1,55 @@
 {
+  "id": 5900019432331149967,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-37908",
   "title": "Clover Pin",
   "num": 37908,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Jd.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cheese",
       "rarity": 15,
-      "document_id": 5262656176914463553
+      "document": {
+        "id": 5262656176914463553,
+        "access_hash": -6340353163608851006,
+        "date": "2025-08-16T06:38:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26960,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mushroom",
       "rarity": 5,
-      "document_id": 5440642151396435007
+      "document": {
+        "id": 5440642151396435007,
+        "access_hash": 2702469357150679652,
+        "date": "2024-12-28T11:14:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 760,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Deep Cyan",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 70,
+      "center_color": 3257770,
+      "edge_color": 1611161,
+      "pattern_color": 20303,
+      "text_color": 13762557
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6032640102511936765,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-126314",
   "title": "Spring Basket",
   "num": 126314,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "eagle.ton",
+  "gift_address": "EQDB_etr6uIgQnMHy2buYTU1ALEClPOJGuxNIfJ_UJz96knv",
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Dom Pingouin",
       "rarity": 10,
-      "document_id": 5381982020643618937
+      "document": {
+        "id": 5381982020643618937,
+        "access_hash": -4573267579483935305,
+        "date": "2025-09-26T11:08:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23941,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Magic Wand",
       "rarity": 7,
-      "document_id": 5422596236416936455
+      "document": {
+        "id": 5422596236416936455,
+        "access_hash": 1928145755765061782,
+        "date": "2024-12-22T22:46:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1263,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Satin Gold",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 19,
+      "center_color": 12557127,
+      "edge_color": 9271097,
+      "pattern_color": 6109952,
+      "text_color": 16704681
     }
   ]
 }

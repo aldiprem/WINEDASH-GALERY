@@ -1,26 +1,55 @@
 {
+  "id": 5852531825775215445,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-170819",
   "title": "Whip Cupcake",
   "num": 170819,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12632600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Half-Life",
       "rarity": 20,
-      "document_id": 5287488505293861900
+      "document": {
+        "id": 5287488505293861900,
+        "access_hash": 8511103836380898648,
+        "date": "2025-05-20T12:52:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33639,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cute Bear",
       "rarity": 7,
-      "document_id": 5307909000317121664
+      "document": {
+        "id": 5307909000317121664,
+        "access_hash": -5974759846998899727,
+        "date": "2023-10-22T11:40:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1205,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Roman Silver",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 43,
+      "center_color": 10725557,
+      "edge_color": 8159370,
+      "pattern_color": 4146512,
+      "text_color": 14344162
     }
   ]
 }

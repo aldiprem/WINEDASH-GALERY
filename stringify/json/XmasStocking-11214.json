@@ -1,26 +1,55 @@
 {
+  "id": 5848159098096321898,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-11214",
   "title": "Xmas Stocking",
   "num": 11214,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cold Feet",
       "rarity": 30,
-      "document_id": 5298922726143061087
+      "document": {
+        "id": 5298922726143061087,
+        "access_hash": -268494542950801382,
+        "date": "2025-02-16T03:40:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40670,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mittens",
       "rarity": 8,
-      "document_id": 5195148147243899647
+      "document": {
+        "id": 5195148147243899647,
+        "access_hash": 6571680456281178334,
+        "date": "2024-10-07T13:21:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1427,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Shamrock Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 16,
+      "center_color": 9089379,
+      "edge_color": 5608261,
+      "pattern_color": 1207040,
+      "text_color": 14023624
     }
   ]
 }

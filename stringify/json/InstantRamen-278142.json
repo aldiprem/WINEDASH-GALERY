@@ -1,26 +1,55 @@
 {
+  "id": 6017246072139679887,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-278142",
   "title": "Instant Ramen",
   "num": 278142,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12632600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Seafood",
       "rarity": 20,
-      "document_id": 5370591041525157544
+      "document": {
+        "id": 5370591041525157544,
+        "access_hash": 4119680875232282722,
+        "date": "2025-09-22T21:27:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30374,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Earth",
       "rarity": 2,
-      "document_id": 5551122174972002314
+      "document": {
+        "id": 5551122174972002314,
+        "access_hash": 7621062275565811717,
+        "date": "2025-02-03T13:30:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2301,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Cyan",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "pattern_color": 156813,
+      "text_color": 11988991
     }
   ]
 }

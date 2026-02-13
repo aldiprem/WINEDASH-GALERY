@@ -1,26 +1,55 @@
 {
+  "id": 6014860767562564633,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-17385",
   "title": "Snoop Cigar",
   "num": 17385,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Snoop Ring",
       "rarity": 30,
-      "document_id": 5384369305200654013
+      "document": {
+        "id": 5384369305200654013,
+        "access_hash": -5086735248431967447,
+        "date": "2025-06-21T20:22:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53308,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Doberman",
       "rarity": 7,
-      "document_id": 5721848477902700557
+      "document": {
+        "id": 5721848477902700557,
+        "access_hash": 8943721828425766300,
+        "date": "2024-12-26T12:03:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1847,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

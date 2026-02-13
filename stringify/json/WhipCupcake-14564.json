@@ -1,26 +1,55 @@
 {
+  "id": 6001171787667211529,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-14564",
   "title": "Whip Cupcake",
   "num": 14564,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cherry Top",
       "rarity": 30,
-      "document_id": 5224333674085905027
+      "document": {
+        "id": 5224333674085905027,
+        "access_hash": -3079166881564321962,
+        "date": "2025-04-29T10:20:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 43633,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bandage",
       "rarity": 5,
-      "document_id": 5440708100619277419
+      "document": {
+        "id": 5440708100619277419,
+        "access_hash": 3521069946558357956,
+        "date": "2024-12-28T11:34:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1029,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

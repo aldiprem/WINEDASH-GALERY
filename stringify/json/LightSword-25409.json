@@ -1,26 +1,55 @@
 {
+  "id": 5864110082647657897,
+  "gift_id": 5897581235231785485,
   "slug": "LightSword-25409",
   "title": "Light Sword",
   "num": 25409,
-  "availability_issued": 124127,
+  "availability_issued": 124128,
   "availability_total": 131222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20212100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lotus Saber",
       "rarity": 30,
-      "document_id": 5449823240992091075
+      "document": {
+        "id": 5449823240992091075,
+        "access_hash": -6815146417218673333,
+        "date": "2025-04-07T10:23:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12845,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bandana",
       "rarity": 4,
-      "document_id": 5312064969586538052
+      "document": {
+        "id": 5312064969586538052,
+        "access_hash": -1559216150220126575,
+        "date": "2025-02-20T17:28:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 12,
+      "center_color": 7325587,
+      "edge_color": 3906692,
+      "pattern_color": 24905,
+      "text_color": 13041648
     }
   ]
 }

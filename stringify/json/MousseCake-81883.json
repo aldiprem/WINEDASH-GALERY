@@ -1,26 +1,55 @@
 {
+  "id": 6010338617971442270,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-81883",
   "title": "Mousse Cake",
   "num": 81883,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Humble Admin",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Toxic Frog",
       "rarity": 15,
-      "document_id": 5375549280620674310
+      "document": {
+        "id": 5375549280620674310,
+        "access_hash": 2852071033348971966,
+        "date": "2025-09-23T23:01:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 46746,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Coin Purse",
       "rarity": 2,
-      "document_id": 5434033386433830171
+      "document": {
+        "id": 5434033386433830171,
+        "access_hash": -2086486808159018450,
+        "date": "2024-12-26T12:08:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1536,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rifle Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 65,
+      "center_color": 6580572,
+      "edge_color": 4936257,
+      "pattern_color": 987659,
+      "text_color": 12830653
     }
   ]
 }

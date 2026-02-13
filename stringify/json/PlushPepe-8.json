@@ -1,26 +1,55 @@
 {
+  "id": 6030769785988449193,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-8",
   "title": "Plush Pepe",
   "num": 8,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBTLIt1VtpdISjZznwl_DoEu8RolNaWyaHPa05J3RZ-mF3-",
+  "value_amount": 23873953100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Polka Dots",
       "rarity": 30,
-      "document_id": 5424934983548560744
+      "document": {
+        "id": 5424934983548560744,
+        "access_hash": 3392958613269890610,
+        "date": "2024-12-22T22:28:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22077,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sumerian Bird",
       "rarity": 5,
-      "document_id": 5724535083025563683
+      "document": {
+        "id": 5724535083025563683,
+        "access_hash": 7523117530244648058,
+        "date": "2024-12-26T12:00:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3012,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

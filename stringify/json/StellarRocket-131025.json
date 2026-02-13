@@ -1,26 +1,55 @@
 {
+  "id": 5825424066672067434,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-131025",
   "title": "Stellar Rocket",
   "num": 131025,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Baby Carrot",
       "rarity": 20,
-      "document_id": 5285420070518945957
+      "document": {
+        "id": 5285420070518945957,
+        "access_hash": 8629373017712195643,
+        "date": "2025-05-19T19:42:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33419,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Old Candle",
       "rarity": 4,
-      "document_id": 5548873050922942478
+      "document": {
+        "id": 5548873050922942478,
+        "access_hash": -3463497519512346366,
+        "date": "2025-02-02T17:47:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1478,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Green",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 12,
+      "center_color": 7325587,
+      "edge_color": 3906692,
+      "pattern_color": 24905,
+      "text_color": 13041648
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5852910736380003196,
+  "gift_id": 5782988952268964995,
   "slug": "DeskCalendar-88604",
   "title": "Desk Calendar",
   "num": 88604,
-  "availability_issued": 306366,
-  "availability_total": 337468,
+  "availability_issued": 306304,
+  "availability_total": 337405,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10594500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tic Tac Toe",
       "rarity": 4,
-      "document_id": 5226652668662932471
+      "document": {
+        "id": 5226652668662932471,
+        "access_hash": -4877936209633179276,
+        "date": "2025-01-22T18:13:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16767,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gold",
       "rarity": 5,
-      "document_id": 5440548920541339106
+      "document": {
+        "id": 5440548920541339106,
+        "access_hash": 5001186766212078007,
+        "date": "2024-12-28T09:51:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 760,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

@@ -1,26 +1,55 @@
 {
+  "id": 6051131968240747054,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-16102",
   "title": "Jelly Bunny",
   "num": 16102,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vanilla",
       "rarity": 5,
-      "document_id": 5397754562188696203
+      "document": {
+        "id": 5397754562188696203,
+        "access_hash": 774612818903494818,
+        "date": "2024-12-14T11:45:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52887,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cicada",
       "rarity": 4,
-      "document_id": 5436207211116257519
+      "document": {
+        "id": 5436207211116257519,
+        "access_hash": -4512318280894940475,
+        "date": "2024-12-26T12:25:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 795,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

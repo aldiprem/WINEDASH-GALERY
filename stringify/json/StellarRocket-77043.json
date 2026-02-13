@@ -1,26 +1,55 @@
 {
+  "id": 5825893682691179503,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-77043",
   "title": "Stellar Rocket",
   "num": 77043,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lollipop",
       "rarity": 30,
-      "document_id": 5195436850650576751
+      "document": {
+        "id": 5195436850650576751,
+        "access_hash": 3892343400204924428,
+        "date": "2025-07-25T04:17:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38033,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ram of Amun",
       "rarity": 5,
-      "document_id": 5730976773760352266
+      "document": {
+        "id": 5730976773760352266,
+        "access_hash": 2350611450235757654,
+        "date": "2024-12-29T17:57:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2144,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

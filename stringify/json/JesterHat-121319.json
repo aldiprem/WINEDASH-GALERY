@@ -1,26 +1,55 @@
 {
+  "id": 6021564468482278314,
+  "gift_id": 5933590374185435592,
   "slug": "JesterHat-121319",
   "title": "Jester Hat",
   "num": 121319,
-  "availability_issued": 134547,
+  "availability_issued": 134551,
   "availability_total": 190222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13575800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pierrot",
       "rarity": 15,
-      "document_id": 5433936973007971756
+      "document": {
+        "id": 5433936973007971756,
+        "access_hash": 2614042751297512073,
+        "date": "2024-12-26T20:13:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28360,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fenrir",
       "rarity": 5,
-      "document_id": 5722120379397308437
+      "document": {
+        "id": 5722120379397308437,
+        "access_hash": 7345501622739687058,
+        "date": "2024-12-26T12:01:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2168,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

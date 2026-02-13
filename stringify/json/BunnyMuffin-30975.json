@@ -1,26 +1,55 @@
 {
+  "id": 5785375583990973143,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-30975",
   "title": "Bunny Muffin",
   "num": 30975,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Young Chili",
       "rarity": 8,
-      "document_id": 5429577117346063060
+      "document": {
+        "id": 5429577117346063060,
+        "access_hash": 1892447445671017728,
+        "date": "2024-12-24T15:16:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24456,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Water Drops",
       "rarity": 10,
-      "document_id": 5305716187584282659
+      "document": {
+        "id": 5305716187584282659,
+        "access_hash": 7116767179289022307,
+        "date": "2023-10-21T14:40:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1039,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

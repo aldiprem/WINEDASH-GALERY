@@ -1,26 +1,55 @@
 {
+  "id": 5888976147995165517,
+  "gift_id": 5825895989088617224,
   "slug": "HypnoLollipop-30950",
   "title": "Hypno Lollipop",
   "num": 30950,
-  "availability_issued": 79412,
+  "availability_issued": 79415,
   "availability_total": 116639,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "User",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13390500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lime Wedge",
       "rarity": 9,
-      "document_id": 5228975305372230915
+      "document": {
+        "id": 5228975305372230915,
+        "access_hash": 6453246770703412298,
+        "date": "2025-01-23T07:28:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 7814,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wolf Rage",
       "rarity": 5,
-      "document_id": 5433796201159876253
+      "document": {
+        "id": 5433796201159876253,
+        "access_hash": 3237982239509661315,
+        "date": "2024-12-26T12:19:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 997,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

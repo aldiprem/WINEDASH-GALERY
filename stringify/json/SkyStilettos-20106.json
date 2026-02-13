@@ -1,26 +1,55 @@
 {
+  "id": 5902022424689378441,
+  "gift_id": 5870947077877400011,
   "slug": "SkyStilettos-20106",
   "title": "Sky Stilettos",
   "num": 20106,
   "availability_issued": 50257,
   "availability_total": 58460,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 40878900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Diva",
       "rarity": 10,
-      "document_id": 5204133059913352322
+      "document": {
+        "id": 5204133059913352322,
+        "access_hash": 4554830393784573285,
+        "date": "2025-07-28T11:20:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 46403,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mafdet",
       "rarity": 4,
-      "document_id": 5726594038807658503
+      "document": {
+        "id": 5726594038807658503,
+        "access_hash": -7234561998951628291,
+        "date": "2024-12-28T10:07:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2236,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Grape",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 52,
+      "center_color": 10319041,
+      "edge_color": 7949728,
+      "pattern_color": 4065899,
+      "text_color": 14728702
     }
   ]
 }

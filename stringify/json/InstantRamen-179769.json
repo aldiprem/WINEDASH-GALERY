@@ -1,26 +1,55 @@
 {
+  "id": 6003683334218056721,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-179769",
   "title": "Instant Ramen",
   "num": 179769,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cat Food",
       "rarity": 25,
-      "document_id": 5370699352010425073
+      "document": {
+        "id": 5370699352010425073,
+        "access_hash": -3755952357651235256,
+        "date": "2025-09-22T09:07:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31293,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Trickster Fox",
       "rarity": 5,
-      "document_id": 5546605024722812982
+      "document": {
+        "id": 5546605024722812982,
+        "access_hash": 3677359608556806840,
+        "date": "2025-02-01T17:43:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1676,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

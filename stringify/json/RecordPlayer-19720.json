@@ -1,26 +1,55 @@
 {
+  "id": 5816836425592603467,
+  "gift_id": 5856973938650776169,
   "slug": "RecordPlayer-19720",
   "title": "Record Player",
   "num": 19720,
-  "availability_issued": 33096,
+  "availability_issued": 33097,
   "availability_total": 46888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 23109100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Strawberry",
       "rarity": 5,
-      "document_id": 5298534254941071791
+      "document": {
+        "id": 5298534254941071791,
+        "access_hash": 3907587893646461402,
+        "date": "2025-02-15T13:59:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 45533,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sword Fight",
       "rarity": 4,
-      "document_id": 5548909751418486801
+      "document": {
+        "id": 5548909751418486801,
+        "access_hash": -6228765239091974363,
+        "date": "2025-02-02T17:54:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1880,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

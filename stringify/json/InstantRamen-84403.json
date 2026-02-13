@@ -1,26 +1,55 @@
 {
+  "id": 6003707690977592518,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-84403",
   "title": "Instant Ramen",
   "num": 84403,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Spicy Beef",
       "rarity": 30,
-      "document_id": 5274246025903634270
+      "document": {
+        "id": 5274246025903634270,
+        "access_hash": -41536160890597312,
+        "date": "2025-08-20T09:36:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27293,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sun",
       "rarity": 5,
-      "document_id": 5440840243878058297
+      "document": {
+        "id": 5440840243878058297,
+        "access_hash": 5608351311609081646,
+        "date": "2024-12-28T12:33:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 931,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Shamrock Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 16,
+      "center_color": 9089379,
+      "edge_color": 5608261,
+      "pattern_color": 1207040,
+      "text_color": 14023624
     }
   ]
 }

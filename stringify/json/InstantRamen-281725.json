@@ -1,26 +1,55 @@
 {
+  "id": 6019253204846380320,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-281725",
   "title": "Instant Ramen",
   "num": 281725,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Abduction",
       "rarity": 25,
-      "document_id": 5393199706421629390
+      "document": {
+        "id": 5393199706421629390,
+        "access_hash": 5715110450639649151,
+        "date": "2025-09-29T21:07:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35928,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Astronaut",
       "rarity": 2,
-      "document_id": 5550968793099927574
+      "document": {
+        "id": 5550968793099927574,
+        "access_hash": 6402802375045786293,
+        "date": "2025-02-03T13:30:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2685,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5830115420794782570,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-7428",
   "title": "Bunny Muffin",
   "num": 7428,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lollipop",
       "rarity": 8,
-      "document_id": 5224697118513456353
+      "document": {
+        "id": 5224697118513456353,
+        "access_hash": 2160672806426806164,
+        "date": "2025-01-21T14:59:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22214,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flirty Message",
       "rarity": 10,
-      "document_id": 5303451352544851662
+      "document": {
+        "id": 5303451352544851662,
+        "access_hash": 8185768141056934767,
+        "date": "2023-10-21T14:48:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 701,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "English Violet",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 32,
+      "center_color": 11634363,
+      "edge_color": 8870545,
+      "pattern_color": 5513823,
+      "text_color": 15124461
     }
   ]
 }

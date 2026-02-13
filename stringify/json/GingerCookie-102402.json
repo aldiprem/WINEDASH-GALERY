@@ -1,26 +1,55 @@
 {
+  "id": 5951818425843057255,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-102402",
   "title": "Ginger Cookie",
   "num": 102402,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14889600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Frosty",
       "rarity": 15,
-      "document_id": 5188303738900606259
+      "document": {
+        "id": 5188303738900606259,
+        "access_hash": -641951983158186267,
+        "date": "2025-01-09T21:11:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29580,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hot Drink",
       "rarity": 18,
-      "document_id": 5195425164044559335
+      "document": {
+        "id": 5195425164044559335,
+        "access_hash": -129633623509338937,
+        "date": "2024-10-07T13:23:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1807,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Khaki Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "pattern_color": 3756059,
+      "text_color": 13887163
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

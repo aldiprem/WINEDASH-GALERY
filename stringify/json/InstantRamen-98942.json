@@ -1,26 +1,55 @@
 {
+  "id": 6003603048394392511,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-98942",
   "title": "Instant Ramen",
   "num": 98942,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sacred Grove",
       "rarity": 25,
-      "document_id": 5386861709082262766
+      "document": {
+        "id": 5386861709082262766,
+        "access_hash": -2698951884341545591,
+        "date": "2025-09-27T12:14:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25815,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Griffon",
       "rarity": 4,
-      "document_id": 5544085429403254798
+      "document": {
+        "id": 5544085429403254798,
+        "access_hash": -8149978748464193454,
+        "date": "2025-02-01T17:42:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2472,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Orange",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 23,
+      "center_color": 13736506,
+      "edge_color": 12611399,
+      "pattern_color": 10303751,
+      "text_color": 16769475
     }
   ]
 }

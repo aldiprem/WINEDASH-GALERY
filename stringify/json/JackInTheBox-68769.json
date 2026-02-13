@@ -1,26 +1,55 @@
 {
+  "id": 6010189505296859636,
+  "gift_id": 6005659564635063386,
   "slug": "JackInTheBox-68769",
   "title": "Jack-in-the-Box",
   "num": 68769,
   "availability_issued": 96093,
   "availability_total": 97345,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Thumbs Up",
       "rarity": 30,
-      "document_id": 5418188612128762929
+      "document": {
+        "id": 5418188612128762929,
+        "access_hash": 2279557293518330342,
+        "date": "2025-03-28T17:49:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48339,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eikthyrnir",
       "rarity": 4,
-      "document_id": 5722379245666172949
+      "document": {
+        "id": 5722379245666172949,
+        "access_hash": -1718693921207800600,
+        "date": "2024-12-26T12:03:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2569,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

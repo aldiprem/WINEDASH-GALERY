@@ -1,26 +1,55 @@
 {
+  "id": 5841399227594310290,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-104042",
   "title": "Lol Pop",
   "num": 104042,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Golden Amber",
       "rarity": 10,
-      "document_id": 5226934878079052543
+      "document": {
+        "id": 5226934878079052543,
+        "access_hash": 2859190406776951282,
+        "date": "2025-01-22T23:41:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 13611,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Handset",
       "rarity": 5,
-      "document_id": 5433797377980918182
+      "document": {
+        "id": 5433797377980918182,
+        "access_hash": -7500743813900186608,
+        "date": "2024-12-26T11:45:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 717,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

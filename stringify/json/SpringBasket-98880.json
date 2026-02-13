@@ -1,26 +1,55 @@
 {
+  "id": 6007930240830014798,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-98880",
   "title": "Spring Basket",
   "num": 98880,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15613800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Trojan Horse",
       "rarity": 25,
-      "document_id": 5393568764371437133
+      "document": {
+        "id": 5393568764371437133,
+        "access_hash": 1547747107499019293,
+        "date": "2025-09-29T18:21:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 43894,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "High Hat",
       "rarity": 7,
-      "document_id": 5316622372269222433
+      "document": {
+        "id": 5316622372269222433,
+        "access_hash": 5524486584803065333,
+        "date": "2025-02-21T12:33:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 756,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     }
   ]
 }

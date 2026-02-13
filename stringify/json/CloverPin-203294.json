@@ -1,26 +1,55 @@
 {
+  "id": 6012650268154397371,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-203294",
   "title": "Clover Pin",
   "num": 203294,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Peacock",
       "rarity": 30,
-      "document_id": 5231323024690542422
+      "document": {
+        "id": 5231323024690542422,
+        "access_hash": 5464676782894259185,
+        "date": "2025-08-06T04:38:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54894,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Plum",
       "rarity": 5,
-      "document_id": 5434148341233508615
+      "document": {
+        "id": 5434148341233508615,
+        "access_hash": -1000468908887705577,
+        "date": "2024-12-26T14:48:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 908,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

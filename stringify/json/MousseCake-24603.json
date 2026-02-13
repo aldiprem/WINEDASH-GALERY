@@ -1,26 +1,55 @@
 {
+  "id": 6003735329092141965,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-24603",
   "title": "Mousse Cake",
   "num": 24603,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14771700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Razzle Dazzle",
       "rarity": 30,
-      "document_id": 5393593928584821392
+      "document": {
+        "id": 5393593928584821392,
+        "access_hash": 7237533541071311587,
+        "date": "2025-09-29T14:27:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28156,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mustache",
       "rarity": 6,
-      "document_id": 5548845580312117262
+      "document": {
+        "id": 5548845580312117262,
+        "access_hash": 5906454297768307912,
+        "date": "2025-02-02T17:47:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1084,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003327667976275081,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-87829",
   "title": "Ice Cream",
   "num": 87829,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Beehive",
       "rarity": 25,
-      "document_id": 5368756278740943156
+      "document": {
+        "id": 5368756278740943156,
+        "access_hash": -8503962378882683109,
+        "date": "2025-09-21T11:35:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30944,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sumerian Bird",
       "rarity": 7,
-      "document_id": 5724535083025563683
+      "document": {
+        "id": 5724535083025563683,
+        "access_hash": 7523117530244648058,
+        "date": "2024-12-26T12:00:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3012,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Turquoise",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 55,
+      "center_color": 6209720,
+      "edge_color": 4035214,
+      "pattern_color": 1135436,
+      "text_color": 12450034
     }
   ]
 }

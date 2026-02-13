@@ -1,26 +1,55 @@
 {
+  "id": 5875354045035578533,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-27143",
   "title": "Restless Jar",
   "num": 27143,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "ryoejinz.t.me",
+  "gift_address": "EQAfYno6BHV9r9TsDiMLGhSgTmtoIDV5dUC_PWF9LS0jUGv7",
+  "value_amount": 16321300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Aquarium",
       "rarity": 25,
-      "document_id": 5470183103962048494
+      "document": {
+        "id": 5470183103962048494,
+        "access_hash": -9080456641120930378,
+        "date": "2025-04-14T04:51:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22547,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crescent",
       "rarity": 5,
-      "document_id": 5546726460628140073
+      "document": {
+        "id": 5546726460628140073,
+        "access_hash": -4102985698937271663,
+        "date": "2025-02-02T17:46:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1290,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

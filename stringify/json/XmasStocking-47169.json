@@ -1,26 +1,55 @@
 {
+  "id": 5861904131609854815,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-47169",
   "title": "Xmas Stocking",
   "num": 47169,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Shine On!",
       "rarity": 10,
-      "document_id": 5323637922174360411
+      "document": {
+        "id": 5323637922174360411,
+        "access_hash": -8812478835340609112,
+        "date": "2025-02-24T05:54:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53496,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Twin Peaks",
       "rarity": 2,
-      "document_id": 5440737538325112126
+      "document": {
+        "id": 5440737538325112126,
+        "access_hash": 7610301937325065730,
+        "date": "2024-12-28T11:06:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 524,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Roman Silver",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 43,
+      "center_color": 10725557,
+      "edge_color": 8159370,
+      "pattern_color": 4146512,
+      "text_color": 14344162
     }
   ]
 }

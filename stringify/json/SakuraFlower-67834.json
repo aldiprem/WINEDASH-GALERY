@@ -1,26 +1,55 @@
 {
+  "id": 5945066552570151918,
+  "gift_id": 5167939598143193218,
   "slug": "SakuraFlower-67834",
   "title": "Sakura Flower",
   "num": 67834,
   "availability_issued": 87580,
   "availability_total": 93115,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 28937000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sylvaris",
       "rarity": 15,
-      "document_id": 5289961139441000810
+      "document": {
+        "id": 5289961139441000810,
+        "access_hash": -6207992124577284555,
+        "date": "2025-02-13T04:14:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23929,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Obon Lantern",
       "rarity": 2,
-      "document_id": 5584801955592536074
+      "document": {
+        "id": 5584801955592536074,
+        "access_hash": 3282685863183693680,
+        "date": "2025-02-14T18:55:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1923,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

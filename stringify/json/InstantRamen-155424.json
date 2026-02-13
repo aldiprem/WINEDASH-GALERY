@@ -1,26 +1,55 @@
 {
+  "id": 6003366245372527387,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-155424",
   "title": "Instant Ramen",
   "num": 155424,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sausage Duo",
       "rarity": 25,
-      "document_id": 5355300171972378539
+      "document": {
+        "id": 5355300171972378539,
+        "access_hash": 5711133599511569533,
+        "date": "2025-09-16T14:16:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42835,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flamingo",
       "rarity": 4,
-      "document_id": 5433605096590042713
+      "document": {
+        "id": 5433605096590042713,
+        "access_hash": -7635827312010305521,
+        "date": "2024-12-26T10:37:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 989,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

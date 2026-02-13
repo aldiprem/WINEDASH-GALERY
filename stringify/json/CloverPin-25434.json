@@ -1,26 +1,55 @@
 {
+  "id": 5900102849185972977,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-25434",
   "title": "Clover Pin",
   "num": 25434,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Celtic Knot",
       "rarity": 30,
-      "document_id": 5231021895943483044
+      "document": {
+        "id": 5231021895943483044,
+        "access_hash": 2926290171014072453,
+        "date": "2025-08-06T04:42:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29096,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spider Web",
       "rarity": 4,
-      "document_id": 5440362952752389413
+      "document": {
+        "id": 5440362952752389413,
+        "access_hash": 6556168437160999951,
+        "date": "2024-12-28T11:35:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1391,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

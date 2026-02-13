@@ -1,26 +1,55 @@
 {
+  "id": 5825806086833177802,
+  "gift_id": 6005880141270483700,
   "slug": "JollyChimp-42972",
   "title": "Jolly Chimp",
   "num": 42972,
-  "availability_issued": 115521,
+  "availability_issued": 115523,
   "availability_total": 132155,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17702400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hot Springs",
       "rarity": 25,
-      "document_id": 5328210181148932367
+      "document": {
+        "id": 5328210181148932367,
+        "access_hash": -8585593002441117220,
+        "date": "2025-06-02T23:21:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 51431,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pawn",
       "rarity": 4,
-      "document_id": 5440349071418088591
+      "document": {
+        "id": 5440349071418088591,
+        "access_hash": 5733342659681651031,
+        "date": "2024-12-28T11:16:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 692,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

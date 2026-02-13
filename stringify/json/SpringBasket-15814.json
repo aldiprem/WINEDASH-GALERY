@@ -1,26 +1,55 @@
 {
+  "id": 6003793757827236769,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-15814",
   "title": "Spring Basket",
   "num": 15814,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Knitty Kitty",
       "rarity": 30,
-      "document_id": 5350574681449592029
+      "document": {
+        "id": 5350574681449592029,
+        "access_hash": 706666403788824968,
+        "date": "2025-06-10T17:38:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33682,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cowboy Hat",
       "rarity": 7,
-      "document_id": 5276010157950655513
+      "document": {
+        "id": 5276010157950655513,
+        "access_hash": -2326236373726769725,
+        "date": "2025-02-08T13:50:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 832,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

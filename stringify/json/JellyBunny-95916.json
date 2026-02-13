@@ -1,26 +1,55 @@
 {
+  "id": 5782973481796767084,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-95916",
   "title": "Jelly Bunny",
   "num": 95916,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Jellyfish",
       "rarity": 15,
-      "document_id": 5427145074934834751
+      "document": {
+        "id": 5427145074934834751,
+        "access_hash": 4979570560555280535,
+        "date": "2024-12-23T19:27:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55798,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jumbo Pencil",
       "rarity": 4,
-      "document_id": 5440587119980470792
+      "document": {
+        "id": 5440587119980470792,
+        "access_hash": 7672136212686104821,
+        "date": "2024-12-28T11:47:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1334,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

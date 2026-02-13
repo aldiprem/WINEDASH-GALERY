@@ -1,26 +1,55 @@
 {
+  "id": 5834579949104661490,
+  "gift_id": 5841336413697606412,
   "slug": "CrystalBall-990",
   "title": "Crystal Ball",
   "num": 990,
   "availability_issued": 26682,
   "availability_total": 27732,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 27656900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Death Wish",
       "rarity": 30,
-      "document_id": 5397697610922350735
+      "document": {
+        "id": 5397697610922350735,
+        "access_hash": 4524562875260189090,
+        "date": "2024-12-14T02:47:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32560,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Blood Drop",
       "rarity": 20,
-      "document_id": 5440812129022142235
+      "document": {
+        "id": 5440812129022142235,
+        "access_hash": 2741868864464331261,
+        "date": "2024-12-28T11:40:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 566,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Emerald",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 13,
+      "center_color": 7914885,
+      "edge_color": 4366705,
+      "pattern_color": 25906,
+      "text_color": 12188121
     }
   ]
 }

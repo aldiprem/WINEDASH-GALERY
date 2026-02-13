@@ -1,26 +1,55 @@
 {
+  "id": 6003815090929796547,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-75653",
   "title": "Spring Basket",
   "num": 75653,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Baby Dragon",
       "rarity": 30,
-      "document_id": 5395418727044908719
+      "document": {
+        "id": 5395418727044908719,
+        "access_hash": -5695452412325426953,
+        "date": "2025-09-30T11:07:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31992,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crystal",
       "rarity": 4,
-      "document_id": 5550870253665255444
+      "document": {
+        "id": 5550870253665255444,
+        "access_hash": 1073832772195358758,
+        "date": "2025-02-03T13:27:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1619,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Moonstone",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 33,
+      "center_color": 8303028,
+      "edge_color": 5800848,
+      "pattern_color": 1459538,
+      "text_color": 14349821
     }
   ]
 }

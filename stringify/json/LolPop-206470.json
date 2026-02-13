@@ -1,26 +1,55 @@
 {
+  "id": 5965467595686543936,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-206470",
   "title": "Lol Pop",
   "num": 206470,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16422300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Crystalline",
       "rarity": 10,
-      "document_id": 5226448795155331278
+      "document": {
+        "id": 5226448795155331278,
+        "access_hash": 8228483542194164468,
+        "date": "2025-01-22T23:42:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60453,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cocktail",
       "rarity": 5,
-      "document_id": 5424853890271044722
+      "document": {
+        "id": 5424853890271044722,
+        "access_hash": -3685348669706753930,
+        "date": "2024-12-23T14:51:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 822,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

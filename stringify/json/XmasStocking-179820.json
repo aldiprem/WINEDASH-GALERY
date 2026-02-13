@@ -1,26 +1,55 @@
 {
+  "id": 5801069046598206514,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-179820",
   "title": "Xmas Stocking",
   "num": 179820,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Privet",
       "rarity": 10,
-      "document_id": 5325929454730504353
+      "document": {
+        "id": 5325929454730504353,
+        "access_hash": -727087175205890104,
+        "date": "2025-02-24T13:48:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35252,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sparks",
       "rarity": 8,
-      "document_id": 5440607637039243262
+      "document": {
+        "id": 5440607637039243262,
+        "access_hash": -3751453711016024631,
+        "date": "2024-12-28T09:49:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 897,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

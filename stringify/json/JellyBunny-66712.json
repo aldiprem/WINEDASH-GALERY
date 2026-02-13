@@ -1,26 +1,55 @@
 {
+  "id": 5837039054104822518,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-66712",
   "title": "Jelly Bunny",
   "num": 66712,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Engineer",
       "rarity": 15,
-      "document_id": 5429390075815288218
+      "document": {
+        "id": 5429390075815288218,
+        "access_hash": 4754592808741010904,
+        "date": "2024-12-24T18:34:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54864,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pyramid",
       "rarity": 5,
-      "document_id": 5440355466624392997
+      "document": {
+        "id": 5440355466624392997,
+        "access_hash": -674218845830661588,
+        "date": "2024-12-28T11:34:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 974,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Azure Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "pattern_color": 151668,
+      "text_color": 11922687
     }
   ]
 }

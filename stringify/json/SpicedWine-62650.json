@@ -1,26 +1,55 @@
 {
+  "id": 5852783540923532879,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-62650",
   "title": "Spiced Wine",
   "num": 62650,
-  "availability_issued": 101427,
+  "availability_issued": 101431,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": "𝓐𝓻𝔃𝓪𝓶",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 51641900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Dusky Draft",
       "rarity": 13,
-      "document_id": 5429142904742374442
+      "document": {
+        "id": 5429142904742374442,
+        "access_hash": 7693914816422811976,
+        "date": "2024-12-24T20:48:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26718,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Unicorn Head",
       "rarity": 5,
-      "document_id": 5440544067228292901
+      "document": {
+        "id": 5440544067228292901,
+        "access_hash": 545998144893487273,
+        "date": "2024-12-28T11:07:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 925,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Black",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "pattern_color": 7104616,
+      "text_color": 9211793
     }
   ]
 }

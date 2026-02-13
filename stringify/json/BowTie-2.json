@@ -1,26 +1,55 @@
 {
+  "id": 5879867540267599189,
+  "gift_id": 5895544372761461960,
   "slug": "BowTie-2",
   "title": "Bow Tie",
   "num": 2,
   "availability_issued": 54803,
   "availability_total": 65687,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 639207000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bus Guys",
       "rarity": 10,
-      "document_id": 5411379130459518004
+      "document": {
+        "id": 5411379130459518004,
+        "access_hash": -4918100481971171412,
+        "date": "2025-03-26T01:13:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22152,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wagasa",
       "rarity": 3,
-      "document_id": 5584553246921326607
+      "document": {
+        "id": 5584553246921326607,
+        "access_hash": 1403057307087510960,
+        "date": "2025-02-14T18:56:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1235,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5913685661784737062,
+  "gift_id": 6003735372041814769,
   "slug": "HolidayDrink-36062",
   "title": "Holiday Drink",
   "num": 36062,
-  "availability_issued": 82869,
+  "availability_issued": 82872,
   "availability_total": 120989,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15142200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mango Blast",
       "rarity": 49,
-      "document_id": 5285512549754759576
+      "document": {
+        "id": 5285512549754759576,
+        "access_hash": 7871386366629078487,
+        "date": "2025-02-11T17:14:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48828,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dolphin",
       "rarity": 5,
-      "document_id": 5434071452728977888
+      "document": {
+        "id": 5434071452728977888,
+        "access_hash": -4613968448235709444,
+        "date": "2024-12-26T12:22:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 895,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Jade Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 56,
+      "center_color": 5620892,
+      "edge_color": 3905911,
+      "pattern_color": 280881,
+      "text_color": 12517095
     }
   ]
 }

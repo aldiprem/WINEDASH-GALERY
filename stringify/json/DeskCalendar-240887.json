@@ -1,26 +1,55 @@
 {
+  "id": 5783154424473978844,
+  "gift_id": 5782988952268964995,
   "slug": "DeskCalendar-240887",
   "title": "Desk Calendar",
   "num": 240887,
-  "availability_issued": 306379,
-  "availability_total": 337481,
+  "availability_issued": 306309,
+  "availability_total": 337410,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 54777700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Launch Date",
       "rarity": 1,
-      "document_id": 5465591625008848563
+      "document": {
+        "id": 5465591625008848563,
+        "access_hash": -5359168504917718491,
+        "date": "2026-01-29T09:12:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24782,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Avocado",
       "rarity": 5,
-      "document_id": 5433953616006243349
+      "document": {
+        "id": 5433953616006243349,
+        "access_hash": -8942330992440120905,
+        "date": "2024-12-26T14:47:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 694,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Purple",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 1,
+      "center_color": 13267142,
+      "edge_color": 9855700,
+      "pattern_color": 6426548,
+      "text_color": 15453951
     }
   ]
 }

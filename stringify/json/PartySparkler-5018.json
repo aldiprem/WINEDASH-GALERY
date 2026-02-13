@@ -1,26 +1,55 @@
 {
+  "id": 5821429738496852488,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-5018",
   "title": "Party Sparkler",
   "num": 5018,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Marksman",
       "rarity": 11,
-      "document_id": 5229050424350239146
+      "document": {
+        "id": 5229050424350239146,
+        "access_hash": -9104553865247136706,
+        "date": "2025-01-23T11:22:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 34599,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gingerbread",
       "rarity": 18,
-      "document_id": 5438165909476763503
+      "document": {
+        "id": 5438165909476763503,
+        "access_hash": -5727706705390596557,
+        "date": "2024-12-28T11:48:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1008,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Moonstone",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 33,
+      "center_color": 8303028,
+      "edge_color": 5800848,
+      "pattern_color": 1459538,
+      "text_color": 14349821
     }
   ]
 }

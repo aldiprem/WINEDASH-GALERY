@@ -1,26 +1,55 @@
 {
+  "id": 5872824060190130671,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-46243",
   "title": "Jelly Bunny",
   "num": 46243,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Spooky",
       "rarity": 20,
-      "document_id": 5424795087873793395
+      "document": {
+        "id": 5424795087873793395,
+        "access_hash": 5428676346117644066,
+        "date": "2024-12-23T14:18:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55280,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bubbles",
       "rarity": 4,
-      "document_id": 5440872211319645140
+      "document": {
+        "id": 5440872211319645140,
+        "access_hash": 5336988841590318613,
+        "date": "2024-12-28T11:31:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 884,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Roman Silver",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 43,
+      "center_color": 10725557,
+      "edge_color": 8159370,
+      "pattern_color": 4146512,
+      "text_color": 14344162
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

@@ -1,26 +1,55 @@
 {
+  "id": 5870613586551767861,
+  "gift_id": 5868348541058942091,
   "slug": "LovePotion-9319",
   "title": "Love Potion",
   "num": 9319,
   "availability_issued": 29073,
   "availability_total": 30412,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBzkdjbbpF4hVGJCP_CEckM1olcKUzMcTLVURS027sBVIXa",
+  "value_amount": 38706100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Royal Spritz",
       "rarity": 25,
-      "document_id": 5287295790111285594
+      "document": {
+        "id": 5287295790111285594,
+        "access_hash": 4133924687630965220,
+        "date": "2025-02-11T16:47:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16607,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower Tulip",
       "rarity": 2,
-      "document_id": 5433949381168489107
+      "document": {
+        "id": 5433949381168489107,
+        "access_hash": 4499374774014947072,
+        "date": "2024-12-26T14:47:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 877,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

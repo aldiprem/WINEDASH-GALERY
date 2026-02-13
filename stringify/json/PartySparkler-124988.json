@@ -1,26 +1,55 @@
 {
+  "id": 5978749593070863088,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-124988",
   "title": "Party Sparkler",
   "num": 124988,
-  "availability_issued": 176755,
+  "availability_issued": 176760,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 32844600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Polychrome",
       "rarity": 11,
-      "document_id": 5229133317219052678
+      "document": {
+        "id": 5229133317219052678,
+        "access_hash": 6874951404498583704,
+        "date": "2025-01-23T11:25:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35724,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ram of Amun",
       "rarity": 4,
-      "document_id": 5730976773760352266
+      "document": {
+        "id": 5730976773760352266,
+        "access_hash": 2350611450235757654,
+        "date": "2024-12-29T17:57:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2144,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

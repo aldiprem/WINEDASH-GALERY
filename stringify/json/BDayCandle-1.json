@@ -1,26 +1,55 @@
 {
+  "id": 5827907348043137755,
+  "gift_id": 5782984811920491178,
   "slug": "BDayCandle-1",
   "title": "B-Day Candle",
   "num": 1,
-  "availability_issued": 267370,
+  "availability_issued": 267373,
   "availability_total": 307521,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 640470300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wait a Minute",
       "rarity": 8,
-      "document_id": 5215254160466799783
+      "document": {
+        "id": 5215254160466799783,
+        "access_hash": 2201051035435181547,
+        "date": "2025-01-18T22:47:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 21446,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wasp",
       "rarity": 5,
-      "document_id": 5440853115895045152
+      "document": {
+        "id": 5440853115895045152,
+        "access_hash": 5715713394055175790,
+        "date": "2024-12-28T11:08:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1260,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Steel Grey",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 44,
+      "center_color": 9937580,
+      "edge_color": 6517372,
+      "pattern_color": 3360082,
+      "text_color": 14673128
     }
   ]
 }

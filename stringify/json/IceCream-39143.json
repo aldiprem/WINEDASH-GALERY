@@ -1,26 +1,55 @@
 {
+  "id": 6005785007744877892,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-39143",
   "title": "Ice Cream",
   "num": 39143,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ice Craft",
       "rarity": 15,
-      "document_id": 5332705070582627661
+      "document": {
+        "id": 5332705070582627661,
+        "access_hash": 5545654811380265643,
+        "date": "2025-09-09T13:47:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27896,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Inguz Rune",
       "rarity": 2,
-      "document_id": 5440848485920301619
+      "document": {
+        "id": 5440848485920301619,
+        "access_hash": 3176314549888581687,
+        "date": "2024-12-28T11:09:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 901,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

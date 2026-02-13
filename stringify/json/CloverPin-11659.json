@@ -1,26 +1,55 @@
 {
+  "id": 5900004541679535252,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-11659",
   "title": "Clover Pin",
   "num": 11659,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Golden Ale",
       "rarity": 20,
-      "document_id": 5258293782926881895
+      "document": {
+        "id": 5258293782926881895,
+        "access_hash": -8037309436640816876,
+        "date": "2025-08-15T11:24:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31045,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Keffiyeh",
       "rarity": 2,
-      "document_id": 5314391304262674154
+      "document": {
+        "id": 5314391304262674154,
+        "access_hash": -7434403320767175839,
+        "date": "2025-02-21T13:25:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 877,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Black",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "pattern_color": 7104616,
+      "text_color": 9211793
     }
   ]
 }

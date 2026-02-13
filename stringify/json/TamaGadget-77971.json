@@ -1,26 +1,55 @@
 {
+  "id": 6026189619979094875,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-77971",
   "title": "Tama Gadget",
   "num": 77971,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14502200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Clover",
       "rarity": 20,
-      "document_id": 5276444980439703862
+      "document": {
+        "id": 5276444980439703862,
+        "access_hash": -8177572499663579447,
+        "date": "2025-02-07T20:18:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14448,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Avocado",
       "rarity": 5,
-      "document_id": 5433953616006243349
+      "document": {
+        "id": 5433953616006243349,
+        "access_hash": -8942330992440120905,
+        "date": "2024-12-26T14:47:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 694,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lavender",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 2,
+      "center_color": 12028388,
+      "edge_color": 9067196,
+      "pattern_color": 5968043,
+      "text_color": 15258111
     }
   ]
 }

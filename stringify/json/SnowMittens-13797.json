@@ -1,26 +1,55 @@
 {
+  "id": 5854856077392216682,
+  "gift_id": 5980789805615678057,
   "slug": "SnowMittens-13797",
   "title": "Snow Mittens",
   "num": 13797,
-  "availability_issued": 38414,
+  "availability_issued": 38416,
   "availability_total": 49969,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQAuBGQxCyKw5NL7aWZzqrwnYK63qACkdBxjH8TPjGRwflGZ",
+  "value_amount": 15310700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wet Clap",
       "rarity": 4,
-      "document_id": 5228934769470890240
+      "document": {
+        "id": 5228934769470890240,
+        "access_hash": -9089603724876062028,
+        "date": "2025-01-23T03:06:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37731,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cocktail",
       "rarity": 16,
-      "document_id": 5424853890271044722
+      "document": {
+        "id": 5424853890271044722,
+        "access_hash": -3685348669706753930,
+        "date": "2024-12-23T14:51:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 822,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

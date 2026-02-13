@@ -1,26 +1,55 @@
 {
+  "id": 5850219458332722556,
+  "gift_id": 6023679164349940429,
   "slug": "SnakeBox-26868",
   "title": "Snake Box",
   "num": 26868,
-  "availability_issued": 170178,
+  "availability_issued": 170189,
   "availability_total": 273898,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12076700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cotton Candy",
       "rarity": 30,
-      "document_id": 5368811207077688205
+      "document": {
+        "id": 5368811207077688205,
+        "access_hash": -4909861451504846456,
+        "date": "2025-03-11T16:54:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58241,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gingerbread",
       "rarity": 4,
-      "document_id": 5438165909476763503
+      "document": {
+        "id": 5438165909476763503,
+        "access_hash": -5727706705390596557,
+        "date": "2024-12-28T11:48:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1008,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Persimmon",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 26,
+      "center_color": 15181658,
+      "edge_color": 12937055,
+      "pattern_color": 11341312,
+      "text_color": 16770263
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5868562327351068377,
+  "gift_id": 5868595669182186720,
   "slug": "ValentineBox-33224",
   "title": "Valentine Box",
   "num": 33224,
   "availability_issued": 34207,
   "availability_total": 41025,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "?\\m^",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 28195900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vampire",
       "rarity": 10,
-      "document_id": 5424960310970706738
+      "document": {
+        "id": 5424960310970706738,
+        "access_hash": -3223692509119852007,
+        "date": "2025-03-30T03:46:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12280,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dandelion",
       "rarity": 5,
-      "document_id": 5357353948023908774
+      "document": {
+        "id": 5357353948023908774,
+        "access_hash": -8506569554758235380,
+        "date": "2025-03-07T09:23:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1317,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

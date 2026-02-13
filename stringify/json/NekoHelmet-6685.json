@@ -1,26 +1,55 @@
 {
+  "id": 5938300480135365214,
+  "gift_id": 5933793770951673155,
   "slug": "NekoHelmet-6685",
   "title": "Neko Helmet",
   "num": 6685,
   "availability_issued": 15498,
   "availability_total": 16149,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 75795300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Strawberry",
       "rarity": 20,
-      "document_id": 5357143258403201559
+      "document": {
+        "id": 5357143258403201559,
+        "access_hash": 8536941315529572975,
+        "date": "2025-03-07T10:21:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33262,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cupid Archer",
       "rarity": 4,
-      "document_id": 5289973448817276247
+      "document": {
+        "id": 5289973448817276247,
+        "access_hash": 838829869320980883,
+        "date": "2025-02-12T23:38:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1509,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Indigo",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 4,
+      "center_color": 11108595,
+      "edge_color": 5989080,
+      "pattern_color": 3613355,
+      "text_color": 14211327
     }
   ]
 }

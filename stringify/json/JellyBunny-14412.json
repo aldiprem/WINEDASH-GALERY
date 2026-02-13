@@ -1,26 +1,55 @@
 {
+  "id": 6046471821350405259,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-14412",
   "title": "Jelly Bunny",
   "num": 14412,
-  "availability_issued": 102244,
+  "availability_issued": 102249,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Spooky",
       "rarity": 20,
-      "document_id": 5424795087873793395
+      "document": {
+        "id": 5424795087873793395,
+        "access_hash": 5428676346117644066,
+        "date": "2024-12-23T14:18:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55280,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Drug",
       "rarity": 5,
-      "document_id": 5440721062830561949
+      "document": {
+        "id": 5440721062830561949,
+        "access_hash": 3967293099937094121,
+        "date": "2024-12-28T11:47:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 732,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     }
   ]
 }

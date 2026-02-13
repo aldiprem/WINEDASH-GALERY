@@ -1,26 +1,55 @@
 {
+  "id": 6005593297584653611,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-139353",
   "title": "Happy Brownie",
   "num": 139353,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "seiren",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Strawberry",
       "rarity": 30,
-      "document_id": 5375067050282618866
+      "document": {
+        "id": 5375067050282618866,
+        "access_hash": 730371689315569568,
+        "date": "2025-09-23T19:40:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 50309,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rain Drop",
       "rarity": 2,
-      "document_id": 5440588533024712814
+      "document": {
+        "id": 5440588533024712814,
+        "access_hash": -6893908857987126055,
+        "date": "2024-12-28T11:06:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 587,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

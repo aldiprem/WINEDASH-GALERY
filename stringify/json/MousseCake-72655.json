@@ -1,26 +1,55 @@
 {
+  "id": 6007929875757793970,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-72655",
   "title": "Mousse Cake",
   "num": 72655,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Scarlet Drip",
       "rarity": 20,
-      "document_id": 5332416388650797831
+      "document": {
+        "id": 5332416388650797831,
+        "access_hash": -8668660823424575822,
+        "date": "2025-09-09T18:36:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31107,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cat Mask",
       "rarity": 6,
-      "document_id": 5433934065315110448
+      "document": {
+        "id": 5433934065315110448,
+        "access_hash": 2887814462971614248,
+        "date": "2024-12-26T11:37:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 754,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

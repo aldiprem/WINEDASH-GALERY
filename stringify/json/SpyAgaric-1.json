@@ -1,26 +1,55 @@
 {
+  "id": 6030377891697525286,
+  "gift_id": 5821261908354794038,
   "slug": "SpyAgaric-1",
   "title": "Spy Agaric",
   "num": 1,
-  "availability_issued": 86677,
+  "availability_issued": 86678,
   "availability_total": 89438,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18190900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lemon Haze",
       "rarity": 20,
-      "document_id": 5400272873313036273
+      "document": {
+        "id": 5400272873313036273,
+        "access_hash": -1626626625624270757,
+        "date": "2024-12-14T19:01:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25344,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candle",
       "rarity": 18,
-      "document_id": 5440862947075185091
+      "document": {
+        "id": 5440862947075185091,
+        "access_hash": 6542726026572555817,
+        "date": "2024-12-28T11:47:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 875,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     }
   ]
 }

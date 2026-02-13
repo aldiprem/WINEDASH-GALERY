@@ -1,26 +1,55 @@
 {
+  "id": 5766987858334188602,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-45731",
   "title": "Jingle Bells",
   "num": 45731,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75884,
+  "availability_total": 114946,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Harlequin",
       "rarity": 9,
-      "document_id": 5228871212544844461
+      "document": {
+        "id": 5228871212544844461,
+        "access_hash": 4561748018804311843,
+        "date": "2025-01-23T16:33:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33945,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cherry",
       "rarity": 2,
-      "document_id": 5434013921642045024
+      "document": {
+        "id": 5434013921642045024,
+        "access_hash": 6270047971805243946,
+        "date": "2024-12-26T14:47:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 970,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 16
+      "rarity": 16,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5847940643174744731,
+  "gift_id": 6023679164349940429,
   "slug": "SnakeBox-7147",
   "title": "Snake Box",
   "num": 7147,
-  "availability_issued": 170178,
+  "availability_issued": 170189,
   "availability_total": 273898,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "D.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9583900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Dash",
       "rarity": 30,
-      "document_id": 5368805885613206415
+      "document": {
+        "id": 5368805885613206415,
+        "access_hash": -7363748782060287286,
+        "date": "2025-03-11T17:02:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32572,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gold",
       "rarity": 10,
-      "document_id": 5440548920541339106
+      "document": {
+        "id": 5440548920541339106,
+        "access_hash": 5001186766212078007,
+        "date": "2024-12-28T09:51:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 760,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

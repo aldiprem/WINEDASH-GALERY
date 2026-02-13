@@ -1,26 +1,55 @@
 {
+  "id": 6017279190632498152,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-205311",
   "title": "Snoop Dogg",
   "num": 205311,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Team USA",
       "rarity": 25,
-      "document_id": 5408969469122867955
+      "document": {
+        "id": 5408969469122867955,
+        "access_hash": -2759332156898151859,
+        "date": "2025-06-30T02:09:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 63894,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Nemean Lion",
       "rarity": 5,
-      "document_id": 5544006887336312835
+      "document": {
+        "id": 5544006887336312835,
+        "access_hash": 4638356395980588528,
+        "date": "2025-02-01T17:43:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1830,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

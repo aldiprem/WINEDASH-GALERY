@@ -1,26 +1,55 @@
 {
+  "id": 5832343151611740760,
+  "gift_id": 5837063436634161765,
   "slug": "FlyingBroom-4348",
   "title": "Flying Broom",
   "num": 4348,
   "availability_issued": 24697,
   "availability_total": 25916,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 23934500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Berry Blaster",
       "rarity": 20,
-      "document_id": 5433947461318106559
+      "document": {
+        "id": 5433947461318106559,
+        "access_hash": -6262529382010456882,
+        "date": "2024-12-26T05:11:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 21619,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sauron",
       "rarity": 24,
-      "document_id": 5434053869132867742
+      "document": {
+        "id": 5434053869132867742,
+        "access_hash": -5161168758391023720,
+        "date": "2024-12-26T12:09:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 882,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lemongrass",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 17,
+      "center_color": 11450458,
+      "edge_color": 5608261,
+      "pattern_color": 4614663,
+      "text_color": 14217922
     }
   ]
 }

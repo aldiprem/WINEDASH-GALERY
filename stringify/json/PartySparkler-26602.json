@@ -1,26 +1,55 @@
 {
+  "id": 5823601647623865244,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-26602",
   "title": "Party Sparkler",
   "num": 26602,
-  "availability_issued": 176755,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15917000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Patina Chrome",
       "rarity": 11,
-      "document_id": 5229070778200252828
+      "document": {
+        "id": 5229070778200252828,
+        "access_hash": 7958953682898519735,
+        "date": "2025-01-23T11:24:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35761,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Nordic Wolf",
       "rarity": 18,
-      "document_id": 5722297057171996682
+      "document": {
+        "id": 5722297057171996682,
+        "access_hash": 5878347459228473147,
+        "date": "2024-12-26T12:03:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2302,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

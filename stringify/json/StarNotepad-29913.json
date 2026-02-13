@@ -1,26 +1,55 @@
 {
+  "id": 5933609890516828852,
+  "gift_id": 5936017773737018241,
   "slug": "StarNotepad-29913",
   "title": "Star Notepad",
   "num": 29913,
-  "availability_issued": 68895,
+  "availability_issued": 68897,
   "availability_total": 99082,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15293800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ink Splatter",
       "rarity": 5,
-      "document_id": 5217647638366676064
+      "document": {
+        "id": 5217647638366676064,
+        "access_hash": -2316180182696878163,
+        "date": "2025-01-19T13:54:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19059,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lion King",
       "rarity": 4,
-      "document_id": 5722318746756841477
+      "document": {
+        "id": 5722318746756841477,
+        "access_hash": 7363359685272889898,
+        "date": "2024-12-26T12:02:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 4122,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

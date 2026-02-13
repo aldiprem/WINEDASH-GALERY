@@ -1,26 +1,55 @@
 {
+  "id": 5945211451881817032,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-101681",
   "title": "Ginger Cookie",
   "num": 101681,
-  "availability_issued": 142091,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Black Beard",
       "rarity": 6,
-      "document_id": 5228955110436006781
+      "document": {
+        "id": 5228955110436006781,
+        "access_hash": -3165632183613285624,
+        "date": "2025-01-23T01:09:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 34851,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Diamond",
       "rarity": 5,
-      "document_id": 5440747541303942913
+      "document": {
+        "id": 5440747541303942913,
+        "access_hash": -6918835098295810347,
+        "date": "2024-12-28T11:09:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 865,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

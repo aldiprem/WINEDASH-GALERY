@@ -1,26 +1,55 @@
 {
+  "id": 6019194531298149695,
+  "gift_id": 6014675319464657779,
   "slug": "LowRider-19476",
   "title": "Low Rider",
   "num": 19476,
   "availability_issued": 23424,
   "availability_total": 23950,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 151590600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Alpine Gold",
       "rarity": 20,
-      "document_id": 5415976987439169080
+      "document": {
+        "id": 5415976987439169080,
+        "access_hash": -1995808483791779578,
+        "date": "2025-07-02T16:33:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64569,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pumpkin Coach",
       "rarity": 7,
-      "document_id": 5551237516318736388
+      "document": {
+        "id": 5551237516318736388,
+        "access_hash": 2655108118843174848,
+        "date": "2025-02-03T13:27:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2455,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Black",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "pattern_color": 7104616,
+      "text_color": 9211793
     }
   ]
 }

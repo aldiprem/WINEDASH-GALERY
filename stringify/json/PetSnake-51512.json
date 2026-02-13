@@ -1,26 +1,55 @@
 {
+  "id": 5882040540316304433,
+  "gift_id": 6023917088358269866,
   "slug": "PetSnake-51512",
   "title": "Pet Snake",
   "num": 51512,
-  "availability_issued": 174528,
+  "availability_issued": 174535,
   "availability_total": 279106,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "R",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13980000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rainforest",
       "rarity": 50,
-      "document_id": 5402617483075021203
+      "document": {
+        "id": 5402617483075021203,
+        "access_hash": 2304456107240831919,
+        "date": "2025-03-22T13:32:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 18039,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jewel",
       "rarity": 10,
-      "document_id": 5550848478181064732
+      "document": {
+        "id": 5550848478181064732,
+        "access_hash": -8586977687463112246,
+        "date": "2025-02-03T08:41:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1358,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     }
   ]
 }

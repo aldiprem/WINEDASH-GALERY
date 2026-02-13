@@ -1,26 +1,55 @@
 {
+  "id": 5904414038573450170,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-145942",
   "title": "Party Sparkler",
   "num": 145942,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Violet Rave",
       "rarity": 13,
-      "document_id": 5231045754486810326
+      "document": {
+        "id": 5231045754486810326,
+        "access_hash": 4541162943800643943,
+        "date": "2025-01-23T11:26:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32329,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cocktail",
       "rarity": 15,
-      "document_id": 5424853890271044722
+      "document": {
+        "id": 5424853890271044722,
+        "access_hash": -3685348669706753930,
+        "date": "2024-12-23T14:51:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 822,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

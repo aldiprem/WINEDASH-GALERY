@@ -1,26 +1,55 @@
 {
+  "id": 5877219757354124990,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-38441",
   "title": "Restless Jar",
   "num": 38441,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 22738600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sketch",
       "rarity": 30,
-      "document_id": 5431585053211652598
+      "document": {
+        "id": 5431585053211652598,
+        "access_hash": 585907871732673003,
+        "date": "2025-04-01T21:59:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12297,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Neptune",
       "rarity": 2,
-      "document_id": 5551092428028510218
+      "document": {
+        "id": 5551092428028510218,
+        "access_hash": -2462010369425276154,
+        "date": "2025-02-03T13:30:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1686,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

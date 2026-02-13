@@ -1,26 +1,55 @@
 {
+  "id": 6003763959344136765,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-190061",
   "title": "Ice Cream",
   "num": 190061,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Crystal",
       "rarity": 10,
-      "document_id": 5350647348001272191
+      "document": {
+        "id": 5350647348001272191,
+        "access_hash": 1935940555582833706,
+        "date": "2025-06-09T21:18:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16489,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bug",
       "rarity": 7,
-      "document_id": 5433633602287985268
+      "document": {
+        "id": 5433633602287985268,
+        "access_hash": 7250365483069940917,
+        "date": "2024-12-26T12:24:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1123,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Cyan",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "pattern_color": 156813,
+      "text_color": 11988991
     }
   ]
 }

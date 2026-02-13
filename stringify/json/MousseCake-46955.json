@@ -1,26 +1,55 @@
 {
+  "id": 6003414726963365036,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-46955",
   "title": "Mousse Cake",
   "num": 46955,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Froggy Pond",
       "rarity": 30,
-      "document_id": 5332718376391311747
+      "document": {
+        "id": 5332718376391311747,
+        "access_hash": 6485530481266118913,
+        "date": "2025-09-09T18:35:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 43212,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Koala",
       "rarity": 2,
-      "document_id": 5440487373659987419
+      "document": {
+        "id": 5440487373659987419,
+        "access_hash": -8330019994133463198,
+        "date": "2024-12-28T11:48:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 902,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

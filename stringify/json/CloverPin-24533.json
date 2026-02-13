@@ -1,26 +1,55 @@
 {
+  "id": 5899793877828633750,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-24533",
   "title": "Clover Pin",
   "num": 24533,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Purrfect Paw",
       "rarity": 20,
-      "document_id": 5231331764948990717
+      "document": {
+        "id": 5231331764948990717,
+        "access_hash": -8979902165448219044,
+        "date": "2025-08-06T04:59:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33443,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Carambola",
       "rarity": 4,
-      "document_id": 5433727855345296125
+      "document": {
+        "id": 5433727855345296125,
+        "access_hash": -2692755281175004500,
+        "date": "2024-12-26T14:47:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1686,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Old Gold",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 75,
+      "center_color": 11898168,
+      "edge_color": 9726245,
+      "pattern_color": 5190402,
+      "text_color": 16768396
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5900075150941881527,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-25455",
   "title": "Clover Pin",
   "num": 25455,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Glass Rainbow",
       "rarity": 30,
-      "document_id": 5260572185768002238
+      "document": {
+        "id": 5260572185768002238,
+        "access_hash": -6973657137517080085,
+        "date": "2025-08-16T14:48:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 13050,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Skull",
       "rarity": 4,
-      "document_id": 5422475891433304226
+      "document": {
+        "id": 5422475891433304226,
+        "access_hash": -5451927501664372592,
+        "date": "2024-12-22T22:45:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 864,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

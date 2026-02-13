@@ -1,26 +1,55 @@
 {
+  "id": 6003655799182721947,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-166170",
   "title": "Ice Cream",
   "num": 166170,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bite-Size",
       "rarity": 30,
-      "document_id": 5240322067802390007
+      "document": {
+        "id": 5240322067802390007,
+        "access_hash": 4442864696300556999,
+        "date": "2025-08-09T15:45:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 18475,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Twin Peaks",
       "rarity": 7,
-      "document_id": 5440737538325112126
+      "document": {
+        "id": 5440737538325112126,
+        "access_hash": 7610301937325065730,
+        "date": "2024-12-28T11:06:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 524,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

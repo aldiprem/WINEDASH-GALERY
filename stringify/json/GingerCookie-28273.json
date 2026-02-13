@@ -1,26 +1,55 @@
 {
+  "id": 5843448446685547161,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-28273",
   "title": "Ginger Cookie",
   "num": 28273,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Brownie",
       "rarity": 12,
-      "document_id": 5233340035822019626
+      "document": {
+        "id": 5233340035822019626,
+        "access_hash": 7904135510181274982,
+        "date": "2025-01-25T00:04:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30431,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Trickster Fox",
       "rarity": 4,
-      "document_id": 5546605024722812982
+      "document": {
+        "id": 5546605024722812982,
+        "access_hash": 3677359608556806840,
+        "date": "2025-02-01T17:43:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1676,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "English Violet",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 32,
+      "center_color": 11634363,
+      "edge_color": 8870545,
+      "pattern_color": 5513823,
+      "text_color": 15124461
     }
   ]
 }

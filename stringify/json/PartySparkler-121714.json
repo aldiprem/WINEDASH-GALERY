@@ -1,26 +1,55 @@
 {
+  "id": 5951644977883776030,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-121714",
   "title": "Party Sparkler",
   "num": 121714,
-  "availability_issued": 176753,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bright Flare",
       "rarity": 13,
-      "document_id": 5228784961011607179
+      "document": {
+        "id": 5228784961011607179,
+        "access_hash": 2655154507041730509,
+        "date": "2025-01-23T11:53:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31172,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fireworks",
       "rarity": 12,
-      "document_id": 5208733145981008052
+      "document": {
+        "id": 5208733145981008052,
+        "access_hash": -3654358267214583131,
+        "date": "2023-12-24T23:06:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1189,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Khaki Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "pattern_color": 3756059,
+      "text_color": 13887163
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5994762609834853282,
+  "gift_id": 5773668482394620318,
   "slug": "EasterEgg-158514",
   "title": "Easter Egg",
   "num": 158514,
   "availability_issued": 162175,
   "availability_total": 173176,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15765400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pastel Candy",
       "rarity": 10,
-      "document_id": 5190691135126793273
+      "document": {
+        "id": 5190691135126793273,
+        "access_hash": 2382034355652687235,
+        "date": "2025-04-17T13:18:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 47028,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Paper Lantern",
       "rarity": 3,
-      "document_id": 5582394600653324300
+      "document": {
+        "id": 5582394600653324300,
+        "access_hash": 8633887196688031545,
+        "date": "2025-02-14T18:55:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1914,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

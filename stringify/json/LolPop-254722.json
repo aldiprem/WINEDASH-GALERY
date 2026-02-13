@@ -1,26 +1,55 @@
 {
+  "id": 5798420709633950698,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-254722",
   "title": "Lol Pop",
   "num": 254722,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Icicle",
       "rarity": 5,
-      "document_id": 5224531289826157876
+      "document": {
+        "id": 5224531289826157876,
+        "access_hash": 7408030741991475496,
+        "date": "2025-01-21T23:25:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 62735,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flag",
       "rarity": 4,
-      "document_id": 5546248748595675149
+      "document": {
+        "id": 5546248748595675149,
+        "access_hash": 5963422697963815479,
+        "date": "2025-02-02T17:52:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 961,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "English Violet",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 32,
+      "center_color": 11634363,
+      "edge_color": 8870545,
+      "pattern_color": 5513823,
+      "text_color": 15124461
     }
   ]
 }

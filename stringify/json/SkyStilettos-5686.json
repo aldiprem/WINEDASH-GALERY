@@ -1,26 +1,55 @@
 {
+  "id": 5900108922269729970,
+  "gift_id": 5870947077877400011,
   "slug": "SkyStilettos-5686",
   "title": "Sky Stilettos",
   "num": 5686,
   "availability_issued": 50257,
   "availability_total": 58460,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 40862100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Good Fairy",
       "rarity": 20,
-      "document_id": 5456142134316921282
+      "document": {
+        "id": 5456142134316921282,
+        "access_hash": 4113090977706856868,
+        "date": "2025-07-15T09:17:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54038,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Moon",
       "rarity": 7,
-      "document_id": 5440460955316150110
+      "document": {
+        "id": 5440460955316150110,
+        "access_hash": 2214097020132245729,
+        "date": "2024-12-28T09:52:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 535,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mint Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "pattern_color": 158498,
+      "text_color": 12451788
     }
   ]
 }

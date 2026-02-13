@@ -1,26 +1,55 @@
 {
+  "id": 6030456347865121210,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-7",
   "title": "Plush Pepe",
   "num": 7,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "huaren.ton",
+  "gift_address": "EQCB6CllxWR6vLdu6npoxrCLWbyPpRZYNxMCsJPnak5RE4PJ",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Polka Dots",
       "rarity": 30,
-      "document_id": 5424934983548560744
+      "document": {
+        "id": 5424934983548560744,
+        "access_hash": 3392958613269890610,
+        "date": "2024-12-22T22:28:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22077,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Genie Lamp",
       "rarity": 4,
-      "document_id": 5440679027985636145
+      "document": {
+        "id": 5440679027985636145,
+        "access_hash": 6162354837686909142,
+        "date": "2024-12-28T11:33:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1032,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Amber",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 21,
+      "center_color": 14332741,
+      "edge_color": 11632682,
+      "pattern_color": 8007936,
+      "text_color": 16772551
     }
   ]
 }

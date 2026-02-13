@@ -1,26 +1,55 @@
 {
+  "id": 6006010222944977754,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-185763",
   "title": "Ice Cream",
   "num": 185763,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13272600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fried Chicken",
       "rarity": 15,
-      "document_id": 5240271344238622711
+      "document": {
+        "id": 5240271344238622711,
+        "access_hash": 5685997014053336410,
+        "date": "2025-08-09T15:45:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26129,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Scarab",
       "rarity": 2,
-      "document_id": 5433699117719118672
+      "document": {
+        "id": 5433699117719118672,
+        "access_hash": 4971822394871751198,
+        "date": "2024-12-26T11:48:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1727,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5859587121307714120,
+  "gift_id": 5936017773737018241,
   "slug": "StarNotepad-18636",
   "title": "Star Notepad",
   "num": 18636,
-  "availability_issued": 68895,
+  "availability_issued": 68898,
   "availability_total": 99082,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15293800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rainbow",
       "rarity": 13,
-      "document_id": 5447351298334681528
+      "document": {
+        "id": 5447351298334681528,
+        "access_hash": 3020450487386332565,
+        "date": "2024-12-31T00:00:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14174,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eikthyrnir",
       "rarity": 3,
-      "document_id": 5722379245666172949
+      "document": {
+        "id": 5722379245666172949,
+        "access_hash": -1718693921207800600,
+        "date": "2024-12-26T12:03:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2569,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

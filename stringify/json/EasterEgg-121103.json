@@ -1,26 +1,55 @@
 {
+  "id": 5780930451753402843,
+  "gift_id": 5773668482394620318,
   "slug": "EasterEgg-121103",
   "title": "Easter Egg",
   "num": 121103,
   "availability_issued": 162175,
   "availability_total": 173176,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15765400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Free Flight",
       "rarity": 20,
-      "document_id": 5195083044129631819
+      "document": {
+        "id": 5195083044129631819,
+        "access_hash": -8625186651238457517,
+        "date": "2025-04-19T10:03:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42062,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Viking Shield",
       "rarity": 4,
-      "document_id": 5546364467899531299
+      "document": {
+        "id": 5546364467899531299,
+        "access_hash": -7178954234950334878,
+        "date": "2025-02-01T20:50:41+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2020,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

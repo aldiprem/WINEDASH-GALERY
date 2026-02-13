@@ -1,26 +1,55 @@
 {
+  "id": 5825570941668688743,
+  "gift_id": 5998981470310368313,
   "slug": "MoonPendant-25126",
   "title": "Moon Pendant",
   "num": 25126,
-  "availability_issued": 101720,
+  "availability_issued": 101721,
   "availability_total": 111080,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16034900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Liquid Gold",
       "rarity": 30,
-      "document_id": 5215500609985218004
+      "document": {
+        "id": 5215500609985218004,
+        "access_hash": 5015018868813295695,
+        "date": "2025-07-31T22:34:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58191,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pear",
       "rarity": 7,
-      "document_id": 5433660003451955542
+      "document": {
+        "id": 5433660003451955542,
+        "access_hash": 363840044551539305,
+        "date": "2024-12-26T14:47:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 790,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

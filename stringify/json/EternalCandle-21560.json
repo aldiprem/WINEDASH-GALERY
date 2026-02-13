@@ -1,26 +1,55 @@
 {
+  "id": 5850557493733753650,
+  "gift_id": 5821205665758053411,
   "slug": "EternalCandle-21560",
   "title": "Eternal Candle",
   "num": 21560,
   "availability_issued": 44951,
   "availability_total": 46590,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQCZFKlMKZCuXS49gAFr7J78d7d4KE3_svnPWhcKF7SRYVbR",
+  "value_amount": 16405500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "First Dawn",
       "rarity": 15,
-      "document_id": 5422413305169863131
+      "document": {
+        "id": 5422413305169863131,
+        "access_hash": -341383357612829603,
+        "date": "2024-12-22T14:39:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24862,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Love Letter",
       "rarity": 5,
-      "document_id": 5440699386130620745
+      "document": {
+        "id": 5440699386130620745,
+        "access_hash": -7141271332431670569,
+        "date": "2024-12-28T09:50:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1151,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

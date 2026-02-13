@@ -1,26 +1,55 @@
 {
+  "id": 5830414234554467588,
+  "gift_id": 5841632504448025405,
   "slug": "MadPumpkin-3018",
   "title": "Mad Pumpkin",
   "num": 3018,
-  "availability_issued": 19424,
+  "availability_issued": 19425,
   "availability_total": 22199,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 31783500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ornament",
       "rarity": 30,
-      "document_id": 5434079368353699769
+      "document": {
+        "id": 5434079368353699769,
+        "access_hash": -5373398315824196951,
+        "date": "2024-12-25T17:57:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32106,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Autumn Leaves",
       "rarity": 24,
-      "document_id": 5299000473641041282
+      "document": {
+        "id": 5299000473641041282,
+        "access_hash": -8907274438451297702,
+        "date": "2023-10-19T19:06:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2195,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Jade Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 56,
+      "center_color": 5620892,
+      "edge_color": 3905911,
+      "pattern_color": 280881,
+      "text_color": 12517095
     }
   ]
 }

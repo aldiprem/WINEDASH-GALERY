@@ -1,26 +1,55 @@
 {
+  "id": 5922468646566757629,
+  "gift_id": 5782984811920491178,
   "slug": "BDayCandle-185746",
   "title": "B-Day Candle",
   "num": 185746,
-  "availability_issued": 267371,
+  "availability_issued": 267373,
   "availability_total": 307521,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10190300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Backyard",
       "rarity": 6,
-      "document_id": 5215238161713623389
+      "document": {
+        "id": 5215238161713623389,
+        "access_hash": -846736544304275652,
+        "date": "2025-01-18T22:45:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 21871,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower",
       "rarity": 4,
-      "document_id": 5433932673745708750
+      "document": {
+        "id": 5433932673745708750,
+        "access_hash": 2939297856423211201,
+        "date": "2024-12-26T14:46:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 859,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

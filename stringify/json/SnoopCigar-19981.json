@@ -1,26 +1,55 @@
 {
+  "id": 6014829470135878427,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-19981",
   "title": "Snoop Cigar",
   "num": 19981,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bandana",
       "rarity": 30,
-      "document_id": 5375090870171236228
+      "document": {
+        "id": 5375090870171236228,
+        "access_hash": 6193974041492762996,
+        "date": "2025-06-18T14:53:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60270,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bread",
       "rarity": 7,
-      "document_id": 5436213773826285560
+      "document": {
+        "id": 5436213773826285560,
+        "access_hash": -9035397050173905455,
+        "date": "2024-12-26T14:48:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 716,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

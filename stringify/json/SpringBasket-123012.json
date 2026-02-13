@@ -1,26 +1,55 @@
 {
+  "id": 6025859994124026656,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-123012",
   "title": "Spring Basket",
   "num": 123012,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Baby Dragon",
       "rarity": 30,
-      "document_id": 5395418727044908719
+      "document": {
+        "id": 5395418727044908719,
+        "access_hash": -5695452412325426953,
+        "date": "2025-09-30T11:07:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31992,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Money Bag",
       "rarity": 2,
-      "document_id": 5440780019846634454
+      "document": {
+        "id": 5440780019846634454,
+        "access_hash": 4720416833523249495,
+        "date": "2024-12-28T09:52:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1080,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cappuccino",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 39,
+      "center_color": 11636862,
+      "edge_color": 8151894,
+      "pattern_color": 4862502,
+      "text_color": 15455432
     }
   ]
 }

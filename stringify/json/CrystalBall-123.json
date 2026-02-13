@@ -1,26 +1,55 @@
 {
+  "id": 5832231430922437263,
+  "gift_id": 5841336413697606412,
   "slug": "CrystalBall-123",
   "title": "Crystal Ball",
   "num": 123,
   "availability_issued": 26682,
   "availability_total": 27732,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 27656900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Prophet",
       "rarity": 30,
-      "document_id": 5406699200949809539
+      "document": {
+        "id": 5406699200949809539,
+        "access_hash": -3358413601697320797,
+        "date": "2024-12-17T00:57:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31792,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fish Skeleton",
       "rarity": 24,
-      "document_id": 5436257986219631092
+      "document": {
+        "id": 5436257986219631092,
+        "access_hash": -4358980901916551940,
+        "date": "2024-12-26T11:42:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1426,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Hunter Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 35,
+      "center_color": 9416312,
+      "edge_color": 4948571,
+      "pattern_color": 1853727,
+      "text_color": 14218718
     }
   ]
 }

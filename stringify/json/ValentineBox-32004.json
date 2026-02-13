@@ -1,26 +1,55 @@
 {
+  "id": 6005735692930384647,
+  "gift_id": 5868595669182186720,
   "slug": "ValentineBox-32004",
   "title": "Valentine Box",
   "num": 32004,
   "availability_issued": 34207,
   "availability_total": 41025,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 28229500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Gold Dust",
       "rarity": 30,
-      "document_id": 5318800698077370507
+      "document": {
+        "id": 5318800698077370507,
+        "access_hash": -3717117323226144855,
+        "date": "2025-02-22T03:41:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16824,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Baseball Cap",
       "rarity": 6,
-      "document_id": 5316818244252755144
+      "document": {
+        "id": 5316818244252755144,
+        "access_hash": 182470353465699327,
+        "date": "2025-02-21T12:35:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 724,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

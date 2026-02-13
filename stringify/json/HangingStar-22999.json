@@ -1,26 +1,55 @@
 {
+  "id": 5951808517353505849,
+  "gift_id": 5915733223018594841,
   "slug": "HangingStar-22999",
   "title": "Hanging Star",
   "num": 22999,
-  "availability_issued": 44509,
+  "availability_issued": 44510,
   "availability_total": 58118,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 21205800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cucumber",
       "rarity": 11,
-      "document_id": 5238185892803275392
+      "document": {
+        "id": 5238185892803275392,
+        "access_hash": -8965976495629763322,
+        "date": "2025-01-26T00:13:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14118,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shooting Star",
       "rarity": 24,
-      "document_id": 5434137758434093445
+      "document": {
+        "id": 5434137758434093445,
+        "access_hash": 5125665587446151556,
+        "date": "2024-12-26T14:45:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 945,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carrot Juice",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 24,
+      "center_color": 14391399,
+      "edge_color": 13070159,
+      "pattern_color": 9314560,
+      "text_color": 16766922
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

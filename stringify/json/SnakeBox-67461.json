@@ -1,26 +1,55 @@
 {
+  "id": 5929349029556126514,
+  "gift_id": 6023679164349940429,
   "slug": "SnakeBox-67461",
   "title": "Snake Box",
   "num": 67461,
-  "availability_issued": 170178,
+  "availability_issued": 170189,
   "availability_total": 273898,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12127200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Buttercup",
       "rarity": 30,
-      "document_id": 5368314880656962054
+      "document": {
+        "id": 5368314880656962054,
+        "access_hash": 4994123140106066990,
+        "date": "2025-03-11T16:53:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58663,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Tribal Shield",
       "rarity": 8,
-      "document_id": 5724247908627251209
+      "document": {
+        "id": 5724247908627251209,
+        "access_hash": -7333567244640099630,
+        "date": "2024-12-26T12:01:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3299,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tomato",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 72,
+      "center_color": 15104318,
+      "edge_color": 13913663,
+      "pattern_color": 8391424,
+      "text_color": 16764093
     }
   ]
 }

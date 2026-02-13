@@ -1,26 +1,55 @@
 {
+  "id": 5990278483589202647,
+  "gift_id": 5825480571261813595,
   "slug": "EvilEye-62609",
   "title": "Evil Eye",
   "num": 62609,
   "availability_issued": 72951,
   "availability_total": 85204,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Tifanny Scott",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16422300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pale Palette",
       "rarity": 30,
-      "document_id": 5426883249433501889
+      "document": {
+        "id": 5426883249433501889,
+        "access_hash": 2557464834310942251,
+        "date": "2024-12-24T14:12:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12021,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Skull",
       "rarity": 24,
-      "document_id": 5422475891433304226
+      "document": {
+        "id": 5422475891433304226,
+        "access_hash": -5451927501664372592,
+        "date": "2024-12-22T22:45:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 864,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

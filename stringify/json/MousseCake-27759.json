@@ -1,26 +1,55 @@
 {
+  "id": 6003489729977254674,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-27759",
   "title": "Mousse Cake",
   "num": 27759,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sweet Music",
       "rarity": 30,
-      "document_id": 5334863411907952552
+      "document": {
+        "id": 5334863411907952552,
+        "access_hash": -2026444910714600984,
+        "date": "2025-09-09T18:37:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19547,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bottle",
       "rarity": 6,
-      "document_id": 5424763360950380146
+      "document": {
+        "id": 5424763360950380146,
+        "access_hash": 3568015249384937889,
+        "date": "2024-12-23T14:50:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 858,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

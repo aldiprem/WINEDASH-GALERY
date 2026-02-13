@@ -1,26 +1,55 @@
 {
+  "id": 6003769272218682005,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-27130",
   "title": "Whip Cupcake",
   "num": 27130,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 27791600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Jolly Roger",
       "rarity": 25,
-      "document_id": 5282738623651805135
+      "document": {
+        "id": 5282738623651805135,
+        "access_hash": 9138293789190295795,
+        "date": "2025-05-18T11:40:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39331,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Guitar",
       "rarity": 6,
-      "document_id": 5434150660515850858
+      "document": {
+        "id": 5434150660515850858,
+        "access_hash": 8254680381337390343,
+        "date": "2024-12-26T14:49:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1024,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

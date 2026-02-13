@@ -1,26 +1,55 @@
 {
+  "id": 6003386577747707013,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-89145",
   "title": "Ice Cream",
   "num": 89145,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pigeon",
       "rarity": 20,
-      "document_id": 5370557295967112258
+      "document": {
+        "id": 5370557295967112258,
+        "access_hash": 388775311559213117,
+        "date": "2025-09-22T10:12:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19349,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Serpent",
       "rarity": 7,
-      "document_id": 5548505448967045134
+      "document": {
+        "id": 5548505448967045134,
+        "access_hash": -4509596117832460291,
+        "date": "2025-02-03T08:41:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1143,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Celtic Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 74,
+      "center_color": 4569325,
+      "edge_color": 3704537,
+      "pattern_color": 16005,
+      "text_color": 12773375
     }
   ]
 }

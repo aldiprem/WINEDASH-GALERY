@@ -1,26 +1,55 @@
 {
+  "id": 5886394374434063109,
+  "gift_id": 5933937398953018107,
   "slug": "IonicDryer-14557",
   "title": "Ionic Dryer",
   "num": 14557,
   "availability_issued": 19701,
   "availability_total": 25719,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 56223300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Savannah",
       "rarity": 30,
-      "document_id": 5215270537177104305
+      "document": {
+        "id": 5215270537177104305,
+        "access_hash": 5868143993461284118,
+        "date": "2025-08-01T15:38:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38201,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fleur-de-lis",
       "rarity": 4,
-      "document_id": 5422858688983491539
+      "document": {
+        "id": 5422858688983491539,
+        "access_hash": 531389820258627727,
+        "date": "2024-12-22T14:11:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 760,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 12,
+      "center_color": 7325587,
+      "edge_color": 3906692,
+      "pattern_color": 24905,
+      "text_color": 13041648
     }
   ]
 }

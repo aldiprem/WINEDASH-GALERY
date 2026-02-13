@@ -1,26 +1,55 @@
 {
+  "id": 5870614690358362681,
+  "gift_id": 5868503709637411929,
   "slug": "DiamondRing-9381",
   "title": "Diamond Ring",
   "num": 9381,
   "availability_issued": 32240,
   "availability_total": 32924,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 58716100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Princess Cut",
       "rarity": 15,
-      "document_id": 5271952607856848942
+      "document": {
+        "id": 5271952607856848942,
+        "access_hash": 2832829720670404938,
+        "date": "2025-02-06T17:20:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29584,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Calm Wolf",
       "rarity": 5,
-      "document_id": 5433775744230644578
+      "document": {
+        "id": 5433775744230644578,
+        "access_hash": -5202990588888731811,
+        "date": "2024-12-26T12:20:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 761,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

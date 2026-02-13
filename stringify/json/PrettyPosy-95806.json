@@ -1,26 +1,55 @@
 {
+  "id": 5895336449099695357,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-95806",
   "title": "Pretty Posy",
   "num": 95806,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Lol",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16371800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rock Band",
       "rarity": 30,
-      "document_id": 5204066324711509485
+      "document": {
+        "id": 5204066324711509485,
+        "access_hash": 6044768922059369715,
+        "date": "2025-11-02T13:07:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42193,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bone",
       "rarity": 7,
-      "document_id": 5433924809660588407
+      "document": {
+        "id": 5433924809660588407,
+        "access_hash": 9141012073955398017,
+        "date": "2024-12-26T11:35:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 570,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

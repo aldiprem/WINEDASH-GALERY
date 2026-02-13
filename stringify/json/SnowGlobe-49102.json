@@ -1,26 +1,55 @@
 {
+  "id": 5848027345679550008,
+  "gift_id": 5981132629905245483,
   "slug": "SnowGlobe-49102",
   "title": "Snow Globe",
   "num": 49102,
   "availability_issued": 52013,
   "availability_total": 72788,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16708700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Diamond",
       "rarity": 30,
-      "document_id": 5334597596381996733
+      "document": {
+        "id": 5334597596381996733,
+        "access_hash": 1928032297031486082,
+        "date": "2025-02-28T09:41:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33614,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Christmas Tree",
       "rarity": 18,
-      "document_id": 5438542608173383432
+      "document": {
+        "id": 5438542608173383432,
+        "access_hash": -5908990877537789111,
+        "date": "2023-12-05T16:28:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 809,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Cyan",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "pattern_color": 156813,
+      "text_color": 11988991
     }
   ]
 }

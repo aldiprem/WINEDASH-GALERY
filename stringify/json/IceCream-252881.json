@@ -1,26 +1,55 @@
 {
+  "id": 6005875966562272132,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-252881",
   "title": "Ice Cream",
   "num": 252881,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Trio Scoop",
       "rarity": 30,
-      "document_id": 5359771786978295848
+      "document": {
+        "id": 5359771786978295848,
+        "access_hash": -7880120839655633211,
+        "date": "2025-09-18T13:41:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 9288,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sharp Sword",
       "rarity": 7,
-      "document_id": 5436148004992084472
+      "document": {
+        "id": 5436148004992084472,
+        "access_hash": 3632405287299975239,
+        "date": "2024-12-26T15:09:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 706,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Gunship Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 62,
+      "center_color": 5605989,
+      "edge_color": 4023895,
+      "pattern_color": 468509,
+      "text_color": 11919572
     }
   ]
 }

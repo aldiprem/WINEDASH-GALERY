@@ -1,26 +1,55 @@
 {
+  "id": 5902057067895587393,
+  "gift_id": 5915550639663874519,
   "slug": "LoveCandle-10531",
   "title": "Love Candle",
   "num": 10531,
-  "availability_issued": 23181,
+  "availability_issued": 23183,
   "availability_total": 30296,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQAzNJNMfoP-AtRRyRLru4lU_HPCHy53uu25zmQdLD1AojmD",
+  "value_amount": 29526500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mykonos",
       "rarity": 30,
-      "document_id": 5395821629337002586
+      "document": {
+        "id": 5395821629337002586,
+        "access_hash": -6785054478291819778,
+        "date": "2024-12-13T16:34:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16239,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gear",
       "rarity": 5,
-      "document_id": 5440500005158804832
+      "document": {
+        "id": 5440500005158804832,
+        "access_hash": -5586556353866385864,
+        "date": "2024-12-28T11:33:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 943,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Black",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "pattern_color": 7104616,
+      "text_color": 9211793
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

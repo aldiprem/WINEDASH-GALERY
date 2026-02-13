@@ -1,26 +1,55 @@
 {
+  "id": 5796485929946318341,
+  "gift_id": 6023679164349940429,
   "slug": "SnakeBox-169967",
   "title": "Snake Box",
   "num": 169967,
-  "availability_issued": 170178,
+  "availability_issued": 170190,
   "availability_total": 273898,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9583900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cotton Candy",
       "rarity": 30,
-      "document_id": 5368811207077688205
+      "document": {
+        "id": 5368811207077688205,
+        "access_hash": -4909861451504846456,
+        "date": "2025-03-11T16:54:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58241,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hot Drink",
       "rarity": 6,
-      "document_id": 5195425164044559335
+      "document": {
+        "id": 5195425164044559335,
+        "access_hash": -129633623509338937,
+        "date": "2024-10-07T13:23:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1807,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Marine Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 60,
+      "center_color": 5138588,
+      "edge_color": 3885946,
+      "pattern_color": 67617,
+      "text_color": 12307442
     }
   ]
 }

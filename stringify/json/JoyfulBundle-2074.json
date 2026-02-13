@@ -1,26 +1,55 @@
 {
+  "id": 5999189643080238638,
+  "gift_id": 5870862540036113469,
   "slug": "JoyfulBundle-2074",
   "title": "Joyful Bundle",
   "num": 2074,
   "availability_issued": 78211,
   "availability_total": 114092,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17365500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sad Clown",
       "rarity": 15,
-      "document_id": 5341596726627170559
+      "document": {
+        "id": 5341596726627170559,
+        "access_hash": -7607485754364291454,
+        "date": "2025-06-07T17:52:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65112,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Baseball Cap",
       "rarity": 7,
-      "document_id": 5316818244252755144
+      "document": {
+        "id": 5316818244252755144,
+        "access_hash": 182470353465699327,
+        "date": "2025-02-21T12:35:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 724,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

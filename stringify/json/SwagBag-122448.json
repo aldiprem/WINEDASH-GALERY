@@ -1,26 +1,55 @@
 {
+  "id": 6017161431219175802,
+  "gift_id": 6012607142387778152,
   "slug": "SwagBag-122448",
   "title": "Swag Bag",
   "num": 122448,
   "availability_issued": 231062,
   "availability_total": 237970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Bogdanov",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16658100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Choco Kush",
       "rarity": 30,
-      "document_id": 5433936646590464796
+      "document": {
+        "id": 5433936646590464796,
+        "access_hash": 5391131674731417336,
+        "date": "2025-07-08T17:50:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 63294,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hersir",
       "rarity": 5,
-      "document_id": 5544492923015397402
+      "document": {
+        "id": 5544492923015397402,
+        "access_hash": -5496719255590069536,
+        "date": "2025-02-01T20:50:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3501,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

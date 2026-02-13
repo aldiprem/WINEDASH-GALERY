@@ -1,26 +1,55 @@
 {
+  "id": 5848320773550244757,
+  "gift_id": 6028426950047957932,
   "slug": "LunarSnake-178384",
   "title": "Lunar Snake",
   "num": 178384,
-  "availability_issued": 189500,
+  "availability_issued": 189503,
   "availability_total": 259346,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9196500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Poisonous",
       "rarity": 8,
-      "document_id": 5217979871266891345
+      "document": {
+        "id": 5217979871266891345,
+        "access_hash": -8175318055053712375,
+        "date": "2025-01-19T17:26:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54778,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candle",
       "rarity": 15,
-      "document_id": 5440862947075185091
+      "document": {
+        "id": 5440862947075185091,
+        "access_hash": 6542726026572555817,
+        "date": "2024-12-28T11:47:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 875,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

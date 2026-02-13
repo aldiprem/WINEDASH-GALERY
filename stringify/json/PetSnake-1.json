@@ -1,26 +1,55 @@
 {
+  "id": 5846180548396974813,
+  "gift_id": 6023917088358269866,
   "slug": "PetSnake-1",
   "title": "Pet Snake",
   "num": 1,
-  "availability_issued": 174528,
+  "availability_issued": 174535,
   "availability_total": 279106,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBFjyn5Z5Npb6jXiHPUi0bGaSwM2jfxEjhHOu_ObtUayHG3",
+  "value_amount": 632267500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rainy Day",
       "rarity": 5,
-      "document_id": 5393099131172448328
+      "document": {
+        "id": 5393099131172448328,
+        "access_hash": -1634447834815258777,
+        "date": "2025-03-19T16:58:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36195,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Apple",
       "rarity": 8,
-      "document_id": 5434047181868785167
+      "document": {
+        "id": 5434047181868785167,
+        "access_hash": -6322817599829622862,
+        "date": "2024-12-26T14:49:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 808,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carrot Juice",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 24,
+      "center_color": 14391399,
+      "edge_color": 13070159,
+      "pattern_color": 9314560,
+      "text_color": 16766922
     }
   ]
 }

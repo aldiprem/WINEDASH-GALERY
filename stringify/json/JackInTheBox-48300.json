@@ -1,26 +1,55 @@
 {
+  "id": 6007852016590651992,
+  "gift_id": 6005659564635063386,
   "slug": "JackInTheBox-48300",
   "title": "Jack-in-the-Box",
   "num": 48300,
   "availability_issued": 96093,
   "availability_total": 97345,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Music Box",
       "rarity": 30,
-      "document_id": 5422754072170097072
+      "document": {
+        "id": 5422754072170097072,
+        "access_hash": -455168819584063178,
+        "date": "2025-03-29T12:23:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65517,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shuriken",
       "rarity": 2,
-      "document_id": 5582258274096381967
+      "document": {
+        "id": 5582258274096381967,
+        "access_hash": 2437744370001501808,
+        "date": "2025-02-14T18:57:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 892,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

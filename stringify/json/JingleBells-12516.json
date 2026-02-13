@@ -1,26 +1,55 @@
 {
+  "id": 5830391986623874077,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-12516",
   "title": "Jingle Bells",
   "num": 12516,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75884,
+  "availability_total": 114946,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "quark",
+  "owner_address": null,
+  "gift_address": "EQA0bWEpcQJVLD4l1mjlw5abeWcOx5Gx4ZI0P2r4XJWGw-s0",
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Gingerbread",
       "rarity": 7,
-      "document_id": 5231398744963964511
+      "document": {
+        "id": 5231398744963964511,
+        "access_hash": -5738171530630584727,
+        "date": "2025-01-23T16:32:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 21527,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ice Pop",
       "rarity": 24,
-      "document_id": 5434148663356054664
+      "document": {
+        "id": 5434148663356054664,
+        "access_hash": -3894290261695072024,
+        "date": "2024-12-26T14:49:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 915,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 19
+      "rarity": 19,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

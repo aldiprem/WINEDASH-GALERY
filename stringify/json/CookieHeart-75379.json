@@ -1,26 +1,55 @@
 {
+  "id": 5936176107706385118,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-75379",
   "title": "Cookie Heart",
   "num": 75379,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "лиза",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kawaii Bunny",
       "rarity": 10,
-      "document_id": 5235662505027592597
+      "document": {
+        "id": 5235662505027592597,
+        "access_hash": -6126545117495271828,
+        "date": "2025-01-26T01:19:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19224,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Strawberry",
       "rarity": 4,
-      "document_id": 5424718461362267817
+      "document": {
+        "id": 5424718461362267817,
+        "access_hash": 6881713321690835807,
+        "date": "2024-12-22T22:46:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 991,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

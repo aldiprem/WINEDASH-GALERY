@@ -1,26 +1,55 @@
 {
+  "id": 5785281953703920648,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-2547",
   "title": "Pretty Posy",
   "num": 2547,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17668700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Rock Band",
       "rarity": 30,
-      "document_id": 5204066324711509485
+      "document": {
+        "id": 5204066324711509485,
+        "access_hash": 6044768922059369715,
+        "date": "2025-11-02T13:07:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42193,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower Tulip",
       "rarity": 4,
-      "document_id": 5433949381168489107
+      "document": {
+        "id": 5433949381168489107,
+        "access_hash": 4499374774014947072,
+        "date": "2024-12-26T14:47:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 877,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

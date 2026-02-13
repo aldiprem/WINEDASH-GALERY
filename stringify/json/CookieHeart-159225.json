@@ -1,26 +1,55 @@
 {
+  "id": 5963153381408114427,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-159225",
   "title": "Cookie Heart",
   "num": 159225,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "mswwaba.٭",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Apple",
       "rarity": 10,
-      "document_id": 5231342931863952020
+      "document": {
+        "id": 5231342931863952020,
+        "access_hash": -218480158143504597,
+        "date": "2025-01-24T01:01:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28681,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mittens",
       "rarity": 12,
-      "document_id": 5195148147243899647
+      "document": {
+        "id": 5195148147243899647,
+        "access_hash": 6571680456281178334,
+        "date": "2024-10-07T13:21:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1427,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Malachite",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 15,
+      "center_color": 9811031,
+      "edge_color": 4036437,
+      "pattern_color": 289542,
+      "text_color": 12775358
     }
   ]
 }

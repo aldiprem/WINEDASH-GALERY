@@ -1,26 +1,55 @@
 {
+  "id": 6003503254829269885,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-23942",
   "title": "Ice Cream",
   "num": 23942,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Choco Almond",
       "rarity": 30,
-      "document_id": 5242420713377266630
+      "document": {
+        "id": 5242420713377266630,
+        "access_hash": 6086940845259462423,
+        "date": "2025-08-09T15:46:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31750,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Tetsubin",
       "rarity": 4,
-      "document_id": 5582286784089292815
+      "document": {
+        "id": 5582286784089292815,
+        "access_hash": -8479490201613667594,
+        "date": "2025-02-14T18:55:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1189,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tactical Pine",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 61,
+      "center_color": 4489835,
+      "edge_color": 3105641,
+      "pattern_color": 9764,
+      "text_color": 12052179
     }
   ]
 }

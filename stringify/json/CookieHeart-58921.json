@@ -1,26 +1,55 @@
 {
+  "id": 5875245141844820646,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-58921",
   "title": "Cookie Heart",
   "num": 58921,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Strawberry",
       "rarity": 10,
-      "document_id": 5222034371933920311
+      "document": {
+        "id": 5222034371933920311,
+        "access_hash": -3794993231310208525,
+        "date": "2025-01-21T06:27:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22683,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bone",
       "rarity": 2,
-      "document_id": 5433924809660588407
+      "document": {
+        "id": 5433924809660588407,
+        "access_hash": 9141012073955398017,
+        "date": "2024-12-26T11:35:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 570,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 12,
+      "center_color": 7325587,
+      "edge_color": 3906692,
+      "pattern_color": 24905,
+      "text_color": 13041648
     }
   ]
 }

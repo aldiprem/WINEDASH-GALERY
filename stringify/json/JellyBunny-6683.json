@@ -1,26 +1,55 @@
 {
+  "id": 6032816750221853831,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-6683",
   "title": "Jelly Bunny",
   "num": 6683,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kawaii",
       "rarity": 15,
-      "document_id": 5429600606522206517
+      "document": {
+        "id": 5429600606522206517,
+        "access_hash": -5709658203059107979,
+        "date": "2024-12-24T18:35:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53268,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Baphomet",
       "rarity": 4,
-      "document_id": 5721951724621529107
+      "document": {
+        "id": 5721951724621529107,
+        "access_hash": 7393064793393957636,
+        "date": "2024-12-26T12:01:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1929,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

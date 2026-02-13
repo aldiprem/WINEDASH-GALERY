@@ -1,26 +1,55 @@
 {
+  "id": 6003684833161642863,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-12018",
   "title": "Spring Basket",
   "num": 12018,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Nocturne",
       "rarity": 25,
-      "document_id": 5395693944254269001
+      "document": {
+        "id": 5395693944254269001,
+        "access_hash": 4297438881730508055,
+        "date": "2025-09-30T17:40:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65394,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spanner",
       "rarity": 4,
-      "document_id": 5433627000923252069
+      "document": {
+        "id": 5433627000923252069,
+        "access_hash": -6404392970154867009,
+        "date": "2024-12-26T14:00:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 658,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Azure Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "pattern_color": 151668,
+      "text_color": 11922687
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5980813054273651738,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-160955",
   "title": "Cookie Heart",
   "num": 160955,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Toasted",
       "rarity": 10,
-      "document_id": 5222357838805883984
+      "document": {
+        "id": 5222357838805883984,
+        "access_hash": -8463352033524970290,
+        "date": "2025-01-21T06:27:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29668,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pegasus",
       "rarity": 6,
-      "document_id": 5724544802536554508
+      "document": {
+        "id": 5724544802536554508,
+        "access_hash": 8992939111738235277,
+        "date": "2024-12-26T12:03:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2778,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Dark Lilac",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 31,
+      "center_color": 11632037,
+      "edge_color": 9197434,
+      "pattern_color": 6629458,
+      "text_color": 15779042
     }
   ]
 }

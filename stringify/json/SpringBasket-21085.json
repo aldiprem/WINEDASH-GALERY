@@ -1,26 +1,55 @@
 {
+  "id": 6003820652912444980,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-21085",
   "title": "Spring Basket",
   "num": 21085,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Trash Bandit",
       "rarity": 30,
-      "document_id": 5382061322919770761
+      "document": {
+        "id": 5382061322919770761,
+        "access_hash": -1927334700071709563,
+        "date": "2025-09-26T15:14:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37472,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cupcake",
       "rarity": 5,
-      "document_id": 5436346024459266141
+      "document": {
+        "id": 5436346024459266141,
+        "access_hash": -4330855651740504955,
+        "date": "2024-12-26T14:48:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1205,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

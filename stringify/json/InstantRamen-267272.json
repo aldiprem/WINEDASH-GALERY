@@ -1,26 +1,55 @@
 {
+  "id": 6012440308678132757,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-267272",
   "title": "Instant Ramen",
   "num": 267272,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "First Date",
       "rarity": 30,
-      "document_id": 5271630549734162505
+      "document": {
+        "id": 5271630549734162505,
+        "access_hash": -5529781771278467251,
+        "date": "2025-08-20T09:36:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27355,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Kite",
       "rarity": 5,
-      "document_id": 5440869715943644373
+      "document": {
+        "id": 5440869715943644373,
+        "access_hash": 8704595591767719779,
+        "date": "2024-12-28T11:32:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1682,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Dark Lilac",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 31,
+      "center_color": 11632037,
+      "edge_color": 9197434,
+      "pattern_color": 6629458,
+      "text_color": 15779042
     }
   ]
 }

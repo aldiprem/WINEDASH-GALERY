@@ -1,26 +1,55 @@
 {
+  "id": 6030784887093461670,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-6",
   "title": "Plush Pepe",
   "num": 6,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "hetongsvip.ton",
+  "gift_address": "EQDPpmP0s5Ymq_nB_DxqNOqb14BALdJOJBb_2XM3IS1EyVtR",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pepemint",
       "rarity": 30,
-      "document_id": 5424923975547377257
+      "document": {
+        "id": 5424923975547377257,
+        "access_hash": 4489786530411105991,
+        "date": "2024-12-22T22:31:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15992,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "High Heels",
       "rarity": 5,
-      "document_id": 5436140342770428908
+      "document": {
+        "id": 5436140342770428908,
+        "access_hash": 2676710812525489672,
+        "date": "2024-12-26T15:10:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 891,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pine Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 34,
+      "center_color": 7055740,
+      "edge_color": 4094320,
+      "pattern_color": 739379,
+      "text_color": 14218725
     }
   ]
 }

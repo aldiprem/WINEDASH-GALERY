@@ -1,26 +1,55 @@
 {
+  "id": 6005699907262874189,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-49402",
   "title": "Happy Brownie",
   "num": 49402,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ice Cream",
       "rarity": 30,
-      "document_id": 5366385065951526887
+      "document": {
+        "id": 5366385065951526887,
+        "access_hash": -1275560313963312705,
+        "date": "2025-09-20T16:11:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25323,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lion of Babylon",
       "rarity": 5,
-      "document_id": 5544456677786386440
+      "document": {
+        "id": 5544456677786386440,
+        "access_hash": -8558057691141222937,
+        "date": "2025-02-01T17:42:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3633,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

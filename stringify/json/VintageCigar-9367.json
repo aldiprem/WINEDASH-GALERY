@@ -1,26 +1,55 @@
 {
+  "id": 6050638695541768564,
+  "gift_id": 5857140566201991735,
   "slug": "VintageCigar-9367",
   "title": "Vintage Cigar",
   "num": 9367,
   "availability_issued": 26277,
   "availability_total": 31024,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQAsTfh0GR74yIalOia8e2WnpJg2Wx-hvKF2lwGkb5J9P3Ph",
+  "value_amount": 131361700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Centurion",
       "rarity": 10,
-      "document_id": 5429649393055720320
+      "document": {
+        "id": 5429649393055720320,
+        "access_hash": -2187281522807588353,
+        "date": "2024-12-24T12:41:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 18470,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wolf Rage",
       "rarity": 10,
-      "document_id": 5433796201159876253
+      "document": {
+        "id": 5433796201159876253,
+        "access_hash": 3237982239509661315,
+        "date": "2024-12-26T12:19:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 997,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

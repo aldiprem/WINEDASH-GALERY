@@ -1,26 +1,55 @@
 {
+  "id": 6044350468283434262,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-77083",
   "title": "Restless Jar",
   "num": 77083,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQAsLA9Jm-Xm-mjXM7YsPp8U5oqr1jfrkawwoW_DEqxRB5KB",
+  "value_amount": 16321300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tiny Tulips",
       "rarity": 15,
-      "document_id": 5434031024201819884
+      "document": {
+        "id": 5434031024201819884,
+        "access_hash": -6392984911846063071,
+        "date": "2025-04-01T22:11:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20113,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pear",
       "rarity": 5,
-      "document_id": 5433660003451955542
+      "document": {
+        "id": 5433660003451955542,
+        "access_hash": 363840044551539305,
+        "date": "2024-12-26T14:47:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 790,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

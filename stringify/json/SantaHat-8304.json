@@ -1,26 +1,55 @@
 {
+  "id": 6035174120331674520,
+  "gift_id": 5983471780763796287,
   "slug": "SantaHat-8304",
   "title": "Santa Hat",
   "num": 8304,
   "availability_issued": 68215,
   "availability_total": 89034,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Anton",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13929500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Minted Rose",
       "rarity": 20,
-      "document_id": 5397877956599112689
+      "document": {
+        "id": 5397877956599112689,
+        "access_hash": 5909476622204610911,
+        "date": "2024-12-14T14:21:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64476,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Book",
       "rarity": 2,
-      "document_id": 5440416579714047896
+      "document": {
+        "id": 5440416579714047896,
+        "access_hash": 5688313608616325321,
+        "date": "2024-12-28T11:47:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1292,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5800813749447164765,
+  "gift_id": 5963238670868677492,
   "slug": "MoneyPot-50224",
   "title": "Money Pot",
   "num": 50224,
-  "availability_issued": 69424,
+  "availability_issued": 69429,
   "availability_total": 91779,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "bumpkin",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14620100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Elizabeth II",
       "rarity": 20,
-      "document_id": 5194941391813249513
+      "document": {
+        "id": 5194941391813249513,
+        "access_hash": 6957224944972104623,
+        "date": "2025-10-30T10:59:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31813,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Coat of Arms",
       "rarity": 2,
-      "document_id": 5433846813054494068
+      "document": {
+        "id": 5433846813054494068,
+        "access_hash": -4237594008193001737,
+        "date": "2024-12-26T12:26:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1109,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

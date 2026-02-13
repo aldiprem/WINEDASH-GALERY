@@ -1,26 +1,55 @@
 {
+  "id": 5900156029471032764,
+  "gift_id": 5870947077877400011,
   "slug": "SkyStilettos-3694",
   "title": "Sky Stilettos",
   "num": 3694,
   "availability_issued": 50257,
   "availability_total": 58460,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 40862100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Forget-Me-Not",
       "rarity": 25,
-      "document_id": 5231113348682119854
+      "document": {
+        "id": 5231113348682119854,
+        "access_hash": -5378357262147190090,
+        "date": "2025-08-06T06:50:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 47843,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Brain",
       "rarity": 7,
-      "document_id": 5434154624770664862
+      "document": {
+        "id": 5434154624770664862,
+        "access_hash": 3781432387677446700,
+        "date": "2024-12-26T11:36:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1620,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     }
   ]
 }

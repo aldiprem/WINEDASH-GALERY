@@ -1,26 +1,55 @@
 {
+  "id": 6005678814678483801,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-10887",
   "title": "Mousse Cake",
   "num": 10887,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bubble Jar",
       "rarity": 30,
-      "document_id": 5332731330012677772
+      "document": {
+        "id": 5332731330012677772,
+        "access_hash": 4140408836259970500,
+        "date": "2025-09-09T18:37:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25968,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Balloon",
       "rarity": 2,
-      "document_id": 5285168071902783709
+      "document": {
+        "id": 5285168071902783709,
+        "access_hash": 6655879271091780567,
+        "date": "2025-02-11T18:11:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 922,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

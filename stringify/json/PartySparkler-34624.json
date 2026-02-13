@@ -1,26 +1,55 @@
 {
+  "id": 5825746975198282171,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-34624",
   "title": "Party Sparkler",
   "num": 34624,
-  "availability_issued": 176753,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQAR68cr_QPSc-yH7USV6k5nFVl354BI1v3OhZRYftKd3Sjm",
+  "value_amount": 13895800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hellfire",
       "rarity": 13,
-      "document_id": 5229050256846514487
+      "document": {
+        "id": 5229050256846514487,
+        "access_hash": 7574529168650931445,
+        "date": "2025-01-23T11:23:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32207,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dessert",
       "rarity": 18,
-      "document_id": 5433791150278337082
+      "document": {
+        "id": 5433791150278337082,
+        "access_hash": 3090493827616352506,
+        "date": "2024-12-26T14:49:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 933,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

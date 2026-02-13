@@ -1,26 +1,55 @@
 {
+  "id": 5924785867322294850,
+  "gift_id": 5871002671934079382,
   "slug": "LushBouquet-12101",
   "title": "Lush Bouquet",
   "num": 12101,
-  "availability_issued": 104643,
+  "availability_issued": 104646,
   "availability_total": 140116,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20363700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Yarn Balls",
       "rarity": 30,
-      "document_id": 5249344149118806579
+      "document": {
+        "id": 5249344149118806579,
+        "access_hash": 4747048943073800709,
+        "date": "2025-05-07T10:12:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 13351,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Top Hat",
       "rarity": 4,
-      "document_id": 5424997398013306322
+      "document": {
+        "id": 5424997398013306322,
+        "access_hash": 6230486958597176614,
+        "date": "2024-12-23T04:52:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 669,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Onyx Black",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 49,
+      "center_color": 5067348,
+      "edge_color": 3225144,
+      "pattern_color": 0,
+      "text_color": 11119533
     }
   ]
 }

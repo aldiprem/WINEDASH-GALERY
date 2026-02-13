@@ -1,26 +1,55 @@
 {
+  "id": 5825644179451020046,
+  "gift_id": 5998981470310368313,
   "slug": "MoonPendant-19660",
   "title": "Moon Pendant",
   "num": 19660,
-  "availability_issued": 101720,
+  "availability_issued": 101721,
   "availability_total": 111080,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16034900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Twilight Wish",
       "rarity": 15,
-      "document_id": 5307632778085429481
+      "document": {
+        "id": 5307632778085429481,
+        "access_hash": -2308553872982449051,
+        "date": "2025-05-27T07:11:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42131,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Key",
       "rarity": 5,
-      "document_id": 5440480222539438655
+      "document": {
+        "id": 5440480222539438655,
+        "access_hash": 5041610550964409221,
+        "date": "2024-12-28T09:51:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 947,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

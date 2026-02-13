@@ -1,26 +1,55 @@
 {
+  "id": 5886270580591690316,
+  "gift_id": 5870972044522291836,
   "slug": "InputKey-51627",
   "title": "Input Key",
   "num": 51627,
-  "availability_issued": 128102,
+  "availability_issued": 128104,
   "availability_total": 159750,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18830900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Major",
       "rarity": 10,
-      "document_id": 5292039431165871574
+      "document": {
+        "id": 5292039431165871574,
+        "access_hash": 690952188408948982,
+        "date": "2025-08-26T15:50:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12980,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wagasa",
       "rarity": 5,
-      "document_id": 5584553246921326607
+      "document": {
+        "id": 5584553246921326607,
+        "access_hash": 1403057307087510960,
+        "date": "2025-02-14T18:56:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1235,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

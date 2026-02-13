@@ -1,26 +1,55 @@
 {
+  "id": 5967473701896061670,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-160537",
   "title": "Xmas Stocking",
   "num": 160537,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10089200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lavender",
       "rarity": 22,
-      "document_id": 5301182179588463495
+      "document": {
+        "id": 5301182179588463495,
+        "access_hash": 3185295632230174673,
+        "date": "2025-02-16T03:42:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40731,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hot Drink",
       "rarity": 8,
-      "document_id": 5195425164044559335
+      "document": {
+        "id": 5195425164044559335,
+        "access_hash": -129633623509338937,
+        "date": "2024-10-07T13:23:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1807,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

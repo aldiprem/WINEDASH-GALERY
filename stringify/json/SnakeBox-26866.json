@@ -1,26 +1,55 @@
 {
+  "id": 5850524761787990552,
+  "gift_id": 6023679164349940429,
   "slug": "SnakeBox-26866",
   "title": "Snake Box",
   "num": 26866,
-  "availability_issued": 170178,
+  "availability_issued": 170189,
   "availability_total": 273898,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "INACTIVE.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9583900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Seashore",
       "rarity": 30,
-      "document_id": 5368708102092777154
+      "document": {
+        "id": 5368708102092777154,
+        "access_hash": -3463660503559126805,
+        "date": "2025-03-11T16:54:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 58223,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jellyfish",
       "rarity": 10,
-      "document_id": 5433978836054203452
+      "document": {
+        "id": 5433978836054203452,
+        "access_hash": 1644586464103594031,
+        "date": "2024-12-26T14:46:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1184,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

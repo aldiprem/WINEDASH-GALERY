@@ -1,26 +1,55 @@
 {
+  "id": 6015012328368505760,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-277031",
   "title": "Instant Ramen",
   "num": 277031,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sunny Loops",
       "rarity": 30,
-      "document_id": 5388583857823976270
+      "document": {
+        "id": 5388583857823976270,
+        "access_hash": -8992200971267575844,
+        "date": "2025-09-28T09:00:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14343,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Money Bag",
       "rarity": 4,
-      "document_id": 5440780019846634454
+      "document": {
+        "id": 5440780019846634454,
+        "access_hash": 4720416833523249495,
+        "date": "2024-12-28T09:52:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1080,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Midnight Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "pattern_color": 199192,
+      "text_color": 12569824
     }
   ]
 }

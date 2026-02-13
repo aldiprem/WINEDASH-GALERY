@@ -1,26 +1,55 @@
 {
+  "id": 5825705593188385795,
+  "gift_id": 5980789805615678057,
   "slug": "SnowMittens-1",
   "title": "Snow Mittens",
   "num": 1,
-  "availability_issued": 38414,
+  "availability_issued": 38416,
   "availability_total": 49969,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Ferrari Apple",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 634154000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pistachio",
       "rarity": 13,
-      "document_id": 5228909059796656712
+      "document": {
+        "id": 5228909059796656712,
+        "access_hash": 6189970992760401919,
+        "date": "2025-01-23T03:01:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36854,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Champagne",
       "rarity": 16,
-      "document_id": 5440709011152333768
+      "document": {
+        "id": 5440709011152333768,
+        "access_hash": 6692263612909697897,
+        "date": "2024-12-28T11:35:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1643,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

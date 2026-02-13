@@ -1,26 +1,55 @@
 {
+  "id": 6003702824779646242,
+  "gift_id": 6003456431095808759,
   "slug": "FaithAmulet-57454",
   "title": "Faith Amulet",
   "num": 57454,
-  "availability_issued": 135385,
+  "availability_issued": 135390,
   "availability_total": 172784,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "jael",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14131600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Azure Glow",
       "rarity": 25,
-      "document_id": 5332740516947721595
+      "document": {
+        "id": 5332740516947721595,
+        "access_hash": -1956383038637475357,
+        "date": "2025-09-09T15:02:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 41764,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Royal Crown",
       "rarity": 7,
-      "document_id": 5440361101621484148
+      "document": {
+        "id": 5440361101621484148,
+        "access_hash": 1355356403519299063,
+        "date": "2024-12-28T11:10:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 916,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Grape",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 52,
+      "center_color": 10319041,
+      "edge_color": 7949728,
+      "pattern_color": 4065899,
+      "text_color": 14728702
     }
   ]
 }

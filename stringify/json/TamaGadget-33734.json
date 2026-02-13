@@ -1,26 +1,55 @@
 {
+  "id": 5940635314551784112,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-33734",
   "title": "Tama Gadget",
   "num": 33734,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lavender",
       "rarity": 20,
-      "document_id": 5256220524903687370
+      "document": {
+        "id": 5256220524903687370,
+        "access_hash": 679866458503331190,
+        "date": "2025-02-01T11:58:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14633,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Tooth",
       "rarity": 4,
-      "document_id": 5434094602602701296
+      "document": {
+        "id": 5434094602602701296,
+        "access_hash": -6244924132539846156,
+        "date": "2024-12-26T11:50:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 708,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

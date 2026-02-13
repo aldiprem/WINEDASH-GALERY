@@ -1,26 +1,55 @@
 {
+  "id": 5832554163354993285,
+  "gift_id": 5933590374185435592,
   "slug": "JesterHat-30782",
   "title": "Jester Hat",
   "num": 30782,
-  "availability_issued": 134548,
+  "availability_issued": 134551,
   "availability_total": 190222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": ";",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 22283800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sketchy",
       "rarity": 15,
-      "document_id": 5429279600666501838
+      "document": {
+        "id": 5429279600666501838,
+        "access_hash": -7225622812994068837,
+        "date": "2024-12-24T17:27:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27440,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cobra",
       "rarity": 3,
-      "document_id": 5436400690803009263
+      "document": {
+        "id": 5436400690803009263,
+        "access_hash": 1866644452512916947,
+        "date": "2024-12-26T12:20:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1138,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Amber",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 21,
+      "center_color": 14332741,
+      "edge_color": 11632682,
+      "pattern_color": 8007936,
+      "text_color": 16772551
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6035380308826653049,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-7604",
   "title": "Spiced Wine",
   "num": 7604,
-  "availability_issued": 101427,
+  "availability_issued": 101432,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 21424800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Blue Burn",
       "rarity": 8,
-      "document_id": 5429565022718160786
+      "document": {
+        "id": 5429565022718160786,
+        "access_hash": -3194215639492714366,
+        "date": "2024-12-24T21:07:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44817,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "White Deer",
       "rarity": 4,
-      "document_id": 5724531393648656402
+      "document": {
+        "id": 5724531393648656402,
+        "access_hash": -4687709595482871071,
+        "date": "2024-12-26T12:03:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2494,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Onyx Black",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 49,
+      "center_color": 5067348,
+      "edge_color": 3225144,
+      "pattern_color": 0,
+      "text_color": 11119533
     }
   ]
 }

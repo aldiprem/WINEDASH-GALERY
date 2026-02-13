@@ -1,26 +1,55 @@
 {
+  "id": 5906975552773817043,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-151498",
   "title": "Clover Pin",
   "num": 151498,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Star Princess",
       "rarity": 20,
-      "document_id": 5231386384048090692
+      "document": {
+        "id": 5231386384048090692,
+        "access_hash": -8813512108265491805,
+        "date": "2025-08-06T04:59:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60708,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bandana",
       "rarity": 4,
-      "document_id": 5312064969586538052
+      "document": {
+        "id": 5312064969586538052,
+        "access_hash": -1559216150220126575,
+        "date": "2025-02-20T17:28:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

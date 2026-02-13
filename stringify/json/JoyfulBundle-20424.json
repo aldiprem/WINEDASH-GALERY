@@ -1,26 +1,55 @@
 {
+  "id": 6003648407544005416,
+  "gift_id": 5870862540036113469,
   "slug": "JoyfulBundle-20424",
   "title": "Joyful Bundle",
   "num": 20424,
   "availability_issued": 78211,
   "availability_total": 114092,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17365500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Professor",
       "rarity": 10,
-      "document_id": 5344048298254694432
+      "document": {
+        "id": 5344048298254694432,
+        "access_hash": -1780683924710662262,
+        "date": "2025-06-08T04:56:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39797,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Planet",
       "rarity": 4,
-      "document_id": 5418023891543024129
+      "document": {
+        "id": 5418023891543024129,
+        "access_hash": 2423334232870565996,
+        "date": "2024-12-21T05:46:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 629,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Roman Silver",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 43,
+      "center_color": 10725557,
+      "edge_color": 8159370,
+      "pattern_color": 4146512,
+      "text_color": 14344162
     }
   ]
 }

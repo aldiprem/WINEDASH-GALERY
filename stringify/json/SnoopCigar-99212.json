@@ -1,26 +1,55 @@
 {
+  "id": 6019229707080303376,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-99212",
   "title": "Snoop Cigar",
   "num": 99212,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 58109700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "California",
       "rarity": 10,
-      "document_id": 5400329927658599481
+      "document": {
+        "id": 5400329927658599481,
+        "access_hash": -3535944751234326856,
+        "date": "2025-06-27T02:28:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31691,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pineapple",
       "rarity": 7,
-      "document_id": 5435956178867741187
+      "document": {
+        "id": 5435956178867741187,
+        "access_hash": 7379330733928825107,
+        "date": "2024-12-26T14:47:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1097,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5908896214903948363,
+  "gift_id": 5856973938650776169,
   "slug": "RecordPlayer-9301",
   "title": "Record Player",
   "num": 9301,
-  "availability_issued": 33096,
+  "availability_issued": 33097,
   "availability_total": 46888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 23109100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Chrome",
       "rarity": 20,
-      "document_id": 5294037565916077893
+      "document": {
+        "id": 5294037565916077893,
+        "access_hash": 4496456099568795678,
+        "date": "2025-02-14T10:40:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27775,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bonsai",
       "rarity": 4,
-      "document_id": 5582749674189619216
+      "document": {
+        "id": 5582749674189619216,
+        "access_hash": -4417232437636755554,
+        "date": "2025-02-14T18:56:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1233,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

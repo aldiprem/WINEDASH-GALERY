@@ -1,26 +1,55 @@
 {
+  "id": 5978748618113286912,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-91220",
   "title": "Tama Gadget",
   "num": 91220,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Shadow",
       "rarity": 20,
-      "document_id": 5327798611612822762
+      "document": {
+        "id": 5327798611612822762,
+        "access_hash": -8725695181048579713,
+        "date": "2025-02-25T18:33:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12760,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Doberman",
       "rarity": 2,
-      "document_id": 5721848477902700557
+      "document": {
+        "id": 5721848477902700557,
+        "access_hash": 8943721828425766300,
+        "date": "2024-12-26T12:03:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1847,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5834608755450315302,
+  "gift_id": 5841336413697606412,
   "slug": "CrystalBall-11732",
   "title": "Crystal Ball",
   "num": 11732,
   "availability_issued": 26682,
   "availability_total": 27732,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQCtObBQ1fvTgRDl2YRYciI1cqLBG7BVAO4s8G9vVje3o03K",
+  "value_amount": 27656900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Warlock",
       "rarity": 30,
-      "document_id": 5449444558020565509
+      "document": {
+        "id": 5449444558020565509,
+        "access_hash": -2913101646088571353,
+        "date": "2024-12-31T05:53:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31226,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Key",
       "rarity": 2,
-      "document_id": 5440480222539438655
+      "document": {
+        "id": 5440480222539438655,
+        "access_hash": 5041610550964409221,
+        "date": "2024-12-28T09:51:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 947,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

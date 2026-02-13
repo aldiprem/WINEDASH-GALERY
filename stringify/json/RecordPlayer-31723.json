@@ -1,26 +1,55 @@
 {
+  "id": 5850364701241770712,
+  "gift_id": 5856973938650776169,
   "slug": "RecordPlayer-31723",
   "title": "Record Player",
   "num": 31723,
-  "availability_issued": 33096,
+  "availability_issued": 33097,
   "availability_total": 46888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 23109100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Police Party",
       "rarity": 10,
-      "document_id": 5296287342800169796
+      "document": {
+        "id": 5296287342800169796,
+        "access_hash": 7328820606752744599,
+        "date": "2025-02-15T10:55:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25163,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Car",
       "rarity": 2,
-      "document_id": 5433714991918244490
+      "document": {
+        "id": 5433714991918244490,
+        "access_hash": -7344951217464844048,
+        "date": "2024-12-26T11:37:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1321,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Malachite",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 15,
+      "center_color": 9811031,
+      "edge_color": 4036437,
+      "pattern_color": 289542,
+      "text_color": 12775358
     }
   ]
 }

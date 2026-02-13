@@ -1,26 +1,55 @@
 {
+  "id": 5794008850508022481,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-64243",
   "title": "Jelly Bunny",
   "num": 64243,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Space Gel",
       "rarity": 15,
-      "document_id": 5429091498278807586
+      "document": {
+        "id": 5429091498278807586,
+        "access_hash": 2365945736442023299,
+        "date": "2024-12-24T18:33:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55067,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candy",
       "rarity": 5,
-      "document_id": 5422574937674115533
+      "document": {
+        "id": 5422574937674115533,
+        "access_hash": -6166631400688415177,
+        "date": "2024-12-22T22:45:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1150,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

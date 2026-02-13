@@ -1,26 +1,55 @@
 {
+  "id": 5886276481876755357,
+  "gift_id": 5825480571261813595,
   "slug": "EvilEye-68479",
   "title": "Evil Eye",
   "num": 68479,
   "availability_issued": 72951,
   "availability_total": 85204,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "D, luctea. RETURN @TECDDY TO @TKIND.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16422300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hypnosis",
       "rarity": 15,
-      "document_id": 5429321927569206157
+      "document": {
+        "id": 5429321927569206157,
+        "access_hash": -8544142626570694933,
+        "date": "2024-12-24T17:22:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12263,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cat Mask",
       "rarity": 2,
-      "document_id": 5433934065315110448
+      "document": {
+        "id": 5433934065315110448,
+        "access_hash": 2887814462971614248,
+        "date": "2024-12-26T11:37:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 754,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

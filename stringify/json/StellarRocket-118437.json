@@ -1,26 +1,55 @@
 {
+  "id": 5906488795540227888,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-118437",
   "title": "Stellar Rocket",
   "num": 118437,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fireworks",
       "rarity": 30,
-      "document_id": 5289714788706841965
+      "document": {
+        "id": 5289714788706841965,
+        "access_hash": -8443551011476459977,
+        "date": "2025-05-20T15:05:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25988,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Thief",
       "rarity": 5,
-      "document_id": 5425080690314078227
+      "document": {
+        "id": 5425080690314078227,
+        "access_hash": 5792358990514950663,
+        "date": "2024-12-22T22:46:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 814,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Feldgrau",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 68,
+      "center_color": 9015944,
+      "edge_color": 6187875,
+      "pattern_color": 1844767,
+      "text_color": 14608865
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

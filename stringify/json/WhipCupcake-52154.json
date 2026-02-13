@@ -1,26 +1,55 @@
 {
+  "id": 6001061093475091053,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-52154",
   "title": "Whip Cupcake",
   "num": 52154,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cloud Nine",
       "rarity": 30,
-      "document_id": 5327985558654317324
+      "document": {
+        "id": 5327985558654317324,
+        "access_hash": -5814762264190257718,
+        "date": "2025-06-03T08:44:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53869,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fluffy Wolf",
       "rarity": 4,
-      "document_id": 5316933229117194293
+      "document": {
+        "id": 5316933229117194293,
+        "access_hash": -5157379166865319278,
+        "date": "2023-10-25T17:16:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1286,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carmine",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 77,
+      "center_color": 14702410,
+      "edge_color": 11024443,
+      "pattern_color": 5177600,
+      "text_color": 16758701
     }
   ]
 }

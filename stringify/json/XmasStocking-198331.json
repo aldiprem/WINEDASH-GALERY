@@ -1,26 +1,55 @@
 {
+  "id": 5962806292216021954,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-198331",
   "title": "Xmas Stocking",
   "num": 198331,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "dastik",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Retro Disco",
       "rarity": 10,
-      "document_id": 5323758773964138364
+      "document": {
+        "id": 5323758773964138364,
+        "access_hash": 4969655565803124822,
+        "date": "2025-02-24T05:55:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53846,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shooting Star",
       "rarity": 12,
-      "document_id": 5434137758434093445
+      "document": {
+        "id": 5434137758434093445,
+        "access_hash": 5125665587446151556,
+        "date": "2024-12-26T14:45:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 945,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carmine",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 77,
+      "center_color": 14702410,
+      "edge_color": 11024443,
+      "pattern_color": 5177600,
+      "text_color": 16758701
     }
   ]
 }

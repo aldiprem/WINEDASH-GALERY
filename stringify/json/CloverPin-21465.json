@@ -1,26 +1,55 @@
 {
+  "id": 5900250531636446323,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-21465",
   "title": "Clover Pin",
   "num": 21465,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Balloon",
       "rarity": 20,
-      "document_id": 5231448231577154432
+      "document": {
+        "id": 5231448231577154432,
+        "access_hash": -1302629869850551370,
+        "date": "2025-08-06T04:39:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16065,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Carrot",
       "rarity": 2,
-      "document_id": 5436063346891712376
+      "document": {
+        "id": 5436063346891712376,
+        "access_hash": -374595159092860550,
+        "date": "2024-12-26T14:48:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 788,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

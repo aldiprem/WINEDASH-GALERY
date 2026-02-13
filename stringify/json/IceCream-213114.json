@@ -1,26 +1,55 @@
 {
+  "id": 6005788568272766101,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-213114",
   "title": "Ice Cream",
   "num": 213114,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Дневник Сони Мармеладовой",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fresh Berry",
       "rarity": 30,
-      "document_id": 5368312754648155974
+      "document": {
+        "id": 5368312754648155974,
+        "access_hash": 1835668940166695385,
+        "date": "2025-09-21T11:21:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23387,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shooting Star",
       "rarity": 7,
-      "document_id": 5434137758434093445
+      "document": {
+        "id": 5434137758434093445,
+        "access_hash": 5125665587446151556,
+        "date": "2024-12-26T14:45:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 945,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

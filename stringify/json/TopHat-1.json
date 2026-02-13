@@ -1,26 +1,55 @@
 {
+  "id": 5897688115492946430,
+  "gift_id": 5897593557492957738,
   "slug": "TopHat-1",
   "title": "Top Hat",
   "num": 1,
   "availability_issued": 34300,
   "availability_total": 35099,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Pavel Durov",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 656892600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Huntsman",
       "rarity": 15,
-      "document_id": 5312531832531608598
+      "document": {
+        "id": 5312531832531608598,
+        "access_hash": 4475656801309524847,
+        "date": "2025-02-20T00:35:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 10482,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Chest",
       "rarity": 4,
-      "document_id": 5424748805306211426
+      "document": {
+        "id": 5424748805306211426,
+        "access_hash": -7983553628680416513,
+        "date": "2024-12-22T14:12:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1372,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

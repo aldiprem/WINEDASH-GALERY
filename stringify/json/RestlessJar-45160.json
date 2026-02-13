@@ -1,26 +1,55 @@
 {
+  "id": 5886440961944322563,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-45160",
   "title": "Restless Jar",
   "num": 45160,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16321300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bubble Bugs",
       "rarity": 25,
-      "document_id": 5431721890869704592
+      "document": {
+        "id": 5431721890869704592,
+        "access_hash": 3127310927711428224,
+        "date": "2025-04-01T22:09:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32859,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bandage",
       "rarity": 4,
-      "document_id": 5440708100619277419
+      "document": {
+        "id": 5440708100619277419,
+        "access_hash": 3521069946558357956,
+        "date": "2024-12-28T11:34:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1029,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

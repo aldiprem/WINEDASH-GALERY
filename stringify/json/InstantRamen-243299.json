@@ -1,26 +1,55 @@
 {
+  "id": 6008276337884660584,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-243299",
   "title": "Instant Ramen",
   "num": 243299,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Lobster",
       "rarity": 20,
-      "document_id": 5309835190070181567
+      "document": {
+        "id": 5309835190070181567,
+        "access_hash": -4170775769873579876,
+        "date": "2025-09-02T09:16:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38650,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Nemean Lion",
       "rarity": 4,
-      "document_id": 5544006887336312835
+      "document": {
+        "id": 5544006887336312835,
+        "access_hash": 4638356395980588528,
+        "date": "2025-02-01T17:43:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1830,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

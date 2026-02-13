@@ -1,26 +1,55 @@
 {
+  "id": 5780687451093731422,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-315847",
   "title": "Instant Ramen",
   "num": 315847,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Topokki",
       "rarity": 30,
-      "document_id": 5341288309320611945
+      "document": {
+        "id": 5341288309320611945,
+        "access_hash": -8642175620497695906,
+        "date": "2025-09-12T11:13:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29645,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Academic Cap",
       "rarity": 2,
-      "document_id": 5276188897309649167
+      "document": {
+        "id": 5276188897309649167,
+        "access_hash": -7943907996076501622,
+        "date": "2025-02-08T13:52:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 965,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

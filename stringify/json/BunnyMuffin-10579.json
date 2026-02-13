@@ -1,26 +1,55 @@
 {
+  "id": 5834630230286795576,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-10579",
   "title": "Bunny Muffin",
   "num": 10579,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "With Love",
       "rarity": 4,
-      "document_id": 5208659530241565559
+      "document": {
+        "id": 5208659530241565559,
+        "access_hash": 9011330259462770728,
+        "date": "2025-01-16T09:07:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22356,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Inguz Rune",
       "rarity": 4,
-      "document_id": 5440848485920301619
+      "document": {
+        "id": 5440848485920301619,
+        "access_hash": 3176314549888581687,
+        "date": "2024-12-28T11:09:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 901,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Indigo",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 4,
+      "center_color": 11108595,
+      "edge_color": 5989080,
+      "pattern_color": 3613355,
+      "text_color": 14211327
     }
   ]
 }

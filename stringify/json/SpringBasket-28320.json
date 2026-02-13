@@ -1,26 +1,55 @@
 {
+  "id": 6003370767973090412,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-28320",
   "title": "Spring Basket",
   "num": 28320,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lovely Lamb",
       "rarity": 30,
-      "document_id": 5350799248109633181
+      "document": {
+        "id": 5350799248109633181,
+        "access_hash": 5290976123877670962,
+        "date": "2025-06-10T17:46:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29797,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Steampunk Hat",
       "rarity": 2,
-      "document_id": 5312391262546979185
+      "document": {
+        "id": 5312391262546979185,
+        "access_hash": -5044891452792843988,
+        "date": "2025-02-20T17:49:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1150,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003791910991299464,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-56317",
   "title": "Whip Cupcake",
   "num": 56317,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Stardust",
       "rarity": 15,
-      "document_id": 5474238553816856653
+      "document": {
+        "id": 5474238553816856653,
+        "access_hash": -119404858546901905,
+        "date": "2025-04-16T16:08:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 34748,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Maple",
       "rarity": 4,
-      "document_id": 5440786196009607446
+      "document": {
+        "id": 5440786196009607446,
+        "access_hash": -5337040616115280441,
+        "date": "2024-12-28T11:06:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1141,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Midnight Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "pattern_color": 199192,
+      "text_color": 12569824
     }
   ]
 }

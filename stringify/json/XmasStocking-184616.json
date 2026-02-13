@@ -1,26 +1,55 @@
 {
+  "id": 5848225708744115982,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-184616",
   "title": "Xmas Stocking",
   "num": 184616,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15091700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Faerie",
       "rarity": 30,
-      "document_id": 5291846758932964487
+      "document": {
+        "id": 5291846758932964487,
+        "access_hash": -5365549734957762179,
+        "date": "2025-02-13T12:28:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40855,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Totem Bear",
       "rarity": 2,
-      "document_id": 5728966707590987806
+      "document": {
+        "id": 5728966707590987806,
+        "access_hash": -2795576097755213880,
+        "date": "2024-12-28T10:07:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2355,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Malachite",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 15,
+      "center_color": 9811031,
+      "edge_color": 4036437,
+      "pattern_color": 289542,
+      "text_color": 12775358
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5825875115547560395,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-59746",
   "title": "Stellar Rocket",
   "num": 59746,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Soap Bubbles",
       "rarity": 25,
-      "document_id": 5193179501739145102
+      "document": {
+        "id": 5193179501739145102,
+        "access_hash": 5739388910690211621,
+        "date": "2025-07-24T12:00:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53302,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Party Hat",
       "rarity": 5,
-      "document_id": 5314506456630847539
+      "document": {
+        "id": 5314506456630847539,
+        "access_hash": 7909915780229486291,
+        "date": "2025-02-20T17:31:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1001,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003357758517150528,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-43958",
   "title": "Instant Ramen",
   "num": 43958,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12632600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Broccoli",
       "rarity": 30,
-      "document_id": 5271771098243953911
+      "document": {
+        "id": 5271771098243953911,
+        "access_hash": -2235754316838271573,
+        "date": "2025-08-20T09:34:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28544,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Magic Vial",
       "rarity": 4,
-      "document_id": 5551127401947201559
+      "document": {
+        "id": 5551127401947201559,
+        "access_hash": 8505637015601485714,
+        "date": "2025-02-03T13:26:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1415,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pistachio",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 36,
+      "center_color": 9941116,
+      "edge_color": 6062412,
+      "pattern_color": 2639643,
+      "text_color": 14283465
     }
   ]
 }

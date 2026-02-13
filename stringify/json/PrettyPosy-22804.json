@@ -1,26 +1,55 @@
 {
+  "id": 5785033824853299724,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-22804",
   "title": "Pretty Posy",
   "num": 22804,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14586400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Precious",
       "rarity": 30,
-      "document_id": 5203930504960705405
+      "document": {
+        "id": 5203930504960705405,
+        "access_hash": -865833206395524877,
+        "date": "2025-11-02T12:30:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44363,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ladybug",
       "rarity": 2,
-      "document_id": 5436325485925656443
+      "document": {
+        "id": 5436325485925656443,
+        "access_hash": 4541310980200763433,
+        "date": "2024-12-26T15:08:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1830,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

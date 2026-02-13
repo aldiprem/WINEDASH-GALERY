@@ -1,26 +1,55 @@
 {
+  "id": 6005608329970189572,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-10294",
   "title": "Mousse Cake",
   "num": 10294,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sky Peacock",
       "rarity": 20,
-      "document_id": 5379768566297953519
+      "document": {
+        "id": 5379768566297953519,
+        "access_hash": 1783323109855249036,
+        "date": "2025-09-25T16:10:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65471,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Onigiri",
       "rarity": 2,
-      "document_id": 5584781618922389518
+      "document": {
+        "id": 5584781618922389518,
+        "access_hash": -8580534969225655109,
+        "date": "2025-02-14T18:57:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 760,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Emerald",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 13,
+      "center_color": 7914885,
+      "edge_color": 4366705,
+      "pattern_color": 25906,
+      "text_color": 12188121
     }
   ]
 }

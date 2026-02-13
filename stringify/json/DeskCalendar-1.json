@@ -1,26 +1,55 @@
 {
+  "id": 5825670825428124713,
+  "gift_id": 5782988952268964995,
   "slug": "DeskCalendar-1",
   "title": "Desk Calendar",
   "num": 1,
-  "availability_issued": 306379,
-  "availability_total": 337481,
+  "availability_issued": 306313,
+  "availability_total": 337414,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "grafen.ton",
+  "gift_address": "EQAc0e3PkbzZ5-wncbqsiWirbVAThcsWvMtMpWXgt3R2s7-F",
+  "value_amount": 635417300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "January",
       "rarity": 6,
-      "document_id": 5226843721693163228
+      "document": {
+        "id": 5226843721693163228,
+        "access_hash": -4147525103261550748,
+        "date": "2025-01-22T17:52:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32546,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Star",
       "rarity": 3,
-      "document_id": 5420190079773597190
+      "document": {
+        "id": 5420190079773597190,
+        "access_hash": -8571889126842035861,
+        "date": "2024-12-21T05:44:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 817,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

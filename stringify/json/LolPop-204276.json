@@ -1,26 +1,55 @@
 {
+  "id": 5963127216467346227,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-204276",
   "title": "Lol Pop",
   "num": 204276,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sailor Moon",
       "rarity": 10,
-      "document_id": 5210953622598214587
+      "document": {
+        "id": 5210953622598214587,
+        "access_hash": -1341740484123752784,
+        "date": "2025-01-16T21:20:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 63865,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Top Hat",
       "rarity": 5,
-      "document_id": 5424997398013306322
+      "document": {
+        "id": 5424997398013306322,
+        "access_hash": 6230486958597176614,
+        "date": "2024-12-23T04:52:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 669,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

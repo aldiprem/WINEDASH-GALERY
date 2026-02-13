@@ -1,26 +1,55 @@
 {
+  "id": 5778406763330012041,
+  "gift_id": 5773668482394620318,
   "slug": "EasterEgg-41036",
   "title": "Easter Egg",
   "num": 41036,
   "availability_issued": 162175,
   "availability_total": 173176,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15765400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Frosted",
       "rarity": 25,
-      "document_id": 5195243748920947600
+      "document": {
+        "id": 5195243748920947600,
+        "access_hash": 7719930959037526594,
+        "date": "2025-04-18T10:15:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 50346,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Neptune",
       "rarity": 4,
-      "document_id": 5551092428028510218
+      "document": {
+        "id": 5551092428028510218,
+        "access_hash": -2462010369425276154,
+        "date": "2025-02-03T13:30:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1686,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

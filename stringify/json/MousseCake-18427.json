@@ -1,26 +1,55 @@
 {
+  "id": 6003360442871711479,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-18427",
   "title": "Mousse Cake",
   "num": 18427,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wicked Pie",
       "rarity": 15,
-      "document_id": 5325998659538549878
+      "document": {
+        "id": 5325998659538549878,
+        "access_hash": 6602202919222377059,
+        "date": "2025-09-07T13:23:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54307,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bell Pepper",
       "rarity": 6,
-      "document_id": 5440799905545215818
+      "document": {
+        "id": 5440799905545215818,
+        "access_hash": 7011861148719333894,
+        "date": "2024-12-28T11:15:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1094,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Black",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 0,
+      "center_color": 3553080,
+      "edge_color": 921359,
+      "pattern_color": 7104616,
+      "text_color": 9211793
     }
   ]
 }

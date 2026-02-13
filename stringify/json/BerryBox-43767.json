@@ -1,26 +1,55 @@
 {
+  "id": 5895613848152442077,
+  "gift_id": 5882252952218894938,
   "slug": "BerryBox-43767",
   "title": "Berry Box",
   "num": 43767,
-  "availability_issued": 50377,
+  "availability_issued": 50378,
   "availability_total": 66580,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 32844600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Iridescent",
       "rarity": 20,
-      "document_id": 5415871442912829757
+      "document": {
+        "id": 5415871442912829757,
+        "access_hash": -8163073329681670412,
+        "date": "2024-12-19T19:51:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23210,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Watermelon",
       "rarity": 11,
-      "document_id": 5433649575271359320
+      "document": {
+        "id": 5433649575271359320,
+        "access_hash": 4526166381893981446,
+        "date": "2024-12-26T14:49:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 884,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

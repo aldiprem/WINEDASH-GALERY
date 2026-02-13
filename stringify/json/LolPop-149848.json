@@ -1,26 +1,55 @@
 {
+  "id": 5864064671958434596,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-149848",
   "title": "Lol Pop",
   "num": 149848,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12211500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cookie Dip",
       "rarity": 5,
-      "document_id": 5222305195391740380
+      "document": {
+        "id": 5222305195391740380,
+        "access_hash": 8705633806244416973,
+        "date": "2025-01-20T21:27:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 9574,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Worker Ant",
       "rarity": 5,
-      "document_id": 5548934649343901709
+      "document": {
+        "id": 5548934649343901709,
+        "access_hash": -936527782936143199,
+        "date": "2025-02-02T17:51:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1339,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chocolate",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 59,
+      "center_color": 10776152,
+      "edge_color": 7619643,
+      "pattern_color": 4065794,
+      "text_color": 14988972
     }
   ]
 }

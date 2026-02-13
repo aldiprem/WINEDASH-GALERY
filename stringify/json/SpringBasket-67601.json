@@ -1,26 +1,55 @@
 {
+  "id": 6006005893617943333,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-67601",
   "title": "Spring Basket",
   "num": 67601,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Łoss",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Daisy Skunk",
       "rarity": 25,
-      "document_id": 5393248510135008902
+      "document": {
+        "id": 5393248510135008902,
+        "access_hash": -8258624550282493719,
+        "date": "2025-09-29T09:07:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36193,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fenrir",
       "rarity": 4,
-      "document_id": 5722120379397308437
+      "document": {
+        "id": 5722120379397308437,
+        "access_hash": 7345501622739687058,
+        "date": "2024-12-26T12:01:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2168,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Midnight Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 48,
+      "center_color": 6056325,
+      "edge_color": 3489879,
+      "pattern_color": 199192,
+      "text_color": 12569824
     }
   ]
 }

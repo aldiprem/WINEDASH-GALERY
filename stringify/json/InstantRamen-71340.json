@@ -1,26 +1,55 @@
 {
+  "id": 6005848478771577988,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-71340",
   "title": "Instant Ramen",
   "num": 71340,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Slurp-Slurp",
       "rarity": 25,
-      "document_id": 5319286205475489134
+      "document": {
+        "id": 5319286205475489134,
+        "access_hash": -8269083545859771712,
+        "date": "2025-09-05T09:04:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22719,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bug",
       "rarity": 5,
-      "document_id": 5433633602287985268
+      "document": {
+        "id": 5433633602287985268,
+        "access_hash": 7250365483069940917,
+        "date": "2024-12-26T12:24:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1123,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Deep Cyan",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 70,
+      "center_color": 3257770,
+      "edge_color": 1611161,
+      "pattern_color": 20303,
+      "text_color": 13762557
     }
   ]
 }

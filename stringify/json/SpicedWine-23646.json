@@ -1,26 +1,55 @@
 {
+  "id": 5791789481992389129,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-23646",
   "title": "Spiced Wine",
   "num": 23646,
-  "availability_issued": 101427,
+  "availability_issued": 101432,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Admiral McKinley.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Aquarium",
       "rarity": 8,
-      "document_id": 5429425895842541010
+      "document": {
+        "id": 5429425895842541010,
+        "access_hash": 2916069272805273532,
+        "date": "2024-12-24T21:06:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35061,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Clover",
       "rarity": 3,
-      "document_id": 5440771395552305875
+      "document": {
+        "id": 5440771395552305875,
+        "access_hash": 6407191692171763579,
+        "date": "2024-12-28T09:50:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 652,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

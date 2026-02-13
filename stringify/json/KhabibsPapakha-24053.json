@@ -1,26 +1,55 @@
 {
+  "id": 5843939559015975644,
+  "gift_id": 5839094187366024301,
   "slug": "KhabibsPapakha-24053",
   "title": "Khabib’s Papakha",
   "num": 24053,
   "availability_issued": 28515,
   "availability_total": 29000,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "mindje.t.me",
+  "gift_address": "EQAiarTp1MRyK2nw2XkwL0oQdsJlOOcf-dbccZ_WvE2ddAdF",
+  "value_amount": 215460800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Flying High",
       "rarity": 15,
-      "document_id": 5253641461466956315
+      "document": {
+        "id": 5253641461466956315,
+        "access_hash": -1325568228232889128,
+        "date": "2025-11-18T19:22:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 57157,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wreath",
       "rarity": 11,
-      "document_id": 5440727526756342476
+      "document": {
+        "id": 5440727526756342476,
+        "access_hash": -5403014624615019531,
+        "date": "2024-12-28T11:05:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1209,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

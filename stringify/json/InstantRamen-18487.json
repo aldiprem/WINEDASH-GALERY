@@ -1,26 +1,55 @@
 {
+  "id": 6003701270001484330,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-18487",
   "title": "Instant Ramen",
   "num": 18487,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sausage Duo",
       "rarity": 25,
-      "document_id": 5355300171972378539
+      "document": {
+        "id": 5355300171972378539,
+        "access_hash": 5711133599511569533,
+        "date": "2025-09-16T14:16:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 42835,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Genie Lamp",
       "rarity": 2,
-      "document_id": 5440679027985636145
+      "document": {
+        "id": 5440679027985636145,
+        "access_hash": 6162354837686909142,
+        "date": "2024-12-28T11:33:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1032,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

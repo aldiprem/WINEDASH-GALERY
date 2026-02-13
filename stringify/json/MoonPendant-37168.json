@@ -1,26 +1,55 @@
 {
+  "id": 5825924228498588565,
+  "gift_id": 5998981470310368313,
   "slug": "MoonPendant-37168",
   "title": "Moon Pendant",
   "num": 37168,
-  "availability_issued": 101720,
+  "availability_issued": 101721,
   "availability_total": 111080,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16034900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Calm Sunset",
       "rarity": 20,
-      "document_id": 5292276749583807471
+      "document": {
+        "id": 5292276749583807471,
+        "access_hash": 9167259259303450932,
+        "date": "2025-05-21T16:27:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Toy Bucket",
       "rarity": 9,
-      "document_id": 5433996514139595496
+      "document": {
+        "id": 5433996514139595496,
+        "access_hash": 7306225915976393702,
+        "date": "2024-12-26T13:57:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 767,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

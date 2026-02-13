@@ -1,26 +1,55 @@
 {
+  "id": 5895546898202231587,
+  "gift_id": 5856973938650776169,
   "slug": "RecordPlayer-22225",
   "title": "Record Player",
   "num": 22225,
-  "availability_issued": 33096,
+  "availability_issued": 33097,
   "availability_total": 46888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 23109100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Maroon",
       "rarity": 20,
-      "document_id": 5296595545358366209
+      "document": {
+        "id": 5296595545358366209,
+        "access_hash": -7923643614803206134,
+        "date": "2025-02-15T01:11:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24456,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bowler Hat",
       "rarity": 5,
-      "document_id": 5276170321576093265
+      "document": {
+        "id": 5276170321576093265,
+        "access_hash": 865914723502504688,
+        "date": "2025-02-08T13:49:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 886,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003770479104493804,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-51897",
   "title": "Ice Cream",
   "num": 51897,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Crude Oil",
       "rarity": 30,
-      "document_id": 5359497244078800574
+      "document": {
+        "id": 5359497244078800574,
+        "access_hash": 7142932548147768580,
+        "date": "2025-09-18T13:41:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 41598,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Horseshoe",
       "rarity": 7,
-      "document_id": 5551178202820378637
+      "document": {
+        "id": 5551178202820378637,
+        "access_hash": -4532459992384487067,
+        "date": "2025-02-03T13:28:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1149,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

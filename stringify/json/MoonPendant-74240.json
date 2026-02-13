@@ -1,26 +1,55 @@
 {
+  "id": 5825907727234237248,
+  "gift_id": 5998981470310368313,
   "slug": "MoonPendant-74240",
   "title": "Moon Pendant",
   "num": 74240,
-  "availability_issued": 101720,
+  "availability_issued": 101721,
   "availability_total": 111080,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16034900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Diamond Tear",
       "rarity": 25,
-      "document_id": 5199580381694688759
+      "document": {
+        "id": 5199580381694688759,
+        "access_hash": 2238494365810761821,
+        "date": "2025-07-26T23:35:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 41579,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ice Pop",
       "rarity": 10,
-      "document_id": 5434148663356054664
+      "document": {
+        "id": 5434148663356054664,
+        "access_hash": -3894290261695072024,
+        "date": "2024-12-26T14:49:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 915,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

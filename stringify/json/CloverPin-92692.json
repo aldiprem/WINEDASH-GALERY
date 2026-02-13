@@ -1,26 +1,55 @@
 {
+  "id": 5902393050302252058,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-92692",
   "title": "Clover Pin",
   "num": 92692,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 22738600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ice Cream",
       "rarity": 20,
-      "document_id": 5260677777538971071
+      "document": {
+        "id": 5260677777538971071,
+        "access_hash": -5703300029308193373,
+        "date": "2025-08-15T11:23:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37305,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Like",
       "rarity": 5,
-      "document_id": 5440551390147534212
+      "document": {
+        "id": 5440551390147534212,
+        "access_hash": -5361175105397763825,
+        "date": "2024-12-28T09:52:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 979,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

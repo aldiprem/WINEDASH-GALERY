@@ -1,26 +1,55 @@
 {
+  "id": 6030321795129672294,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-5",
   "title": "Plush Pepe",
   "num": 5,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQDOCA2KJPUNLWRdro7U8YyvbYjmqwLSpi7C80Cy3ejOWC9I",
+  "gift_address": "EQDS4jFA2q4iE07nn7uBXPMKuhfSihHgZYsmLzZ8Eso4DsYC",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bavaria",
       "rarity": 20,
-      "document_id": 5424773600152410617
+      "document": {
+        "id": 5424773600152410617,
+        "access_hash": 2103912938928898131,
+        "date": "2024-12-22T22:34:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17324,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Inguz Rune",
       "rarity": 4,
-      "document_id": 5440848485920301619
+      "document": {
+        "id": 5440848485920301619,
+        "access_hash": 3176314549888581687,
+        "date": "2024-12-28T11:09:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 901,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

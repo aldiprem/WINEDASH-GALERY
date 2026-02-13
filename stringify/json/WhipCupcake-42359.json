@@ -1,26 +1,55 @@
 {
+  "id": 6001603062513271848,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-42359",
   "title": "Whip Cupcake",
   "num": 42359,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Zero Sugar",
       "rarity": 30,
-      "document_id": 5330352235958269011
+      "document": {
+        "id": 5330352235958269011,
+        "access_hash": -2845618518661023393,
+        "date": "2025-06-03T11:59:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54111,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Horned Helm",
       "rarity": 5,
-      "document_id": 5312064144952814335
+      "document": {
+        "id": 5312064144952814335,
+        "access_hash": -5732912721162489275,
+        "date": "2025-02-20T17:41:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 850,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     }
   ]
 }

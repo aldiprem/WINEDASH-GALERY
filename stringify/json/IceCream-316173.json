@@ -1,26 +1,55 @@
 {
+  "id": 5819198567411090390,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-316173",
   "title": "Ice Cream",
   "num": 316173,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16405500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Utya Pop",
       "rarity": 10,
-      "document_id": 5332492997982454128
+      "document": {
+        "id": 5332492997982454128,
+        "access_hash": -5941058609446994854,
+        "date": "2025-09-09T13:48:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26298,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shell",
       "rarity": 7,
-      "document_id": 5440859644245335988
+      "document": {
+        "id": 5440859644245335988,
+        "access_hash": 3266719227963729388,
+        "date": "2024-12-28T11:34:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 825,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Dark Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 63,
+      "center_color": 5333825,
+      "edge_color": 2835759,
+      "pattern_color": 1281,
+      "text_color": 12571049
     }
   ]
 }

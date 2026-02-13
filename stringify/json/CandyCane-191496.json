@@ -1,26 +1,55 @@
 {
+  "id": 5850233236587807644,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-191496",
   "title": "Candy Cane",
   "num": 191496,
-  "availability_issued": 209557,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16675000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Discount",
       "rarity": 10,
-      "document_id": 5305573663389545694
+      "document": {
+        "id": 5305573663389545694,
+        "access_hash": -6424164470058671758,
+        "date": "2025-02-17T18:19:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 49201,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Tetsubin",
       "rarity": 2,
-      "document_id": 5582286784089292815
+      "document": {
+        "id": 5582286784089292815,
+        "access_hash": -8479490201613667594,
+        "date": "2025-02-14T18:55:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1189,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Dark Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 63,
+      "center_color": 5333825,
+      "edge_color": 2835759,
+      "pattern_color": 1281,
+      "text_color": 12571049
     }
   ]
 }

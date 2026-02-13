@@ -1,26 +1,55 @@
 {
+  "id": 6003447072362070686,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-13281",
   "title": "Mousse Cake",
   "num": 13281,
-  "availability_issued": 160706,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Harvest",
       "rarity": 20,
-      "document_id": 5377799010260122647
+      "document": {
+        "id": 5377799010260122647,
+        "access_hash": -3626957171931510740,
+        "date": "2025-09-24T15:21:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37979,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Love Bulb",
       "rarity": 2,
-      "document_id": 5289901246122059304
+      "document": {
+        "id": 5289901246122059304,
+        "access_hash": 703989789607455755,
+        "date": "2025-02-12T15:07:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 951,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Camo Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 67,
+      "center_color": 7705677,
+      "edge_color": 5534529,
+      "pattern_color": 1455873,
+      "text_color": 13625529
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5783086074364429631,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-598",
   "title": "Jingle Bells",
   "num": 598,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75883,
+  "availability_total": 114945,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 64454100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Krampus",
       "rarity": 0,
-      "document_id": 5375316544932843434
+      "document": {
+        "id": 5375316544932843434,
+        "access_hash": 5260535508067251712,
+        "date": "2025-12-29T13:22:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 49026,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mistletoe",
       "rarity": 23,
-      "document_id": 5208465161496578257
+      "document": {
+        "id": 5208465161496578257,
+        "access_hash": 3827083030446361815,
+        "date": "2023-12-24T23:23:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 970,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 19
+      "rarity": 19,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

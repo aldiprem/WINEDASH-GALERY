@@ -1,26 +1,55 @@
 {
+  "id": 6032948932135355151,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-102966",
   "title": "Mousse Cake",
   "num": 102966,
-  "availability_issued": 160706,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQDQxqaxuMbEbDOLyskEZ5yF7vj0aYWrP1nRol-KsNyM3ICf",
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mad Hatter",
       "rarity": 15,
-      "document_id": 5312429204288079026
+      "document": {
+        "id": 5312429204288079026,
+        "access_hash": -7604745718514590619,
+        "date": "2025-09-02T22:11:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33672,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pierced Heart",
       "rarity": 6,
-      "document_id": 5287276771996103085
+      "document": {
+        "id": 5287276771996103085,
+        "access_hash": -5694061059870988344,
+        "date": "2025-02-11T18:10:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1028,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Caramel",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 22,
+      "center_color": 13670706,
+      "edge_color": 12022833,
+      "pattern_color": 8205824,
+      "text_color": 16767411
     }
   ]
 }

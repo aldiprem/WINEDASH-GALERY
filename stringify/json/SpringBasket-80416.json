@@ -1,26 +1,55 @@
 {
+  "id": 6003500471690462535,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-80416",
   "title": "Spring Basket",
   "num": 80416,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Beer Festival",
       "rarity": 15,
-      "document_id": 5386424614555516507
+      "document": {
+        "id": 5386424614555516507,
+        "access_hash": 5918996867883127087,
+        "date": "2025-09-27T14:28:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64241,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Twin Koi",
       "rarity": 7,
-      "document_id": 5582645495462887434
+      "document": {
+        "id": 5582645495462887434,
+        "access_hash": 7370654167617443919,
+        "date": "2025-02-14T18:55:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2214,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Azure Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "pattern_color": 151668,
+      "text_color": 11922687
     }
   ]
 }

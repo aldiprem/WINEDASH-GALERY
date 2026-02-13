@@ -1,26 +1,55 @@
 {
+  "id": 5949275590455460493,
+  "gift_id": 5915550639663874519,
   "slug": "LoveCandle-17247",
   "title": "Love Candle",
   "num": 17247,
-  "availability_issued": 23181,
+  "availability_issued": 23183,
   "availability_total": 30296,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 31581400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Serenity",
       "rarity": 30,
-      "document_id": 5404473922559172311
+      "document": {
+        "id": 5404473922559172311,
+        "access_hash": -5597727338975629647,
+        "date": "2024-12-16T12:51:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16212,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Glasses",
       "rarity": 5,
-      "document_id": 5438410885821392267
+      "document": {
+        "id": 5438410885821392267,
+        "access_hash": 3347426704206136078,
+        "date": "2024-12-28T09:52:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 744,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     }
   ]
 }

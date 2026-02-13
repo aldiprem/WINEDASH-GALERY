@@ -1,26 +1,55 @@
 {
+  "id": 6003404474876429173,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-78731",
   "title": "Instant Ramen",
   "num": 78731,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Seafood",
       "rarity": 20,
-      "document_id": 5370591041525157544
+      "document": {
+        "id": 5370591041525157544,
+        "access_hash": 4119680875232282722,
+        "date": "2025-09-22T21:27:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30374,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hedgehog",
       "rarity": 4,
-      "document_id": 5440595495166696665
+      "document": {
+        "id": 5440595495166696665,
+        "access_hash": 6827918704103063293,
+        "date": "2024-12-28T11:48:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 698,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

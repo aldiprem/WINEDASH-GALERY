@@ -1,26 +1,55 @@
 {
+  "id": 5859606242502116015,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-146173",
   "title": "Lol Pop",
   "num": 146173,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sugar Free",
       "rarity": 12,
-      "document_id": 5388749201179959909
+      "document": {
+        "id": 5388749201179959909,
+        "access_hash": 4366234531386832816,
+        "date": "2024-12-10T18:56:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 57636,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ouroboros",
       "rarity": 5,
-      "document_id": 5440776901700379950
+      "document": {
+        "id": 5440776901700379950,
+        "access_hash": 8131390927460400088,
+        "date": "2024-12-28T11:09:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 846,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chocolate",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 59,
+      "center_color": 10776152,
+      "edge_color": 7619643,
+      "pattern_color": 4065794,
+      "text_color": 14988972
     }
   ]
 }

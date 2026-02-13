@@ -1,26 +1,55 @@
 {
+  "id": 6030556132840309661,
+  "gift_id": 5882252952218894938,
   "slug": "BerryBox-1",
   "title": "Berry Box",
   "num": 1,
-  "availability_issued": 50377,
+  "availability_issued": 50378,
   "availability_total": 66580,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18342500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "White Cocoa",
       "rarity": 20,
-      "document_id": 5413773145230302974
+      "document": {
+        "id": 5413773145230302974,
+        "access_hash": 6843201971854365619,
+        "date": "2024-12-19T19:13:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23205,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Royal Crown",
       "rarity": 2,
-      "document_id": 5440361101621484148
+      "document": {
+        "id": 5440361101621484148,
+        "access_hash": 1355356403519299063,
+        "date": "2024-12-28T11:10:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 916,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carrot Juice",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 24,
+      "center_color": 14391399,
+      "edge_color": 13070159,
+      "pattern_color": 9314560,
+      "text_color": 16766922
     }
   ]
 }

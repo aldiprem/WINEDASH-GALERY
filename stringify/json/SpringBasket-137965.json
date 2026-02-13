@@ -1,26 +1,55 @@
 {
+  "id": 5778419137130791728,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-137965",
   "title": "Spring Basket",
   "num": 137965,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Moon Frog",
       "rarity": 30,
-      "document_id": 5350474368193429006
+      "document": {
+        "id": 5350474368193429006,
+        "access_hash": -8540125032291719308,
+        "date": "2025-06-10T17:37:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26693,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pizza Slice",
       "rarity": 7,
-      "document_id": 5436241476365344257
+      "document": {
+        "id": 5436241476365344257,
+        "access_hash": 1965465533777700212,
+        "date": "2024-12-26T14:47:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 972,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Camo Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 67,
+      "center_color": 7705677,
+      "edge_color": 5534529,
+      "pattern_color": 1455873,
+      "text_color": 13625529
     }
   ]
 }

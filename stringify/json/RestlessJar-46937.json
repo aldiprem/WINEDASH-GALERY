@@ -1,26 +1,55 @@
 {
+  "id": 5888666798680704005,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-46937",
   "title": "Restless Jar",
   "num": 46937,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18696200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pickles",
       "rarity": 17,
-      "document_id": 5231195103384594972
+      "document": {
+        "id": 5231195103384594972,
+        "access_hash": -5807703102834963522,
+        "date": "2025-04-30T23:05:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 18008,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sunflower",
       "rarity": 4,
-      "document_id": 5440682657233000387
+      "document": {
+        "id": 5440682657233000387,
+        "access_hash": -2407158409853392433,
+        "date": "2024-12-28T11:05:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1470,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

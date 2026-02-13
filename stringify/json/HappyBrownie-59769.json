@@ -1,26 +1,55 @@
 {
+  "id": 6003475492160668649,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-59769",
   "title": "Happy Brownie",
   "num": 59769,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "᪤ 🌯",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Alien",
       "rarity": 30,
-      "document_id": 5292180533726446224
+      "document": {
+        "id": 5292180533726446224,
+        "access_hash": -6868423497307041027,
+        "date": "2025-08-26T14:24:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 37887,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Warhorse",
       "rarity": 4,
-      "document_id": 5548640998134906900
+      "document": {
+        "id": 5548640998134906900,
+        "access_hash": 452825396392385722,
+        "date": "2025-02-02T17:54:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1081,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

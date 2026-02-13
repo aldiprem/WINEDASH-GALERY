@@ -1,26 +1,55 @@
 {
+  "id": 5825445275220576168,
+  "gift_id": 6005880141270483700,
   "slug": "JollyChimp-43447",
   "title": "Jolly Chimp",
   "num": 43447,
-  "availability_issued": 115521,
+  "availability_issued": 115523,
   "availability_total": 132155,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17129700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Patchwork",
       "rarity": 30,
-      "document_id": 5452063723566952870
+      "document": {
+        "id": 5452063723566952870,
+        "access_hash": 217811231399212774,
+        "date": "2025-07-14T00:53:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39587,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Banana",
       "rarity": 5,
-      "document_id": 5548920390052478992
+      "document": {
+        "id": 5548920390052478992,
+        "access_hash": 8190041639194295403,
+        "date": "2025-02-02T17:51:30+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 776,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     }
   ]
 }

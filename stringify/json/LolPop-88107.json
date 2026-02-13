@@ -1,26 +1,55 @@
 {
+  "id": 5841678993174037399,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-88107",
   "title": "Lol Pop",
   "num": 88107,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mandarin",
       "rarity": 12,
-      "document_id": 5393156941432253434
+      "document": {
+        "id": 5393156941432253434,
+        "access_hash": 3934917193000080924,
+        "date": "2024-12-12T19:55:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 57765,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gamepad",
       "rarity": 5,
-      "document_id": 5440404794323786424
+      "document": {
+        "id": 5440404794323786424,
+        "access_hash": -115387331642847102,
+        "date": "2024-12-28T11:32:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1135,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

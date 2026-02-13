@@ -1,26 +1,55 @@
 {
+  "id": 6003660089855051911,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-57143",
   "title": "Ice Cream",
   "num": 57143,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQDjBcVNNOFIq9CxsO8oGa9MImmETvfPWxBnWDZRFQocl7OI",
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kraken",
       "rarity": 5,
-      "document_id": 5366592753390093400
+      "document": {
+        "id": 5366592753390093400,
+        "access_hash": -3126063277607787359,
+        "date": "2025-09-20T16:08:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30956,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Spring Chick",
       "rarity": 7,
-      "document_id": 5483261236428668939
+      "document": {
+        "id": 5483261236428668939,
+        "access_hash": 6081236476495161915,
+        "date": "2025-04-18T17:02:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1009,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6030560436397540765,
+  "gift_id": 5841391256135008713,
   "slug": "TrappedHeart-951",
   "title": "Trapped Heart",
   "num": 951,
   "availability_issued": 24848,
   "availability_total": 26407,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 32255100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sweetheart",
       "rarity": 20,
-      "document_id": 5413495797717162241
+      "document": {
+        "id": 5413495797717162241,
+        "access_hash": 7250364890360116743,
+        "date": "2024-12-19T00:21:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24635,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rabbit",
       "rarity": 6,
-      "document_id": 5308032304533223255
+      "document": {
+        "id": 5308032304533223255,
+        "access_hash": -5150680125601150932,
+        "date": "2023-10-22T10:43:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1516,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

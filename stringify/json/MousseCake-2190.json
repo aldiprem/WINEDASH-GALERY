@@ -1,26 +1,55 @@
 {
+  "id": 6003375389357900643,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-2190",
   "title": "Mousse Cake",
   "num": 2190,
-  "availability_issued": 160706,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Malthea.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sweet Music",
       "rarity": 30,
-      "document_id": 5334863411907952552
+      "document": {
+        "id": 5334863411907952552,
+        "access_hash": -2026444910714600984,
+        "date": "2025-09-09T18:37:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19547,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Twin Peaks",
       "rarity": 6,
-      "document_id": 5440737538325112126
+      "document": {
+        "id": 5440737538325112126,
+        "access_hash": 7610301937325065730,
+        "date": "2024-12-28T11:06:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 524,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

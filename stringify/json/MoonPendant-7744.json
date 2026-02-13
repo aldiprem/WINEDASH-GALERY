@@ -1,26 +1,55 @@
 {
+  "id": 5825855324338258853,
+  "gift_id": 5998981470310368313,
   "slug": "MoonPendant-7744",
   "title": "Moon Pendant",
   "num": 7744,
-  "availability_issued": 101720,
+  "availability_issued": 101721,
   "availability_total": 111080,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Precious Pearl",
       "rarity": 20,
-      "document_id": 5465465619258307033
+      "document": {
+        "id": 5465465619258307033,
+        "access_hash": 795810826074049492,
+        "date": "2025-07-19T12:30:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 47153,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Vortex",
       "rarity": 5,
-      "document_id": 5436036168338660466
+      "document": {
+        "id": 5436036168338660466,
+        "access_hash": 6026164539530323734,
+        "date": "2024-12-26T12:09:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2486,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Old Gold",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 75,
+      "center_color": 11898168,
+      "edge_color": 9726245,
+      "pattern_color": 5190402,
+      "text_color": 16768396
     }
   ]
 }

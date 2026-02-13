@@ -1,26 +1,55 @@
 {
+  "id": 6017187209612886714,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-77457",
   "title": "Snoop Cigar",
   "num": 77457,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30806600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Meteor Impact",
       "rarity": 15,
-      "document_id": 5408889020090449272
+      "document": {
+        "id": 5408889020090449272,
+        "access_hash": 7349097726302344845,
+        "date": "2025-06-29T23:53:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39019,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rap Sign",
       "rarity": 5,
-      "document_id": 5701558704504045579
+      "document": {
+        "id": 5701558704504045579,
+        "access_hash": 1292688865460338096,
+        "date": "2025-07-01T16:32:09+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2467,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

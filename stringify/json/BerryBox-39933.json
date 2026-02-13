@@ -1,26 +1,55 @@
 {
+  "id": 5992573430644343907,
+  "gift_id": 5882252952218894938,
   "slug": "BerryBox-39933",
   "title": "Berry Box",
   "num": 39933,
-  "availability_issued": 50377,
+  "availability_issued": 50378,
   "availability_total": 66580,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "/",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18342500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Atmosphere",
       "rarity": 15,
-      "document_id": 5420255444880874216
+      "document": {
+        "id": 5420255444880874216,
+        "access_hash": 1379981289484130346,
+        "date": "2024-12-21T14:16:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23414,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cherry",
       "rarity": 8,
-      "document_id": 5434013921642045024
+      "document": {
+        "id": 5434013921642045024,
+        "access_hash": 6270047971805243946,
+        "date": "2024-12-26T14:47:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 970,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

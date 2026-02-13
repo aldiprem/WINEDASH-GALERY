@@ -1,26 +1,55 @@
 {
+  "id": 5850210610700092191,
+  "gift_id": 5825895989088617224,
   "slug": "HypnoLollipop-75761",
   "title": "Hypno Lollipop",
   "num": 75761,
-  "availability_issued": 79412,
+  "availability_issued": 79415,
   "availability_total": 116639,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13390500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lucipop",
       "rarity": 8,
-      "document_id": 5228954388881497488
+      "document": {
+        "id": 5228954388881497488,
+        "access_hash": 8145818442772966646,
+        "date": "2025-01-23T07:30:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 11334,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Grenade",
       "rarity": 4,
-      "document_id": 5440406533785540876
+      "document": {
+        "id": 5440406533785540876,
+        "access_hash": -3657762965545278742,
+        "date": "2024-12-28T11:40:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1082,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

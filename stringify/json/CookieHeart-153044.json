@@ -1,26 +1,55 @@
 {
+  "id": 5913597108149027610,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-153044",
   "title": "Cookie Heart",
   "num": 153044,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Emma",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ultra Pink",
       "rarity": 15,
-      "document_id": 5222217410555175038
+      "document": {
+        "id": 5222217410555175038,
+        "access_hash": -9009541279764587237,
+        "date": "2025-01-21T04:24:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29600,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Love Letter",
       "rarity": 4,
-      "document_id": 5440699386130620745
+      "document": {
+        "id": 5440699386130620745,
+        "access_hash": -7141271332431670569,
+        "date": "2024-12-28T09:50:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1151,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     }
   ]
 }

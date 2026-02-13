@@ -1,26 +1,55 @@
 {
+  "id": 6030354183478051360,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-1111",
   "title": "Jelly Bunny",
   "num": 1111,
-  "availability_issued": 102244,
+  "availability_issued": 102249,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQCk2ThGadUv7Uf8BS6mLYbfiwpA6Y2uKWDn8KEFwNoPxKvz",
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Outline",
       "rarity": 10,
-      "document_id": 5424780038308388924
+      "document": {
+        "id": 5424780038308388924,
+        "access_hash": 7645851234747504409,
+        "date": "2024-12-23T14:18:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 18386,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candy",
       "rarity": 5,
-      "document_id": 5422574937674115533
+      "document": {
+        "id": 5422574937674115533,
+        "access_hash": -6166631400688415177,
+        "date": "2024-12-22T22:45:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1150,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6030702681419416145,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-13",
   "title": "Plush Pepe",
   "num": 13,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQACY-Y0IZATX_Z8h6d3AxA7MzP6UaEba_5l6YX1X45eWgp2",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Stripes",
       "rarity": 20,
-      "document_id": 5424892691005595203
+      "document": {
+        "id": 5424892691005595203,
+        "access_hash": 1636479095032763746,
+        "date": "2024-12-22T22:34:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17441,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Top Hat",
       "rarity": 2,
-      "document_id": 5424997398013306322
+      "document": {
+        "id": 5424997398013306322,
+        "access_hash": 6230486958597176614,
+        "date": "2024-12-23T04:52:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 669,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Grape",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 52,
+      "center_color": 10319041,
+      "edge_color": 7949728,
+      "pattern_color": 4065899,
+      "text_color": 14728702
     }
   ]
 }

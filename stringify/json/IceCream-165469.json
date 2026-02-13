@@ -1,26 +1,55 @@
 {
+  "id": 6003752152479040338,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-165469",
   "title": "Ice Cream",
   "num": 165469,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Extra Spicy",
       "rarity": 20,
-      "document_id": 5350717154104742970
+      "document": {
+        "id": 5350717154104742970,
+        "access_hash": -8217955233484464677,
+        "date": "2025-09-15T08:30:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38628,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Croissant",
       "rarity": 2,
-      "document_id": 5438553027764052896
+      "document": {
+        "id": 5438553027764052896,
+        "access_hash": 3917189328503103517,
+        "date": "2024-12-28T11:14:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 893,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5933563745388200809,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-120768",
   "title": "Cookie Heart",
   "num": 120768,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fried Egg",
       "rarity": 10,
-      "document_id": 5240500798571439059
+      "document": {
+        "id": 5240500798571439059,
+        "access_hash": 6758382923711799764,
+        "date": "2025-01-26T14:47:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 18517,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Snow Angel",
       "rarity": 12,
-      "document_id": 5282854892711470699
+      "document": {
+        "id": 5282854892711470699,
+        "access_hash": -8677874853082854152,
+        "date": "2024-11-05T19:06:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 820,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Amber",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 21,
+      "center_color": 14332741,
+      "edge_color": 11632682,
+      "pattern_color": 8007936,
+      "text_color": 16772551
     }
   ]
 }

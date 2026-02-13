@@ -1,26 +1,55 @@
 {
+  "id": 6005921153913194877,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-67851",
   "title": "Mousse Cake",
   "num": 67851,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "ViPPaCK",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Still Alive",
       "rarity": 1,
-      "document_id": 5314340095367606770
+      "document": {
+        "id": 5314340095367606770,
+        "access_hash": 2051720091545946973,
+        "date": "2025-09-02T22:11:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32694,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Love Candy",
       "rarity": 6,
-      "document_id": 5287327993776073640
+      "document": {
+        "id": 5287327993776073640,
+        "access_hash": 6965695200398611765,
+        "date": "2025-02-11T18:16:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 794,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Desert Sand",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 38,
+      "center_color": 11771778,
+      "edge_color": 8287067,
+      "pattern_color": 5260329,
+      "text_color": 15918541
     }
   ]
 }

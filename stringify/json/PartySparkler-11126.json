@@ -1,26 +1,55 @@
 {
+  "id": 5823416379914585015,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-11126",
   "title": "Party Sparkler",
   "num": 11126,
-  "availability_issued": 176755,
+  "availability_issued": 176760,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sparkly Eve",
       "rarity": 9,
-      "document_id": 5229224980411082276
+      "document": {
+        "id": 5229224980411082276,
+        "access_hash": -2622946495122401374,
+        "date": "2025-01-23T11:21:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38785,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Strawberry",
       "rarity": 4,
-      "document_id": 5424718461362267817
+      "document": {
+        "id": 5424718461362267817,
+        "access_hash": 6881713321690835807,
+        "date": "2024-12-22T22:46:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 991,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

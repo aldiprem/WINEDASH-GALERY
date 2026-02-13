@@ -1,26 +1,55 @@
 {
+  "id": 5825461364168065965,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-25566",
   "title": "Party Sparkler",
   "num": 25566,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13895800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Luminous",
       "rarity": 13,
-      "document_id": 5228943767427377403
+      "document": {
+        "id": 5228943767427377403,
+        "access_hash": -6754298256240014265,
+        "date": "2025-01-23T11:26:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31647,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Moose Head",
       "rarity": 5,
-      "document_id": 5440792556856173329
+      "document": {
+        "id": 5440792556856173329,
+        "access_hash": -6303369929816223359,
+        "date": "2024-12-28T11:07:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1017,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

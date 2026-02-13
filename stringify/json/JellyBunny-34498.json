@@ -1,26 +1,55 @@
 {
+  "id": 5825960331993678885,
+  "gift_id": 5915502858152706668,
   "slug": "JellyBunny-34498",
   "title": "Jelly Bunny",
   "num": 34498,
-  "availability_issued": 102244,
+  "availability_issued": 102250,
   "availability_total": 129350,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18291900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Party Hard",
       "rarity": 15,
-      "document_id": 5424876808216535590
+      "document": {
+        "id": 5424876808216535590,
+        "access_hash": 5329143269509781222,
+        "date": "2024-12-23T14:18:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53249,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bunny Ears",
       "rarity": 4,
-      "document_id": 5424981802987052563
+      "document": {
+        "id": 5424981802987052563,
+        "access_hash": -5407208639407846256,
+        "date": "2024-12-23T04:52:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 715,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carrot Juice",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 24,
+      "center_color": 14391399,
+      "edge_color": 13070159,
+      "pattern_color": 9314560,
+      "text_color": 16766922
     }
   ]
 }

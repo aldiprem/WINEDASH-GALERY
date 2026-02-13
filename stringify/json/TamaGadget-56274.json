@@ -1,26 +1,55 @@
 {
+  "id": 5787428419444671109,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-56274",
   "title": "Tama Gadget",
   "num": 56274,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17685600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lavender",
       "rarity": 20,
-      "document_id": 5256220524903687370
+      "document": {
+        "id": 5256220524903687370,
+        "access_hash": 679866458503331190,
+        "date": "2025-02-01T11:58:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14633,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candle",
       "rarity": 5,
-      "document_id": 5440862947075185091
+      "document": {
+        "id": 5440862947075185091,
+        "access_hash": 6542726026572555817,
+        "date": "2024-12-28T11:47:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 875,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mexican Pink",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 71,
+      "center_color": 14902930,
+      "edge_color": 13191548,
+      "pattern_color": 7668272,
+      "text_color": 16766694
     }
   ]
 }

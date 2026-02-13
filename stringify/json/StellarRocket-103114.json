@@ -1,26 +1,55 @@
 {
+  "id": 5841222098848056093,
+  "gift_id": 6042113507581755979,
   "slug": "StellarRocket-103114",
   "title": "Stellar Rocket",
   "num": 103114,
-  "availability_issued": 135408,
+  "availability_issued": 135410,
   "availability_total": 156318,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "DAEVIL",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14266400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chrome",
       "rarity": 15,
-      "document_id": 5451886620590505595
+      "document": {
+        "id": 5451886620590505595,
+        "access_hash": -5477625930222880670,
+        "date": "2025-07-14T09:00:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54662,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bonsai",
       "rarity": 2,
-      "document_id": 5582749674189619216
+      "document": {
+        "id": 5582749674189619216,
+        "access_hash": -4417232437636755554,
+        "date": "2025-02-14T18:56:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1233,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5820975893597652035,
+  "gift_id": 5821384757304362229,
   "slug": "WitchHat-1",
   "title": "Witch Hat",
   "num": 1,
   "availability_issued": 82318,
   "availability_total": 88480,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16725500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Witch Hazel",
       "rarity": 15,
-      "document_id": 5240161646478910571
+      "document": {
+        "id": 5240161646478910571,
+        "access_hash": -8554681633934404901,
+        "date": "2025-01-26T14:47:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23395,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flying Witch",
       "rarity": 24,
-      "document_id": 5298907998700189550
+      "document": {
+        "id": 5298907998700189550,
+        "access_hash": -9115149063654270689,
+        "date": "2023-10-19T19:03:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1842,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Malachite",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 15,
+      "center_color": 9811031,
+      "edge_color": 4036437,
+      "pattern_color": 289542,
+      "text_color": 12775358
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

@@ -1,26 +1,55 @@
 {
+  "id": 6003485662643225178,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-14476",
   "title": "Spring Basket",
   "num": 14476,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Triceratops",
       "rarity": 25,
-      "document_id": 5391162440224372449
+      "document": {
+        "id": 5391162440224372449,
+        "access_hash": 2710516654113252168,
+        "date": "2025-09-29T09:17:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29229,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Venetian Mask",
       "rarity": 7,
-      "document_id": 5433604121632464930
+      "document": {
+        "id": 5433604121632464930,
+        "access_hash": 5578127731286563102,
+        "date": "2024-12-26T12:26:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 843,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Purple",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 1,
+      "center_color": 13267142,
+      "edge_color": 9855700,
+      "pattern_color": 6426548,
+      "text_color": 15453951
     }
   ]
 }

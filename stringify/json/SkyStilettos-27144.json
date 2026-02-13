@@ -1,26 +1,55 @@
 {
+  "id": 5900208466726749482,
+  "gift_id": 5870947077877400011,
   "slug": "SkyStilettos-27144",
   "title": "Sky Stilettos",
   "num": 27144,
   "availability_issued": 50257,
   "availability_total": 58460,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQAnbzh-RzASYVheNooT708Kp9N0LEOcYorAx0BXop5aoWeL",
+  "gift_address": "EQAL1O0V2QnUj6lpXDZNf_WhbdbBI2g6Tz0ID-Cz-cnc099A",
+  "value_amount": 40862100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lost World",
       "rarity": 10,
-      "document_id": 5233306852904698192
+      "document": {
+        "id": 5233306852904698192,
+        "access_hash": -7417633470617968893,
+        "date": "2025-08-06T19:29:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54511,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lotus",
       "rarity": 7,
-      "document_id": 5357365218018091768
+      "document": {
+        "id": 5357365218018091768,
+        "access_hash": 3106683087377182775,
+        "date": "2025-03-07T09:24:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1045,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Grape",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 52,
+      "center_color": 10319041,
+      "edge_color": 7949728,
+      "pattern_color": 4065899,
+      "text_color": 14728702
     }
   ]
 }

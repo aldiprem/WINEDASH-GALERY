@@ -1,26 +1,55 @@
 {
+  "id": 5848416005860098904,
+  "gift_id": 5839038009193792264,
   "slug": "SkullFlower-16167",
   "title": "Skull Flower",
   "num": 16167,
   "availability_issued": 21703,
   "availability_total": 24126,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 50513400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Black Dahlia",
       "rarity": 30,
-      "document_id": 5411635995273619584
+      "document": {
+        "id": 5411635995273619584,
+        "access_hash": -6718759717839533258,
+        "date": "2024-12-18T12:53:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28270,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lovely Rain",
       "rarity": 4,
-      "document_id": 5310265202195837467
+      "document": {
+        "id": 5310265202195837467,
+        "access_hash": -5230120659878156324,
+        "date": "2023-10-22T21:04:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1066,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

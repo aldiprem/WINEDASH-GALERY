@@ -1,26 +1,55 @@
 {
+  "id": 5940539274788078378,
+  "gift_id": 5936017773737018241,
   "slug": "StarNotepad-48395",
   "title": "Star Notepad",
   "num": 48395,
-  "availability_issued": 68895,
+  "availability_issued": 68897,
   "availability_total": 99082,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15293800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sterling",
       "rarity": 13,
-      "document_id": 5231391649677993239
+      "document": {
+        "id": 5231391649677993239,
+        "access_hash": 9223121367408709973,
+        "date": "2025-01-23T17:46:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15393,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pizza Slice",
       "rarity": 5,
-      "document_id": 5436241476365344257
+      "document": {
+        "id": 5436241476365344257,
+        "access_hash": 1965465533777700212,
+        "date": "2024-12-26T14:47:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 972,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

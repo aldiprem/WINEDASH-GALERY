@@ -1,26 +1,55 @@
 {
+  "id": 6003326194802492278,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-2284",
   "title": "Ice Cream",
   "num": 2284,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12363100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Starship",
       "rarity": 30,
-      "document_id": 5458770890525278704
+      "document": {
+        "id": 5458770890525278704,
+        "access_hash": 7910371844415353347,
+        "date": "2025-07-16T17:56:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 43435,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pyramid",
       "rarity": 4,
-      "document_id": 5440355466624392997
+      "document": {
+        "id": 5440355466624392997,
+        "access_hash": -674218845830661588,
+        "date": "2024-12-28T11:34:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 974,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

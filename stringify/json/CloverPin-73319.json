@@ -1,26 +1,55 @@
 {
+  "id": 5900002346951246999,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-73319",
   "title": "Clover Pin",
   "num": 73319,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Good Boy",
       "rarity": 20,
-      "document_id": 5262952881845208674
+      "document": {
+        "id": 5262952881845208674,
+        "access_hash": -4740985831593920611,
+        "date": "2025-08-16T14:48:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39799,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hammerhead",
       "rarity": 4,
-      "document_id": 5440572770494734727
+      "document": {
+        "id": 5440572770494734727,
+        "access_hash": -6581833577452539293,
+        "date": "2024-12-28T09:55:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Navy Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 6,
+      "center_color": 7118557,
+      "edge_color": 6057673,
+      "pattern_color": 1194402,
+      "text_color": 13885951
     }
   ]
 }

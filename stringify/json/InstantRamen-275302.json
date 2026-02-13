@@ -1,26 +1,55 @@
 {
+  "id": 6017336846273480454,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-275302",
   "title": "Instant Ramen",
   "num": 275302,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Topokki",
       "rarity": 30,
-      "document_id": 5341288309320611945
+      "document": {
+        "id": 5341288309320611945,
+        "access_hash": -8642175620497695906,
+        "date": "2025-09-12T11:13:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29645,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Potion",
       "rarity": 5,
-      "document_id": 5435902410172163141
+      "document": {
+        "id": 5435902410172163141,
+        "access_hash": 4873673820696983083,
+        "date": "2024-12-26T12:08:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1218,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Khaki Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "pattern_color": 3756059,
+      "text_color": 13887163
     }
   ]
 }

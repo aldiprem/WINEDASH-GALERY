@@ -1,26 +1,55 @@
 {
+  "id": 6003420314715818013,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-14994",
   "title": "Happy Brownie",
   "num": 14994,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cherry Cake",
       "rarity": 30,
-      "document_id": 5334719891280790341
+      "document": {
+        "id": 5334719891280790341,
+        "access_hash": -7933233336273817476,
+        "date": "2025-09-09T15:26:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 43029,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Magic Vial",
       "rarity": 5,
-      "document_id": 5551127401947201559
+      "document": {
+        "id": 5551127401947201559,
+        "access_hash": 8505637015601485714,
+        "date": "2025-02-03T13:26:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1415,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chocolate",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 59,
+      "center_color": 10776152,
+      "edge_color": 7619643,
+      "pattern_color": 4065794,
+      "text_color": 14988972
     }
   ]
 }

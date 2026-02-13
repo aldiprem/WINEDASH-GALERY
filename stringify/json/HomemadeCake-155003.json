@@ -1,26 +1,55 @@
 {
+  "id": 5999243291516732323,
+  "gift_id": 5783075783622787539,
   "slug": "HomemadeCake-155003",
   "title": "Homemade Cake",
   "num": 155003,
-  "availability_issued": 178568,
+  "availability_issued": 178569,
   "availability_total": 199482,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 24625100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Angel Cake",
       "rarity": 15,
-      "document_id": 5420155973438298900
+      "document": {
+        "id": 5420155973438298900,
+        "access_hash": -7472623474204334722,
+        "date": "2024-12-21T16:32:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16848,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pickaxe",
       "rarity": 5,
-      "document_id": 5427383398375122352
+      "document": {
+        "id": 5427383398375122352,
+        "access_hash": -1090993240082326721,
+        "date": "2024-12-23T14:50:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 857,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

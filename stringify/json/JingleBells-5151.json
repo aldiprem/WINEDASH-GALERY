@@ -1,26 +1,55 @@
 {
+  "id": 5825568940213929026,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-5151",
   "title": "Jingle Bells",
   "num": 5151,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75884,
+  "availability_total": 114946,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Season",
       "rarity": 15,
-      "document_id": 5237805066643073532
+      "document": {
+        "id": 5237805066643073532,
+        "access_hash": 3397114641900623013,
+        "date": "2025-01-26T07:41:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35781,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ice Pop",
       "rarity": 24,
-      "document_id": 5434148663356054664
+      "document": {
+        "id": 5434148663356054664,
+        "access_hash": -3894290261695072024,
+        "date": "2024-12-26T14:49:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 915,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Neon Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 5,
+      "center_color": 7706361,
+      "edge_color": 6841060,
+      "pattern_color": 2631868,
+      "text_color": 13622783
     }
   ]
 }

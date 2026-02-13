@@ -1,26 +1,55 @@
 {
+  "id": 5909238463667897431,
+  "gift_id": 5895603153683874485,
   "slug": "FreshSocks-105880",
   "title": "Fresh Socks",
   "num": 105880,
-  "availability_issued": 158627,
+  "availability_issued": 158628,
   "availability_total": 200509,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14468500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Barry Allen",
       "rarity": 20,
-      "document_id": 5355147954036433775
+      "document": {
+        "id": 5355147954036433775,
+        "access_hash": -3276208877783134512,
+        "date": "2025-03-06T12:44:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 46703,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Amour Scoops",
       "rarity": 5,
-      "document_id": 5305556238707210683
+      "document": {
+        "id": 5305556238707210683,
+        "access_hash": -3983366111741397224,
+        "date": "2023-10-21T14:43:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1149,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lemongrass",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 17,
+      "center_color": 11450458,
+      "edge_color": 5608261,
+      "pattern_color": 4614663,
+      "text_color": 14217922
     }
   ]
 }

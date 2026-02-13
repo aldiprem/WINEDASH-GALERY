@@ -1,26 +1,55 @@
 {
+  "id": 6030807714844640291,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-169687",
   "title": "Happy Brownie",
   "num": 169687,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Unicorn",
       "rarity": 30,
-      "document_id": 5326032460931169842
+      "document": {
+        "id": 5326032460931169842,
+        "access_hash": -5372297554750174032,
+        "date": "2025-09-07T05:48:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65368,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Heart",
       "rarity": 4,
-      "document_id": 5440801593467362650
+      "document": {
+        "id": 5440801593467362650,
+        "access_hash": -8427740270004521817,
+        "date": "2024-12-28T09:50:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 617,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Seal Brown",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 64,
+      "center_color": 6704453,
+      "edge_color": 4666926,
+      "pattern_color": 656901,
+      "text_color": 13941941
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003805191030178847,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-194067",
   "title": "Instant Ramen",
   "num": 194067,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hotpot",
       "rarity": 20,
-      "document_id": 5379756351410961855
+      "document": {
+        "id": 5379756351410961855,
+        "access_hash": 6822839632422551168,
+        "date": "2025-09-25T08:36:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64850,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lemon Slice",
       "rarity": 5,
-      "document_id": 5440602010632084801
+      "document": {
+        "id": 5440602010632084801,
+        "access_hash": -6500789401262906059,
+        "date": "2024-12-28T11:12:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1143,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

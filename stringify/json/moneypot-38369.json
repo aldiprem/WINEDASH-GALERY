@@ -1,26 +1,55 @@
 {
+  "id": 5785191024951297534,
+  "gift_id": 5963238670868677492,
   "slug": "MoneyPot-38369",
   "title": "Money Pot",
   "num": 38369,
-  "availability_issued": 69424,
+  "availability_issued": 69429,
   "availability_total": 91779,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14620100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Elf Cup",
       "rarity": 30,
-      "document_id": 5417994956348358829
+      "document": {
+        "id": 5417994956348358829,
+        "access_hash": 3811697956552053274,
+        "date": "2025-10-08T17:16:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 41850,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lion of Babylon",
       "rarity": 5,
-      "document_id": 5544456677786386440
+      "document": {
+        "id": 5544456677786386440,
+        "access_hash": -8558057691141222937,
+        "date": "2025-02-01T17:42:16+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3633,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Moonstone",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 33,
+      "center_color": 8303028,
+      "edge_color": 5800848,
+      "pattern_color": 1459538,
+      "text_color": 14349821
     }
   ]
 }

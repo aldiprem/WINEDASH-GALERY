@@ -1,26 +1,55 @@
 {
+  "id": 6032963487779521826,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-304621",
   "title": "Ice Cream",
   "num": 304621,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Fresh Berry",
       "rarity": 30,
-      "document_id": 5368312754648155974
+      "document": {
+        "id": 5368312754648155974,
+        "access_hash": 1835668940166695385,
+        "date": "2025-09-21T11:21:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 23387,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Plum",
       "rarity": 7,
-      "document_id": 5434148341233508615
+      "document": {
+        "id": 5434148341233508615,
+        "access_hash": -1000468908887705577,
+        "date": "2024-12-26T14:48:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 908,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Light Olive",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "pattern_color": 5852164,
+      "text_color": 16116668
     }
   ]
 }

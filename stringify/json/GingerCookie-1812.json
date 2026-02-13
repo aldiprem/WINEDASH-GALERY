@@ -1,26 +1,55 @@
 {
+  "id": 5841724249244435141,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-1812",
   "title": "Ginger Cookie",
   "num": 1812,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Candy Bar",
       "rarity": 17,
-      "document_id": 5233260175200119619
+      "document": {
+        "id": 5233260175200119619,
+        "access_hash": -7186363132887432123,
+        "date": "2025-01-24T23:44:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30505,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Jingle Bell",
       "rarity": 18,
-      "document_id": 5206464681694217071
+      "document": {
+        "id": 5206464681694217071,
+        "access_hash": 1040973728026945150,
+        "date": "2023-12-24T22:56:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1679,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Onyx Black",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 49,
+      "center_color": 5067348,
+      "edge_color": 3225144,
+      "pattern_color": 0,
+      "text_color": 11119533
     }
   ]
 }

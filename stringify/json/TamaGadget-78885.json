@@ -1,26 +1,55 @@
 {
+  "id": 6041784255388845166,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-78885",
   "title": "Tama Gadget",
   "num": 78885,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14030600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sapphire",
       "rarity": 11,
-      "document_id": 5296660704307208452
+      "document": {
+        "id": 5296660704307208452,
+        "access_hash": 372812986822337651,
+        "date": "2025-02-15T10:59:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16128,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pirate Hat",
       "rarity": 3,
-      "document_id": 5312418230646632393
+      "document": {
+        "id": 5312418230646632393,
+        "access_hash": 6766799625284367391,
+        "date": "2025-02-20T17:27:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1162,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Dark Lilac",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 31,
+      "center_color": 11632037,
+      "edge_color": 9197434,
+      "pattern_color": 6629458,
+      "text_color": 15779042
     }
   ]
 }

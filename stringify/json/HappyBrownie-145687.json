@@ -1,26 +1,55 @@
 {
+  "id": 6008300741888836674,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-145687",
   "title": "Happy Brownie",
   "num": 145687,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Maestro",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11689300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cactus",
       "rarity": 30,
-      "document_id": 5332685137639410309
+      "document": {
+        "id": 5332685137639410309,
+        "access_hash": -3574571655493008650,
+        "date": "2025-09-09T15:25:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48016,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flat Cap",
       "rarity": 5,
-      "document_id": 5312074465759227617
+      "document": {
+        "id": 5312074465759227617,
+        "access_hash": -2041685524632755645,
+        "date": "2025-02-20T17:40:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1130,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Tactical Pine",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 61,
+      "center_color": 4489835,
+      "edge_color": 3105641,
+      "pattern_color": 9764,
+      "text_color": 12052179
     }
   ]
 }

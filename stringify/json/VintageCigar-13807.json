@@ -1,26 +1,55 @@
 {
+  "id": 5805438080605225738,
+  "gift_id": 5857140566201991735,
   "slug": "VintageCigar-13807",
   "title": "Vintage Cigar",
   "num": 13807,
   "availability_issued": 26277,
   "availability_total": 31024,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 303181200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Desert Night",
       "rarity": 30,
-      "document_id": 5429649689408463436
+      "document": {
+        "id": 5429649689408463436,
+        "access_hash": -5924829335515098660,
+        "date": "2024-12-24T12:40:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20009,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Light Bulb",
       "rarity": 2,
-      "document_id": 5438588220726077688
+      "document": {
+        "id": 5438588220726077688,
+        "access_hash": -4477567786968093889,
+        "date": "2024-12-28T09:52:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1095,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chocolate",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 59,
+      "center_color": 10776152,
+      "edge_color": 7619643,
+      "pattern_color": 4065794,
+      "text_color": 14988972
     }
   ]
 }

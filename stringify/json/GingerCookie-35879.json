@@ -1,26 +1,55 @@
 {
+  "id": 5850539953087317160,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-35879",
   "title": "Ginger Cookie",
   "num": 35879,
-  "availability_issued": 142089,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Frosty",
       "rarity": 15,
-      "document_id": 5188303738900606259
+      "document": {
+        "id": 5188303738900606259,
+        "access_hash": -641951983158186267,
+        "date": "2025-01-09T21:11:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29580,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Trickster Fox",
       "rarity": 4,
-      "document_id": 5546605024722812982
+      "document": {
+        "id": 5546605024722812982,
+        "access_hash": 3677359608556806840,
+        "date": "2025-02-01T17:43:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1676,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

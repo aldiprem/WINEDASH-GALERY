@@ -1,26 +1,55 @@
 {
+  "id": 5841357149799711357,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-25573",
   "title": "Ginger Cookie",
   "num": 25573,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14754800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Johnny Ash",
       "rarity": 15,
-      "document_id": 5398113114648501741
+      "document": {
+        "id": 5398113114648501741,
+        "access_hash": 3434178803817300207,
+        "date": "2024-12-14T13:44:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29357,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bandage",
       "rarity": 4,
-      "document_id": 5440708100619277419
+      "document": {
+        "id": 5440708100619277419,
+        "access_hash": 3521069946558357956,
+        "date": "2024-12-28T11:34:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1029,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Amber",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 21,
+      "center_color": 14332741,
+      "edge_color": 11632682,
+      "pattern_color": 8007936,
+      "text_color": 16772551
     }
   ]
 }

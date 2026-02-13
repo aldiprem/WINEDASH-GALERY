@@ -1,26 +1,55 @@
 {
+  "id": 6014775452332196581,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-186179",
   "title": "Snoop Dogg",
   "num": 186179,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chill Homie",
       "rarity": 30,
-      "document_id": 5413569224478063408
+      "document": {
+        "id": 5413569224478063408,
+        "access_hash": 4715737016133601314,
+        "date": "2025-07-01T20:00:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 59979,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Phoenix",
       "rarity": 4,
-      "document_id": 5726583769540853773
+      "document": {
+        "id": 5726583769540853773,
+        "access_hash": -5918303661202475644,
+        "date": "2024-12-28T10:07:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2246,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Khaki Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "pattern_color": 3756059,
+      "text_color": 13887163
     }
   ]
 }

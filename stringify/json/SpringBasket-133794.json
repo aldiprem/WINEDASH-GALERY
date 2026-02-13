@@ -1,26 +1,55 @@
 {
+  "id": 5764839661721617750,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-133794",
   "title": "Spring Basket",
   "num": 133794,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pudel Lux",
       "rarity": 10,
-      "document_id": 5373167798564452035
+      "document": {
+        "id": 5373167798564452035,
+        "access_hash": -2854148872113247517,
+        "date": "2025-09-23T06:23:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64325,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candle",
       "rarity": 7,
-      "document_id": 5440862947075185091
+      "document": {
+        "id": 5440862947075185091,
+        "access_hash": 6542726026572555817,
+        "date": "2024-12-28T11:47:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 875,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Roman Silver",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 43,
+      "center_color": 10725557,
+      "edge_color": 8159370,
+      "pattern_color": 4146512,
+      "text_color": 14344162
     }
   ]
 }

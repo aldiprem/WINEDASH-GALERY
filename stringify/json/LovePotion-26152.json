@@ -1,26 +1,55 @@
 {
+  "id": 5776250187236246265,
+  "gift_id": 5868348541058942091,
   "slug": "LovePotion-26152",
   "title": "Love Potion",
   "num": 26152,
   "availability_issued": 29073,
   "availability_total": 30412,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQBBMrmXnbsBCZh3ekRnn3voFbbppd92eOr4gdz1kPwFWIUX",
+  "value_amount": 38706100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Starry Night",
       "rarity": 25,
-      "document_id": 5285226105500886551
+      "document": {
+        "id": 5285226105500886551,
+        "access_hash": -2611306266760764430,
+        "date": "2025-02-11T16:46:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16351,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Carambola",
       "rarity": 4,
-      "document_id": 5433727855345296125
+      "document": {
+        "id": 5433727855345296125,
+        "access_hash": -2692755281175004500,
+        "date": "2024-12-26T14:47:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1686,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

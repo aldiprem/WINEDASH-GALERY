@@ -1,26 +1,55 @@
 {
+  "id": 6010088766838932235,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-80696",
   "title": "Mousse Cake",
   "num": 80696,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Opal Cherry",
       "rarity": 20,
-      "document_id": 5375080248717112847
+      "document": {
+        "id": 5375080248717112847,
+        "access_hash": -310936676494133172,
+        "date": "2025-09-23T23:01:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17851,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Brain",
       "rarity": 4,
-      "document_id": 5434154624770664862
+      "document": {
+        "id": 5434154624770664862,
+        "access_hash": 3781432387677446700,
+        "date": "2024-12-26T11:36:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1620,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5764775675298841230,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-97635",
   "title": "Cookie Heart",
   "num": 97635,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "fmvp.ton",
+  "gift_address": "EQD-BZMKI2WvPfnp2GLlQu2Nt2KJyoTlCsk1eUnvSqf-Hq35",
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Citrus Glaze",
       "rarity": 15,
-      "document_id": 5222249468191071530
+      "document": {
+        "id": 5222249468191071530,
+        "access_hash": -7328208863630854836,
+        "date": "2025-01-21T04:54:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30465,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cobra",
       "rarity": 2,
-      "document_id": 5436400690803009263
+      "document": {
+        "id": 5436400690803009263,
+        "access_hash": 1866644452512916947,
+        "date": "2024-12-26T12:20:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1138,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

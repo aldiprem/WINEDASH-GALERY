@@ -1,26 +1,55 @@
 {
+  "id": 5902044578130691170,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-131805",
   "title": "Clover Pin",
   "num": 131805,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Matrix",
       "rarity": 30,
-      "document_id": 5231367640810810236
+      "document": {
+        "id": 5231367640810810236,
+        "access_hash": 7078121740814219761,
+        "date": "2025-08-06T05:37:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 59698,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Inca Sun",
       "rarity": 4,
-      "document_id": 5722165274690453518
+      "document": {
+        "id": 5722165274690453518,
+        "access_hash": -3478135820017506278,
+        "date": "2024-12-26T12:01:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3933,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pine Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 34,
+      "center_color": 7055740,
+      "edge_color": 4094320,
+      "pattern_color": 739379,
+      "text_color": 14218725
     }
   ]
 }

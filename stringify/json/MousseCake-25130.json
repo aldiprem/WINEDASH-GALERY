@@ -1,26 +1,55 @@
 {
+  "id": 6003351986081104738,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-25130",
   "title": "Mousse Cake",
   "num": 25130,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Денис",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Circus Show",
       "rarity": 25,
-      "document_id": 5327978699591549100
+      "document": {
+        "id": 5327978699591549100,
+        "access_hash": -6809122479035939693,
+        "date": "2025-09-07T13:23:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60342,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Aztec Totem",
       "rarity": 6,
-      "document_id": 5544028714360111114
+      "document": {
+        "id": 5544028714360111114,
+        "access_hash": 8878179205533861126,
+        "date": "2025-02-01T17:42:09+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2760,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mint Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "pattern_color": 158498,
+      "text_color": 12451788
     }
   ]
 }

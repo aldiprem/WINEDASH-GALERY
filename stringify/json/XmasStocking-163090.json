@@ -1,26 +1,55 @@
 {
+  "id": 5983479739338195930,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-163090",
   "title": "Xmas Stocking",
   "num": 163090,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12363100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Monster",
       "rarity": 5,
-      "document_id": 5350810384959828516
+      "document": {
+        "id": 5350810384959828516,
+        "access_hash": -5103902202525277442,
+        "date": "2025-03-05T17:57:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 59870,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Snowflake",
       "rarity": 12,
-      "document_id": 5438629456707075929
+      "document": {
+        "id": 5438629456707075929,
+        "access_hash": -2578813037183426325,
+        "date": "2023-12-05T16:28:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1571,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Carmine",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 77,
+      "center_color": 14702410,
+      "edge_color": 11024443,
+      "pattern_color": 5177600,
+      "text_color": 16758701
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6001408302926267456,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-25307",
   "title": "Whip Cupcake",
   "num": 25307,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Jd.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cherry Top",
       "rarity": 30,
-      "document_id": 5224333674085905027
+      "document": {
+        "id": 5224333674085905027,
+        "access_hash": -3079166881564321962,
+        "date": "2025-04-29T10:20:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 43633,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fenrir",
       "rarity": 7,
-      "document_id": 5722120379397308437
+      "document": {
+        "id": 5722120379397308437,
+        "access_hash": 7345501622739687058,
+        "date": "2024-12-26T12:01:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2168,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

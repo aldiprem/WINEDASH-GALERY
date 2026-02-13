@@ -1,26 +1,55 @@
 {
+  "id": 6017173276738978770,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-16285",
   "title": "Snoop Cigar",
   "num": 16285,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Samar",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Triple Shot",
       "rarity": 20,
-      "document_id": 5373351880862758526
+      "document": {
+        "id": 5373351880862758526,
+        "access_hash": -8622686990974796764,
+        "date": "2025-06-18T14:57:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54183,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Acorn",
       "rarity": 4,
-      "document_id": 5434026974047658205
+      "document": {
+        "id": 5434026974047658205,
+        "access_hash": -6620279904384731830,
+        "date": "2024-12-26T15:05:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 798,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

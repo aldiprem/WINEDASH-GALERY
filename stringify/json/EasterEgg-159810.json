@@ -1,26 +1,55 @@
 {
+  "id": 5776063223014884304,
+  "gift_id": 5773668482394620318,
   "slug": "EasterEgg-159810",
   "title": "Easter Egg",
   "num": 159810,
   "availability_issued": 162175,
   "availability_total": 173176,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQA3_4hniRHFXMQqopp-u7_VY57M4U-K11b168k5YDw_o4x5",
+  "gift_address": "EQAUfc9ujk5jCpVYQi3tzxv3_xkH5Qa94hG9eQCibeLRV1xN",
+  "value_amount": 15765400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Faberge",
       "rarity": 10,
-      "document_id": 5197424247982554368
+      "document": {
+        "id": 5197424247982554368,
+        "access_hash": 560420167882447692,
+        "date": "2025-04-19T16:11:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55720,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Porrige",
       "rarity": 5,
-      "document_id": 5546646445387415571
+      "document": {
+        "id": 5546646445387415571,
+        "access_hash": -8366303777364650742,
+        "date": "2025-02-02T17:53:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1171,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burnt Sienna",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 76,
+      "center_color": 14053180,
+      "edge_color": 11881261,
+      "pattern_color": 7014658,
+      "text_color": 16764080
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5974330758918046927,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-322253",
   "title": "Ice Cream",
   "num": 322253,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12127200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kiwi Sorbet",
       "rarity": 30,
-      "document_id": 5195050617126550326
+      "document": {
+        "id": 5195050617126550326,
+        "access_hash": -5248251157745531645,
+        "date": "2025-07-25T12:18:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26676,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sleepy Unicorn",
       "rarity": 7,
-      "document_id": 5551140097870528520
+      "document": {
+        "id": 5551140097870528520,
+        "access_hash": -3999564798796657057,
+        "date": "2025-02-03T13:27:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1501,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

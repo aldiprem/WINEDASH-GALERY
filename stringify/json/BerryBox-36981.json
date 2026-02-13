@@ -1,26 +1,55 @@
 {
+  "id": 5890780601195168586,
+  "gift_id": 5882252952218894938,
   "slug": "BerryBox-36981",
   "title": "Berry Box",
   "num": 36981,
-  "availability_issued": 50377,
+  "availability_issued": 50378,
   "availability_total": 66580,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18342500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wedded",
       "rarity": 10,
-      "document_id": 5431838013900479049
+      "document": {
+        "id": 5431838013900479049,
+        "access_hash": 3060799260322177274,
+        "date": "2024-12-25T08:57:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22289,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Love Dove",
       "rarity": 8,
-      "document_id": 5305258889531374945
+      "document": {
+        "id": 5305258889531374945,
+        "access_hash": 1220105244110189092,
+        "date": "2023-10-21T14:53:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1203,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

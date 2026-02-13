@@ -1,26 +1,55 @@
 {
+  "id": 5823358539590010114,
+  "gift_id": 5821205665758053411,
   "slug": "EternalCandle-33642",
   "title": "Eternal Candle",
   "num": 33642,
   "availability_issued": 44951,
   "availability_total": 46590,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20212100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Purple Wave",
       "rarity": 15,
-      "document_id": 5422405247811215886
+      "document": {
+        "id": 5422405247811215886,
+        "access_hash": -7992248484759796205,
+        "date": "2024-12-22T14:39:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22347,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gravestone",
       "rarity": 15,
-      "document_id": 5298725402460568410
+      "document": {
+        "id": 5298725402460568410,
+        "access_hash": -9170332300564214021,
+        "date": "2023-10-19T19:10:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 776,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pure Gold",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 20,
+      "center_color": 13413185,
+      "edge_color": 9993010,
+      "pattern_color": 7355392,
+      "text_color": 16770475
     }
   ]
 }

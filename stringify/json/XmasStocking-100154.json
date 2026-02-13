@@ -1,26 +1,55 @@
 {
+  "id": 5976764678229984408,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-100154",
   "title": "Xmas Stocking",
   "num": 100154,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12632600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Outline",
       "rarity": 15,
-      "document_id": 5291736494237575012
+      "document": {
+        "id": 5291736494237575012,
+        "access_hash": 7442686240303242334,
+        "date": "2025-02-13T17:44:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26888,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bowler Hat",
       "rarity": 5,
-      "document_id": 5276170321576093265
+      "document": {
+        "id": 5276170321576093265,
+        "access_hash": 865914723502504688,
+        "date": "2025-02-08T13:49:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 886,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

@@ -1,26 +1,55 @@
 {
+  "id": 6014821769259517040,
+  "gift_id": 6001473264306619020,
   "slug": "JingleBells-43561",
   "title": "Jingle Bells",
   "num": 43561,
-  "availability_issued": 75899,
-  "availability_total": 114963,
+  "availability_issued": 75884,
+  "availability_total": 114946,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15900200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Berry Bell",
       "rarity": 9,
-      "document_id": 5231115088143869056
+      "document": {
+        "id": 5231115088143869056,
+        "access_hash": 8981783206766115557,
+        "date": "2025-01-23T16:31:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24976,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Christmas Tree",
       "rarity": 16,
-      "document_id": 5438542608173383432
+      "document": {
+        "id": 5438542608173383432,
+        "access_hash": -5908990877537789111,
+        "date": "2023-12-05T16:28:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 809,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 21
+      "rarity": 21,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6003644868490953387,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-202641",
   "title": "Ice Cream",
   "num": 202641,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Funky Disco",
       "rarity": 25,
-      "document_id": 5359285588090451565
+      "document": {
+        "id": 5359285588090451565,
+        "access_hash": -9183392023870017343,
+        "date": "2025-09-18T13:40:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15149,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fenrir",
       "rarity": 5,
-      "document_id": 5722120379397308437
+      "document": {
+        "id": 5722120379397308437,
+        "access_hash": 7345501622739687058,
+        "date": "2024-12-26T12:01:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2168,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burnt Sienna",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 76,
+      "center_color": 14053180,
+      "edge_color": 11881261,
+      "pattern_color": 7014658,
+      "text_color": 16764080
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6017225902973256441,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-82517",
   "title": "Snoop Cigar",
   "num": 82517,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "The King",
       "rarity": 30,
-      "document_id": 5373020661574826232
+      "document": {
+        "id": 5373020661574826232,
+        "access_hash": 7595399971509809770,
+        "date": "2025-06-18T14:52:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55110,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Scarab",
       "rarity": 7,
-      "document_id": 5433699117719118672
+      "document": {
+        "id": 5433699117719118672,
+        "access_hash": 4971822394871751198,
+        "date": "2024-12-26T11:48:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1727,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cobalt Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 53,
+      "center_color": 6326479,
+      "edge_color": 5333688,
+      "pattern_color": 1254524,
+      "text_color": 12768245
     }
   ]
 }

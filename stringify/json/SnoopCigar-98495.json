@@ -1,26 +1,55 @@
 {
+  "id": 6017204788914029410,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-98495",
   "title": "Snoop Cigar",
   "num": 98495,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Debut Album",
       "rarity": 25,
-      "document_id": 5375410175219890381
+      "document": {
+        "id": 5375410175219890381,
+        "access_hash": 6507072582014858607,
+        "date": "2025-06-18T14:54:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35816,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wizard Hat",
       "rarity": 4,
-      "document_id": 5314292219367155055
+      "document": {
+        "id": 5314292219367155055,
+        "access_hash": 4355800303162437030,
+        "date": "2025-02-21T12:37:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 801,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Marine Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 60,
+      "center_color": 5138588,
+      "edge_color": 3885946,
+      "pattern_color": 67617,
+      "text_color": 12307442
     }
   ]
 }

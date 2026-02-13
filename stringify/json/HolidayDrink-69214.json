@@ -1,26 +1,55 @@
 {
+  "id": 5981164928059310869,
+  "gift_id": 6003735372041814769,
   "slug": "HolidayDrink-69214",
   "title": "Holiday Drink",
   "num": 69214,
-  "availability_issued": 82869,
+  "availability_issued": 82872,
   "availability_total": 120989,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12632600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Banana Split",
       "rarity": 49,
-      "document_id": 5296291981364848707
+      "document": {
+        "id": 5296291981364848707,
+        "access_hash": -2087827916806306101,
+        "date": "2025-02-14T17:23:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 48637,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "New Year’s Eve",
       "rarity": 12,
-      "document_id": 5199550690585763036
+      "document": {
+        "id": 5199550690585763036,
+        "access_hash": -2798363959252234629,
+        "date": "2024-10-08T18:13:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1754,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mint Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 14,
+      "center_color": 8309634,
+      "edge_color": 4562522,
+      "pattern_color": 158498,
+      "text_color": 12451788
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5868247815485915682,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-340134",
   "title": "Lol Pop",
   "num": 340134,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Jd.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13272600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Plastic Ice",
       "rarity": 10,
-      "document_id": 5226763178171460533
+      "document": {
+        "id": 5226763178171460533,
+        "access_hash": 9048981978279391646,
+        "date": "2025-01-22T23:42:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60455,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Magic Vial",
       "rarity": 3,
-      "document_id": 5551127401947201559
+      "document": {
+        "id": 5551127401947201559,
+        "access_hash": 8505637015601485714,
+        "date": "2025-02-03T13:26:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1415,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

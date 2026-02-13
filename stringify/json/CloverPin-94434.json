@@ -1,26 +1,55 @@
 {
+  "id": 5902461035339580272,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-94434",
   "title": "Clover Pin",
   "num": 94434,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Serena C.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Purrfect Paw",
       "rarity": 20,
-      "document_id": 5231331764948990717
+      "document": {
+        "id": 5231331764948990717,
+        "access_hash": -8979902165448219044,
+        "date": "2025-08-06T04:59:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33443,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Acorn",
       "rarity": 5,
-      "document_id": 5434026974047658205
+      "document": {
+        "id": 5434026974047658205,
+        "access_hash": -6620279904384731830,
+        "date": "2024-12-26T15:05:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 798,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

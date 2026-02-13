@@ -1,26 +1,55 @@
 {
+  "id": 5846045604819502193,
+  "gift_id": 6028283532500009446,
   "slug": "BigYear-16117",
   "title": "Big Year",
   "num": 16117,
-  "availability_issued": 74074,
+  "availability_issued": 74076,
   "availability_total": 101415,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10813500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Nostradamus",
       "rarity": 23,
-      "document_id": 5417911440709285239
+      "document": {
+        "id": 5417911440709285239,
+        "access_hash": 10676482171938892,
+        "date": "2025-03-27T23:54:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27924,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pegasus",
       "rarity": 5,
-      "document_id": 5724544802536554508
+      "document": {
+        "id": 5724544802536554508,
+        "access_hash": 8992939111738235277,
+        "date": "2024-12-26T12:03:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2778,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

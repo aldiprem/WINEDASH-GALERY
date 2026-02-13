@@ -1,26 +1,55 @@
 {
+  "id": 5848177046764651564,
+  "gift_id": 5825895989088617224,
   "slug": "HypnoLollipop-75763",
   "title": "Hypno Lollipop",
   "num": 75763,
-  "availability_issued": 79412,
+  "availability_issued": 79415,
   "availability_total": 116639,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13390500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Grape Medley",
       "rarity": 13,
-      "document_id": 5228838630922940236
+      "document": {
+        "id": 5228838630922940236,
+        "access_hash": -2925854455720954931,
+        "date": "2025-01-23T07:25:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 6764,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Clubs",
       "rarity": 4,
-      "document_id": 5440578353952220912
+      "document": {
+        "id": 5440578353952220912,
+        "access_hash": -1664710175118433892,
+        "date": "2024-12-28T11:31:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 684,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 12,
+      "center_color": 7325587,
+      "edge_color": 3906692,
+      "pattern_color": 24905,
+      "text_color": 13041648
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5850486635363304159,
+  "gift_id": 5983259145522906006,
   "slug": "WinterWreath-66921",
   "title": "Winter Wreath",
   "num": 66921,
-  "availability_issued": 71558,
+  "availability_issued": 71559,
   "availability_total": 100846,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12346200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cold Night",
       "rarity": 20,
-      "document_id": 5305548864248376368
+      "document": {
+        "id": 5305548864248376368,
+        "access_hash": -659526080672922881,
+        "date": "2025-02-18T06:52:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35147,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dessert",
       "rarity": 24,
-      "document_id": 5433791150278337082
+      "document": {
+        "id": 5433791150278337082,
+        "access_hash": 3090493827616352506,
+        "date": "2024-12-26T14:49:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 933,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5771574161851810925,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-54509",
   "title": "Tama Gadget",
   "num": 54509,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pastel Thread",
       "rarity": 5,
-      "document_id": 5296693504972450164
+      "document": {
+        "id": 5296693504972450164,
+        "access_hash": 3946785474679208727,
+        "date": "2025-02-15T11:00:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14167,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Chili Pepper",
       "rarity": 4,
-      "document_id": 5436357135539658505
+      "document": {
+        "id": 5436357135539658505,
+        "access_hash": 3388203540728689222,
+        "date": "2024-12-26T12:18:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 889,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

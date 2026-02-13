@@ -1,26 +1,55 @@
 {
+  "id": 5825916312873861755,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-33058",
   "title": "Party Sparkler",
   "num": 33058,
-  "availability_issued": 176753,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Green Light",
       "rarity": 14,
-      "document_id": 5231128114779676424
+      "document": {
+        "id": 5231128114779676424,
+        "access_hash": 1852765210234810622,
+        "date": "2025-01-23T11:17:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 32095,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Christmas Tree",
       "rarity": 15,
-      "document_id": 5438542608173383432
+      "document": {
+        "id": 5438542608173383432,
+        "access_hash": -5908990877537789111,
+        "date": "2023-12-05T16:28:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 809,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Malachite",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 15,
+      "center_color": 9811031,
+      "edge_color": 4036437,
+      "pattern_color": 289542,
+      "text_color": 12775358
     }
   ]
 }

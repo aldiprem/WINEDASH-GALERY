@@ -1,26 +1,55 @@
 {
+  "id": 5947430025828500341,
+  "gift_id": 5821384757304362229,
   "slug": "WitchHat-79007",
   "title": "Witch Hat",
   "num": 79007,
   "availability_issued": 82318,
   "availability_total": 88480,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16725500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Flag",
       "rarity": 5,
-      "document_id": 5237835165773882325
+      "document": {
+        "id": 5237835165773882325,
+        "access_hash": -4458558014103832168,
+        "date": "2025-01-26T14:47:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26669,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Evil Pumpkin",
       "rarity": 24,
-      "document_id": 5301253879772494275
+      "document": {
+        "id": 5301253879772494275,
+        "access_hash": 3923879863054012380,
+        "date": "2023-10-19T19:01:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1246,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

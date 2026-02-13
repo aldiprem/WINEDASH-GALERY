@@ -1,26 +1,55 @@
 {
+  "id": 6003542214477612199,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-50908",
   "title": "Mousse Cake",
   "num": 50908,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ice Cream",
       "rarity": 25,
-      "document_id": 5382039603270157317
+      "document": {
+        "id": 5382039603270157317,
+        "access_hash": 7294865168345814861,
+        "date": "2025-09-25T16:11:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64792,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Diamonds",
       "rarity": 2,
-      "document_id": 5440666370717017730
+      "document": {
+        "id": 5440666370717017730,
+        "access_hash": 329682687283280169,
+        "date": "2024-12-28T11:32:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 571,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

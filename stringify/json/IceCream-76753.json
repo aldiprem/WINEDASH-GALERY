@@ -1,26 +1,55 @@
 {
+  "id": 6003765767525369418,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-76753",
   "title": "Ice Cream",
   "num": 76753,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Plastic Pop",
       "rarity": 25,
-      "document_id": 5195288493890238786
+      "document": {
+        "id": 5195288493890238786,
+        "access_hash": 5655504803225954637,
+        "date": "2025-07-25T12:18:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12835,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Unicorn Head",
       "rarity": 7,
-      "document_id": 5440544067228292901
+      "document": {
+        "id": 5440544067228292901,
+        "access_hash": 545998144893487273,
+        "date": "2024-12-28T11:07:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 925,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Moonstone",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 33,
+      "center_color": 8303028,
+      "edge_color": 5800848,
+      "pattern_color": 1459538,
+      "text_color": 14349821
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6019495204778673311,
+  "gift_id": 6003456431095808759,
   "slug": "FaithAmulet-105315",
   "title": "Faith Amulet",
   "num": 105315,
-  "availability_issued": 135385,
+  "availability_issued": 135390,
   "availability_total": 172784,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14131600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Princess",
       "rarity": 15,
-      "document_id": 5373250820282289331
+      "document": {
+        "id": 5373250820282289331,
+        "access_hash": 3145806986500776478,
+        "date": "2025-09-22T19:59:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 56889,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cap",
       "rarity": 7,
-      "document_id": 5422883810247207169
+      "document": {
+        "id": 5422883810247207169,
+        "access_hash": -6122523442560035635,
+        "date": "2024-12-22T22:43:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 721,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

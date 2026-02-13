@@ -1,26 +1,55 @@
 {
+  "id": 5825852171832263503,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-161155",
   "title": "Whip Cupcake",
   "num": 161155,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Trippy",
       "rarity": 15,
-      "document_id": 5244940695243878615
+      "document": {
+        "id": 5244940695243878615,
+        "access_hash": 6111974148217173579,
+        "date": "2025-05-05T07:39:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36307,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Two Hearts",
       "rarity": 7,
-      "document_id": 5292267614188363062
+      "document": {
+        "id": 5292267614188363062,
+        "access_hash": 4315694778606309873,
+        "date": "2025-02-12T23:10:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1231,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Orange",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 23,
+      "center_color": 13736506,
+      "edge_color": 12611399,
+      "pattern_color": 10303751,
+      "text_color": 16769475
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

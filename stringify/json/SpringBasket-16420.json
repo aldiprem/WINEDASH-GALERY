@@ -1,26 +1,55 @@
 {
+  "id": 6003386101006338433,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-16420",
   "title": "Spring Basket",
   "num": 16420,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15597000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Capybara",
       "rarity": 30,
-      "document_id": 5397616676558635042
+      "document": {
+        "id": 5397616676558635042,
+        "access_hash": -3989127547607048640,
+        "date": "2025-10-01T10:10:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19823,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bastet",
       "rarity": 2,
-      "document_id": 5721952626564661261
+      "document": {
+        "id": 5721952626564661261,
+        "access_hash": 3898567555951434059,
+        "date": "2024-12-26T12:00:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2166,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Feldgrau",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 68,
+      "center_color": 9015944,
+      "edge_color": 6187875,
+      "pattern_color": 1844767,
+      "text_color": 14608865
     }
   ]
 }

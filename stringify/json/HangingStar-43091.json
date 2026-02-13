@@ -1,26 +1,55 @@
 {
+  "id": 5917758716710486757,
+  "gift_id": 5915733223018594841,
   "slug": "HangingStar-43091",
   "title": "Hanging Star",
   "num": 43091,
-  "availability_issued": 44509,
+  "availability_issued": 44510,
   "availability_total": 58118,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 21205800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Dwarf",
       "rarity": 14,
-      "document_id": 5235680621199649139
+      "document": {
+        "id": 5235680621199649139,
+        "access_hash": -7390244818759386421,
+        "date": "2025-01-25T23:53:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16640,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eikthyrnir",
       "rarity": 24,
-      "document_id": 5722379245666172949
+      "document": {
+        "id": 5722379245666172949,
+        "access_hash": -1718693921207800600,
+        "date": "2024-12-26T12:03:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2569,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Persimmon",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 26,
+      "center_color": 15181658,
+      "edge_color": 12937055,
+      "pattern_color": 11341312,
+      "text_color": 16770263
     }
   ]
 }

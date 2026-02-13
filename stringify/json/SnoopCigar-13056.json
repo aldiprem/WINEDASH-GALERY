@@ -1,26 +1,55 @@
 {
+  "id": 6014640783632630616,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-13056",
   "title": "Snoop Cigar",
   "num": 13056,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 40407300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Puff Puff Pass",
       "rarity": 30,
-      "document_id": 5373298352685349318
+      "document": {
+        "id": 5373298352685349318,
+        "access_hash": 5181968741329090957,
+        "date": "2025-06-18T14:53:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53168,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cocktail",
       "rarity": 7,
-      "document_id": 5424853890271044722
+      "document": {
+        "id": 5424853890271044722,
+        "access_hash": -3685348669706753930,
+        "date": "2024-12-23T14:51:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 822,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

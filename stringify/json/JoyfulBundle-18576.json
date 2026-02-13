@@ -1,26 +1,55 @@
 {
+  "id": 6003312996367991556,
+  "gift_id": 5870862540036113469,
   "slug": "JoyfulBundle-18576",
   "title": "Joyful Bundle",
   "num": 18576,
   "availability_issued": 78211,
   "availability_total": 114092,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17365500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Prize Cake",
       "rarity": 30,
-      "document_id": 5266967791503698280
+      "document": {
+        "id": 5266967791503698280,
+        "access_hash": -5723889007904137092,
+        "date": "2025-05-13T06:16:48+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54108,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rain Drop",
       "rarity": 7,
-      "document_id": 5440588533024712814
+      "document": {
+        "id": 5440588533024712814,
+        "access_hash": -6893908857987126055,
+        "date": "2024-12-28T11:06:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 587,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

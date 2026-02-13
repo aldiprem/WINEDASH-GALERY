@@ -1,26 +1,55 @@
 {
+  "id": 5841320410649461348,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-99561",
   "title": "Lol Pop",
   "num": 99561,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Shift",
       "rarity": 10,
-      "document_id": 5226963985072422325
+      "document": {
+        "id": 5226963985072422325,
+        "access_hash": -5747422147006864692,
+        "date": "2025-01-22T23:42:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17027,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Full Moon",
       "rarity": 5,
-      "document_id": 5550987214214660101
+      "document": {
+        "id": 5550987214214660101,
+        "access_hash": 6711635371082572192,
+        "date": "2025-02-03T13:30:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 3347,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

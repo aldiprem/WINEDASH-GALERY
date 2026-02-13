@@ -1,26 +1,55 @@
 {
+  "id": 6028483682270971207,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-9",
   "title": "Plush Pepe",
   "num": 9,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "9ygj.ton",
+  "gift_address": "EQDqLc6xgGNjy1HdH-TRfHRIM_0NFpgwt07y7bwsIPq65AcT",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Galaxy",
       "rarity": 20,
-      "document_id": 5424760337293402339
+      "document": {
+        "id": 5424760337293402339,
+        "access_hash": 367492197326506049,
+        "date": "2024-12-22T22:41:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22078,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rocket",
       "rarity": 3,
-      "document_id": 5422791593004393932
+      "document": {
+        "id": 5422791593004393932,
+        "access_hash": 8498274448755039097,
+        "date": "2024-12-22T15:58:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 896,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Cyan",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "pattern_color": 156813,
+      "text_color": 11988991
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

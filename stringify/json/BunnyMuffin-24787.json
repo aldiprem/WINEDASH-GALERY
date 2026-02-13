@@ -1,26 +1,55 @@
 {
+  "id": 5942705471608586728,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-24787",
   "title": "Bunny Muffin",
   "num": 24787,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 18089800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chill-Out",
       "rarity": 14,
-      "document_id": 5235986938267199460
+      "document": {
+        "id": 5235986938267199460,
+        "access_hash": 4745856808249396865,
+        "date": "2025-01-25T19:24:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19258,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Genie Lamp",
       "rarity": 2,
-      "document_id": 5440679027985636145
+      "document": {
+        "id": 5440679027985636145,
+        "access_hash": 6162354837686909142,
+        "date": "2024-12-28T11:33:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1032,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Copper",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 57,
+      "center_color": 13665878,
+      "edge_color": 10315057,
+      "pattern_color": 6301953,
+      "text_color": 16046270
     }
   ]
 }

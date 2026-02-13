@@ -1,26 +1,55 @@
 {
+  "id": 6003828207759918477,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-211951",
   "title": "Instant Ramen",
   "num": 211951,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12632600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cat Food",
       "rarity": 25,
-      "document_id": 5370699352010425073
+      "document": {
+        "id": 5370699352010425073,
+        "access_hash": -3755952357651235256,
+        "date": "2025-09-22T09:07:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31293,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ouroboros",
       "rarity": 4,
-      "document_id": 5440776901700379950
+      "document": {
+        "id": 5440776901700379950,
+        "access_hash": 8131390927460400088,
+        "date": "2024-12-28T11:09:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 846,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Grape",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 52,
+      "center_color": 10319041,
+      "edge_color": 7949728,
+      "pattern_color": 4065899,
+      "text_color": 14728702
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6035271822247724324,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-304765",
   "title": "Ice Cream",
   "num": 304765,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Brain Freeze",
       "rarity": 15,
-      "document_id": 5316661868788482016
+      "document": {
+        "id": 5316661868788482016,
+        "access_hash": 8245354989750441534,
+        "date": "2025-09-03T18:37:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20194,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bike Helmet",
       "rarity": 7,
-      "document_id": 5314385067970160062
+      "document": {
+        "id": 5314385067970160062,
+        "access_hash": 3007736516433684885,
+        "date": "2025-02-20T17:30:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1016,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 12,
+      "center_color": 7325587,
+      "edge_color": 3906692,
+      "pattern_color": 24905,
+      "text_color": 13041648
     }
   ]
 }

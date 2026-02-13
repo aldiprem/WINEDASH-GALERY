@@ -1,26 +1,55 @@
 {
+  "id": 6003806707153634718,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-240433",
   "title": "Ice Cream",
   "num": 240433,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cold Steel",
       "rarity": 30,
-      "document_id": 5368578003238419778
+      "document": {
+        "id": 5368578003238419778,
+        "access_hash": -838735040603525128,
+        "date": "2025-09-21T11:35:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 11202,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Coin Purse",
       "rarity": 7,
-      "document_id": 5434033386433830171
+      "document": {
+        "id": 5434033386433830171,
+        "access_hash": -2086486808159018450,
+        "date": "2024-12-26T12:08:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1536,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

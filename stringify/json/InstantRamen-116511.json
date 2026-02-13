@@ -1,26 +1,55 @@
 {
+  "id": 6003733306162545640,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-116511",
   "title": "Instant Ramen",
   "num": 116511,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Arcane Bowl",
       "rarity": 20,
-      "document_id": 5359691548399271656
+      "document": {
+        "id": 5359691548399271656,
+        "access_hash": 8866863555772897009,
+        "date": "2025-09-18T18:19:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 24538,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mafdet",
       "rarity": 5,
-      "document_id": 5726594038807658503
+      "document": {
+        "id": 5726594038807658503,
+        "access_hash": -7234561998951628291,
+        "date": "2024-12-28T10:07:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2236,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

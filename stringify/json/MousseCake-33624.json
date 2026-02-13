@@ -1,26 +1,55 @@
 {
+  "id": 6003569186872231369,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-33624",
   "title": "Mousse Cake",
   "num": 33624,
-  "availability_issued": 160706,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Meringue",
       "rarity": 30,
-      "document_id": 5314381889694366490
+      "document": {
+        "id": 5314381889694366490,
+        "access_hash": 811657786990187509,
+        "date": "2025-09-02T22:12:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27702,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eggplant",
       "rarity": 4,
-      "document_id": 5434085488682100281
+      "document": {
+        "id": 5434085488682100281,
+        "access_hash": -2845434300964406509,
+        "date": "2024-12-26T15:11:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 698,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Light Olive",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "pattern_color": 5852164,
+      "text_color": 16116668
     }
   ]
 }

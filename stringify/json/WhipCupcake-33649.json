@@ -1,26 +1,55 @@
 {
+  "id": 6001375738484229134,
+  "gift_id": 5933543975653737112,
   "slug": "WhipCupcake-33649",
   "title": "Whip Cupcake",
   "num": 33649,
-  "availability_issued": 260457,
+  "availability_issued": 260468,
   "availability_total": 367619,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11184000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Paradise",
       "rarity": 25,
-      "document_id": 5276280874034293757
+      "document": {
+        "id": 5276280874034293757,
+        "access_hash": 1816717440368688084,
+        "date": "2025-05-16T11:18:52+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 46337,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sunflower",
       "rarity": 7,
-      "document_id": 5440682657233000387
+      "document": {
+        "id": 5440682657233000387,
+        "access_hash": -2407158409853392433,
+        "date": "2024-12-28T11:05:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1470,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Gunmetal",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 69,
+      "center_color": 5004643,
+      "edge_color": 3095362,
+      "pattern_color": 264202,
+      "text_color": 11978188
     }
   ]
 }

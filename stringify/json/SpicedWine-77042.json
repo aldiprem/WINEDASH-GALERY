@@ -1,26 +1,55 @@
 {
+  "id": 5783169551348794007,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-77042",
   "title": "Spiced Wine",
   "num": 77042,
-  "availability_issued": 101427,
+  "availability_issued": 101432,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Blue Brew",
       "rarity": 13,
-      "document_id": 5429362235837278143
+      "document": {
+        "id": 5429362235837278143,
+        "access_hash": 2399703097510791919,
+        "date": "2024-12-24T20:45:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27339,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mask",
       "rarity": 5,
-      "document_id": 5438503377942111917
+      "document": {
+        "id": 5438503377942111917,
+        "access_hash": -1989119969877935011,
+        "date": "2024-12-28T11:33:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 694,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

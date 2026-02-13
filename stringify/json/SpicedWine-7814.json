@@ -1,26 +1,55 @@
 {
+  "id": 6035198275227747548,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-7814",
   "title": "Spiced Wine",
   "num": 7814,
-  "availability_issued": 101427,
+  "availability_issued": 101431,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Jaquilee.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Green Gradient",
       "rarity": 13,
-      "document_id": 5429260470882166573
+      "document": {
+        "id": 5429260470882166573,
+        "access_hash": 6526262845794569027,
+        "date": "2024-12-24T20:47:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26731,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dice",
       "rarity": 5,
-      "document_id": 5433613007919800239
+      "document": {
+        "id": 5433613007919800239,
+        "access_hash": 790491193472651462,
+        "date": "2024-12-26T11:41:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 964,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

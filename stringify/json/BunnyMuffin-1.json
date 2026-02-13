@@ -1,26 +1,55 @@
 {
+  "id": 5828198435156656743,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-1",
   "title": "Bunny Muffin",
   "num": 1,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 632890800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cappuccino",
       "rarity": 20,
-      "document_id": 5235647275073564171
+      "document": {
+        "id": 5235647275073564171,
+        "access_hash": 8475460705960313724,
+        "date": "2025-01-25T19:28:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19476,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Trophy",
       "rarity": 2,
-      "document_id": 5420176954353540745
+      "document": {
+        "id": 5420176954353540745,
+        "access_hash": 7238832974245614256,
+        "date": "2024-12-21T05:47:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 791,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Khaki Green",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "pattern_color": 3756059,
+      "text_color": 13887163
     }
   ]
 }

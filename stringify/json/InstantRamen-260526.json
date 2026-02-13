@@ -1,26 +1,55 @@
 {
+  "id": 6010448526184546932,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-260526",
   "title": "Instant Ramen",
   "num": 260526,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11352500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bacon",
       "rarity": 30,
-      "document_id": 5274004657331534091
+      "document": {
+        "id": 5274004657331534091,
+        "access_hash": 4419049322823775240,
+        "date": "2025-08-20T09:36:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29340,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Unicorn",
       "rarity": 5,
-      "document_id": 5440820989539673389
+      "document": {
+        "id": 5440820989539673389,
+        "access_hash": 8153728545972082553,
+        "date": "2024-12-28T11:52:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 867,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Purple",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 1,
+      "center_color": 13267142,
+      "edge_color": 9855700,
+      "pattern_color": 6426548,
+      "text_color": 15453951
     }
   ]
 }

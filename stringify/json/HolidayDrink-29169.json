@@ -1,26 +1,55 @@
 {
+  "id": 5875341611105255944,
+  "gift_id": 6003735372041814769,
   "slug": "HolidayDrink-29169",
   "title": "Holiday Drink",
   "num": 29169,
-  "availability_issued": 82869,
+  "availability_issued": 82872,
   "availability_total": 120989,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12076700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bubblegum",
       "rarity": 39,
-      "document_id": 5357121143616598083
+      "document": {
+        "id": 5357121143616598083,
+        "access_hash": -7663401052007433085,
+        "date": "2025-03-07T14:42:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 45455,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Wizard Hat",
       "rarity": 4,
-      "document_id": 5314292219367155055
+      "document": {
+        "id": 5314292219367155055,
+        "access_hash": 4355800303162437030,
+        "date": "2025-02-21T12:37:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 801,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Khaki Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 37,
+      "center_color": 11382896,
+      "edge_color": 7044436,
+      "pattern_color": 3756059,
+      "text_color": 13887163
     }
   ]
 }

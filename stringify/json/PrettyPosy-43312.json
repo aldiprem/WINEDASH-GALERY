@@ -1,26 +1,55 @@
 {
+  "id": 5785359237345445010,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-43312",
   "title": "Pretty Posy",
   "num": 43312,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "!",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14569500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Vampire",
       "rarity": 10,
-      "document_id": 5199790263861543636
+      "document": {
+        "id": 5199790263861543636,
+        "access_hash": -7625632917236991198,
+        "date": "2025-10-31T11:17:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36864,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bamboo",
       "rarity": 7,
-      "document_id": 5584941069583253528
+      "document": {
+        "id": 5584941069583253528,
+        "access_hash": -4554888296457320000,
+        "date": "2025-02-14T18:57:05+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1258,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Copper",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 57,
+      "center_color": 13665878,
+      "edge_color": 10315057,
+      "pattern_color": 6301953,
+      "text_color": 16046270
     }
   ]
 }

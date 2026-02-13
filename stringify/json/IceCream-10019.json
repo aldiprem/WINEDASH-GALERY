@@ -1,26 +1,55 @@
 {
+  "id": 6003337138379163218,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-10019",
   "title": "Ice Cream",
   "num": 10019,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13879000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Plastic Pop",
       "rarity": 25,
-      "document_id": 5195288493890238786
+      "document": {
+        "id": 5195288493890238786,
+        "access_hash": 5655504803225954637,
+        "date": "2025-07-25T12:18:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 12835,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Coin Purse",
       "rarity": 7,
-      "document_id": 5434033386433830171
+      "document": {
+        "id": 5434033386433830171,
+        "access_hash": -2086486808159018450,
+        "date": "2024-12-26T12:08:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1536,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Emerald",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 13,
+      "center_color": 7914885,
+      "edge_color": 4366705,
+      "pattern_color": 25906,
+      "text_color": 12188121
     }
   ]
 }

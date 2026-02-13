@@ -1,26 +1,55 @@
 {
+  "id": 5938398465519256205,
+  "gift_id": 6028283532500009446,
   "slug": "BigYear-48630",
   "title": "Big Year",
   "num": 48630,
-  "availability_issued": 74074,
+  "availability_issued": 74076,
   "availability_total": 101415,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10813500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Van Gogh",
       "rarity": 18,
-      "document_id": 5242681396417295897
+      "document": {
+        "id": 5242681396417295897,
+        "access_hash": -2634960494153904027,
+        "date": "2025-05-04T17:19:39+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30538,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hourglass",
       "rarity": 3,
-      "document_id": 5548506475464228910
+      "document": {
+        "id": 5548506475464228910,
+        "access_hash": -7556666626720549063,
+        "date": "2025-02-02T17:52:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1232,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Electric Indigo",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 4,
+      "center_color": 11108595,
+      "edge_color": 5989080,
+      "pattern_color": 3613355,
+      "text_color": 14211327
     }
   ]
 }

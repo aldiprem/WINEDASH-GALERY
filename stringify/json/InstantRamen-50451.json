@@ -1,26 +1,55 @@
 {
+  "id": 6003637455377401037,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-50451",
   "title": "Instant Ramen",
   "num": 50451,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sandbox",
       "rarity": 10,
-      "document_id": 5362080679792247907
+      "document": {
+        "id": 5362080679792247907,
+        "access_hash": 6037335816568497782,
+        "date": "2025-09-18T18:45:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38266,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Heraldic Lily",
       "rarity": 5,
-      "document_id": 5551136193745256466
+      "document": {
+        "id": 5551136193745256466,
+        "access_hash": 41235499608257031,
+        "date": "2025-02-03T13:29:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1860,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Azure Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "pattern_color": 151668,
+      "text_color": 11922687
     }
   ]
 }

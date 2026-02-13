@@ -1,26 +1,55 @@
 {
+  "id": 5856957905537860621,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-91333",
   "title": "Ginger Cookie",
   "num": 91333,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Melonius",
       "rarity": 7,
-      "document_id": 5474579647234597097
+      "document": {
+        "id": 5474579647234597097,
+        "access_hash": 273192909643883638,
+        "date": "2025-01-08T16:53:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31500,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hot Drink",
       "rarity": 18,
-      "document_id": 5195425164044559335
+      "document": {
+        "id": 5195425164044559335,
+        "access_hash": -129633623509338937,
+        "date": "2024-10-07T13:23:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1807,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

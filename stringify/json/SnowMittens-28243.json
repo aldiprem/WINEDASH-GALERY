@@ -1,26 +1,55 @@
 {
+  "id": 5942702855973504069,
+  "gift_id": 5980789805615678057,
   "slug": "SnowMittens-28243",
   "title": "Snow Mittens",
   "num": 28243,
-  "availability_issued": 38414,
+  "availability_issued": 38416,
   "availability_total": 49969,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15310700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pingu",
       "rarity": 8,
-      "document_id": 5226471579956832084
+      "document": {
+        "id": 5226471579956832084,
+        "access_hash": 6392484873409541642,
+        "date": "2025-01-23T03:05:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33286,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Star",
       "rarity": 24,
-      "document_id": 5420190079773597190
+      "document": {
+        "id": 5420190079773597190,
+        "access_hash": -8571889126842035861,
+        "date": "2024-12-21T05:44:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 817,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Steel Grey",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 44,
+      "center_color": 9937580,
+      "edge_color": 6517372,
+      "pattern_color": 3360082,
+      "text_color": 14673128
     }
   ]
 }

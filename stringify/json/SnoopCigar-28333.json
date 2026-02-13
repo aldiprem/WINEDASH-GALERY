@@ -1,26 +1,55 @@
 {
+  "id": 6014670096784425844,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-28333",
   "title": "Snoop Cigar",
   "num": 28333,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Debut Album",
       "rarity": 25,
-      "document_id": 5375410175219890381
+      "document": {
+        "id": 5375410175219890381,
+        "access_hash": 6507072582014858607,
+        "date": "2025-06-18T14:54:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 35816,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Kashket",
       "rarity": 7,
-      "document_id": 5312102825428283144
+      "document": {
+        "id": 5312102825428283144,
+        "access_hash": 3119588425586001947,
+        "date": "2025-02-20T17:41:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 756,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

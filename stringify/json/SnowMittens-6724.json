@@ -1,26 +1,55 @@
 {
+  "id": 5830048724247642817,
+  "gift_id": 5980789805615678057,
   "slug": "SnowMittens-6724",
   "title": "Snow Mittens",
   "num": 6724,
-  "availability_issued": 38414,
+  "availability_issued": 38416,
   "availability_total": 49969,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15310700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Polka",
       "rarity": 8,
-      "document_id": 5228750743007163586
+      "document": {
+        "id": 5228750743007163586,
+        "access_hash": 9066993492322086575,
+        "date": "2025-01-23T03:04:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28284,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dessert",
       "rarity": 24,
-      "document_id": 5433791150278337082
+      "document": {
+        "id": 5433791150278337082,
+        "access_hash": 3090493827616352506,
+        "date": "2024-12-26T14:49:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 933,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

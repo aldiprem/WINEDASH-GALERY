@@ -1,26 +1,55 @@
 {
+  "id": 5949726506186965674,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-194452",
   "title": "Lol Pop",
   "num": 194452,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sweetheart",
       "rarity": 5,
-      "document_id": 5224306392453640289
+      "document": {
+        "id": 5224306392453640289,
+        "access_hash": 5749110521443531105,
+        "date": "2025-01-21T23:25:09+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 65369,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Coat of Arms",
       "rarity": 5,
-      "document_id": 5433846813054494068
+      "document": {
+        "id": 5433846813054494068,
+        "access_hash": -4237594008193001737,
+        "date": "2024-12-26T12:26:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1109,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

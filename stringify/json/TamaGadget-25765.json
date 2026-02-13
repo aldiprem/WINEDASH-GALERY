@@ -1,26 +1,55 @@
 {
+  "id": 5935772153147294683,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-25765",
   "title": "Tama Gadget",
   "num": 25765,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cherry Milk",
       "rarity": 20,
-      "document_id": 5255853966624842429
+      "document": {
+        "id": 5255853966624842429,
+        "access_hash": 3048660257758595957,
+        "date": "2025-02-01T11:58:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14451,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Breeze",
       "rarity": 4,
-      "document_id": 5548705246550687755
+      "document": {
+        "id": 5548705246550687755,
+        "access_hash": -901085213820784958,
+        "date": "2025-02-03T08:41:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1387,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Seal Brown",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 64,
+      "center_color": 6704453,
+      "edge_color": 4666926,
+      "pattern_color": 656901,
+      "text_color": 13941941
     }
   ]
 }

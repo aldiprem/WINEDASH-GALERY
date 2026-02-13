@@ -1,26 +1,55 @@
 {
+  "id": 5897971226852197461,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-2383",
   "title": "Clover Pin",
   "num": 2383,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": ".",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15917000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pinwheel",
       "rarity": 20,
-      "document_id": 5260650495906710651
+      "document": {
+        "id": 5260650495906710651,
+        "access_hash": 720111866122679382,
+        "date": "2025-08-16T06:59:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 41432,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Mafdet",
       "rarity": 4,
-      "document_id": 5726594038807658503
+      "document": {
+        "id": 5726594038807658503,
+        "access_hash": -7234561998951628291,
+        "date": "2024-12-28T10:07:53+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2236,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

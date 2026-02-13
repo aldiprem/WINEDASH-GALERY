@@ -1,26 +1,55 @@
 {
+  "id": 5778504237612794719,
+  "gift_id": 5773668482394620318,
   "slug": "EasterEgg-22330",
   "title": "Easter Egg",
   "num": 22330,
   "availability_issued": 162175,
   "availability_total": 173176,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15765400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Flowers",
       "rarity": 25,
-      "document_id": 5194991788959494565
+      "document": {
+        "id": 5194991788959494565,
+        "access_hash": 2728354374397684556,
+        "date": "2025-04-19T15:22:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 45533,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rain Drop",
       "rarity": 5,
-      "document_id": 5440588533024712814
+      "document": {
+        "id": 5440588533024712814,
+        "access_hash": -6893908857987126055,
+        "date": "2024-12-28T11:06:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 587,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "English Violet",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 32,
+      "center_color": 11634363,
+      "edge_color": 8870545,
+      "pattern_color": 5513823,
+      "text_color": 15124461
     }
   ]
 }

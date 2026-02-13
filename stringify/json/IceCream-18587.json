@@ -1,26 +1,55 @@
 {
+  "id": 6003312944828384359,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-18587",
   "title": "Ice Cream",
   "num": 18587,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Angga Pradipta",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cupid Aim",
       "rarity": 25,
-      "document_id": 5240347352274861155
+      "document": {
+        "id": 5240347352274861155,
+        "access_hash": 254698705791907593,
+        "date": "2025-08-09T15:47:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36598,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Rain Drop",
       "rarity": 7,
-      "document_id": 5440588533024712814
+      "document": {
+        "id": 5440588533024712814,
+        "access_hash": -6893908857987126055,
+        "date": "2024-12-28T11:06:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 587,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Feldgrau",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 68,
+      "center_color": 9015944,
+      "edge_color": 6187875,
+      "pattern_color": 1844767,
+      "text_color": 14608865
     }
   ]
 }

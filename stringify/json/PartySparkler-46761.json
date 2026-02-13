@@ -1,26 +1,55 @@
 {
+  "id": 5836932255448039936,
+  "gift_id": 6003643167683903930,
   "slug": "PartySparkler-46761",
   "title": "Party Sparkler",
   "num": 46761,
-  "availability_issued": 176752,
+  "availability_issued": 176759,
   "availability_total": 243771,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16422300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tri-Nitro",
       "rarity": 4,
-      "document_id": 5229090865762296713
+      "document": {
+        "id": 5229090865762296713,
+        "access_hash": -1006624833067605473,
+        "date": "2025-01-23T11:23:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 41956,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gingerbread",
       "rarity": 18,
-      "document_id": 5438165909476763503
+      "document": {
+        "id": 5438165909476763503,
+        "access_hash": -5727706705390596557,
+        "date": "2024-12-28T11:48:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1008,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     }
   ]
 }

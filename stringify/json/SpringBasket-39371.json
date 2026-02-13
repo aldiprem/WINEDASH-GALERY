@@ -1,26 +1,55 @@
 {
+  "id": 6003758332936979401,
+  "gift_id": 5773725897517433693,
   "slug": "SpringBasket-39371",
   "title": "Spring Basket",
   "num": 39371,
-  "availability_issued": 171691,
+  "availability_issued": 171695,
   "availability_total": 231311,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15613800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Dalmatian Pup",
       "rarity": 25,
-      "document_id": 5391313232231173775
+      "document": {
+        "id": 5391313232231173775,
+        "access_hash": -6581393843780951357,
+        "date": "2025-09-29T08:43:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 57811,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Octopus",
       "rarity": 7,
-      "document_id": 5440588210902163577
+      "document": {
+        "id": 5440588210902163577,
+        "access_hash": 2149027720220301215,
+        "date": "2024-12-28T11:11:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1120,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Feldgrau",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 68,
+      "center_color": 9015944,
+      "edge_color": 6187875,
+      "pattern_color": 1844767,
+      "text_color": 14608865
     }
   ]
 }

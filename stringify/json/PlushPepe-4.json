@@ -1,26 +1,55 @@
 {
+  "id": 6028580456474083863,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-4",
   "title": "Plush Pepe",
   "num": 4,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQCu3I2jIMi8FNtO0xi27mJACqBgxKjmV2DcRKtcBX0UnQbf",
+  "gift_address": "EQBj_kMpU4-dgNUco0HK6j4J1nNZL4MGF5QteRaSCm7qNEgg",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Galaxy",
       "rarity": 20,
-      "document_id": 5424760337293402339
+      "document": {
+        "id": 5424760337293402339,
+        "access_hash": 367492197326506049,
+        "date": "2024-12-22T22:41:27+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 22078,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Tree of Life",
       "rarity": 4,
-      "document_id": 5722378975083233292
+      "document": {
+        "id": 5722378975083233292,
+        "access_hash": -1713455535081051355,
+        "date": "2024-12-26T12:01:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2776,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 6010534442710336477,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-282898",
   "title": "Ice Cream",
   "num": 282898,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bubbles",
       "rarity": 20,
-      "document_id": 5314362158614611167
+      "document": {
+        "id": 5314362158614611167,
+        "access_hash": -8855616480604277015,
+        "date": "2025-09-03T18:37:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 10341,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shell",
       "rarity": 7,
-      "document_id": 5440859644245335988
+      "document": {
+        "id": 5440859644245335988,
+        "access_hash": 3266719227963729388,
+        "date": "2024-12-28T11:34:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 825,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Coral Red",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 25,
+      "center_color": 14322027,
+      "edge_color": 12870991,
+      "pattern_color": 8983040,
+      "text_color": 16767442
     }
   ]
 }

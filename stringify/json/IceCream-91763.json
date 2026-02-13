@@ -1,26 +1,55 @@
 {
+  "id": 6003359218806031394,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-91763",
   "title": "Ice Cream",
   "num": 91763,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Berry Split",
       "rarity": 30,
-      "document_id": 5240047585032437751
+      "document": {
+        "id": 5240047585032437751,
+        "access_hash": -8273495023782213463,
+        "date": "2025-08-09T15:47:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Pilot Hat",
       "rarity": 7,
-      "document_id": 5312401570468490347
+      "document": {
+        "id": 5312401570468490347,
+        "access_hash": -1799286546588265897,
+        "date": "2025-02-20T17:44:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1165,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Gunship Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 62,
+      "center_color": 5605989,
+      "edge_color": 4023895,
+      "pattern_color": 468509,
+      "text_color": 11919572
     }
   ]
 }

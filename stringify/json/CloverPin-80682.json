@@ -1,26 +1,55 @@
 {
+  "id": 5902495768740103541,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-80682",
   "title": "Clover Pin",
   "num": 80682,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "P",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Verdant Plaid",
       "rarity": 30,
-      "document_id": 5231150908171123765
+      "document": {
+        "id": 5231150908171123765,
+        "access_hash": -3306295112240222955,
+        "date": "2025-08-06T05:00:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54508,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Imperial Lion",
       "rarity": 5,
-      "document_id": 5546458596402790437
+      "document": {
+        "id": 5546458596402790437,
+        "access_hash": 3273384998805506604,
+        "date": "2025-02-01T17:43:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2001,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Jade Green",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 56,
+      "center_color": 5620892,
+      "edge_color": 3905911,
+      "pattern_color": 280881,
+      "text_color": 12517095
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5902066937730433603,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-129244",
   "title": "Clover Pin",
   "num": 129244,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Kaleidoscope",
       "rarity": 20,
-      "document_id": 5231332374834344855
+      "document": {
+        "id": 5231332374834344855,
+        "access_hash": 319360628724085170,
+        "date": "2025-08-06T05:05:57+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 52287,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Hammerhead",
       "rarity": 4,
-      "document_id": 5440572770494734727
+      "document": {
+        "id": 5440572770494734727,
+        "access_hash": -6581833577452539293,
+        "date": "2024-12-28T09:55:11+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 849,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Strawberry",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 27,
+      "center_color": 14519919,
+      "edge_color": 12016224,
+      "pattern_color": 11078668,
+      "text_color": 16765907
     }
   ]
 }

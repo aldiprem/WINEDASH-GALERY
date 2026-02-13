@@ -1,26 +1,55 @@
 {
+  "id": 5850270392349885133,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-34020",
   "title": "Ginger Cookie",
   "num": 34020,
-  "availability_issued": 142090,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mr. Biscuit",
       "rarity": 17,
-      "document_id": 5233426137031401422
+      "document": {
+        "id": 5233426137031401422,
+        "access_hash": -6503814517588560852,
+        "date": "2025-01-25T00:01:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30383,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Legionary",
       "rarity": 2,
-      "document_id": 5548780425658236946
+      "document": {
+        "id": 5548780425658236946,
+        "access_hash": 1939140514863047619,
+        "date": "2025-02-02T17:52:36+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1214,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

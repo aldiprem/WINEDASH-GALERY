@@ -1,26 +1,55 @@
 {
+  "id": 6008314537323791654,
+  "gift_id": 6005659564635063386,
   "slug": "JackInTheBox-62118",
   "title": "Jack-in-the-Box",
   "num": 62118,
   "availability_issued": 96093,
   "availability_total": 97345,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tombstone",
       "rarity": 30,
-      "document_id": 5425037951094516893
+      "document": {
+        "id": 5425037951094516893,
+        "access_hash": -5204137871462171912,
+        "date": "2025-03-29T19:36:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 60469,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bonsai",
       "rarity": 5,
-      "document_id": 5582749674189619216
+      "document": {
+        "id": 5582749674189619216,
+        "access_hash": -4417232437636755554,
+        "date": "2025-02-14T18:56:29+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1233,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Rosewood",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 40,
+      "center_color": 12024439,
+      "edge_color": 8473682,
+      "pattern_color": 5577762,
+      "text_color": 15583949
     }
   ]
 }

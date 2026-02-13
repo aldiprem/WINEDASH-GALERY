@@ -1,26 +1,55 @@
 {
+  "id": 6008167859895665674,
+  "gift_id": 6005659564635063386,
   "slug": "JackInTheBox-32019",
   "title": "Jack-in-the-Box",
   "num": 32019,
   "availability_issued": 96093,
   "availability_total": 97345,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Doughnut",
       "rarity": 30,
-      "document_id": 5422800943148199619
+      "document": {
+        "id": 5422800943148199619,
+        "access_hash": 1710649219483392373,
+        "date": "2025-03-29T12:19:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 39337,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fire",
       "rarity": 4,
-      "document_id": 5440856362890322121
+      "document": {
+        "id": 5440856362890322121,
+        "access_hash": 2068249248108947330,
+        "date": "2024-12-28T09:49:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 597,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

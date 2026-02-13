@@ -1,26 +1,55 @@
 {
+  "id": 6010534790602688496,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-164323",
   "title": "Cookie Heart",
   "num": 164323,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Red Apple",
       "rarity": 10,
-      "document_id": 5231342931863952020
+      "document": {
+        "id": 5231342931863952020,
+        "access_hash": -218480158143504597,
+        "date": "2025-01-24T01:01:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28681,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candy",
       "rarity": 8,
-      "document_id": 5422574937674115533
+      "document": {
+        "id": 5422574937674115533,
+        "access_hash": -6166631400688415177,
+        "date": "2024-12-22T22:45:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1150,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

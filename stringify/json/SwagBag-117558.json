@@ -1,26 +1,55 @@
 {
+  "id": 6017353996077892766,
+  "gift_id": 6012607142387778152,
   "slug": "SwagBag-117558",
   "title": "Swag Bag",
   "num": 117558,
   "availability_issued": 231062,
   "availability_total": 237970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQBhto19PCFYa28WMNQuDlA-RuGByS3YvSeF01jpka7aTouc",
+  "gift_address": "EQAwA19WvsZtp_PxjaoifXHH--Eysmw3_gm692ZA-grfw7qb",
+  "value_amount": 16658100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Snoop S",
       "rarity": 15,
-      "document_id": 5433802398797692656
+      "document": {
+        "id": 5433802398797692656,
+        "access_hash": -1998508935055056183,
+        "date": "2025-07-08T17:50:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 64351,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Los Angeles",
       "rarity": 4,
-      "document_id": 5703817715567820810
+      "document": {
+        "id": 5703817715567820810,
+        "access_hash": -4824931203650670235,
+        "date": "2025-07-02T05:35:03+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1993,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

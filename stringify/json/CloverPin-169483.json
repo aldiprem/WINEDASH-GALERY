@@ -1,26 +1,55 @@
 {
+  "id": 5917877764613997674,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-169483",
   "title": "Clover Pin",
   "num": 169483,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQCSDp81FtUOsjvmFVhcundQQUnDBJWie6NqLgzdEUAW6VIR",
+  "gift_address": "EQBp6EM7Kvs0fT2vpKr2D5e4Oi8f0TW2W_pOD2nvSDQ7z_iC",
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Matrix",
       "rarity": 30,
-      "document_id": 5231367640810810236
+      "document": {
+        "id": 5231367640810810236,
+        "access_hash": 7078121740814219761,
+        "date": "2025-08-06T05:37:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 59698,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Winged Helmet",
       "rarity": 5,
-      "document_id": 5314263481740977405
+      "document": {
+        "id": 5314263481740977405,
+        "access_hash": 8846313341861829689,
+        "date": "2025-02-20T17:51:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1053,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Shamrock Green",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 16,
+      "center_color": 9089379,
+      "edge_color": 5608261,
+      "pattern_color": 1207040,
+      "text_color": 14023624
     }
   ]
 }

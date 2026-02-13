@@ -1,26 +1,55 @@
 {
+  "id": 6044235796951597756,
+  "gift_id": 5825480571261813595,
   "slug": "EvilEye-21996",
   "title": "Evil Eye",
   "num": 21996,
   "availability_issued": 72951,
   "availability_total": 85204,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQAeMrPrz6f4oDglntT3KJwNdAV7R5U6FrCeMmOpGKpfVtIm",
+  "value_amount": 17214000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Baltic Amber",
       "rarity": 30,
-      "document_id": 5429325410787680030
+      "document": {
+        "id": 5429325410787680030,
+        "access_hash": 376593305411026254,
+        "date": "2024-12-24T14:12:42+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 11781,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Eyeball",
       "rarity": 20,
-      "document_id": 5300841391113387083
+      "document": {
+        "id": 5300841391113387083,
+        "access_hash": 1188870870504710283,
+        "date": "2023-10-19T19:10:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1489,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

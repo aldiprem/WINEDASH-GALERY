@@ -1,26 +1,55 @@
 {
+  "id": 5839092881695965775,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-1",
   "title": "Ginger Cookie",
   "num": 1,
-  "availability_issued": 142089,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 632014900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Truffle",
       "rarity": 17,
-      "document_id": 5233233915770070611
+      "document": {
+        "id": 5233233915770070611,
+        "access_hash": -1729281632120235638,
+        "date": "2025-01-24T23:27:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30571,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cupcake",
       "rarity": 12,
-      "document_id": 5436346024459266141
+      "document": {
+        "id": 5436346024459266141,
+        "access_hash": -4330855651740504955,
+        "date": "2024-12-26T14:48:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1205,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Lemongrass",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 17,
+      "center_color": 11450458,
+      "edge_color": 5608261,
+      "pattern_color": 4614663,
+      "text_color": 14217922
     }
   ]
 }

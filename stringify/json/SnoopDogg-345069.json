@@ -1,26 +1,55 @@
 {
+  "id": 6016885187512632926,
+  "gift_id": 6014591077976114307,
   "slug": "SnoopDogg-345069",
   "title": "Snoop Dogg",
   "num": 345069,
   "availability_issued": 580008,
   "availability_total": 593781,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14182100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bow Wizzle",
       "rarity": 20,
-      "document_id": 5389061509726894135
+      "document": {
+        "id": 5389061509726894135,
+        "access_hash": -917404174219894431,
+        "date": "2025-06-22T16:51:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 59137,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Elephant",
       "rarity": 2,
-      "document_id": 5435918821242201089
+      "document": {
+        "id": 5435918821242201089,
+        "access_hash": 534298846570646524,
+        "date": "2024-12-26T15:10:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 815,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

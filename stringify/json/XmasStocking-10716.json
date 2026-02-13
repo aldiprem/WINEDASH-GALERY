@@ -1,26 +1,55 @@
 {
+  "id": 5848272480937969699,
+  "gift_id": 6003767644426076664,
   "slug": "XmasStocking-10716",
   "title": "Xmas Stocking",
   "num": 10716,
-  "availability_issued": 207618,
+  "availability_issued": 207634,
   "availability_total": 334632,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 9701800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Pink Glitter",
       "rarity": 12,
-      "document_id": 5278762347224132904
+      "document": {
+        "id": 5278762347224132904,
+        "access_hash": 5040232542674337690,
+        "date": "2025-02-09T18:26:01+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 56912,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Aztec Falcon",
       "rarity": 5,
-      "document_id": 5544328988408676361
+      "document": {
+        "id": 5544328988408676361,
+        "access_hash": -4425611174364626863,
+        "date": "2025-02-01T17:42:04+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2627,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Indigo Dye",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 47,
+      "center_color": 5470609,
+      "edge_color": 4285561,
+      "pattern_color": 203561,
+      "text_color": 12770542
     }
   ]
 }

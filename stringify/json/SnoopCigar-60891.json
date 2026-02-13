@@ -1,26 +1,55 @@
 {
+  "id": 6015053040363504375,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-60891",
   "title": "Snoop Cigar",
   "num": 60891,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 32844600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Charmed Roll",
       "rarity": 10,
-      "document_id": 5431711797696561839
+      "document": {
+        "id": 5431711797696561839,
+        "access_hash": -1091143262929542025,
+        "date": "2025-07-07T19:38:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54180,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ring",
       "rarity": 7,
-      "document_id": 5440746209864081065
+      "document": {
+        "id": 5440746209864081065,
+        "access_hash": 6243948769953090616,
+        "date": "2024-12-28T09:51:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1079,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Orange",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 23,
+      "center_color": 13736506,
+      "edge_color": 12611399,
+      "pattern_color": 10303751,
+      "text_color": 16769475
     }
   ]
 }

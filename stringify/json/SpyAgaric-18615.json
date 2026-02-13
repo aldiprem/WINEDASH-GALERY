@@ -1,26 +1,55 @@
 {
+  "id": 6032953257167422243,
+  "gift_id": 5821261908354794038,
   "slug": "SpyAgaric-18615",
   "title": "Spy Agaric",
   "num": 18615,
-  "availability_issued": 86677,
+  "availability_issued": 86678,
   "availability_total": 89438,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQCBbXyeElNiMS5VkKRexLIhApvVwegbmx31uxQi3sCCrckh",
+  "value_amount": 18190900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Merry Cap",
       "rarity": 20,
-      "document_id": 5409266590665432526
+      "document": {
+        "id": 5409266590665432526,
+        "access_hash": -2739272100848778986,
+        "date": "2024-12-17T07:41:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25354,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Severed Hand",
       "rarity": 12,
-      "document_id": 5301167533749972632
+      "document": {
+        "id": 5301167533749972632,
+        "access_hash": -7517298598585737183,
+        "date": "2023-10-19T19:06:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1676,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

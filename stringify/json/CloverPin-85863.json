@@ -1,26 +1,55 @@
 {
+  "id": 5900257446533793543,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-85863",
   "title": "Clover Pin",
   "num": 85863,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16354900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Watermelon",
       "rarity": 20,
-      "document_id": 5231416169646292048
+      "document": {
+        "id": 5231416169646292048,
+        "access_hash": -5992005636347431844,
+        "date": "2025-08-06T04:45:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54214,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fish Skeleton",
       "rarity": 5,
-      "document_id": 5436257986219631092
+      "document": {
+        "id": 5436257986219631092,
+        "access_hash": -4358980901916551940,
+        "date": "2024-12-26T11:42:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1426,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sapphire",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 7,
+      "center_color": 5809096,
+      "edge_color": 5470658,
+      "pattern_color": 869814,
+      "text_color": 12705535
     }
   ]
 }

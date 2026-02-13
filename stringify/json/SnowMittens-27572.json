@@ -1,26 +1,55 @@
 {
+  "id": 5927136829340910254,
+  "gift_id": 5980789805615678057,
   "slug": "SnowMittens-27572",
   "title": "Snow Mittens",
   "num": 27572,
-  "availability_issued": 38414,
+  "availability_issued": 38416,
   "availability_total": 49969,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 25265100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mintens",
       "rarity": 13,
-      "document_id": 5228831711730622682
+      "document": {
+        "id": 5228831711730622682,
+        "access_hash": -6404207644094735630,
+        "date": "2025-01-23T03:00:45+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36496,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Ornament",
       "rarity": 20,
-      "document_id": 5438575529097706726
+      "document": {
+        "id": 5438575529097706726,
+        "access_hash": 8582574510437970443,
+        "date": "2023-12-05T16:27:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2025,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

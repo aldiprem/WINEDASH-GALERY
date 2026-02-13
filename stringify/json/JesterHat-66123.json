@@ -1,26 +1,55 @@
 {
+  "id": 5983222071365206924,
+  "gift_id": 5933590374185435592,
   "slug": "JesterHat-66123",
   "title": "Jester Hat",
   "num": 66123,
-  "availability_issued": 134547,
+  "availability_issued": 134551,
   "availability_total": 190222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13575800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Confetti",
       "rarity": 5,
-      "document_id": 5233724594308802484
+      "document": {
+        "id": 5233724594308802484,
+        "access_hash": -1508126527987978855,
+        "date": "2025-01-24T16:57:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30017,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Chili Pepper",
       "rarity": 4,
-      "document_id": 5436357135539658505
+      "document": {
+        "id": 5436357135539658505,
+        "access_hash": 3388203540728689222,
+        "date": "2024-12-26T12:18:56+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 889,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Ivory White",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 41,
+      "center_color": 12236465,
+      "edge_color": 10591639,
+      "pattern_color": 6709074,
+      "text_color": 16119026
     }
   ]
 }

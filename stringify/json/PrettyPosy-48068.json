@@ -1,26 +1,55 @@
 {
+  "id": 5787436975019525543,
+  "gift_id": 5933737850477478635,
   "slug": "PrettyPosy-48068",
   "title": "Pretty Posy",
   "num": 48068,
-  "availability_issued": 116039,
+  "availability_issued": 116048,
   "availability_total": 181231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14569500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Van Gogh",
       "rarity": 10,
-      "document_id": 5449507307492772640
+      "document": {
+        "id": 5449507307492772640,
+        "access_hash": 6847366779654900101,
+        "date": "2025-10-18T16:49:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40193,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gear",
       "rarity": 7,
-      "document_id": 5440500005158804832
+      "document": {
+        "id": 5440500005158804832,
+        "access_hash": -5586556353866385864,
+        "date": "2024-12-28T11:33:50+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 943,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Seal Brown",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 64,
+      "center_color": 6704453,
+      "edge_color": 4666926,
+      "pattern_color": 656901,
+      "text_color": 13941941
     }
   ]
 }

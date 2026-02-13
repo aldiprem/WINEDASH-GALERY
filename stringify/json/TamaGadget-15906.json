@@ -1,26 +1,55 @@
 {
+  "id": 5933503766169912362,
+  "gift_id": 6023752243218481939,
   "slug": "TamaGadget-15906",
   "title": "Tama Gadget",
   "num": 15906,
-  "availability_issued": 102416,
+  "availability_issued": 102418,
   "availability_total": 135097,
+  "require_premium": false,
+  "resale_ton_only": true,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13171500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Peach",
       "rarity": 20,
-      "document_id": 5273933940695002737
+      "document": {
+        "id": 5273933940695002737,
+        "access_hash": 2242130287761280964,
+        "date": "2025-02-07T20:14:43+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 14659,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flower Tulip",
       "rarity": 5,
-      "document_id": 5433949381168489107
+      "document": {
+        "id": 5433949381168489107,
+        "access_hash": 4499374774014947072,
+        "date": "2024-12-26T14:47:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 877,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

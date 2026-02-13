@@ -1,26 +1,55 @@
 {
+  "id": 6003793079222403784,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-120260",
   "title": "Instant Ramen",
   "num": 120260,
-  "availability_issued": 370983,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQApKlcC76PV56F3UN_5DmiOC_1nJw4fH7OetlWG2J9D19iS",
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Black Pasta",
       "rarity": 30,
-      "document_id": 5273754290802948989
+      "document": {
+        "id": 5273754290802948989,
+        "access_hash": 3306747716488559825,
+        "date": "2025-08-20T09:33:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28545,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crab",
       "rarity": 4,
-      "document_id": 5424858399986705924
+      "document": {
+        "id": 5424858399986705924,
+        "access_hash": 5717213261743719240,
+        "date": "2024-12-23T14:51:24+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1511,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Feldgrau",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 68,
+      "center_color": 9015944,
+      "edge_color": 6187875,
+      "pattern_color": 1844767,
+      "text_color": 14608865
     },
     {
       "type": "StarGiftAttributeOriginalDetails",

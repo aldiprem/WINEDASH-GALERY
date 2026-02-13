@@ -1,26 +1,55 @@
 {
+  "id": 5859517693161374878,
+  "gift_id": 5821205665758053411,
   "slug": "EternalCandle-36464",
   "title": "Eternal Candle",
   "num": 36464,
   "availability_issued": 44951,
   "availability_total": 46590,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16405500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Blue Steel",
       "rarity": 15,
-      "document_id": 5422561906743338853
+      "document": {
+        "id": 5422561906743338853,
+        "access_hash": -4037322624734575622,
+        "date": "2024-12-22T14:38:55+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25406,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Illuminati",
       "rarity": 18,
-      "document_id": 5440508543553788998
+      "document": {
+        "id": 5440508543553788998,
+        "access_hash": -2801714498335260466,
+        "date": "2024-12-28T09:53:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 814,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5834449614027096534,
+  "gift_id": 5821205665758053411,
   "slug": "EternalCandle-12053",
   "title": "Eternal Candle",
   "num": 12053,
   "availability_issued": 44951,
   "availability_total": 46590,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16405500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Unicorn",
       "rarity": 15,
-      "document_id": 5422755077192444065
+      "document": {
+        "id": 5422755077192444065,
+        "access_hash": -3280505402696087313,
+        "date": "2024-12-22T14:38:33+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 25596,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Leaf",
       "rarity": 4,
-      "document_id": 5433619166902903696
+      "document": {
+        "id": 5433619166902903696,
+        "access_hash": -7309243437693646250,
+        "date": "2024-12-26T15:09:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 932,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fandango",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 30,
+      "center_color": 14846646,
+      "edge_color": 10770571,
+      "pattern_color": 9307470,
+      "text_color": 16762859
     }
   ]
 }

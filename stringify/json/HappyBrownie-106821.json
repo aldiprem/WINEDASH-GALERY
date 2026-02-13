@@ -1,26 +1,55 @@
 {
+  "id": 6003587015281477320,
+  "gift_id": 6006064678835323371,
   "slug": "HappyBrownie-106821",
   "title": "Happy Brownie",
   "num": 106821,
-  "availability_issued": 216404,
+  "availability_issued": 216410,
   "availability_total": 264231,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "§∆",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14030600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Poocano",
       "rarity": 15,
-      "document_id": 5368509309531488535
+      "document": {
+        "id": 5368509309531488535,
+        "access_hash": -6101296772793279537,
+        "date": "2025-09-21T15:14:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 44422,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "War Bonnet",
       "rarity": 5,
-      "document_id": 5314511889764476151
+      "document": {
+        "id": 5314511889764476151,
+        "access_hash": 6280179179730716672,
+        "date": "2025-02-20T17:51:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1211,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Grape",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 52,
+      "center_color": 10319041,
+      "edge_color": 7949728,
+      "pattern_color": 4065899,
+      "text_color": 14728702
     }
   ]
 }

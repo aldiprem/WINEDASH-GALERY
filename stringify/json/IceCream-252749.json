@@ -1,26 +1,55 @@
 {
+  "id": 6003485074232706018,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-252749",
   "title": "Ice Cream",
   "num": 252749,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "UQBhto19PCFYa28WMNQuDlA-RuGByS3YvSeF01jpka7aTouc",
+  "gift_address": "EQDHbuti9ih6O5U3hHsN_xaT6bH61uwTN43Nw-XmuRzOsGBT",
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Extra Spicy",
       "rarity": 20,
-      "document_id": 5350717154104742970
+      "document": {
+        "id": 5350717154104742970,
+        "access_hash": -8217955233484464677,
+        "date": "2025-09-15T08:30:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 38628,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Candle",
       "rarity": 7,
-      "document_id": 5440862947075185091
+      "document": {
+        "id": 5440862947075185091,
+        "access_hash": 6542726026572555817,
+        "date": "2024-12-28T11:47:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 875,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Burgundy",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 46,
+      "center_color": 10706534,
+      "edge_color": 7160138,
+      "pattern_color": 3408647,
+      "text_color": 15187136
     }
   ]
 }

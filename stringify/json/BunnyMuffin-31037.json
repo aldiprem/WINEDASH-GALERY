@@ -1,26 +1,55 @@
 {
+  "id": 5787647260913304328,
+  "gift_id": 5935936766358847989,
   "slug": "BunnyMuffin-31037",
   "title": "Bunny Muffin",
   "num": 31037,
-  "availability_issued": 51047,
+  "availability_issued": 51048,
   "availability_total": 66655,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Дарий",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 25265100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Valentine",
       "rarity": 9,
-      "document_id": 5224688382549977577
+      "document": {
+        "id": 5224688382549977577,
+        "access_hash": 6575586029979741345,
+        "date": "2025-01-21T14:45:20+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 15827,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Sparks",
       "rarity": 5,
-      "document_id": 5440607637039243262
+      "document": {
+        "id": 5440607637039243262,
+        "access_hash": -3751453711016024631,
+        "date": "2024-12-28T09:49:38+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 897,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pacific Cyan",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 10,
+      "center_color": 5947046,
+      "edge_color": 4036026,
+      "pattern_color": 156813,
+      "text_color": 11988991
     }
   ]
 }

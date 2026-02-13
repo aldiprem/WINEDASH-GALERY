@@ -1,26 +1,55 @@
 {
+  "id": 5935812117817983829,
+  "gift_id": 5871002671934079382,
   "slug": "LushBouquet-40277",
   "title": "Lush Bouquet",
   "num": 40277,
-  "availability_issued": 104644,
+  "availability_issued": 104646,
   "availability_total": 140116,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 20380500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Berries",
       "rarity": 30,
-      "document_id": 5402612788675765044
+      "document": {
+        "id": 5402612788675765044,
+        "access_hash": 6643920990435213881,
+        "date": "2025-03-22T19:52:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 21799,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Two Hearts",
       "rarity": 4,
-      "document_id": 5292267614188363062
+      "document": {
+        "id": 5292267614188363062,
+        "access_hash": 4315694778606309873,
+        "date": "2025-02-12T23:10:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1231,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Turquoise",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 55,
+      "center_color": 6209720,
+      "edge_color": 4035214,
+      "pattern_color": 1135436,
+      "text_color": 12450034
     }
   ]
 }

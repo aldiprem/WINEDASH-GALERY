@@ -1,26 +1,55 @@
 {
+  "id": 5841347696576693507,
+  "gift_id": 5170594532177215681,
   "slug": "LolPop-86601",
   "title": "Lol Pop",
   "num": 86601,
   "availability_issued": 432296,
   "availability_total": 468745,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10678700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Sugar Free",
       "rarity": 12,
-      "document_id": 5388749201179959909
+      "document": {
+        "id": 5388749201179959909,
+        "access_hash": 4366234531386832816,
+        "date": "2024-12-10T18:56:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 57636,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Trickster Fox",
       "rarity": 5,
-      "document_id": 5546605024722812982
+      "document": {
+        "id": 5546605024722812982,
+        "access_hash": 3677359608556806840,
+        "date": "2025-02-01T17:43:51+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1676,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

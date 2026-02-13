@@ -1,26 +1,55 @@
 {
+  "id": 6042061817650349863,
+  "gift_id": 5933590374185435592,
   "slug": "JesterHat-133414",
   "title": "Jester Hat",
   "num": 133414,
-  "availability_issued": 134548,
+  "availability_issued": 134551,
   "availability_total": 190222,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13575800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Great Again",
       "rarity": 8,
-      "document_id": 5197588023675481775
+      "document": {
+        "id": 5197588023675481775,
+        "access_hash": 5772880501282334035,
+        "date": "2025-01-12T20:50:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30408,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cheese",
       "rarity": 5,
-      "document_id": 5434064267248688787
+      "document": {
+        "id": 5434064267248688787,
+        "access_hash": 5938132221226915499,
+        "date": "2024-12-26T11:38:13+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 867,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

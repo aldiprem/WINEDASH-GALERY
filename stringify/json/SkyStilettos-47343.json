@@ -1,26 +1,55 @@
 {
+  "id": 5778461631537218777,
+  "gift_id": 5870947077877400011,
   "slug": "SkyStilettos-47343",
   "title": "Sky Stilettos",
   "num": 47343,
   "availability_issued": 50257,
   "availability_total": 58460,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 40878900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Diaethria",
       "rarity": 30,
-      "document_id": 5467658582315005674
+      "document": {
+        "id": 5467658582315005674,
+        "access_hash": 5896915524051159137,
+        "date": "2025-07-19T13:30:37+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 30946,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Shark Knife",
       "rarity": 4,
-      "document_id": 5434064559306465934
+      "document": {
+        "id": 5434064559306465934,
+        "access_hash": 7440929945138516317,
+        "date": "2024-12-26T13:58:14+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 631,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chocolate",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 59,
+      "center_color": 10776152,
+      "edge_color": 7619643,
+      "pattern_color": 4065794,
+      "text_color": 14988972
     }
   ]
 }

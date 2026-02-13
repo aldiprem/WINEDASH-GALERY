@@ -1,26 +1,55 @@
 {
+  "id": 6006110123884282798,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-53639",
   "title": "Mousse Cake",
   "num": 53639,
-  "availability_issued": 160707,
+  "availability_issued": 160714,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Froggy Pond",
       "rarity": 30,
-      "document_id": 5332718376391311747
+      "document": {
+        "id": 5332718376391311747,
+        "access_hash": 6485530481266118913,
+        "date": "2025-09-09T18:35:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 43212,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Gift",
       "rarity": 6,
-      "document_id": 5287494449528597028
+      "document": {
+        "id": 5287494449528597028,
+        "access_hash": -7450935343466821477,
+        "date": "2025-02-11T18:21:31+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1103,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Mystic Pearl",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 29,
+      "center_color": 13667181,
+      "edge_color": 11556720,
+      "pattern_color": 10159398,
+      "text_color": 16702944
     }
   ]
 }

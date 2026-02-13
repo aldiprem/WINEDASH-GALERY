@@ -1,26 +1,55 @@
 {
+  "id": 5776227372369969913,
+  "gift_id": 5773668482394620318,
   "slug": "EasterEgg-1770",
   "title": "Easter Egg",
   "num": 1770,
   "availability_issued": 162175,
   "availability_total": 173176,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 24001800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Meowling",
       "rarity": 10,
-      "document_id": 5190823845321274365
+      "document": {
+        "id": 5190823845321274365,
+        "access_hash": 5375299801582818630,
+        "date": "2025-04-17T13:17:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 49200,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "High Hat",
       "rarity": 3,
-      "document_id": 5316622372269222433
+      "document": {
+        "id": 5316622372269222433,
+        "access_hash": 5524486584803065333,
+        "date": "2025-02-21T12:33:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 756,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Battleship Grey",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 50,
+      "center_color": 9211013,
+      "edge_color": 7105638,
+      "pattern_color": 2828832,
+      "text_color": 13618884
     }
   ]
 }

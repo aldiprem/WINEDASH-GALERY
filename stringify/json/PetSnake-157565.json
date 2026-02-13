@@ -1,26 +1,55 @@
 {
+  "id": 5850426175108678951,
+  "gift_id": 6023917088358269866,
   "slug": "PetSnake-157565",
   "title": "Pet Snake",
   "num": 157565,
-  "availability_issued": 174528,
+  "availability_issued": 174535,
   "availability_total": 279106,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13137900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lollipop",
       "rarity": 50,
-      "document_id": 5402129385811635503
+      "document": {
+        "id": 5402129385811635503,
+        "access_hash": 8208923813910441361,
+        "date": "2025-03-22T13:32:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 34051,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Lion Head",
       "rarity": 10,
-      "document_id": 5440356965567977657
+      "document": {
+        "id": 5440356965567977657,
+        "access_hash": -2743297796526210373,
+        "date": "2024-12-28T11:08:10+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 947,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Turquoise",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 55,
+      "center_color": 6209720,
+      "edge_color": 4035214,
+      "pattern_color": 1135436,
+      "text_color": 12450034
     }
   ]
 }

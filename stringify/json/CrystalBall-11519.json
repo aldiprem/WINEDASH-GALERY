@@ -1,26 +1,55 @@
 {
+  "id": 5832456946770248323,
+  "gift_id": 5841336413697606412,
   "slug": "CrystalBall-11519",
   "title": "Crystal Ball",
   "num": 11519,
   "availability_issued": 26682,
   "availability_total": 27732,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 27656900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Ghosted",
       "rarity": 30,
-      "document_id": 5397946104845205633
+      "document": {
+        "id": 5397946104845205633,
+        "access_hash": 2745240760176260721,
+        "date": "2024-12-13T22:41:32+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 31775,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Bloody Axe",
       "rarity": 20,
-      "document_id": 5298529109570239315
+      "document": {
+        "id": 5298529109570239315,
+        "access_hash": 1057636721436878416,
+        "date": "2023-10-19T19:09:17+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1503,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Moonstone",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 33,
+      "center_color": 8303028,
+      "edge_color": 5800848,
+      "pattern_color": 1459538,
+      "text_color": 14349821
     }
   ]
 }

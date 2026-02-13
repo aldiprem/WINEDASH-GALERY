@@ -1,26 +1,55 @@
 {
+  "id": 5818941479258686306,
+  "gift_id": 5983484377902875708,
   "slug": "GingerCookie-86681",
   "title": "Ginger Cookie",
   "num": 86681,
-  "availability_issued": 142091,
+  "availability_issued": 142098,
   "availability_total": 188888,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": "EQDWFUZTjpbwYDu-D23EG4HGvbPLGmmYxGysTYWDD1bqlpjq",
+  "value_amount": 14451600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Periwinkle",
       "rarity": 16,
-      "document_id": 5397865531258723243
+      "document": {
+        "id": 5397865531258723243,
+        "access_hash": 1117174075187666192,
+        "date": "2024-12-14T13:44:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 29517,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Festive Wreath",
       "rarity": 18,
-      "document_id": 5197362258719564143
+      "document": {
+        "id": 5197362258719564143,
+        "access_hash": 7374896174413630421,
+        "date": "2024-10-07T19:26:58+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1481,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Light Olive",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 18,
+      "center_color": 12758884,
+      "edge_color": 8945221,
+      "pattern_color": 5852164,
+      "text_color": 16116668
     }
   ]
 }

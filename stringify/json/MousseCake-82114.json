@@ -1,26 +1,55 @@
 {
+  "id": 6010269361623794857,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-82114",
   "title": "Mousse Cake",
   "num": 82114,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "choking on grass",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Wicked Pie",
       "rarity": 15,
-      "document_id": 5325998659538549878
+      "document": {
+        "id": 5325998659538549878,
+        "access_hash": 6602202919222377059,
+        "date": "2025-09-07T13:23:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 54307,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Car",
       "rarity": 2,
-      "document_id": 5433714991918244490
+      "document": {
+        "id": 5433714991918244490,
+        "access_hash": -7344951217464844048,
+        "date": "2024-12-26T11:37:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1321,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Copper",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 57,
+      "center_color": 13665878,
+      "edge_color": 10315057,
+      "pattern_color": 6301953,
+      "text_color": 16046270
     }
   ]
 }

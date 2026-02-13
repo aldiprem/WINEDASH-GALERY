@@ -1,26 +1,55 @@
 {
+  "id": 6030670297366004507,
+  "gift_id": 5936013938331222567,
   "slug": "PlushPepe-10",
   "title": "Plush Pepe",
   "num": 10,
   "availability_issued": 2825,
   "availability_total": 2861,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "bxbx.ton",
+  "gift_address": "EQC8Qgvksy8qVSMn2-zMxhgnVYpJCgnIoSNTV768NSf7dFNY",
+  "value_amount": 23872841400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Bavaria",
       "rarity": 20,
-      "document_id": 5424773600152410617
+      "document": {
+        "id": 5424773600152410617,
+        "access_hash": 2103912938928898131,
+        "date": "2024-12-22T22:34:22+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 17324,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Flying Heart",
       "rarity": 3,
-      "document_id": 5307512587720602939
+      "document": {
+        "id": 5307512587720602939,
+        "access_hash": 4028129834937184362,
+        "date": "2023-10-22T10:26:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 812,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Turquoise",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 55,
+      "center_color": 6209720,
+      "edge_color": 4035214,
+      "pattern_color": 1135436,
+      "text_color": 12450034
     }
   ]
 }

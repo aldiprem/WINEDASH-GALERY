@@ -1,26 +1,55 @@
 {
+  "id": 5988097602275509149,
+  "gift_id": 5895544372761461960,
   "slug": "BowTie-41477",
   "title": "Bow Tie",
   "num": 41477,
   "availability_issued": 54803,
   "availability_total": 65687,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 17079200,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Football",
       "rarity": 30,
-      "document_id": 5397937231442766605
+      "document": {
+        "id": 5397937231442766605,
+        "access_hash": -3576752863013987269,
+        "date": "2025-03-21T15:43:34+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 19825,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Iron Helmet",
       "rarity": 4,
-      "document_id": 5550920152595300360
+      "document": {
+        "id": 5550920152595300360,
+        "access_hash": 7594012427674479230,
+        "date": "2025-02-03T13:26:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1156,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Chestnut",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 58,
+      "center_color": 12480340,
+      "edge_color": 10045496,
+      "pattern_color": 6296840,
+      "text_color": 16697017
     }
   ]
 }

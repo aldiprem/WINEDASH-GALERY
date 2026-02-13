@@ -1,26 +1,55 @@
 {
+  "id": 6032675136560169830,
+  "gift_id": 6003456431095808759,
   "slug": "FaithAmulet-112090",
   "title": "Faith Amulet",
   "num": 112090,
-  "availability_issued": 135385,
+  "availability_issued": 135390,
   "availability_total": 172784,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14131600,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mystic Tide",
       "rarity": 30,
-      "document_id": 5334981094011865509
+      "document": {
+        "id": 5334981094011865509,
+        "access_hash": -8324894134128481918,
+        "date": "2025-09-09T15:11:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 53950,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Polar Bear",
       "rarity": 5,
-      "document_id": 5436199355621072900
+      "document": {
+        "id": 5436199355621072900,
+        "access_hash": 8330389706498113020,
+        "date": "2024-12-26T12:22:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1250,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Fire Engine",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 73,
+      "center_color": 15753039,
+      "edge_color": 12859721,
+      "pattern_color": 6881289,
+      "text_color": 16758694
     }
   ]
 }

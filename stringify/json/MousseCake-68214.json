@@ -1,26 +1,55 @@
 {
+  "id": 6008074796544295669,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-68214",
   "title": "Mousse Cake",
   "num": 68214,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Not Replying.",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Mad Hatter",
       "rarity": 15,
-      "document_id": 5312429204288079026
+      "document": {
+        "id": 5312429204288079026,
+        "access_hash": -7604745718514590619,
+        "date": "2025-09-02T22:11:12+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 33672,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Crusader Cross",
       "rarity": 6,
-      "document_id": 5544096716577308681
+      "document": {
+        "id": 5544096716577308681,
+        "access_hash": 2114299582696935144,
+        "date": "2025-02-01T17:42:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2038,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Cyberpunk",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 3,
+      "center_color": 8753139,
+      "edge_color": 8806355,
+      "pattern_color": 4397222,
+      "text_color": 14735871
     }
   ]
 }

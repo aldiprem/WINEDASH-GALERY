@@ -1,26 +1,55 @@
 {
+  "id": 5859396343155393415,
+  "gift_id": 6001538689543439169,
   "slug": "CookieHeart-49936",
   "title": "Cookie Heart",
   "num": 49936,
-  "availability_issued": 185968,
+  "availability_issued": 185970,
   "availability_total": 264486,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 14636900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Chilled",
       "rarity": 15,
-      "document_id": 5222298791595499016
+      "document": {
+        "id": 5222298791595499016,
+        "access_hash": 8981071130919833464,
+        "date": "2025-01-21T04:53:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 28112,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "New Year’s Eve",
       "rarity": 10,
-      "document_id": 5199550690585763036
+      "document": {
+        "id": 5199550690585763036,
+        "access_hash": -2798363959252234629,
+        "date": "2024-10-08T18:13:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1754,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

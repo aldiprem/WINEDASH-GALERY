@@ -1,26 +1,55 @@
 {
+  "id": 6003803975554434130,
+  "gift_id": 5935877878062253519,
   "slug": "MousseCake-45860",
   "title": "Mousse Cake",
   "num": 45860,
-  "availability_issued": 160706,
+  "availability_issued": 160713,
   "availability_total": 230505,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Gemstones",
       "rarity": 20,
-      "document_id": 5386408620097306082
+      "document": {
+        "id": 5386408620097306082,
+        "access_hash": 7093726673168323103,
+        "date": "2025-09-27T16:11:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 63504,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Feather",
       "rarity": 6,
-      "document_id": 5436045368158609968
+      "document": {
+        "id": 5436045368158609968,
+        "access_hash": -3170979539261157486,
+        "date": "2024-12-26T12:21:21+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 999,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

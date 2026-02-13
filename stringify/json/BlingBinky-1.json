@@ -1,26 +1,55 @@
 {
+  "id": 5782726340788618227,
+  "gift_id": 5902339509239940491,
   "slug": "BlingBinky-1",
   "title": "Bling Binky",
   "num": 1,
-  "availability_issued": 9309,
+  "availability_issued": 9310,
   "availability_total": 9990,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": "black.ton",
+  "gift_address": "EQArpzAili47ym1X49ZsZ_oTHzvMPcpmygvGv73bppkw4EG3",
+  "value_amount": 1389580500,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Clown",
       "rarity": 20,
-      "document_id": 5188406319899509804
+      "document": {
+        "id": 5188406319899509804,
+        "access_hash": -4814500679637334992,
+        "date": "2025-10-27T19:43:08+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 40239,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Coconut",
       "rarity": 7,
-      "document_id": 5440762122717911802
+      "document": {
+        "id": 5440762122717911802,
+        "access_hash": 6946877915253777626,
+        "date": "2024-12-28T09:54:02+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1284,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Persimmon",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 26,
+      "center_color": 15181658,
+      "edge_color": 12937055,
+      "pattern_color": 11341312,
+      "text_color": 16770263
     }
   ]
 }

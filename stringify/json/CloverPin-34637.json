@@ -1,26 +1,55 @@
 {
+  "id": 5900277405246817186,
+  "gift_id": 5960747083030856414,
   "slug": "CloverPin-34637",
   "title": "Clover Pin",
   "num": 34637,
-  "availability_issued": 226248,
+  "availability_issued": 226251,
   "availability_total": 270970,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "aaaaaaæ",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 15512800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Balloon",
       "rarity": 20,
-      "document_id": 5231448231577154432
+      "document": {
+        "id": 5231448231577154432,
+        "access_hash": -1302629869850551370,
+        "date": "2025-08-06T04:39:06+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16065,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "PC Mouse",
       "rarity": 4,
-      "document_id": 5440619955005447745
+      "document": {
+        "id": 5440619955005447745,
+        "access_hash": -8270559262580251542,
+        "date": "2024-12-28T11:32:07+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 800,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "French Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 54,
+      "center_color": 6069188,
+      "edge_color": 3634074,
+      "pattern_color": 473948,
+      "text_color": 12706809
     }
   ]
 }

@@ -1,26 +1,55 @@
 {
+  "id": 5872719821333857017,
+  "gift_id": 5870784783948186838,
   "slug": "RestlessJar-23265",
   "title": "Restless Jar",
   "num": 23265,
-  "availability_issued": 99473,
+  "availability_issued": 99476,
   "availability_total": 120184,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 16321300,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Blueberry",
       "rarity": 30,
-      "document_id": 5434063262226346529
+      "document": {
+        "id": 5434063262226346529,
+        "access_hash": 8389057038686891713,
+        "date": "2025-04-01T21:58:49+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 18237,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Champagne",
       "rarity": 5,
-      "document_id": 5440709011152333768
+      "document": {
+        "id": 5440709011152333768,
+        "access_hash": 6692263612909697897,
+        "date": "2024-12-28T11:35:28+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1643,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Silver Blue",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 45,
+      "center_color": 8430776,
+      "edge_color": 6323345,
+      "pattern_color": 1390411,
+      "text_color": 13231348
     }
   ]
 }

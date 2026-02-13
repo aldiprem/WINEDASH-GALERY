@@ -1,26 +1,55 @@
 {
+  "id": 6017311909693359095,
+  "gift_id": 6012435906336654262,
   "slug": "SnoopCigar-29127",
   "title": "Snoop Cigar",
   "num": 29127,
   "availability_issued": 117223,
   "availability_total": 119573,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 30318100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "The King",
       "rarity": 30,
-      "document_id": 5373020661574826232
+      "document": {
+        "id": 5373020661574826232,
+        "access_hash": 7595399971509809770,
+        "date": "2025-06-18T14:52:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 55110,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Doberman",
       "rarity": 7,
-      "document_id": 5721848477902700557
+      "document": {
+        "id": 5721848477902700557,
+        "access_hash": 8943721828425766300,
+        "date": "2024-12-26T12:03:00+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1847,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Platinum",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 42,
+      "center_color": 11710119,
+      "edge_color": 8946814,
+      "pattern_color": 4012077,
+      "text_color": 15329250
     }
   ]
 }

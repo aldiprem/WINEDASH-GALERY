@@ -1,26 +1,55 @@
 {
+  "id": 5933857645705298473,
+  "gift_id": 6003373314888696650,
   "slug": "CandyCane-14243",
   "title": "Candy Cane",
   "num": 14243,
-  "availability_issued": 209552,
+  "availability_issued": 209561,
   "availability_total": 320622,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10965100,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Lazy Nap",
       "rarity": 20,
-      "document_id": 5339045292715043567
+      "document": {
+        "id": 5339045292715043567,
+        "access_hash": 2371988522590856011,
+        "date": "2025-03-01T19:52:26+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 20886,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Dessert",
       "rarity": 24,
-      "document_id": 5433791150278337082
+      "document": {
+        "id": 5433791150278337082,
+        "access_hash": 3090493827616352506,
+        "date": "2024-12-26T14:49:44+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 933,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Azure Blue",
-      "rarity": 10
+      "rarity": 10,
+      "backdrop_id": 9,
+      "center_color": 6140363,
+      "edge_color": 4492203,
+      "pattern_color": 151668,
+      "text_color": 11922687
     }
   ]
 }

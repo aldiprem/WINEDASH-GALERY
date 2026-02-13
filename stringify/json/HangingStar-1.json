@@ -1,26 +1,55 @@
 {
+  "id": 5825516322569585255,
+  "gift_id": 5915733223018594841,
   "slug": "HangingStar-1",
   "title": "Hanging Star",
   "num": 1,
-  "availability_issued": 44509,
+  "availability_issued": 44510,
   "availability_total": 58118,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 632890800,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Tropicana",
       "rarity": 15,
-      "document_id": 5238035590422748656
+      "document": {
+        "id": 5238035590422748656,
+        "access_hash": 2659402264538904093,
+        "date": "2025-01-25T23:51:40+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 13345,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cocktail",
       "rarity": 24,
-      "document_id": 5424853890271044722
+      "document": {
+        "id": 5424853890271044722,
+        "access_hash": -3685348669706753930,
+        "date": "2024-12-23T14:51:15+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 822,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Pistachio",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 36,
+      "center_color": 9941116,
+      "edge_color": 6062412,
+      "pattern_color": 2639643,
+      "text_color": 14283465
     }
   ]
 }

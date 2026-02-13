@@ -1,26 +1,55 @@
 {
+  "id": 6037623471461106953,
+  "gift_id": 5913442287462908725,
   "slug": "SpicedWine-92275",
   "title": "Spiced Wine",
   "num": 92275,
-  "availability_issued": 101427,
+  "availability_issued": 101432,
   "availability_total": 146090,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 13828400,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Hot Cold",
       "rarity": 13,
-      "document_id": 5429328829581651325
+      "document": {
+        "id": 5429328829581651325,
+        "access_hash": -5098603448085704953,
+        "date": "2024-12-24T20:48:25+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 26715,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Turtle",
       "rarity": 5,
-      "document_id": 5438209649423704242
+      "document": {
+        "id": 5438209649423704242,
+        "access_hash": 1466899360280993621,
+        "date": "2024-12-28T09:54:18+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1980,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Raspberry",
-      "rarity": 20
+      "rarity": 20,
+      "backdrop_id": 28,
+      "center_color": 14711685,
+      "edge_color": 11950464,
+      "pattern_color": 8980024,
+      "text_color": 16766694
     }
   ]
 }

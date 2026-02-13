@@ -1,26 +1,55 @@
 {
+  "id": 6003365111501161579,
+  "gift_id": 5900177027566142759,
   "slug": "IceCream-103128",
   "title": "Ice Cream",
   "num": 103128,
-  "availability_issued": 324355,
+  "availability_issued": 324356,
   "availability_total": 342255,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 11975700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Cupid Aim",
       "rarity": 25,
-      "document_id": 5240347352274861155
+      "document": {
+        "id": 5240347352274861155,
+        "access_hash": 254698705791907593,
+        "date": "2025-08-09T15:47:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 36598,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Moon Eagle",
       "rarity": 4,
-      "document_id": 5722284966839058444
+      "document": {
+        "id": 5722284966839058444,
+        "access_hash": 4069838170467166052,
+        "date": "2024-12-26T12:01:47+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 2308,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Persimmon",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 26,
+      "center_color": 15181658,
+      "edge_color": 12937055,
+      "pattern_color": 11341312,
+      "text_color": 16770263
     }
   ]
 }

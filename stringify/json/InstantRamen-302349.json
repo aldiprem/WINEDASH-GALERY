@@ -1,26 +1,55 @@
 {
+  "id": 6043997254467978351,
+  "gift_id": 6005564615793050414,
   "slug": "InstantRamen-302349",
   "title": "Instant Ramen",
   "num": 302349,
-  "availability_issued": 370984,
+  "availability_issued": 370997,
   "availability_total": 457382,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 10645000,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "First Date",
       "rarity": 30,
-      "document_id": 5271630549734162505
+      "document": {
+        "id": 5271630549734162505,
+        "access_hash": -5529781771278467251,
+        "date": "2025-08-20T09:36:59+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 27355,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Cow Skull",
       "rarity": 5,
-      "document_id": 5550877572289527833
+      "document": {
+        "id": 5550877572289527833,
+        "access_hash": 3380884809583395161,
+        "date": "2025-02-03T13:27:54+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1604,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Sky Blue",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 8,
+      "center_color": 5813448,
+      "edge_color": 5475266,
+      "pattern_color": 483483,
+      "text_color": 13494525
     }
   ]
 }

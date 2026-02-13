@@ -1,26 +1,55 @@
 {
+  "id": 5913246016047416190,
+  "gift_id": 6003735372041814769,
   "slug": "HolidayDrink-36518",
   "title": "Holiday Drink",
   "num": 36518,
-  "availability_issued": 82869,
+  "availability_issued": 82872,
   "availability_total": 120989,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": null,
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 12076700,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Low Poly",
       "rarity": 18,
-      "document_id": 5341758780038213240
+      "document": {
+        "id": 5341758780038213240,
+        "access_hash": -8634696001786671647,
+        "date": "2025-03-02T16:37:35+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 46511,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Yin-Yang",
       "rarity": 4,
-      "document_id": 5585005627236679696
+      "document": {
+        "id": 5585005627236679696,
+        "access_hash": -3730545495656361718,
+        "date": "2025-02-14T18:56:19+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 890,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Emerald",
-      "rarity": 12
+      "rarity": 12,
+      "backdrop_id": 13,
+      "center_color": 7914885,
+      "edge_color": 4366705,
+      "pattern_color": 25906,
+      "text_color": 12188121
     }
   ]
 }

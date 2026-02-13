@@ -1,26 +1,55 @@
 {
+  "id": 6001273398003499863,
+  "gift_id": 5868595669182186720,
   "slug": "ValentineBox-1387",
   "title": "Valentine Box",
   "num": 1387,
   "availability_issued": 34207,
   "availability_total": 41025,
+  "require_premium": false,
+  "resale_ton_only": false,
+  "theme_available": false,
+  "owner_name": "Only today",
+  "owner_address": null,
+  "gift_address": null,
+  "value_amount": 28195900,
+  "value_currency": "IDR",
   "attributes": [
     {
       "type": "StarGiftAttributeModel",
       "name": "Snow White",
       "rarity": 30,
-      "document_id": 5325863243514667847
+      "document": {
+        "id": 5325863243514667847,
+        "access_hash": 5363359557195531370,
+        "date": "2025-02-24T23:45:23+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 16756,
+        "dc_id": 2
+      }
     },
     {
       "type": "StarGiftAttributePattern",
       "name": "Fishing Hook",
       "rarity": 7,
-      "document_id": 5548864765931028547
+      "document": {
+        "id": 5548864765931028547,
+        "access_hash": -8207345736041967098,
+        "date": "2025-02-02T17:52:46+00:00",
+        "mime_type": "application/x-tgsticker",
+        "size": 1012,
+        "dc_id": 1
+      }
     },
     {
       "type": "StarGiftAttributeBackdrop",
       "name": "Moonstone",
-      "rarity": 15
+      "rarity": 15,
+      "backdrop_id": 33,
+      "center_color": 8303028,
+      "edge_color": 5800848,
+      "pattern_color": 1459538,
+      "text_color": 14349821
     }
   ]
 }
