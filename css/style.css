@@ -99,10 +99,32 @@ body {
   margin-right: 8px;
 }
 
+/* ===== GIFT ICON DI POPUP FILTER ===== */
 .popup-filter-item .popup-checkbox-container {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+}
+
+.popup-filter-item .gift-icon {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 6px !important;
+  object-fit: cover !important;
+  margin-right: 4px !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+}
+
+/* Tambahkan border-radius yang konsisten */
+.popup-filter-item .gift-icon[src] {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Pastikan checkbox container tidak terpengaruh style lain */
+.popup-filter-item .popup-checkbox-container input[type="checkbox"] {
+  margin: 0;
 }
 
 /* ===== GLASS COMPONENTS ===== */
