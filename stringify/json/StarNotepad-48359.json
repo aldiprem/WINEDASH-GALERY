@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-48359",
+  "title": "Star Notepad",
+  "num": 48359,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Oak Tree",
+      "rarity": 13,
+      "document_id": 5203933910869762765
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ice Pop",
+      "rarity": 3,
+      "document_id": 5434148663356054664
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-33125",
+  "title": "Ice Cream",
+  "num": 33125,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bite-Size",
+      "rarity": 30,
+      "document_id": 5240322067802390007
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Trinity Knot",
+      "rarity": 7,
+      "document_id": 5543960982725853188
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 12
+    }
+  ]
+}

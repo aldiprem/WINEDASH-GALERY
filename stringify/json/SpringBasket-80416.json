@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-80416",
+  "title": "Spring Basket",
+  "num": 80416,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Beer Festival",
+      "rarity": 15,
+      "document_id": 5386424614555516507
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Twin Koi",
+      "rarity": 7,
+      "document_id": 5582645495462887434
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-89145",
+  "title": "Ice Cream",
+  "num": 89145,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pigeon",
+      "rarity": 20,
+      "document_id": 5370557295967112258
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Serpent",
+      "rarity": 7,
+      "document_id": 5548505448967045134
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Celtic Blue",
+      "rarity": 15
+    }
+  ]
+}

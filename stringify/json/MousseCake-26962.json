@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-26962",
+  "title": "Mousse Cake",
+  "num": 26962,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Froggy Pond",
+      "rarity": 30,
+      "document_id": 5332718376391311747
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Anchor",
+      "rarity": 6,
+      "document_id": 5440606859650160817
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

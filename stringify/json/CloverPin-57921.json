@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-57921",
+  "title": "Clover Pin",
+  "num": 57921,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Watermelon",
+      "rarity": 20,
+      "document_id": 5231416169646292048
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mannaz Rune",
+      "rarity": 2,
+      "document_id": 5440522820025081877
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

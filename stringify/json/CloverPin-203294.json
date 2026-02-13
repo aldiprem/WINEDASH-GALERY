@@ -1,0 +1,31 @@
+{
+  "slug": "CloverPin-203294",
+  "title": "Clover Pin",
+  "num": 203294,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Peacock",
+      "rarity": 30,
+      "document_id": 5231323024690542422
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Plum",
+      "rarity": 5,
+      "document_id": 5434148341233508615
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

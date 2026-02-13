@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-175674",
+  "title": "Ice Cream",
+  "num": 175674,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pigeon",
+      "rarity": 20,
+      "document_id": 5370557295967112258
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mayan Moth",
+      "rarity": 7,
+      "document_id": 5728738168086200327
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Purple",
+      "rarity": 10
+    }
+  ]
+}

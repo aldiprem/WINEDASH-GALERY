@@ -1,0 +1,26 @@
+{
+  "slug": "HolidayDrink-36062",
+  "title": "Holiday Drink",
+  "num": 36062,
+  "availability_issued": 82869,
+  "availability_total": 120989,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mango Blast",
+      "rarity": 49,
+      "document_id": 5285512549754759576
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dolphin",
+      "rarity": 5,
+      "document_id": 5434071452728977888
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Jade Green",
+      "rarity": 15
+    }
+  ]
+}

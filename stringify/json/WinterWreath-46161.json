@@ -1,0 +1,26 @@
+{
+  "slug": "WinterWreath-46161",
+  "title": "Winter Wreath",
+  "num": 46161,
+  "availability_issued": 71559,
+  "availability_total": 100846,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cotton Candy",
+      "rarity": 20,
+      "document_id": 5292179266711086378
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nordic Wolf",
+      "rarity": 24,
+      "document_id": 5722297057171996682
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Orange",
+      "rarity": 15
+    }
+  ]
+}

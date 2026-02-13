@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-70961",
+  "title": "Whip Cupcake",
+  "num": 70961,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Arizona",
+      "rarity": 25,
+      "document_id": 5274118877691804873
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Magic Wand",
+      "rarity": 7,
+      "document_id": 5422596236416936455
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Satin Gold",
+      "rarity": 15
+    }
+  ]
+}

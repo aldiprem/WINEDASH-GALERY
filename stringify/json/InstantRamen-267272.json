@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-267272",
+  "title": "Instant Ramen",
+  "num": 267272,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "First Date",
+      "rarity": 30,
+      "document_id": 5271630549734162505
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Kite",
+      "rarity": 5,
+      "document_id": 5440869715943644373
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Dark Lilac",
+      "rarity": 15
+    }
+  ]
+}

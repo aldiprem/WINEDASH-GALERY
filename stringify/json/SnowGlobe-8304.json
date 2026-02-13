@@ -1,0 +1,26 @@
+{
+  "slug": "SnowGlobe-8304",
+  "title": "Snow Globe",
+  "num": 8304,
+  "availability_issued": 52013,
+  "availability_total": 72788,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Orange Tale",
+      "rarity": 30,
+      "document_id": 5336959042415779693
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Snowman",
+      "rarity": 18,
+      "document_id": 5197201682777266057
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burnt Sienna",
+      "rarity": 12
+    }
+  ]
+}

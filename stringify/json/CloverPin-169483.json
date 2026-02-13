@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-169483",
+  "title": "Clover Pin",
+  "num": 169483,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Matrix",
+      "rarity": 30,
+      "document_id": 5231367640810810236
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Winged Helmet",
+      "rarity": 5,
+      "document_id": 5314263481740977405
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Shamrock Green",
+      "rarity": 15
+    }
+  ]
+}

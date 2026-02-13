@@ -1,0 +1,26 @@
+{
+  "slug": "CupidCharm-17741",
+  "title": "Cupid Charm",
+  "num": 17741,
+  "availability_issued": 29861,
+  "availability_total": 33112,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Blossom",
+      "rarity": 15,
+      "document_id": 5422347948652523397
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Angel",
+      "rarity": 7,
+      "document_id": 5285531885697526496
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 10
+    }
+  ]
+}

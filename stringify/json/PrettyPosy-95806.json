@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-95806",
+  "title": "Pretty Posy",
+  "num": 95806,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rock Band",
+      "rarity": 30,
+      "document_id": 5204066324711509485
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bone",
+      "rarity": 7,
+      "document_id": 5433924809660588407
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 10
+    }
+  ]
+}

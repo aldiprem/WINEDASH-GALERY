@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-113839",
+  "title": "Xmas Stocking",
+  "num": 113839,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Old School",
+      "rarity": 22,
+      "document_id": 5300972598069321085
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Doctor Hat",
+      "rarity": 5,
+      "document_id": 5312328349866028119
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 12
+    }
+  ]
+}

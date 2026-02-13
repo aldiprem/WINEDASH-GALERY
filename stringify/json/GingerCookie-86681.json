@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-86681",
+  "title": "Ginger Cookie",
+  "num": 86681,
+  "availability_issued": 142091,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Periwinkle",
+      "rarity": 16,
+      "document_id": 5397865531258723243
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Festive Wreath",
+      "rarity": 18,
+      "document_id": 5197362258719564143
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Light Olive",
+      "rarity": 15
+    }
+  ]
+}

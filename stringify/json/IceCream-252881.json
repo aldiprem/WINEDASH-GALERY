@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-252881",
+  "title": "Ice Cream",
+  "num": 252881,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Trio Scoop",
+      "rarity": 30,
+      "document_id": 5359771786978295848
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sharp Sword",
+      "rarity": 7,
+      "document_id": 5436148004992084472
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunship Green",
+      "rarity": 15
+    }
+  ]
+}

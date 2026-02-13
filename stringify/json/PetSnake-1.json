@@ -1,0 +1,26 @@
+{
+  "slug": "PetSnake-1",
+  "title": "Pet Snake",
+  "num": 1,
+  "availability_issued": 174528,
+  "availability_total": 279106,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rainy Day",
+      "rarity": 5,
+      "document_id": 5393099131172448328
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Apple",
+      "rarity": 8,
+      "document_id": 5434047181868785167
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carrot Juice",
+      "rarity": 15
+    }
+  ]
+}

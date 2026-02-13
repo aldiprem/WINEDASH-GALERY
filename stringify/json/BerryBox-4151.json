@@ -1,0 +1,26 @@
+{
+  "slug": "BerryBox-4151",
+  "title": "Berry Box",
+  "num": 4151,
+  "availability_issued": 50377,
+  "availability_total": 66580,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Baubles",
+      "rarity": 20,
+      "document_id": 5413664534097325484
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Lock",
+      "rarity": 11,
+      "document_id": 5440749770391969728
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 15
+    }
+  ]
+}

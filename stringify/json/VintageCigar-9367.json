@@ -1,0 +1,26 @@
+{
+  "slug": "VintageCigar-9367",
+  "title": "Vintage Cigar",
+  "num": 9367,
+  "availability_issued": 26277,
+  "availability_total": 31024,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Centurion",
+      "rarity": 10,
+      "document_id": 5429649393055720320
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wolf Rage",
+      "rarity": 10,
+      "document_id": 5433796201159876253
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 15
+    }
+  ]
+}

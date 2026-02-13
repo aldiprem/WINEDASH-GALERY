@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-39245",
+  "title": "Ice Cream",
+  "num": 39245,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubbles",
+      "rarity": 20,
+      "document_id": 5314362158614611167
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cricket Helmet",
+      "rarity": 2,
+      "document_id": 5278533391107515150
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    }
+  ]
+}

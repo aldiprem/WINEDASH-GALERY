@@ -1,0 +1,26 @@
+{
+  "slug": "LowRider-19476",
+  "title": "Low Rider",
+  "num": 19476,
+  "availability_issued": 23424,
+  "availability_total": 23950,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Alpine Gold",
+      "rarity": 20,
+      "document_id": 5415976987439169080
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pumpkin Coach",
+      "rarity": 7,
+      "document_id": 5551237516318736388
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Black",
+      "rarity": 15
+    }
+  ]
+}

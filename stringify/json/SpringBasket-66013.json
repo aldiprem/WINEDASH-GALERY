@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-66013",
+  "title": "Spring Basket",
+  "num": 66013,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Monkey Boss",
+      "rarity": 25,
+      "document_id": 5350571876835949657
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bike Helmet",
+      "rarity": 4,
+      "document_id": 5314385067970160062
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "RecordPlayer-22225",
+  "title": "Record Player",
+  "num": 22225,
+  "availability_issued": 33096,
+  "availability_total": 46888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Maroon",
+      "rarity": 20,
+      "document_id": 5296595545358366209
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bowler Hat",
+      "rarity": 5,
+      "document_id": 5276170321576093265
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 15
+    }
+  ]
+}

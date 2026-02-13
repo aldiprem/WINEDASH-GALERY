@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-97347",
+  "title": "Clover Pin",
+  "num": 97347,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pinwheel",
+      "rarity": 20,
+      "document_id": 5260650495906710651
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wontons",
+      "rarity": 4,
+      "document_id": 5548537790070784015
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 12
+    }
+  ]
+}

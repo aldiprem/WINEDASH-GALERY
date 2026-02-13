@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-20673",
+  "title": "Party Sparkler",
+  "num": 20673,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Burnt End",
+      "rarity": 13,
+      "document_id": 5228769305855811539
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hammerhead",
+      "rarity": 5,
+      "document_id": 5440572770494734727
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Purple",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-63806",
+  "title": "Instant Ramen",
+  "num": 63806,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Kraken",
+      "rarity": 5,
+      "document_id": 5388775460610020305
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Police Badge",
+      "rarity": 5,
+      "document_id": 5438576190522681995
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 12
+    }
+  ]
+}

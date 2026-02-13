@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-120768",
+  "title": "Cookie Heart",
+  "num": 120768,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fried Egg",
+      "rarity": 10,
+      "document_id": 5240500798571439059
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Snow Angel",
+      "rarity": 12,
+      "document_id": 5282854892711470699
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Amber",
+      "rarity": 20
+    }
+  ]
+}

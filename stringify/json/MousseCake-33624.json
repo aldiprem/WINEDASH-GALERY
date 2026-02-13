@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-33624",
+  "title": "Mousse Cake",
+  "num": 33624,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Meringue",
+      "rarity": 30,
+      "document_id": 5314381889694366490
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eggplant",
+      "rarity": 4,
+      "document_id": 5434085488682100281
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Light Olive",
+      "rarity": 15
+    }
+  ]
+}

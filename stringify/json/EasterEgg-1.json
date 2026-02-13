@@ -1,0 +1,26 @@
+{
+  "slug": "EasterEgg-1",
+  "title": "Easter Egg",
+  "num": 1,
+  "availability_issued": 162175,
+  "availability_total": 173176,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Whelp",
+      "rarity": 5,
+      "document_id": 5197701956272941615
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moose Head",
+      "rarity": 5,
+      "document_id": 5440792556856173329
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Hunter Green",
+      "rarity": 12
+    }
+  ]
+}

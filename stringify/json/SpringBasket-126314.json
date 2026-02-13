@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-126314",
+  "title": "Spring Basket",
+  "num": 126314,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dom Pingouin",
+      "rarity": 10,
+      "document_id": 5381982020643618937
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Magic Wand",
+      "rarity": 7,
+      "document_id": 5422596236416936455
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Satin Gold",
+      "rarity": 12
+    }
+  ]
+}

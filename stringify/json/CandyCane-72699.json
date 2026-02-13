@@ -1,0 +1,26 @@
+{
+  "slug": "CandyCane-72699",
+  "title": "Candy Cane",
+  "num": 72699,
+  "availability_issued": 209552,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Nightmare",
+      "rarity": 20,
+      "document_id": 5339424675766231692
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jingle Bell",
+      "rarity": 24,
+      "document_id": 5206464681694217071
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Light Olive",
+      "rarity": 15
+    }
+  ]
+}

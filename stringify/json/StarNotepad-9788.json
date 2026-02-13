@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-9788",
+  "title": "Star Notepad",
+  "num": 9788,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sterling",
+      "rarity": 13,
+      "document_id": 5231391649677993239
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bread",
+      "rarity": 3,
+      "document_id": 5436213773826285560
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 20
+    }
+  ]
+}

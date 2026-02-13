@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-29570",
+  "title": "Instant Ramen",
+  "num": 29570,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sewing Stew",
+      "rarity": 30,
+      "document_id": 5389060934201279247
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Onigiri",
+      "rarity": 5,
+      "document_id": 5584781618922389518
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Dark Lilac",
+      "rarity": 15
+    }
+  ]
+}

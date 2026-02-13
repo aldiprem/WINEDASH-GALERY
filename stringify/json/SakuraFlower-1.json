@@ -1,0 +1,26 @@
+{
+  "slug": "SakuraFlower-1",
+  "title": "Sakura Flower",
+  "num": 1,
+  "availability_issued": 87580,
+  "availability_total": 93115,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dahlia",
+      "rarity": 12,
+      "document_id": 5305380875192523897
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dagger",
+      "rarity": 5,
+      "document_id": 5551096022916136968
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chocolate",
+      "rarity": 10
+    }
+  ]
+}

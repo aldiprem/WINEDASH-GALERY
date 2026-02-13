@@ -1,0 +1,26 @@
+{
+  "slug": "RecordPlayer-1",
+  "title": "Record Player",
+  "num": 1,
+  "availability_issued": 33096,
+  "availability_total": 46888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dark Noir",
+      "rarity": 5,
+      "document_id": 5296327367600399541
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moto Helmet",
+      "rarity": 3,
+      "document_id": 5312444266738377449
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-117257",
+  "title": "Lol Pop",
+  "num": 117257,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Liquid Lime",
+      "rarity": 10,
+      "document_id": 5221961357489892670
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Inca Sun",
+      "rarity": 5,
+      "document_id": 5722165274690453518
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 20
+    }
+  ]
+}

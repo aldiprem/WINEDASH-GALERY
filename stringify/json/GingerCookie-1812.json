@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-1812",
+  "title": "Ginger Cookie",
+  "num": 1812,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Candy Bar",
+      "rarity": 17,
+      "document_id": 5233260175200119619
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jingle Bell",
+      "rarity": 18,
+      "document_id": 5206464681694217071
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Onyx Black",
+      "rarity": 10
+    }
+  ]
+}

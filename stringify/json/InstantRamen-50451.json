@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-50451",
+  "title": "Instant Ramen",
+  "num": 50451,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sandbox",
+      "rarity": 10,
+      "document_id": 5362080679792247907
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Heraldic Lily",
+      "rarity": 5,
+      "document_id": 5551136193745256466
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 10
+    }
+  ]
+}

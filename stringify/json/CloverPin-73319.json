@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-73319",
+  "title": "Clover Pin",
+  "num": 73319,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Good Boy",
+      "rarity": 20,
+      "document_id": 5262952881845208674
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hammerhead",
+      "rarity": 4,
+      "document_id": 5440572770494734727
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Navy Blue",
+      "rarity": 10
+    }
+  ]
+}

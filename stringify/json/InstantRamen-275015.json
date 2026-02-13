@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-275015",
+  "title": "Instant Ramen",
+  "num": 275015,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Homemade",
+      "rarity": 20,
+      "document_id": 5273928928468171969
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Kitsune",
+      "rarity": 5,
+      "document_id": 5722361541810978822
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Purple",
+      "rarity": 15
+    }
+  ]
+}

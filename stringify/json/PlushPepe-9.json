@@ -1,0 +1,31 @@
+{
+  "slug": "PlushPepe-9",
+  "title": "Plush Pepe",
+  "num": 9,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Galaxy",
+      "rarity": 20,
+      "document_id": 5424760337293402339
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rocket",
+      "rarity": 3,
+      "document_id": 5422791593004393932
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

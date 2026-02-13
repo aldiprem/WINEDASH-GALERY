@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-53475",
+  "title": "Spring Basket",
+  "num": 53475,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Balloon Dog",
+      "rarity": 30,
+      "document_id": 5397846856740928345
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Koala",
+      "rarity": 4,
+      "document_id": 5440487373659987419
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 12
+    }
+  ]
+}

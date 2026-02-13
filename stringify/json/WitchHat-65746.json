@@ -1,0 +1,26 @@
+{
+  "slug": "WitchHat-65746",
+  "title": "Witch Hat",
+  "num": 65746,
+  "availability_issued": 82318,
+  "availability_total": 88480,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mine Time",
+      "rarity": 5,
+      "document_id": 5238109790277758554
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hammerhead",
+      "rarity": 2,
+      "document_id": 5440572770494734727
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 20
+    }
+  ]
+}

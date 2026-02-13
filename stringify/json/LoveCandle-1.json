@@ -1,0 +1,26 @@
+{
+  "slug": "LoveCandle-1",
+  "title": "Love Candle",
+  "num": 1,
+  "availability_issued": 23181,
+  "availability_total": 30296,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Surprise",
+      "rarity": 15,
+      "document_id": 5449722562663702081
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Watermelon",
+      "rarity": 10,
+      "document_id": 5433649575271359320
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 20
+    }
+  ]
+}

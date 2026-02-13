@@ -1,0 +1,26 @@
+{
+  "slug": "MadPumpkin-3018",
+  "title": "Mad Pumpkin",
+  "num": 3018,
+  "availability_issued": 19424,
+  "availability_total": 22199,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ornament",
+      "rarity": 30,
+      "document_id": 5434079368353699769
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Autumn Leaves",
+      "rarity": 24,
+      "document_id": 5299000473641041282
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Jade Green",
+      "rarity": 20
+    }
+  ]
+}

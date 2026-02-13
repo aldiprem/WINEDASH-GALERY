@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-1234",
+  "title": "Crystal Ball",
+  "num": 1234,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rainbow",
+      "rarity": 20,
+      "document_id": 5429143089425967879
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower",
+      "rarity": 2,
+      "document_id": 5433932673745708750
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

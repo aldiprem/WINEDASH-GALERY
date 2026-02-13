@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-39143",
+  "title": "Ice Cream",
+  "num": 39143,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ice Craft",
+      "rarity": 15,
+      "document_id": 5332705070582627661
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Inguz Rune",
+      "rarity": 2,
+      "document_id": 5440848485920301619
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

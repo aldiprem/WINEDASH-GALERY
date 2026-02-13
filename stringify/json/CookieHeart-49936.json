@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-49936",
+  "title": "Cookie Heart",
+  "num": 49936,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chilled",
+      "rarity": 15,
+      "document_id": 5222298791595499016
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "New Year’s Eve",
+      "rarity": 10,
+      "document_id": 5199550690585763036
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 20
+    }
+  ]
+}

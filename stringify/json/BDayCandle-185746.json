@@ -1,0 +1,26 @@
+{
+  "slug": "BDayCandle-185746",
+  "title": "B-Day Candle",
+  "num": 185746,
+  "availability_issued": 267371,
+  "availability_total": 307521,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Backyard",
+      "rarity": 6,
+      "document_id": 5215238161713623389
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower",
+      "rarity": 4,
+      "document_id": 5433932673745708750
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

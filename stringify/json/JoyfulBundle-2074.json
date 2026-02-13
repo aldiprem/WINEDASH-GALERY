@@ -1,0 +1,26 @@
+{
+  "slug": "JoyfulBundle-2074",
+  "title": "Joyful Bundle",
+  "num": 2074,
+  "availability_issued": 78211,
+  "availability_total": 114092,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sad Clown",
+      "rarity": 15,
+      "document_id": 5341596726627170559
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Baseball Cap",
+      "rarity": 7,
+      "document_id": 5316818244252755144
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

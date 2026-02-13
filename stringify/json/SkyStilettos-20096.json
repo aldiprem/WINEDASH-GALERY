@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-20096",
+  "title": "Sky Stilettos",
+  "num": 20096,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rosy Moth",
+      "rarity": 25,
+      "document_id": 5462953411282497639
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pussy Willow",
+      "rarity": 7,
+      "document_id": 5357580228375896770
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tactical Pine",
+      "rarity": 15
+    }
+  ]
+}

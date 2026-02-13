@@ -1,0 +1,26 @@
+{
+  "slug": "RecordPlayer-31723",
+  "title": "Record Player",
+  "num": 31723,
+  "availability_issued": 33096,
+  "availability_total": 46888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Police Party",
+      "rarity": 10,
+      "document_id": 5296287342800169796
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Car",
+      "rarity": 2,
+      "document_id": 5433714991918244490
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Malachite",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-33734",
+  "title": "Tama Gadget",
+  "num": 33734,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lavender",
+      "rarity": 20,
+      "document_id": 5256220524903687370
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Tooth",
+      "rarity": 4,
+      "document_id": 5434094602602701296
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 12
+    }
+  ]
+}

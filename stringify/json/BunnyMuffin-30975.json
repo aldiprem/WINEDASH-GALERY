@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-30975",
+  "title": "Bunny Muffin",
+  "num": 30975,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Young Chili",
+      "rarity": 8,
+      "document_id": 5429577117346063060
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Water Drops",
+      "rarity": 10,
+      "document_id": 5305716187584282659
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 15
+    }
+  ]
+}

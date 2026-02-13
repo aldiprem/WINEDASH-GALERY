@@ -1,0 +1,31 @@
+{
+  "slug": "IceCream-201773",
+  "title": "Ice Cream",
+  "num": 201773,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubbles",
+      "rarity": 20,
+      "document_id": 5314362158614611167
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sailor Hat",
+      "rarity": 4,
+      "document_id": 5312256490768197272
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cobalt Blue",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-24533",
+  "title": "Clover Pin",
+  "num": 24533,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Purrfect Paw",
+      "rarity": 20,
+      "document_id": 5231331764948990717
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Carambola",
+      "rarity": 4,
+      "document_id": 5433727855345296125
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Old Gold",
+      "rarity": 15
+    }
+  ]
+}

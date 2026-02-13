@@ -1,0 +1,26 @@
+{
+  "slug": "InputKey-66291",
+  "title": "Input Key",
+  "num": 66291,
+  "availability_issued": 128102,
+  "availability_total": 159750,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Black Hole",
+      "rarity": 20,
+      "document_id": 5289699829335750144
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Top Hat",
+      "rarity": 4,
+      "document_id": 5424997398013306322
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 12
+    }
+  ]
+}

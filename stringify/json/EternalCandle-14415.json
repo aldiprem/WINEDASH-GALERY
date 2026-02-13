@@ -1,0 +1,26 @@
+{
+  "slug": "EternalCandle-14415",
+  "title": "Eternal Candle",
+  "num": 14415,
+  "availability_issued": 44951,
+  "availability_total": 46590,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Toxic Smoke",
+      "rarity": 15,
+      "document_id": 5425016162725420735
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Red Deer",
+      "rarity": 5,
+      "document_id": 5440904569603255326
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 20
+    }
+  ]
+}

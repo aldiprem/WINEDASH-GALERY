@@ -1,0 +1,26 @@
+{
+  "slug": "PlushPepe-13",
+  "title": "Plush Pepe",
+  "num": 13,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Stripes",
+      "rarity": 20,
+      "document_id": 5424892691005595203
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Top Hat",
+      "rarity": 2,
+      "document_id": 5424997398013306322
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Grape",
+      "rarity": 20
+    }
+  ]
+}

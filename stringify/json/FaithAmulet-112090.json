@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-112090",
+  "title": "Faith Amulet",
+  "num": 112090,
+  "availability_issued": 135385,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mystic Tide",
+      "rarity": 30,
+      "document_id": 5334981094011865509
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Polar Bear",
+      "rarity": 5,
+      "document_id": 5436199355621072900
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fire Engine",
+      "rarity": 15
+    }
+  ]
+}

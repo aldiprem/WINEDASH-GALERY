@@ -1,0 +1,26 @@
+{
+  "slug": "StellarRocket-103114",
+  "title": "Stellar Rocket",
+  "num": 103114,
+  "availability_issued": 135408,
+  "availability_total": 156318,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chrome",
+      "rarity": 15,
+      "document_id": 5451886620590505595
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bonsai",
+      "rarity": 2,
+      "document_id": 5582749674189619216
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

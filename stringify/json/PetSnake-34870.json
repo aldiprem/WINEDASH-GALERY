@@ -1,0 +1,26 @@
+{
+  "slug": "PetSnake-34870",
+  "title": "Pet Snake",
+  "num": 34870,
+  "availability_issued": 174528,
+  "availability_total": 279106,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tempest",
+      "rarity": 45,
+      "document_id": 5402469731905070969
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cupcake",
+      "rarity": 6,
+      "document_id": 5436346024459266141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Marine Blue",
+      "rarity": 15
+    }
+  ]
+}

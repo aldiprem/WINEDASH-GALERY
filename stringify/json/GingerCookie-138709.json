@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-138709",
+  "title": "Ginger Cookie",
+  "num": 138709,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vanilla",
+      "rarity": 17,
+      "document_id": 5447458221545513740
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Star",
+      "rarity": 18,
+      "document_id": 5420190079773597190
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

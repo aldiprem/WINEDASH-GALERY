@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-124311",
+  "title": "Clover Pin",
+  "num": 124311,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Merrow",
+      "rarity": 15,
+      "document_id": 5260374746121400933
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Handset",
+      "rarity": 5,
+      "document_id": 5433797377980918182
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 10
+    }
+  ]
+}

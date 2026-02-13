@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-67451",
+  "title": "Instant Ramen",
+  "num": 67451,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cat Food",
+      "rarity": 25,
+      "document_id": 5370699352010425073
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eagle",
+      "rarity": 5,
+      "document_id": 5440518297424518899
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Steel Grey",
+      "rarity": 12
+    }
+  ]
+}

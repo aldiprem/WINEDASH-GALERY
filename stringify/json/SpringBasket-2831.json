@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-2831",
+  "title": "Spring Basket",
+  "num": 2831,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Knitty Kitty",
+      "rarity": 30,
+      "document_id": 5350574681449592029
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Star Crown",
+      "rarity": 7,
+      "document_id": 5433690600798970670
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 12
+    }
+  ]
+}

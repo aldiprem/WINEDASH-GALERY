@@ -1,0 +1,26 @@
+{
+  "slug": "LushBouquet-33209",
+  "title": "Lush Bouquet",
+  "num": 33209,
+  "availability_issued": 104644,
+  "availability_total": 140116,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cotton",
+      "rarity": 30,
+      "document_id": 5402134028671284237
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coffee Bean",
+      "rarity": 5,
+      "document_id": 5433757722547873973
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 15
+    }
+  ]
+}

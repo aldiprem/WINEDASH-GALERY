@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-132317",
+  "title": "Spring Basket",
+  "num": 132317,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sushi Neko",
+      "rarity": 25,
+      "document_id": 5352989913358823083
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crystal Ball",
+      "rarity": 7,
+      "document_id": 5440487188976393935
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cappuccino",
+      "rarity": 12
+    }
+  ]
+}

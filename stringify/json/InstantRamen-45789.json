@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-45789",
+  "title": "Instant Ramen",
+  "num": 45789,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chicken",
+      "rarity": 30,
+      "document_id": 5271869268311441063
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Galaxy",
+      "rarity": 5,
+      "document_id": 5550968350718296080
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Navy Blue",
+      "rarity": 12
+    }
+  ]
+}

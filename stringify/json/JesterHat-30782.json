@@ -1,0 +1,26 @@
+{
+  "slug": "JesterHat-30782",
+  "title": "Jester Hat",
+  "num": 30782,
+  "availability_issued": 134548,
+  "availability_total": 190222,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sketchy",
+      "rarity": 15,
+      "document_id": 5429279600666501838
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cobra",
+      "rarity": 3,
+      "document_id": 5436400690803009263
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Amber",
+      "rarity": 20
+    }
+  ]
+}

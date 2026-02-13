@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-164323",
+  "title": "Cookie Heart",
+  "num": 164323,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Apple",
+      "rarity": 10,
+      "document_id": 5231342931863952020
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candy",
+      "rarity": 8,
+      "document_id": 5422574937674115533
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 20
+    }
+  ]
+}

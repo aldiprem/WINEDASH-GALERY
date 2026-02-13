@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-126713",
+  "title": "Instant Ramen",
+  "num": 126713,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Octopus",
+      "rarity": 15,
+      "document_id": 5317042763668162365
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fried Egg",
+      "rarity": 4,
+      "document_id": 5546217030262194194
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Amber",
+      "rarity": 15
+    }
+  ]
+}

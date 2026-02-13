@@ -1,0 +1,26 @@
+{
+  "slug": "WinterWreath-4740",
+  "title": "Winter Wreath",
+  "num": 4740,
+  "availability_issued": 71558,
+  "availability_total": 100846,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Glimmer",
+      "rarity": 20,
+      "document_id": 5278513028667565569
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Snow Angel",
+      "rarity": 24,
+      "document_id": 5282854892711470699
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-46973",
+  "title": "Pretty Posy",
+  "num": 46973,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Frankfurter",
+      "rarity": 30,
+      "document_id": 5465312890221264892
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moai Head",
+      "rarity": 2,
+      "document_id": 5548933322199007254
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Navy Blue",
+      "rarity": 15
+    }
+  ]
+}

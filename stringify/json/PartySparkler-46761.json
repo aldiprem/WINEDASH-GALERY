@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-46761",
+  "title": "Party Sparkler",
+  "num": 46761,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tri-Nitro",
+      "rarity": 4,
+      "document_id": 5229090865762296713
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gingerbread",
+      "rarity": 18,
+      "document_id": 5438165909476763503
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 15
+    }
+  ]
+}

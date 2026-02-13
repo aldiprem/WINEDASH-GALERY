@@ -1,0 +1,26 @@
+{
+  "slug": "RestlessJar-46937",
+  "title": "Restless Jar",
+  "num": 46937,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pickles",
+      "rarity": 17,
+      "document_id": 5231195103384594972
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sunflower",
+      "rarity": 4,
+      "document_id": 5440682657233000387
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 12
+    }
+  ]
+}

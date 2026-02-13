@@ -1,0 +1,26 @@
+{
+  "slug": "JollyChimp-8511",
+  "title": "Jolly Chimp",
+  "num": 8511,
+  "availability_issued": 115521,
+  "availability_total": 132155,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Farm Girl",
+      "rarity": 30,
+      "document_id": 5188673943606688916
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eagle",
+      "rarity": 5,
+      "document_id": 5440518297424518899
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    }
+  ]
+}

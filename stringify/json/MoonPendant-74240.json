@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-74240",
+  "title": "Moon Pendant",
+  "num": 74240,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Diamond Tear",
+      "rarity": 25,
+      "document_id": 5199580381694688759
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ice Pop",
+      "rarity": 10,
+      "document_id": 5434148663356054664
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-5364",
+  "title": "Tama Gadget",
+  "num": 5364,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wooden Dog",
+      "rarity": 5,
+      "document_id": 5328069168782667919
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Telescope",
+      "rarity": 3,
+      "document_id": 5550885238806151178
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Aquamarine",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JollyChimp-43447",
+  "title": "Jolly Chimp",
+  "num": 43447,
+  "availability_issued": 115521,
+  "availability_total": 132155,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Patchwork",
+      "rarity": 30,
+      "document_id": 5452063723566952870
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Banana",
+      "rarity": 5,
+      "document_id": 5548920390052478992
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 10
+    }
+  ]
+}

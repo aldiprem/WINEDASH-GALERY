@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-60891",
+  "title": "Snoop Cigar",
+  "num": 60891,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Charmed Roll",
+      "rarity": 10,
+      "document_id": 5431711797696561839
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ring",
+      "rarity": 7,
+      "document_id": 5440746209864081065
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Orange",
+      "rarity": 15
+    }
+  ]
+}

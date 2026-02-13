@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-1",
+  "title": "Clover Pin",
+  "num": 1,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vinyl Record",
+      "rarity": 20,
+      "document_id": 5231095773675942179
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Beer",
+      "rarity": 5,
+      "document_id": 5551062109854367759
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunship Green",
+      "rarity": 15
+    }
+  ]
+}

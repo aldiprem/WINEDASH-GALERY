@@ -1,0 +1,26 @@
+{
+  "slug": "EvilEye-72408",
+  "title": "Evil Eye",
+  "num": 72408,
+  "availability_issued": 72951,
+  "availability_total": 85204,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Apex Predator",
+      "rarity": 15,
+      "document_id": 5429470494782942290
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sauron",
+      "rarity": 24,
+      "document_id": 5434053869132867742
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Light Olive",
+      "rarity": 15
+    }
+  ]
+}

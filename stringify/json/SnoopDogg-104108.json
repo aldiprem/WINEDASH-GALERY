@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopDogg-104108",
+  "title": "Snoop Dogg",
+  "num": 104108,
+  "availability_issued": 580008,
+  "availability_total": 593781,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chow Wow",
+      "rarity": 20,
+      "document_id": 5400124885919893067
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Plume",
+      "rarity": 4,
+      "document_id": 5436321727829273227
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 15
+    }
+  ]
+}

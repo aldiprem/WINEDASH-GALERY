@@ -1,0 +1,31 @@
+{
+  "slug": "DiamondRing-1",
+  "title": "Diamond Ring",
+  "num": 1,
+  "availability_issued": 32240,
+  "availability_total": 32924,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Silver Star",
+      "rarity": 5,
+      "document_id": 5269556226559079886
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Greek Sun",
+      "rarity": 5,
+      "document_id": 5544236900014882832
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

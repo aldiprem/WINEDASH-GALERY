@@ -1,0 +1,26 @@
+{
+  "slug": "SnowMittens-22556",
+  "title": "Snow Mittens",
+  "num": 22556,
+  "availability_issued": 38414,
+  "availability_total": 49969,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Skellington",
+      "rarity": 8,
+      "document_id": 5228975739163928672
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dessert",
+      "rarity": 24,
+      "document_id": 5433791150278337082
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cobalt Blue",
+      "rarity": 20
+    }
+  ]
+}

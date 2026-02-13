@@ -1,0 +1,26 @@
+{
+  "slug": "CandyCane-31293",
+  "title": "Candy Cane",
+  "num": 31293,
+  "availability_issued": 209552,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Polka Pop",
+      "rarity": 26,
+      "document_id": 5341713867565198160
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sea Horse",
+      "rarity": 2,
+      "document_id": 5435936074125828771
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 12
+    }
+  ]
+}

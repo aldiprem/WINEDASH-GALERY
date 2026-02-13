@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-3656",
+  "title": "Sky Stilettos",
+  "num": 3656,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Phantom Blush",
+      "rarity": 25,
+      "document_id": 5201707704766202638
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Banner",
+      "rarity": 4,
+      "document_id": 5550702217364766734
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 15
+    }
+  ]
+}

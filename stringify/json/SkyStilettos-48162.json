@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-48162",
+  "title": "Sky Stilettos",
+  "num": 48162,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lost World",
+      "rarity": 10,
+      "document_id": 5233306852904698192
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gamepad",
+      "rarity": 7,
+      "document_id": 5440404794323786424
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Neon Blue",
+      "rarity": 12
+    }
+  ]
+}

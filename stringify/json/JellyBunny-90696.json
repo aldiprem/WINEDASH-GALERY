@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-90696",
+  "title": "Jelly Bunny",
+  "num": 90696,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vanilla",
+      "rarity": 5,
+      "document_id": 5397754562188696203
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spider Web",
+      "rarity": 5,
+      "document_id": 5440362952752389413
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 20
+    }
+  ]
+}

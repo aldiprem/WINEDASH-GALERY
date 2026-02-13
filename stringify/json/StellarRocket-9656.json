@@ -1,0 +1,26 @@
+{
+  "slug": "StellarRocket-9656",
+  "title": "Stellar Rocket",
+  "num": 9656,
+  "availability_issued": 135408,
+  "availability_total": 156318,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Jet Bike",
+      "rarity": 25,
+      "document_id": 5267483050140266422
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Grape",
+      "rarity": 5,
+      "document_id": 5438330514098381824
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 15
+    }
+  ]
+}

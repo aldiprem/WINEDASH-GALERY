@@ -1,0 +1,26 @@
+{
+  "slug": "SkullFlower-21269",
+  "title": "Skull Flower",
+  "num": 21269,
+  "availability_issued": 21703,
+  "availability_total": 24126,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Caprice",
+      "rarity": 30,
+      "document_id": 5411438126130291567
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Severed Hand",
+      "rarity": 10,
+      "document_id": 5301167533749972632
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 20
+    }
+  ]
+}

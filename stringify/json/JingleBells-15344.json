@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-15344",
+  "title": "Jingle Bells",
+  "num": 15344,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Sparkle",
+      "rarity": 7,
+      "document_id": 5231349000652742406
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Snowflake",
+      "rarity": 16,
+      "document_id": 5438629456707075929
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 15
+    }
+  ]
+}

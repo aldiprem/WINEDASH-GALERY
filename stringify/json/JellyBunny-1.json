@@ -1,0 +1,31 @@
+{
+  "slug": "JellyBunny-1",
+  "title": "Jelly Bunny",
+  "num": 1,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Party Hard",
+      "rarity": 15,
+      "document_id": 5424876808216535590
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Scissors",
+      "rarity": 5,
+      "document_id": 5440515449861202939
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "WinterWreath-1",
+  "title": "Winter Wreath",
+  "num": 1,
+  "availability_issued": 71558,
+  "availability_total": 100846,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pumpkin",
+      "rarity": 20,
+      "document_id": 5332477961301943132
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mittens",
+      "rarity": 20,
+      "document_id": 5195148147243899647
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Dark Lilac",
+      "rarity": 10
+    }
+  ]
+}

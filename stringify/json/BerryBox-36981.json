@@ -1,0 +1,26 @@
+{
+  "slug": "BerryBox-36981",
+  "title": "Berry Box",
+  "num": 36981,
+  "availability_issued": 50377,
+  "availability_total": 66580,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wedded",
+      "rarity": 10,
+      "document_id": 5431838013900479049
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Dove",
+      "rarity": 8,
+      "document_id": 5305258889531374945
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnakeBox-169967",
+  "title": "Snake Box",
+  "num": 169967,
+  "availability_issued": 170178,
+  "availability_total": 273898,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cotton Candy",
+      "rarity": 30,
+      "document_id": 5368811207077688205
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hot Drink",
+      "rarity": 6,
+      "document_id": 5195425164044559335
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Marine Blue",
+      "rarity": 12
+    }
+  ]
+}

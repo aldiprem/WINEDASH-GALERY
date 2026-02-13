@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-77042",
+  "title": "Spiced Wine",
+  "num": 77042,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Blue Brew",
+      "rarity": 13,
+      "document_id": 5429362235837278143
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mask",
+      "rarity": 5,
+      "document_id": 5438503377942111917
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-339702",
+  "title": "Instant Ramen",
+  "num": 339702,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Spicy Wiener",
+      "rarity": 20,
+      "document_id": 5271523111127255284
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jellyfish",
+      "rarity": 5,
+      "document_id": 5433978836054203452
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    }
+  ]
+}

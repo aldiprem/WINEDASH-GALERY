@@ -1,0 +1,26 @@
+{
+  "slug": "EasterEgg-1770",
+  "title": "Easter Egg",
+  "num": 1770,
+  "availability_issued": 162175,
+  "availability_total": 173176,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Meowling",
+      "rarity": 10,
+      "document_id": 5190823845321274365
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "High Hat",
+      "rarity": 3,
+      "document_id": 5316622372269222433
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 10
+    }
+  ]
+}

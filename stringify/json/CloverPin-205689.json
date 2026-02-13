@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-205689",
+  "title": "Clover Pin",
+  "num": 205689,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Watermelon",
+      "rarity": 20,
+      "document_id": 5231416169646292048
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spades",
+      "rarity": 5,
+      "document_id": 5440722007723368230
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "HomemadeCake-1",
+  "title": "Homemade Cake",
+  "num": 1,
+  "availability_issued": 178568,
+  "availability_total": 199482,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "French Yogurt",
+      "rarity": 15,
+      "document_id": 5420192231552212025
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Plume",
+      "rarity": 3,
+      "document_id": 5436321727829273227
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Indigo",
+      "rarity": 15
+    }
+  ]
+}

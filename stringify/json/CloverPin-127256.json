@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-127256",
+  "title": "Clover Pin",
+  "num": 127256,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Purrfect Paw",
+      "rarity": 20,
+      "document_id": 5231331764948990717
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gua Pi Mao",
+      "rarity": 5,
+      "document_id": 5314434219575893832
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tomato",
+      "rarity": 15
+    }
+  ]
+}

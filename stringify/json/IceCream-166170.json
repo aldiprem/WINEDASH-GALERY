@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-166170",
+  "title": "Ice Cream",
+  "num": 166170,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bite-Size",
+      "rarity": 30,
+      "document_id": 5240322067802390007
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Twin Peaks",
+      "rarity": 7,
+      "document_id": 5440737538325112126
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

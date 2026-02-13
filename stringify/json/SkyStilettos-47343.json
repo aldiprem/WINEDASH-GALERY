@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-47343",
+  "title": "Sky Stilettos",
+  "num": 47343,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Diaethria",
+      "rarity": 30,
+      "document_id": 5467658582315005674
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shark Knife",
+      "rarity": 4,
+      "document_id": 5434064559306465934
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chocolate",
+      "rarity": 10
+    }
+  ]
+}

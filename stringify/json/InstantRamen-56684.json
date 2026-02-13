@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-56684",
+  "title": "Instant Ramen",
+  "num": 56684,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Classic Ramen",
+      "rarity": 25,
+      "document_id": 5316763320210980280
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pizza Slice",
+      "rarity": 4,
+      "document_id": 5436241476365344257
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunmetal",
+      "rarity": 12
+    }
+  ]
+}

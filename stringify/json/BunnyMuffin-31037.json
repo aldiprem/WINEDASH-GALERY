@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-31037",
+  "title": "Bunny Muffin",
+  "num": 31037,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Valentine",
+      "rarity": 9,
+      "document_id": 5224688382549977577
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sparks",
+      "rarity": 5,
+      "document_id": 5440607637039243262
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    }
+  ]
+}

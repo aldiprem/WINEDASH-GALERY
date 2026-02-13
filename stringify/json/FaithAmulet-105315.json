@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-105315",
+  "title": "Faith Amulet",
+  "num": 105315,
+  "availability_issued": 135385,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Princess",
+      "rarity": 15,
+      "document_id": 5373250820282289331
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cap",
+      "rarity": 7,
+      "document_id": 5422883810247207169
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 10
+    }
+  ]
+}

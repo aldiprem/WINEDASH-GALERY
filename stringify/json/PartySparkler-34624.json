@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-34624",
+  "title": "Party Sparkler",
+  "num": 34624,
+  "availability_issued": 176753,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hellfire",
+      "rarity": 13,
+      "document_id": 5229050256846514487
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dessert",
+      "rarity": 18,
+      "document_id": 5433791150278337082
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 20
+    }
+  ]
+}

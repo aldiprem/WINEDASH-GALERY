@@ -1,0 +1,26 @@
+{
+  "slug": "LushBouquet-8113",
+  "title": "Lush Bouquet",
+  "num": 8113,
+  "availability_issued": 104643,
+  "availability_total": 140116,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cabbage",
+      "rarity": 20,
+      "document_id": 5208828734773161823
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rose Bud",
+      "rarity": 5,
+      "document_id": 5357350859942422788
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 10
+    }
+  ]
+}

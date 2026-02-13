@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-134343",
+  "title": "Cookie Heart",
+  "num": 134343,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "The Triangle",
+      "rarity": 10,
+      "document_id": 5222263426834786717
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Tulip",
+      "rarity": 6,
+      "document_id": 5433924341509152905
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-47511",
+  "title": "Xmas Stocking",
+  "num": 47511,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wonderland",
+      "rarity": 30,
+      "document_id": 5294041053429523900
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Paschal Lamb",
+      "rarity": 4,
+      "document_id": 5483374185478619150
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Aquamarine",
+      "rarity": 15
+    }
+  ]
+}

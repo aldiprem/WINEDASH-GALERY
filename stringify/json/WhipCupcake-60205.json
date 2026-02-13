@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-60205",
+  "title": "Whip Cupcake",
+  "num": 60205,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Minion",
+      "rarity": 25,
+      "document_id": 5352529351130775372
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sun Lion",
+      "rarity": 4,
+      "document_id": 5722053983497879559
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tactical Pine",
+      "rarity": 10
+    }
+  ]
+}

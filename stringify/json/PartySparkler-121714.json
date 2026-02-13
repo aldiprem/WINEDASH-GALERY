@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-121714",
+  "title": "Party Sparkler",
+  "num": 121714,
+  "availability_issued": 176753,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bright Flare",
+      "rarity": 13,
+      "document_id": 5228784961011607179
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fireworks",
+      "rarity": 12,
+      "document_id": 5208733145981008052
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-52154",
+  "title": "Whip Cupcake",
+  "num": 52154,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cloud Nine",
+      "rarity": 30,
+      "document_id": 5327985558654317324
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fluffy Wolf",
+      "rarity": 4,
+      "document_id": 5316933229117194293
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carmine",
+      "rarity": 15
+    }
+  ]
+}

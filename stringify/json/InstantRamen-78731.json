@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-78731",
+  "title": "Instant Ramen",
+  "num": 78731,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Seafood",
+      "rarity": 20,
+      "document_id": 5370591041525157544
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hedgehog",
+      "rarity": 4,
+      "document_id": 5440595495166696665
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 12
+    }
+  ]
+}

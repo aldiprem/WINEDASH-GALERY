@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopDogg-186179",
+  "title": "Snoop Dogg",
+  "num": 186179,
+  "availability_issued": 580008,
+  "availability_total": 593781,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chill Homie",
+      "rarity": 30,
+      "document_id": 5413569224478063408
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Phoenix",
+      "rarity": 4,
+      "document_id": 5726583769540853773
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 15
+    }
+  ]
+}

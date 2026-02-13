@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-27130",
+  "title": "Whip Cupcake",
+  "num": 27130,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Jolly Roger",
+      "rarity": 25,
+      "document_id": 5282738623651805135
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Guitar",
+      "rarity": 6,
+      "document_id": 5434150660515850858
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

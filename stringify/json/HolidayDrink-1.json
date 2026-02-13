@@ -1,0 +1,26 @@
+{
+  "slug": "HolidayDrink-1",
+  "title": "Holiday Drink",
+  "num": 1,
+  "availability_issued": 82869,
+  "availability_total": 120989,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Banana Split",
+      "rarity": 49,
+      "document_id": 5296291981364848707
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sparks",
+      "rarity": 8,
+      "document_id": 5440607637039243262
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Hunter Green",
+      "rarity": 15
+    }
+  ]
+}

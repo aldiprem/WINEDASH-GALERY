@@ -1,0 +1,26 @@
+{
+  "slug": "RestlessJar-45160",
+  "title": "Restless Jar",
+  "num": 45160,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubble Bugs",
+      "rarity": 25,
+      "document_id": 5431721890869704592
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bandage",
+      "rarity": 4,
+      "document_id": 5440708100619277419
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 12
+    }
+  ]
+}

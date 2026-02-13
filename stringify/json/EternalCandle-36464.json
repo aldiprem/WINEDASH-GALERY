@@ -1,0 +1,26 @@
+{
+  "slug": "EternalCandle-36464",
+  "title": "Eternal Candle",
+  "num": 36464,
+  "availability_issued": 44951,
+  "availability_total": 46590,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Blue Steel",
+      "rarity": 15,
+      "document_id": 5422561906743338853
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Illuminati",
+      "rarity": 18,
+      "document_id": 5440508543553788998
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 15
+    }
+  ]
+}

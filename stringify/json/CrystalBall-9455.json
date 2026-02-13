@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-9455",
+  "title": "Crystal Ball",
+  "num": 9455,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Skullberry",
+      "rarity": 10,
+      "document_id": 5447304719414357982
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Black Widow",
+      "rarity": 16,
+      "document_id": 5300945294962210459
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 15
+    }
+  ]
+}

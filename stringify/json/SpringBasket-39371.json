@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-39371",
+  "title": "Spring Basket",
+  "num": 39371,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dalmatian Pup",
+      "rarity": 25,
+      "document_id": 5391313232231173775
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Octopus",
+      "rarity": 7,
+      "document_id": 5440588210902163577
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Feldgrau",
+      "rarity": 10
+    }
+  ]
+}

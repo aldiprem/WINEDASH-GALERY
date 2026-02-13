@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-243881",
+  "title": "Instant Ramen",
+  "num": 243881,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Khinkali",
+      "rarity": 30,
+      "document_id": 5274052919879038352
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rooster",
+      "rarity": 5,
+      "document_id": 5548993666489516045
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Neon Blue",
+      "rarity": 15
+    }
+  ]
+}

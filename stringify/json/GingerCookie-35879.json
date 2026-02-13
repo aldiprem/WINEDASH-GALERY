@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-35879",
+  "title": "Ginger Cookie",
+  "num": 35879,
+  "availability_issued": 142089,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Frosty",
+      "rarity": 15,
+      "document_id": 5188303738900606259
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Trickster Fox",
+      "rarity": 4,
+      "document_id": 5546605024722812982
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-161795",
+  "title": "Party Sparkler",
+  "num": 161795,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lord Vader",
+      "rarity": 9,
+      "document_id": 5238117791801827446
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cocktail",
+      "rarity": 15,
+      "document_id": 5424853890271044722
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Indigo",
+      "rarity": 20
+    }
+  ]
+}

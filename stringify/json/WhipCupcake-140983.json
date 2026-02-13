@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-140983",
+  "title": "Whip Cupcake",
+  "num": 140983,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Heaven Seven",
+      "rarity": 30,
+      "document_id": 5330357931084904922
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Paw",
+      "rarity": 4,
+      "document_id": 5433671466719668582
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 12
+    }
+  ]
+}

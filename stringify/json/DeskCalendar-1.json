@@ -1,0 +1,31 @@
+{
+  "slug": "DeskCalendar-1",
+  "title": "Desk Calendar",
+  "num": 1,
+  "availability_issued": 306379,
+  "availability_total": 337481,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "January",
+      "rarity": 6,
+      "document_id": 5226843721693163228
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Star",
+      "rarity": 3,
+      "document_id": 5420190079773597190
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JollyChimp-84603",
+  "title": "Jolly Chimp",
+  "num": 84603,
+  "availability_issued": 115521,
+  "availability_total": 132155,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Farm Girl",
+      "rarity": 30,
+      "document_id": 5188673943606688916
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Unicorn",
+      "rarity": 5,
+      "document_id": 5440820989539673389
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 12
+    }
+  ]
+}

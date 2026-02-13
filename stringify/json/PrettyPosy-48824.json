@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-48824",
+  "title": "Pretty Posy",
+  "num": 48824,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Payday",
+      "rarity": 30,
+      "document_id": 5197418557150889404
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ace Of Hearts",
+      "rarity": 2,
+      "document_id": 5287583303812014956
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

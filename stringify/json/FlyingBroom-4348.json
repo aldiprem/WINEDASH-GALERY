@@ -1,0 +1,26 @@
+{
+  "slug": "FlyingBroom-4348",
+  "title": "Flying Broom",
+  "num": 4348,
+  "availability_issued": 24697,
+  "availability_total": 25916,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Berry Blaster",
+      "rarity": 20,
+      "document_id": 5433947461318106559
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sauron",
+      "rarity": 24,
+      "document_id": 5434053869132867742
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 20
+    }
+  ]
+}

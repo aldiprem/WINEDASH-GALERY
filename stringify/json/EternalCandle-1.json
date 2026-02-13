@@ -1,0 +1,26 @@
+{
+  "slug": "EternalCandle-1",
+  "title": "Eternal Candle",
+  "num": 1,
+  "availability_issued": 44951,
+  "availability_total": 46590,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pop Art",
+      "rarity": 15,
+      "document_id": 5422725343133851218
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Night Bats",
+      "rarity": 15,
+      "document_id": 5298598765349847151
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carrot Juice",
+      "rarity": 20
+    }
+  ]
+}

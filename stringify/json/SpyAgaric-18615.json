@@ -1,0 +1,26 @@
+{
+  "slug": "SpyAgaric-18615",
+  "title": "Spy Agaric",
+  "num": 18615,
+  "availability_issued": 86677,
+  "availability_total": 89438,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Merry Cap",
+      "rarity": 20,
+      "document_id": 5409266590665432526
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Severed Hand",
+      "rarity": 12,
+      "document_id": 5301167533749972632
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 15
+    }
+  ]
+}

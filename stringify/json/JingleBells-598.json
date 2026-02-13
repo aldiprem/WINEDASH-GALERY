@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-598",
+  "title": "Jingle Bells",
+  "num": 598,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Krampus",
+      "rarity": 0,
+      "document_id": 5375316544932843434
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mistletoe",
+      "rarity": 23,
+      "document_id": 5208465161496578257
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 19
+    }
+  ]
+}

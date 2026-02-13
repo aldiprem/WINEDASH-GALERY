@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-133794",
+  "title": "Spring Basket",
+  "num": 133794,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pudel Lux",
+      "rarity": 10,
+      "document_id": 5373167798564452035
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candle",
+      "rarity": 7,
+      "document_id": 5440862947075185091
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Roman Silver",
+      "rarity": 12
+    }
+  ]
+}

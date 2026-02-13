@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-34020",
+  "title": "Ginger Cookie",
+  "num": 34020,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mr. Biscuit",
+      "rarity": 17,
+      "document_id": 5233426137031401422
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Legionary",
+      "rarity": 2,
+      "document_id": 5548780425658236946
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

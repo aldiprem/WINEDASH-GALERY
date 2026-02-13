@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-253501",
+  "title": "Ice Cream",
+  "num": 253501,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Apple Dip",
+      "rarity": 25,
+      "document_id": 5332814042492864743
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Double Axe",
+      "rarity": 4,
+      "document_id": 5551071537307582479
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

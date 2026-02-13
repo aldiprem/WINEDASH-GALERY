@@ -1,0 +1,26 @@
+{
+  "slug": "SpyAgaric-1",
+  "title": "Spy Agaric",
+  "num": 1,
+  "availability_issued": 86677,
+  "availability_total": 89438,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lemon Haze",
+      "rarity": 20,
+      "document_id": 5400272873313036273
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candle",
+      "rarity": 18,
+      "document_id": 5440862947075185091
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Navy Blue",
+      "rarity": 20
+    }
+  ]
+}

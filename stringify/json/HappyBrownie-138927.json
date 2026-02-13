@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-138927",
+  "title": "Happy Brownie",
+  "num": 138927,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Shitty Coffee",
+      "rarity": 25,
+      "document_id": 5382084137786048001
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Unicorn Head",
+      "rarity": 4,
+      "document_id": 5440544067228292901
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SwagBag-214776",
+  "title": "Swag Bag",
+  "num": 214776,
+  "availability_issued": 231062,
+  "availability_total": 237970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Doggystyle",
+      "rarity": 20,
+      "document_id": 5399947568195080620
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pirate Scull",
+      "rarity": 7,
+      "document_id": 5546410849251360787
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 12
+    }
+  ]
+}

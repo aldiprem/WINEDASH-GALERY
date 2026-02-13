@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-33241",
+  "title": "Faith Amulet",
+  "num": 33241,
+  "availability_issued": 135385,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Royal Green",
+      "rarity": 25,
+      "document_id": 5332306613581676702
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cactus",
+      "rarity": 7,
+      "document_id": 5440665872500809370
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 15
+    }
+  ]
+}

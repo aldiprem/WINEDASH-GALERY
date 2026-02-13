@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-65895",
+  "title": "Spring Basket",
+  "num": 65895,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Magician",
+      "rarity": 20,
+      "document_id": 5389082525001874826
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Axe",
+      "rarity": 7,
+      "document_id": 5427371247912641705
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 12
+    }
+  ]
+}

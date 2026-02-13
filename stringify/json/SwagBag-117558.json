@@ -1,0 +1,26 @@
+{
+  "slug": "SwagBag-117558",
+  "title": "Swag Bag",
+  "num": 117558,
+  "availability_issued": 231062,
+  "availability_total": 237970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Snoop S",
+      "rarity": 15,
+      "document_id": 5433802398797692656
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Los Angeles",
+      "rarity": 4,
+      "document_id": 5703817715567820810
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

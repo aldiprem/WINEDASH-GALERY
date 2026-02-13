@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-57172",
+  "title": "Happy Brownie",
+  "num": 57172,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Snowman",
+      "rarity": 30,
+      "document_id": 5323777830734037454
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gold",
+      "rarity": 5,
+      "document_id": 5440548920541339106
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 10
+    }
+  ]
+}

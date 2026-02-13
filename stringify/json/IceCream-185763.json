@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-185763",
+  "title": "Ice Cream",
+  "num": 185763,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fried Chicken",
+      "rarity": 15,
+      "document_id": 5240271344238622711
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Scarab",
+      "rarity": 2,
+      "document_id": 5433699117719118672
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 15
+    }
+  ]
+}

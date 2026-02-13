@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-7744",
+  "title": "Moon Pendant",
+  "num": 7744,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Precious Pearl",
+      "rarity": 20,
+      "document_id": 5465465619258307033
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Vortex",
+      "rarity": 5,
+      "document_id": 5436036168338660466
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Old Gold",
+      "rarity": 12
+    }
+  ]
+}

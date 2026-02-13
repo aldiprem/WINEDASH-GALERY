@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-16420",
+  "title": "Spring Basket",
+  "num": 16420,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Capybara",
+      "rarity": 30,
+      "document_id": 5397616676558635042
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bastet",
+      "rarity": 2,
+      "document_id": 5721952626564661261
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Feldgrau",
+      "rarity": 10
+    }
+  ]
+}

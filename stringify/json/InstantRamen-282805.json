@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-282805",
+  "title": "Instant Ramen",
+  "num": 282805,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cat Food",
+      "rarity": 25,
+      "document_id": 5370699352010425073
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sailor Hat",
+      "rarity": 5,
+      "document_id": 5312256490768197272
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Copper",
+      "rarity": 12
+    }
+  ]
+}

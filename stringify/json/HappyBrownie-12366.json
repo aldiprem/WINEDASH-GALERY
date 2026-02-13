@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-12366",
+  "title": "Happy Brownie",
+  "num": 12366,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wrestler",
+      "rarity": 20,
+      "document_id": 5345977855262096431
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower",
+      "rarity": 4,
+      "document_id": 5433932673745708750
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Grape",
+      "rarity": 15
+    }
+  ]
+}

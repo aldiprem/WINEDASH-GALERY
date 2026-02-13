@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-191924",
+  "title": "Happy Brownie",
+  "num": 191924,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sponge Boi",
+      "rarity": 15,
+      "document_id": 5260271310424016672
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Telescope",
+      "rarity": 4,
+      "document_id": 5550885238806151178
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 15
+    }
+  ]
+}

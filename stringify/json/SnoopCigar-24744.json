@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-24744",
+  "title": "Snoop Cigar",
+  "num": 24744,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "The King",
+      "rarity": 30,
+      "document_id": 5373020661574826232
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moon Eagle",
+      "rarity": 5,
+      "document_id": 5722284966839058444
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Roman Silver",
+      "rarity": 10
+    }
+  ]
+}

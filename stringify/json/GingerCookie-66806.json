@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-66806",
+  "title": "Ginger Cookie",
+  "num": 66806,
+  "availability_issued": 142089,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Toffee",
+      "rarity": 17,
+      "document_id": 5449633515106752995
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Festive Wreath",
+      "rarity": 18,
+      "document_id": 5197362258719564143
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pine Green",
+      "rarity": 20
+    }
+  ]
+}

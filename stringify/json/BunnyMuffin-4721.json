@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-4721",
+  "title": "Bunny Muffin",
+  "num": 4721,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Berry Punch",
+      "rarity": 10,
+      "document_id": 5208431677931544195
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Celtic Cross",
+      "rarity": 4,
+      "document_id": 5731235627144314888
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 15
+    }
+  ]
+}

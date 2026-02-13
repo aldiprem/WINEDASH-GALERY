@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-10531",
+  "title": "Jelly Bunny",
+  "num": 10531,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Snowman",
+      "rarity": 15,
+      "document_id": 5429261067882620393
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Like",
+      "rarity": 4,
+      "document_id": 5440551390147534212
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

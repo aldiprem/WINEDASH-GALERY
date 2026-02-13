@@ -1,0 +1,26 @@
+{
+  "slug": "PetSnake-157565",
+  "title": "Pet Snake",
+  "num": 157565,
+  "availability_issued": 174528,
+  "availability_total": 279106,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lollipop",
+      "rarity": 50,
+      "document_id": 5402129385811635503
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lion Head",
+      "rarity": 10,
+      "document_id": 5440356965567977657
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Turquoise",
+      "rarity": 15
+    }
+  ]
+}

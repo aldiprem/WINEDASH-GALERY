@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-204910",
+  "title": "Ice Cream",
+  "num": 204910,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bite-Size",
+      "rarity": 30,
+      "document_id": 5240322067802390007
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nigiri",
+      "rarity": 7,
+      "document_id": 5584758520588271634
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

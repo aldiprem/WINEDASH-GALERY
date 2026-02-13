@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-205011",
+  "title": "Ice Cream",
+  "num": 205011,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cold Steel",
+      "rarity": 30,
+      "document_id": 5368578003238419778
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Garden Pot",
+      "rarity": 7,
+      "document_id": 5433653767159438204
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "LunarSnake-157193",
+  "title": "Lunar Snake",
+  "num": 157193,
+  "availability_issued": 189499,
+  "availability_total": 259346,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ender Snake",
+      "rarity": 5,
+      "document_id": 5219873685556455142
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Scissors",
+      "rarity": 5,
+      "document_id": 5440515449861202939
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

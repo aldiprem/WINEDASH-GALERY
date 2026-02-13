@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-21489",
+  "title": "Mousse Cake",
+  "num": 21489,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mermaid",
+      "rarity": 25,
+      "document_id": 5391368710323731441
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Orchid",
+      "rarity": 6,
+      "document_id": 5357481031811230968
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 10
+    }
+  ]
+}

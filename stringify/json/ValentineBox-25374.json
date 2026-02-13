@@ -1,0 +1,26 @@
+{
+  "slug": "ValentineBox-25374",
+  "title": "Valentine Box",
+  "num": 25374,
+  "availability_issued": 34207,
+  "availability_total": 41025,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pop Art",
+      "rarity": 30,
+      "document_id": 5316652883716888689
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sakura Flower",
+      "rarity": 4,
+      "document_id": 5582668065516027912
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

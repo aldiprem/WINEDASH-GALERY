@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-80696",
+  "title": "Mousse Cake",
+  "num": 80696,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Opal Cherry",
+      "rarity": 20,
+      "document_id": 5375080248717112847
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Brain",
+      "rarity": 4,
+      "document_id": 5434154624770664862
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

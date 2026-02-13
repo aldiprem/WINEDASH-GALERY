@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-48238",
+  "title": "Sky Stilettos",
+  "num": 48238,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Serpent",
+      "rarity": 20,
+      "document_id": 5199753743754622052
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Valkyrie",
+      "rarity": 4,
+      "document_id": 5544480871337164832
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Marine Blue",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-49402",
+  "title": "Happy Brownie",
+  "num": 49402,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ice Cream",
+      "rarity": 30,
+      "document_id": 5366385065951526887
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lion of Babylon",
+      "rarity": 5,
+      "document_id": 5544456677786386440
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

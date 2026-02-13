@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-27329",
+  "title": "Party Sparkler",
+  "num": 27329,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chrome",
+      "rarity": 9,
+      "document_id": 5228905353239881621
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rudolph",
+      "rarity": 18,
+      "document_id": 5283265641908824187
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

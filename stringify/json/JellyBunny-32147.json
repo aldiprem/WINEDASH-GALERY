@@ -1,0 +1,31 @@
+{
+  "slug": "JellyBunny-32147",
+  "title": "Jelly Bunny",
+  "num": 32147,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dad Joke",
+      "rarity": 15,
+      "document_id": 5427242072476246112
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Beetle",
+      "rarity": 5,
+      "document_id": 5440627552802592767
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-25455",
+  "title": "Clover Pin",
+  "num": 25455,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Glass Rainbow",
+      "rarity": 30,
+      "document_id": 5260572185768002238
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Skull",
+      "rarity": 4,
+      "document_id": 5422475891433304226
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 10
+    }
+  ]
+}

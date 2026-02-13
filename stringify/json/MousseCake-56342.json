@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-56342",
+  "title": "Mousse Cake",
+  "num": 56342,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sugar Bricks",
+      "rarity": 25,
+      "document_id": 5314443569719706392
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spring Chick",
+      "rarity": 6,
+      "document_id": 5483261236428668939
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 12
+    }
+  ]
+}

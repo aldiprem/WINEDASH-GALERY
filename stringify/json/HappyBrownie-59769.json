@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-59769",
+  "title": "Happy Brownie",
+  "num": 59769,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Alien",
+      "rarity": 30,
+      "document_id": 5292180533726446224
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Warhorse",
+      "rarity": 4,
+      "document_id": 5548640998134906900
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 15
+    }
+  ]
+}

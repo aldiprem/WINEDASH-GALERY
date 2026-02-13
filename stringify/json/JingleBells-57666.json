@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-57666",
+  "title": "Jingle Bells",
+  "num": 57666,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Heatwave",
+      "rarity": 15,
+      "document_id": 5238247989440440650
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Magic Wand",
+      "rarity": 24,
+      "document_id": 5422596236416936455
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Black",
+      "rarity": 20
+    }
+  ]
+}

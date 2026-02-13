@@ -1,0 +1,26 @@
+{
+  "slug": "DeskCalendar-64066",
+  "title": "Desk Calendar",
+  "num": 64066,
+  "availability_issued": 306379,
+  "availability_total": 337481,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rare Event",
+      "rarity": 8,
+      "document_id": 5237787392852651297
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cobra",
+      "rarity": 5,
+      "document_id": 5436400690803009263
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 15
+    }
+  ]
+}

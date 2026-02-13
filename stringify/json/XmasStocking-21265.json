@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-21265",
+  "title": "Xmas Stocking",
+  "num": 21265,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wonderland",
+      "rarity": 30,
+      "document_id": 5294041053429523900
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sea Jelly",
+      "rarity": 2,
+      "document_id": 5434006117686470301
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rifle Green",
+      "rarity": 15
+    }
+  ]
+}

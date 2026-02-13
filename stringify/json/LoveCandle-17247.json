@@ -1,0 +1,26 @@
+{
+  "slug": "LoveCandle-17247",
+  "title": "Love Candle",
+  "num": 17247,
+  "availability_issued": 23181,
+  "availability_total": 30296,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Serenity",
+      "rarity": 30,
+      "document_id": 5404473922559172311
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Glasses",
+      "rarity": 5,
+      "document_id": 5438410885821392267
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Navy Blue",
+      "rarity": 15
+    }
+  ]
+}

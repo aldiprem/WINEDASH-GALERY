@@ -1,0 +1,26 @@
+{
+  "slug": "SnakeBox-1",
+  "title": "Snake Box",
+  "num": 1,
+  "availability_issued": 170178,
+  "availability_total": 273898,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Interstellar",
+      "rarity": 15,
+      "document_id": 5316806677905829785
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lion Head",
+      "rarity": 8,
+      "document_id": 5440356965567977657
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 12
+    }
+  ]
+}

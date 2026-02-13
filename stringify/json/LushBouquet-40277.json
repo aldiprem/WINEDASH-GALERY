@@ -1,0 +1,26 @@
+{
+  "slug": "LushBouquet-40277",
+  "title": "Lush Bouquet",
+  "num": 40277,
+  "availability_issued": 104644,
+  "availability_total": 140116,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Berries",
+      "rarity": 30,
+      "document_id": 5402612788675765044
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Two Hearts",
+      "rarity": 4,
+      "document_id": 5292267614188363062
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Turquoise",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "RestlessJar-43282",
+  "title": "Restless Jar",
+  "num": 43282,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cotton Candy",
+      "rarity": 30,
+      "document_id": 5431628260582649992
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bug",
+      "rarity": 2,
+      "document_id": 5433633602287985268
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-68440",
+  "title": "Xmas Stocking",
+  "num": 68440,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mint Stitches",
+      "rarity": 30,
+      "document_id": 5350557282537074333
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Champagne",
+      "rarity": 10,
+      "document_id": 5440709011152333768
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Malachite",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "DiamondRing-29465",
+  "title": "Diamond Ring",
+  "num": 29465,
+  "availability_issued": 32240,
+  "availability_total": 32924,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vice City",
+      "rarity": 5,
+      "document_id": 5271980250266364895
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Scorpion",
+      "rarity": 4,
+      "document_id": 5440711089916503067
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 20
+    }
+  ]
+}

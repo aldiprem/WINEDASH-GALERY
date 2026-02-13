@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-55049",
+  "title": "Ice Cream",
+  "num": 55049,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ghost Biters",
+      "rarity": 15,
+      "document_id": 5314473716095162865
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Serpent",
+      "rarity": 7,
+      "document_id": 5548505448967045134
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 12
+    }
+  ]
+}

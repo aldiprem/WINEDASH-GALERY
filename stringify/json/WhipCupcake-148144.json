@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-148144",
+  "title": "Whip Cupcake",
+  "num": 148144,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Paradise",
+      "rarity": 25,
+      "document_id": 5276280874034293757
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Blossom",
+      "rarity": 5,
+      "document_id": 5305486316639630967
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fire Engine",
+      "rarity": 15
+    }
+  ]
+}

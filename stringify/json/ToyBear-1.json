@@ -1,0 +1,26 @@
+{
+  "slug": "ToyBear-1",
+  "title": "Toy Bear",
+  "num": 1,
+  "availability_issued": 55756,
+  "availability_total": 57724,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Nurse",
+      "rarity": 18,
+      "document_id": 5289889967537940803
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Heart Lock",
+      "rarity": 5,
+      "document_id": 5289866611505784233
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Jade Green",
+      "rarity": 20
+    }
+  ]
+}

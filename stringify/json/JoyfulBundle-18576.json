@@ -1,0 +1,26 @@
+{
+  "slug": "JoyfulBundle-18576",
+  "title": "Joyful Bundle",
+  "num": 18576,
+  "availability_issued": 78211,
+  "availability_total": 114092,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Prize Cake",
+      "rarity": 30,
+      "document_id": 5266967791503698280
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rain Drop",
+      "rarity": 7,
+      "document_id": 5440588533024712814
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

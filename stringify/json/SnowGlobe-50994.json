@@ -1,0 +1,26 @@
+{
+  "slug": "SnowGlobe-50994",
+  "title": "Snow Globe",
+  "num": 50994,
+  "availability_issued": 52013,
+  "availability_total": 72788,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mango Lodge",
+      "rarity": 30,
+      "document_id": 5334914685227526166
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ornament",
+      "rarity": 15,
+      "document_id": 5438575529097706726
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Dark Green",
+      "rarity": 12
+    }
+  ]
+}

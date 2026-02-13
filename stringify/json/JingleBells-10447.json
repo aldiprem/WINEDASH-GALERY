@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-10447",
+  "title": "Jingle Bells",
+  "num": 10447,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Citrus Bell",
+      "rarity": 14,
+      "document_id": 5237751212048146429
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gift Box",
+      "rarity": 23,
+      "document_id": 5440353070032641447
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 20
+    }
+  ]
+}

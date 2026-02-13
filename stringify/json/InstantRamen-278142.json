@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-278142",
+  "title": "Instant Ramen",
+  "num": 278142,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Seafood",
+      "rarity": 20,
+      "document_id": 5370591041525157544
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Earth",
+      "rarity": 2,
+      "document_id": 5551122174972002314
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    }
+  ]
+}

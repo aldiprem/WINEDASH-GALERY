@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-179769",
+  "title": "Instant Ramen",
+  "num": 179769,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cat Food",
+      "rarity": 25,
+      "document_id": 5370699352010425073
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Trickster Fox",
+      "rarity": 5,
+      "document_id": 5546605024722812982
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 12
+    }
+  ]
+}

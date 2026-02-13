@@ -1,0 +1,26 @@
+{
+  "slug": "VintageCigar-7170",
+  "title": "Vintage Cigar",
+  "num": 7170,
+  "availability_issued": 26277,
+  "availability_total": 31024,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Desert Night",
+      "rarity": 30,
+      "document_id": 5429649689408463436
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Celtic Wolf",
+      "rarity": 10,
+      "document_id": 5721982721400504336
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

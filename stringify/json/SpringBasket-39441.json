@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-39441",
+  "title": "Spring Basket",
+  "num": 39441,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Eggsclusive",
+      "rarity": 25,
+      "document_id": 5398098112327745152
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Koala",
+      "rarity": 4,
+      "document_id": 5440487373659987419
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 12
+    }
+  ]
+}

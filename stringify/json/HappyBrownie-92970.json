@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-92970",
+  "title": "Happy Brownie",
+  "num": 92970,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Solid Waste",
+      "rarity": 20,
+      "document_id": 5373246250437085021
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Koala",
+      "rarity": 5,
+      "document_id": 5440487373659987419
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rifle Green",
+      "rarity": 15
+    }
+  ]
+}

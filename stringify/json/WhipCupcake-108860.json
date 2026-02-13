@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-108860",
+  "title": "Whip Cupcake",
+  "num": 108860,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Honey Bee",
+      "rarity": 10,
+      "document_id": 5282794234888352522
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hourglass",
+      "rarity": 7,
+      "document_id": 5548506475464228910
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

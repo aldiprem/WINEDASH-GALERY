@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-277031",
+  "title": "Instant Ramen",
+  "num": 277031,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sunny Loops",
+      "rarity": 30,
+      "document_id": 5388583857823976270
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Money Bag",
+      "rarity": 4,
+      "document_id": 5440780019846634454
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 15
+    }
+  ]
+}

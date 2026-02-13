@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-77059",
+  "title": "Snoop Cigar",
+  "num": 77059,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Snooperman",
+      "rarity": 20,
+      "document_id": 5398124157009427658
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Egg Basket",
+      "rarity": 5,
+      "document_id": 5480978581569929428
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 12
+    }
+  ]
+}

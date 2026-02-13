@@ -1,0 +1,26 @@
+{
+  "slug": "PetSnake-41746",
+  "title": "Pet Snake",
+  "num": 41746,
+  "availability_issued": 174528,
+  "availability_total": 279106,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Zombie",
+      "rarity": 5,
+      "document_id": 5399848251371321088
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eikthyrnir",
+      "rarity": 5,
+      "document_id": 5722379245666172949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Old Gold",
+      "rarity": 10
+    }
+  ]
+}

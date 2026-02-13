@@ -1,0 +1,26 @@
+{
+  "slug": "HexPot-15596",
+  "title": "Hex Pot",
+  "num": 15596,
+  "availability_issued": 55280,
+  "availability_total": 69837,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Burnt Petals",
+      "rarity": 14,
+      "document_id": 5431840517866414025
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Evil Pumpkin",
+      "rarity": 24,
+      "document_id": 5301253879772494275
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 10
+    }
+  ]
+}

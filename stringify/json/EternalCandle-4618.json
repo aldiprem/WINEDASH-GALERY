@@ -1,0 +1,26 @@
+{
+  "slug": "EternalCandle-4618",
+  "title": "Eternal Candle",
+  "num": 4618,
+  "availability_issued": 44951,
+  "availability_total": 46590,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Unicorn",
+      "rarity": 15,
+      "document_id": 5422755077192444065
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eggplant",
+      "rarity": 5,
+      "document_id": 5434085488682100281
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

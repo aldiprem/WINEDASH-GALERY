@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-3694",
+  "title": "Sky Stilettos",
+  "num": 3694,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Forget-Me-Not",
+      "rarity": 25,
+      "document_id": 5231113348682119854
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Brain",
+      "rarity": 7,
+      "document_id": 5434154624770664862
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 12
+    }
+  ]
+}

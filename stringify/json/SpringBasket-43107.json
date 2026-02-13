@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-43107",
+  "title": "Spring Basket",
+  "num": 43107,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Panda",
+      "rarity": 30,
+      "document_id": 5398074086280690944
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Letter",
+      "rarity": 7,
+      "document_id": 5440699386130620745
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 15
+    }
+  ]
+}

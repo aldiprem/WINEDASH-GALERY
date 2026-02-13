@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-42359",
+  "title": "Whip Cupcake",
+  "num": 42359,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Zero Sugar",
+      "rarity": 30,
+      "document_id": 5330352235958269011
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Horned Helm",
+      "rarity": 5,
+      "document_id": 5312064144952814335
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Navy Blue",
+      "rarity": 10
+    }
+  ]
+}

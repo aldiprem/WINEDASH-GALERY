@@ -1,0 +1,26 @@
+{
+  "slug": "RecordPlayer-19720",
+  "title": "Record Player",
+  "num": 19720,
+  "availability_issued": 33096,
+  "availability_total": 46888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Strawberry",
+      "rarity": 5,
+      "document_id": 5298534254941071791
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sword Fight",
+      "rarity": 4,
+      "document_id": 5548909751418486801
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 15
+    }
+  ]
+}

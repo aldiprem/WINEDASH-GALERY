@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-85863",
+  "title": "Clover Pin",
+  "num": 85863,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Watermelon",
+      "rarity": 20,
+      "document_id": 5231416169646292048
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fish Skeleton",
+      "rarity": 5,
+      "document_id": 5436257986219631092
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 15
+    }
+  ]
+}

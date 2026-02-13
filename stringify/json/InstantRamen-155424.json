@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-155424",
+  "title": "Instant Ramen",
+  "num": 155424,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sausage Duo",
+      "rarity": 25,
+      "document_id": 5355300171972378539
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flamingo",
+      "rarity": 4,
+      "document_id": 5433605096590042713
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

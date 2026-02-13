@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-146173",
+  "title": "Lol Pop",
+  "num": 146173,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sugar Free",
+      "rarity": 12,
+      "document_id": 5388749201179959909
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ouroboros",
+      "rarity": 5,
+      "document_id": 5440776901700379950
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chocolate",
+      "rarity": 20
+    }
+  ]
+}

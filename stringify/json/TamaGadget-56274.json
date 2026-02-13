@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-56274",
+  "title": "Tama Gadget",
+  "num": 56274,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lavender",
+      "rarity": 20,
+      "document_id": 5256220524903687370
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candle",
+      "rarity": 5,
+      "document_id": 5440862947075185091
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 10
+    }
+  ]
+}

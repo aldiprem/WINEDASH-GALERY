@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-58921",
+  "title": "Cookie Heart",
+  "num": 58921,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Strawberry",
+      "rarity": 10,
+      "document_id": 5222034371933920311
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bone",
+      "rarity": 2,
+      "document_id": 5433924809660588407
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 20
+    }
+  ]
+}

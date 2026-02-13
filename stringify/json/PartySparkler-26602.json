@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-26602",
+  "title": "Party Sparkler",
+  "num": 26602,
+  "availability_issued": 176755,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Patina Chrome",
+      "rarity": 11,
+      "document_id": 5229070778200252828
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nordic Wolf",
+      "rarity": 18,
+      "document_id": 5722297057171996682
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cobalt Blue",
+      "rarity": 20
+    }
+  ]
+}

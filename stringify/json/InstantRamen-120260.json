@@ -1,0 +1,31 @@
+{
+  "slug": "InstantRamen-120260",
+  "title": "Instant Ramen",
+  "num": 120260,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Black Pasta",
+      "rarity": 30,
+      "document_id": 5273754290802948989
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crab",
+      "rarity": 4,
+      "document_id": 5424858399986705924
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Feldgrau",
+      "rarity": 12
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

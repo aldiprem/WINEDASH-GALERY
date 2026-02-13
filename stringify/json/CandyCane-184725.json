@@ -1,0 +1,31 @@
+{
+  "slug": "CandyCane-184725",
+  "title": "Candy Cane",
+  "num": 184725,
+  "availability_issued": 209557,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hologlow",
+      "rarity": 20,
+      "document_id": 5339049853970311443
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Winter House",
+      "rarity": 24,
+      "document_id": 5204181485669597563
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

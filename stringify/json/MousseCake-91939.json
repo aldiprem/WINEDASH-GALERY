@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-91939",
+  "title": "Mousse Cake",
+  "num": 91939,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rose Bouquet",
+      "rarity": 25,
+      "document_id": 5375236774505252710
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Royal Crown",
+      "rarity": 2,
+      "document_id": 5440361101621484148
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carmine",
+      "rarity": 15
+    }
+  ]
+}

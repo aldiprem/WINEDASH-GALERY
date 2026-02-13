@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-1",
+  "title": "Bunny Muffin",
+  "num": 1,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cappuccino",
+      "rarity": 20,
+      "document_id": 5235647275073564171
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Trophy",
+      "rarity": 2,
+      "document_id": 5420176954353540745
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 20
+    }
+  ]
+}

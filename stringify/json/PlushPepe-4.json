@@ -1,0 +1,26 @@
+{
+  "slug": "PlushPepe-4",
+  "title": "Plush Pepe",
+  "num": 4,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Galaxy",
+      "rarity": 20,
+      "document_id": 5424760337293402339
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Tree of Life",
+      "rarity": 4,
+      "document_id": 5722378975083233292
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 20
+    }
+  ]
+}

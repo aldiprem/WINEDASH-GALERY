@@ -1,0 +1,26 @@
+{
+  "slug": "WinterWreath-66921",
+  "title": "Winter Wreath",
+  "num": 66921,
+  "availability_issued": 71558,
+  "availability_total": 100846,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cold Night",
+      "rarity": 20,
+      "document_id": 5305548864248376368
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dessert",
+      "rarity": 24,
+      "document_id": 5433791150278337082
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

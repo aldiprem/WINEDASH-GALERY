@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-281850",
+  "title": "Ice Cream",
+  "num": 281850,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cyclone",
+      "rarity": 30,
+      "document_id": 5239958610489932393
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Top Hat",
+      "rarity": 7,
+      "document_id": 5424997398013306322
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Neon Blue",
+      "rarity": 15
+    }
+  ]
+}

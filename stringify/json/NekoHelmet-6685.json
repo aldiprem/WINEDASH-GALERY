@@ -1,0 +1,26 @@
+{
+  "slug": "NekoHelmet-6685",
+  "title": "Neko Helmet",
+  "num": 6685,
+  "availability_issued": 15498,
+  "availability_total": 16149,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Strawberry",
+      "rarity": 20,
+      "document_id": 5357143258403201559
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cupid Archer",
+      "rarity": 4,
+      "document_id": 5289973448817276247
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Indigo",
+      "rarity": 12
+    }
+  ]
+}

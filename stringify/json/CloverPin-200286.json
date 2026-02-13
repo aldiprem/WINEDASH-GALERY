@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-200286",
+  "title": "Clover Pin",
+  "num": 200286,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Emo Pin",
+      "rarity": 5,
+      "document_id": 5262708992127303727
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ghost",
+      "rarity": 5,
+      "document_id": 5433912985615624386
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 15
+    }
+  ]
+}

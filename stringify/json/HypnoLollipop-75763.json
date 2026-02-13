@@ -1,0 +1,26 @@
+{
+  "slug": "HypnoLollipop-75763",
+  "title": "Hypno Lollipop",
+  "num": 75763,
+  "availability_issued": 79412,
+  "availability_total": 116639,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Grape Medley",
+      "rarity": 13,
+      "document_id": 5228838630922940236
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Clubs",
+      "rarity": 4,
+      "document_id": 5440578353952220912
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 20
+    }
+  ]
+}

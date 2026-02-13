@@ -1,0 +1,26 @@
+{
+  "slug": "PlushPepe-1",
+  "title": "Plush Pepe",
+  "num": 1,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pumpkin",
+      "rarity": 30,
+      "document_id": 5424690578434581413
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Illuminati",
+      "rarity": 5,
+      "document_id": 5440508543553788998
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Onyx Black",
+      "rarity": 20
+    }
+  ]
+}

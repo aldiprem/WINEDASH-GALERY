@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-10294",
+  "title": "Mousse Cake",
+  "num": 10294,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sky Peacock",
+      "rarity": 20,
+      "document_id": 5379768566297953519
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Onigiri",
+      "rarity": 2,
+      "document_id": 5584781618922389518
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Emerald",
+      "rarity": 15
+    }
+  ]
+}

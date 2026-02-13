@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-26570",
+  "title": "Crystal Ball",
+  "num": 26570,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Past Tell",
+      "rarity": 20,
+      "document_id": 5440399730557343479
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spider Web",
+      "rarity": 20,
+      "document_id": 5440362952752389413
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

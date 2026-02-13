@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-25573",
+  "title": "Ginger Cookie",
+  "num": 25573,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Johnny Ash",
+      "rarity": 15,
+      "document_id": 5398113114648501741
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bandage",
+      "rarity": 4,
+      "document_id": 5440708100619277419
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Amber",
+      "rarity": 20
+    }
+  ]
+}

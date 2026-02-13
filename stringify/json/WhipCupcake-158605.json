@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-158605",
+  "title": "Whip Cupcake",
+  "num": 158605,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "First Bite",
+      "rarity": 30,
+      "document_id": 5334803411214823745
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Burger",
+      "rarity": 7,
+      "document_id": 5434080145742782526
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

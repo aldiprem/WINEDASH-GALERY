@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-14994",
+  "title": "Happy Brownie",
+  "num": 14994,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cherry Cake",
+      "rarity": 30,
+      "document_id": 5334719891280790341
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Magic Vial",
+      "rarity": 5,
+      "document_id": 5551127401947201559
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chocolate",
+      "rarity": 15
+    }
+  ]
+}

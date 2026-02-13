@@ -1,0 +1,26 @@
+{
+  "slug": "EternalCandle-33642",
+  "title": "Eternal Candle",
+  "num": 33642,
+  "availability_issued": 44951,
+  "availability_total": 46590,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Purple Wave",
+      "rarity": 15,
+      "document_id": 5422405247811215886
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gravestone",
+      "rarity": 15,
+      "document_id": 5298725402460568410
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 20
+    }
+  ]
+}

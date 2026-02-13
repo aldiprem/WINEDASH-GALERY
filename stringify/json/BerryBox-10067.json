@@ -1,0 +1,26 @@
+{
+  "slug": "BerryBox-10067",
+  "title": "Berry Box",
+  "num": 10067,
+  "availability_issued": 50377,
+  "availability_total": 66580,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Glitchberry",
+      "rarity": 10,
+      "document_id": 5422880906849312934
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cunning Fox",
+      "rarity": 11,
+      "document_id": 5316827534267004428
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 20
+    }
+  ]
+}

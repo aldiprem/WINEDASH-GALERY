@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-15922",
+  "title": "Ginger Cookie",
+  "num": 15922,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vanilla",
+      "rarity": 17,
+      "document_id": 5447458221545513740
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Beer",
+      "rarity": 5,
+      "document_id": 5551062109854367759
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

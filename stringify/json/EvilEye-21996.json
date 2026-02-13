@@ -1,0 +1,26 @@
+{
+  "slug": "EvilEye-21996",
+  "title": "Evil Eye",
+  "num": 21996,
+  "availability_issued": 72951,
+  "availability_total": 85204,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Baltic Amber",
+      "rarity": 30,
+      "document_id": 5429325410787680030
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eyeball",
+      "rarity": 20,
+      "document_id": 5300841391113387083
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

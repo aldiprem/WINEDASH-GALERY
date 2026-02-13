@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-43939",
+  "title": "Happy Brownie",
+  "num": 43939,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Unicorn",
+      "rarity": 30,
+      "document_id": 5326032460931169842
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bowler Hat",
+      "rarity": 5,
+      "document_id": 5276170321576093265
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

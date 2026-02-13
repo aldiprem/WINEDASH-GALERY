@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-10608",
+  "title": "Cookie Heart",
+  "num": 10608,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Choco Fudge",
+      "rarity": 10,
+      "document_id": 5222190322196438995
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lovebirds",
+      "rarity": 6,
+      "document_id": 5303390381189117327
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

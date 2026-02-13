@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-68170",
+  "title": "Clover Pin",
+  "num": 68170,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Kaleidoscope",
+      "rarity": 20,
+      "document_id": 5231332374834344855
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shield",
+      "rarity": 4,
+      "document_id": 5440775819368620198
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 12
+    }
+  ]
+}

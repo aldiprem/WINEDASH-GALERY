@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-13281",
+  "title": "Mousse Cake",
+  "num": 13281,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Harvest",
+      "rarity": 20,
+      "document_id": 5377799010260122647
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Bulb",
+      "rarity": 2,
+      "document_id": 5289901246122059304
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Camo Green",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JackInTheBox-1",
+  "title": "Jack-in-the-Box",
+  "num": 1,
+  "availability_issued": 96093,
+  "availability_total": 97345,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Prank Spider",
+      "rarity": 15,
+      "document_id": 5425119594127847837
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Chef Hat",
+      "rarity": 5,
+      "document_id": 5276326666975603778
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 12
+    }
+  ]
+}

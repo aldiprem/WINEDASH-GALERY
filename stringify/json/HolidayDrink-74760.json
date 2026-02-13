@@ -1,0 +1,31 @@
+{
+  "slug": "HolidayDrink-74760",
+  "title": "Holiday Drink",
+  "num": 74760,
+  "availability_issued": 82869,
+  "availability_total": 120989,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hot Fuchsia",
+      "rarity": 26,
+      "document_id": 5314789748378726724
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Piranha",
+      "rarity": 4,
+      "document_id": 5546636489653223478
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Deep Cyan",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

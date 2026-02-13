@@ -1,0 +1,26 @@
+{
+  "slug": "HexPot-54357",
+  "title": "Hex Pot",
+  "num": 54357,
+  "availability_issued": 55280,
+  "availability_total": 69837,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rusty",
+      "rarity": 26,
+      "document_id": 5431552072157781631
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nice Ghost",
+      "rarity": 20,
+      "document_id": 5301072507598550489
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Jade Green",
+      "rarity": 15
+    }
+  ]
+}

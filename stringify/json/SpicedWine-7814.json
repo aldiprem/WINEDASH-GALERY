@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-7814",
+  "title": "Spiced Wine",
+  "num": 7814,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Green Gradient",
+      "rarity": 13,
+      "document_id": 5429260470882166573
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dice",
+      "rarity": 5,
+      "document_id": 5433613007919800239
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 20
+    }
+  ]
+}

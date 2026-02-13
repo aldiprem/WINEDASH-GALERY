@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-61009",
+  "title": "Jelly Bunny",
+  "num": 61009,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dad Joke",
+      "rarity": 15,
+      "document_id": 5427242072476246112
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Toy Bucket",
+      "rarity": 4,
+      "document_id": 5433996514139595496
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-79910",
+  "title": "Ginger Cookie",
+  "num": 79910,
+  "availability_issued": 142089,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Herb Garden",
+      "rarity": 8,
+      "document_id": 5233730237895828637
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Khinkali",
+      "rarity": 5,
+      "document_id": 5548733550385168415
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-54509",
+  "title": "Tama Gadget",
+  "num": 54509,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pastel Thread",
+      "rarity": 5,
+      "document_id": 5296693504972450164
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Chili Pepper",
+      "rarity": 4,
+      "document_id": 5436357135539658505
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 15
+    }
+  ]
+}

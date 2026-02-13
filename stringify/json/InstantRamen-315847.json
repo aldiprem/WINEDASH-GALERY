@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-315847",
+  "title": "Instant Ramen",
+  "num": 315847,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Topokki",
+      "rarity": 30,
+      "document_id": 5341288309320611945
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Academic Cap",
+      "rarity": 2,
+      "document_id": 5276188897309649167
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 12
+    }
+  ]
+}

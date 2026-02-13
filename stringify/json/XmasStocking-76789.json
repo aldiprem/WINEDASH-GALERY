@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-76789",
+  "title": "Xmas Stocking",
+  "num": 76789,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cherry",
+      "rarity": 22,
+      "document_id": 5300815303482039337
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Stocking",
+      "rarity": 12,
+      "document_id": 5199797419277048250
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 12
+    }
+  ]
+}

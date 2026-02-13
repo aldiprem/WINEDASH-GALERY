@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-25307",
+  "title": "Whip Cupcake",
+  "num": 25307,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cherry Top",
+      "rarity": 30,
+      "document_id": 5224333674085905027
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fenrir",
+      "rarity": 7,
+      "document_id": 5722120379397308437
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 12
+    }
+  ]
+}

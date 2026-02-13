@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-11126",
+  "title": "Party Sparkler",
+  "num": 11126,
+  "availability_issued": 176755,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sparkly Eve",
+      "rarity": 9,
+      "document_id": 5229224980411082276
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Strawberry",
+      "rarity": 4,
+      "document_id": 5424718461362267817
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "BowTie-53543",
+  "title": "Bow Tie",
+  "num": 53543,
+  "availability_issued": 54803,
+  "availability_total": 65687,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gamepad",
+      "rarity": 20,
+      "document_id": 5413558792002496766
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Royal Crown",
+      "rarity": 4,
+      "document_id": 5440361101621484148
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

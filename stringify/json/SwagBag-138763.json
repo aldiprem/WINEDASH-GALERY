@@ -1,0 +1,26 @@
+{
+  "slug": "SwagBag-138763",
+  "title": "Swag Bag",
+  "num": 138763,
+  "availability_issued": 231062,
+  "availability_total": 237970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Money Bag",
+      "rarity": 20,
+      "document_id": 5434121639421837324
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pumpkin Coach",
+      "rarity": 7,
+      "document_id": 5551237516318736388
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

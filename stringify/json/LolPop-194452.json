@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-194452",
+  "title": "Lol Pop",
+  "num": 194452,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sweetheart",
+      "rarity": 5,
+      "document_id": 5224306392453640289
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coat of Arms",
+      "rarity": 5,
+      "document_id": 5433846813054494068
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

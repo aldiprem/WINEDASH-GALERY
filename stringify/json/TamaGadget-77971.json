@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-77971",
+  "title": "Tama Gadget",
+  "num": 77971,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Clover",
+      "rarity": 20,
+      "document_id": 5276444980439703862
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Avocado",
+      "rarity": 5,
+      "document_id": 5433953616006243349
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 15
+    }
+  ]
+}

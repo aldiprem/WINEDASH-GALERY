@@ -1,0 +1,26 @@
+{
+  "slug": "SnowGlobe-1",
+  "title": "Snow Globe",
+  "num": 1,
+  "availability_issued": 52013,
+  "availability_total": 72788,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Meadow",
+      "rarity": 30,
+      "document_id": 5335066503731503787
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ice Pop",
+      "rarity": 12,
+      "document_id": 5434148663356054664
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Jade Green",
+      "rarity": 15
+    }
+  ]
+}

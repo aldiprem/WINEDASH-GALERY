@@ -1,0 +1,26 @@
+{
+  "slug": "EasterEgg-159810",
+  "title": "Easter Egg",
+  "num": 159810,
+  "availability_issued": 162175,
+  "availability_total": 173176,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Faberge",
+      "rarity": 10,
+      "document_id": 5197424247982554368
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Porrige",
+      "rarity": 5,
+      "document_id": 5546646445387415571
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burnt Sienna",
+      "rarity": 15
+    }
+  ]
+}

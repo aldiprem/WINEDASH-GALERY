@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-77244",
+  "title": "Tama Gadget",
+  "num": 77244,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wild Hunt",
+      "rarity": 11,
+      "document_id": 5276297070355967803
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Vortex",
+      "rarity": 3,
+      "document_id": 5436036168338660466
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

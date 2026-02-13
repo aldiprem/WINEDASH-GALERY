@@ -1,0 +1,26 @@
+{
+  "slug": "CandyCane-14243",
+  "title": "Candy Cane",
+  "num": 14243,
+  "availability_issued": 209552,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lazy Nap",
+      "rarity": 20,
+      "document_id": 5339045292715043567
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dessert",
+      "rarity": 24,
+      "document_id": 5433791150278337082
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 10
+    }
+  ]
+}

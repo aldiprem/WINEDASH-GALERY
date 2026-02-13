@@ -1,0 +1,26 @@
+{
+  "slug": "SleighBell-1",
+  "title": "Sleigh Bell",
+  "num": 1,
+  "availability_issued": 21765,
+  "availability_total": 28000,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Copper Rose",
+      "rarity": 30,
+      "document_id": 5264939969939530861
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nigiri",
+      "rarity": 5,
+      "document_id": 5584758520588271634
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 15
+    }
+  ]
+}

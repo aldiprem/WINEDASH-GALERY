@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-112622",
+  "title": "Cookie Heart",
+  "num": 112622,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Druid Snack",
+      "rarity": 15,
+      "document_id": 5222375710164804211
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Tulip",
+      "rarity": 6,
+      "document_id": 5433924341509152905
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carrot Juice",
+      "rarity": 15
+    }
+  ]
+}

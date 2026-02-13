@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-43091",
+  "title": "Pretty Posy",
+  "num": 43091,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cinnabon",
+      "rarity": 20,
+      "document_id": 5197382505195407641
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Manta Ray",
+      "rarity": 5,
+      "document_id": 5434043848974165995
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carrot Juice",
+      "rarity": 12
+    }
+  ]
+}

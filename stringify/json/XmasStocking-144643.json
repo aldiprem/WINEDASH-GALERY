@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-144643",
+  "title": "Xmas Stocking",
+  "num": 144643,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Universe",
+      "rarity": 10,
+      "document_id": 5312317230195696626
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crystal Ball",
+      "rarity": 2,
+      "document_id": 5440487188976393935
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Caramel",
+      "rarity": 15
+    }
+  ]
+}

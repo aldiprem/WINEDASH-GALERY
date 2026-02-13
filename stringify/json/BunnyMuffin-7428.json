@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-7428",
+  "title": "Bunny Muffin",
+  "num": 7428,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lollipop",
+      "rarity": 8,
+      "document_id": 5224697118513456353
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flirty Message",
+      "rarity": 10,
+      "document_id": 5303451352544851662
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 20
+    }
+  ]
+}

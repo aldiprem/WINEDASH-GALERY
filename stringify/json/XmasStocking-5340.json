@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-5340",
+  "title": "Xmas Stocking",
+  "num": 5340,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tangerine",
+      "rarity": 30,
+      "document_id": 5298719093153622611
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mountain Goat",
+      "rarity": 5,
+      "document_id": 5722108314834173965
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 15
+    }
+  ]
+}

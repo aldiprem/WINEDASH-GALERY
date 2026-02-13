@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-93034",
+  "title": "Moon Pendant",
+  "num": 93034,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Liquid Gold",
+      "rarity": 30,
+      "document_id": 5215500609985218004
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Car",
+      "rarity": 10,
+      "document_id": 5433714991918244490
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

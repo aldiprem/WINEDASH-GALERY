@@ -1,0 +1,26 @@
+{
+  "slug": "FreshSocks-32870",
+  "title": "Fresh Socks",
+  "num": 32870,
+  "availability_issued": 158627,
+  "availability_total": 200509,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gingerbread",
+      "rarity": 15,
+      "document_id": 5260681436851109074
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Letter",
+      "rarity": 5,
+      "document_id": 5440699386130620745
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Aquamarine",
+      "rarity": 12
+    }
+  ]
+}

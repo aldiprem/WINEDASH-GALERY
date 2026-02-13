@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-80682",
+  "title": "Clover Pin",
+  "num": 80682,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Verdant Plaid",
+      "rarity": 30,
+      "document_id": 5231150908171123765
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Imperial Lion",
+      "rarity": 5,
+      "document_id": 5546458596402790437
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Jade Green",
+      "rarity": 12
+    }
+  ]
+}

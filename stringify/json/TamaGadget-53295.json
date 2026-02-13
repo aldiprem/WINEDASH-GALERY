@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-53295",
+  "title": "Tama Gadget",
+  "num": 53295,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Money Wish",
+      "rarity": 8,
+      "document_id": 5283254642497579805
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Skull",
+      "rarity": 5,
+      "document_id": 5422475891433304226
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

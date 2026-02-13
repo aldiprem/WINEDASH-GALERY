@@ -1,0 +1,26 @@
+{
+  "slug": "FlyingBroom-24520",
+  "title": "Flying Broom",
+  "num": 24520,
+  "availability_issued": 24697,
+  "availability_total": 25916,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dusk Duster",
+      "rarity": 25,
+      "document_id": 5411603731479292085
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moon",
+      "rarity": 16,
+      "document_id": 5440460955316150110
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-224518",
+  "title": "Clover Pin",
+  "num": 224518,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crystal Hearts",
+      "rarity": 20,
+      "document_id": 5260218551045747517
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shortsword",
+      "rarity": 5,
+      "document_id": 5546589717459369995
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunmetal",
+      "rarity": 12
+    }
+  ]
+}

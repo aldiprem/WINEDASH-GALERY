@@ -1,0 +1,26 @@
+{
+  "slug": "StellarRocket-57323",
+  "title": "Stellar Rocket",
+  "num": 57323,
+  "availability_issued": 135408,
+  "availability_total": 156318,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Silver Ride",
+      "rarity": 25,
+      "document_id": 5451864196566250830
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Teru Bōzu",
+      "rarity": 4,
+      "document_id": 5584796500984070156
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Grape",
+      "rarity": 15
+    }
+  ]
+}

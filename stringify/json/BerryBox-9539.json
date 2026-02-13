@@ -1,0 +1,26 @@
+{
+  "slug": "BerryBox-9539",
+  "title": "Berry Box",
+  "num": 9539,
+  "availability_issued": 50377,
+  "availability_total": 66580,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rose Gold",
+      "rarity": 15,
+      "document_id": 5413433795569282370
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Butterfly",
+      "rarity": 11,
+      "document_id": 5199689881885884783
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

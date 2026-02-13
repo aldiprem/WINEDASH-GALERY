@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-29913",
+  "title": "Star Notepad",
+  "num": 29913,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ink Splatter",
+      "rarity": 5,
+      "document_id": 5217647638366676064
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lion King",
+      "rarity": 4,
+      "document_id": 5722318746756841477
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

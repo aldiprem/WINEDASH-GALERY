@@ -1,0 +1,26 @@
+{
+  "slug": "SnakeBox-7147",
+  "title": "Snake Box",
+  "num": 7147,
+  "availability_issued": 170178,
+  "availability_total": 273898,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Dash",
+      "rarity": 30,
+      "document_id": 5368805885613206415
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gold",
+      "rarity": 10,
+      "document_id": 5440548920541339106
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 12
+    }
+  ]
+}

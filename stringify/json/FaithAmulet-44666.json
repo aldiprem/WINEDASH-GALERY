@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-44666",
+  "title": "Faith Amulet",
+  "num": 44666,
+  "availability_issued": 135385,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rose Gold",
+      "rarity": 30,
+      "document_id": 5305256196586896388
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cactus",
+      "rarity": 7,
+      "document_id": 5440665872500809370
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 15
+    }
+  ]
+}

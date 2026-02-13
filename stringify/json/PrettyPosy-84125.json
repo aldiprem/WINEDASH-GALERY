@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-84125",
+  "title": "Pretty Posy",
+  "num": 84125,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Van Gogh",
+      "rarity": 10,
+      "document_id": 5449507307492772640
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Chili Pepper",
+      "rarity": 7,
+      "document_id": 5436357135539658505
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

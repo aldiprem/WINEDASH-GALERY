@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-21465",
+  "title": "Clover Pin",
+  "num": 21465,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Balloon",
+      "rarity": 20,
+      "document_id": 5231448231577154432
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Carrot",
+      "rarity": 2,
+      "document_id": 5436063346891712376
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 10
+    }
+  ]
+}

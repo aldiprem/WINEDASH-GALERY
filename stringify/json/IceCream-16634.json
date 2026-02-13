@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-16634",
+  "title": "Ice Cream",
+  "num": 16634,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crystal",
+      "rarity": 10,
+      "document_id": 5350647348001272191
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bike Helmet",
+      "rarity": 7,
+      "document_id": 5314385067970160062
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

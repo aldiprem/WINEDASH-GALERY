@@ -1,0 +1,26 @@
+{
+  "slug": "SkullFlower-16167",
+  "title": "Skull Flower",
+  "num": 16167,
+  "availability_issued": 21703,
+  "availability_total": 24126,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Black Dahlia",
+      "rarity": 30,
+      "document_id": 5411635995273619584
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lovely Rain",
+      "rarity": 4,
+      "document_id": 5310265202195837467
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

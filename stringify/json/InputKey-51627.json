@@ -1,0 +1,26 @@
+{
+  "slug": "InputKey-51627",
+  "title": "Input Key",
+  "num": 51627,
+  "availability_issued": 128102,
+  "availability_total": 159750,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Major",
+      "rarity": 10,
+      "document_id": 5292039431165871574
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wagasa",
+      "rarity": 5,
+      "document_id": 5584553246921326607
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

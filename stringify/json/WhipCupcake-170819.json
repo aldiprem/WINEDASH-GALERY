@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-170819",
+  "title": "Whip Cupcake",
+  "num": 170819,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Half-Life",
+      "rarity": 20,
+      "document_id": 5287488505293861900
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cute Bear",
+      "rarity": 7,
+      "document_id": 5307909000317121664
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Roman Silver",
+      "rarity": 12
+    }
+  ]
+}

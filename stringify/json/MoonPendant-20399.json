@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-20399",
+  "title": "Moon Pendant",
+  "num": 20399,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Liquid Gold",
+      "rarity": 30,
+      "document_id": 5215500609985218004
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Book",
+      "rarity": 7,
+      "document_id": 5440416579714047896
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 10
+    }
+  ]
+}

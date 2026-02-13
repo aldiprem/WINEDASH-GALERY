@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-77921",
+  "title": "Tama Gadget",
+  "num": 77921,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Peach",
+      "rarity": 20,
+      "document_id": 5273933940695002737
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moon Face",
+      "rarity": 4,
+      "document_id": 5544006633933242386
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

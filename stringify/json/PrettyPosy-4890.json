@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-4890",
+  "title": "Pretty Posy",
+  "num": 4890,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lotus Pay",
+      "rarity": 25,
+      "document_id": 5197384841657614998
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Totem Bear",
+      "rarity": 7,
+      "document_id": 5728966707590987806
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Onyx Black",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "RestlessJar-77083",
+  "title": "Restless Jar",
+  "num": 77083,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tiny Tulips",
+      "rarity": 15,
+      "document_id": 5434031024201819884
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pear",
+      "rarity": 5,
+      "document_id": 5433660003451955542
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-52718",
+  "title": "Star Notepad",
+  "num": 52718,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Color Switch",
+      "rarity": 7,
+      "document_id": 5235506975671872310
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gamepad",
+      "rarity": 5,
+      "document_id": 5440404794323786424
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

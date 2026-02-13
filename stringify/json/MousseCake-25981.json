@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-25981",
+  "title": "Mousse Cake",
+  "num": 25981,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Honey Cake",
+      "rarity": 30,
+      "document_id": 5359795946169337012
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Oxen of Fire",
+      "rarity": 6,
+      "document_id": 5729015485534568475
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 15
+    }
+  ]
+}

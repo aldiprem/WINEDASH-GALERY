@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-152269",
+  "title": "Ice Cream",
+  "num": 152269,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vice Dream",
+      "rarity": 30,
+      "document_id": 5366129940599178946
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Twin Koi",
+      "rarity": 7,
+      "document_id": 5582645495462887434
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-194067",
+  "title": "Instant Ramen",
+  "num": 194067,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hotpot",
+      "rarity": 20,
+      "document_id": 5379756351410961855
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lemon Slice",
+      "rarity": 5,
+      "document_id": 5440602010632084801
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 12
+    }
+  ]
+}

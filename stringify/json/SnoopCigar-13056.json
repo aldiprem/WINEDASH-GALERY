@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-13056",
+  "title": "Snoop Cigar",
+  "num": 13056,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Puff Puff Pass",
+      "rarity": 30,
+      "document_id": 5373298352685349318
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cocktail",
+      "rarity": 7,
+      "document_id": 5424853890271044722
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

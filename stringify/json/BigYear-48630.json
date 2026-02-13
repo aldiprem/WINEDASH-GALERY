@@ -1,0 +1,26 @@
+{
+  "slug": "BigYear-48630",
+  "title": "Big Year",
+  "num": 48630,
+  "availability_issued": 74074,
+  "availability_total": 101415,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Van Gogh",
+      "rarity": 18,
+      "document_id": 5242681396417295897
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hourglass",
+      "rarity": 3,
+      "document_id": 5548506475464228910
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Indigo",
+      "rarity": 15
+    }
+  ]
+}

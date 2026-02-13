@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-230884",
+  "title": "Ice Cream",
+  "num": 230884,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Whisker",
+      "rarity": 25,
+      "document_id": 5242192977031364148
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Donut",
+      "rarity": 2,
+      "document_id": 5550949676200493071
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Onyx Black",
+      "rarity": 12
+    }
+  ]
+}

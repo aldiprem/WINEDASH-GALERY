@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-204276",
+  "title": "Lol Pop",
+  "num": 204276,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sailor Moon",
+      "rarity": 10,
+      "document_id": 5210953622598214587
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Top Hat",
+      "rarity": 5,
+      "document_id": 5424997398013306322
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 20
+    }
+  ]
+}

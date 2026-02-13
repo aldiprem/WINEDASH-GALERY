@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-95916",
+  "title": "Jelly Bunny",
+  "num": 95916,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Jellyfish",
+      "rarity": 15,
+      "document_id": 5427145074934834751
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jumbo Pencil",
+      "rarity": 4,
+      "document_id": 5440587119980470792
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 10
+    }
+  ]
+}

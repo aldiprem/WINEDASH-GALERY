@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-235574",
+  "title": "Lol Pop",
+  "num": 235574,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Citrone",
+      "rarity": 12,
+      "document_id": 5386579160363721492
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rose",
+      "rarity": 5,
+      "document_id": 5548919496699281419
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pistachio",
+      "rarity": 15
+    }
+  ]
+}

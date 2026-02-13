@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-347478",
+  "title": "Lol Pop",
+  "num": 347478,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dark Portal",
+      "rarity": 10,
+      "document_id": 5228934185355338030
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Double Axe",
+      "rarity": 4,
+      "document_id": 5551071537307582479
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

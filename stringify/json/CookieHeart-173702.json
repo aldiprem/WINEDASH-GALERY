@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-173702",
+  "title": "Cookie Heart",
+  "num": 173702,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Liquorice",
+      "rarity": 10,
+      "document_id": 5222244155316530227
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candy",
+      "rarity": 8,
+      "document_id": 5422574937674115533
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 20
+    }
+  ]
+}

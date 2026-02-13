@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-77202",
+  "title": "Ice Cream",
+  "num": 77202,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubbles",
+      "rarity": 20,
+      "document_id": 5314362158614611167
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wreath",
+      "rarity": 7,
+      "document_id": 5440727526756342476
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 12
+    }
+  ]
+}

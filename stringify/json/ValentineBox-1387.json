@@ -1,0 +1,26 @@
+{
+  "slug": "ValentineBox-1387",
+  "title": "Valentine Box",
+  "num": 1387,
+  "availability_issued": 34207,
+  "availability_total": 41025,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Snow White",
+      "rarity": 30,
+      "document_id": 5325863243514667847
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fishing Hook",
+      "rarity": 7,
+      "document_id": 5548864765931028547
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Moonstone",
+      "rarity": 15
+    }
+  ]
+}

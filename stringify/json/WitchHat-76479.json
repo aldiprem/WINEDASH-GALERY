@@ -1,0 +1,26 @@
+{
+  "slug": "WitchHat-76479",
+  "title": "Witch Hat",
+  "num": 76479,
+  "availability_issued": 82318,
+  "availability_total": 88480,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Canvas",
+      "rarity": 10,
+      "document_id": 5240424283729061388
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eyeball",
+      "rarity": 24,
+      "document_id": 5300841391113387083
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 15
+    }
+  ]
+}

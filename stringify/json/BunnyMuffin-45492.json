@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-45492",
+  "title": "Bunny Muffin",
+  "num": 45492,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Winter Dessert",
+      "rarity": 14,
+      "document_id": 5235881754518121758
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crown",
+      "rarity": 5,
+      "document_id": 5440489074467037612
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 20
+    }
+  ]
+}

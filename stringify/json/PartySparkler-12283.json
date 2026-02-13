@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-12283",
+  "title": "Party Sparkler",
+  "num": 12283,
+  "availability_issued": 176755,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bright Flare",
+      "rarity": 13,
+      "document_id": 5228784961011607179
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower Cross",
+      "rarity": 5,
+      "document_id": 5722006219166580742
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Light Olive",
+      "rarity": 20
+    }
+  ]
+}

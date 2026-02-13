@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-12895",
+  "title": "Clover Pin",
+  "num": 12895,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Merrow",
+      "rarity": 15,
+      "document_id": 5260374746121400933
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bobby Helmet",
+      "rarity": 5,
+      "document_id": 5312231485468602152
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 12
+    }
+  ]
+}

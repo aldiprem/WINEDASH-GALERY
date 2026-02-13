@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-297241",
+  "title": "Ice Cream",
+  "num": 297241,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Watermelon",
+      "rarity": 30,
+      "document_id": 5195261890862806945
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ancient Urn",
+      "rarity": 7,
+      "document_id": 5548635229993828394
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Light Olive",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-7512",
+  "title": "Spring Basket",
+  "num": 7512,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sushi Neko",
+      "rarity": 25,
+      "document_id": 5352989913358823083
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower Sun",
+      "rarity": 2,
+      "document_id": 5546618291876790280
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

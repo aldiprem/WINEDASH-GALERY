@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-5151",
+  "title": "Jingle Bells",
+  "num": 5151,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Season",
+      "rarity": 15,
+      "document_id": 5237805066643073532
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ice Pop",
+      "rarity": 24,
+      "document_id": 5434148663356054664
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Neon Blue",
+      "rarity": 15
+    }
+  ]
+}

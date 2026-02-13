@@ -1,0 +1,26 @@
+{
+  "slug": "VintageCigar-17073",
+  "title": "Vintage Cigar",
+  "num": 17073,
+  "availability_issued": 26277,
+  "availability_total": 31024,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cobalt",
+      "rarity": 20,
+      "document_id": 5429451068645860401
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Scorpion",
+      "rarity": 5,
+      "document_id": 5440711089916503067
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 10
+    }
+  ]
+}

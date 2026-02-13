@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-19597",
+  "title": "Crystal Ball",
+  "num": 19597,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Amanita",
+      "rarity": 20,
+      "document_id": 5213152877782002887
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Doberman",
+      "rarity": 2,
+      "document_id": 5721848477902700557
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-10019",
+  "title": "Ice Cream",
+  "num": 10019,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Plastic Pop",
+      "rarity": 25,
+      "document_id": 5195288493890238786
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coin Purse",
+      "rarity": 7,
+      "document_id": 5434033386433830171
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Emerald",
+      "rarity": 12
+    }
+  ]
+}

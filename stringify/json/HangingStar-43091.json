@@ -1,0 +1,26 @@
+{
+  "slug": "HangingStar-43091",
+  "title": "Hanging Star",
+  "num": 43091,
+  "availability_issued": 44509,
+  "availability_total": 58118,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Dwarf",
+      "rarity": 14,
+      "document_id": 5235680621199649139
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eikthyrnir",
+      "rarity": 24,
+      "document_id": 5722379245666172949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Persimmon",
+      "rarity": 15
+    }
+  ]
+}

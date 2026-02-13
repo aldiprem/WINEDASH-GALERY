@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-81883",
+  "title": "Mousse Cake",
+  "num": 81883,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Toxic Frog",
+      "rarity": 15,
+      "document_id": 5375549280620674310
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coin Purse",
+      "rarity": 2,
+      "document_id": 5434033386433830171
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rifle Green",
+      "rarity": 12
+    }
+  ]
+}

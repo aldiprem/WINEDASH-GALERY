@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-135372",
+  "title": "Spring Basket",
+  "num": 135372,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lovely Lamb",
+      "rarity": 30,
+      "document_id": 5350799248109633181
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "High Heels",
+      "rarity": 4,
+      "document_id": 5436140342770428908
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunmetal",
+      "rarity": 12
+    }
+  ]
+}

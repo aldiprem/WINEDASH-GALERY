@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopDogg-207867",
+  "title": "Snoop Dogg",
+  "num": 207867,
+  "availability_issued": 580008,
+  "availability_total": 593781,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chow Wow",
+      "rarity": 20,
+      "document_id": 5400124885919893067
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Swag Bandana",
+      "rarity": 4,
+      "document_id": 5702073250176040982
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

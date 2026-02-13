@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-10887",
+  "title": "Mousse Cake",
+  "num": 10887,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubble Jar",
+      "rarity": 30,
+      "document_id": 5332731330012677772
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Balloon",
+      "rarity": 2,
+      "document_id": 5285168071902783709
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-11341",
+  "title": "Sky Stilettos",
+  "num": 11341,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Diaethria",
+      "rarity": 30,
+      "document_id": 5467658582315005674
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mushroom",
+      "rarity": 4,
+      "document_id": 5440642151396435007
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

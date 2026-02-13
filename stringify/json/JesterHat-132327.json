@@ -1,0 +1,26 @@
+{
+  "slug": "JesterHat-132327",
+  "title": "Jester Hat",
+  "num": 132327,
+  "availability_issued": 134548,
+  "availability_total": 190222,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Triboulet",
+      "rarity": 15,
+      "document_id": 5226474315851001459
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Key",
+      "rarity": 4,
+      "document_id": 5440480222539438655
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

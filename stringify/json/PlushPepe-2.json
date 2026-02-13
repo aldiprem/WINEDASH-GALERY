@@ -1,0 +1,31 @@
+{
+  "slug": "PlushPepe-2",
+  "title": "Plush Pepe",
+  "num": 2,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hothead",
+      "rarity": 30,
+      "document_id": 5422676844363149011
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Calm Wolf",
+      "rarity": 4,
+      "document_id": 5433775744230644578
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

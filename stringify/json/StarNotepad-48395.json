@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-48395",
+  "title": "Star Notepad",
+  "num": 48395,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sterling",
+      "rarity": 13,
+      "document_id": 5231391649677993239
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pizza Slice",
+      "rarity": 5,
+      "document_id": 5436241476365344257
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

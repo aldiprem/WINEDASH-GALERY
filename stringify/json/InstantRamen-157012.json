@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-157012",
+  "title": "Instant Ramen",
+  "num": 157012,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Shrimp",
+      "rarity": 30,
+      "document_id": 5271715706050738086
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crab",
+      "rarity": 4,
+      "document_id": 5424858399986705924
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Feldgrau",
+      "rarity": 12
+    }
+  ]
+}

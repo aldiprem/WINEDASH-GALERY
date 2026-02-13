@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-122821",
+  "title": "Mousse Cake",
+  "num": 122821,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Circus Show",
+      "rarity": 25,
+      "document_id": 5327978699591549100
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lion of Babylon",
+      "rarity": 4,
+      "document_id": 5544456677786386440
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Marine Blue",
+      "rarity": 12
+    }
+  ]
+}

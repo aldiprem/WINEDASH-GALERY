@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-201542",
+  "title": "Lol Pop",
+  "num": 201542,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fire Vortex",
+      "rarity": 10,
+      "document_id": 5226839516920181422
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Winged Helm",
+      "rarity": 4,
+      "document_id": 5546722831380774936
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Caramel",
+      "rarity": 15
+    }
+  ]
+}

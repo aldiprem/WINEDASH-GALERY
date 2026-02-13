@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-50591",
+  "title": "Clover Pin",
+  "num": 50591,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ice Cream",
+      "rarity": 20,
+      "document_id": 5260677777538971071
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bell Pepper",
+      "rarity": 5,
+      "document_id": 5440799905545215818
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 10
+    }
+  ]
+}

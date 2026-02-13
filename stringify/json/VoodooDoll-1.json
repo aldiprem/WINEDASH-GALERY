@@ -1,0 +1,26 @@
+{
+  "slug": "VoodooDoll-1",
+  "title": "Voodoo Doll",
+  "num": 1,
+  "availability_issued": 26751,
+  "availability_total": 27620,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Twilight",
+      "rarity": 25,
+      "document_id": 5231078379058388326
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candle",
+      "rarity": 16,
+      "document_id": 5440862947075185091
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pistachio",
+      "rarity": 20
+    }
+  ]
+}

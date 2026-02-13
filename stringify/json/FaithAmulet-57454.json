@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-57454",
+  "title": "Faith Amulet",
+  "num": 57454,
+  "availability_issued": 135385,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Azure Glow",
+      "rarity": 25,
+      "document_id": 5332740516947721595
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Royal Crown",
+      "rarity": 7,
+      "document_id": 5440361101621484148
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Grape",
+      "rarity": 12
+    }
+  ]
+}

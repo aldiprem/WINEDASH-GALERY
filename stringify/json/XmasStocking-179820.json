@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-179820",
+  "title": "Xmas Stocking",
+  "num": 179820,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Privet",
+      "rarity": 10,
+      "document_id": 5325929454730504353
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sparks",
+      "rarity": 8,
+      "document_id": 5440607637039243262
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 15
+    }
+  ]
+}

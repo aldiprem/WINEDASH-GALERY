@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-43958",
+  "title": "Instant Ramen",
+  "num": 43958,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Broccoli",
+      "rarity": 30,
+      "document_id": 5271771098243953911
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Magic Vial",
+      "rarity": 4,
+      "document_id": 5551127401947201559
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pistachio",
+      "rarity": 10
+    }
+  ]
+}

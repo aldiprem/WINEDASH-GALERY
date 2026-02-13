@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-103128",
+  "title": "Ice Cream",
+  "num": 103128,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cupid Aim",
+      "rarity": 25,
+      "document_id": 5240347352274861155
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moon Eagle",
+      "rarity": 4,
+      "document_id": 5722284966839058444
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Persimmon",
+      "rarity": 15
+    }
+  ]
+}

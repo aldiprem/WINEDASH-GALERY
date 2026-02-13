@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-62650",
+  "title": "Spiced Wine",
+  "num": 62650,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dusky Draft",
+      "rarity": 13,
+      "document_id": 5429142904742374442
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Unicorn Head",
+      "rarity": 5,
+      "document_id": 5440544067228292901
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Black",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-99212",
+  "title": "Snoop Cigar",
+  "num": 99212,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "California",
+      "rarity": 10,
+      "document_id": 5400329927658599481
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pineapple",
+      "rarity": 7,
+      "document_id": 5435956178867741187
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 15
+    }
+  ]
+}

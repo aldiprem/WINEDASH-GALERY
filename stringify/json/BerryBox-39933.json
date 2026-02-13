@@ -1,0 +1,26 @@
+{
+  "slug": "BerryBox-39933",
+  "title": "Berry Box",
+  "num": 39933,
+  "availability_issued": 50377,
+  "availability_total": 66580,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Atmosphere",
+      "rarity": 15,
+      "document_id": 5420255444880874216
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cherry",
+      "rarity": 8,
+      "document_id": 5434013921642045024
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 10
+    }
+  ]
+}

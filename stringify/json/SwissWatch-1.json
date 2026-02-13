@@ -1,0 +1,26 @@
+{
+  "slug": "SwissWatch-1",
+  "title": "Swiss Watch",
+  "num": 1,
+  "availability_issued": 25664,
+  "availability_total": 29323,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Amazon",
+      "rarity": 25,
+      "document_id": 5197232297304157073
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mafdet",
+      "rarity": 8,
+      "document_id": 5726594038807658503
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 20
+    }
+  ]
+}

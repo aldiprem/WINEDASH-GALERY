@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-275302",
+  "title": "Instant Ramen",
+  "num": 275302,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Topokki",
+      "rarity": 30,
+      "document_id": 5341288309320611945
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Potion",
+      "rarity": 5,
+      "document_id": 5435902410172163141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 15
+    }
+  ]
+}

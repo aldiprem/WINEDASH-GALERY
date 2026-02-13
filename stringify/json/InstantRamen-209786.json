@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-209786",
+  "title": "Instant Ramen",
+  "num": 209786,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mushroom",
+      "rarity": 30,
+      "document_id": 5273816108267240608
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flag",
+      "rarity": 2,
+      "document_id": 5546248748595675149
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    }
+  ]
+}

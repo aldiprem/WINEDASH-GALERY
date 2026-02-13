@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopDogg-205311",
+  "title": "Snoop Dogg",
+  "num": 205311,
+  "availability_issued": 580008,
+  "availability_total": 593781,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Team USA",
+      "rarity": 25,
+      "document_id": 5408969469122867955
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nemean Lion",
+      "rarity": 5,
+      "document_id": 5544006887336312835
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

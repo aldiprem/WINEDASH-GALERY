@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-123012",
+  "title": "Spring Basket",
+  "num": 123012,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Baby Dragon",
+      "rarity": 30,
+      "document_id": 5395418727044908719
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Money Bag",
+      "rarity": 2,
+      "document_id": 5440780019846634454
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cappuccino",
+      "rarity": 12
+    }
+  ]
+}

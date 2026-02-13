@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-274062",
+  "title": "Ice Cream",
+  "num": 274062,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cyclone",
+      "rarity": 30,
+      "document_id": 5239958610489932393
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bicorne",
+      "rarity": 7,
+      "document_id": 5314763729466846098
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    }
+  ]
+}

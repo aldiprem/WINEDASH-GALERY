@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopDogg-142743",
+  "title": "Snoop Dogg",
+  "num": 142743,
+  "availability_issued": 580008,
+  "availability_total": 593781,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Shower Cap",
+      "rarity": 25,
+      "document_id": 5386801390561554882
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Doberman",
+      "rarity": 5,
+      "document_id": 5721848477902700557
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Seal Brown",
+      "rarity": 12
+    }
+  ]
+}

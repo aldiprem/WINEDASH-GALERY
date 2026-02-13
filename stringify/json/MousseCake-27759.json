@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-27759",
+  "title": "Mousse Cake",
+  "num": 27759,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sweet Music",
+      "rarity": 30,
+      "document_id": 5334863411907952552
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bottle",
+      "rarity": 6,
+      "document_id": 5424763360950380146
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 10
+    }
+  ]
+}

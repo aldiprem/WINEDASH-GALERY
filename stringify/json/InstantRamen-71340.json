@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-71340",
+  "title": "Instant Ramen",
+  "num": 71340,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Slurp-Slurp",
+      "rarity": 25,
+      "document_id": 5319286205475489134
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bug",
+      "rarity": 5,
+      "document_id": 5433633602287985268
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Deep Cyan",
+      "rarity": 15
+    }
+  ]
+}

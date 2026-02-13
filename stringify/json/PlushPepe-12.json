@@ -1,0 +1,26 @@
+{
+  "slug": "PlushPepe-12",
+  "title": "Plush Pepe",
+  "num": 12,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Barcelona",
+      "rarity": 20,
+      "document_id": 5422334926311681026
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cunning Fox",
+      "rarity": 5,
+      "document_id": 5316827534267004428
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 15
+    }
+  ]
+}

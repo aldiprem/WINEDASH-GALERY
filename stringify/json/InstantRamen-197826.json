@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-197826",
+  "title": "Instant Ramen",
+  "num": 197826,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Broth Pack",
+      "rarity": 15,
+      "document_id": 5393069775070986809
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shooting Star",
+      "rarity": 5,
+      "document_id": 5434137758434093445
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 10
+    }
+  ]
+}

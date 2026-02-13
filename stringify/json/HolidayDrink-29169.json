@@ -1,0 +1,26 @@
+{
+  "slug": "HolidayDrink-29169",
+  "title": "Holiday Drink",
+  "num": 29169,
+  "availability_issued": 82869,
+  "availability_total": 120989,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubblegum",
+      "rarity": 39,
+      "document_id": 5357121143616598083
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wizard Hat",
+      "rarity": 4,
+      "document_id": 5314292219367155055
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 15
+    }
+  ]
+}

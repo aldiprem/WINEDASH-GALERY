@@ -1,0 +1,26 @@
+{
+  "slug": "FreshSocks-66765",
+  "title": "Fresh Socks",
+  "num": 66765,
+  "availability_issued": 158627,
+  "availability_total": 200509,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Monsters",
+      "rarity": 15,
+      "document_id": 5249359907353819297
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lovestruck",
+      "rarity": 4,
+      "document_id": 5290006837893031455
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

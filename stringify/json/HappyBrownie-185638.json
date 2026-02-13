@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-185638",
+  "title": "Happy Brownie",
+  "num": 185638,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cactus",
+      "rarity": 30,
+      "document_id": 5332685137639410309
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flashlight",
+      "rarity": 5,
+      "document_id": 5440625946484824815
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Violet",
+      "rarity": 15
+    }
+  ]
+}

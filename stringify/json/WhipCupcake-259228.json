@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-259228",
+  "title": "Whip Cupcake",
+  "num": 259228,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tarot Cards",
+      "rarity": 15,
+      "document_id": 5307889965022083941
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lovely Kiss",
+      "rarity": 7,
+      "document_id": 5422575423005417377
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 15
+    }
+  ]
+}

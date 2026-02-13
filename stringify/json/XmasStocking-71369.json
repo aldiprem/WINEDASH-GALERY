@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-71369",
+  "title": "Xmas Stocking",
+  "num": 71369,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lime Treats",
+      "rarity": 30,
+      "document_id": 5298758258960391872
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shooting Star",
+      "rarity": 12,
+      "document_id": 5434137758434093445
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 10
+    }
+  ]
+}

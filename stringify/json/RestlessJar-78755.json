@@ -1,0 +1,31 @@
+{
+  "slug": "RestlessJar-78755",
+  "title": "Restless Jar",
+  "num": 78755,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Aquarium",
+      "rarity": 25,
+      "document_id": 5470183103962048494
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flaming Heart",
+      "rarity": 4,
+      "document_id": 5289822124234532044
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

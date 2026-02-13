@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopDogg-478309",
+  "title": "Snoop Dogg",
+  "num": 478309,
+  "availability_issued": 580008,
+  "availability_total": 593781,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Label Lord",
+      "rarity": 10,
+      "document_id": 5434131676760408297
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Lock",
+      "rarity": 5,
+      "document_id": 5440749770391969728
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunmetal",
+      "rarity": 10
+    }
+  ]
+}

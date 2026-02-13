@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-11820",
+  "title": "Jingle Bells",
+  "num": 11820,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tulip Time",
+      "rarity": 9,
+      "document_id": 5237857662812579803
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candy",
+      "rarity": 23,
+      "document_id": 5422574937674115533
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 20
+    }
+  ]
+}

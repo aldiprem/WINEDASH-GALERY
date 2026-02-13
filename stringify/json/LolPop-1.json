@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-1",
+  "title": "Lol Pop",
+  "num": 1,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Portable Pop",
+      "rarity": 10,
+      "document_id": 5208846262534695841
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Teru Bōzu",
+      "rarity": 4,
+      "document_id": 5584796500984070156
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-134517",
+  "title": "Ginger Cookie",
+  "num": 134517,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bavarian",
+      "rarity": 9,
+      "document_id": 5237835182953752693
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Inca Sun",
+      "rarity": 5,
+      "document_id": 5722165274690453518
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 20
+    }
+  ]
+}

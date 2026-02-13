@@ -1,0 +1,26 @@
+{
+  "slug": "ToyBear-40435",
+  "title": "Toy Bear",
+  "num": 40435,
+  "availability_issued": 55756,
+  "availability_total": 57724,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cozy Boy",
+      "rarity": 15,
+      "document_id": 5291963208381259469
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Star Crown",
+      "rarity": 5,
+      "document_id": 5433690600798970670
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Persimmon",
+      "rarity": 15
+    }
+  ]
+}

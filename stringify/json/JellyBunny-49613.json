@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-49613",
+  "title": "Jelly Bunny",
+  "num": 49613,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pale Squish",
+      "rarity": 15,
+      "document_id": 5416014323589865034
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mountain Goat",
+      "rarity": 3,
+      "document_id": 5722108314834173965
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Navy Blue",
+      "rarity": 10
+    }
+  ]
+}

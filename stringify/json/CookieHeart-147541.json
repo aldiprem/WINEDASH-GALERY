@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-147541",
+  "title": "Cookie Heart",
+  "num": 147541,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Honeymoon",
+      "rarity": 10,
+      "document_id": 5231306742469515854
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jingle Bell",
+      "rarity": 10,
+      "document_id": 5206464681694217071
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Emerald",
+      "rarity": 10
+    }
+  ]
+}

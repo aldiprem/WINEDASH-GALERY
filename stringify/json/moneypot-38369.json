@@ -1,0 +1,26 @@
+{
+  "slug": "MoneyPot-38369",
+  "title": "Money Pot",
+  "num": 38369,
+  "availability_issued": 69424,
+  "availability_total": 91779,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Elf Cup",
+      "rarity": 30,
+      "document_id": 5417994956348358829
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lion of Babylon",
+      "rarity": 5,
+      "document_id": 5544456677786386440
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Moonstone",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "GingerCookie-74965",
+  "title": "Ginger Cookie",
+  "num": 74965,
+  "availability_issued": 142091,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Royal Sundae",
+      "rarity": 12,
+      "document_id": 5224476954194894349
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Viper",
+      "rarity": 5,
+      "document_id": 5550707431455064112
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "WitchHat-1",
+  "title": "Witch Hat",
+  "num": 1,
+  "availability_issued": 82318,
+  "availability_total": 88480,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Witch Hazel",
+      "rarity": 15,
+      "document_id": 5240161646478910571
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flying Witch",
+      "rarity": 24,
+      "document_id": 5298907998700189550
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Malachite",
+      "rarity": 15
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "ValentineBox-1",
+  "title": "Valentine Box",
+  "num": 1,
+  "availability_issued": 34207,
+  "availability_total": 41025,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chess Set",
+      "rarity": 10,
+      "document_id": 5429624834432725128
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dandelion",
+      "rarity": 5,
+      "document_id": 5357353948023908774
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-65273",
+  "title": "Snoop Cigar",
+  "num": 65273,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Meteor Impact",
+      "rarity": 15,
+      "document_id": 5408889020090449272
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bascinet",
+      "rarity": 7,
+      "document_id": 5548436604936257566
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tactical Pine",
+      "rarity": 15
+    }
+  ]
+}

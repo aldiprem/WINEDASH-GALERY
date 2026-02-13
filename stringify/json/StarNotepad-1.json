@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-1",
+  "title": "Star Notepad",
+  "num": 1,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "True Love",
+      "rarity": 7,
+      "document_id": 5237829616676135686
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nordic Wolf",
+      "rarity": 4,
+      "document_id": 5722297057171996682
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 20
+    }
+  ]
+}

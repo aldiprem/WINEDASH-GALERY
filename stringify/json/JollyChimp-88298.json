@@ -1,0 +1,26 @@
+{
+  "slug": "JollyChimp-88298",
+  "title": "Jolly Chimp",
+  "num": 88298,
+  "availability_issued": 115521,
+  "availability_total": 132155,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chimp Imp",
+      "rarity": 15,
+      "document_id": 5348214133063974947
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sprout",
+      "rarity": 5,
+      "document_id": 5435900468846945304
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Navy Blue",
+      "rarity": 10
+    }
+  ]
+}

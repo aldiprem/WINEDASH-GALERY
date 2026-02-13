@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-28154",
+  "title": "Jelly Bunny",
+  "num": 28154,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Smelly",
+      "rarity": 20,
+      "document_id": 5425120882618031408
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pickaxe",
+      "rarity": 5,
+      "document_id": 5427383398375122352
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-14476",
+  "title": "Spring Basket",
+  "num": 14476,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Triceratops",
+      "rarity": 25,
+      "document_id": 5391162440224372449
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Venetian Mask",
+      "rarity": 7,
+      "document_id": 5433604121632464930
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Purple",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "HypnoLollipop-1",
+  "title": "Hypno Lollipop",
+  "num": 1,
+  "availability_issued": 79412,
+  "availability_total": 116639,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Citrus Fresh",
+      "rarity": 13,
+      "document_id": 5228855338345718417
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Toilet",
+      "rarity": 5,
+      "document_id": 5433611053709680326
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Satin Gold",
+      "rarity": 20
+    }
+  ]
+}

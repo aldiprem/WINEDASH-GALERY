@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-137965",
+  "title": "Spring Basket",
+  "num": 137965,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Moon Frog",
+      "rarity": 30,
+      "document_id": 5350474368193429006
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pizza Slice",
+      "rarity": 7,
+      "document_id": 5436241476365344257
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Camo Green",
+      "rarity": 15
+    }
+  ]
+}

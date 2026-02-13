@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-4348",
+  "title": "Pretty Posy",
+  "num": 4348,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Salami Set",
+      "rarity": 25,
+      "document_id": 5197351426812053281
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sunbloom",
+      "rarity": 7,
+      "document_id": 5357289648068520865
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 10
+    }
+  ]
+}

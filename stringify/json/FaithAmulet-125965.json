@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-125965",
+  "title": "Faith Amulet",
+  "num": 125965,
+  "availability_issued": 135386,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Soft Whisper",
+      "rarity": 15,
+      "document_id": 5372925588178764496
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bee",
+      "rarity": 7,
+      "document_id": 5434002913640866822
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Violet",
+      "rarity": 12
+    }
+  ]
+}

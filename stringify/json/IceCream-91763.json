@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-91763",
+  "title": "Ice Cream",
+  "num": 91763,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Berry Split",
+      "rarity": 30,
+      "document_id": 5240047585032437751
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pilot Hat",
+      "rarity": 7,
+      "document_id": 5312401570468490347
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunship Green",
+      "rarity": 15
+    }
+  ]
+}

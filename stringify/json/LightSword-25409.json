@@ -1,0 +1,26 @@
+{
+  "slug": "LightSword-25409",
+  "title": "Light Sword",
+  "num": 25409,
+  "availability_issued": 124127,
+  "availability_total": 131222,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lotus Saber",
+      "rarity": 30,
+      "document_id": 5449823240992091075
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bandana",
+      "rarity": 4,
+      "document_id": 5312064969586538052
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 12
+    }
+  ]
+}

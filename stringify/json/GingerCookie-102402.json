@@ -1,0 +1,31 @@
+{
+  "slug": "GingerCookie-102402",
+  "title": "Ginger Cookie",
+  "num": 102402,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Frosty",
+      "rarity": 15,
+      "document_id": 5188303738900606259
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hot Drink",
+      "rarity": 18,
+      "document_id": 5195425164044559335
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

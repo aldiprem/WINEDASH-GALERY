@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-202641",
+  "title": "Ice Cream",
+  "num": 202641,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Funky Disco",
+      "rarity": 25,
+      "document_id": 5359285588090451565
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fenrir",
+      "rarity": 5,
+      "document_id": 5722120379397308437
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burnt Sienna",
+      "rarity": 12
+    }
+  ]
+}

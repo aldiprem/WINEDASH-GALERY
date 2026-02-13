@@ -1,0 +1,26 @@
+{
+  "slug": "RestlessJar-23265",
+  "title": "Restless Jar",
+  "num": 23265,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Blueberry",
+      "rarity": 30,
+      "document_id": 5434063262226346529
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Champagne",
+      "rarity": 5,
+      "document_id": 5440709011152333768
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "HangingStar-23183",
+  "title": "Hanging Star",
+  "num": 23183,
+  "availability_issued": 44509,
+  "availability_total": 58118,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fusion",
+      "rarity": 14,
+      "document_id": 5235481369076856385
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shooting Star",
+      "rarity": 24,
+      "document_id": 5434137758434093445
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

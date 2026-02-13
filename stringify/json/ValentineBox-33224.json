@@ -1,0 +1,26 @@
+{
+  "slug": "ValentineBox-33224",
+  "title": "Valentine Box",
+  "num": 33224,
+  "availability_issued": 34207,
+  "availability_total": 41025,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vampire",
+      "rarity": 10,
+      "document_id": 5424960310970706738
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dandelion",
+      "rarity": 5,
+      "document_id": 5357353948023908774
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-217724",
+  "title": "Clover Pin",
+  "num": 217724,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ice Cream",
+      "rarity": 20,
+      "document_id": 5260677777538971071
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Corn",
+      "rarity": 5,
+      "document_id": 5424903810675924078
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Aquamarine",
+      "rarity": 15
+    }
+  ]
+}

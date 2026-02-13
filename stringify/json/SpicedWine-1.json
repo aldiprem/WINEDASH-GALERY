@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-1",
+  "title": "Spiced Wine",
+  "num": 1,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Magenta Mist",
+      "rarity": 13,
+      "document_id": 5431892538510302102
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Genie Lamp",
+      "rarity": 2,
+      "document_id": 5440679027985636145
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Indigo",
+      "rarity": 15
+    }
+  ]
+}

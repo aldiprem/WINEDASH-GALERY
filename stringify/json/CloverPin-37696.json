@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-37696",
+  "title": "Clover Pin",
+  "num": 37696,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sangria",
+      "rarity": 20,
+      "document_id": 5251562495432226987
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Piranha",
+      "rarity": 5,
+      "document_id": 5546636489653223478
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 12
+    }
+  ]
+}

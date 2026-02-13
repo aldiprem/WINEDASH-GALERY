@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-345979",
+  "title": "Lol Pop",
+  "num": 345979,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tsunami",
+      "rarity": 12,
+      "document_id": 5393228800530082595
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Watching Sun",
+      "rarity": 4,
+      "document_id": 5546520615730544657
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 15
+    }
+  ]
+}

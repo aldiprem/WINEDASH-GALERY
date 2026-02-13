@@ -1,0 +1,26 @@
+{
+  "slug": "EternalRose-26737",
+  "title": "Eternal Rose",
+  "num": 26737,
+  "availability_issued": 30603,
+  "availability_total": 37640,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Stolen Bloom",
+      "rarity": 13,
+      "document_id": 5425099369126848135
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sprout",
+      "rarity": 2,
+      "document_id": 5435900468846945304
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chocolate",
+      "rarity": 20
+    }
+  ]
+}

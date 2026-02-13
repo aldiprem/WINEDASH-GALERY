@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-52338",
+  "title": "Star Notepad",
+  "num": 52338,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lord Byron",
+      "rarity": 10,
+      "document_id": 5233595139699535894
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bubble Tea",
+      "rarity": 5,
+      "document_id": 5434136946685274641
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 20
+    }
+  ]
+}

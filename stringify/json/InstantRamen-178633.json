@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-178633",
+  "title": "Instant Ramen",
+  "num": 178633,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Abduction",
+      "rarity": 25,
+      "document_id": 5393199706421629390
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Totem Bear",
+      "rarity": 2,
+      "document_id": 5728966707590987806
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 12
+    }
+  ]
+}

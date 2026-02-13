@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-33149",
+  "title": "Clover Pin",
+  "num": 33149,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Golden Ale",
+      "rarity": 20,
+      "document_id": 5258293782926881895
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mushroom",
+      "rarity": 5,
+      "document_id": 5440642151396435007
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 12
+    }
+  ]
+}

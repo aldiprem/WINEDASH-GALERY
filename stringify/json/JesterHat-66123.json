@@ -1,0 +1,26 @@
+{
+  "slug": "JesterHat-66123",
+  "title": "Jester Hat",
+  "num": 66123,
+  "availability_issued": 134547,
+  "availability_total": 190222,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Confetti",
+      "rarity": 5,
+      "document_id": 5233724594308802484
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Chili Pepper",
+      "rarity": 4,
+      "document_id": 5436357135539658505
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 15
+    }
+  ]
+}

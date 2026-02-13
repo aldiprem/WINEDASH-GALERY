@@ -1,0 +1,31 @@
+{
+  "slug": "HangingStar-22999",
+  "title": "Hanging Star",
+  "num": 22999,
+  "availability_issued": 44509,
+  "availability_total": 58118,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cucumber",
+      "rarity": 11,
+      "document_id": 5238185892803275392
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shooting Star",
+      "rarity": 24,
+      "document_id": 5434137758434093445
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carrot Juice",
+      "rarity": 15
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "PlushPepe-5",
+  "title": "Plush Pepe",
+  "num": 5,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bavaria",
+      "rarity": 20,
+      "document_id": 5424773600152410617
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Inguz Rune",
+      "rarity": 4,
+      "document_id": 5440848485920301619
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 15
+    }
+  ]
+}

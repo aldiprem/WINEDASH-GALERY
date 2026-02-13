@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-9397",
+  "title": "Jingle Bells",
+  "num": 9397,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Scarlet Leaf",
+      "rarity": 12,
+      "document_id": 5238110099515399780
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ice Pop",
+      "rarity": 24,
+      "document_id": 5434148663356054664
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Caramel",
+      "rarity": 20
+    }
+  ]
+}

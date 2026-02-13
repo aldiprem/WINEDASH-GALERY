@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-72655",
+  "title": "Mousse Cake",
+  "num": 72655,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Scarlet Drip",
+      "rarity": 20,
+      "document_id": 5332416388650797831
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cat Mask",
+      "rarity": 6,
+      "document_id": 5433934065315110448
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

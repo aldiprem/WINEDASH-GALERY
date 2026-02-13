@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-148531",
+  "title": "Clover Pin",
+  "num": 148531,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Corrupted",
+      "rarity": 15,
+      "document_id": 5260606034405258816
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mustang",
+      "rarity": 5,
+      "document_id": 5544443646855610386
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 15
+    }
+  ]
+}

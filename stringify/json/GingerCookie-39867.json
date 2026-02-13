@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-39867",
+  "title": "Ginger Cookie",
+  "num": 39867,
+  "availability_issued": 142089,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ice Latte",
+      "rarity": 17,
+      "document_id": 5240211446624707644
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rudolph",
+      "rarity": 15,
+      "document_id": 5283265641908824187
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 20
+    }
+  ]
+}

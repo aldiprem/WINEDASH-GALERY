@@ -1,0 +1,26 @@
+{
+  "slug": "HangingStar-1",
+  "title": "Hanging Star",
+  "num": 1,
+  "availability_issued": 44509,
+  "availability_total": 58118,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tropicana",
+      "rarity": 15,
+      "document_id": 5238035590422748656
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cocktail",
+      "rarity": 24,
+      "document_id": 5424853890271044722
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pistachio",
+      "rarity": 15
+    }
+  ]
+}

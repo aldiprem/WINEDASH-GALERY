@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-62431",
+  "title": "Ice Cream",
+  "num": 62431,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Granite",
+      "rarity": 15,
+      "document_id": 5348545695949289935
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wreath",
+      "rarity": 7,
+      "document_id": 5440727526756342476
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 12
+    }
+  ]
+}

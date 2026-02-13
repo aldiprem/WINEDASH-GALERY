@@ -1,0 +1,26 @@
+{
+  "slug": "JollyChimp-105955",
+  "title": "Jolly Chimp",
+  "num": 105955,
+  "availability_issued": 115521,
+  "availability_total": 132155,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Genie",
+      "rarity": 20,
+      "document_id": 5204450088629335675
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Burger",
+      "rarity": 4,
+      "document_id": 5434080145742782526
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 12
+    }
+  ]
+}

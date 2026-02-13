@@ -1,0 +1,26 @@
+{
+  "slug": "SnakeBox-169966",
+  "title": "Snake Box",
+  "num": 169966,
+  "availability_issued": 170178,
+  "availability_total": 273898,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Bloom",
+      "rarity": 30,
+      "document_id": 5379650845539331676
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Handset",
+      "rarity": 8,
+      "document_id": 5433797377980918182
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-82746",
+  "title": "Ice Cream",
+  "num": 82746,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vice Dream",
+      "rarity": 30,
+      "document_id": 5366129940599178946
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Royal Turban",
+      "rarity": 7,
+      "document_id": 5316541085718175853
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

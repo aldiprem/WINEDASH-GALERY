@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-149888",
+  "title": "Spring Basket",
+  "num": 149888,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Capybara",
+      "rarity": 30,
+      "document_id": 5397616676558635042
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mountain Lion",
+      "rarity": 7,
+      "document_id": 5729121412312989726
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 15
+    }
+  ]
+}

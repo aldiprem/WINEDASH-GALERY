@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-29127",
+  "title": "Snoop Cigar",
+  "num": 29127,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "The King",
+      "rarity": 30,
+      "document_id": 5373020661574826232
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Doberman",
+      "rarity": 7,
+      "document_id": 5721848477902700557
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 15
+    }
+  ]
+}

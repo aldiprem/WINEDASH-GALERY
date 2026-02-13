@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-22804",
+  "title": "Pretty Posy",
+  "num": 22804,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Precious",
+      "rarity": 30,
+      "document_id": 5203930504960705405
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ladybug",
+      "rarity": 2,
+      "document_id": 5436325485925656443
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 10
+    }
+  ]
+}

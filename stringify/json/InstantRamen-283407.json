@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-283407",
+  "title": "Instant Ramen",
+  "num": 283407,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Samurai",
+      "rarity": 25,
+      "document_id": 5273867909867795659
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Watermelon",
+      "rarity": 5,
+      "document_id": 5433649575271359320
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

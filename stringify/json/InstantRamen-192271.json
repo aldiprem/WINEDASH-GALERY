@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-192271",
+  "title": "Instant Ramen",
+  "num": 192271,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Broth Pack",
+      "rarity": 15,
+      "document_id": 5393069775070986809
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Tricorne",
+      "rarity": 5,
+      "document_id": 5312042356583723284
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopDogg-497017",
+  "title": "Snoop Dogg",
+  "num": 497017,
+  "availability_issued": 580008,
+  "availability_total": 593781,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Horseman",
+      "rarity": 10,
+      "document_id": 5375579714758934187
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shield",
+      "rarity": 5,
+      "document_id": 5440775819368620198
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 10
+    }
+  ]
+}

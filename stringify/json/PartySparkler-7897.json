@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-7897",
+  "title": "Party Sparkler",
+  "num": 7897,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "4th of July",
+      "rarity": 9,
+      "document_id": 5228799684159499469
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hedgehog",
+      "rarity": 2,
+      "document_id": 5440595495166696665
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

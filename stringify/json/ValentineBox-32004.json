@@ -1,0 +1,26 @@
+{
+  "slug": "ValentineBox-32004",
+  "title": "Valentine Box",
+  "num": 32004,
+  "availability_issued": 34207,
+  "availability_total": 41025,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gold Dust",
+      "rarity": 30,
+      "document_id": 5318800698077370507
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Baseball Cap",
+      "rarity": 6,
+      "document_id": 5316818244252755144
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

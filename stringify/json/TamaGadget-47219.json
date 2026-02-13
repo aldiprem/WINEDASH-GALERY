@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-47219",
+  "title": "Tama Gadget",
+  "num": 47219,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crystal View",
+      "rarity": 11,
+      "document_id": 5296419331440141338
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candle",
+      "rarity": 5,
+      "document_id": 5440862947075185091
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 10
+    }
+  ]
+}

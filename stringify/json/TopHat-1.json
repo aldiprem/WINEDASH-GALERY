@@ -1,0 +1,26 @@
+{
+  "slug": "TopHat-1",
+  "title": "Top Hat",
+  "num": 1,
+  "availability_issued": 34300,
+  "availability_total": 35099,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Huntsman",
+      "rarity": 15,
+      "document_id": 5312531832531608598
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Chest",
+      "rarity": 4,
+      "document_id": 5424748805306211426
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 10
+    }
+  ]
+}

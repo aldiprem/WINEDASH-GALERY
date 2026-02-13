@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-1",
+  "title": "Crystal Ball",
+  "num": 1,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Seeing Red",
+      "rarity": 30,
+      "document_id": 5400344135410410935
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gravestone",
+      "rarity": 24,
+      "document_id": 5298725402460568410
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "FreshSocks-45372",
+  "title": "Fresh Socks",
+  "num": 45372,
+  "availability_issued": 158627,
+  "availability_total": 200509,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sporty",
+      "rarity": 25,
+      "document_id": 5337157882221727445
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Two Katanas",
+      "rarity": 2,
+      "document_id": 5584928884761034765
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

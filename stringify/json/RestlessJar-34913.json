@@ -1,0 +1,26 @@
+{
+  "slug": "RestlessJar-34913",
+  "title": "Restless Jar",
+  "num": 34913,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Autumn Candle",
+      "rarity": 25,
+      "document_id": 5226770110248678017
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Full Moon",
+      "rarity": 5,
+      "document_id": 5550987214214660101
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

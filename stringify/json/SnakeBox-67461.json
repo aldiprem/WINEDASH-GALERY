@@ -1,0 +1,26 @@
+{
+  "slug": "SnakeBox-67461",
+  "title": "Snake Box",
+  "num": 67461,
+  "availability_issued": 170178,
+  "availability_total": 273898,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Buttercup",
+      "rarity": 30,
+      "document_id": 5368314880656962054
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Tribal Shield",
+      "rarity": 8,
+      "document_id": 5724247908627251209
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tomato",
+      "rarity": 15
+    }
+  ]
+}

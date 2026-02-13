@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-61124",
+  "title": "Instant Ramen",
+  "num": 61124,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sunny Loops",
+      "rarity": 30,
+      "document_id": 5388583857823976270
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Unicorn",
+      "rarity": 5,
+      "document_id": 5440820989539673389
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    }
+  ]
+}

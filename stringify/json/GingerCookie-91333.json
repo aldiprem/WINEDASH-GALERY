@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-91333",
+  "title": "Ginger Cookie",
+  "num": 91333,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Melonius",
+      "rarity": 7,
+      "document_id": 5474579647234597097
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hot Drink",
+      "rarity": 18,
+      "document_id": 5195425164044559335
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

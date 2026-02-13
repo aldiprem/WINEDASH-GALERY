@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-34540",
+  "title": "Spiced Wine",
+  "num": 34540,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Flaming Mint",
+      "rarity": 8,
+      "document_id": 5429217860511620848
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cat Mask",
+      "rarity": 3,
+      "document_id": 5433934065315110448
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-116511",
+  "title": "Instant Ramen",
+  "num": 116511,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Arcane Bowl",
+      "rarity": 20,
+      "document_id": 5359691548399271656
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mafdet",
+      "rarity": 5,
+      "document_id": 5726594038807658503
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 12
+    }
+  ]
+}

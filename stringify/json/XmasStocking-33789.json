@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-33789",
+  "title": "Xmas Stocking",
+  "num": 33789,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Caramel Fest",
+      "rarity": 22,
+      "document_id": 5352834860744473348
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wasp",
+      "rarity": 2,
+      "document_id": 5440853115895045152
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Violet",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-18427",
+  "title": "Mousse Cake",
+  "num": 18427,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wicked Pie",
+      "rarity": 15,
+      "document_id": 5325998659538549878
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bell Pepper",
+      "rarity": 6,
+      "document_id": 5440799905545215818
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Black",
+      "rarity": 10
+    }
+  ]
+}

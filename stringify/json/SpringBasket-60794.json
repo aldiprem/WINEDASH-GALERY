@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-60794",
+  "title": "Spring Basket",
+  "num": 60794,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Marmot",
+      "rarity": 25,
+      "document_id": 5386680839419493267
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lemon",
+      "rarity": 5,
+      "document_id": 5440743731667952300
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Indigo",
+      "rarity": 12
+    }
+  ]
+}

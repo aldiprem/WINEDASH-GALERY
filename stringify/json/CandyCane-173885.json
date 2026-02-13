@@ -1,0 +1,31 @@
+{
+  "slug": "CandyCane-173885",
+  "title": "Candy Cane",
+  "num": 173885,
+  "availability_issued": 209557,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Colorfunk",
+      "rarity": 26,
+      "document_id": 5339468995533762749
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cookie",
+      "rarity": 24,
+      "document_id": 5201817428295696125
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Roman Silver",
+      "rarity": 15
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

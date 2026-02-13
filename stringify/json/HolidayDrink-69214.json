@@ -1,0 +1,26 @@
+{
+  "slug": "HolidayDrink-69214",
+  "title": "Holiday Drink",
+  "num": 69214,
+  "availability_issued": 82869,
+  "availability_total": 120989,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Banana Split",
+      "rarity": 49,
+      "document_id": 5296291981364848707
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "New Year’s Eve",
+      "rarity": 12,
+      "document_id": 5199550690585763036
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-28273",
+  "title": "Ginger Cookie",
+  "num": 28273,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Brownie",
+      "rarity": 12,
+      "document_id": 5233340035822019626
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Trickster Fox",
+      "rarity": 4,
+      "document_id": 5546605024722812982
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 20
+    }
+  ]
+}

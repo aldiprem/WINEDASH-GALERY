@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-40041",
+  "title": "Lol Pop",
+  "num": 40041,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Foil",
+      "rarity": 10,
+      "document_id": 5226938803679162970
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cobra",
+      "rarity": 4,
+      "document_id": 5436400690803009263
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-243299",
+  "title": "Instant Ramen",
+  "num": 243299,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Lobster",
+      "rarity": 20,
+      "document_id": 5309835190070181567
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nemean Lion",
+      "rarity": 4,
+      "document_id": 5544006887336312835
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 15
+    }
+  ]
+}

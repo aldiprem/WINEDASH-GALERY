@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-118637",
+  "title": "Faith Amulet",
+  "num": 118637,
+  "availability_issued": 135386,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bronze Tower",
+      "rarity": 30,
+      "document_id": 5372976453476449440
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bonsai",
+      "rarity": 7,
+      "document_id": 5582749674189619216
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 10
+    }
+  ]
+}

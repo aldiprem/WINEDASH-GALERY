@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-99561",
+  "title": "Lol Pop",
+  "num": 99561,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Shift",
+      "rarity": 10,
+      "document_id": 5226963985072422325
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Full Moon",
+      "rarity": 5,
+      "document_id": 5550987214214660101
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "ValentineBox-20991",
+  "title": "Valentine Box",
+  "num": 20991,
+  "availability_issued": 34207,
+  "availability_total": 41025,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crime Scene",
+      "rarity": 20,
+      "document_id": 5411453463458507201
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Griffon",
+      "rarity": 6,
+      "document_id": 5544085429403254798
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 15
+    }
+  ]
+}

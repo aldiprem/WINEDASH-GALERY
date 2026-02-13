@@ -1,0 +1,26 @@
+{
+  "slug": "SantaHat-8304",
+  "title": "Santa Hat",
+  "num": 8304,
+  "availability_issued": 68215,
+  "availability_total": 89034,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Minted Rose",
+      "rarity": 20,
+      "document_id": 5397877956599112689
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Book",
+      "rarity": 2,
+      "document_id": 5440416579714047896
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 20
+    }
+  ]
+}

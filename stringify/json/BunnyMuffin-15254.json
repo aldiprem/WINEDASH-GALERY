@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-15254",
+  "title": "Bunny Muffin",
+  "num": 15254,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Macaron",
+      "rarity": 14,
+      "document_id": 5235514951426138538
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower Tulip",
+      "rarity": 10,
+      "document_id": 5433949381168489107
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 15
+    }
+  ]
+}

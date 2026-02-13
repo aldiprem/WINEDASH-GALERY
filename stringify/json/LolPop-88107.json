@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-88107",
+  "title": "Lol Pop",
+  "num": 88107,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mandarin",
+      "rarity": 12,
+      "document_id": 5393156941432253434
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gamepad",
+      "rarity": 5,
+      "document_id": 5440404794323786424
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 20
+    }
+  ]
+}

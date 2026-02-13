@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-198331",
+  "title": "Xmas Stocking",
+  "num": 198331,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Retro Disco",
+      "rarity": 10,
+      "document_id": 5323758773964138364
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shooting Star",
+      "rarity": 12,
+      "document_id": 5434137758434093445
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carmine",
+      "rarity": 12
+    }
+  ]
+}

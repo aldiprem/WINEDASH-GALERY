@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-98495",
+  "title": "Snoop Cigar",
+  "num": 98495,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Debut Album",
+      "rarity": 25,
+      "document_id": 5375410175219890381
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wizard Hat",
+      "rarity": 4,
+      "document_id": 5314292219367155055
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Marine Blue",
+      "rarity": 12
+    }
+  ]
+}

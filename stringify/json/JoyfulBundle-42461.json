@@ -1,0 +1,31 @@
+{
+  "slug": "JoyfulBundle-42461",
+  "title": "Joyful Bundle",
+  "num": 42461,
+  "availability_issued": 78211,
+  "availability_total": 114092,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Frankenstein",
+      "rarity": 15,
+      "document_id": 5429191669801053866
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crusader",
+      "rarity": 7,
+      "document_id": 5440395491424625401
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cappuccino",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

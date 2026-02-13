@@ -1,0 +1,26 @@
+{
+  "slug": "PlushPepe-11",
+  "title": "Plush Pepe",
+  "num": 11,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cold Heart",
+      "rarity": 30,
+      "document_id": 5424955857089616771
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Alkonost",
+      "rarity": 4,
+      "document_id": 5733143082250010685
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 15
+    }
+  ]
+}

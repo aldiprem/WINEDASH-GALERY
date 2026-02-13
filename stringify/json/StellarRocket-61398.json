@@ -1,0 +1,26 @@
+{
+  "slug": "StellarRocket-61398",
+  "title": "Stellar Rocket",
+  "num": 61398,
+  "availability_issued": 135408,
+  "availability_total": 156318,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rocket Plush",
+      "rarity": 25,
+      "document_id": 5213286202156806623
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Grape",
+      "rarity": 5,
+      "document_id": 5438330514098381824
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Marine Blue",
+      "rarity": 15
+    }
+  ]
+}

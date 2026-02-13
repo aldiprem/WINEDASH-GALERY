@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-166888",
+  "title": "Happy Brownie",
+  "num": 166888,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubble Tea",
+      "rarity": 30,
+      "document_id": 5332598031407678278
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fish Skeleton",
+      "rarity": 5,
+      "document_id": 5436257986219631092
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Hunter Green",
+      "rarity": 15
+    }
+  ]
+}

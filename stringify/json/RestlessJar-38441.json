@@ -1,0 +1,26 @@
+{
+  "slug": "RestlessJar-38441",
+  "title": "Restless Jar",
+  "num": 38441,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sketch",
+      "rarity": 30,
+      "document_id": 5431585053211652598
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Neptune",
+      "rarity": 2,
+      "document_id": 5551092428028510218
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

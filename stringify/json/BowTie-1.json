@@ -1,0 +1,26 @@
+{
+  "slug": "BowTie-1",
+  "title": "Bow Tie",
+  "num": 1,
+  "availability_issued": 54803,
+  "availability_total": 65687,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Elephant",
+      "rarity": 25,
+      "document_id": 5359648645970945235
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Royal Crown",
+      "rarity": 4,
+      "document_id": 5440361101621484148
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mustard",
+      "rarity": 10
+    }
+  ]
+}

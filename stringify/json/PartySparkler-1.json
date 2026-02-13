@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-1",
+  "title": "Party Sparkler",
+  "num": 1,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Burst",
+      "rarity": 14,
+      "document_id": 5231056981531320962
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bishop",
+      "rarity": 2,
+      "document_id": 5440508895741109239
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 20
+    }
+  ]
+}

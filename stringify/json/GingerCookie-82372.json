@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-82372",
+  "title": "Ginger Cookie",
+  "num": 82372,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Scarf",
+      "rarity": 8,
+      "document_id": 5233722919271555132
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Evil Dragon",
+      "rarity": 4,
+      "document_id": 5551121045395603469
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 20
+    }
+  ]
+}

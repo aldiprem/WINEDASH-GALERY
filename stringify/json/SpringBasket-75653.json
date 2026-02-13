@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-75653",
+  "title": "Spring Basket",
+  "num": 75653,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Baby Dragon",
+      "rarity": 30,
+      "document_id": 5395418727044908719
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crystal",
+      "rarity": 4,
+      "document_id": 5550870253665255444
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Moonstone",
+      "rarity": 12
+    }
+  ]
+}

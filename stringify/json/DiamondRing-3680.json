@@ -1,0 +1,26 @@
+{
+  "slug": "DiamondRing-3680",
+  "title": "Diamond Ring",
+  "num": 3680,
+  "availability_issued": 32240,
+  "availability_total": 32924,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Light",
+      "rarity": 15,
+      "document_id": 5271904199280453525
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flaming Heart",
+      "rarity": 5,
+      "document_id": 5289822124234532044
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 20
+    }
+  ]
+}

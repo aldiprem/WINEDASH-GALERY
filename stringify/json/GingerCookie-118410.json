@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-118410",
+  "title": "Ginger Cookie",
+  "num": 118410,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Champagne",
+      "rarity": 16,
+      "document_id": 5449402308427273630
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Evil Dragon",
+      "rarity": 4,
+      "document_id": 5551121045395603469
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Satin Gold",
+      "rarity": 20
+    }
+  ]
+}

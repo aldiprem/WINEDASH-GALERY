@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-269693",
+  "title": "Instant Ramen",
+  "num": 269693,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Slurp-Slurp",
+      "rarity": 25,
+      "document_id": 5319286205475489134
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jewel",
+      "rarity": 5,
+      "document_id": 5550848478181064732
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-113859",
+  "title": "Whip Cupcake",
+  "num": 113859,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Arizona",
+      "rarity": 25,
+      "document_id": 5274118877691804873
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Tie",
+      "rarity": 4,
+      "document_id": 5440674853277426823
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-42214",
+  "title": "Mousse Cake",
+  "num": 42214,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Meatcake",
+      "rarity": 20,
+      "document_id": 5386628917559852070
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Teddy Bear",
+      "rarity": 2,
+      "document_id": 5285072191052868197
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Purple",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-211951",
+  "title": "Instant Ramen",
+  "num": 211951,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cat Food",
+      "rarity": 25,
+      "document_id": 5370699352010425073
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ouroboros",
+      "rarity": 4,
+      "document_id": 5440776901700379950
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Grape",
+      "rarity": 12
+    }
+  ]
+}

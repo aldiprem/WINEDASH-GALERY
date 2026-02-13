@@ -1,0 +1,26 @@
+{
+  "slug": "JackInTheBox-19219",
+  "title": "Jack-in-the-Box",
+  "num": 19219,
+  "availability_issued": 96093,
+  "availability_total": 97345,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Doghouse",
+      "rarity": 30,
+      "document_id": 5429648405213246511
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Monstera",
+      "rarity": 4,
+      "document_id": 5440538350626823546
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-56073",
+  "title": "Ice Cream",
+  "num": 56073,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cold Steel",
+      "rarity": 30,
+      "document_id": 5368578003238419778
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Griffon",
+      "rarity": 2,
+      "document_id": 5544085429403254798
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

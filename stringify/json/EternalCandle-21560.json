@@ -1,0 +1,26 @@
+{
+  "slug": "EternalCandle-21560",
+  "title": "Eternal Candle",
+  "num": 21560,
+  "availability_issued": 44951,
+  "availability_total": 46590,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "First Dawn",
+      "rarity": 15,
+      "document_id": 5422413305169863131
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Letter",
+      "rarity": 5,
+      "document_id": 5440699386130620745
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 20
+    }
+  ]
+}

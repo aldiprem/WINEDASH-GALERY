@@ -1,0 +1,26 @@
+{
+  "slug": "SpyAgaric-58116",
+  "title": "Spy Agaric",
+  "num": 58116,
+  "availability_issued": 86677,
+  "availability_total": 89438,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Polka Dot",
+      "rarity": 15,
+      "document_id": 5429514445183280108
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coin Purse",
+      "rarity": 4,
+      "document_id": 5434033386433830171
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 20
+    }
+  ]
+}

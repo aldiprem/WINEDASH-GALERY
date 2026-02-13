@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-18636",
+  "title": "Star Notepad",
+  "num": 18636,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rainbow",
+      "rarity": 13,
+      "document_id": 5447351298334681528
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eikthyrnir",
+      "rarity": 3,
+      "document_id": 5722379245666172949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

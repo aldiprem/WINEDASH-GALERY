@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-54115",
+  "title": "Pretty Posy",
+  "num": 54115,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hollywood",
+      "rarity": 30,
+      "document_id": 5197249331144461055
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spring Chick",
+      "rarity": 7,
+      "document_id": 5483261236428668939
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 12
+    }
+  ]
+}

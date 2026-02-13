@@ -1,0 +1,31 @@
+{
+  "slug": "ValentineBox-13516",
+  "title": "Valentine Box",
+  "num": 13516,
+  "availability_issued": 34207,
+  "availability_total": 41025,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crime Scene",
+      "rarity": 20,
+      "document_id": 5411453463458507201
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cupcake",
+      "rarity": 7,
+      "document_id": 5436346024459266141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

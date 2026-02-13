@@ -1,0 +1,26 @@
+{
+  "slug": "BDayCandle-1",
+  "title": "B-Day Candle",
+  "num": 1,
+  "availability_issued": 267370,
+  "availability_total": 307521,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wait a Minute",
+      "rarity": 8,
+      "document_id": 5215254160466799783
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wasp",
+      "rarity": 5,
+      "document_id": 5440853115895045152
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Steel Grey",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-14412",
+  "title": "Jelly Bunny",
+  "num": 14412,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Spooky",
+      "rarity": 20,
+      "document_id": 5424795087873793395
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Drug",
+      "rarity": 5,
+      "document_id": 5440721062830561949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 20
+    }
+  ]
+}

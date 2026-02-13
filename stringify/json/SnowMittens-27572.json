@@ -1,0 +1,26 @@
+{
+  "slug": "SnowMittens-27572",
+  "title": "Snow Mittens",
+  "num": 27572,
+  "availability_issued": 38414,
+  "availability_total": 49969,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mintens",
+      "rarity": 13,
+      "document_id": 5228831711730622682
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ornament",
+      "rarity": 20,
+      "document_id": 5438575529097706726
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnowMittens-10504",
+  "title": "Snow Mittens",
+  "num": 10504,
+  "availability_issued": 38414,
+  "availability_total": 49969,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Honey Wine",
+      "rarity": 13,
+      "document_id": 5228684359992630851
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hand of God",
+      "rarity": 2,
+      "document_id": 5434022906713630856
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 15
+    }
+  ]
+}

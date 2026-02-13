@@ -1,0 +1,26 @@
+{
+  "slug": "PetSnake-69410",
+  "title": "Pet Snake",
+  "num": 69410,
+  "availability_issued": 174528,
+  "availability_total": 279106,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tempest",
+      "rarity": 45,
+      "document_id": 5402469731905070969
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Apple",
+      "rarity": 8,
+      "document_id": 5434047181868785167
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 15
+    }
+  ]
+}

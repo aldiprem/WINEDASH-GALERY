@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-11659",
+  "title": "Clover Pin",
+  "num": 11659,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Golden Ale",
+      "rarity": 20,
+      "document_id": 5258293782926881895
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Keffiyeh",
+      "rarity": 2,
+      "document_id": 5314391304262674154
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Black",
+      "rarity": 12
+    }
+  ]
+}

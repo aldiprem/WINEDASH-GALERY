@@ -1,0 +1,26 @@
+{
+  "slug": "BlingBinky-1",
+  "title": "Bling Binky",
+  "num": 1,
+  "availability_issued": 9309,
+  "availability_total": 9990,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Clown",
+      "rarity": 20,
+      "document_id": 5188406319899509804
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coconut",
+      "rarity": 7,
+      "document_id": 5440762122717911802
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Persimmon",
+      "rarity": 12
+    }
+  ]
+}

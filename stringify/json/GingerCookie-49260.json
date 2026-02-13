@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-49260",
+  "title": "Ginger Cookie",
+  "num": 49260,
+  "availability_issued": 142089,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sunspot",
+      "rarity": 17,
+      "document_id": 5472351817633392823
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Snowflake",
+      "rarity": 18,
+      "document_id": 5438629456707075929
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

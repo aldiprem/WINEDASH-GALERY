@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-80095",
+  "title": "Spring Basket",
+  "num": 80095,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Capybara",
+      "rarity": 30,
+      "document_id": 5397616676558635042
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Kite",
+      "rarity": 7,
+      "document_id": 5440869715943644373
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 15
+    }
+  ]
+}

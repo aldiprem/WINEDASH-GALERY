@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-23646",
+  "title": "Spiced Wine",
+  "num": 23646,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Aquarium",
+      "rarity": 8,
+      "document_id": 5429425895842541010
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Clover",
+      "rarity": 3,
+      "document_id": 5440771395552305875
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

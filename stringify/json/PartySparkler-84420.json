@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-84420",
+  "title": "Party Sparkler",
+  "num": 84420,
+  "availability_issued": 176755,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Party Hard",
+      "rarity": 4,
+      "document_id": 5238133434072719828
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Royal Crown",
+      "rarity": 4,
+      "document_id": 5440361101621484148
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

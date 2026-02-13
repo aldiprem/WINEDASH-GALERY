@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-166286",
+  "title": "Cookie Heart",
+  "num": 166286,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Druid Snack",
+      "rarity": 15,
+      "document_id": 5222375710164804211
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flying Heart",
+      "rarity": 6,
+      "document_id": 5307512587720602939
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 15
+    }
+  ]
+}

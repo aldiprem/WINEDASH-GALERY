@@ -1,0 +1,26 @@
+{
+  "slug": "MoneyPot-50224",
+  "title": "Money Pot",
+  "num": 50224,
+  "availability_issued": 69424,
+  "availability_total": 91779,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Elizabeth II",
+      "rarity": 20,
+      "document_id": 5194941391813249513
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coat of Arms",
+      "rarity": 2,
+      "document_id": 5433846813054494068
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 10
+    }
+  ]
+}

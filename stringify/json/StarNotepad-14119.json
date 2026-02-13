@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-14119",
+  "title": "Star Notepad",
+  "num": 14119,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cyprus",
+      "rarity": 13,
+      "document_id": 5211203254687392527
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eye of Horus",
+      "rarity": 5,
+      "document_id": 5544416335158575123
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 15
+    }
+  ]
+}

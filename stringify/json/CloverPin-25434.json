@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-25434",
+  "title": "Clover Pin",
+  "num": 25434,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Celtic Knot",
+      "rarity": 30,
+      "document_id": 5231021895943483044
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spider Web",
+      "rarity": 4,
+      "document_id": 5440362952752389413
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-4330",
+  "title": "Xmas Stocking",
+  "num": 4330,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Banana Love",
+      "rarity": 10,
+      "document_id": 5352913166588210796
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bee",
+      "rarity": 5,
+      "document_id": 5434002913640866822
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-58450",
+  "title": "Star Notepad",
+  "num": 58450,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Skies Above",
+      "rarity": 13,
+      "document_id": 5208636642360849170
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hand of God",
+      "rarity": 4,
+      "document_id": 5434022906713630856
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 10
+    }
+  ]
+}

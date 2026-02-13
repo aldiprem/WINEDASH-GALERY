@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-105855",
+  "title": "Faith Amulet",
+  "num": 105855,
+  "availability_issued": 135385,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rose Gold",
+      "rarity": 30,
+      "document_id": 5305256196586896388
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wreath",
+      "rarity": 4,
+      "document_id": 5440727526756342476
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Black",
+      "rarity": 15
+    }
+  ]
+}

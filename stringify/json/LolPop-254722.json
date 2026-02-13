@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-254722",
+  "title": "Lol Pop",
+  "num": 254722,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Icicle",
+      "rarity": 5,
+      "document_id": 5224531289826157876
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flag",
+      "rarity": 4,
+      "document_id": 5546248748595675149
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 15
+    }
+  ]
+}

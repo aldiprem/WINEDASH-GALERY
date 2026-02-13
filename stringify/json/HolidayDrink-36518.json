@@ -1,0 +1,26 @@
+{
+  "slug": "HolidayDrink-36518",
+  "title": "Holiday Drink",
+  "num": 36518,
+  "availability_issued": 82869,
+  "availability_total": 120989,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Low Poly",
+      "rarity": 18,
+      "document_id": 5341758780038213240
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Yin-Yang",
+      "rarity": 4,
+      "document_id": 5585005627236679696
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Emerald",
+      "rarity": 12
+    }
+  ]
+}

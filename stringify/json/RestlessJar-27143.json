@@ -1,0 +1,26 @@
+{
+  "slug": "RestlessJar-27143",
+  "title": "Restless Jar",
+  "num": 27143,
+  "availability_issued": 99473,
+  "availability_total": 120184,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Aquarium",
+      "rarity": 25,
+      "document_id": 5470183103962048494
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crescent",
+      "rarity": 5,
+      "document_id": 5546726460628140073
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-50908",
+  "title": "Mousse Cake",
+  "num": 50908,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ice Cream",
+      "rarity": 25,
+      "document_id": 5382039603270157317
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Diamonds",
+      "rarity": 2,
+      "document_id": 5440666370717017730
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 10
+    }
+  ]
+}

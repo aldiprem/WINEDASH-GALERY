@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-58818",
+  "title": "Mousse Cake",
+  "num": 58818,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Meatcake",
+      "rarity": 20,
+      "document_id": 5386628917559852070
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rose",
+      "rarity": 4,
+      "document_id": 5548919496699281419
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pistachio",
+      "rarity": 12
+    }
+  ]
+}

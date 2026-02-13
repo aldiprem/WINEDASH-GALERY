@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-129244",
+  "title": "Clover Pin",
+  "num": 129244,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Kaleidoscope",
+      "rarity": 20,
+      "document_id": 5231332374834344855
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hammerhead",
+      "rarity": 4,
+      "document_id": 5440572770494734727
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 12
+    }
+  ]
+}

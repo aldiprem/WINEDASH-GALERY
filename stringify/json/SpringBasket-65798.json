@@ -1,0 +1,31 @@
+{
+  "slug": "SpringBasket-65798",
+  "title": "Spring Basket",
+  "num": 65798,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Penguin",
+      "rarity": 30,
+      "document_id": 5397904619756092358
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Top Hat",
+      "rarity": 2,
+      "document_id": 5424997398013306322
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

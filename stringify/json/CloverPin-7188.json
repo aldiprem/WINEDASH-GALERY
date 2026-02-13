@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-7188",
+  "title": "Clover Pin",
+  "num": 7188,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Star Princess",
+      "rarity": 20,
+      "document_id": 5231386384048090692
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nemean Lion",
+      "rarity": 2,
+      "document_id": 5544006887336312835
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

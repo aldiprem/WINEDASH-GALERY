@@ -1,0 +1,31 @@
+{
+  "slug": "WhipCupcake-58822",
+  "title": "Whip Cupcake",
+  "num": 58822,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Spiritwood",
+      "rarity": 25,
+      "document_id": 5293997884713239147
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Maple Leaf",
+      "rarity": 4,
+      "document_id": 5436212648544854698
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

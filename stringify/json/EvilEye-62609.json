@@ -1,0 +1,26 @@
+{
+  "slug": "EvilEye-62609",
+  "title": "Evil Eye",
+  "num": 62609,
+  "availability_issued": 72951,
+  "availability_total": 85204,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pale Palette",
+      "rarity": 30,
+      "document_id": 5426883249433501889
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Skull",
+      "rarity": 24,
+      "document_id": 5422475891433304226
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

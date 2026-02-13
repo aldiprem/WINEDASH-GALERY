@@ -1,0 +1,26 @@
+{
+  "slug": "TopHat-18525",
+  "title": "Top Hat",
+  "num": 18525,
+  "availability_issued": 34300,
+  "availability_total": 35099,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Maestro",
+      "rarity": 30,
+      "document_id": 5314399413160929373
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Teru Bōzu",
+      "rarity": 4,
+      "document_id": 5584796500984070156
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 15
+    }
+  ]
+}

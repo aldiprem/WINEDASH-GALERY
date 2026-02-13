@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-190061",
+  "title": "Ice Cream",
+  "num": 190061,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crystal",
+      "rarity": 10,
+      "document_id": 5350647348001272191
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bug",
+      "rarity": 7,
+      "document_id": 5433633602287985268
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JackInTheBox-48300",
+  "title": "Jack-in-the-Box",
+  "num": 48300,
+  "availability_issued": 96093,
+  "availability_total": 97345,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Music Box",
+      "rarity": 30,
+      "document_id": 5422754072170097072
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shuriken",
+      "rarity": 2,
+      "document_id": 5582258274096381967
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

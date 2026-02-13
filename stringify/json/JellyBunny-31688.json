@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-31688",
+  "title": "Jelly Bunny",
+  "num": 31688,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Light Wobble",
+      "rarity": 5,
+      "document_id": 5397830175087945499
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crab",
+      "rarity": 5,
+      "document_id": 5424858399986705924
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

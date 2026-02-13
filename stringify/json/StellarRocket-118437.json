@@ -1,0 +1,31 @@
+{
+  "slug": "StellarRocket-118437",
+  "title": "Stellar Rocket",
+  "num": 118437,
+  "availability_issued": 135408,
+  "availability_total": 156318,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fireworks",
+      "rarity": 30,
+      "document_id": 5289714788706841965
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Thief",
+      "rarity": 5,
+      "document_id": 5425080690314078227
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Feldgrau",
+      "rarity": 15
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "DiamondRing-9381",
+  "title": "Diamond Ring",
+  "num": 9381,
+  "availability_issued": 32240,
+  "availability_total": 32924,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Princess Cut",
+      "rarity": 15,
+      "document_id": 5271952607856848942
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Calm Wolf",
+      "rarity": 5,
+      "document_id": 5433775744230644578
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 20
+    }
+  ]
+}

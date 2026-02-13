@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-151498",
+  "title": "Clover Pin",
+  "num": 151498,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Star Princess",
+      "rarity": 20,
+      "document_id": 5231386384048090692
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bandana",
+      "rarity": 4,
+      "document_id": 5312064969586538052
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

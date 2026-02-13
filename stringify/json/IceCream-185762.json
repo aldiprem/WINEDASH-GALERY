@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-185762",
+  "title": "Ice Cream",
+  "num": 185762,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubbles",
+      "rarity": 20,
+      "document_id": 5314362158614611167
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Double Axe",
+      "rarity": 4,
+      "document_id": 5551071537307582479
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

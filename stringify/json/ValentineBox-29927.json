@@ -1,0 +1,26 @@
+{
+  "slug": "ValentineBox-29927",
+  "title": "Valentine Box",
+  "num": 29927,
+  "availability_issued": 34207,
+  "availability_total": 41025,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vibrant",
+      "rarity": 25,
+      "document_id": 5429178952402891855
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Greek Helmet",
+      "rarity": 7,
+      "document_id": 5546610367662129158
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

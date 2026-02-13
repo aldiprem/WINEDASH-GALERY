@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-265992",
+  "title": "Ice Cream",
+  "num": 265992,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Kraken",
+      "rarity": 5,
+      "document_id": 5366592753390093400
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Manta Ray",
+      "rarity": 2,
+      "document_id": 5434043848974165995
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fire Engine",
+      "rarity": 10
+    }
+  ]
+}

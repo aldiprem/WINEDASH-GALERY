@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-34603",
+  "title": "Jingle Bells",
+  "num": 34603,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Shiny Opal",
+      "rarity": 14,
+      "document_id": 5237951344639237728
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ice Pop",
+      "rarity": 24,
+      "document_id": 5434148663356054664
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 20
+    }
+  ]
+}

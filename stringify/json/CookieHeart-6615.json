@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-6615",
+  "title": "Cookie Heart",
+  "num": 6615,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Late Fall",
+      "rarity": 10,
+      "document_id": 5231422934219780509
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Christmas Tree",
+      "rarity": 12,
+      "document_id": 5438542608173383432
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

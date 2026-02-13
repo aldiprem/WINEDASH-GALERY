@@ -1,0 +1,26 @@
+{
+  "slug": "LovePotion-18975",
+  "title": "Love Potion",
+  "num": 18975,
+  "availability_issued": 29073,
+  "availability_total": 30412,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sunset Serum",
+      "rarity": 25,
+      "document_id": 5285248624014421683
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hamburger",
+      "rarity": 2,
+      "document_id": 5440896293201272329
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

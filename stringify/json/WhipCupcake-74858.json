@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-74858",
+  "title": "Whip Cupcake",
+  "num": 74858,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Biohazard",
+      "rarity": 20,
+      "document_id": 5287559307829737300
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cupid",
+      "rarity": 4,
+      "document_id": 5305677962375347073
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Black",
+      "rarity": 15
+    }
+  ]
+}

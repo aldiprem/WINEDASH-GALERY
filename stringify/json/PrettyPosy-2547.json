@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-2547",
+  "title": "Pretty Posy",
+  "num": 2547,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rock Band",
+      "rarity": 30,
+      "document_id": 5204066324711509485
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower Tulip",
+      "rarity": 4,
+      "document_id": 5433949381168489107
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

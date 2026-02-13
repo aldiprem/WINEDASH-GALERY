@@ -1,0 +1,26 @@
+{
+  "slug": "DeskCalendar-240887",
+  "title": "Desk Calendar",
+  "num": 240887,
+  "availability_issued": 306379,
+  "availability_total": 337481,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Launch Date",
+      "rarity": 1,
+      "document_id": 5465591625008848563
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Avocado",
+      "rarity": 5,
+      "document_id": 5433953616006243349
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Purple",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "HangingStar-32390",
+  "title": "Hanging Star",
+  "num": 32390,
+  "availability_issued": 44509,
+  "availability_total": 58118,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hot Spring",
+      "rarity": 14,
+      "document_id": 5235748576172207919
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Chest",
+      "rarity": 16,
+      "document_id": 5424748805306211426
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 20
+    }
+  ]
+}

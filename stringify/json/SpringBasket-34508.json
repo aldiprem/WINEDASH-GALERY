@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-34508",
+  "title": "Spring Basket",
+  "num": 34508,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lovely Lamb",
+      "rarity": 30,
+      "document_id": 5350799248109633181
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pumpkin Coach",
+      "rarity": 7,
+      "document_id": 5551237516318736388
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 12
+    }
+  ]
+}

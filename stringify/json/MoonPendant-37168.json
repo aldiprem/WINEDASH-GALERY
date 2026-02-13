@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-37168",
+  "title": "Moon Pendant",
+  "num": 37168,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Calm Sunset",
+      "rarity": 20,
+      "document_id": 5292276749583807471
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Toy Bucket",
+      "rarity": 9,
+      "document_id": 5433996514139595496
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

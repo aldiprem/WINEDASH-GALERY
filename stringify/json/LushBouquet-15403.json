@@ -1,0 +1,26 @@
+{
+  "slug": "LushBouquet-15403",
+  "title": "Lush Bouquet",
+  "num": 15403,
+  "availability_issued": 104644,
+  "availability_total": 140116,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Catnip",
+      "rarity": 15,
+      "document_id": 5436147657099735075
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sumerian Bird",
+      "rarity": 2,
+      "document_id": 5724535083025563683
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

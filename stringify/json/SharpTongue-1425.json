@@ -1,0 +1,26 @@
+{
+  "slug": "SharpTongue-1425",
+  "title": "Sharp Tongue",
+  "num": 1425,
+  "availability_issued": 8092,
+  "availability_total": 8546,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sweet Berry",
+      "rarity": 20,
+      "document_id": 5429386519582369388
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Water Drops",
+      "rarity": 6,
+      "document_id": 5305716187584282659
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Hunter Green",
+      "rarity": 20
+    }
+  ]
+}

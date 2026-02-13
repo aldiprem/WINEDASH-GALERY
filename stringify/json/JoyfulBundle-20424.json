@@ -1,0 +1,26 @@
+{
+  "slug": "JoyfulBundle-20424",
+  "title": "Joyful Bundle",
+  "num": 20424,
+  "availability_issued": 78211,
+  "availability_total": 114092,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Professor",
+      "rarity": 10,
+      "document_id": 5344048298254694432
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Planet",
+      "rarity": 4,
+      "document_id": 5418023891543024129
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Roman Silver",
+      "rarity": 15
+    }
+  ]
+}

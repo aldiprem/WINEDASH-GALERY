@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-990",
+  "title": "Crystal Ball",
+  "num": 990,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Death Wish",
+      "rarity": 30,
+      "document_id": 5397697610922350735
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Blood Drop",
+      "rarity": 20,
+      "document_id": 5440812129022142235
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Emerald",
+      "rarity": 20
+    }
+  ]
+}

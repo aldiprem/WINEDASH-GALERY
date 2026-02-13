@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-19981",
+  "title": "Snoop Cigar",
+  "num": 19981,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bandana",
+      "rarity": 30,
+      "document_id": 5375090870171236228
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bread",
+      "rarity": 7,
+      "document_id": 5436213773826285560
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 12
+    }
+  ]
+}

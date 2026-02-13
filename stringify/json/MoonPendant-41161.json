@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-41161",
+  "title": "Moon Pendant",
+  "num": 41161,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Precious Pearl",
+      "rarity": 20,
+      "document_id": 5465465619258307033
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Octopus",
+      "rarity": 10,
+      "document_id": 5440588210902163577
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "English Violet",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnowMittens-6724",
+  "title": "Snow Mittens",
+  "num": 6724,
+  "availability_issued": 38414,
+  "availability_total": 49969,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Polka",
+      "rarity": 8,
+      "document_id": 5228750743007163586
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dessert",
+      "rarity": 24,
+      "document_id": 5433791150278337082
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

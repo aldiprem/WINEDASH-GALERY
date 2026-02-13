@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-98942",
+  "title": "Instant Ramen",
+  "num": 98942,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sacred Grove",
+      "rarity": 25,
+      "document_id": 5386861709082262766
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Griffon",
+      "rarity": 4,
+      "document_id": 5544085429403254798
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Orange",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "FreshSocks-105880",
+  "title": "Fresh Socks",
+  "num": 105880,
+  "availability_issued": 158627,
+  "availability_total": 200509,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Barry Allen",
+      "rarity": 20,
+      "document_id": 5355147954036433775
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Amour Scoops",
+      "rarity": 5,
+      "document_id": 5305556238707210683
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 12
+    }
+  ]
+}

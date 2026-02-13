@@ -1,0 +1,26 @@
+{
+  "slug": "SnowGlobe-49102",
+  "title": "Snow Globe",
+  "num": 49102,
+  "availability_issued": 52013,
+  "availability_total": 72788,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Diamond",
+      "rarity": 30,
+      "document_id": 5334597596381996733
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Christmas Tree",
+      "rarity": 18,
+      "document_id": 5438542608173383432
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    }
+  ]
+}

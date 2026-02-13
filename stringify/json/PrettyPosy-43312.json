@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-43312",
+  "title": "Pretty Posy",
+  "num": 43312,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vampire",
+      "rarity": 10,
+      "document_id": 5199790263861543636
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bamboo",
+      "rarity": 7,
+      "document_id": 5584941069583253528
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Copper",
+      "rarity": 15
+    }
+  ]
+}

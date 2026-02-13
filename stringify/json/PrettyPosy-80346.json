@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-80346",
+  "title": "Pretty Posy",
+  "num": 80346,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hollywood",
+      "rarity": 30,
+      "document_id": 5197249331144461055
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Deerstalker",
+      "rarity": 4,
+      "document_id": 5314761564803328059
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Neon Blue",
+      "rarity": 12
+    }
+  ]
+}

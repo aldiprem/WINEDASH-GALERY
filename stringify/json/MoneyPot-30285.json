@@ -1,0 +1,26 @@
+{
+  "slug": "MoneyPot-30285",
+  "title": "Money Pot",
+  "num": 30285,
+  "availability_issued": 69424,
+  "availability_total": 91779,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Apiary",
+      "rarity": 30,
+      "document_id": 5463288646364854144
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jellyfish",
+      "rarity": 5,
+      "document_id": 5433978836054203452
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

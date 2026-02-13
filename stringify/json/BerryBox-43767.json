@@ -1,0 +1,26 @@
+{
+  "slug": "BerryBox-43767",
+  "title": "Berry Box",
+  "num": 43767,
+  "availability_issued": 50377,
+  "availability_total": 66580,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Iridescent",
+      "rarity": 20,
+      "document_id": 5415871442912829757
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Watermelon",
+      "rarity": 11,
+      "document_id": 5433649575271359320
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 20
+    }
+  ]
+}

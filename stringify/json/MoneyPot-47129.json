@@ -1,0 +1,26 @@
+{
+  "slug": "MoneyPot-47129",
+  "title": "Money Pot",
+  "num": 47129,
+  "availability_issued": 69424,
+  "availability_total": 91779,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Witch Brew",
+      "rarity": 30,
+      "document_id": 5422511599791409269
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crusader",
+      "rarity": 5,
+      "document_id": 5440395491424625401
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Marine Blue",
+      "rarity": 10
+    }
+  ]
+}

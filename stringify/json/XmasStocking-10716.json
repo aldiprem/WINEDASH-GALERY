@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-10716",
+  "title": "Xmas Stocking",
+  "num": 10716,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Glitter",
+      "rarity": 12,
+      "document_id": 5278762347224132904
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Aztec Falcon",
+      "rarity": 5,
+      "document_id": 5544328988408676361
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

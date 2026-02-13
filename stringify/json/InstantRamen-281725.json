@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-281725",
+  "title": "Instant Ramen",
+  "num": 281725,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Abduction",
+      "rarity": 25,
+      "document_id": 5393199706421629390
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Astronaut",
+      "rarity": 2,
+      "document_id": 5550968793099927574
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

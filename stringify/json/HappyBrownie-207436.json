@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-207436",
+  "title": "Happy Brownie",
+  "num": 207436,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Slime",
+      "rarity": 30,
+      "document_id": 5332573374000432079
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bottle",
+      "rarity": 4,
+      "document_id": 5424763360950380146
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopDogg-99045",
+  "title": "Snoop Dogg",
+  "num": 99045,
+  "availability_issued": 580008,
+  "availability_total": 593781,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chow Wow",
+      "rarity": 20,
+      "document_id": 5400124885919893067
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Puzzle",
+      "rarity": 5,
+      "document_id": 5548888405431025670
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "EasterEgg-158514",
+  "title": "Easter Egg",
+  "num": 158514,
+  "availability_issued": 162175,
+  "availability_total": 173176,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pastel Candy",
+      "rarity": 10,
+      "document_id": 5190691135126793273
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Paper Lantern",
+      "rarity": 3,
+      "document_id": 5582394600653324300
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 10
+    }
+  ]
+}

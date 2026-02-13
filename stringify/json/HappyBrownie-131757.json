@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-131757",
+  "title": "Happy Brownie",
+  "num": 131757,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Strawberry",
+      "rarity": 30,
+      "document_id": 5375067050282618866
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Banana",
+      "rarity": 5,
+      "document_id": 5548920390052478992
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 12
+    }
+  ]
+}

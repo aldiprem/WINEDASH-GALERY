@@ -1,0 +1,26 @@
+{
+  "slug": "LushBouquet-12101",
+  "title": "Lush Bouquet",
+  "num": 12101,
+  "availability_issued": 104643,
+  "availability_total": 140116,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Yarn Balls",
+      "rarity": 30,
+      "document_id": 5249344149118806579
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Top Hat",
+      "rarity": 4,
+      "document_id": 5424997398013306322
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Onyx Black",
+      "rarity": 15
+    }
+  ]
+}

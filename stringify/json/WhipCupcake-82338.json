@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-82338",
+  "title": "Whip Cupcake",
+  "num": 82338,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "First Bite",
+      "rarity": 30,
+      "document_id": 5334803411214823745
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Baphomet",
+      "rarity": 7,
+      "document_id": 5721951724621529107
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Orange",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-149848",
+  "title": "Lol Pop",
+  "num": 149848,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cookie Dip",
+      "rarity": 5,
+      "document_id": 5222305195391740380
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Worker Ant",
+      "rarity": 5,
+      "document_id": 5548934649343901709
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chocolate",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnowMittens-13797",
+  "title": "Snow Mittens",
+  "num": 13797,
+  "availability_issued": 38414,
+  "availability_total": 49969,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wet Clap",
+      "rarity": 4,
+      "document_id": 5228934769470890240
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cocktail",
+      "rarity": 16,
+      "document_id": 5424853890271044722
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 20
+    }
+  ]
+}

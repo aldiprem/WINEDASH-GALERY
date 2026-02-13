@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-1",
+  "title": "Cookie Heart",
+  "num": 1,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Shiny Gem",
+      "rarity": 15,
+      "document_id": 5222265917915815199
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Magic Wand",
+      "rarity": 12,
+      "document_id": 5422596236416936455
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 20
+    }
+  ]
+}

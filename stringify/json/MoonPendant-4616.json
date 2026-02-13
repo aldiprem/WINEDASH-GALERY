@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-4616",
+  "title": "Moon Pendant",
+  "num": 4616,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Silver Blue",
+      "rarity": 25,
+      "document_id": 5465308049793120765
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Tie",
+      "rarity": 5,
+      "document_id": 5440674853277426823
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    }
+  ]
+}

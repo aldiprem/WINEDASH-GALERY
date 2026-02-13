@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-93811",
+  "title": "Ice Cream",
+  "num": 93811,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Extra Spicy",
+      "rarity": 20,
+      "document_id": 5350717154104742970
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sun Lion",
+      "rarity": 7,
+      "document_id": 5722053983497879559
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

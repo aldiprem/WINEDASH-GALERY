@@ -1,0 +1,26 @@
+{
+  "slug": "StellarRocket-127727",
+  "title": "Stellar Rocket",
+  "num": 127727,
+  "availability_issued": 135408,
+  "availability_total": 156318,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Laika",
+      "rarity": 20,
+      "document_id": 5210716733677008867
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pirate Hat",
+      "rarity": 4,
+      "document_id": 5312418230646632393
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Purple",
+      "rarity": 12
+    }
+  ]
+}

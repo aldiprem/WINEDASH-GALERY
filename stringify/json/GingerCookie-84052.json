@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-84052",
+  "title": "Ginger Cookie",
+  "num": 84052,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Choco Swirl",
+      "rarity": 9,
+      "document_id": 5197413540629079525
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candle",
+      "rarity": 12,
+      "document_id": 5440862947075185091
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

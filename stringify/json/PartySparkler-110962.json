@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-110962",
+  "title": "Party Sparkler",
+  "num": 110962,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Marksman",
+      "rarity": 11,
+      "document_id": 5229050424350239146
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gear",
+      "rarity": 5,
+      "document_id": 5440500005158804832
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 15
+    }
+  ]
+}

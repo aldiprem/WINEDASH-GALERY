@@ -1,0 +1,26 @@
+{
+  "slug": "LovePotion-5495",
+  "title": "Love Potion",
+  "num": 5495,
+  "availability_issued": 29073,
+  "availability_total": 30412,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rusty Water",
+      "rarity": 25,
+      "document_id": 5287473829390607716
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Origami",
+      "rarity": 5,
+      "document_id": 5582666983184269318
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

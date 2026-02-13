@@ -1,0 +1,26 @@
+{
+  "slug": "BerryBox-1977",
+  "title": "Berry Box",
+  "num": 1977,
+  "availability_issued": 50377,
+  "availability_total": 66580,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Comic Book",
+      "rarity": 15,
+      "document_id": 5415869956854146673
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Croissant",
+      "rarity": 2,
+      "document_id": 5438553027764052896
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Onyx Black",
+      "rarity": 20
+    }
+  ]
+}

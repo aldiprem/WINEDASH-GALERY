@@ -1,0 +1,26 @@
+{
+  "slug": "HolidayDrink-76298",
+  "title": "Holiday Drink",
+  "num": 76298,
+  "availability_issued": 82869,
+  "availability_total": 120989,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mermaid",
+      "rarity": 5,
+      "document_id": 5381855211734199618
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Golden Scarab",
+      "rarity": 2,
+      "document_id": 5731262410560372759
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cappuccino",
+      "rarity": 15
+    }
+  ]
+}

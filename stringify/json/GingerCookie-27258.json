@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-27258",
+  "title": "Ginger Cookie",
+  "num": 27258,
+  "availability_issued": 142089,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Silver",
+      "rarity": 6,
+      "document_id": 5246725687947061611
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Festive Wreath",
+      "rarity": 18,
+      "document_id": 5197362258719564143
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

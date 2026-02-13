@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-96197",
+  "title": "Tama Gadget",
+  "num": 96197,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tangerine",
+      "rarity": 20,
+      "document_id": 5255887252621388754
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bull of Heaven",
+      "rarity": 5,
+      "document_id": 5730890517932146699
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

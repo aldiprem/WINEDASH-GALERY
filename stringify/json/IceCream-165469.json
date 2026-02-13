@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-165469",
+  "title": "Ice Cream",
+  "num": 165469,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Extra Spicy",
+      "rarity": 20,
+      "document_id": 5350717154104742970
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Croissant",
+      "rarity": 2,
+      "document_id": 5438553027764052896
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 12
+    }
+  ]
+}

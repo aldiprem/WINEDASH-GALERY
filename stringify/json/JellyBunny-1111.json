@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-1111",
+  "title": "Jelly Bunny",
+  "num": 1111,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Outline",
+      "rarity": 10,
+      "document_id": 5424780038308388924
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candy",
+      "rarity": 5,
+      "document_id": 5422574937674115533
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

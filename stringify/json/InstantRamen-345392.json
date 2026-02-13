@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-345392",
+  "title": "Instant Ramen",
+  "num": 345392,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Lobster",
+      "rarity": 20,
+      "document_id": 5309835190070181567
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coat of Arms",
+      "rarity": 2,
+      "document_id": 5433846813054494068
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 12
+    }
+  ]
+}

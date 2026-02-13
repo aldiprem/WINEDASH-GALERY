@@ -1,0 +1,26 @@
+{
+  "slug": "WinterWreath-1272",
+  "title": "Winter Wreath",
+  "num": 1272,
+  "availability_issued": 71559,
+  "availability_total": 100846,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Comics",
+      "rarity": 20,
+      "document_id": 5271535459158220490
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nordic Wolf",
+      "rarity": 24,
+      "document_id": 5722297057171996682
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ranger Green",
+      "rarity": 12
+    }
+  ]
+}

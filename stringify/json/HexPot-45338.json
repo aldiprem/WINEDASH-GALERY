@@ -1,0 +1,26 @@
+{
+  "slug": "HexPot-45338",
+  "title": "Hex Pot",
+  "num": 45338,
+  "availability_issued": 55280,
+  "availability_total": 69837,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Digital Sap",
+      "rarity": 8,
+      "document_id": 5431368200312871962
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gravestone",
+      "rarity": 24,
+      "document_id": 5298725402460568410
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 10
+    }
+  ]
+}

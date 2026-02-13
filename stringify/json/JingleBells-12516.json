@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-12516",
+  "title": "Jingle Bells",
+  "num": 12516,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gingerbread",
+      "rarity": 7,
+      "document_id": 5231398744963964511
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ice Pop",
+      "rarity": 24,
+      "document_id": 5434148663356054664
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pure Gold",
+      "rarity": 19
+    }
+  ]
+}

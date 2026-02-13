@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-107208",
+  "title": "Xmas Stocking",
+  "num": 107208,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Emo Love",
+      "rarity": 10,
+      "document_id": 5291871841541973357
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jingle Bell",
+      "rarity": 12,
+      "document_id": 5206464681694217071
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Shamrock Green",
+      "rarity": 12
+    }
+  ]
+}

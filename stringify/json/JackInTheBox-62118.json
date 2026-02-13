@@ -1,0 +1,26 @@
+{
+  "slug": "JackInTheBox-62118",
+  "title": "Jack-in-the-Box",
+  "num": 62118,
+  "availability_issued": 96093,
+  "availability_total": 97345,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tombstone",
+      "rarity": 30,
+      "document_id": 5425037951094516893
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bonsai",
+      "rarity": 5,
+      "document_id": 5582749674189619216
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 12
+    }
+  ]
+}

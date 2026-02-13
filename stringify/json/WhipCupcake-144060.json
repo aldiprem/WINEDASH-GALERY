@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-144060",
+  "title": "Whip Cupcake",
+  "num": 144060,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gummy Bears",
+      "rarity": 15,
+      "document_id": 5312050452597076373
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Kitsune",
+      "rarity": 7,
+      "document_id": 5722361541810978822
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 15
+    }
+  ]
+}

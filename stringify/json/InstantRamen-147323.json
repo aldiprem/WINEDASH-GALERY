@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-147323",
+  "title": "Instant Ramen",
+  "num": 147323,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hotpot",
+      "rarity": 20,
+      "document_id": 5379756351410961855
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ribeye Steak",
+      "rarity": 5,
+      "document_id": 5546411141309136921
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 12
+    }
+  ]
+}

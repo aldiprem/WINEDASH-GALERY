@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-87829",
+  "title": "Ice Cream",
+  "num": 87829,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Beehive",
+      "rarity": 25,
+      "document_id": 5368756278740943156
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sumerian Bird",
+      "rarity": 7,
+      "document_id": 5724535083025563683
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Turquoise",
+      "rarity": 12
+    }
+  ]
+}

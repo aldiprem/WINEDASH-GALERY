@@ -1,0 +1,26 @@
+{
+  "slug": "HolidayDrink-10385",
+  "title": "Holiday Drink",
+  "num": 10385,
+  "availability_issued": 82869,
+  "availability_total": 120989,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mango Blast",
+      "rarity": 49,
+      "document_id": 5285512549754759576
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Turban",
+      "rarity": 5,
+      "document_id": 5312033521835993763
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Camo Green",
+      "rarity": 12
+    }
+  ]
+}

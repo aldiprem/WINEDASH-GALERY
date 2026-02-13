@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-11519",
+  "title": "Crystal Ball",
+  "num": 11519,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ghosted",
+      "rarity": 30,
+      "document_id": 5397946104845205633
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bloody Axe",
+      "rarity": 20,
+      "document_id": 5298529109570239315
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Moonstone",
+      "rarity": 15
+    }
+  ]
+}

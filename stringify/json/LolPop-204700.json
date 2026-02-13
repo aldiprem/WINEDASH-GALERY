@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-204700",
+  "title": "Lol Pop",
+  "num": 204700,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rosebud",
+      "rarity": 5,
+      "document_id": 5219696148788307720
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Onigiri",
+      "rarity": 5,
+      "document_id": 5584781618922389518
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 20
+    }
+  ]
+}

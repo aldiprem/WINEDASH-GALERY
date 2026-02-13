@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-236744",
+  "title": "Ice Cream",
+  "num": 236744,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Emperor",
+      "rarity": 10,
+      "document_id": 5359805635615554493
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Brain",
+      "rarity": 7,
+      "document_id": 5434154624770664862
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 15
+    }
+  ]
+}

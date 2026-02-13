@@ -1,0 +1,26 @@
+{
+  "slug": "JesterHat-121319",
+  "title": "Jester Hat",
+  "num": 121319,
+  "availability_issued": 134547,
+  "availability_total": 190222,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pierrot",
+      "rarity": 15,
+      "document_id": 5433936973007971756
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fenrir",
+      "rarity": 5,
+      "document_id": 5722120379397308437
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-33546",
+  "title": "Mousse Cake",
+  "num": 33546,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Meringue",
+      "rarity": 30,
+      "document_id": 5314381889694366490
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jolly Roger",
+      "rarity": 6,
+      "document_id": 5546270326511370267
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tactical Pine",
+      "rarity": 10
+    }
+  ]
+}

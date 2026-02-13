@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-16102",
+  "title": "Jelly Bunny",
+  "num": 16102,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vanilla",
+      "rarity": 5,
+      "document_id": 5397754562188696203
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cicada",
+      "rarity": 4,
+      "document_id": 5436207211116257519
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 20
+    }
+  ]
+}

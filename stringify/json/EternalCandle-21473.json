@@ -1,0 +1,26 @@
+{
+  "slug": "EternalCandle-21473",
+  "title": "Eternal Candle",
+  "num": 21473,
+  "availability_issued": 44951,
+  "availability_total": 46590,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Serenity",
+      "rarity": 15,
+      "document_id": 5422814193122302849
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bloody Axe",
+      "rarity": 18,
+      "document_id": 5298529109570239315
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

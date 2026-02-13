@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-39098",
+  "title": "Bunny Muffin",
+  "num": 39098,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Citrus",
+      "rarity": 8,
+      "document_id": 5440415536036995959
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Polar Bear",
+      "rarity": 4,
+      "document_id": 5436199355621072900
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carrot Juice",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-163090",
+  "title": "Xmas Stocking",
+  "num": 163090,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Monster",
+      "rarity": 5,
+      "document_id": 5350810384959828516
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Snowflake",
+      "rarity": 12,
+      "document_id": 5438629456707075929
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carmine",
+      "rarity": 12
+    }
+  ]
+}

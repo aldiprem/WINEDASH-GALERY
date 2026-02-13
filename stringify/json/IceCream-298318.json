@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-298318",
+  "title": "Ice Cream",
+  "num": 298318,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gold Ingot",
+      "rarity": 10,
+      "document_id": 5350403234945070109
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bottlenose",
+      "rarity": 7,
+      "document_id": 5434036581889501237
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-160537",
+  "title": "Xmas Stocking",
+  "num": 160537,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lavender",
+      "rarity": 22,
+      "document_id": 5301182179588463495
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hot Drink",
+      "rarity": 8,
+      "document_id": 5195425164044559335
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

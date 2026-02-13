@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-153637",
+  "title": "Happy Brownie",
+  "num": 153637,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wrestler",
+      "rarity": 20,
+      "document_id": 5345977855262096431
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spirit Impala",
+      "rarity": 4,
+      "document_id": 5728756997222826060
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cappuccino",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-86344",
+  "title": "Jelly Bunny",
+  "num": 86344,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Space Gel",
+      "rarity": 15,
+      "document_id": 5429091498278807586
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Champagne",
+      "rarity": 5,
+      "document_id": 5440709011152333768
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 20
+    }
+  ]
+}

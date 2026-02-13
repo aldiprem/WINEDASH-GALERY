@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-57143",
+  "title": "Ice Cream",
+  "num": 57143,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Kraken",
+      "rarity": 5,
+      "document_id": 5366592753390093400
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spring Chick",
+      "rarity": 7,
+      "document_id": 5483261236428668939
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 10
+    }
+  ]
+}

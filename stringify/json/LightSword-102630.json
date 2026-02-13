@@ -1,0 +1,26 @@
+{
+  "slug": "LightSword-102630",
+  "title": "Light Sword",
+  "num": 102630,
+  "availability_issued": 124127,
+  "availability_total": 131222,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Polygon",
+      "rarity": 30,
+      "document_id": 5447469890971662862
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "The Eye",
+      "rarity": 4,
+      "document_id": 5433680215568048177
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-165574",
+  "title": "Xmas Stocking",
+  "num": 165574,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bloody",
+      "rarity": 30,
+      "document_id": 5303188676640009531
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Christmas Tree",
+      "rarity": 8,
+      "document_id": 5438542608173383432
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Khaki Green",
+      "rarity": 12
+    }
+  ]
+}

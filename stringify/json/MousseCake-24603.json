@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-24603",
+  "title": "Mousse Cake",
+  "num": 24603,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Razzle Dazzle",
+      "rarity": 30,
+      "document_id": 5393593928584821392
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mustache",
+      "rarity": 6,
+      "document_id": 5548845580312117262
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

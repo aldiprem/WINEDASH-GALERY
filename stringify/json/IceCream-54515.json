@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-54515",
+  "title": "Ice Cream",
+  "num": 54515,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bubbles",
+      "rarity": 20,
+      "document_id": 5314362158614611167
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hammerhead",
+      "rarity": 2,
+      "document_id": 5440572770494734727
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Amber",
+      "rarity": 12
+    }
+  ]
+}

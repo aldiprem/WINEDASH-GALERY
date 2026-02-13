@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-51897",
+  "title": "Ice Cream",
+  "num": 51897,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crude Oil",
+      "rarity": 30,
+      "document_id": 5359497244078800574
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Horseshoe",
+      "rarity": 7,
+      "document_id": 5551178202820378637
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

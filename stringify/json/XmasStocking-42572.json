@@ -1,0 +1,31 @@
+{
+  "slug": "XmasStocking-42572",
+  "title": "Xmas Stocking",
+  "num": 42572,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Swamp Party",
+      "rarity": 10,
+      "document_id": 5328215090296544101
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Potion",
+      "rarity": 4,
+      "document_id": 5435902410172163141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tomato",
+      "rarity": 12
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

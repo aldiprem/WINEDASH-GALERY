@@ -1,0 +1,26 @@
+{
+  "slug": "RecordPlayer-9301",
+  "title": "Record Player",
+  "num": 9301,
+  "availability_issued": 33096,
+  "availability_total": 46888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Chrome",
+      "rarity": 20,
+      "document_id": 5294037565916077893
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bonsai",
+      "rarity": 4,
+      "document_id": 5582749674189619216
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 15
+    }
+  ]
+}

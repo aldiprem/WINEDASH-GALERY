@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-21085",
+  "title": "Spring Basket",
+  "num": 21085,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Trash Bandit",
+      "rarity": 30,
+      "document_id": 5382061322919770761
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cupcake",
+      "rarity": 5,
+      "document_id": 5436346024459266141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "EvilEye-43172",
+  "title": "Evil Eye",
+  "num": 43172,
+  "availability_issued": 72951,
+  "availability_total": 85204,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Succubus",
+      "rarity": 30,
+      "document_id": 5425129103185436928
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nice Ghost",
+      "rarity": 24,
+      "document_id": 5301072507598550489
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

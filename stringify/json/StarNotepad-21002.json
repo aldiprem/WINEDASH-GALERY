@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-21002",
+  "title": "Star Notepad",
+  "num": 21002,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Metallic",
+      "rarity": 7,
+      "document_id": 5237781276819220714
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Heraldic Lily",
+      "rarity": 5,
+      "document_id": 5551136193745256466
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-3112",
+  "title": "Happy Brownie",
+  "num": 3112,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Captain Flush",
+      "rarity": 25,
+      "document_id": 5382078790551764670
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eikthyrnir",
+      "rarity": 5,
+      "document_id": 5722379245666172949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 12
+    }
+  ]
+}

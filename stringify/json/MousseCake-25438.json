@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-25438",
+  "title": "Mousse Cake",
+  "num": 25438,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Harvest",
+      "rarity": 20,
+      "document_id": 5377799010260122647
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Watching Sun",
+      "rarity": 6,
+      "document_id": 5546520615730544657
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Ivory White",
+      "rarity": 12
+    }
+  ]
+}

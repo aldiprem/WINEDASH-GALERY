@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-135180",
+  "title": "Whip Cupcake",
+  "num": 135180,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "First Bite",
+      "rarity": 30,
+      "document_id": 5334803411214823745
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nigiri",
+      "rarity": 7,
+      "document_id": 5584758520588271634
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

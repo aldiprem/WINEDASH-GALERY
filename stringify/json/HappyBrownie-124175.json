@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-124175",
+  "title": "Happy Brownie",
+  "num": 124175,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ice Cream",
+      "rarity": 30,
+      "document_id": 5366385065951526887
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Okami Wolf",
+      "rarity": 4,
+      "document_id": 5721917072825384972
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Roman Silver",
+      "rarity": 15
+    }
+  ]
+}

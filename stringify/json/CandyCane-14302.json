@@ -1,0 +1,26 @@
+{
+  "slug": "CandyCane-14302",
+  "title": "Candy Cane",
+  "num": 14302,
+  "availability_issued": 209552,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Starry Cane",
+      "rarity": 26,
+      "document_id": 5341460954121008686
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bowtie",
+      "rarity": 24,
+      "document_id": 5203984947966134040
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Roman Silver",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "VintageCigar-13807",
+  "title": "Vintage Cigar",
+  "num": 13807,
+  "availability_issued": 26277,
+  "availability_total": 31024,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Desert Night",
+      "rarity": 30,
+      "document_id": 5429649689408463436
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Light Bulb",
+      "rarity": 2,
+      "document_id": 5438588220726077688
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chocolate",
+      "rarity": 20
+    }
+  ]
+}

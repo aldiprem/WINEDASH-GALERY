@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-179122",
+  "title": "Xmas Stocking",
+  "num": 179122,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Kindergarten",
+      "rarity": 30,
+      "document_id": 5291756745008374826
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Takoyaki",
+      "rarity": 5,
+      "document_id": 5582609220169105413
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Light Olive",
+      "rarity": 15
+    }
+  ]
+}

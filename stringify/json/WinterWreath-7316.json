@@ -1,0 +1,26 @@
+{
+  "slug": "WinterWreath-7316",
+  "title": "Winter Wreath",
+  "num": 7316,
+  "availability_issued": 71559,
+  "availability_total": 100846,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Berry Yogurt",
+      "rarity": 20,
+      "document_id": 5330247975627156521
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mistletoe",
+      "rarity": 24,
+      "document_id": 5208465161496578257
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

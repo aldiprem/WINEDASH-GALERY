@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-79204",
+  "title": "Moon Pendant",
+  "num": 79204,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Golden Moon",
+      "rarity": 30,
+      "document_id": 5204291943638529197
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crab",
+      "rarity": 9,
+      "document_id": 5424858399986705924
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-24909",
+  "title": "Jingle Bells",
+  "num": 24909,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Uranium",
+      "rarity": 13,
+      "document_id": 5237928731636425619
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Snow Angel",
+      "rarity": 20,
+      "document_id": 5282854892711470699
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 20
+    }
+  ]
+}

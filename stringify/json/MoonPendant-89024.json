@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-89024",
+  "title": "Moon Pendant",
+  "num": 89024,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Twilight Wish",
+      "rarity": 15,
+      "document_id": 5307632778085429481
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cherry",
+      "rarity": 9,
+      "document_id": 5434013921642045024
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Electric Purple",
+      "rarity": 12
+    }
+  ]
+}

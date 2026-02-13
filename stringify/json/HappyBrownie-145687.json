@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-145687",
+  "title": "Happy Brownie",
+  "num": 145687,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cactus",
+      "rarity": 30,
+      "document_id": 5332685137639410309
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flat Cap",
+      "rarity": 5,
+      "document_id": 5312074465759227617
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tactical Pine",
+      "rarity": 15
+    }
+  ]
+}

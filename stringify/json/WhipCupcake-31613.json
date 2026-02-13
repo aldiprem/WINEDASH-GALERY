@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-31613",
+  "title": "Whip Cupcake",
+  "num": 31613,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rising Dead",
+      "rarity": 30,
+      "document_id": 5217981980095832975
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Loving Heart",
+      "rarity": 4,
+      "document_id": 5303197949474388339
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tactical Pine",
+      "rarity": 10
+    }
+  ]
+}

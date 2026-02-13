@@ -1,0 +1,26 @@
+{
+  "slug": "CandyCane-1",
+  "title": "Candy Cane",
+  "num": 1,
+  "availability_issued": 209552,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Final Offer",
+      "rarity": 26,
+      "document_id": 5305253310368867020
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sparks",
+      "rarity": 24,
+      "document_id": 5440607637039243262
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Deep Cyan",
+      "rarity": 15
+    }
+  ]
+}

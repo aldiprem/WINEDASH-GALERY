@@ -1,0 +1,26 @@
+{
+  "slug": "BunnyMuffin-24787",
+  "title": "Bunny Muffin",
+  "num": 24787,
+  "availability_issued": 51047,
+  "availability_total": 66655,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Chill-Out",
+      "rarity": 14,
+      "document_id": 5235986938267199460
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Genie Lamp",
+      "rarity": 2,
+      "document_id": 5440679027985636145
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Copper",
+      "rarity": 15
+    }
+  ]
+}

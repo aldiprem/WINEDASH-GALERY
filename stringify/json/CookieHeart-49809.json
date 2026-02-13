@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-49809",
+  "title": "Cookie Heart",
+  "num": 49809,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ultra Pink",
+      "rarity": 15,
+      "document_id": 5222217410555175038
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rhino Warrior",
+      "rarity": 2,
+      "document_id": 5728874473168306185
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 20
+    }
+  ]
+}

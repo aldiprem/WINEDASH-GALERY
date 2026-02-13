@@ -1,0 +1,26 @@
+{
+  "slug": "SwagBag-138560",
+  "title": "Swag Bag",
+  "num": 138560,
+  "availability_issued": 231062,
+  "availability_total": 237970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Dogg’s Loot",
+      "rarity": 30,
+      "document_id": 5434144626086805202
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ring",
+      "rarity": 4,
+      "document_id": 5440746209864081065
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 12
+    }
+  ]
+}

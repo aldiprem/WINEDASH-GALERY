@@ -1,0 +1,26 @@
+{
+  "slug": "BigYear-16117",
+  "title": "Big Year",
+  "num": 16117,
+  "availability_issued": 74074,
+  "availability_total": 101415,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Nostradamus",
+      "rarity": 23,
+      "document_id": 5417911440709285239
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pegasus",
+      "rarity": 5,
+      "document_id": 5724544802536554508
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "CandyCane-186805",
+  "title": "Candy Cane",
+  "num": 186805,
+  "availability_issued": 209557,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Negativus",
+      "rarity": 26,
+      "document_id": 5339280510893977424
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Snowman",
+      "rarity": 24,
+      "document_id": 5197201682777266057
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-15135",
+  "title": "Xmas Stocking",
+  "num": 15135,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gemstone",
+      "rarity": 8,
+      "document_id": 5314274592821375180
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Anchor",
+      "rarity": 4,
+      "document_id": 5440606859650160817
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carmine",
+      "rarity": 12
+    }
+  ]
+}

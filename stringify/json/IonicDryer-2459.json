@@ -1,0 +1,26 @@
+{
+  "slug": "IonicDryer-2459",
+  "title": "Ionic Dryer",
+  "num": 2459,
+  "availability_issued": 19701,
+  "availability_total": 25719,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Wet Styling",
+      "rarity": 25,
+      "document_id": 5213167867217870507
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Diamond",
+      "rarity": 5,
+      "document_id": 5440747541303942913
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunmetal",
+      "rarity": 12
+    }
+  ]
+}

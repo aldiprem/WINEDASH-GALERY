@@ -1,0 +1,31 @@
+{
+  "slug": "PlushPepe-3",
+  "title": "Plush Pepe",
+  "num": 3,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sketchy",
+      "rarity": 20,
+      "document_id": 5422563216708365247
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Toilet",
+      "rarity": 5,
+      "document_id": 5433611053709680326
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

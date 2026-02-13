@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-44396",
+  "title": "Jelly Bunny",
+  "num": 44396,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Snowman",
+      "rarity": 15,
+      "document_id": 5429261067882620393
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hippo",
+      "rarity": 3,
+      "document_id": 5436207056497437331
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-68214",
+  "title": "Mousse Cake",
+  "num": 68214,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mad Hatter",
+      "rarity": 15,
+      "document_id": 5312429204288079026
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crusader Cross",
+      "rarity": 6,
+      "document_id": 5544096716577308681
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 10
+    }
+  ]
+}

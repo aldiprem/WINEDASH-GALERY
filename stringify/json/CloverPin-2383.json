@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-2383",
+  "title": "Clover Pin",
+  "num": 2383,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pinwheel",
+      "rarity": 20,
+      "document_id": 5260650495906710651
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mafdet",
+      "rarity": 4,
+      "document_id": 5726594038807658503
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

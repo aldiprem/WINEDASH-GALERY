@@ -1,0 +1,26 @@
+{
+  "slug": "IonicDryer-14557",
+  "title": "Ionic Dryer",
+  "num": 14557,
+  "availability_issued": 19701,
+  "availability_total": 25719,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Savannah",
+      "rarity": 30,
+      "document_id": 5215270537177104305
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fleur-de-lis",
+      "rarity": 4,
+      "document_id": 5422858688983491539
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 15
+    }
+  ]
+}

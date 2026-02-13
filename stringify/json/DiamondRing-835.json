@@ -1,0 +1,26 @@
+{
+  "slug": "DiamondRing-835",
+  "title": "Diamond Ring",
+  "num": 835,
+  "availability_issued": 32240,
+  "availability_total": 32924,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Aurora",
+      "rarity": 15,
+      "document_id": 5271583549907041807
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Scene",
+      "rarity": 4,
+      "document_id": 5289591046404073779
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Steel Grey",
+      "rarity": 15
+    }
+  ]
+}

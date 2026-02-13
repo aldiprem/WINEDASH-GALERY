@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-56197",
+  "title": "Star Notepad",
+  "num": 56197,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Paw Pads",
+      "rarity": 10,
+      "document_id": 5231305926425755554
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flashlight",
+      "rarity": 5,
+      "document_id": 5440625946484824815
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Hunter Green",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-304765",
+  "title": "Ice Cream",
+  "num": 304765,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Brain Freeze",
+      "rarity": 15,
+      "document_id": 5316661868788482016
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bike Helmet",
+      "rarity": 7,
+      "document_id": 5314385067970160062
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 15
+    }
+  ]
+}

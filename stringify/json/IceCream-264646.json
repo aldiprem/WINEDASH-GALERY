@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-264646",
+  "title": "Ice Cream",
+  "num": 264646,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fresh Berry",
+      "rarity": 30,
+      "document_id": 5368312754648155974
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Avocado",
+      "rarity": 5,
+      "document_id": 5433953616006243349
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Steel Grey",
+      "rarity": 12
+    }
+  ]
+}

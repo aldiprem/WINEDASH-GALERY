@@ -1,0 +1,26 @@
+{
+  "slug": "WhipCupcake-33649",
+  "title": "Whip Cupcake",
+  "num": 33649,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Paradise",
+      "rarity": 25,
+      "document_id": 5276280874034293757
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sunflower",
+      "rarity": 7,
+      "document_id": 5440682657233000387
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunmetal",
+      "rarity": 15
+    }
+  ]
+}

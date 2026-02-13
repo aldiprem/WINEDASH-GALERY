@@ -1,0 +1,26 @@
+{
+  "slug": "StarNotepad-3053",
+  "title": "Star Notepad",
+  "num": 3053,
+  "availability_issued": 68895,
+  "availability_total": 99082,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pearlescent",
+      "rarity": 7,
+      "document_id": 5231351826741223455
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Koala",
+      "rarity": 4,
+      "document_id": 5440487373659987419
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

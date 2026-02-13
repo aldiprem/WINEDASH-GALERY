@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-53639",
+  "title": "Mousse Cake",
+  "num": 53639,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Froggy Pond",
+      "rarity": 30,
+      "document_id": 5332718376391311747
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gift",
+      "rarity": 6,
+      "document_id": 5287494449528597028
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 10
+    }
+  ]
+}

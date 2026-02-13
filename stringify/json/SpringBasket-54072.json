@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-54072",
+  "title": "Spring Basket",
+  "num": 54072,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Marmot",
+      "rarity": 25,
+      "document_id": 5386680839419493267
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Khinkali",
+      "rarity": 2,
+      "document_id": 5548733550385168415
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 15
+    }
+  ]
+}

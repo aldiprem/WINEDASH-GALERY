@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-307901",
+  "title": "Instant Ramen",
+  "num": 307901,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Slurp-Slurp",
+      "rarity": 25,
+      "document_id": 5319286205475489134
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cupcake",
+      "rarity": 4,
+      "document_id": 5436346024459266141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 12
+    }
+  ]
+}

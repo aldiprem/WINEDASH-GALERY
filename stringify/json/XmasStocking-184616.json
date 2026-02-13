@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-184616",
+  "title": "Xmas Stocking",
+  "num": 184616,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Faerie",
+      "rarity": 30,
+      "document_id": 5291846758932964487
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Totem Bear",
+      "rarity": 2,
+      "document_id": 5728966707590987806
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Malachite",
+      "rarity": 12
+    }
+  ]
+}

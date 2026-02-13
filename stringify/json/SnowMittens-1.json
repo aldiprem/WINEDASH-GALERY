@@ -1,0 +1,26 @@
+{
+  "slug": "SnowMittens-1",
+  "title": "Snow Mittens",
+  "num": 1,
+  "availability_issued": 38414,
+  "availability_total": 49969,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pistachio",
+      "rarity": 13,
+      "document_id": 5228909059796656712
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Champagne",
+      "rarity": 16,
+      "document_id": 5440709011152333768
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 20
+    }
+  ]
+}

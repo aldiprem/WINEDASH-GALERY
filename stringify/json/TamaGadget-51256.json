@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-51256",
+  "title": "Tama Gadget",
+  "num": 51256,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Yin",
+      "rarity": 20,
+      "document_id": 5328051537941916119
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Smartphone",
+      "rarity": 5,
+      "document_id": 5440878563576275406
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pine Green",
+      "rarity": 15
+    }
+  ]
+}

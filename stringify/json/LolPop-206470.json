@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-206470",
+  "title": "Lol Pop",
+  "num": 206470,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crystalline",
+      "rarity": 10,
+      "document_id": 5226448795155331278
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cocktail",
+      "rarity": 5,
+      "document_id": 5424853890271044722
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 20
+    }
+  ]
+}

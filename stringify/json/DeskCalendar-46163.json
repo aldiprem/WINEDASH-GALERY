@@ -1,0 +1,26 @@
+{
+  "slug": "DeskCalendar-46163",
+  "title": "Desk Calendar",
+  "num": 46163,
+  "availability_issued": 306379,
+  "availability_total": 337481,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Leather Top",
+      "rarity": 15,
+      "document_id": 5233266291233547111
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sun Lion",
+      "rarity": 4,
+      "document_id": 5722053983497879559
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 20
+    }
+  ]
+}

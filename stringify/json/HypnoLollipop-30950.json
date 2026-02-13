@@ -1,0 +1,26 @@
+{
+  "slug": "HypnoLollipop-30950",
+  "title": "Hypno Lollipop",
+  "num": 30950,
+  "availability_issued": 79412,
+  "availability_total": 116639,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lime Wedge",
+      "rarity": 9,
+      "document_id": 5228975305372230915
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wolf Rage",
+      "rarity": 5,
+      "document_id": 5433796201159876253
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

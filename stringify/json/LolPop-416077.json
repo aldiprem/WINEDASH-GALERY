@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-416077",
+  "title": "Lol Pop",
+  "num": 416077,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Crystalline",
+      "rarity": 10,
+      "document_id": 5226448795155331278
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Legionary",
+      "rarity": 5,
+      "document_id": 5548780425658236946
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

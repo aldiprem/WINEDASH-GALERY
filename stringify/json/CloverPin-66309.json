@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-66309",
+  "title": "Clover Pin",
+  "num": 66309,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Star Princess",
+      "rarity": 20,
+      "document_id": 5231386384048090692
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Genie Lamp",
+      "rarity": 4,
+      "document_id": 5440679027985636145
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 15
+    }
+  ]
+}

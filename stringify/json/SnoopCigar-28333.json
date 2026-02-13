@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-28333",
+  "title": "Snoop Cigar",
+  "num": 28333,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Debut Album",
+      "rarity": 25,
+      "document_id": 5375410175219890381
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Kashket",
+      "rarity": 7,
+      "document_id": 5312102825428283144
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-125764",
+  "title": "Instant Ramen",
+  "num": 125764,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Slurp-Slurp",
+      "rarity": 25,
+      "document_id": 5319286205475489134
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower Sun",
+      "rarity": 5,
+      "document_id": 5546618291876790280
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    }
+  ]
+}

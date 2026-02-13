@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-11732",
+  "title": "Crystal Ball",
+  "num": 11732,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Warlock",
+      "rarity": 30,
+      "document_id": 5449444558020565509
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Key",
+      "rarity": 2,
+      "document_id": 5440480222539438655
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 20
+    }
+  ]
+}

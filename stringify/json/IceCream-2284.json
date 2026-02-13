@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-2284",
+  "title": "Ice Cream",
+  "num": 2284,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Starship",
+      "rarity": 30,
+      "document_id": 5458770890525278704
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pyramid",
+      "rarity": 4,
+      "document_id": 5440355466624392997
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

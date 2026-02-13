@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-64533",
+  "title": "Spring Basket",
+  "num": 64533,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Usagi-Chan",
+      "rarity": 30,
+      "document_id": 5386704573408773039
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gold",
+      "rarity": 7,
+      "document_id": 5440548920541339106
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Cyan",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-124988",
+  "title": "Party Sparkler",
+  "num": 124988,
+  "availability_issued": 176755,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Polychrome",
+      "rarity": 11,
+      "document_id": 5229133317219052678
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Ram of Amun",
+      "rarity": 4,
+      "document_id": 5730976773760352266
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-47169",
+  "title": "Xmas Stocking",
+  "num": 47169,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Shine On!",
+      "rarity": 10,
+      "document_id": 5323637922174360411
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Twin Peaks",
+      "rarity": 2,
+      "document_id": 5440737538325112126
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Roman Silver",
+      "rarity": 10
+    }
+  ]
+}

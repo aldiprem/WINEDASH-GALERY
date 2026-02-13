@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-58561",
+  "title": "Tama Gadget",
+  "num": 58561,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Egg Catch",
+      "rarity": 3,
+      "document_id": 5330331671654852938
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Maple Leaf",
+      "rarity": 5,
+      "document_id": 5436212648544854698
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tomato",
+      "rarity": 10
+    }
+  ]
+}

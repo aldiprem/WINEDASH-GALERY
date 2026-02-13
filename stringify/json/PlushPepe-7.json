@@ -1,0 +1,26 @@
+{
+  "slug": "PlushPepe-7",
+  "title": "Plush Pepe",
+  "num": 7,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Polka Dots",
+      "rarity": 30,
+      "document_id": 5424934983548560744
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Genie Lamp",
+      "rarity": 4,
+      "document_id": 5440679027985636145
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Amber",
+      "rarity": 15
+    }
+  ]
+}

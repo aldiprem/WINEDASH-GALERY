@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-18198",
+  "title": "Xmas Stocking",
+  "num": 18198,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Universe",
+      "rarity": 10,
+      "document_id": 5312317230195696626
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Piggy Bank",
+      "rarity": 12,
+      "document_id": 5434106495367144379
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chocolate",
+      "rarity": 12
+    }
+  ]
+}

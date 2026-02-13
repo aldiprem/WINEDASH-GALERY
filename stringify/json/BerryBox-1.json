@@ -1,0 +1,26 @@
+{
+  "slug": "BerryBox-1",
+  "title": "Berry Box",
+  "num": 1,
+  "availability_issued": 50377,
+  "availability_total": 66580,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "White Cocoa",
+      "rarity": 20,
+      "document_id": 5413773145230302974
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Royal Crown",
+      "rarity": 2,
+      "document_id": 5440361101621484148
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carrot Juice",
+      "rarity": 15
+    }
+  ]
+}

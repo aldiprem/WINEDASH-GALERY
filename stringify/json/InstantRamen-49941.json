@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-49941",
+  "title": "Instant Ramen",
+  "num": 49941,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Slurp-Slurp",
+      "rarity": 25,
+      "document_id": 5319286205475489134
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pith Helmet",
+      "rarity": 4,
+      "document_id": 5316561538352441613
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carmine",
+      "rarity": 10
+    }
+  ]
+}

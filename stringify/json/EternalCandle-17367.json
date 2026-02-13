@@ -1,0 +1,26 @@
+{
+  "slug": "EternalCandle-17367",
+  "title": "Eternal Candle",
+  "num": 17367,
+  "availability_issued": 44951,
+  "availability_total": 46590,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Two-Tone",
+      "rarity": 15,
+      "document_id": 5422336201916966497
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Potion",
+      "rarity": 18,
+      "document_id": 5435902410172163141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-1",
+  "title": "Xmas Stocking",
+  "num": 1,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Poison Ivy",
+      "rarity": 22,
+      "document_id": 5298708716512639916
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Diamond",
+      "rarity": 4,
+      "document_id": 5440747541303942913
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Neon Blue",
+      "rarity": 12
+    }
+  ]
+}

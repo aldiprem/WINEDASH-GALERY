@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-17385",
+  "title": "Snoop Cigar",
+  "num": 17385,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Snoop Ring",
+      "rarity": 30,
+      "document_id": 5384369305200654013
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Doberman",
+      "rarity": 7,
+      "document_id": 5721848477902700557
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

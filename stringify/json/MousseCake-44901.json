@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-44901",
+  "title": "Mousse Cake",
+  "num": 44901,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Razzle Dazzle",
+      "rarity": 30,
+      "document_id": 5393593928584821392
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Feather",
+      "rarity": 6,
+      "document_id": 5436045368158609968
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 12
+    }
+  ]
+}

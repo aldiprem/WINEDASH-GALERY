@@ -1,0 +1,26 @@
+{
+  "slug": "LunarSnake-178384",
+  "title": "Lunar Snake",
+  "num": 178384,
+  "availability_issued": 189500,
+  "availability_total": 259346,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Poisonous",
+      "rarity": 8,
+      "document_id": 5217979871266891345
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candle",
+      "rarity": 15,
+      "document_id": 5440862947075185091
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 20
+    }
+  ]
+}

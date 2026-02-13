@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-64720",
+  "title": "Spiced Wine",
+  "num": 64720,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Blue Burn",
+      "rarity": 8,
+      "document_id": 5429565022718160786
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eikthyrnir",
+      "rarity": 3,
+      "document_id": 5722379245666172949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 20
+    }
+  ]
+}

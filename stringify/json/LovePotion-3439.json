@@ -1,0 +1,26 @@
+{
+  "slug": "LovePotion-3439",
+  "title": "Love Potion",
+  "num": 3439,
+  "availability_issued": 29073,
+  "availability_total": 30412,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ocean Glow",
+      "rarity": 25,
+      "document_id": 5285502624085339081
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Heart",
+      "rarity": 2,
+      "document_id": 5440801593467362650
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 20
+    }
+  ]
+}

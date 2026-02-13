@@ -1,0 +1,26 @@
+{
+  "slug": "CrystalBall-123",
+  "title": "Crystal Ball",
+  "num": 123,
+  "availability_issued": 26682,
+  "availability_total": 27732,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Prophet",
+      "rarity": 30,
+      "document_id": 5406699200949809539
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fish Skeleton",
+      "rarity": 24,
+      "document_id": 5436257986219631092
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Hunter Green",
+      "rarity": 20
+    }
+  ]
+}

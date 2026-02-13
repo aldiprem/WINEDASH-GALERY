@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-18233",
+  "title": "Tama Gadget",
+  "num": 18233,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Love Wish",
+      "rarity": 8,
+      "document_id": 5265267718893899816
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Croissant",
+      "rarity": 5,
+      "document_id": 5438553027764052896
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 15
+    }
+  ]
+}

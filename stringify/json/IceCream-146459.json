@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-146459",
+  "title": "Ice Cream",
+  "num": 146459,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cold Steel",
+      "rarity": 30,
+      "document_id": 5368578003238419778
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bug",
+      "rarity": 7,
+      "document_id": 5433633602287985268
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 15
+    }
+  ]
+}

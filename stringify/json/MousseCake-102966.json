@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-102966",
+  "title": "Mousse Cake",
+  "num": 102966,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mad Hatter",
+      "rarity": 15,
+      "document_id": 5312429204288079026
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pierced Heart",
+      "rarity": 6,
+      "document_id": 5287276771996103085
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Caramel",
+      "rarity": 15
+    }
+  ]
+}

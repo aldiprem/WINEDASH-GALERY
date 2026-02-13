@@ -1,0 +1,26 @@
+{
+  "slug": "JingleBells-43561",
+  "title": "Jingle Bells",
+  "num": 43561,
+  "availability_issued": 75899,
+  "availability_total": 114963,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Berry Bell",
+      "rarity": 9,
+      "document_id": 5231115088143869056
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Christmas Tree",
+      "rarity": 16,
+      "document_id": 5438542608173383432
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 21
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-67601",
+  "title": "Spring Basket",
+  "num": 67601,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Daisy Skunk",
+      "rarity": 25,
+      "document_id": 5393248510135008902
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fenrir",
+      "rarity": 4,
+      "document_id": 5722120379397308437
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Midnight Blue",
+      "rarity": 15
+    }
+  ]
+}

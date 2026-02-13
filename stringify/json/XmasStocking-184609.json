@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-184609",
+  "title": "Xmas Stocking",
+  "num": 184609,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Nightmirror",
+      "rarity": 22,
+      "document_id": 5294419263954641685
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eikthyrnir",
+      "rarity": 12,
+      "document_id": 5722379245666172949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Carmine",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-140661",
+  "title": "Lol Pop",
+  "num": 140661,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fire Vortex",
+      "rarity": 10,
+      "document_id": 5226839516920181422
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Melon",
+      "rarity": 5,
+      "document_id": 5435931478510822418
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Onyx Black",
+      "rarity": 15
+    }
+  ]
+}

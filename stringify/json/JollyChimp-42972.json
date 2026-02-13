@@ -1,0 +1,26 @@
+{
+  "slug": "JollyChimp-42972",
+  "title": "Jolly Chimp",
+  "num": 42972,
+  "availability_issued": 115521,
+  "availability_total": 132155,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hot Springs",
+      "rarity": 25,
+      "document_id": 5328210181148932367
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pawn",
+      "rarity": 4,
+      "document_id": 5440349071418088591
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cobalt Blue",
+      "rarity": 12
+    }
+  ]
+}

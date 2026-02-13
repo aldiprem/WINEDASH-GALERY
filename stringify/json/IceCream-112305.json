@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-112305",
+  "title": "Ice Cream",
+  "num": 112305,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gold Ingot",
+      "rarity": 10,
+      "document_id": 5350403234945070109
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sumerian Bird",
+      "rarity": 7,
+      "document_id": 5724535083025563683
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Steel Grey",
+      "rarity": 12
+    }
+  ]
+}

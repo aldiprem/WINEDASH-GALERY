@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-76753",
+  "title": "Ice Cream",
+  "num": 76753,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Plastic Pop",
+      "rarity": 25,
+      "document_id": 5195288493890238786
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Unicorn Head",
+      "rarity": 7,
+      "document_id": 5440544067228292901
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Moonstone",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-13568",
+  "title": "Sky Stilettos",
+  "num": 13568,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rebel",
+      "rarity": 20,
+      "document_id": 5474356871575928707
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Origami",
+      "rarity": 5,
+      "document_id": 5582666983184269318
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Celtic Blue",
+      "rarity": 15
+    }
+  ]
+}

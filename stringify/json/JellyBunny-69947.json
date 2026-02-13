@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-69947",
+  "title": "Jelly Bunny",
+  "num": 69947,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ghost",
+      "rarity": 15,
+      "document_id": 5429633372827708367
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gear",
+      "rarity": 1,
+      "document_id": 5440500005158804832
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 15
+    }
+  ]
+}

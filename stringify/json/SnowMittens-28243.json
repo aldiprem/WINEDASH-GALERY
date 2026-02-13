@@ -1,0 +1,26 @@
+{
+  "slug": "SnowMittens-28243",
+  "title": "Snow Mittens",
+  "num": 28243,
+  "availability_issued": 38414,
+  "availability_total": 49969,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pingu",
+      "rarity": 8,
+      "document_id": 5226471579956832084
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Star",
+      "rarity": 24,
+      "document_id": 5420190079773597190
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Steel Grey",
+      "rarity": 20
+    }
+  ]
+}

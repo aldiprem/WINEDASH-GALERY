@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-7577",
+  "title": "Clover Pin",
+  "num": 7577,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Merrow",
+      "rarity": 15,
+      "document_id": 5260374746121400933
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mustache",
+      "rarity": 5,
+      "document_id": 5548845580312117262
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mexican Pink",
+      "rarity": 15
+    }
+  ]
+}

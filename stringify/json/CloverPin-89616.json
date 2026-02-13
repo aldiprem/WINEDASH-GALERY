@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-89616",
+  "title": "Clover Pin",
+  "num": 89616,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sangria",
+      "rarity": 20,
+      "document_id": 5251562495432226987
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Nemes",
+      "rarity": 2,
+      "document_id": 5316549306285582483
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 15
+    }
+  ]
+}

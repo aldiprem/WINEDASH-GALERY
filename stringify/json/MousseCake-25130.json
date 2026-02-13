@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-25130",
+  "title": "Mousse Cake",
+  "num": 25130,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Circus Show",
+      "rarity": 25,
+      "document_id": 5327978699591549100
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Aztec Totem",
+      "rarity": 6,
+      "document_id": 5544028714360111114
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 15
+    }
+  ]
+}

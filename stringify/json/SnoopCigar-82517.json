@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-82517",
+  "title": "Snoop Cigar",
+  "num": 82517,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "The King",
+      "rarity": 30,
+      "document_id": 5373020661574826232
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Scarab",
+      "rarity": 7,
+      "document_id": 5433699117719118672
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cobalt Blue",
+      "rarity": 10
+    }
+  ]
+}

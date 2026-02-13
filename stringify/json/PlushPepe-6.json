@@ -1,0 +1,26 @@
+{
+  "slug": "PlushPepe-6",
+  "title": "Plush Pepe",
+  "num": 6,
+  "availability_issued": 2825,
+  "availability_total": 2861,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pepemint",
+      "rarity": 30,
+      "document_id": 5424923975547377257
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "High Heels",
+      "rarity": 5,
+      "document_id": 5436140342770428908
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pine Green",
+      "rarity": 20
+    }
+  ]
+}

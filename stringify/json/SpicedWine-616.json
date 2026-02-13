@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-616",
+  "title": "Spiced Wine",
+  "num": 616,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "The Grinch",
+      "rarity": 13,
+      "document_id": 5429432458552565132
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Vortex",
+      "rarity": 5,
+      "document_id": 5436036168338660466
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JesterHat-126890",
+  "title": "Jester Hat",
+  "num": 126890,
+  "availability_issued": 134548,
+  "availability_total": 190222,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Harley Quinn",
+      "rarity": 13,
+      "document_id": 5436150483188210082
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sea Horse",
+      "rarity": 5,
+      "document_id": 5435936074125828771
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 15
+    }
+  ]
+}

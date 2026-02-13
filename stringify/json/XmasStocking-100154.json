@@ -1,0 +1,31 @@
+{
+  "slug": "XmasStocking-100154",
+  "title": "Xmas Stocking",
+  "num": 100154,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Outline",
+      "rarity": 15,
+      "document_id": 5291736494237575012
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bowler Hat",
+      "rarity": 5,
+      "document_id": 5276170321576093265
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

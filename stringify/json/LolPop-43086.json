@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-43086",
+  "title": "Lol Pop",
+  "num": 43086,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Plastic Ice",
+      "rarity": 10,
+      "document_id": 5226763178171460533
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Flower Sun",
+      "rarity": 4,
+      "document_id": 5546618291876790280
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Neon Blue",
+      "rarity": 20
+    }
+  ]
+}

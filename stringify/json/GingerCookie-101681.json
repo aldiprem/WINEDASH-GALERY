@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-101681",
+  "title": "Ginger Cookie",
+  "num": 101681,
+  "availability_issued": 142091,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Black Beard",
+      "rarity": 6,
+      "document_id": 5228955110436006781
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Diamond",
+      "rarity": 5,
+      "document_id": 5440747541303942913
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

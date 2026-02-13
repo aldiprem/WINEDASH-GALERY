@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-62869",
+  "title": "Spring Basket",
+  "num": 62869,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Triceratops",
+      "rarity": 25,
+      "document_id": 5391162440224372449
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Meat Leg",
+      "rarity": 2,
+      "document_id": 5548687143263535126
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sky Blue",
+      "rarity": 15
+    }
+  ]
+}

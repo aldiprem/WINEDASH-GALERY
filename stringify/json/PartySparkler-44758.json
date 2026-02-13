@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-44758",
+  "title": "Party Sparkler",
+  "num": 44758,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Green Stripe",
+      "rarity": 13,
+      "document_id": 5228971890873230942
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Candle",
+      "rarity": 18,
+      "document_id": 5440862947075185091
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Amber",
+      "rarity": 20
+    }
+  ]
+}

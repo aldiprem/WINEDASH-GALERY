@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-65205",
+  "title": "Mousse Cake",
+  "num": 65205,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mermaid",
+      "rarity": 25,
+      "document_id": 5391368710323731441
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pizza Slice",
+      "rarity": 6,
+      "document_id": 5436241476365344257
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 10
+    }
+  ]
+}

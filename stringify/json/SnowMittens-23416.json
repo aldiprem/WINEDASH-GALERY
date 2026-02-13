@@ -1,0 +1,26 @@
+{
+  "slug": "SnowMittens-23416",
+  "title": "Snow Mittens",
+  "num": 23416,
+  "availability_issued": 38414,
+  "availability_total": 49969,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "The Riddler",
+      "rarity": 13,
+      "document_id": 5226867872294267038
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Piggy Bank",
+      "rarity": 24,
+      "document_id": 5434106495367144379
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "PetSnake-51512",
+  "title": "Pet Snake",
+  "num": 51512,
+  "availability_issued": 174528,
+  "availability_total": 279106,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Rainforest",
+      "rarity": 50,
+      "document_id": 5402617483075021203
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jewel",
+      "rarity": 10,
+      "document_id": 5550848478181064732
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 12
+    }
+  ]
+}

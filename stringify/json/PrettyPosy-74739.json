@@ -1,0 +1,26 @@
+{
+  "slug": "PrettyPosy-74739",
+  "title": "Pretty Posy",
+  "num": 74739,
+  "availability_issued": 116039,
+  "availability_total": 181231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Croissant",
+      "rarity": 20,
+      "document_id": 5435998986806788672
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Chili Pepper",
+      "rarity": 7,
+      "document_id": 5436357135539658505
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Neon Blue",
+      "rarity": 12
+    }
+  ]
+}

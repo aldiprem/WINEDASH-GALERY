@@ -1,0 +1,26 @@
+{
+  "slug": "LushBouquet-91490",
+  "title": "Lush Bouquet",
+  "num": 91490,
+  "availability_issued": 104643,
+  "availability_total": 140116,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fisherman",
+      "rarity": 15,
+      "document_id": 5242657542168933376
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Geisha Fan",
+      "rarity": 5,
+      "document_id": 5582495309046480907
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 12
+    }
+  ]
+}

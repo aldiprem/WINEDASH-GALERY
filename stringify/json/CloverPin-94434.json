@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-94434",
+  "title": "Clover Pin",
+  "num": 94434,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Purrfect Paw",
+      "rarity": 20,
+      "document_id": 5231331764948990717
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Acorn",
+      "rarity": 5,
+      "document_id": 5434026974047658205
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "French Blue",
+      "rarity": 12
+    }
+  ]
+}

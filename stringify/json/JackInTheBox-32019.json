@@ -1,0 +1,26 @@
+{
+  "slug": "JackInTheBox-32019",
+  "title": "Jack-in-the-Box",
+  "num": 32019,
+  "availability_issued": 96093,
+  "availability_total": 97345,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Doughnut",
+      "rarity": 30,
+      "document_id": 5422800943148199619
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Fire",
+      "rarity": 4,
+      "document_id": 5440856362890322121
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

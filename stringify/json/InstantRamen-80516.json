@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-80516",
+  "title": "Instant Ramen",
+  "num": 80516,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Eyeballs",
+      "rarity": 25,
+      "document_id": 5274120827606956363
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Kite",
+      "rarity": 5,
+      "document_id": 5440869715943644373
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Satin Gold",
+      "rarity": 15
+    }
+  ]
+}

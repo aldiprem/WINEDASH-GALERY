@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-105216",
+  "title": "Ice Cream",
+  "num": 105216,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "TNT Stick",
+      "rarity": 15,
+      "document_id": 5458557701233607033
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Glasses",
+      "rarity": 4,
+      "document_id": 5438410885821392267
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 15
+    }
+  ]
+}

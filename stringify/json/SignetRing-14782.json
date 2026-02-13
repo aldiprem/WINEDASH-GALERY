@@ -1,0 +1,26 @@
+{
+  "slug": "SignetRing-14782",
+  "title": "Signet Ring",
+  "num": 14782,
+  "availability_issued": 16703,
+  "availability_total": 18499,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Platinum",
+      "rarity": 40,
+      "document_id": 5431694686546854699
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Oxen of Fire",
+      "rarity": 5,
+      "document_id": 5729015485534568475
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 20
+    }
+  ]
+}

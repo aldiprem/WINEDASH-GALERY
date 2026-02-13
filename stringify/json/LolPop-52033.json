@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-52033",
+  "title": "Lol Pop",
+  "num": 52033,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Pink Foil",
+      "rarity": 10,
+      "document_id": 5226938803679162970
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sakura",
+      "rarity": 4,
+      "document_id": 5436157677258431414
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 20
+    }
+  ]
+}

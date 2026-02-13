@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-91220",
+  "title": "Tama Gadget",
+  "num": 91220,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Shadow",
+      "rarity": 20,
+      "document_id": 5327798611612822762
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Doberman",
+      "rarity": 2,
+      "document_id": 5721848477902700557
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 10
+    }
+  ]
+}

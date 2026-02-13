@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-60763",
+  "title": "Snoop Cigar",
+  "num": 60763,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Hot Rod",
+      "rarity": 25,
+      "document_id": 5375216455014970508
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cavalier Hat",
+      "rarity": 7,
+      "document_id": 5314772714538428013
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

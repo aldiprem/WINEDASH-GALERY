@@ -1,0 +1,26 @@
+{
+  "slug": "EasterEgg-41036",
+  "title": "Easter Egg",
+  "num": 41036,
+  "availability_issued": 162175,
+  "availability_total": 173176,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Frosted",
+      "rarity": 25,
+      "document_id": 5195243748920947600
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Neptune",
+      "rarity": 4,
+      "document_id": 5551092428028510218
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 12
+    }
+  ]
+}

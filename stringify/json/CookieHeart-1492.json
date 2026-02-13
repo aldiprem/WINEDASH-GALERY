@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-1492",
+  "title": "Cookie Heart",
+  "num": 1492,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Last Bites",
+      "rarity": 10,
+      "document_id": 5229233776504104299
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mittens",
+      "rarity": 12,
+      "document_id": 5195148147243899647
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Burgundy",
+      "rarity": 15
+    }
+  ]
+}

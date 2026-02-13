@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-67851",
+  "title": "Mousse Cake",
+  "num": 67851,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Still Alive",
+      "rarity": 1,
+      "document_id": 5314340095367606770
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Candy",
+      "rarity": 6,
+      "document_id": 5287327993776073640
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Desert Sand",
+      "rarity": 15
+    }
+  ]
+}

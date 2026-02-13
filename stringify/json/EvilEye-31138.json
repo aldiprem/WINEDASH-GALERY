@@ -1,0 +1,26 @@
+{
+  "slug": "EvilEye-31138",
+  "title": "Evil Eye",
+  "num": 31138,
+  "availability_issued": 72951,
+  "availability_total": 85204,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "True North",
+      "rarity": 15,
+      "document_id": 5429641932697528493
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jumbo Pencil",
+      "rarity": 2,
+      "document_id": 5440587119980470792
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 20
+    }
+  ]
+}

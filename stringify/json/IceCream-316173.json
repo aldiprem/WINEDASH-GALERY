@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-316173",
+  "title": "Ice Cream",
+  "num": 316173,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Utya Pop",
+      "rarity": 10,
+      "document_id": 5332492997982454128
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shell",
+      "rarity": 7,
+      "document_id": 5440859644245335988
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Dark Green",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "BowTie-41477",
+  "title": "Bow Tie",
+  "num": 41477,
+  "availability_issued": 54803,
+  "availability_total": 65687,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Football",
+      "rarity": 30,
+      "document_id": 5397937231442766605
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Iron Helmet",
+      "rarity": 4,
+      "document_id": 5550920152595300360
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-169687",
+  "title": "Happy Brownie",
+  "num": 169687,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Unicorn",
+      "rarity": 30,
+      "document_id": 5326032460931169842
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Heart",
+      "rarity": 4,
+      "document_id": 5440801593467362650
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Seal Brown",
+      "rarity": 12
+    }
+  ]
+}

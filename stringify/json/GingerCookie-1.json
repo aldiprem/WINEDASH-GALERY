@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-1",
+  "title": "Ginger Cookie",
+  "num": 1,
+  "availability_issued": 142089,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Truffle",
+      "rarity": 17,
+      "document_id": 5233233915770070611
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cupcake",
+      "rarity": 12,
+      "document_id": 5436346024459266141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 20
+    }
+  ]
+}

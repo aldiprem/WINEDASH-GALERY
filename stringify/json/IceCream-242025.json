@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-242025",
+  "title": "Ice Cream",
+  "num": 242025,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Fresh Berry",
+      "rarity": 30,
+      "document_id": 5368312754648155974
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Peace Dove",
+      "rarity": 7,
+      "document_id": 5483426730108518409
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SnakeBox-26868",
+  "title": "Snake Box",
+  "num": 26868,
+  "availability_issued": 170178,
+  "availability_total": 273898,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cotton Candy",
+      "rarity": 30,
+      "document_id": 5368811207077688205
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gingerbread",
+      "rarity": 4,
+      "document_id": 5438165909476763503
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Persimmon",
+      "rarity": 10
+    }
+  ]
+}

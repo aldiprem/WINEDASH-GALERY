@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-45860",
+  "title": "Mousse Cake",
+  "num": 45860,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Gemstones",
+      "rarity": 20,
+      "document_id": 5386408620097306082
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Feather",
+      "rarity": 6,
+      "document_id": 5436045368158609968
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 12
+    }
+  ]
+}

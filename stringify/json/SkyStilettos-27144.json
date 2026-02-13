@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-27144",
+  "title": "Sky Stilettos",
+  "num": 27144,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Lost World",
+      "rarity": 10,
+      "document_id": 5233306852904698192
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lotus",
+      "rarity": 7,
+      "document_id": 5357365218018091768
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Grape",
+      "rarity": 12
+    }
+  ]
+}

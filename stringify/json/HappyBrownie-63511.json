@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-63511",
+  "title": "Happy Brownie",
+  "num": 63511,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Captain Flush",
+      "rarity": 25,
+      "document_id": 5382078790551764670
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Kitsune",
+      "rarity": 4,
+      "document_id": 5722361541810978822
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 10
+    }
+  ]
+}

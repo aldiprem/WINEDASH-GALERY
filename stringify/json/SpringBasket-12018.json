@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-12018",
+  "title": "Spring Basket",
+  "num": 12018,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Nocturne",
+      "rarity": 25,
+      "document_id": 5395693944254269001
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spanner",
+      "rarity": 4,
+      "document_id": 5433627000923252069
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 10
+    }
+  ]
+}

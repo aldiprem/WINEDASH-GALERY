@@ -1,0 +1,26 @@
+{
+  "slug": "StellarRocket-131025",
+  "title": "Stellar Rocket",
+  "num": 131025,
+  "availability_issued": 135408,
+  "availability_total": 156318,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Baby Carrot",
+      "rarity": 20,
+      "document_id": 5285420070518945957
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Old Candle",
+      "rarity": 4,
+      "document_id": 5548873050922942478
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Pacific Green",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-79242",
+  "title": "Instant Ramen",
+  "num": 79242,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bacon",
+      "rarity": 30,
+      "document_id": 5274004657331534091
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Meat Leg",
+      "rarity": 5,
+      "document_id": 5548687143263535126
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Gunship Green",
+      "rarity": 12
+    }
+  ]
+}

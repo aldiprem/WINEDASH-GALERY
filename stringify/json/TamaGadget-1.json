@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-1",
+  "title": "Tama Gadget",
+  "num": 1,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Vivid Sky",
+      "rarity": 20,
+      "document_id": 5255959257748103208
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Shell",
+      "rarity": 5,
+      "document_id": 5440859644245335988
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cappuccino",
+      "rarity": 12
+    }
+  ]
+}

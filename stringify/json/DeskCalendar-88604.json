@@ -1,0 +1,31 @@
+{
+  "slug": "DeskCalendar-88604",
+  "title": "Desk Calendar",
+  "num": 88604,
+  "availability_issued": 306366,
+  "availability_total": 337468,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tic Tac Toe",
+      "rarity": 4,
+      "document_id": 5226652668662932471
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gold",
+      "rarity": 5,
+      "document_id": 5440548920541339106
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Silver Blue",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

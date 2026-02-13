@@ -1,0 +1,26 @@
+{
+  "slug": "StellarRocket-127724",
+  "title": "Stellar Rocket",
+  "num": 127724,
+  "availability_issued": 135408,
+  "availability_total": 156318,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Neon Fuel",
+      "rarity": 30,
+      "document_id": 5188160544690961551
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Crusader",
+      "rarity": 4,
+      "document_id": 5440395491424625401
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Marine Blue",
+      "rarity": 15
+    }
+  ]
+}

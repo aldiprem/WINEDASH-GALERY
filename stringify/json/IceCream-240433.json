@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-240433",
+  "title": "Ice Cream",
+  "num": 240433,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cold Steel",
+      "rarity": 30,
+      "document_id": 5368578003238419778
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Coin Purse",
+      "rarity": 7,
+      "document_id": 5434033386433830171
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 12
+    }
+  ]
+}

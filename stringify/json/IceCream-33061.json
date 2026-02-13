@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-33061",
+  "title": "Ice Cream",
+  "num": 33061,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Kiwi Sorbet",
+      "rarity": 30,
+      "document_id": 5195050617126550326
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cocktail",
+      "rarity": 4,
+      "document_id": 5424853890271044722
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Orange",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JellyBunny-80303",
+  "title": "Jelly Bunny",
+  "num": 80303,
+  "availability_issued": 102244,
+  "availability_total": 129350,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Tropic Twist",
+      "rarity": 5,
+      "document_id": 5399932613118942477
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pizza Slice",
+      "rarity": 4,
+      "document_id": 5436241476365344257
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Hunter Green",
+      "rarity": 15
+    }
+  ]
+}

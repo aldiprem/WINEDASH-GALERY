@@ -1,0 +1,26 @@
+{
+  "slug": "WitchHat-79007",
+  "title": "Witch Hat",
+  "num": 79007,
+  "availability_issued": 82318,
+  "availability_total": 88480,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Red Flag",
+      "rarity": 5,
+      "document_id": 5237835165773882325
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Evil Pumpkin",
+      "rarity": 24,
+      "document_id": 5301253879772494275
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

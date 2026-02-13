@@ -1,0 +1,26 @@
+{
+  "slug": "DeskCalendar-174301",
+  "title": "Desk Calendar",
+  "num": 174301,
+  "availability_issued": 306379,
+  "availability_total": 337481,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Golden Touch",
+      "rarity": 14,
+      "document_id": 5233535465423926830
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Chili",
+      "rarity": 5,
+      "document_id": 5434019956071098016
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 20
+    }
+  ]
+}

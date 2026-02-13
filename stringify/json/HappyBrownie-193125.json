@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-193125",
+  "title": "Happy Brownie",
+  "num": 193125,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Plunger",
+      "rarity": 25,
+      "document_id": 5334700495208483109
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Dice",
+      "rarity": 5,
+      "document_id": 5433613007919800239
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cobalt Blue",
+      "rarity": 10
+    }
+  ]
+}

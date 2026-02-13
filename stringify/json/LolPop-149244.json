@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-149244",
+  "title": "Lol Pop",
+  "num": 149244,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Soap Bubbles",
+      "rarity": 10,
+      "document_id": 5208943560723820702
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Inguz Rune",
+      "rarity": 5,
+      "document_id": 5440848485920301619
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cappuccino",
+      "rarity": 15
+    }
+  ]
+}

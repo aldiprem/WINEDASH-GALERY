@@ -1,0 +1,26 @@
+{
+  "slug": "FaithAmulet-109776",
+  "title": "Faith Amulet",
+  "num": 109776,
+  "availability_issued": 135385,
+  "availability_total": 172784,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Frosty Night",
+      "rarity": 25,
+      "document_id": 5377488144822205237
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Oak Leaf",
+      "rarity": 7,
+      "document_id": 5433898623244985830
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Sapphire",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-5686",
+  "title": "Sky Stilettos",
+  "num": 5686,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Good Fairy",
+      "rarity": 20,
+      "document_id": 5456142134316921282
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moon",
+      "rarity": 7,
+      "document_id": 5440460955316150110
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mint Green",
+      "rarity": 12
+    }
+  ]
+}

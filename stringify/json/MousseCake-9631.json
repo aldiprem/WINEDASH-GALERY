@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-9631",
+  "title": "Mousse Cake",
+  "num": 9631,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mermaid",
+      "rarity": 25,
+      "document_id": 5391368710323731441
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Valentine",
+      "rarity": 6,
+      "document_id": 5285334347266680386
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Tomato",
+      "rarity": 10
+    }
+  ]
+}

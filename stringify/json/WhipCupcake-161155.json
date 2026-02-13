@@ -1,0 +1,31 @@
+{
+  "slug": "WhipCupcake-161155",
+  "title": "Whip Cupcake",
+  "num": 161155,
+  "availability_issued": 260457,
+  "availability_total": 367619,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Trippy",
+      "rarity": 15,
+      "document_id": 5244940695243878615
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Two Hearts",
+      "rarity": 7,
+      "document_id": 5292267614188363062
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Orange",
+      "rarity": 10
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

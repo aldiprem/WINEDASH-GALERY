@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-74112",
+  "title": "Snoop Cigar",
+  "num": 74112,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Royalty",
+      "rarity": 25,
+      "document_id": 5375364429523220047
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Drug",
+      "rarity": 7,
+      "document_id": 5440721062830561949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Indigo Dye",
+      "rarity": 15
+    }
+  ]
+}

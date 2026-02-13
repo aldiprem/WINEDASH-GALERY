@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-69519",
+  "title": "Xmas Stocking",
+  "num": 69519,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Swamp Party",
+      "rarity": 10,
+      "document_id": 5328215090296544101
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Obon Lantern",
+      "rarity": 4,
+      "document_id": 5584801955592536074
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Chestnut",
+      "rarity": 15
+    }
+  ]
+}

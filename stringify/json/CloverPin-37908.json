@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-37908",
+  "title": "Clover Pin",
+  "num": 37908,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cheese",
+      "rarity": 15,
+      "document_id": 5262656176914463553
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mushroom",
+      "rarity": 5,
+      "document_id": 5440642151396435007
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Deep Cyan",
+      "rarity": 12
+    }
+  ]
+}

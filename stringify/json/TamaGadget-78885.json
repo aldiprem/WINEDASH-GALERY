@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-78885",
+  "title": "Tama Gadget",
+  "num": 78885,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sapphire",
+      "rarity": 11,
+      "document_id": 5296660704307208452
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pirate Hat",
+      "rarity": 3,
+      "document_id": 5312418230646632393
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Dark Lilac",
+      "rarity": 15
+    }
+  ]
+}

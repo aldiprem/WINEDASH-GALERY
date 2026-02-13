@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-15814",
+  "title": "Spring Basket",
+  "num": 15814,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Knitty Kitty",
+      "rarity": 30,
+      "document_id": 5350574681449592029
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cowboy Hat",
+      "rarity": 7,
+      "document_id": 5276010157950655513
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Mystic Pearl",
+      "rarity": 10
+    }
+  ]
+}

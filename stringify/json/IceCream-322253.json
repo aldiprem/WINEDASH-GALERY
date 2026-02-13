@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-322253",
+  "title": "Ice Cream",
+  "num": 322253,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Kiwi Sorbet",
+      "rarity": 30,
+      "document_id": 5195050617126550326
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sleepy Unicorn",
+      "rarity": 7,
+      "document_id": 5551140097870528520
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-215090",
+  "title": "Instant Ramen",
+  "num": 215090,
+  "availability_issued": 370984,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Black Pasta",
+      "rarity": 30,
+      "document_id": 5273754290802948989
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pith Helmet",
+      "rarity": 4,
+      "document_id": 5316561538352441613
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

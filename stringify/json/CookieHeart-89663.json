@@ -1,0 +1,26 @@
+{
+  "slug": "CookieHeart-89663",
+  "title": "Cookie Heart",
+  "num": 89663,
+  "availability_issued": 185968,
+  "availability_total": 264486,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Infinity Gems",
+      "rarity": 10,
+      "document_id": 5222282019748210562
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Lemon",
+      "rarity": 2,
+      "document_id": 5440743731667952300
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Platinum",
+      "rarity": 10
+    }
+  ]
+}

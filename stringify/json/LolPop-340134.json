@@ -1,0 +1,26 @@
+{
+  "slug": "LolPop-340134",
+  "title": "Lol Pop",
+  "num": 340134,
+  "availability_issued": 432296,
+  "availability_total": 468745,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Plastic Ice",
+      "rarity": 10,
+      "document_id": 5226763178171460533
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Magic Vial",
+      "rarity": 3,
+      "document_id": 5551127401947201559
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 20
+    }
+  ]
+}

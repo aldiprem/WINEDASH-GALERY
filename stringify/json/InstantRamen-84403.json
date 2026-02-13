@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-84403",
+  "title": "Instant Ramen",
+  "num": 84403,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Spicy Beef",
+      "rarity": 30,
+      "document_id": 5274246025903634270
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Sun",
+      "rarity": 5,
+      "document_id": 5440840243878058297
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Shamrock Green",
+      "rarity": 12
+    }
+  ]
+}

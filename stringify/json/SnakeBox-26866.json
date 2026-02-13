@@ -1,0 +1,26 @@
+{
+  "slug": "SnakeBox-26866",
+  "title": "Snake Box",
+  "num": 26866,
+  "availability_issued": 170178,
+  "availability_total": 273898,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Seashore",
+      "rarity": 30,
+      "document_id": 5368708102092777154
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Jellyfish",
+      "rarity": 10,
+      "document_id": 5433978836054203452
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cobalt Blue",
+      "rarity": 15
+    }
+  ]
+}

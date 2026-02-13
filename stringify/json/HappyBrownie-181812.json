@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-181812",
+  "title": "Happy Brownie",
+  "num": 181812,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Strawberry",
+      "rarity": 30,
+      "document_id": 5375067050282618866
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Hazelnut",
+      "rarity": 5,
+      "document_id": 5548753882760347658
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Strawberry",
+      "rarity": 10
+    }
+  ]
+}

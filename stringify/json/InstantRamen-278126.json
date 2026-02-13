@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-278126",
+  "title": "Instant Ramen",
+  "num": 278126,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Family Jewels",
+      "rarity": 15,
+      "document_id": 5370856564993326315
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Potion",
+      "rarity": 5,
+      "document_id": 5435902410172163141
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Seal Brown",
+      "rarity": 10
+    }
+  ]
+}

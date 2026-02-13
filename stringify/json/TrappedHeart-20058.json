@@ -1,0 +1,26 @@
+{
+  "slug": "TrappedHeart-20058",
+  "title": "Trapped Heart",
+  "num": 20058,
+  "availability_issued": 24848,
+  "availability_total": 26407,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Blood Stains",
+      "rarity": 26,
+      "document_id": 5415736005414118123
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Burger",
+      "rarity": 2,
+      "document_id": 5434080145742782526
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

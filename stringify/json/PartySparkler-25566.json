@@ -1,0 +1,26 @@
+{
+  "slug": "PartySparkler-25566",
+  "title": "Party Sparkler",
+  "num": 25566,
+  "availability_issued": 176752,
+  "availability_total": 243771,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Luminous",
+      "rarity": 13,
+      "document_id": 5228943767427377403
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moose Head",
+      "rarity": 5,
+      "document_id": 5440792556856173329
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 15
+    }
+  ]
+}

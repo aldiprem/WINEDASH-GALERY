@@ -1,0 +1,26 @@
+{
+  "slug": "InstantRamen-269690",
+  "title": "Instant Ramen",
+  "num": 269690,
+  "availability_issued": 370983,
+  "availability_total": 457382,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bacon",
+      "rarity": 30,
+      "document_id": 5274004657331534091
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Banana",
+      "rarity": 2,
+      "document_id": 5548920390052478992
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Satin Gold",
+      "rarity": 15
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-11214",
+  "title": "Xmas Stocking",
+  "num": 11214,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cold Feet",
+      "rarity": 30,
+      "document_id": 5298922726143061087
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mittens",
+      "rarity": 8,
+      "document_id": 5195148147243899647
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Shamrock Green",
+      "rarity": 12
+    }
+  ]
+}

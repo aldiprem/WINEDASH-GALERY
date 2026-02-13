@@ -1,0 +1,26 @@
+{
+  "slug": "SnoopCigar-16285",
+  "title": "Snoop Cigar",
+  "num": 16285,
+  "availability_issued": 117223,
+  "availability_total": 119573,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Triple Shot",
+      "rarity": 20,
+      "document_id": 5373351880862758526
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Acorn",
+      "rarity": 4,
+      "document_id": 5434026974047658205
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 15
+    }
+  ]
+}

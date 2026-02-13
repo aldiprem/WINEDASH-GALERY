@@ -1,0 +1,26 @@
+{
+  "slug": "SkyStilettos-20106",
+  "title": "Sky Stilettos",
+  "num": 20106,
+  "availability_issued": 50257,
+  "availability_total": 58460,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Diva",
+      "rarity": 10,
+      "document_id": 5204133059913352322
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Mafdet",
+      "rarity": 4,
+      "document_id": 5726594038807658503
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Grape",
+      "rarity": 12
+    }
+  ]
+}

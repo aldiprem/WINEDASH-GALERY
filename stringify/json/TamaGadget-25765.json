@@ -1,0 +1,26 @@
+{
+  "slug": "TamaGadget-25765",
+  "title": "Tama Gadget",
+  "num": 25765,
+  "availability_issued": 102416,
+  "availability_total": 135097,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cherry Milk",
+      "rarity": 20,
+      "document_id": 5255853966624842429
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Breeze",
+      "rarity": 4,
+      "document_id": 5548705246550687755
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Seal Brown",
+      "rarity": 15
+    }
+  ]
+}

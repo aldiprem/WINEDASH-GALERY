@@ -1,0 +1,26 @@
+{
+  "slug": "HappyBrownie-155461",
+  "title": "Happy Brownie",
+  "num": 155461,
+  "availability_issued": 216404,
+  "availability_total": 264231,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Amethyst",
+      "rarity": 30,
+      "document_id": 5332349430110650632
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Moon Eagle",
+      "rarity": 5,
+      "document_id": 5722284966839058444
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 10
+    }
+  ]
+}

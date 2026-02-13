@@ -1,0 +1,31 @@
+{
+  "slug": "LoveCandle-10531",
+  "title": "Love Candle",
+  "num": 10531,
+  "availability_issued": 23181,
+  "availability_total": 30296,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Mykonos",
+      "rarity": 30,
+      "document_id": 5395821629337002586
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Gear",
+      "rarity": 5,
+      "document_id": 5440500005158804832
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Black",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

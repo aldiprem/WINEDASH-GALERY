@@ -1,0 +1,26 @@
+{
+  "slug": "JesterHat-133414",
+  "title": "Jester Hat",
+  "num": 133414,
+  "availability_issued": 134548,
+  "availability_total": 190222,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Great Again",
+      "rarity": 8,
+      "document_id": 5197588023675481775
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cheese",
+      "rarity": 5,
+      "document_id": 5434064267248688787
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cyberpunk",
+      "rarity": 15
+    }
+  ]
+}

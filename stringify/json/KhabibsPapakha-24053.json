@@ -1,0 +1,26 @@
+{
+  "slug": "KhabibsPapakha-24053",
+  "title": "Khabib’s Papakha",
+  "num": 24053,
+  "availability_issued": 28515,
+  "availability_total": 29000,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Flying High",
+      "rarity": 15,
+      "document_id": 5253641461466956315
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wreath",
+      "rarity": 11,
+      "document_id": 5440727526756342476
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

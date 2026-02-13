@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-98880",
+  "title": "Spring Basket",
+  "num": 98880,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Trojan Horse",
+      "rarity": 25,
+      "document_id": 5393568764371437133
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "High Hat",
+      "rarity": 7,
+      "document_id": 5316622372269222433
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 12
+    }
+  ]
+}

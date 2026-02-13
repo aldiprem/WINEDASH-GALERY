@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-211983",
+  "title": "Ice Cream",
+  "num": 211983,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Plastic Pop",
+      "rarity": 25,
+      "document_id": 5195288493890238786
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Love Lock",
+      "rarity": 4,
+      "document_id": 5440749770391969728
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "HeartLocket-1",
+  "title": "Heart Locket",
+  "num": 1,
+  "availability_issued": 1948,
+  "availability_total": 1973,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Valentine",
+      "rarity": 10,
+      "document_id": 5228957120480701248
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Starflower",
+      "rarity": 6,
+      "document_id": 5357460750975657975
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fire Engine",
+      "rarity": 10
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "IceCream-186652",
+  "title": "Ice Cream",
+  "num": 186652,
+  "availability_issued": 324355,
+  "availability_total": 342255,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Cupid Aim",
+      "rarity": 25,
+      "document_id": 5240347352274861155
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Trinity Knot",
+      "rarity": 7,
+      "document_id": 5543960982725853188
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Azure Blue",
+      "rarity": 15
+    }
+  ]
+}

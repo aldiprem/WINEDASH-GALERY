@@ -1,0 +1,26 @@
+{
+  "slug": "CloverPin-92692",
+  "title": "Clover Pin",
+  "num": 92692,
+  "availability_issued": 226248,
+  "availability_total": 270970,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Ice Cream",
+      "rarity": 20,
+      "document_id": 5260677777538971071
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Like",
+      "rarity": 5,
+      "document_id": 5440551390147534212
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 12
+    }
+  ]
+}

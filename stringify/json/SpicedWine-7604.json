@@ -1,0 +1,26 @@
+{
+  "slug": "SpicedWine-7604",
+  "title": "Spiced Wine",
+  "num": 7604,
+  "availability_issued": 101427,
+  "availability_total": 146090,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Blue Burn",
+      "rarity": 8,
+      "document_id": 5429565022718160786
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "White Deer",
+      "rarity": 4,
+      "document_id": 5724531393648656402
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Onyx Black",
+      "rarity": 15
+    }
+  ]
+}

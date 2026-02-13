@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-2190",
+  "title": "Mousse Cake",
+  "num": 2190,
+  "availability_issued": 160706,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sweet Music",
+      "rarity": 30,
+      "document_id": 5334863411907952552
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Twin Peaks",
+      "rarity": 6,
+      "document_id": 5440737538325112126
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Battleship Grey",
+      "rarity": 10
+    }
+  ]
+}

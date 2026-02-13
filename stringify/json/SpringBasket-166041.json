@@ -1,0 +1,26 @@
+{
+  "slug": "SpringBasket-166041",
+  "title": "Spring Basket",
+  "num": 166041,
+  "availability_issued": 171691,
+  "availability_total": 231311,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bondage",
+      "rarity": 2,
+      "document_id": 5393523495416138776
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Teru Bōzu",
+      "rarity": 7,
+      "document_id": 5584796500984070156
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Seal Brown",
+      "rarity": 15
+    }
+  ]
+}

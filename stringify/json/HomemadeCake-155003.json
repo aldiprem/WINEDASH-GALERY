@@ -1,0 +1,26 @@
+{
+  "slug": "HomemadeCake-155003",
+  "title": "Homemade Cake",
+  "num": 155003,
+  "availability_issued": 178568,
+  "availability_total": 199482,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Angel Cake",
+      "rarity": 15,
+      "document_id": 5420155973438298900
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Pickaxe",
+      "rarity": 5,
+      "document_id": 5427383398375122352
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Fandango",
+      "rarity": 15
+    }
+  ]
+}

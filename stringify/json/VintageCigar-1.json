@@ -1,0 +1,26 @@
+{
+  "slug": "VintageCigar-1",
+  "title": "Vintage Cigar",
+  "num": 1,
+  "availability_issued": 26277,
+  "availability_total": 31024,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Foundry",
+      "rarity": 20,
+      "document_id": 5427007713290775577
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Cat Mask",
+      "rarity": 2,
+      "document_id": 5433934065315110448
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Cobalt Blue",
+      "rarity": 20
+    }
+  ]
+}

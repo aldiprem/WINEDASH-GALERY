@@ -1,0 +1,26 @@
+{
+  "slug": "XmasStocking-33940",
+  "title": "Xmas Stocking",
+  "num": 33940,
+  "availability_issued": 207618,
+  "availability_total": 334632,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Midnight",
+      "rarity": 15,
+      "document_id": 5299034592861253310
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rudolph",
+      "rarity": 12,
+      "document_id": 5283265641908824187
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 12
+    }
+  ]
+}

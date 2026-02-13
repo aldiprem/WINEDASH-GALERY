@@ -1,0 +1,26 @@
+{
+  "slug": "GingerCookie-41418",
+  "title": "Ginger Cookie",
+  "num": 41418,
+  "availability_issued": 142090,
+  "availability_total": 188888,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Madagascar",
+      "rarity": 12,
+      "document_id": 5224259353971812419
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Takoyaki",
+      "rarity": 4,
+      "document_id": 5582609220169105413
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Caramel",
+      "rarity": 20
+    }
+  ]
+}

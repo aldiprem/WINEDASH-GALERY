@@ -1,0 +1,26 @@
+{
+  "slug": "MoonPendant-38058",
+  "title": "Moon Pendant",
+  "num": 38058,
+  "availability_issued": 101720,
+  "availability_total": 111080,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Liquid Gold",
+      "rarity": 30,
+      "document_id": 5215500609985218004
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Bottlenose",
+      "rarity": 9,
+      "document_id": 5434036581889501237
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Raspberry",
+      "rarity": 10
+    }
+  ]
+}

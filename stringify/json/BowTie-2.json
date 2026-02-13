@@ -1,0 +1,26 @@
+{
+  "slug": "BowTie-2",
+  "title": "Bow Tie",
+  "num": 2,
+  "availability_issued": 54803,
+  "availability_total": 65687,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Bus Guys",
+      "rarity": 10,
+      "document_id": 5411379130459518004
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Wagasa",
+      "rarity": 3,
+      "document_id": 5584553246921326607
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Coral Red",
+      "rarity": 15
+    }
+  ]
+}

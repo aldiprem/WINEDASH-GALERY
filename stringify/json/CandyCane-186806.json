@@ -1,0 +1,26 @@
+{
+  "slug": "CandyCane-186806",
+  "title": "Candy Cane",
+  "num": 186806,
+  "availability_issued": 209557,
+  "availability_total": 320622,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Final Offer",
+      "rarity": 26,
+      "document_id": 5305253310368867020
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "New Year’s Eve",
+      "rarity": 24,
+      "document_id": 5199550690585763036
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Rosewood",
+      "rarity": 10
+    }
+  ]
+}

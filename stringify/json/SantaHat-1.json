@@ -1,0 +1,31 @@
+{
+  "slug": "SantaHat-1",
+  "title": "Santa Hat",
+  "num": 1,
+  "availability_issued": 68215,
+  "availability_total": 89034,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Black Drops",
+      "rarity": 15,
+      "document_id": 5398091266149867953
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Rudolph",
+      "rarity": 16,
+      "document_id": 5283265641908824187
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lemongrass",
+      "rarity": 20
+    },
+    {
+      "type": "StarGiftAttributeOriginalDetails",
+      "name": null,
+      "rarity": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "MousseCake-41470",
+  "title": "Mousse Cake",
+  "num": 41470,
+  "availability_issued": 160707,
+  "availability_total": 230505,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Sweet Music",
+      "rarity": 30,
+      "document_id": 5334863411907952552
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Spanner",
+      "rarity": 4,
+      "document_id": 5433627000923252069
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Persimmon",
+      "rarity": 12
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "JackInTheBox-68769",
+  "title": "Jack-in-the-Box",
+  "num": 68769,
+  "availability_issued": 96093,
+  "availability_total": 97345,
+  "attributes": [
+    {
+      "type": "StarGiftAttributeModel",
+      "name": "Thumbs Up",
+      "rarity": 30,
+      "document_id": 5418188612128762929
+    },
+    {
+      "type": "StarGiftAttributePattern",
+      "name": "Eikthyrnir",
+      "rarity": 4,
+      "document_id": 5722379245666172949
+    },
+    {
+      "type": "StarGiftAttributeBackdrop",
+      "name": "Lavender",
+      "rarity": 15
+    }
+  ]
+}
