@@ -845,15 +845,17 @@ function renderPopupContent(filterType, searchTerm = '') {
 
 // ===== FUNGSI UNTUK MEMFORMAT NAMA GIFT MENJADI NAMA FILE =====
 function formatGiftNameForFile(giftName) {
-    // Ganti spasi dengan underscore
-    let fileName = giftName.replace(/\s+/g, '_');
+    // Hapus semua spasi
+    let fileName = giftName.replace(/\s+/g, '');
     
-    // Ganti tanda kutip (') dengan karakter yang sesuai
+    // Hapus tanda kutip dan karakter khusus
     fileName = fileName.replace(/'/g, '');
     fileName = fileName.replace(/’/g, '');
+    fileName = fileName.replace(/-/g, '');
+    fileName = fileName.replace(/\./g, '');
     
-    // Hapus karakter khusus lainnya
-    fileName = fileName.replace(/[^\w\-_]/g, '');
+    // Hapus karakter non-alfanumerik (kecuali underscore)
+    fileName = fileName.replace(/[^\w]/g, '');
     
     return fileName;
 }
@@ -871,15 +873,15 @@ function renderGiftPopup(searchTerm = '') {
     elements.filterPopupList.innerHTML = filteredGifts.map(gift => {
         const isChecked = activeFilters.gift.includes(gift);
         const fileName = formatGiftNameForFile(gift);
-        // Contoh: Durov's Cap -> Durovs_Cap.png
-        const imageUrl = `Unique.png/${fileName}.png`;
+        // Gunakan path relatif ke folder images/gifts/
+        const imageUrl = `images/gifts/${fileName}.png`;
         
         return `
             <div class="popup-filter-item">
                 <label class="popup-checkbox-container">
                     <input type="checkbox" value="${gift}" ${isChecked ? 'checked' : ''} onchange="toggleGiftFilter('${gift}', this.checked)">
                     <span class="popup-checkmark"></span>
-                    <img src="${imageUrl}" alt="${gift}" class="gift-icon" onerror="this.style.display='none'">
+                    <img src="${imageUrl}" alt="${gift}" class="gift-icon" onerror="this.style.display='none'; console.log('Gambar tidak ditemukan:', '${imageUrl}')">
                     <span class="popup-filter-item-label">${gift}</span>
                 </label>
             </div>
