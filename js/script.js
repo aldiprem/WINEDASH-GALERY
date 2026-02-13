@@ -60,7 +60,13 @@ const elements = {
     bottomSheetOverlay: document.getElementById('bottomSheetOverlay'),
     bottomSheet: document.getElementById('bottomSheet'),
     sheetContent: document.getElementById('sheetContent'),
-    scrollTopBtn: document.getElementById('scrollTopBtn')
+    scrollTopBtn: document.getElementById('scrollTopBtn'),
+    activeFiltersPopupOverlay: document.getElementById('activeFiltersPopupOverlay'),
+    activeFiltersPopup: document.getElementById('activeFiltersPopup'),
+    activeFiltersPopupContent: document.getElementById('activeFiltersPopupContent'),
+    activeFiltersPopupClose: document.getElementById('activeFiltersPopupClose'),
+    viewActiveFiltersBtn: document.getElementById('viewActiveFiltersBtn'),
+    shareFilterBtn: document.getElementById('shareFilterBtn')
 };
 
 // Initialize
@@ -80,6 +86,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Check for URL parameters after loading gifts
     checkForUrlParameters();
+    
+    // Update search clear button visibility
+    updateSearchClearButton();
 });
 
 // Load JSON data
@@ -283,6 +292,15 @@ function renderLottiePlayer(container, lottieData) {
     });
 }
 
+// Update search clear button visibility
+function updateSearchClearButton() {
+    if (elements.idSearchInput.value.length > 0) {
+        elements.idSearchClear.classList.add('visible');
+    } else {
+        elements.idSearchClear.classList.remove('visible');
+    }
+}
+
 // Setup event listeners
 function setupEventListeners() {
     // ID Search
@@ -291,6 +309,7 @@ function setupEventListeners() {
         // Auto apply for ID search
         filterAndSortGifts();
         renderActiveFilters();
+        updateSearchClearButton();
     });
     
     elements.idSearchClear.addEventListener('click', () => {
@@ -298,6 +317,7 @@ function setupEventListeners() {
         activeFilters.id = '';
         filterAndSortGifts();
         renderActiveFilters();
+        updateSearchClearButton();
     });
     
     // Filter toggle (show/hide bubbles)
@@ -361,10 +381,131 @@ function setupEventListeners() {
     });
     
     // Share button
-    const shareBtn = document.getElementById('shareFilterBtn');
-    if (shareBtn) {
-        shareBtn.addEventListener('click', shareCurrentFilters);
+    if (elements.shareFilterBtn) {
+        elements.shareFilterBtn.addEventListener('click', shareCurrentFilters);
     }
+    
+    // View active filters (eye button)
+    if (elements.viewActiveFiltersBtn) {
+        elements.viewActiveFiltersBtn.addEventListener('click', openActiveFiltersPopup);
+    }
+    
+    // Close active filters popup
+    if (elements.activeFiltersPopupClose) {
+        elements.activeFiltersPopupClose.addEventListener('click', closeActiveFiltersPopup);
+    }
+    if (elements.activeFiltersPopupOverlay) {
+        elements.activeFiltersPopupOverlay.addEventListener('click', (e) => {
+            if (e.target === elements.activeFiltersPopupOverlay) {
+                closeActiveFiltersPopup();
+            }
+        });
+    }
+}
+
+// Open active filters popup (eye button)
+function openActiveFiltersPopup() {
+    renderActiveFiltersPopup();
+    elements.activeFiltersPopupOverlay.classList.add('active');
+    setTimeout(() => elements.activeFiltersPopup.classList.add('active'), 10);
+}
+
+// Close active filters popup
+function closeActiveFiltersPopup() {
+    elements.activeFiltersPopup.classList.remove('active');
+    setTimeout(() => {
+        elements.activeFiltersPopupOverlay.classList.remove('active');
+    }, 300);
+}
+
+// Render active filters popup content
+function renderActiveFiltersPopup() {
+    let html = '';
+    
+    // ID filter
+    if (activeFilters.id) {
+        html += `
+            <div class="popup-filter-group">
+                <div class="popup-filter-group-title">ID Search</div>
+                <div class="popup-filter-items">
+                    <span class="popup-filter-item-tag">${activeFilters.id}</span>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Gift filters
+    if (activeFilters.gift.length > 0) {
+        html += `
+            <div class="popup-filter-group">
+                <div class="popup-filter-group-title">Gift Names</div>
+                <div class="popup-filter-items">
+                    ${activeFilters.gift.map(gift => `<span class="popup-filter-item-tag">${gift}</span>`).join('')}
+                </div>
+            </div>
+        `;
+    }
+    
+    // Model filters
+    if (activeFilters.model.length > 0) {
+        html += `
+            <div class="popup-filter-group">
+                <div class="popup-filter-group-title">Models</div>
+                <div class="popup-filter-items">
+                    ${activeFilters.model.map(model => `<span class="popup-filter-item-tag">${model}</span>`).join('')}
+                </div>
+            </div>
+        `;
+    }
+    
+    // Symbol filters
+    if (activeFilters.symbol.length > 0) {
+        html += `
+            <div class="popup-filter-group">
+                <div class="popup-filter-group-title">Symbols</div>
+                <div class="popup-filter-items">
+                    ${activeFilters.symbol.map(symbol => `<span class="popup-filter-item-tag">${symbol}</span>`).join('')}
+                </div>
+            </div>
+        `;
+    }
+    
+    // Backdrop filters
+    if (activeFilters.bg.length > 0) {
+        html += `
+            <div class="popup-filter-group">
+                <div class="popup-filter-group-title">Backdrops</div>
+                <div class="popup-filter-items">
+                    ${activeFilters.bg.map(bg => `<span class="popup-filter-item-tag">${bg}</span>`).join('')}
+                </div>
+            </div>
+        `;
+    }
+    
+    // Sort filter
+    if (activeFilters.sort !== 'price-asc') {
+        const sortLabels = {
+            'price-asc': 'Low to High',
+            'price-desc': 'High to Low',
+            'id-asc': 'ID Ascending',
+            'id-desc': 'ID Descending',
+            'latest': 'Latest'
+        };
+        html += `
+            <div class="popup-filter-group">
+                <div class="popup-filter-group-title">Sort By</div>
+                <div class="popup-filter-items">
+                    <span class="popup-filter-item-tag">${sortLabels[activeFilters.sort]}</span>
+                </div>
+            </div>
+        `;
+    }
+    
+    if (html === '') {
+        html = '<div class="popup-empty-state">No active filters</div>';
+    }
+    
+    elements.activeFiltersPopupContent.innerHTML = html;
 }
 
 // Open filter popup
@@ -712,14 +853,12 @@ function updateFilterCounts() {
     elements.bgCount.textContent = activeFilters.bg.length || '0';
 }
 
-// Render active filters as tags
+// Render active filters as tags (horizontal scroll)
 function renderActiveFilters() {
-    let activeFilterCount = 0;
     let html = '';
     
     // ID filter
     if (activeFilters.id) {
-        activeFilterCount++;
         html += `
             <div class="filter-tag">
                 <span class="filter-tag-category">ID:</span>
@@ -735,7 +874,6 @@ function renderActiveFilters() {
     
     // Gift filters
     activeFilters.gift.forEach(gift => {
-        activeFilterCount++;
         html += `
             <div class="filter-tag">
                 <span class="filter-tag-category">Gift:</span>
@@ -751,7 +889,6 @@ function renderActiveFilters() {
     
     // Model filters
     activeFilters.model.forEach(model => {
-        activeFilterCount++;
         html += `
             <div class="filter-tag">
                 <span class="filter-tag-category">Model:</span>
@@ -767,7 +904,6 @@ function renderActiveFilters() {
     
     // Symbol filters
     activeFilters.symbol.forEach(symbol => {
-        activeFilterCount++;
         html += `
             <div class="filter-tag">
                 <span class="filter-tag-category">Symbol:</span>
@@ -783,7 +919,6 @@ function renderActiveFilters() {
     
     // Backdrop filters
     activeFilters.bg.forEach(bg => {
-        activeFilterCount++;
         html += `
             <div class="filter-tag">
                 <span class="filter-tag-category">Backdrop:</span>
@@ -797,7 +932,7 @@ function renderActiveFilters() {
         `;
     });
     
-    // Sort filter (always show if not default)
+    // Sort filter
     if (activeFilters.sort !== 'price-asc') {
         const sortLabels = {
             'price-asc': 'Low to High',
@@ -806,7 +941,6 @@ function renderActiveFilters() {
             'id-desc': 'ID Descending',
             'latest': 'Latest'
         };
-        activeFilterCount++;
         html += `
             <div class="filter-tag">
                 <span class="filter-tag-category">Sort:</span>
@@ -820,10 +954,32 @@ function renderActiveFilters() {
         `;
     }
     
-    if (activeFilterCount === 0) {
+    if (html === '') {
         elements.activeFilters.innerHTML = '<span style="color: var(--tg-text-hint); font-size: 0.8rem;">No active filters</span>';
     } else {
         elements.activeFilters.innerHTML = html;
+    }
+    
+    // Update share button visibility (show only if there are active filters)
+    updateShareButtonVisibility();
+}
+
+// Update share button visibility
+function updateShareButtonVisibility() {
+    const hasActiveFilters = 
+        activeFilters.id !== '' || 
+        activeFilters.gift.length > 0 || 
+        activeFilters.model.length > 0 || 
+        activeFilters.symbol.length > 0 || 
+        activeFilters.bg.length > 0 || 
+        activeFilters.sort !== 'price-asc';
+    
+    if (elements.shareFilterBtn) {
+        if (hasActiveFilters) {
+            elements.shareFilterBtn.style.display = 'flex';
+        } else {
+            elements.shareFilterBtn.style.display = 'none';
+        }
     }
 }
 
@@ -833,6 +989,7 @@ window.removeIdFilter = function() {
     activeFilters.id = '';
     filterAndSortGifts();
     renderActiveFilters();
+    updateSearchClearButton();
 };
 
 window.removeGiftFilter = function(gift) {
@@ -912,6 +1069,7 @@ function clearAllFilters() {
     updateDependentBubbles();
     updateFilterCounts();
     renderActiveFilters();
+    updateSearchClearButton();
     
     // Apply filters
     filterAndSortGifts();
@@ -1144,6 +1302,9 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && elements.filterPopupOverlay.classList.contains('active')) {
         closeFilterPopup();
     }
+    if (e.key === 'Escape' && elements.activeFiltersPopupOverlay.classList.contains('active')) {
+        closeActiveFiltersPopup();
+    }
 });
 
 // Reset all Lottie animations on page load - ENSURE SINGLE PLAY
@@ -1249,6 +1410,7 @@ function applyFiltersFromEncoded(encodedString) {
     // Update dependent bubbles
     updateDependentBubbles();
     updateFilterCounts();
+    updateSearchClearButton();
     
     // Apply filters
     filterAndSortGifts();
@@ -1343,10 +1505,9 @@ function checkForUrlParameters() {
             showToast('Filters applied from shared link!');
             
             // Add visual feedback to share button
-            const shareBtn = document.getElementById('shareFilterBtn');
-            if (shareBtn) {
-                shareBtn.classList.add('pulse');
-                setTimeout(() => shareBtn.classList.remove('pulse'), 2000);
+            if (elements.shareFilterBtn) {
+                elements.shareFilterBtn.classList.add('pulse');
+                setTimeout(() => elements.shareFilterBtn.classList.remove('pulse'), 2000);
             }
         } else {
             showToast('Failed to apply filters', 3000);
