@@ -90,6 +90,21 @@ body {
     flex-direction: column;
 }
 
+/* Ikon gift di popup filter */
+.gift-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.popup-filter-item .popup-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* ===== GLASS COMPONENTS ===== */
 .glass-panel, .gift-card, .bottom-sheet, .scroll-top, .filter-popup, .active-filters-popup {
     backdrop-filter: blur(var(--blur-amount));
