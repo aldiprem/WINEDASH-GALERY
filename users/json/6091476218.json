@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 6091476218,
+    "fullname": "DeAlgaleo.",
+    "username": null,
+    "joined_at": null,
+    "first_start": "26.11.2025 13:07:01",
+    "last_start": "26.11.2025 13:07:41",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015289
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 8,
+      "user_id": 6091476218,
+      "transaction_id": "6ca9b40a-a12d-4d27-94a5-3300f77c7847",
+      "amount": 280000,
+      "status": "expired",
+      "created_at": 1764137254,
+      "expired_at": 1764137554,
+      "paid_at": null,
+      "last_check": 1764137555,
+      "message_id": 18448,
+      "chat_id": 6091476218,
+      "topic_msg_id": 685
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

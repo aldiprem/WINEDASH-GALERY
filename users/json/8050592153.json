@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "user_id": 8050592153,
+    "fullname": "Estara Giorgio",
+    "username": "estrraa",
+    "joined_at": null,
+    "first_start": "12.02.2026 07:31:05",
+    "last_start": "13.02.2026 07:48:33",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6066406775075835922",
+    "last_update": 1771015196
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 873,
+      "user_id": null,
+      "slug": "LolPop-88107",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": null,
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 1325,
+      "owner_id": 8050592153,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 1776370782,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "LolPop-88107"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

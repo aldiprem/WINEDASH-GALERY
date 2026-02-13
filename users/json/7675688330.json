@@ -1,0 +1,32 @@
+{
+  "profile": {
+    "user_id": 7675688330,
+    "fullname": "ian",
+    "username": "teenytoe",
+    "joined_at": null,
+    "first_start": "01.01.2026 20:47:39",
+    "last_start": "29.01.2026 14:41:14",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6080072149830929903",
+    "last_update": 1771015306
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [
+    "MousseCake-18427"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

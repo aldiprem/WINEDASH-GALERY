@@ -1,0 +1,59 @@
+{
+  "profile": {
+    "user_id": 7061993921,
+    "fullname": "Kalesha",
+    "username": "iRchyuna",
+    "joined_at": null,
+    "first_start": "07.02.2026 13:12:13",
+    "last_start": "07.02.2026 22:21:04",
+    "last_nego": 1770476589,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6089059115494739370",
+    "last_update": 1771015199
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 156,
+      "user_id": 7061993921,
+      "transaction_id": "0118680b-6a8c-4bfc-b071-fa9c466ec0d7",
+      "amount": 85000,
+      "status": "paid",
+      "created_at": 1770444827,
+      "expired_at": 1770445127,
+      "paid_at": 1770444950,
+      "last_check": 1770444950,
+      "message_id": 51657,
+      "chat_id": 7061993921,
+      "topic_msg_id": 338
+    }
+  ],
+  "withdraws": [
+    {
+      "id": 97,
+      "withdraw_id": "tFX7sDzRsJNtEy3cRKcHzblwm",
+      "user_id": 7061993921,
+      "amount": 85000,
+      "account_info": "BRI - 5633 0102 7740 534 - NOFITRI LITA",
+      "status": "paid",
+      "created_at": 1770477854,
+      "updated_at": 1770477973,
+      "topic_msg_id": 339,
+      "extra": "{\"proof_msg_id\": 52660, \"proof_admin_id\": 7988486507}",
+      "user_msg_id": null
+    }
+  ],
+  "mines_stats": null,
+  "stars_orders": null
+}

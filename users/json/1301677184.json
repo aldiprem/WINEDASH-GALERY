@@ -1,0 +1,59 @@
+{
+  "profile": {
+    "user_id": 1301677184,
+    "fullname": "Ysäbelle. فتاة مثيرة",
+    "username": null,
+    "joined_at": null,
+    "first_start": "06.12.2025 07:04:54",
+    "last_start": "24.12.2025 13:05:52",
+    "last_nego": 1766556159,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6292083662685671169",
+    "last_update": 1771015275
+  },
+  "balance": 2000,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 101,
+      "user_id": 1301677184,
+      "transaction_id": "55f76b8e-5940-45de-9100-804ef85287ea",
+      "amount": 10000,
+      "status": "expired",
+      "created_at": 1766554676,
+      "expired_at": 1766554976,
+      "paid_at": null,
+      "last_check": 1766554977,
+      "message_id": 33641,
+      "chat_id": 1301677184,
+      "topic_msg_id": 181
+    },
+    {
+      "id": 102,
+      "user_id": 1301677184,
+      "transaction_id": "93fcad12-5d1d-4a3c-851c-a872a22528fc",
+      "amount": 155000,
+      "status": "paid",
+      "created_at": 1766556275,
+      "expired_at": 1766556575,
+      "paid_at": 1766556320,
+      "last_check": 1766556320,
+      "message_id": 33653,
+      "chat_id": 1301677184,
+      "topic_msg_id": 182
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

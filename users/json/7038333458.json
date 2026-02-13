@@ -1,0 +1,57 @@
+{
+  "profile": {
+    "user_id": 7038333458,
+    "fullname": "🎀( ) 𓈒 𝓟rincess keɣtɑ !¡",
+    "username": "niingnieng",
+    "joined_at": null,
+    "first_start": "20.12.2025 02:10:20",
+    "last_start": "21.12.2025 00:56:32",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015209
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 86,
+      "user_id": 7038333458,
+      "transaction_id": "9dfedff5-f2c4-4eac-9134-0ccce1f8582d",
+      "amount": 100,
+      "status": "expired",
+      "created_at": 1766171582,
+      "expired_at": 1766171882,
+      "paid_at": null,
+      "last_check": 1766171883,
+      "message_id": 30806,
+      "chat_id": 7038333458,
+      "topic_msg_id": 147
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 7038333458,
+    "gift_type": "🧸",
+    "gift_id": 5170233102089322756,
+    "price_rp": 4000,
+    "qty": 1,
+    "note": "",
+    "send_to": "@esakezaeshh",
+    "total_price_rp": 4000,
+    "last_status": "",
+    "send_mode": "Hide",
+    "send_from": "@rawmpas"
+  }
+}

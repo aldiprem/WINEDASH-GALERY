@@ -1,0 +1,88 @@
+{
+  "profile": {
+    "user_id": 5665347105,
+    "fullname": "Ze",
+    "username": "Raflesis",
+    "joined_at": null,
+    "first_start": "01.01.2026 20:42:58",
+    "last_start": "05.01.2026 23:32:36",
+    "last_nego": 1767342710,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6154296683718708172",
+    "last_update": 1771015323
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 5665347105,
+    "referred_by": 7915249685,
+    "total_ref": 0
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 133,
+      "user_id": 5665347105,
+      "transaction_id": "02c213e7-d90e-4f59-8859-b58588dac7ee",
+      "amount": 105000,
+      "status": "paid",
+      "created_at": 1767275005,
+      "expired_at": 1767275305,
+      "paid_at": 1767275076,
+      "last_check": 1767275076,
+      "message_id": 39236,
+      "chat_id": 5665347105,
+      "topic_msg_id": 260
+    }
+  ],
+  "withdraws": [
+    {
+      "id": 85,
+      "withdraw_id": "jRIzg24VGjth1nCUPwrhW8eVF",
+      "user_id": 5665347105,
+      "amount": 105000,
+      "account_info": "DANA - 087737547230 - a**",
+      "status": "rejected",
+      "created_at": 1767598057,
+      "updated_at": 1767604336,
+      "topic_msg_id": 278,
+      "extra": null,
+      "user_msg_id": null
+    },
+    {
+      "id": 87,
+      "withdraw_id": "3sFtHViCIXCjqoYmwhjiMSFU1",
+      "user_id": 5665347105,
+      "amount": 105000,
+      "account_info": "BCA - 2460988783 - AS",
+      "status": "paid",
+      "created_at": 1767604645,
+      "updated_at": 1767604741,
+      "topic_msg_id": 282,
+      "extra": "{\"proof_msg_id\": 42021, \"proof_admin_id\": 7988486507}",
+      "user_msg_id": null
+    }
+  ],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 5665347105,
+    "gift_type": "",
+    "gift_id": 0,
+    "price_rp": 0,
+    "qty": 1,
+    "note": "",
+    "send_to": "",
+    "total_price_rp": 0,
+    "last_status": "",
+    "send_mode": "Unhide",
+    "send_from": ""
+  }
+}

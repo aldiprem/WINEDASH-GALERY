@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 5966913291,
+    "fullname": "Darchie, W.",
+    "username": null,
+    "joined_at": null,
+    "first_start": "17.10.2025 05:23:28",
+    "last_start": "17.10.2025 05:23:58",
+    "last_nego": 1760653629,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6228805527261612994",
+    "last_update": 1771015348
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

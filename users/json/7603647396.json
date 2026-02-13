@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "user_id": 7603647396,
+    "fullname": "𝘣𝘪𝘯𝘢𝘳𝘢. ♡",
+    "username": "mailbsox",
+    "joined_at": null,
+    "first_start": "22.10.2025 19:59:50",
+    "last_start": "23.10.2025 09:47:29",
+    "last_nego": 1761143585,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6062220977258564876",
+    "last_update": 1771015253
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 152,
+      "user_id": null,
+      "slug": "CloverPin-34637",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": "DANA - 085882007562 - AISYAH ALI",
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 300,
+      "owner_id": 7603647396,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 7804544881,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "CloverPin-34637"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

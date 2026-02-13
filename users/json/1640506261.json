@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 1640506261,
+    "fullname": "Beckett. ♥️",
+    "username": "radleigh",
+    "joined_at": null,
+    "first_start": "11.12.2025 09:21:06",
+    "last_start": "11.12.2025 12:28:34",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6294194690651262551",
+    "last_update": 1771015251
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 55,
+      "user_id": 1640506261,
+      "transaction_id": "6d34fc8e-60b3-4c47-905f-ce20fe82fe6b",
+      "amount": 98940,
+      "status": "paid",
+      "created_at": 1765419707,
+      "expired_at": 1765420007,
+      "paid_at": 1765419778,
+      "last_check": 1765419778,
+      "message_id": 26288,
+      "chat_id": 1640506261,
+      "topic_msg_id": 973
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

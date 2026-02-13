@@ -1,0 +1,59 @@
+{
+  "profile": {
+    "user_id": 6798151994,
+    "fullname": "Ley, semangat!!",
+    "username": "maeam",
+    "joined_at": null,
+    "first_start": "08.02.2026 07:16:56",
+    "last_start": "08.02.2026 09:43:32",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6271513221764158625",
+    "last_update": 1771015186
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 161,
+      "user_id": 6798151994,
+      "transaction_id": "bb2c90ac-b00a-4d59-aaa9-a48c92378c41",
+      "amount": 234600,
+      "status": "expired",
+      "created_at": 1770509854,
+      "expired_at": 1770510154,
+      "paid_at": null,
+      "last_check": 1770510155,
+      "message_id": 52854,
+      "chat_id": 6798151994,
+      "topic_msg_id": 344
+    }
+  ],
+  "withdraws": [
+    {
+      "id": 98,
+      "withdraw_id": "6j1fx7toFMB2EZw3vYWz87SV6",
+      "user_id": 6798151994,
+      "amount": 234600,
+      "account_info": "Seabank - 901331745953 - Ahra Kika",
+      "status": "paid",
+      "created_at": 1770518685,
+      "updated_at": 1770518907,
+      "topic_msg_id": 345,
+      "extra": "{\"proof_msg_id\": 52938, \"proof_admin_id\": 7988486507}",
+      "user_msg_id": null
+    }
+  ],
+  "mines_stats": null,
+  "stars_orders": null
+}

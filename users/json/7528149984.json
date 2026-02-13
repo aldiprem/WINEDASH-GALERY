@@ -1,0 +1,59 @@
+{
+  "profile": {
+    "user_id": 7528149984,
+    "fullname": "Ayas Tian' #21stEizenInStereo",
+    "username": "estinbeach",
+    "joined_at": null,
+    "first_start": "18.12.2025 19:58:00",
+    "last_start": "22.12.2025 17:00:39",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6086861187455848014",
+    "last_update": 1771015260
+  },
+  "balance": 3600,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 84,
+      "user_id": 7528149984,
+      "transaction_id": "a2b64331-3e7a-4f6c-8798-59dc922d1dee",
+      "amount": 200000,
+      "status": "paid",
+      "created_at": 1766062760,
+      "expired_at": 1766063060,
+      "paid_at": 1766062948,
+      "last_check": 1766062948,
+      "message_id": 30536,
+      "chat_id": 7528149984,
+      "topic_msg_id": 141
+    },
+    {
+      "id": 85,
+      "user_id": 7528149984,
+      "transaction_id": "b9fafd5f-5ed4-4a3b-90c1-2a0f3d087395",
+      "amount": 130000,
+      "status": "paid",
+      "created_at": 1766109865,
+      "expired_at": 1766110165,
+      "paid_at": 1766109952,
+      "last_check": 1766109952,
+      "message_id": 30660,
+      "chat_id": 7528149984,
+      "topic_msg_id": 144
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

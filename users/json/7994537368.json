@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 7994537368,
+    "fullname": "nRic",
+    "username": "ddenied",
+    "joined_at": null,
+    "first_start": "11.10.2025 11:24:35",
+    "last_start": "11.10.2025 11:24:35",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015308
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

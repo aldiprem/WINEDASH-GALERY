@@ -1,0 +1,66 @@
+{
+  "profile": {
+    "user_id": 7943258906,
+    "fullname": "Not active",
+    "username": "wChairman",
+    "joined_at": null,
+    "first_start": "30.11.2025 08:31:32",
+    "last_start": "06.01.2026 15:38:07",
+    "last_nego": 1764466119,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015237
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 7943258906,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [
+    {
+      "id": 506,
+      "user_id": null,
+      "slug": "InstantRamen-56684",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": null,
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 741,
+      "owner_id": 7943258906,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 8356745939,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "InstantRamen-56684"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

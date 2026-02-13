@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 8228089262,
+    "fullname": "Ernest",
+    "username": "driektur",
+    "joined_at": null,
+    "first_start": "18.10.2025 23:13:33",
+    "last_start": "18.10.2025 23:13:41",
+    "last_nego": 0,
+    "phone": "998873007942",
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "5251661817007172644",
+    "last_update": 1771015311
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

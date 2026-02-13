@@ -1,0 +1,57 @@
+{
+  "profile": {
+    "user_id": 1407970805,
+    "fullname": "Dargas open all AVREK",
+    "username": "sebbatduluu",
+    "joined_at": null,
+    "first_start": "01.12.2025 06:46:13",
+    "last_start": "01.12.2025 06:48:02",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6219716087973088362",
+    "last_update": 1771015319
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 21,
+      "user_id": 1407970805,
+      "transaction_id": "eb824922-f9f8-4f1c-8dee-71cadc63c4b0",
+      "amount": 5000,
+      "status": "expired",
+      "created_at": 1764546437,
+      "expired_at": 1764546737,
+      "paid_at": null,
+      "last_check": 1764546738,
+      "message_id": 21244,
+      "chat_id": 1407970805,
+      "topic_msg_id": 754
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 1407970805,
+    "gift_type": "🧸",
+    "gift_id": 5170233102089322756,
+    "price_rp": 4500,
+    "qty": 10,
+    "note": "",
+    "send_to": "@jepngi",
+    "total_price_rp": 45000,
+    "last_status": "",
+    "send_mode": "Unhide",
+    "send_from": "@QIYOWIBI (FEMALE)"
+  }
+}

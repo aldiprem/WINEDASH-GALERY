@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "user_id": 7735897486,
+    "fullname": "Nao, logout for a while.",
+    "username": "Beomgxyu",
+    "joined_at": null,
+    "first_start": "22.12.2025 14:35:07",
+    "last_start": "10.02.2026 09:43:17",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6325724814370344395",
+    "last_update": 1771015306
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 727,
+      "user_id": null,
+      "slug": "InstantRamen-215090",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": null,
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 1105,
+      "owner_id": 7735897486,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 6790061094,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "InstantRamen-215090"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

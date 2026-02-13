@@ -1,0 +1,34 @@
+{
+  "profile": {
+    "user_id": 7401847948,
+    "fullname": "Jericho",
+    "username": "IWolffx",
+    "joined_at": null,
+    "first_start": "18.11.2025 08:28:09",
+    "last_start": "17.12.2025 17:05:37",
+    "last_nego": 1763855252,
+    "phone": "18722769690",
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6068622707617631953",
+    "last_update": 1771015276
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 7401847948,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

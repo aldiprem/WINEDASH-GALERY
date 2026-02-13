@@ -1,0 +1,73 @@
+{
+  "profile": {
+    "user_id": 8467148824,
+    "fullname": "Daniel, J.",
+    "username": null,
+    "joined_at": null,
+    "first_start": "31.01.2026 13:35:31",
+    "last_start": "05.02.2026 12:44:01",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6086794860275896036",
+    "last_update": 1771015151
+  },
+  "balance": 1,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 151,
+      "user_id": 8467148824,
+      "transaction_id": "2b3d2091-dcf4-4552-a472-68a0b74e4722",
+      "amount": 91800,
+      "status": "expired",
+      "created_at": 1769841366,
+      "expired_at": 1769841666,
+      "paid_at": null,
+      "last_check": 1769841668,
+      "message_id": 50056,
+      "chat_id": 8467148824,
+      "topic_msg_id": 329
+    },
+    {
+      "id": 152,
+      "user_id": 8467148824,
+      "transaction_id": "27082020-0da1-4374-8a49-83cab72cf366",
+      "amount": 91801,
+      "status": "paid",
+      "created_at": 1769841663,
+      "expired_at": 1769841963,
+      "paid_at": 1769842389,
+      "last_check": 1769842389,
+      "message_id": 50063,
+      "chat_id": 8467148824,
+      "topic_msg_id": 330
+    },
+    {
+      "id": 155,
+      "user_id": 8467148824,
+      "transaction_id": "fc2440b7-0d8a-4ed5-9574-75b6501113c5",
+      "amount": 122400,
+      "status": "expired",
+      "created_at": 1770270293,
+      "expired_at": 1770270593,
+      "paid_at": null,
+      "last_check": 1770270595,
+      "message_id": 51072,
+      "chat_id": 8467148824,
+      "topic_msg_id": 337
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

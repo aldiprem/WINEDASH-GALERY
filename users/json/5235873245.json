@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "user_id": 5235873245,
+    "fullname": "nnayy!",
+    "username": "nenvg",
+    "joined_at": null,
+    "first_start": "25.11.2025 21:57:08",
+    "last_start": "26.11.2025 21:32:03",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6084408791194603199",
+    "last_update": 1771015318
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 465,
+      "user_id": null,
+      "slug": "SpringBasket-43107",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": "DANA - 082262261567 - Iwan L*\nhttps://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012012021111199936367",
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 666,
+      "owner_id": 5235873245,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 1482914061,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "SpringBasket-43107"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

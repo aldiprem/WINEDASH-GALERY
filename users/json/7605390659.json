@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 7605390659,
+    "fullname": "Acc sell",
+    "username": null,
+    "joined_at": null,
+    "first_start": "13.12.2025 19:44:17",
+    "last_start": "15.12.2025 05:35:14",
+    "last_nego": 0,
+    "phone": "17622590513",
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015298
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

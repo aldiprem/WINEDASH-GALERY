@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 6455126929,
+    "fullname": "carle",
+    "username": "yorcdania",
+    "joined_at": null,
+    "first_start": "06.12.2025 15:25:56",
+    "last_start": "07.12.2025 06:45:45",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6170351052427823989",
+    "last_update": 1771015250
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 37,
+      "user_id": 6455126929,
+      "transaction_id": "865f16d4-7274-4409-b16b-58244f794453",
+      "amount": 142800,
+      "status": "expired",
+      "created_at": 1765064795,
+      "expired_at": 1765065095,
+      "paid_at": null,
+      "last_check": 1765065097,
+      "message_id": 23374,
+      "chat_id": 6455126929,
+      "topic_msg_id": 840
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

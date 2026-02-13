@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 5053248810,
+    "fullname": "neyy.",
+    "username": "speaBker",
+    "joined_at": null,
+    "first_start": "08.12.2025 17:25:03",
+    "last_start": "08.12.2025 17:25:16",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6154403121598237825",
+    "last_update": 1771015296
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "user_id": 480640350,
+    "fullname": "ʟɪᴢ",
+    "username": null,
+    "joined_at": null,
+    "first_start": "20.10.2025 17:37:01",
+    "last_start": "20.10.2025 17:38:51",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "2064334584847993643",
+    "last_update": 1771015301
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [
+    {
+      "id": 2,
+      "user_id": 480640350,
+      "slug": "TrappedHeart-7701",
+      "model": null,
+      "background": null,
+      "symbol": null,
+      "rarity": null,
+      "price": 0,
+      "status": "available",
+      "created_at": 1760956739,
+      "gift_address": null,
+      "owner_address": null,
+      "channel_msg_id": null,
+      "username": null
+    }
+  ],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

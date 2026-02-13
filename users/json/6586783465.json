@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 6586783465,
+    "fullname": "Thara A.",
+    "username": "Lovata",
+    "joined_at": null,
+    "first_start": "02.11.2025 21:57:23",
+    "last_start": "02.11.2025 21:57:23",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6062186080649285022",
+    "last_update": 1771015344
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

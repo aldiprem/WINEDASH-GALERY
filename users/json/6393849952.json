@@ -1,0 +1,66 @@
+{
+  "profile": {
+    "user_id": 6393849952,
+    "fullname": "H, Nazzy.",
+    "username": "AgreeA",
+    "joined_at": null,
+    "first_start": "03.12.2025 14:55:31",
+    "last_start": "29.01.2026 13:49:08",
+    "last_nego": 1764920473,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6071415145029635069",
+    "last_update": 1771015160
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 6393849952,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [
+    {
+      "id": 535,
+      "user_id": null,
+      "slug": "MousseCake-10294",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": null,
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 789,
+      "owner_id": 6393849952,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 8579591645,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "MousseCake-10294"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

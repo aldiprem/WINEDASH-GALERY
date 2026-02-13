@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 8163518370,
+    "fullname": "rubyn",
+    "username": "bloomprince",
+    "joined_at": null,
+    "first_start": "07.01.2026 12:41:12",
+    "last_start": "07.01.2026 12:41:16",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6077702461754904697",
+    "last_update": 1771015365
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

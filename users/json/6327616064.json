@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "user_id": 6327616064,
+    "fullname": "Lenaaa",
+    "username": "itslena24",
+    "joined_at": null,
+    "first_start": "14.12.2025 10:11:22",
+    "last_start": "05.02.2026 21:49:56",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6192919361807827683",
+    "last_update": 1771015214
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 6327616064,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 66,
+      "user_id": 6327616064,
+      "transaction_id": "46c42eb9-caaa-44e7-9607-c66f8d830a69",
+      "amount": 62000,
+      "status": "paid",
+      "created_at": 1765681924,
+      "expired_at": 1765682224,
+      "paid_at": 1765692052,
+      "last_check": 1765692052,
+      "message_id": 27610,
+      "chat_id": 6327616064,
+      "topic_msg_id": 1032
+    }
+  ],
+  "withdraws": [
+    {
+      "id": 65,
+      "withdraw_id": "i7xWRqiVEjMJb1PAYisgSsGZg",
+      "user_id": 6327616064,
+      "amount": 800,
+      "account_info": "DANA - 087776435034 - Destha Praedestin Sibuea",
+      "status": "pending",
+      "created_at": 1766689956,
+      "updated_at": 1766689957,
+      "topic_msg_id": 206,
+      "extra": null,
+      "user_msg_id": null
+    }
+  ],
+  "mines_stats": null,
+  "stars_orders": null
+}

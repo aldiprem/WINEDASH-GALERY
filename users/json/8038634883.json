@@ -1,0 +1,51 @@
+{
+  "profile": {
+    "user_id": 8038634883,
+    "fullname": "",
+    "username": null,
+    "joined_at": null,
+    "first_start": "13.11.2025 13:35:52",
+    "last_start": "11.12.2025 14:59:21",
+    "last_nego": 1763101911,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015305
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 8038634883,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [
+    {
+      "id": 14,
+      "user_id": 8038634883,
+      "slug": "LushBouquet-34343",
+      "model": "Snowrose",
+      "background": "Burgundy",
+      "symbol": "Fluffy Wolf",
+      "rarity": "1.5%",
+      "price": 0,
+      "status": "available",
+      "created_at": 1763104758,
+      "gift_address": "EQCFKusX6eAvIq89yCY-FlRNGFAS6lxJYvxafdwRm4F0WfBT",
+      "owner_address": "0:9cf99afda96a858ec2dd069133f7eb50c7f9fe5ecaafe11c8257f329bc1e637d",
+      "channel_msg_id": 187,
+      "username": "rizzreal0919"
+    }
+  ],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

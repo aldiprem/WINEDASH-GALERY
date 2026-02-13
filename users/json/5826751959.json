@@ -1,0 +1,59 @@
+{
+  "profile": {
+    "user_id": 5826751959,
+    "fullname": "ale",
+    "username": "alezy4",
+    "joined_at": null,
+    "first_start": "13.02.2026 22:51:08",
+    "last_start": "13.02.2026 22:51:08",
+    "last_nego": 1770997761,
+    "phone": "6287852185850",
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6070873360675049000",
+    "last_update": 1771015317
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 179,
+      "user_id": 5826751959,
+      "transaction_id": "2e84beab-0b9d-4618-9c92-e6f9e12d93b0",
+      "amount": 115000,
+      "status": "paid",
+      "created_at": 1770997911,
+      "expired_at": 1770998211,
+      "paid_at": 1770997950,
+      "last_check": 1770997950,
+      "message_id": 55581,
+      "chat_id": 5826751959,
+      "topic_msg_id": 384
+    }
+  ],
+  "withdraws": [
+    {
+      "id": 112,
+      "withdraw_id": "xgfdKPewUFh8lN2iJtInZsZix",
+      "user_id": 5826751959,
+      "amount": 115000,
+      "account_info": "SEABANK - 901075053706 - NAYSILLA ANGGITA",
+      "status": "paid",
+      "created_at": 1771001724,
+      "updated_at": 1771003575,
+      "topic_msg_id": 385,
+      "extra": "{\"proof_msg_id\": 55613, \"proof_admin_id\": 7988486507}",
+      "user_msg_id": null
+    }
+  ],
+  "mines_stats": null,
+  "stars_orders": null
+}

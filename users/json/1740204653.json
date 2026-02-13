@@ -1,0 +1,34 @@
+{
+  "profile": {
+    "user_id": 1740204653,
+    "fullname": "w",
+    "username": "junkiees",
+    "joined_at": null,
+    "first_start": "13.12.2025 10:51:24",
+    "last_start": "15.12.2025 02:36:47",
+    "last_nego": 1765601009,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6181610304899320821",
+    "last_update": 1771015218
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 1740204653,
+    "referred_by": 7207274631,
+    "total_ref": 0
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

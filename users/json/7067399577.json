@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 7067399577,
+    "fullname": "Catania",
+    "username": "ballerilne",
+    "joined_at": null,
+    "first_start": "11.12.2025 14:44:40",
+    "last_start": "11.12.2025 14:44:40",
+    "last_nego": 1765441249,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6075729907829902588",
+    "last_update": 1771015308
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

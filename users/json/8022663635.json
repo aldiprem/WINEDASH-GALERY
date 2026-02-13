@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "user_id": 8022663635,
+    "fullname": "Iris.",
+    "username": "Raadcliffe",
+    "joined_at": null,
+    "first_start": "05.12.2025 05:51:48",
+    "last_start": "05.12.2025 20:43:07",
+    "last_nego": 1764908825,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6323366374813666864",
+    "last_update": 1771015201
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 550,
+      "user_id": null,
+      "slug": "PrettyPosy-48068",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": null,
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 803,
+      "owner_id": 8022663635,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": null,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "PrettyPosy-48068"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

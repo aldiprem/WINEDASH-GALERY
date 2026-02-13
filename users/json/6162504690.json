@@ -1,0 +1,42 @@
+{
+  "profile": {
+    "user_id": 6162504690,
+    "fullname": "Djorex Louise.",
+    "username": "pakupayungt",
+    "joined_at": null,
+    "first_start": "01.12.2025 10:33:00",
+    "last_start": "06.12.2025 08:15:27",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6086985664198020515",
+    "last_update": 1771015262
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 6162504690,
+    "gift_type": "🧸",
+    "gift_id": 5170233102089322756,
+    "price_rp": 4000,
+    "qty": 1,
+    "note": "",
+    "send_to": "@kiylaaaa",
+    "total_price_rp": 4000,
+    "last_status": "",
+    "send_mode": "Hide",
+    "send_from": "@RAWMPAS (MALE)"
+  }
+}

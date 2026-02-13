@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "user_id": 6560128642,
+    "fullname": "Abas hetic",
+    "username": "aEparat",
+    "joined_at": null,
+    "first_start": "27.10.2025 10:54:14",
+    "last_start": "02.11.2025 02:00:26",
+    "last_nego": 1761540808,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6249231588562504552",
+    "last_update": 1771015332
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 170,
+      "user_id": null,
+      "slug": "LolPop-235574",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": "DANA - 08812406954 - SUPARDI",
+      "status_tfo": "sold_out",
+      "buyer_id": 980698749,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 322,
+      "owner_id": 6560128642,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 6560128642,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "LolPop-235574"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

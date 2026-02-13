@@ -1,0 +1,57 @@
+{
+  "profile": {
+    "user_id": 7288986357,
+    "fullname": "(62+) Ace @inspektkur.",
+    "username": "inspektkur",
+    "joined_at": null,
+    "first_start": "08.02.2026 14:58:19",
+    "last_start": "08.02.2026 14:58:56",
+    "last_nego": 1770537456,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6066408381393604556",
+    "last_update": 1771015233
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 162,
+      "user_id": 7288986357,
+      "transaction_id": "06cf4d02-00af-4053-9dc0-3e247d631186",
+      "amount": 5000,
+      "status": "expired",
+      "created_at": 1770537573,
+      "expired_at": 1770537873,
+      "paid_at": null,
+      "last_check": 1770537874,
+      "message_id": 53160,
+      "chat_id": 7288986357,
+      "topic_msg_id": 350
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 7288986357,
+    "gift_type": "",
+    "gift_id": 0,
+    "price_rp": 0,
+    "qty": 1,
+    "note": "",
+    "send_to": "",
+    "total_price_rp": 0,
+    "last_status": "",
+    "send_mode": "Unhide",
+    "send_from": ""
+  }
+}

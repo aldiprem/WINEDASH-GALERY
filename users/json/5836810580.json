@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 5836810580,
+    "fullname": "Mesya",
+    "username": "cookieberrys",
+    "joined_at": null,
+    "first_start": "16.10.2025 05:44:58",
+    "last_start": "16.10.2025 05:45:16",
+    "last_nego": 1769660231,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6318896400485256804",
+    "last_update": 1771015188
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

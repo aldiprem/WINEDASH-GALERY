@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 7182889112,
+    "fullname": "erslie",
+    "username": "erslie",
+    "joined_at": null,
+    "first_start": "22.10.2025 22:04:42",
+    "last_start": "23.10.2025 08:58:38",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6298596937640382309",
+    "last_update": 1771015166
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

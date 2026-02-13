@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 7831609825,
+    "fullname": "von",
+    "username": "komandvo",
+    "joined_at": null,
+    "first_start": "02.01.2026 22:50:44",
+    "last_start": "02.01.2026 22:50:44",
+    "last_nego": 1767418089,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6307632737082347035",
+    "last_update": 1771015203
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 137,
+      "user_id": 7831609825,
+      "transaction_id": "31814559-cbdd-4e8d-b87f-95ab20538494",
+      "amount": 74000,
+      "status": "paid",
+      "created_at": 1767369197,
+      "expired_at": 1767369497,
+      "paid_at": 1767369444,
+      "last_check": 1767369444,
+      "message_id": 39959,
+      "chat_id": 7831609825,
+      "topic_msg_id": 272
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

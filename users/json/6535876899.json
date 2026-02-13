@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "user_id": 6535876899,
+    "fullname": "mythia suka babas",
+    "username": "yoowjung",
+    "joined_at": null,
+    "first_start": "18.10.2025 18:34:00",
+    "last_start": "23.10.2025 22:38:22",
+    "last_nego": 1760787824,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6284848979254119198",
+    "last_update": 1771015182
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 119,
+      "user_id": null,
+      "slug": "CloverPin-129244",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": "DANA - 085927471461 - NORAINAH",
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 269,
+      "owner_id": 6535876899,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 6951683949,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "CloverPin-129244",
+    "CloverPin-97347"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 8373939472,
+    "fullname": "Abbas",
+    "username": "eBrothers",
+    "joined_at": null,
+    "first_start": null,
+    "last_start": null,
+    "last_nego": 1760945908,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6336583724350245910",
+    "last_update": 1771015292
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

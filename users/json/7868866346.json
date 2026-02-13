@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 7868866346,
+    "fullname": "Chaes",
+    "username": "mocth3hod",
+    "joined_at": null,
+    "first_start": "08.02.2026 02:45:28",
+    "last_start": "08.02.2026 11:58:33",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6293837465336352261",
+    "last_update": 1771015351
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 157,
+      "user_id": 7868866346,
+      "transaction_id": "a02d3807-39d7-486a-a082-30415abd2815",
+      "amount": 142800,
+      "status": "expired",
+      "created_at": 1770493575,
+      "expired_at": 1770493875,
+      "paid_at": null,
+      "last_check": 1770493877,
+      "message_id": 52724,
+      "chat_id": 7868866346,
+      "topic_msg_id": 340
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

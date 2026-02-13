@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 7535674281,
+    "fullname": "🐾",
+    "username": "wsnopy",
+    "joined_at": null,
+    "first_start": null,
+    "last_start": null,
+    "last_nego": 1761230581,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6070900470508621362",
+    "last_update": 1771015253
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

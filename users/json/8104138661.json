@@ -1,0 +1,46 @@
+{
+  "profile": {
+    "user_id": 8104138661,
+    "fullname": "Kafeel",
+    "username": "pamungkais",
+    "joined_at": null,
+    "first_start": "01.12.2025 11:27:43",
+    "last_start": "11.12.2025 05:44:28",
+    "last_nego": 0,
+    "phone": "12254982080",
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "4916144301901810611",
+    "last_update": 1771015366
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 8104138661,
+    "referred_by": null,
+    "total_ref": 1
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 8104138661,
+    "gift_type": "",
+    "gift_id": 0,
+    "price_rp": 0,
+    "qty": 1,
+    "note": "",
+    "send_to": "",
+    "total_price_rp": 0,
+    "last_status": "",
+    "send_mode": "Unhide",
+    "send_from": ""
+  }
+}

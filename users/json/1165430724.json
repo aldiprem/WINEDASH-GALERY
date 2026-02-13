@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 1165430724,
+    "fullname": "N",
+    "username": "raweewiit",
+    "joined_at": null,
+    "first_start": "06.11.2025 09:53:00",
+    "last_start": "06.11.2025 09:53:27",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6141003759933834775",
+    "last_update": 1771015371
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

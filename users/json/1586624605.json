@@ -1,0 +1,93 @@
+{
+  "profile": {
+    "user_id": 1586624605,
+    "fullname": "Jack'y • Relayer",
+    "username": "rawmpas",
+    "joined_at": null,
+    "first_start": "26.11.2025 02:45:08",
+    "last_start": "11.12.2025 03:29:20",
+    "last_nego": 1764099949,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6156569636246326160",
+    "last_update": 1771015160
+  },
+  "balance": 497000,
+  "wicash": 0,
+  "referral": {
+    "user_id": 1586624605,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [
+    {
+      "id": 21,
+      "user_id": null,
+      "slug": "JellyBunny-1",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": "SEABANK - 901695747341 - EDI SUTRIMO",
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 110,
+      "owner_id": 1586624605,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 406179273,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "JellyBunny-1"
+  ],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 16,
+      "user_id": 1586624605,
+      "transaction_id": "0953e118-6c72-4dbc-a8f3-c1eff470d62a",
+      "amount": 10000,
+      "status": "expired",
+      "created_at": 1764261513,
+      "expired_at": 1764261813,
+      "paid_at": null,
+      "last_check": 1764261814,
+      "message_id": 19326,
+      "chat_id": 1586624605,
+      "topic_msg_id": 721
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 1586624605,
+    "gift_type": "💍",
+    "gift_id": 5170690322832818290,
+    "price_rp": 30000,
+    "qty": 20,
+    "note": "",
+    "send_to": "@rawmpas",
+    "total_price_rp": 600000,
+    "last_status": "",
+    "send_mode": "Hide",
+    "send_from": "@RAWMPAS (MALE)"
+  }
+}

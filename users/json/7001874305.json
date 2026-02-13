@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "user_id": 7001874305,
+    "fullname": "@__𝓢heyy.com💕",
+    "username": "zPHEONY",
+    "joined_at": null,
+    "first_start": "26.11.2025 13:24:59",
+    "last_start": "16.12.2025 12:14:57",
+    "last_nego": 1764232401,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6307632075657383243",
+    "last_update": 1771015362
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 489,
+      "user_id": null,
+      "slug": "RestlessJar-45160",
+      "model": null,
+      "model_rarity": null,
+      "background": null,
+      "background_rarity": null,
+      "symbol": null,
+      "symbol_rarity": null,
+      "original_details": null,
+      "availability_issued": null,
+      "availability_total": null,
+      "price": null,
+      "payment_info": null,
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 716,
+      "owner_id": 7001874305,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 7889546514,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "RestlessJar-45160"
+  ],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

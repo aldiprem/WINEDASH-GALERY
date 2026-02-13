@@ -1,0 +1,34 @@
+{
+  "profile": {
+    "user_id": 5315120601,
+    "fullname": "Dika",
+    "username": null,
+    "joined_at": null,
+    "first_start": "09.11.2025 09:09:06",
+    "last_start": "29.12.2025 18:36:22",
+    "last_nego": 1762654210,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6336755080660455426",
+    "last_update": 1771015317
+  },
+  "balance": 0,
+  "wicash": 5000,
+  "referral": {
+    "user_id": 5315120601,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 5687595516,
+    "fullname": "@gimyuzng.",
+    "username": "gimyuzng",
+    "joined_at": null,
+    "first_start": "05.01.2026 21:13:08",
+    "last_start": "05.01.2026 21:17:31",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6087028867274051748",
+    "last_update": 1771015207
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 142,
+      "user_id": 5687595516,
+      "transaction_id": "4dbc4cd4-2584-4de4-a31f-9ba74372b3a8",
+      "amount": 94860,
+      "status": "paid",
+      "created_at": 1767622475,
+      "expired_at": 1767622775,
+      "paid_at": 1767622574,
+      "last_check": 1767622574,
+      "message_id": 42204,
+      "chat_id": 5687595516,
+      "topic_msg_id": 284
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

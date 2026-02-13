@@ -1,0 +1,98 @@
+{
+  "profile": {
+    "user_id": 7500290914,
+    "fullname": "Zhang L.",
+    "username": "dZhangLinghe",
+    "joined_at": null,
+    "first_start": "15.10.2025 17:06:13",
+    "last_start": "01.01.2026 20:03:35",
+    "last_nego": 1765155519,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6240077132059052833",
+    "last_update": 1771015246
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 34,
+      "user_id": 7500290914,
+      "transaction_id": "c526f682-a4e4-4ee9-b5f3-4e3b7b92f360",
+      "amount": 50000,
+      "status": "paid",
+      "created_at": 1765009151,
+      "expired_at": 1765009451,
+      "paid_at": 1765009191,
+      "last_check": 1765009191,
+      "message_id": 22952,
+      "chat_id": 7500290914,
+      "topic_msg_id": 822
+    },
+    {
+      "id": 44,
+      "user_id": 7500290914,
+      "transaction_id": "e44af8ed-3b55-4e77-ba92-afaec45b7b92",
+      "amount": 12000,
+      "status": "paid",
+      "created_at": 1765147743,
+      "expired_at": 1765148043,
+      "paid_at": 1765154306,
+      "last_check": 1765154306,
+      "message_id": 24203,
+      "chat_id": 7500290914,
+      "topic_msg_id": 877
+    }
+  ],
+  "withdraws": [
+    {
+      "id": 22,
+      "withdraw_id": "WUx3ijVcq5ZsEOo76vMDejd4r",
+      "user_id": 7500290914,
+      "amount": 112000,
+      "account_info": "DANA - 085175200417 - TAUFIK HIDAYAT",
+      "status": "rejected",
+      "created_at": 1765299745,
+      "updated_at": 1765325175,
+      "topic_msg_id": 919,
+      "extra": null,
+      "user_msg_id": null
+    },
+    {
+      "id": 23,
+      "withdraw_id": "oeyrD2k2hxIEnOSeDKuMvTbal",
+      "user_id": 7500290914,
+      "amount": 112000,
+      "account_info": "SPAY - 085175200417 - TAUFIK HIDAYAT",
+      "status": "paid",
+      "created_at": 1765325256,
+      "updated_at": 1765325419,
+      "topic_msg_id": 920,
+      "extra": "{\"proof_msg_id\": 25045, \"proof_admin_id\": 7988486507}",
+      "user_msg_id": null
+    }
+  ],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 7500290914,
+    "gift_type": "🚀",
+    "gift_id": 5170564780938756245,
+    "price_rp": 13500,
+    "qty": 1,
+    "note": "",
+    "send_to": "",
+    "total_price_rp": 13500,
+    "last_status": "",
+    "send_mode": "Unhide",
+    "send_from": ""
+  }
+}

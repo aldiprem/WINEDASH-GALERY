@@ -1,0 +1,42 @@
+{
+  "profile": {
+    "user_id": 8338143693,
+    "fullname": "",
+    "username": null,
+    "joined_at": null,
+    "first_start": "01.12.2025 04:25:39",
+    "last_start": "01.12.2025 04:27:32",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015201
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 8338143693,
+    "gift_type": "",
+    "gift_id": 0,
+    "price_rp": 0,
+    "qty": 50,
+    "note": "",
+    "send_to": "@cKopros",
+    "total_price_rp": 0,
+    "last_status": "",
+    "send_mode": "Hide",
+    "send_from": "@RAWMPAS (MALE)"
+  }
+}

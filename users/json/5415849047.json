@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 5415849047,
+    "fullname": "Cameron",
+    "username": "SwanU",
+    "joined_at": null,
+    "first_start": "26.12.2025 12:30:57",
+    "last_start": "26.12.2025 12:31:22",
+    "last_nego": 1766727086,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015273
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

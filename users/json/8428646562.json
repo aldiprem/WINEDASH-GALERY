@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 8428646562,
+    "fullname": "Letnan",
+    "username": "Notyounger",
+    "joined_at": null,
+    "first_start": "29.01.2026 13:01:43",
+    "last_start": "29.01.2026 13:11:22",
+    "last_nego": 1769664891,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6302988374196817737",
+    "last_update": 1771015168
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 148,
+      "user_id": 8428646562,
+      "transaction_id": "43ae0de2-190b-4ed5-a811-bd3e6becaeaf",
+      "amount": 117300,
+      "status": "expired",
+      "created_at": 1769671657,
+      "expired_at": 1769671957,
+      "paid_at": null,
+      "last_check": 1769671958,
+      "message_id": 48783,
+      "chat_id": 8428646562,
+      "topic_msg_id": 324
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

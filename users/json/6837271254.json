@@ -1,0 +1,57 @@
+{
+  "profile": {
+    "user_id": 6837271254,
+    "fullname": "ney.",
+    "username": "hansoheN",
+    "joined_at": null,
+    "first_start": "02.12.2025 07:45:40",
+    "last_start": "02.12.2025 07:46:27",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6325695393844366549",
+    "last_update": 1771015231
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 25,
+      "user_id": 6837271254,
+      "transaction_id": "19fc3847-8090-4234-9701-c6a83b063591",
+      "amount": 1000000,
+      "status": "expired",
+      "created_at": 1764636403,
+      "expired_at": 1764636703,
+      "paid_at": null,
+      "last_check": 1764636705,
+      "message_id": 21524,
+      "chat_id": 6837271254,
+      "topic_msg_id": 758
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 6837271254,
+    "gift_type": "💍",
+    "gift_id": 5170690322832818290,
+    "price_rp": 27000,
+    "qty": 1,
+    "note": "",
+    "send_to": "",
+    "total_price_rp": 27000,
+    "last_status": "",
+    "send_mode": "Unhide",
+    "send_from": ""
+  }
+}

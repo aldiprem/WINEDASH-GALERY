@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 7940409217,
+    "fullname": "Hafik",
+    "username": "LesJaehyun",
+    "joined_at": null,
+    "first_start": "10.02.2026 12:07:18",
+    "last_start": "13.02.2026 00:27:25",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6219595244769494077",
+    "last_update": 1771015363
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 172,
+      "user_id": 7940409217,
+      "transaction_id": "5edff5f5-d8ef-4e1b-90da-52a39f7cb190",
+      "amount": 200000,
+      "status": "expired",
+      "created_at": 1770700057,
+      "expired_at": 1770700357,
+      "paid_at": null,
+      "last_check": 1770700359,
+      "message_id": 53931,
+      "chat_id": 7940409217,
+      "topic_msg_id": 372
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

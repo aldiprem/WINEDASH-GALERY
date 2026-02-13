@@ -1,0 +1,73 @@
+{
+  "profile": {
+    "user_id": 7513438156,
+    "fullname": "︎",
+    "username": "ieyaasu",
+    "joined_at": null,
+    "first_start": "10.12.2025 14:11:02",
+    "last_start": "10.12.2025 15:14:15",
+    "last_nego": 1765354263,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015373
+  },
+  "balance": 2040,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 52,
+      "user_id": 7513438156,
+      "transaction_id": "4eea5eb5-d683-4d0f-b064-b3017c3f6b20",
+      "amount": 105000,
+      "status": "expired",
+      "created_at": 1765350720,
+      "expired_at": 1765351020,
+      "paid_at": null,
+      "last_check": 1765351021,
+      "message_id": 25149,
+      "chat_id": 7513438156,
+      "topic_msg_id": 928
+    },
+    {
+      "id": 53,
+      "user_id": 7513438156,
+      "transaction_id": "c37e2192-b172-4431-8f8e-8a3fb9629e32",
+      "amount": 100000,
+      "status": "paid",
+      "created_at": 1765350802,
+      "expired_at": 1765351102,
+      "paid_at": 1765350828,
+      "last_check": 1765350828,
+      "message_id": 25159,
+      "chat_id": 7513438156,
+      "topic_msg_id": 929
+    },
+    {
+      "id": 54,
+      "user_id": 7513438156,
+      "transaction_id": "1896db4a-6fd4-4336-a793-a05c67166513",
+      "amount": 4040,
+      "status": "paid",
+      "created_at": 1765354368,
+      "expired_at": 1765354668,
+      "paid_at": 1765354406,
+      "last_check": 1765354406,
+      "message_id": 25178,
+      "chat_id": 7513438156,
+      "topic_msg_id": 930
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

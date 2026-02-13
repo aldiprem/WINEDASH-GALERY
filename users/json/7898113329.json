@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 7898113329,
+    "fullname": "Devan",
+    "username": "iMillyader",
+    "joined_at": null,
+    "first_start": "02.01.2026 12:35:34",
+    "last_start": "02.01.2026 12:35:38",
+    "last_nego": 1767332004,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6087041679161495955",
+    "last_update": 1771015297
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

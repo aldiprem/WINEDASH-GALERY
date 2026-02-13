@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 6853632026,
+    "fullname": "Ash.",
+    "username": "Eigta",
+    "joined_at": null,
+    "first_start": "04.02.2026 20:56:54",
+    "last_start": "04.02.2026 20:56:54",
+    "last_nego": 1770213430,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015152
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

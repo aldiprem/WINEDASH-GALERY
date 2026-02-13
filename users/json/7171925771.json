@@ -1,0 +1,34 @@
+{
+  "profile": {
+    "user_id": 7171925771,
+    "fullname": "Nindyā",
+    "username": "kkoboi",
+    "joined_at": null,
+    "first_start": "29.12.2025 08:16:09",
+    "last_start": "29.12.2025 08:16:09",
+    "last_nego": 1764839812,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6332425826640530520",
+    "last_update": 1771015348
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 7171925771,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

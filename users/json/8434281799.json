@@ -1,0 +1,77 @@
+{
+  "profile": {
+    "user_id": 8434281799,
+    "fullname": "shuuvane.",
+    "username": "MANlPULASl",
+    "joined_at": null,
+    "first_start": "28.11.2025 08:04:49",
+    "last_start": "05.01.2026 12:50:28",
+    "last_nego": 1765282362,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6041598180685712762",
+    "last_update": 1771015299
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [
+    {
+      "id": 495,
+      "user_id": null,
+      "slug": "SpringBasket-16420",
+      "model": "Capybara",
+      "model_rarity": "3%",
+      "background": "Feldgrau",
+      "background_rarity": "1%",
+      "symbol": "Bastet",
+      "symbol_rarity": "0.2%",
+      "original_details": null,
+      "availability_issued": 156992,
+      "availability_total": "231311",
+      "price": null,
+      "payment_info": null,
+      "status_tfo": null,
+      "buyer_id": null,
+      "pending_msg_id": null,
+      "is_sold": 1,
+      "is_listed": 0,
+      "msg_id": 728,
+      "owner_id": 8434281799,
+      "is_transferred": 0,
+      "tf_file_id": null,
+      "tf_caption": null,
+      "api_owner_id": 7448578004,
+      "pending_tfo_at": null,
+      "pay_method": "saldo"
+    }
+  ],
+  "added_gifts": [],
+  "sold_gifts": [
+    "SpringBasket-16420"
+  ],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 49,
+      "user_id": 8434281799,
+      "transaction_id": "5ea7694a-96fe-4865-9a0c-96f796a773cc",
+      "amount": 148000,
+      "status": "expired",
+      "created_at": 1765282563,
+      "expired_at": 1765282863,
+      "paid_at": null,
+      "last_check": 1765282865,
+      "message_id": 24829,
+      "chat_id": 8434281799,
+      "topic_msg_id": 914
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

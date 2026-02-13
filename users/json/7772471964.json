@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 7772471964,
+    "fullname": "Sonata",
+    "username": "Forbidr",
+    "joined_at": null,
+    "first_start": "28.01.2026 15:34:12",
+    "last_start": "29.01.2026 15:49:46",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6316431188041600404",
+    "last_update": 1771015224
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

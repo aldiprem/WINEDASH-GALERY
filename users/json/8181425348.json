@@ -1,0 +1,34 @@
+{
+  "profile": {
+    "user_id": 8181425348,
+    "fullname": "Milan, @Czrowdd",
+    "username": "Czrowdd",
+    "joined_at": null,
+    "first_start": "30.11.2025 03:14:45",
+    "last_start": "06.01.2026 00:03:52",
+    "last_nego": 1764669022,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6201824083146640224",
+    "last_update": 1771015283
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": {
+    "user_id": 8181425348,
+    "referred_by": 7998861975,
+    "total_ref": 0
+  },
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

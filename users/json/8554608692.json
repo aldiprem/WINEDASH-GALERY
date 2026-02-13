@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "user_id": 8554608692,
+    "fullname": "lia",
+    "username": "nacturnie",
+    "joined_at": null,
+    "first_start": "25.12.2025 10:33:03",
+    "last_start": "02.01.2026 10:21:40",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6210745202666834755",
+    "last_update": 1771015154
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [
+    {
+      "id": 130,
+      "user_id": 8554608692,
+      "transaction_id": "1b521153-ad47-4f65-a1f6-b3cdb327ac22",
+      "amount": 91800,
+      "status": "paid",
+      "created_at": 1767237686,
+      "expired_at": 1767237986,
+      "paid_at": 1767238581,
+      "last_check": 1767238581,
+      "message_id": 38635,
+      "chat_id": 8554608692,
+      "topic_msg_id": 246
+    }
+  ],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

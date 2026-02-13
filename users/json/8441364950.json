@@ -1,0 +1,42 @@
+{
+  "profile": {
+    "user_id": 8441364950,
+    "fullname": "Valcon",
+    "username": "valconzx",
+    "joined_at": null,
+    "first_start": "18.10.2025 19:31:59",
+    "last_start": "28.12.2025 05:35:20",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": null,
+    "last_update": 1771015202
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": {
+    "user_id": 8441364950,
+    "gift_type": "",
+    "gift_id": 0,
+    "price_rp": 0,
+    "qty": 1,
+    "note": "",
+    "send_to": "",
+    "total_price_rp": 0,
+    "last_status": "",
+    "send_mode": "Hide",
+    "send_from": "@RAWMPAS (MALE)"
+  }
+}

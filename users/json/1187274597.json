@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 1187274597,
+    "fullname": "Alvisa Julietthe.",
+    "username": null,
+    "joined_at": null,
+    "first_start": "19.10.2025 06:01:09",
+    "last_start": "19.10.2025 06:01:09",
+    "last_nego": 0,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 1,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "4931715559804570496",
+    "last_update": 1771015359
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}

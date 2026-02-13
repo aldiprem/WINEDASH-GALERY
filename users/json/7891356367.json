@@ -1,0 +1,30 @@
+{
+  "profile": {
+    "user_id": 7891356367,
+    "fullname": "el",
+    "username": "JungkoozJeon",
+    "joined_at": null,
+    "first_start": null,
+    "last_start": null,
+    "last_nego": 1766320559,
+    "phone": null,
+    "is_bot": 0,
+    "is_premium": 0,
+    "is_verified": 0,
+    "is_scam": 0,
+    "is_fake": 0,
+    "photo_id": "6287028984394485083",
+    "last_update": 1771015230
+  },
+  "balance": 0,
+  "wicash": 0,
+  "referral": null,
+  "owned_gifts": [],
+  "added_gifts": [],
+  "sold_gifts": [],
+  "rent_gifts": [],
+  "deposits": [],
+  "withdraws": [],
+  "mines_stats": null,
+  "stars_orders": null
+}
