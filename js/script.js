@@ -843,6 +843,21 @@ function renderPopupContent(filterType, searchTerm = '') {
     }
 }
 
+// ===== FUNGSI UNTUK MEMFORMAT NAMA GIFT MENJADI NAMA FILE =====
+function formatGiftNameForFile(giftName) {
+    // Ganti spasi dengan underscore
+    let fileName = giftName.replace(/\s+/g, '_');
+    
+    // Ganti tanda kutip (') dengan karakter yang sesuai
+    fileName = fileName.replace(/'/g, '');
+    fileName = fileName.replace(/’/g, '');
+    
+    // Hapus karakter khusus lainnya
+    fileName = fileName.replace(/[^\w\-_]/g, '');
+    
+    return fileName;
+}
+
 function renderGiftPopup(searchTerm = '') {
     const filteredGifts = filterOptions.gifts.filter(gift => 
         gift.toLowerCase().includes(searchTerm.toLowerCase())
@@ -855,11 +870,16 @@ function renderGiftPopup(searchTerm = '') {
     
     elements.filterPopupList.innerHTML = filteredGifts.map(gift => {
         const isChecked = activeFilters.gift.includes(gift);
+        const fileName = formatGiftNameForFile(gift);
+        // Contoh: Durov's Cap -> Durovs_Cap.png
+        const imageUrl = `Unique.png/${fileName}.png`;
+        
         return `
             <div class="popup-filter-item">
                 <label class="popup-checkbox-container">
                     <input type="checkbox" value="${gift}" ${isChecked ? 'checked' : ''} onchange="toggleGiftFilter('${gift}', this.checked)">
                     <span class="popup-checkmark"></span>
+                    <img src="${imageUrl}" alt="${gift}" class="gift-icon" onerror="this.style.display='none'">
                     <span class="popup-filter-item-label">${gift}</span>
                 </label>
             </div>
