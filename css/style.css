@@ -91,7 +91,7 @@ body {
 }
 
 /* ===== GLASS COMPONENTS ===== */
-.glass-header, .glass-panel, .gift-card, .bottom-sheet, .scroll-top, .filter-popup, .active-filters-popup {
+.glass-panel, .gift-card, .bottom-sheet, .scroll-top, .filter-popup, .active-filters-popup {
     backdrop-filter: blur(var(--blur-amount));
     -webkit-backdrop-filter: blur(var(--blur-amount));
     background: var(--glass-bg);
@@ -99,87 +99,68 @@ body {
     box-shadow: var(--glass-shadow);
 }
 
-.glass-header {
+/* ===== MARKETPLACE HEADER ===== */
+.marketplace-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: var(--spacing-md) var(--spacing-lg);
-    border-radius: var(--radius-xl);
-    margin-bottom: var(--spacing-lg);
-    margin-top: var(--spacing-sm);
-    background: rgba(31, 44, 51, 0.68);
+    padding: var(--spacing-md) 0;
+    margin-bottom: var(--spacing-md);
 }
 
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.brand {
-    font-weight: 700;
-    font-size: 1.25rem;
-    letter-spacing: -0.5px;
-    background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.9) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.brand-sub {
-    font-size: 0.75rem;
-    color: var(--tg-text-secondary);
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-.header-stats {
+.brand-section {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
 }
 
-.stat-item {
+.marketplace-logo {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marketplace-logo svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 4px 12px rgba(135, 116, 225, 0.3));
+}
+
+.brand-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
 
-.stat-label {
-    font-size: 0.7rem;
-    color: var(--tg-text-hint);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.brand-name {
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #B86BFF, #FF6B8B, #6BCBFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
 }
 
-.stat-value {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: white;
+.brand-sub {
+    font-size: 0.8rem;
+    color: var(--tg-text-secondary);
+    font-weight: 500;
+    letter-spacing: 0.3px;
 }
 
-.stat-divider {
-    width: 1px;
-    height: 30px;
-    background: var(--glass-border);
-}
-
-/* ===== USER PROFILE ===== */
+/* ===== USER PROFILE (KANAN) ===== */
 .user-profile {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 4px 12px 4px 4px;
+    gap: 12px;
+    padding: 4px 4px 4px 16px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--glass-border);
     border-radius: 40px;
     cursor: pointer;
     transition: all 0.2s ease;
-    margin: 0 var(--spacing-sm);
 }
 
 .user-profile:hover {
@@ -187,9 +168,35 @@ body {
     transform: translateY(-1px);
 }
 
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.2;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.user-username {
+    font-size: 0.7rem;
+    color: var(--tg-text-hint);
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .user-avatar {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--tg-primary), var(--tg-accent-blue));
     display: flex;
@@ -209,25 +216,12 @@ body {
     object-fit: cover;
 }
 
-.user-info {
+.avatar-initial {
     display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
-
-.user-name {
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: white;
-    max-width: 120px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.user-status {
-    font-size: 0.65rem;
-    color: var(--tg-text-hint);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* Premium badge */
@@ -242,15 +236,24 @@ body {
     font-size: 0.7rem;
 }
 
-/* ===== FILTER SECTION - COMPACT LAYOUT ===== */
+/* ===== FILTER SECTION ===== */
 .filter-section {
     padding: var(--spacing-md);
     border-radius: var(--radius-lg);
     margin-bottom: var(--spacing-lg);
     background: rgba(31, 44, 51, 0.56);
+    backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
 }
 
 .filter-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.filter-left {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
@@ -268,7 +271,7 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     font-weight: 500;
-    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .filter-toggle:hover {
@@ -283,8 +286,42 @@ body {
     transform: rotate(180deg);
 }
 
+.marketplace-stats {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 6px 16px;
+    border-radius: 40px;
+    border: 1px solid var(--glass-border);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stat-label {
+    font-size: 0.7rem;
+    color: var(--tg-text-hint);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--glass-border);
+}
+
 .search-wrapper {
-    flex: 1;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -298,10 +335,10 @@ body {
 }
 
 .search-input-container {
-    flex: 1;
     position: relative;
     display: flex;
     align-items: center;
+    min-width: 200px;
 }
 
 .id-search-input {
@@ -1036,6 +1073,9 @@ body {
     flex-direction: column;
     background: rgba(31, 44, 51, 0.48);
     width: 100%;
+    backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
+    border: 1px solid var(--glass-border);
 }
 
 .gift-card:hover {
@@ -1237,6 +1277,8 @@ lottie-player {
     z-index: 100;
     background: rgba(31, 44, 51, 0.85);
     border: 1px solid rgba(135, 116, 225, 0.5);
+    backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
 }
 
 .scroll-top.visible {
@@ -1299,6 +1341,9 @@ lottie-player {
     transform: translateY(100%);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(31, 44, 51, 0.92);
+    backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
+    border: 1px solid var(--glass-border);
 }
 
 .bottom-sheet.active {
@@ -1438,6 +1483,7 @@ lottie-player {
     background: var(--glass-bg);
     border-radius: var(--radius-lg);
     backdrop-filter: blur(var(--blur-amount));
+    border: 1px solid var(--glass-border);
 }
 
 /* ===== TOAST NOTIFICATION ===== */
@@ -1483,28 +1529,18 @@ lottie-player {
         padding: var(--spacing-md) var(--spacing-sm);
     }
     
-    .brand {
-        font-size: 1rem;
-    }
-    
-    .stat-value {
-        font-size: 0.95rem;
-    }
-    
-    .cards-grid > :only-child {
-        max-width: 100%;
-    }
-    
-    .glass-header {
-        flex-wrap: wrap;
-        gap: var(--spacing-sm);
+    .marketplace-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
     }
     
     .user-profile {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        margin-top: var(--spacing-xs);
+        align-self: flex-end;
+    }
+    
+    .brand-name {
+        font-size: 1.5rem;
     }
     
     .filter-top-bar {
@@ -1512,13 +1548,25 @@ lottie-player {
         align-items: stretch;
     }
     
-    .filter-toggle {
-        width: 100%;
-        justify-content: center;
+    .filter-left {
+        justify-content: space-between;
     }
     
     .search-wrapper {
         width: 100%;
+    }
+    
+    .search-input-container {
+        min-width: auto;
+        flex: 1;
+    }
+    
+    .brand-name {
+        font-size: 1.5rem;
+    }
+    
+    .cards-grid > :only-child {
+        max-width: 100%;
     }
     
     .filter-popup {
