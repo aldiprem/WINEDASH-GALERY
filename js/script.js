@@ -26,6 +26,9 @@ let currentPopupFilter = null;
 // Lottie cache
 const lottieCache = new Map();
 
+// Telegram Web App
+let tg = null;
+
 // DOM Elements
 const elements = {
     cardsGrid: document.getElementById('cardsGrid'),
@@ -62,11 +65,21 @@ const elements = {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
+    // Initialize Telegram Web App
+    if (window.Telegram && window.Telegram.WebApp) {
+        tg = window.Telegram.WebApp;
+        tg.expand();
+        tg.ready();
+    }
+    
     await loadGifts();
     setupEventListeners();
     updateFilterCounts();
     renderGifts();
     setupScrollToTop();
+    
+    // Check for URL parameters after loading gifts
+    checkForUrlParameters();
 });
 
 // Load JSON data
@@ -346,6 +359,12 @@ function setupEventListeners() {
             behavior: 'smooth'
         });
     });
+    
+    // Share button
+    const shareBtn = document.getElementById('shareFilterBtn');
+    if (shareBtn) {
+        shareBtn.addEventListener('click', shareCurrentFilters);
+    }
 }
 
 // Open filter popup
@@ -952,6 +971,7 @@ function filterAndSortGifts() {
     
     renderGifts();
     updateStats();
+    renderActiveFilters();
 }
 
 // Render gifts to grid with Lottie animations - Tombol Play di pojok kanan atas
@@ -1144,3 +1164,196 @@ document.addEventListener('click', (e) => {
         e.stopPropagation();
     }
 });
+
+// ===== NEW FUNCTIONS FOR SHARE FILTER & TELEGRAM INTEGRATION =====
+
+// Toast notification
+function showToast(message, duration = 2000) {
+    const toast = document.getElementById('toastNotification');
+    const toastMessage = document.getElementById('toastMessage');
+    
+    if (!toast) return;
+    
+    toastMessage.textContent = message;
+    toast.classList.add('show');
+    
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, duration);
+}
+
+// Encode current filters to Base64 string
+function encodeFiltersToBase64() {
+    // Create filter object from activeFilters
+    const filterData = {
+        id: activeFilters.id || '',
+        gift: activeFilters.gift || [],
+        model: activeFilters.model || [],
+        symbol: activeFilters.symbol || [],
+        bg: activeFilters.bg || [],
+        sort: activeFilters.sort || 'price-asc'
+    };
+    
+    // Convert to JSON string then to Base64
+    const jsonString = JSON.stringify(filterData);
+    return btoa(unescape(encodeURIComponent(jsonString))); // Support Unicode
+}
+
+// Decode Base64 string to filters
+function decodeFiltersFromBase64(encodedString) {
+    try {
+        // Decode Base64 to JSON string
+        const jsonString = decodeURIComponent(escape(atob(encodedString)));
+        const filterData = JSON.parse(jsonString);
+        
+        return {
+            id: filterData.id || '',
+            gift: Array.isArray(filterData.gift) ? filterData.gift : [],
+            model: Array.isArray(filterData.model) ? filterData.model : [],
+            symbol: Array.isArray(filterData.symbol) ? filterData.symbol : [],
+            bg: Array.isArray(filterData.bg) ? filterData.bg : [],
+            sort: filterData.sort || 'price-asc'
+        };
+    } catch (error) {
+        console.error('Error decoding filters:', error);
+        return null;
+    }
+}
+
+// Apply filters from encoded string
+function applyFiltersFromEncoded(encodedString) {
+    const decodedFilters = decodeFiltersFromBase64(encodedString);
+    if (!decodedFilters) return false;
+    
+    // Update activeFilters
+    activeFilters.id = decodedFilters.id;
+    activeFilters.gift = decodedFilters.gift;
+    activeFilters.model = decodedFilters.model;
+    activeFilters.symbol = decodedFilters.symbol;
+    activeFilters.bg = decodedFilters.bg;
+    activeFilters.sort = decodedFilters.sort;
+    
+    // Update UI elements
+    elements.idSearchInput.value = activeFilters.id;
+    
+    // Update sort display
+    const sortLabels = {
+        'price-asc': 'Low to High',
+        'price-desc': 'High to Low',
+        'id-asc': 'ID Ascending',
+        'id-desc': 'ID Descending',
+        'latest': 'Latest'
+    };
+    elements.sortValue.textContent = sortLabels[activeFilters.sort] || 'Low to High';
+    
+    // Update dependent bubbles
+    updateDependentBubbles();
+    updateFilterCounts();
+    
+    // Apply filters
+    filterAndSortGifts();
+    renderActiveFilters();
+    
+    return true;
+}
+
+// Generate Telegram share link
+function generateTelegramShareLink() {
+    const baseUrl = 'https://t.me/marketaldibot/gifts';
+    const encodedFilters = encodeFiltersToBase64();
+    return `${baseUrl}?startapp=${encodedFilters}`;
+}
+
+// Generate GitHub Pages direct link (for debugging)
+function generateGitHubDirectLink() {
+    const baseUrl = window.location.origin + window.location.pathname;
+    const encodedFilters = encodeFiltersToBase64();
+    return `${baseUrl}?search=${encodedFilters}`;
+}
+
+// Share filter function
+function shareCurrentFilters() {
+    const telegramLink = generateTelegramShareLink();
+    
+    // Try to use Telegram's native sharing if available
+    if (tg) {
+        tg.showPopup({
+            title: 'Share Filters',
+            message: 'Share this filtered view with your friends?',
+            buttons: [
+                { id: 'share', type: 'default', text: 'Share Link' },
+                { id: 'copy', type: 'default', text: 'Copy Link' },
+                { id: 'cancel', type: 'destructive', text: 'Cancel' }
+            ]
+        }, (buttonId) => {
+            if (buttonId === 'share') {
+                // Use Telegram's share method if available
+                if (tg.shareToStory) {
+                    tg.shareToStory(telegramLink);
+                } else {
+                    // Fallback to copy
+                    copyToClipboard(telegramLink);
+                }
+            } else if (buttonId === 'copy') {
+                copyToClipboard(telegramLink);
+            }
+        });
+    } else {
+        // Fallback for browser testing
+        copyToClipboard(telegramLink);
+    }
+}
+
+// Copy to clipboard helper
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        showToast('Link copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+        // Fallback
+        prompt('Copy this link:', text);
+    });
+}
+
+// Check for URL parameters on page load
+function checkForUrlParameters() {
+    // Check for Telegram start_param first (from Mini App)
+    let encodedFilters = null;
+    
+    if (tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param) {
+        encodedFilters = tg.initDataUnsafe.start_param;
+        console.log('Found Telegram start_param:', encodedFilters);
+    }
+    
+    // If not found in Telegram, check URL query params (for browser testing)
+    if (!encodedFilters) {
+        const urlParams = new URLSearchParams(window.location.search);
+        encodedFilters = urlParams.get('search');
+        
+        if (encodedFilters) {
+            console.log('Found URL search param:', encodedFilters);
+        }
+    }
+    
+    // Apply filters if found
+    if (encodedFilters) {
+        const success = applyFiltersFromEncoded(encodedFilters);
+        
+        if (success) {
+            showToast('Filters applied from shared link!');
+            
+            // Add visual feedback to share button
+            const shareBtn = document.getElementById('shareFilterBtn');
+            if (shareBtn) {
+                shareBtn.classList.add('pulse');
+                setTimeout(() => shareBtn.classList.remove('pulse'), 2000);
+            }
+        } else {
+            showToast('Failed to apply filters', 3000);
+        }
+    }
+}
+
+// Make functions globally available
+window.shareCurrentFilters = shareCurrentFilters;
+window.copyToClipboard = copyToClipboard;
