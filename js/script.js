@@ -28,7 +28,7 @@ const lottieCache = new Map();
 
 // Telegram Web App
 let tg = null;
-let telegramUser = null; // Menyimpan data user Telegram
+let telegramUser = null;
 
 // DOM Elements
 const elements = {
@@ -68,9 +68,11 @@ const elements = {
     activeFiltersPopupClose: document.getElementById('activeFiltersPopupClose'),
     viewActiveFiltersBtn: document.getElementById('viewActiveFiltersBtn'),
     shareFilterBtn: document.getElementById('shareFilterBtn'),
-    // Elemen baru untuk menampilkan user info (opsional)
     userAvatar: document.getElementById('userAvatar'),
-    userName: document.getElementById('userName')
+    userName: document.getElementById('userName'),
+    userStatus: document.getElementById('userStatus'),
+    userProfile: document.getElementById('userProfile'),
+    activeFiltersContainer: document.getElementById('activeFiltersContainer')
 };
 
 // Initialize
@@ -89,116 +91,119 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Update search clear button visibility
     updateSearchClearButton();
+    
+    // Update share button visibility
+    updateShareButtonVisibility();
 });
 
-// ===== FUNGSI BARU: Inisialisasi Telegram dan ambil data user =====
+// ===== FUNGSI TELEGRAM =====
 function initializeTelegramApp() {
-    // Cek apakah dijalankan di dalam Telegram
     if (window.Telegram && window.Telegram.WebApp) {
         tg = window.Telegram.WebApp;
-        
-        // 1. Expand ke full height
         tg.expand();
-        
-        // 2. Ready - beri tahu Telegram bahwa app sudah siap
         tg.ready();
         
-        // 3. Ambil data user dari initDataUnsafe
         if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
             telegramUser = tg.initDataUnsafe.user;
-            
-            // Tampilkan data user di console untuk debugging
             console.log('Telegram User Data:', telegramUser);
-            console.log('User ID:', telegramUser.id);
-            console.log('First Name:', telegramUser.first_name);
-            console.log('Last Name:', telegramUser.last_name || '-');
-            console.log('Username:', telegramUser.username ? '@' + telegramUser.username : '-');
-            console.log('Language:', telegramUser.language_code);
-            console.log('Is Premium:', telegramUser.is_premium ? 'Yes' : 'No');
             
-            // 4. Opsional: Kirim data user ke backend untuk verifikasi/autentikasi
-            sendUserDataToBackend(telegramUser);
-            
-            // 5. Opsional: Tampilkan avatar/user info di UI (jika ada elemen)
+            // Tampilkan data user di UI
             displayUserInfo(telegramUser);
+            
+            // Coba ambil foto profil (jika tersedia)
+            fetchTelegramUserPhoto(telegramUser.id);
         } else {
-            console.log('User data tidak tersedia - mungkin dibuka di luar Telegram');
-            // Bisa juga tampilkan pesan bahwa app dibuka di luar Telegram
+            console.log('User data tidak tersedia');
+            setGuestUser();
         }
         
-        // 6. Set tema warna dari Telegram
         applyTelegramTheme();
-        
-        // 7. Handle event back button
         setupTelegramBackButton();
     } else {
-        console.log('Tidak terdeteksi sebagai Telegram Mini App - kemungkinan dibuka di browser biasa');
+        console.log('Tidak terdeteksi sebagai Telegram Mini App');
+        setGuestUser();
     }
 }
 
-// Fungsi untuk mengirim data user ke backend (jika ada)
-function sendUserDataToBackend(user) {
-    // Contoh: Kirim data user ke endpoint API untuk verifikasi/autentikasi
-    // Ini opsional - hanya jika Anda punya backend
-    
+// Fungsi untuk mengambil foto profil user dari Telegram (via Bot API)
+async function fetchTelegramUserPhoto(userId) {
+    // Catatan: Untuk mengambil foto profil, Anda perlu backend dengan Bot Token
+    // Ini adalah contoh jika Anda memiliki endpoint API sendiri
     /*
-    fetch('https://your-backend.com/api/auth/telegram', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            initData: tg.initData, // Kirim initData lengkap untuk verifikasi signature
-            user: user
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Backend response:', data);
-        // Lakukan sesuatu setelah autentikasi berhasil
-    })
-    .catch(error => {
-        console.error('Error sending user data:', error);
-    });
+    try {
+        const response = await fetch(`https://your-backend.com/api/telegram/photo/${userId}`);
+        if (response.ok) {
+            const photoUrl = await response.text();
+            if (photoUrl && elements.userAvatar) {
+                const img = document.createElement('img');
+                img.src = photoUrl;
+                img.alt = 'Profile';
+                elements.userAvatar.innerHTML = '';
+                elements.userAvatar.appendChild(img);
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching user photo:', error);
+    }
     */
+    
+    // Untuk sementara, gunakan inisial
+    if (telegramUser && elements.userAvatar) {
+        const initial = telegramUser.first_name ? telegramUser.first_name.charAt(0).toUpperCase() : '?';
+        elements.userAvatar.textContent = initial;
+    }
 }
 
-// Fungsi untuk menampilkan info user di UI (opsional)
 function displayUserInfo(user) {
-    // Jika ada elemen untuk menampilkan avatar
-    if (elements.userAvatar) {
-        // Telegram tidak menyediakan URL avatar langsung, tapi bisa pakai inisial
-        const initial = user.first_name ? user.first_name.charAt(0).toUpperCase() : '?';
-        elements.userAvatar.textContent = initial;
-        
-        // Atau jika ingin pakai foto profil, perlu ambil via Bot API terpisah
-    }
+    if (!user) return;
     
-    // Jika ada elemen untuk menampilkan nama
+    // Tampilkan nama
     if (elements.userName) {
         let displayName = user.first_name;
         if (user.last_name) {
             displayName += ' ' + user.last_name;
         }
-        if (user.username) {
-            displayName += ` (@${user.username})`;
-        }
         elements.userName.textContent = displayName;
     }
     
-    // Bisa juga tampilkan welcome message
-    console.log(`Welcome ${user.first_name}!`);
+    // Tampilkan username atau status
+    if (elements.userStatus) {
+        if (user.username) {
+            elements.userStatus.textContent = '@' + user.username;
+        } else {
+            elements.userStatus.textContent = 'Telegram User';
+        }
+    }
+    
+    // Tampilkan avatar dengan inisial
+    if (elements.userAvatar) {
+        const initial = user.first_name ? user.first_name.charAt(0).toUpperCase() : '?';
+        elements.userAvatar.textContent = initial;
+    }
+    
+    // Tambahkan class premium jika user premium
+    if (user.is_premium && elements.userProfile) {
+        elements.userProfile.classList.add('premium');
+    }
 }
 
-// Fungsi untuk mengaplikasikan tema Telegram
+function setGuestUser() {
+    if (elements.userName) {
+        elements.userName.textContent = 'Guest';
+    }
+    if (elements.userStatus) {
+        elements.userStatus.textContent = 'not logged in';
+    }
+    if (elements.userAvatar) {
+        elements.userAvatar.textContent = '?';
+    }
+}
+
 function applyTelegramTheme() {
     if (!tg) return;
     
-    // Telegram menyediakan color scheme
     const themeParams = tg.themeParams;
-    
     if (themeParams) {
-        // Terapkan warna tema Telegram ke CSS variables
         if (themeParams.bg_color) {
             document.documentElement.style.setProperty('--tg-theme-bg-color', themeParams.bg_color);
         }
@@ -211,57 +216,41 @@ function applyTelegramTheme() {
         if (themeParams.button_text_color) {
             document.documentElement.style.setProperty('--tg-theme-button-text-color', themeParams.button_text_color);
         }
-        if (themeParams.hint_color) {
-            document.documentElement.style.setProperty('--tg-theme-hint-color', themeParams.hint_color);
-        }
-        if (themeParams.link_color) {
-            document.documentElement.style.setProperty('--tg-theme-link-color', themeParams.link_color);
-        }
     }
 }
 
-// Fungsi untuk setup back button Telegram
 function setupTelegramBackButton() {
-    if (!tg) return;
+    if (!tg || !tg.BackButton) return;
     
-    // Cek apakah ada back button (tersedia di versi terbaru)
-    if (tg.BackButton) {
-        // Sembunyikan back button secara default
-        tg.BackButton.hide();
-        
-        // Tampilkan back button saat popup/bottom sheet terbuka
-        document.addEventListener('popupOpened', () => {
-            tg.BackButton.show();
-            tg.BackButton.onClick(() => {
-                closeAllPopups();
-                tg.BackButton.hide();
-            });
-        });
-        
-        document.addEventListener('popupClosed', () => {
+    tg.BackButton.hide();
+    
+    document.addEventListener('popupOpened', () => {
+        tg.BackButton.show();
+        tg.BackButton.onClick(() => {
+            closeAllPopups();
             tg.BackButton.hide();
         });
-    }
+    });
+    
+    document.addEventListener('popupClosed', () => {
+        tg.BackButton.hide();
+    });
 }
 
-// Fungsi untuk menutup semua popup
 function closeAllPopups() {
     closeFilterPopup();
     closeBottomSheet();
     closeActiveFiltersPopup();
 }
 
-// Fungsi untuk mendapatkan data user (dapat dipanggil dari mana saja)
 function getTelegramUser() {
     return telegramUser;
 }
 
-// Fungsi untuk mendapatkan user ID
 function getTelegramUserId() {
     return telegramUser ? telegramUser.id : null;
 }
 
-// Fungsi untuk mengecek apakah user premium
 function isTelegramUserPremium() {
     return telegramUser ? telegramUser.is_premium || false : false;
 }
@@ -273,7 +262,6 @@ async function loadGifts() {
         const response = await fetch('export/data.json');
         gifts = await response.json();
         
-        // Extract unique values for filter options
         const giftSet = new Set();
         const modelSet = new Set();
         const symbolSet = new Set();
@@ -299,7 +287,7 @@ async function loadGifts() {
     }
 }
 
-// ===== FUNGSI LOTTIE (tetap sama seperti sebelumnya) =====
+// ===== FUNGSI LOTTIE =====
 function getLottieUrl(slug) {
     return `https://nft.fragment.com/gift/${slug}.lottie.json`;
 }
@@ -440,7 +428,7 @@ function renderLottiePlayer(container, lottieData) {
     });
 }
 
-// ===== FUNGSI UI (tetap sama seperti sebelumnya) =====
+// ===== FUNGSI UI =====
 function updateSearchClearButton() {
     if (elements.idSearchInput.value.length > 0) {
         elements.idSearchClear.classList.add('visible');
@@ -468,8 +456,16 @@ function setupEventListeners() {
     
     // Filter toggle
     elements.filterToggle.addEventListener('click', () => {
+        const isActive = elements.filterPanel.classList.contains('active');
+        
+        // Toggle filter bubbles
         elements.filterPanel.classList.toggle('active');
         elements.filterToggle.classList.toggle('active');
+        
+        // Toggle active filters container
+        if (elements.activeFiltersContainer) {
+            elements.activeFiltersContainer.classList.toggle('active');
+        }
     });
     
     // Filter bubbles click
@@ -1397,8 +1393,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// ===== FUNGSI SHARE FILTER (tetap sama) =====
-
+// ===== FUNGSI SHARE FILTER =====
 function showToast(message, duration = 2000) {
     const toast = document.getElementById('toastNotification');
     const toastMessage = document.getElementById('toastMessage');
@@ -1566,3 +1561,6 @@ window.copyToClipboard = copyToClipboard;
 window.getTelegramUser = getTelegramUser;
 window.getTelegramUserId = getTelegramUserId;
 window.isTelegramUserPremium = isTelegramUserPremium;
+window.closeBottomSheet = closeBottomSheet;
+window.closeFilterPopup = closeFilterPopup;
+window.closeActiveFiltersPopup = closeActiveFiltersPopup;
