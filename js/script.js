@@ -46,13 +46,15 @@ const elements = {
     symbolCount: document.getElementById('symbolCount'),
     bgCount: document.getElementById('bgCount'),
     sortValue: document.getElementById('sortValue'),
-    clearAllFilters: document.getElementById('clearAllFilters'),
+    clearAllFiltersBtn: document.getElementById('clearAllFiltersBtn'),
     applyFiltersBtn: document.getElementById('applyFiltersBtn'),
     activeFilters: document.getElementById('activeFilters'),
     filterPopupOverlay: document.getElementById('filterPopupOverlay'),
     filterPopup: document.getElementById('filterPopup'),
     filterPopupTitle: document.getElementById('filterPopupTitle'),
     filterPopupClose: document.getElementById('filterPopupClose'),
+    selectAllBtn: document.getElementById('selectAllBtn'),
+    clearAllBtn: document.getElementById('clearAllBtn'),
     popupSearchInput: document.getElementById('popupSearchInput'),
     filterPopupList: document.getElementById('filterPopupList'),
     totalItems: document.getElementById('total-items'),
@@ -72,7 +74,9 @@ const elements = {
     userName: document.getElementById('userName'),
     userUsername: document.getElementById('userUsername'),
     userProfile: document.getElementById('userProfile'),
-    activeFiltersContainer: document.getElementById('activeFiltersContainer')
+    activeFiltersContainer: document.getElementById('activeFiltersContainer'),
+    activeFiltersContent: document.getElementById('activeFiltersContent'),
+    activeFiltersScroll: document.getElementById('activeFiltersScroll')
 };
 
 // Initialize
@@ -92,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Update search clear button visibility
     updateSearchClearButton();
     
-    // Update share button visibility
+    // Update button visibility
     updateShareButtonVisibility();
 });
 
@@ -110,7 +114,7 @@ function initializeTelegramApp() {
             // Tampilkan data user di UI
             displayUserInfo(telegramUser);
             
-            // Coba ambil foto profil (jika tersedia)
+            // Coba ambil foto profil
             fetchTelegramUserPhoto(telegramUser.id);
         } else {
             console.log('User data tidak tersedia');
@@ -125,34 +129,25 @@ function initializeTelegramApp() {
     }
 }
 
-// Fungsi untuk mengambil foto profil user dari Telegram (via API)
+// Fungsi untuk mengambil foto profil user
 async function fetchTelegramUserPhoto(userId) {
-    // Untuk mengambil foto profil, Anda memerlukan Bot Token dan backend
-    // Berikut adalah contoh jika Anda memiliki endpoint sendiri
-    
+    // Untuk demo, gunakan UI Avatars
     try {
-        // Ganti URL ini dengan endpoint API Anda
-        const response = await fetch(`https://your-backend.com/api/telegram/photo/${userId}`);
-        if (response.ok) {
-            const photoUrl = await response.text();
-            if (photoUrl && elements.userAvatar) {
-                // Hapus inisial dan ganti dengan gambar
-                const img = document.createElement('img');
-                img.src = photoUrl;
-                img.alt = 'Profile';
-                img.className = 'avatar-image';
-                img.onload = () => {
-                    // Sembunyikan inisial, tampilkan gambar
-                    const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
-                    if (initialSpan) {
-                        initialSpan.style.display = 'none';
-                    }
-                    elements.userAvatar.appendChild(img);
-                };
-                img.onerror = () => {
-                    console.log('Gagal memuat foto profil');
-                };
-            }
+        if (telegramUser) {
+            const name = telegramUser.first_name || 'User';
+            const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=8774E1&color=fff&size=128&bold=true&length=1`;
+            
+            const img = document.createElement('img');
+            img.src = avatarUrl;
+            img.alt = 'Profile';
+            img.className = 'avatar-image';
+            img.onload = () => {
+                const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
+                if (initialSpan) {
+                    initialSpan.style.display = 'none';
+                }
+                elements.userAvatar.appendChild(img);
+            };
         }
     } catch (error) {
         console.error('Error fetching user photo:', error);
@@ -162,7 +157,6 @@ async function fetchTelegramUserPhoto(userId) {
 function displayUserInfo(user) {
     if (!user) return;
     
-    // Tampilkan nama lengkap
     if (elements.userName) {
         let displayName = user.first_name;
         if (user.last_name) {
@@ -171,7 +165,6 @@ function displayUserInfo(user) {
         elements.userName.textContent = displayName;
     }
     
-    // Tampilkan username
     if (elements.userUsername) {
         if (user.username) {
             elements.userUsername.textContent = '@' + user.username;
@@ -180,14 +173,12 @@ function displayUserInfo(user) {
         }
     }
     
-    // Tampilkan inisial di avatar
     const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
     if (initialSpan) {
         const initial = user.first_name ? user.first_name.charAt(0).toUpperCase() : '?';
         initialSpan.textContent = initial;
     }
     
-    // Tambahkan class premium jika user premium
     if (user.is_premium && elements.userProfile) {
         elements.userProfile.classList.add('premium');
     }
@@ -248,18 +239,6 @@ function closeAllPopups() {
     closeFilterPopup();
     closeBottomSheet();
     closeActiveFiltersPopup();
-}
-
-function getTelegramUser() {
-    return telegramUser;
-}
-
-function getTelegramUserId() {
-    return telegramUser ? telegramUser.id : null;
-}
-
-function isTelegramUserPremium() {
-    return telegramUser ? telegramUser.is_premium || false : false;
 }
 
 // ===== FUNGSI LOAD DATA =====
@@ -463,13 +442,9 @@ function setupEventListeners() {
     
     // Filter toggle
     elements.filterToggle.addEventListener('click', () => {
-        const isActive = elements.filterPanel.classList.contains('active');
-        
-        // Toggle filter bubbles
         elements.filterPanel.classList.toggle('active');
         elements.filterToggle.classList.toggle('active');
         
-        // Toggle active filters container
         if (elements.activeFiltersContainer) {
             elements.activeFiltersContainer.classList.toggle('active');
         }
@@ -496,6 +471,24 @@ function setupEventListeners() {
         }
     });
     
+    // Select All button
+    if (elements.selectAllBtn) {
+        elements.selectAllBtn.addEventListener('click', () => {
+            if (currentPopupFilter) {
+                handleSelectAll(currentPopupFilter);
+            }
+        });
+    }
+    
+    // Clear All button
+    if (elements.clearAllBtn) {
+        elements.clearAllBtn.addEventListener('click', () => {
+            if (currentPopupFilter) {
+                handleClearAll(currentPopupFilter);
+            }
+        });
+    }
+    
     // Popup search input
     elements.popupSearchInput.addEventListener('input', () => {
         if (currentPopupFilter) {
@@ -503,15 +496,29 @@ function setupEventListeners() {
         }
     });
     
-    // Clear all filters
-    elements.clearAllFilters.addEventListener('click', clearAllFilters);
+    // Clear all filters button
+    if (elements.clearAllFiltersBtn) {
+        elements.clearAllFiltersBtn.addEventListener('click', clearAllFilters);
+    }
     
     // Apply filters button
-    elements.applyFiltersBtn.addEventListener('click', () => {
-        filterAndSortGifts();
-        renderActiveFilters();
-        closeFilterPopup();
-    });
+    if (elements.applyFiltersBtn) {
+        elements.applyFiltersBtn.addEventListener('click', () => {
+            filterAndSortGifts();
+            renderActiveFilters();
+            closeFilterPopup();
+        });
+    }
+    
+    // View active filters (eye button)
+    if (elements.viewActiveFiltersBtn) {
+        elements.viewActiveFiltersBtn.addEventListener('click', openActiveFiltersPopup);
+    }
+    
+    // Share button
+    if (elements.shareFilterBtn) {
+        elements.shareFilterBtn.addEventListener('click', shareCurrentFilters);
+    }
     
     // Close bottom sheet
     elements.bottomSheetOverlay.addEventListener('click', (e) => {
@@ -528,16 +535,6 @@ function setupEventListeners() {
         });
     });
     
-    // Share button
-    if (elements.shareFilterBtn) {
-        elements.shareFilterBtn.addEventListener('click', shareCurrentFilters);
-    }
-    
-    // View active filters (eye button)
-    if (elements.viewActiveFiltersBtn) {
-        elements.viewActiveFiltersBtn.addEventListener('click', openActiveFiltersPopup);
-    }
-    
     // Close active filters popup
     if (elements.activeFiltersPopupClose) {
         elements.activeFiltersPopupClose.addEventListener('click', closeActiveFiltersPopup);
@@ -549,6 +546,79 @@ function setupEventListeners() {
             }
         });
     }
+}
+
+function handleSelectAll(filterType) {
+    switch(filterType) {
+        case 'gift':
+            activeFilters.gift = [...filterOptions.gifts];
+            renderPopupContent('gift', elements.popupSearchInput.value);
+            break;
+        case 'model':
+            if (activeFilters.gift.length > 0) {
+                const selectedGiftNames = activeFilters.gift;
+                const relevantGifts = gifts.filter(gift => {
+                    const giftName = gift.nama || gift.name.split('#')[0].trim();
+                    return selectedGiftNames.includes(giftName);
+                });
+                const modelSet = new Set(relevantGifts.map(g => g.model));
+                activeFilters.model = Array.from(modelSet);
+            }
+            renderPopupContent('model', elements.popupSearchInput.value);
+            break;
+        case 'symbol':
+            if (activeFilters.gift.length > 0) {
+                const selectedGiftNames = activeFilters.gift;
+                const relevantGifts = gifts.filter(gift => {
+                    const giftName = gift.nama || gift.name.split('#')[0].trim();
+                    return selectedGiftNames.includes(giftName);
+                });
+                const symbolSet = new Set(relevantGifts.map(g => g.symbol));
+                activeFilters.symbol = Array.from(symbolSet);
+            }
+            renderPopupContent('symbol', elements.popupSearchInput.value);
+            break;
+        case 'bg':
+            if (activeFilters.gift.length > 0) {
+                const selectedGiftNames = activeFilters.gift;
+                const relevantGifts = gifts.filter(gift => {
+                    const giftName = gift.nama || gift.name.split('#')[0].trim();
+                    return selectedGiftNames.includes(giftName);
+                });
+                const bgSet = new Set(relevantGifts.map(g => g.bg));
+                activeFilters.bg = Array.from(bgSet);
+            }
+            renderPopupContent('bg', elements.popupSearchInput.value);
+            break;
+    }
+    updateFilterCounts();
+    updateDependentBubbles();
+}
+
+function handleClearAll(filterType) {
+    switch(filterType) {
+        case 'gift':
+            activeFilters.gift = [];
+            activeFilters.model = [];
+            activeFilters.symbol = [];
+            activeFilters.bg = [];
+            renderPopupContent('gift', elements.popupSearchInput.value);
+            break;
+        case 'model':
+            activeFilters.model = [];
+            renderPopupContent('model', elements.popupSearchInput.value);
+            break;
+        case 'symbol':
+            activeFilters.symbol = [];
+            renderPopupContent('symbol', elements.popupSearchInput.value);
+            break;
+        case 'bg':
+            activeFilters.bg = [];
+            renderPopupContent('bg', elements.popupSearchInput.value);
+            break;
+    }
+    updateFilterCounts();
+    updateDependentBubbles();
 }
 
 function openActiveFiltersPopup() {
@@ -660,6 +730,14 @@ function openFilterPopup(filterType) {
         'sort': 'Sort By'
     };
     elements.filterPopupTitle.textContent = titles[filterType] || 'Select';
+    
+    if (filterType === 'sort') {
+        elements.selectAllBtn.style.display = 'none';
+        elements.clearAllBtn.style.display = 'none';
+    } else {
+        elements.selectAllBtn.style.display = 'inline-block';
+        elements.clearAllBtn.style.display = 'inline-block';
+    }
     
     elements.popupSearchInput.value = '';
     
@@ -890,6 +968,11 @@ window.toggleGiftFilter = function(gift, checked) {
     
     updateDependentBubbles();
     updateFilterCounts();
+    renderActiveFilters();
+    
+    if (currentPopupFilter === 'gift') {
+        renderPopupContent('gift', elements.popupSearchInput.value);
+    }
 };
 
 window.toggleModelFilter = function(model, checked) {
@@ -901,6 +984,11 @@ window.toggleModelFilter = function(model, checked) {
         activeFilters.model = activeFilters.model.filter(m => m !== model);
     }
     updateFilterCounts();
+    renderActiveFilters();
+    
+    if (currentPopupFilter === 'model') {
+        renderPopupContent('model', elements.popupSearchInput.value);
+    }
 };
 
 window.toggleSymbolFilter = function(symbol, checked) {
@@ -912,6 +1000,11 @@ window.toggleSymbolFilter = function(symbol, checked) {
         activeFilters.symbol = activeFilters.symbol.filter(s => s !== symbol);
     }
     updateFilterCounts();
+    renderActiveFilters();
+    
+    if (currentPopupFilter === 'symbol') {
+        renderPopupContent('symbol', elements.popupSearchInput.value);
+    }
 };
 
 window.toggleBgFilter = function(bg, checked) {
@@ -923,6 +1016,11 @@ window.toggleBgFilter = function(bg, checked) {
         activeFilters.bg = activeFilters.bg.filter(b => b !== bg);
     }
     updateFilterCounts();
+    renderActiveFilters();
+    
+    if (currentPopupFilter === 'bg') {
+        renderPopupContent('bg', elements.popupSearchInput.value);
+    }
 };
 
 window.updateSortFilter = function(value) {
@@ -936,6 +1034,10 @@ window.updateSortFilter = function(value) {
         'latest': 'Latest'
     };
     elements.sortValue.textContent = sortLabels[value];
+    
+    closeFilterPopup();
+    filterAndSortGifts();
+    renderActiveFilters();
 };
 
 function updateDependentBubbles() {
@@ -972,7 +1074,7 @@ function renderActiveFilters() {
                 <span class="filter-tag-category">ID:</span>
                 <span class="filter-tag-value">${activeFilters.id}</span>
                 <span class="filter-tag-remove" onclick="removeIdFilter()">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </span>
@@ -986,7 +1088,7 @@ function renderActiveFilters() {
                 <span class="filter-tag-category">Gift:</span>
                 <span class="filter-tag-value">${gift}</span>
                 <span class="filter-tag-remove" onclick="removeGiftFilter('${gift}')">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </span>
@@ -1000,7 +1102,7 @@ function renderActiveFilters() {
                 <span class="filter-tag-category">Model:</span>
                 <span class="filter-tag-value">${model}</span>
                 <span class="filter-tag-remove" onclick="removeModelFilter('${model}')">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </span>
@@ -1014,7 +1116,7 @@ function renderActiveFilters() {
                 <span class="filter-tag-category">Symbol:</span>
                 <span class="filter-tag-value">${symbol}</span>
                 <span class="filter-tag-remove" onclick="removeSymbolFilter('${symbol}')">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </span>
@@ -1028,7 +1130,7 @@ function renderActiveFilters() {
                 <span class="filter-tag-category">Backdrop:</span>
                 <span class="filter-tag-value">${bg}</span>
                 <span class="filter-tag-remove" onclick="removeBgFilter('${bg}')">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </span>
@@ -1049,7 +1151,7 @@ function renderActiveFilters() {
                 <span class="filter-tag-category">Sort:</span>
                 <span class="filter-tag-value">${sortLabels[activeFilters.sort]}</span>
                 <span class="filter-tag-remove" onclick="resetSortFilter()">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </span>
@@ -1058,7 +1160,7 @@ function renderActiveFilters() {
     }
     
     if (html === '') {
-        elements.activeFilters.innerHTML = '<span style="color: var(--tg-text-hint); font-size: 0.8rem;">No active filters</span>';
+        elements.activeFilters.innerHTML = '<span style="color: var(--tg-text-hint); font-size: 0.75rem;">No active filters</span>';
     } else {
         elements.activeFilters.innerHTML = html;
     }
@@ -1075,11 +1177,19 @@ function updateShareButtonVisibility() {
         activeFilters.bg.length > 0 || 
         activeFilters.sort !== 'price-asc';
     
-    if (elements.shareFilterBtn) {
+    if (elements.clearAllFiltersBtn && elements.applyFiltersBtn && 
+        elements.viewActiveFiltersBtn && elements.shareFilterBtn) {
+        
         if (hasActiveFilters) {
+            elements.clearAllFiltersBtn.style.display = 'flex';
+            elements.applyFiltersBtn.style.display = 'flex';
             elements.shareFilterBtn.style.display = 'flex';
+            elements.viewActiveFiltersBtn.style.display = 'flex';
         } else {
+            elements.clearAllFiltersBtn.style.display = 'none';
+            elements.applyFiltersBtn.style.display = 'none';
             elements.shareFilterBtn.style.display = 'none';
+            elements.viewActiveFiltersBtn.style.display = 'flex';
         }
     }
 }
@@ -1571,3 +1681,14 @@ window.isTelegramUserPremium = isTelegramUserPremium;
 window.closeBottomSheet = closeBottomSheet;
 window.closeFilterPopup = closeFilterPopup;
 window.closeActiveFiltersPopup = closeActiveFiltersPopup;
+window.toggleGiftFilter = toggleGiftFilter;
+window.toggleModelFilter = toggleModelFilter;
+window.toggleSymbolFilter = toggleSymbolFilter;
+window.toggleBgFilter = toggleBgFilter;
+window.updateSortFilter = updateSortFilter;
+window.removeIdFilter = removeIdFilter;
+window.removeGiftFilter = removeGiftFilter;
+window.removeModelFilter = removeModelFilter;
+window.removeSymbolFilter = removeSymbolFilter;
+window.removeBgFilter = removeBgFilter;
+window.resetSortFilter = resetSortFilter;
