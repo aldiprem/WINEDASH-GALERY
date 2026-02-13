@@ -76,7 +76,9 @@ const elements = {
     userProfile: document.getElementById('userProfile'),
     activeFiltersContainer: document.getElementById('activeFiltersContainer'),
     activeFiltersContent: document.getElementById('activeFiltersContent'),
-    activeFiltersScroll: document.getElementById('activeFiltersScroll')
+    activeFiltersScroll: document.getElementById('activeFiltersScroll'),
+    sheetCloseBtn: document.getElementById('sheetCloseBtn'),
+    sheetHandle: document.querySelector('.sheet-handle')
 };
 
 // Initialize
@@ -520,12 +522,24 @@ function setupEventListeners() {
         elements.shareFilterBtn.addEventListener('click', shareCurrentFilters);
     }
     
-    // Close bottom sheet
-    elements.bottomSheetOverlay.addEventListener('click', (e) => {
-        if (e.target === elements.bottomSheetOverlay) {
-            closeBottomSheet();
-        }
-    });
+    // Close bottom sheet with X button
+    if (elements.sheetCloseBtn) {
+        elements.sheetCloseBtn.addEventListener('click', closeBottomSheet);
+    }
+    
+    // Close bottom sheet with outside click
+    if (elements.bottomSheetOverlay) {
+        elements.bottomSheetOverlay.addEventListener('click', (e) => {
+            if (e.target === elements.bottomSheetOverlay) {
+                closeBottomSheet();
+            }
+        });
+    }
+    
+    // Bottom sheet drag to close
+    if (elements.sheetHandle) {
+        setupSheetDragEvents();
+    }
     
     // Scroll to top button
     elements.scrollTopBtn.addEventListener('click', () => {
@@ -548,6 +562,56 @@ function setupEventListeners() {
     }
 }
 
+// ===== FUNGSI BOTTOM SHEET DRAG =====
+function setupSheetDragEvents() {
+    if (!elements.sheetHandle || !elements.bottomSheet) return;
+    
+    let startY = 0;
+    let currentY = 0;
+    let isDragging = false;
+    const threshold = 80;
+    
+    const onTouchStart = (e) => {
+        e.preventDefault();
+        startY = e.touches[0].clientY;
+        isDragging = true;
+        elements.bottomSheet.style.transition = 'none';
+    };
+    
+    const onTouchMove = (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        
+        currentY = e.touches[0].clientY;
+        const deltaY = currentY - startY;
+        
+        // Hanya allow drag ke bawah
+        if (deltaY > 0) {
+            elements.bottomSheet.style.transform = `translateY(${deltaY}px)`;
+        }
+    };
+    
+    const onTouchEnd = (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        
+        isDragging = false;
+        elements.bottomSheet.style.transition = 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+        
+        const deltaY = currentY - startY;
+        if (deltaY > threshold) {
+            closeBottomSheet();
+        } else {
+            elements.bottomSheet.style.transform = 'translateY(0)';
+        }
+    };
+    
+    elements.sheetHandle.addEventListener('touchstart', onTouchStart);
+    elements.sheetHandle.addEventListener('touchmove', onTouchMove);
+    elements.sheetHandle.addEventListener('touchend', onTouchEnd);
+}
+
+// ===== FUNGSI FILTER =====
 function handleSelectAll(filterType) {
     switch(filterType) {
         case 'gift':
@@ -1383,8 +1447,21 @@ function renderGifts() {
     }
 }
 
+// ===== FUNGSI OPEN BOTTOM SHEET - FULL WIDTH =====
 window.openBottomSheet = function(gift) {
     const cleanName = gift.nama || gift.name.split('#')[0].trim();
+    const formattedPrice = formatPrice(gift.price);
+    
+    // Format model, symbol, bg dengan nilai default jika tidak ada
+    const modelValue = gift.model || '-';
+    const symbolValue = gift.symbol || '-';
+    const bgValue = gift.bg || '-';
+    
+    // Format posted link
+    const postedText = gift.posting || 'Unknown';
+    const postedLink = postedText.startsWith('@') 
+        ? `https://t.me/${postedText.substring(1)}` 
+        : `https://t.me/${postedText}`;
     
     const content = `
         <div class="sheet-item-detail">
@@ -1400,33 +1477,68 @@ window.openBottomSheet = function(gift) {
                 </lottie-player>
             </div>
             <div class="sheet-info">
-                <div class="sheet-name">${cleanName}</div>
-                <div style="color: var(--tg-text-hint); font-size: 0.8rem; margin-bottom: 4px;">#${gift.id}</div>
-                <div class="sheet-model">${gift.model}</div>
-                <div class="sheet-model" style="margin-top: 2px;">${gift.symbol}</div>
-                <div class="sheet-model" style="margin-top: 2px;">${gift.bg}</div>
-                <div class="sheet-price">💰 ${formatPrice(gift.price)}</div>
+                <div class="sheet-name-container">
+                    <span class="sheet-name">${cleanName}</span>
+                    <span class="sheet-id">#${gift.id}</span>
+                </div>
+                
+                <div class="sheet-data-container">
+                    <!-- Model Row -->
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Model</span>
+                        <span class="sheet-data-value">${modelValue}</span>
+                    </div>
+                    <div class="sheet-divider"></div>
+                    
+                    <!-- Symbol Row -->
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Symbol</span>
+                        <span class="sheet-data-value">${symbolValue}</span>
+                    </div>
+                    <div class="sheet-divider"></div>
+                    
+                    <!-- Backdrop Row -->
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Backdrop</span>
+                        <span class="sheet-data-value">${bgValue}</span>
+                    </div>
+                </div>
+                
+                <!-- Price Row -->
+                <div class="sheet-price-row">
+                    <span class="sheet-price-label">Price</span>
+                    <span class="sheet-price-value">💰 ${formattedPrice}</span>
+                </div>
             </div>
         </div>
         <div class="sheet-actions">
-            <a href="https://t.me/marketaldibot?start=beli_${gift.slug}" class="btn btn-buy" target="_blank">🛍️ BUY NOW</a>
-            <a href="https://t.me/marketaldibot?start=nego_${gift.slug}" class="btn btn-nego" target="_blank">💬 MAKE OFFER</a>
+            <a href="https://t.me/marketaldibot?start=beli_${gift.slug}" class="btn btn-buy" target="_blank">BUY NOW</a>
+            <a href="https://t.me/marketaldibot?start=nego_${gift.slug}" class="btn btn-nego" target="_blank">MAKE OFFER</a>
         </div>
-        <div style="display: flex; justify-content: center; margin-top: 8px;">
-            <span style="color: var(--tg-text-hint); font-size: 0.7rem;">Posted via ${gift.posting}</span>
+        <div class="sheet-posted">
+            <a href="${postedLink}" class="sheet-posted-link" target="_blank" rel="noopener noreferrer">
+                Posted via ${postedText}
+            </a>
         </div>
     `;
     
     elements.sheetContent.innerHTML = content;
+    
+    // Mencegah scroll pada background
+    document.body.classList.add('sheet-open');
+    
     elements.bottomSheetOverlay.classList.add('active');
     setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
     document.dispatchEvent(new Event('popupOpened'));
 };
 
+// ===== FUNGSI CLOSE BOTTOM SHEET =====
 window.closeBottomSheet = function() {
     elements.bottomSheet.classList.remove('active');
     setTimeout(() => {
         elements.bottomSheetOverlay.classList.remove('active');
+        // Kembalikan scroll pada background
+        document.body.classList.remove('sheet-open');
         document.dispatchEvent(new Event('popupClosed'));
     }, 300);
 };
