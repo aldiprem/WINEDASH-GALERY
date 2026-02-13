@@ -28,6 +28,7 @@ const lottieCache = new Map();
 
 // Telegram Web App
 let tg = null;
+let telegramUser = null; // Menyimpan data user Telegram
 
 // DOM Elements
 const elements = {
@@ -66,17 +67,16 @@ const elements = {
     activeFiltersPopupContent: document.getElementById('activeFiltersPopupContent'),
     activeFiltersPopupClose: document.getElementById('activeFiltersPopupClose'),
     viewActiveFiltersBtn: document.getElementById('viewActiveFiltersBtn'),
-    shareFilterBtn: document.getElementById('shareFilterBtn')
+    shareFilterBtn: document.getElementById('shareFilterBtn'),
+    // Elemen baru untuk menampilkan user info (opsional)
+    userAvatar: document.getElementById('userAvatar'),
+    userName: document.getElementById('userName')
 };
 
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
-    // Initialize Telegram Web App
-    if (window.Telegram && window.Telegram.WebApp) {
-        tg = window.Telegram.WebApp;
-        tg.expand();
-        tg.ready();
-    }
+    // Initialize Telegram Web App dan ambil data user
+    initializeTelegramApp();
     
     await loadGifts();
     setupEventListeners();
@@ -91,7 +91,182 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateSearchClearButton();
 });
 
-// Load JSON data
+// ===== FUNGSI BARU: Inisialisasi Telegram dan ambil data user =====
+function initializeTelegramApp() {
+    // Cek apakah dijalankan di dalam Telegram
+    if (window.Telegram && window.Telegram.WebApp) {
+        tg = window.Telegram.WebApp;
+        
+        // 1. Expand ke full height
+        tg.expand();
+        
+        // 2. Ready - beri tahu Telegram bahwa app sudah siap
+        tg.ready();
+        
+        // 3. Ambil data user dari initDataUnsafe
+        if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
+            telegramUser = tg.initDataUnsafe.user;
+            
+            // Tampilkan data user di console untuk debugging
+            console.log('Telegram User Data:', telegramUser);
+            console.log('User ID:', telegramUser.id);
+            console.log('First Name:', telegramUser.first_name);
+            console.log('Last Name:', telegramUser.last_name || '-');
+            console.log('Username:', telegramUser.username ? '@' + telegramUser.username : '-');
+            console.log('Language:', telegramUser.language_code);
+            console.log('Is Premium:', telegramUser.is_premium ? 'Yes' : 'No');
+            
+            // 4. Opsional: Kirim data user ke backend untuk verifikasi/autentikasi
+            sendUserDataToBackend(telegramUser);
+            
+            // 5. Opsional: Tampilkan avatar/user info di UI (jika ada elemen)
+            displayUserInfo(telegramUser);
+        } else {
+            console.log('User data tidak tersedia - mungkin dibuka di luar Telegram');
+            // Bisa juga tampilkan pesan bahwa app dibuka di luar Telegram
+        }
+        
+        // 6. Set tema warna dari Telegram
+        applyTelegramTheme();
+        
+        // 7. Handle event back button
+        setupTelegramBackButton();
+    } else {
+        console.log('Tidak terdeteksi sebagai Telegram Mini App - kemungkinan dibuka di browser biasa');
+    }
+}
+
+// Fungsi untuk mengirim data user ke backend (jika ada)
+function sendUserDataToBackend(user) {
+    // Contoh: Kirim data user ke endpoint API untuk verifikasi/autentikasi
+    // Ini opsional - hanya jika Anda punya backend
+    
+    /*
+    fetch('https://your-backend.com/api/auth/telegram', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            initData: tg.initData, // Kirim initData lengkap untuk verifikasi signature
+            user: user
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Backend response:', data);
+        // Lakukan sesuatu setelah autentikasi berhasil
+    })
+    .catch(error => {
+        console.error('Error sending user data:', error);
+    });
+    */
+}
+
+// Fungsi untuk menampilkan info user di UI (opsional)
+function displayUserInfo(user) {
+    // Jika ada elemen untuk menampilkan avatar
+    if (elements.userAvatar) {
+        // Telegram tidak menyediakan URL avatar langsung, tapi bisa pakai inisial
+        const initial = user.first_name ? user.first_name.charAt(0).toUpperCase() : '?';
+        elements.userAvatar.textContent = initial;
+        
+        // Atau jika ingin pakai foto profil, perlu ambil via Bot API terpisah
+    }
+    
+    // Jika ada elemen untuk menampilkan nama
+    if (elements.userName) {
+        let displayName = user.first_name;
+        if (user.last_name) {
+            displayName += ' ' + user.last_name;
+        }
+        if (user.username) {
+            displayName += ` (@${user.username})`;
+        }
+        elements.userName.textContent = displayName;
+    }
+    
+    // Bisa juga tampilkan welcome message
+    console.log(`Welcome ${user.first_name}!`);
+}
+
+// Fungsi untuk mengaplikasikan tema Telegram
+function applyTelegramTheme() {
+    if (!tg) return;
+    
+    // Telegram menyediakan color scheme
+    const themeParams = tg.themeParams;
+    
+    if (themeParams) {
+        // Terapkan warna tema Telegram ke CSS variables
+        if (themeParams.bg_color) {
+            document.documentElement.style.setProperty('--tg-theme-bg-color', themeParams.bg_color);
+        }
+        if (themeParams.text_color) {
+            document.documentElement.style.setProperty('--tg-theme-text-color', themeParams.text_color);
+        }
+        if (themeParams.button_color) {
+            document.documentElement.style.setProperty('--tg-theme-button-color', themeParams.button_color);
+        }
+        if (themeParams.button_text_color) {
+            document.documentElement.style.setProperty('--tg-theme-button-text-color', themeParams.button_text_color);
+        }
+        if (themeParams.hint_color) {
+            document.documentElement.style.setProperty('--tg-theme-hint-color', themeParams.hint_color);
+        }
+        if (themeParams.link_color) {
+            document.documentElement.style.setProperty('--tg-theme-link-color', themeParams.link_color);
+        }
+    }
+}
+
+// Fungsi untuk setup back button Telegram
+function setupTelegramBackButton() {
+    if (!tg) return;
+    
+    // Cek apakah ada back button (tersedia di versi terbaru)
+    if (tg.BackButton) {
+        // Sembunyikan back button secara default
+        tg.BackButton.hide();
+        
+        // Tampilkan back button saat popup/bottom sheet terbuka
+        document.addEventListener('popupOpened', () => {
+            tg.BackButton.show();
+            tg.BackButton.onClick(() => {
+                closeAllPopups();
+                tg.BackButton.hide();
+            });
+        });
+        
+        document.addEventListener('popupClosed', () => {
+            tg.BackButton.hide();
+        });
+    }
+}
+
+// Fungsi untuk menutup semua popup
+function closeAllPopups() {
+    closeFilterPopup();
+    closeBottomSheet();
+    closeActiveFiltersPopup();
+}
+
+// Fungsi untuk mendapatkan data user (dapat dipanggil dari mana saja)
+function getTelegramUser() {
+    return telegramUser;
+}
+
+// Fungsi untuk mendapatkan user ID
+function getTelegramUserId() {
+    return telegramUser ? telegramUser.id : null;
+}
+
+// Fungsi untuk mengecek apakah user premium
+function isTelegramUserPremium() {
+    return telegramUser ? telegramUser.is_premium || false : false;
+}
+
+// ===== FUNGSI LOAD DATA =====
 async function loadGifts() {
     try {
         elements.loadingState.style.display = 'flex';
@@ -124,15 +299,14 @@ async function loadGifts() {
     }
 }
 
-// Get Lottie URL from gift slug
+// ===== FUNGSI LOTTIE (tetap sama seperti sebelumnya) =====
 function getLottieUrl(slug) {
     return `https://nft.fragment.com/gift/${slug}.lottie.json`;
 }
 
-// Toggle Lottie animation - Tombol Play di pojok kanan atas
 window.toggleLottie = function(button, slug, event) {
     if (event) {
-        event.stopPropagation(); // Prevent card click
+        event.stopPropagation();
     }
     
     const card = button.closest('.gift-card');
@@ -141,63 +315,51 @@ window.toggleLottie = function(button, slug, event) {
     const fallbackImage = imageWrapper.querySelector('.fallback-image');
     const skeleton = lottieContainer.querySelector('.lottie-skeleton');
     
-    // Toggle active class on button
     button.classList.toggle('active');
     
     if (button.classList.contains('active')) {
-        // Show Lottie, hide fallback image
         lottieContainer.classList.add('active');
         if (fallbackImage) {
             fallbackImage.style.display = 'none';
         }
         
-        // Show skeleton loader
         if (skeleton) {
             skeleton.classList.add('active');
         } else {
-            // Create skeleton if not exists
             const newSkeleton = document.createElement('div');
             newSkeleton.className = 'lottie-skeleton active';
             lottieContainer.appendChild(newSkeleton);
         }
         
-        // Load Lottie animation
         loadLottieAnimation(lottieContainer, slug, button);
     } else {
-        // Hide Lottie, show fallback image
         lottieContainer.classList.remove('active');
         if (fallbackImage) {
             fallbackImage.style.display = 'block';
         }
         
-        // Hide skeleton
         const currentSkeleton = lottieContainer.querySelector('.lottie-skeleton');
         if (currentSkeleton) {
             currentSkeleton.classList.remove('active');
         }
         
-        // Clear Lottie player
         lottieContainer.innerHTML = '';
         
-        // Re-add skeleton for next time
         const newSkeleton = document.createElement('div');
         newSkeleton.className = 'lottie-skeleton';
         lottieContainer.appendChild(newSkeleton);
     }
 };
 
-// Load Lottie animation - PLAY ONLY ONCE
 async function loadLottieAnimation(lottieContainer, slug, button) {
     if (!lottieContainer) return;
     
     const lottieUrl = getLottieUrl(slug);
     const skeleton = lottieContainer.querySelector('.lottie-skeleton');
     
-    // Check cache first
     if (lottieCache.has(lottieUrl)) {
         const cachedData = lottieCache.get(lottieUrl);
         
-        // Hide skeleton
         if (skeleton) {
             skeleton.classList.remove('active');
         }
@@ -213,7 +375,6 @@ async function loadLottieAnimation(lottieContainer, slug, button) {
         const lottieData = await response.json();
         lottieCache.set(lottieUrl, lottieData);
         
-        // Hide skeleton
         if (skeleton) {
             skeleton.classList.remove('active');
         }
@@ -222,17 +383,14 @@ async function loadLottieAnimation(lottieContainer, slug, button) {
     } catch (error) {
         console.warn(`Failed to load Lottie for ${slug}:`, error);
         
-        // Hide skeleton
         if (skeleton) {
             skeleton.classList.remove('active');
         }
         
-        // Reset button state
         if (button) {
             button.classList.remove('active');
         }
         
-        // Hide Lottie container, show fallback
         lottieContainer.classList.remove('active');
         const imageWrapper = lottieContainer.closest('.card-image-wrapper');
         if (imageWrapper) {
@@ -242,7 +400,6 @@ async function loadLottieAnimation(lottieContainer, slug, button) {
             }
         }
         
-        // Show error state on button
         if (button) {
             button.style.opacity = '0.5';
             button.style.cursor = 'not-allowed';
@@ -250,49 +407,40 @@ async function loadLottieAnimation(lottieContainer, slug, button) {
     }
 }
 
-// Render Lottie player - CONFIGURED FOR SINGLE PLAY
 function renderLottiePlayer(container, lottieData) {
-    // Clear container but keep skeleton
     const skeleton = container.querySelector('.lottie-skeleton');
     container.innerHTML = '';
     if (skeleton) {
         container.appendChild(skeleton);
     }
     
-    // Create Lottie player
     const player = document.createElement('lottie-player');
     player.setAttribute('autoplay', '');
-    player.setAttribute('loop', 'false'); // IMPORTANT: Set to false for single play
+    player.setAttribute('loop', 'false');
     player.setAttribute('mode', 'normal');
     player.setAttribute('style', 'width: 100%; height: 100%;');
-    player.setAttribute('count', '1'); // Play only once
+    player.setAttribute('count', '1');
     
-    // Stringify the lottie data and set as src
     const lottieJson = JSON.stringify(lottieData);
     player.setAttribute('src', `data:application/json;charset=utf-8,${encodeURIComponent(lottieJson)}`);
     
     container.appendChild(player);
     
-    // Add event listener to ensure it doesn't loop
     player.addEventListener('load', () => {
-        // Force single play
         player.setAttribute('loop', 'false');
         player.setAttribute('count', '1');
         
-        // Hide skeleton
         if (skeleton) {
             skeleton.classList.remove('active');
         }
     });
     
-    // Animation complete event
     player.addEventListener('complete', () => {
-        // Animation finished playing once
         console.log('Animation completed');
     });
 }
 
-// Update search clear button visibility
+// ===== FUNGSI UI (tetap sama seperti sebelumnya) =====
 function updateSearchClearButton() {
     if (elements.idSearchInput.value.length > 0) {
         elements.idSearchClear.classList.add('visible');
@@ -301,12 +449,10 @@ function updateSearchClearButton() {
     }
 }
 
-// Setup event listeners
 function setupEventListeners() {
     // ID Search
     elements.idSearchInput.addEventListener('input', (e) => {
         activeFilters.id = e.target.value;
-        // Auto apply for ID search
         filterAndSortGifts();
         renderActiveFilters();
         updateSearchClearButton();
@@ -320,7 +466,7 @@ function setupEventListeners() {
         updateSearchClearButton();
     });
     
-    // Filter toggle (show/hide bubbles)
+    // Filter toggle
     elements.filterToggle.addEventListener('click', () => {
         elements.filterPanel.classList.toggle('active');
         elements.filterToggle.classList.toggle('active');
@@ -331,7 +477,6 @@ function setupEventListeners() {
         bubble.addEventListener('click', () => {
             const filterType = bubble.dataset.filter;
             
-            // Check if bubble is disabled
             if (bubble.classList.contains('disabled')) {
                 return;
             }
@@ -403,26 +548,24 @@ function setupEventListeners() {
     }
 }
 
-// Open active filters popup (eye button)
 function openActiveFiltersPopup() {
     renderActiveFiltersPopup();
     elements.activeFiltersPopupOverlay.classList.add('active');
     setTimeout(() => elements.activeFiltersPopup.classList.add('active'), 10);
+    document.dispatchEvent(new Event('popupOpened'));
 }
 
-// Close active filters popup
 function closeActiveFiltersPopup() {
     elements.activeFiltersPopup.classList.remove('active');
     setTimeout(() => {
         elements.activeFiltersPopupOverlay.classList.remove('active');
+        document.dispatchEvent(new Event('popupClosed'));
     }, 300);
 }
 
-// Render active filters popup content
 function renderActiveFiltersPopup() {
     let html = '';
     
-    // ID filter
     if (activeFilters.id) {
         html += `
             <div class="popup-filter-group">
@@ -434,7 +577,6 @@ function renderActiveFiltersPopup() {
         `;
     }
     
-    // Gift filters
     if (activeFilters.gift.length > 0) {
         html += `
             <div class="popup-filter-group">
@@ -446,7 +588,6 @@ function renderActiveFiltersPopup() {
         `;
     }
     
-    // Model filters
     if (activeFilters.model.length > 0) {
         html += `
             <div class="popup-filter-group">
@@ -458,7 +599,6 @@ function renderActiveFiltersPopup() {
         `;
     }
     
-    // Symbol filters
     if (activeFilters.symbol.length > 0) {
         html += `
             <div class="popup-filter-group">
@@ -470,7 +610,6 @@ function renderActiveFiltersPopup() {
         `;
     }
     
-    // Backdrop filters
     if (activeFilters.bg.length > 0) {
         html += `
             <div class="popup-filter-group">
@@ -482,7 +621,6 @@ function renderActiveFiltersPopup() {
         `;
     }
     
-    // Sort filter
     if (activeFilters.sort !== 'price-asc') {
         const sortLabels = {
             'price-asc': 'Low to High',
@@ -508,11 +646,9 @@ function renderActiveFiltersPopup() {
     elements.activeFiltersPopupContent.innerHTML = html;
 }
 
-// Open filter popup
 function openFilterPopup(filterType) {
     currentPopupFilter = filterType;
     
-    // Set title
     const titles = {
         'gift': 'Select Gift Name',
         'model': 'Select Model',
@@ -522,27 +658,24 @@ function openFilterPopup(filterType) {
     };
     elements.filterPopupTitle.textContent = titles[filterType] || 'Select';
     
-    // Clear search
     elements.popupSearchInput.value = '';
     
-    // Render content
     renderPopupContent(filterType, '');
     
-    // Show popup
     elements.filterPopupOverlay.classList.add('active');
     setTimeout(() => elements.filterPopup.classList.add('active'), 10);
+    document.dispatchEvent(new Event('popupOpened'));
 }
 
-// Close filter popup
 function closeFilterPopup() {
     elements.filterPopup.classList.remove('active');
     setTimeout(() => {
         elements.filterPopupOverlay.classList.remove('active');
         currentPopupFilter = null;
+        document.dispatchEvent(new Event('popupClosed'));
     }, 300);
 }
 
-// Render popup content based on filter type
 function renderPopupContent(filterType, searchTerm = '') {
     if (!elements.filterPopupList) return;
     
@@ -565,7 +698,6 @@ function renderPopupContent(filterType, searchTerm = '') {
     }
 }
 
-// Render Gift popup
 function renderGiftPopup(searchTerm = '') {
     const filteredGifts = filterOptions.gifts.filter(gift => 
         gift.toLowerCase().includes(searchTerm.toLowerCase())
@@ -590,13 +722,10 @@ function renderGiftPopup(searchTerm = '') {
     }).join('');
 }
 
-// Render Model popup (dependent on selected gifts)
 function renderModelPopup(searchTerm = '') {
-    // Get models only from selected gifts
     let availableModels = [];
     
     if (activeFilters.gift.length > 0) {
-        // Filter gifts based on selected gift names
         const selectedGiftNames = activeFilters.gift;
         const relevantGifts = gifts.filter(gift => {
             const giftName = gift.nama || gift.name.split('#')[0].trim();
@@ -606,12 +735,10 @@ function renderModelPopup(searchTerm = '') {
         const modelSet = new Set(relevantGifts.map(g => g.model));
         availableModels = Array.from(modelSet).sort();
     } else {
-        // If no gift selected, show empty state
         elements.filterPopupList.innerHTML = '<div class="popup-empty-state">Please select at least one Gift Name first</div>';
         return;
     }
     
-    // Filter by search term
     const filteredModels = availableModels.filter(model => 
         model.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -635,13 +762,10 @@ function renderModelPopup(searchTerm = '') {
     }).join('');
 }
 
-// Render Symbol popup (dependent on selected gifts)
 function renderSymbolPopup(searchTerm = '') {
-    // Get symbols only from selected gifts
     let availableSymbols = [];
     
     if (activeFilters.gift.length > 0) {
-        // Filter gifts based on selected gift names
         const selectedGiftNames = activeFilters.gift;
         const relevantGifts = gifts.filter(gift => {
             const giftName = gift.nama || gift.name.split('#')[0].trim();
@@ -651,12 +775,10 @@ function renderSymbolPopup(searchTerm = '') {
         const symbolSet = new Set(relevantGifts.map(g => g.symbol));
         availableSymbols = Array.from(symbolSet).sort();
     } else {
-        // If no gift selected, show empty state
         elements.filterPopupList.innerHTML = '<div class="popup-empty-state">Please select at least one Gift Name first</div>';
         return;
     }
     
-    // Filter by search term
     const filteredSymbols = availableSymbols.filter(symbol => 
         symbol.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -680,13 +802,10 @@ function renderSymbolPopup(searchTerm = '') {
     }).join('');
 }
 
-// Render Backdrop popup (dependent on selected gifts)
 function renderBgPopup(searchTerm = '') {
-    // Get backdrops only from selected gifts
     let availableBgs = [];
     
     if (activeFilters.gift.length > 0) {
-        // Filter gifts based on selected gift names
         const selectedGiftNames = activeFilters.gift;
         const relevantGifts = gifts.filter(gift => {
             const giftName = gift.nama || gift.name.split('#')[0].trim();
@@ -696,12 +815,10 @@ function renderBgPopup(searchTerm = '') {
         const bgSet = new Set(relevantGifts.map(g => g.bg));
         availableBgs = Array.from(bgSet).sort();
     } else {
-        // If no gift selected, show empty state
         elements.filterPopupList.innerHTML = '<div class="popup-empty-state">Please select at least one Gift Name first</div>';
         return;
     }
     
-    // Filter by search term
     const filteredBgs = availableBgs.filter(bg => 
         bg.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -725,7 +842,6 @@ function renderBgPopup(searchTerm = '') {
     }).join('');
 }
 
-// Render Sort popup
 function renderSortPopup() {
     const sortOptions = [
         { value: 'price-asc', label: 'Low to High' },
@@ -748,14 +864,12 @@ function renderSortPopup() {
         `;
     }).join('');
     
-    // Update sort value display
     const currentSort = sortOptions.find(opt => opt.value === activeFilters.sort);
     if (currentSort) {
         elements.sortValue.textContent = currentSort.label;
     }
 }
 
-// Toggle functions for filters
 window.toggleGiftFilter = function(gift, checked) {
     if (checked) {
         if (!activeFilters.gift.includes(gift)) {
@@ -764,7 +878,6 @@ window.toggleGiftFilter = function(gift, checked) {
     } else {
         activeFilters.gift = activeFilters.gift.filter(g => g !== gift);
         
-        // Clear dependent filters when gift is deselected
         if (activeFilters.gift.length === 0) {
             activeFilters.model = [];
             activeFilters.symbol = [];
@@ -772,7 +885,6 @@ window.toggleGiftFilter = function(gift, checked) {
         }
     }
     
-    // Enable/disable dependent bubbles
     updateDependentBubbles();
     updateFilterCounts();
 };
@@ -810,11 +922,9 @@ window.toggleBgFilter = function(bg, checked) {
     updateFilterCounts();
 };
 
-// Update sort filter
 window.updateSortFilter = function(value) {
     activeFilters.sort = value;
     
-    // Update sort value display
     const sortLabels = {
         'price-asc': 'Low to High',
         'price-desc': 'High to Low',
@@ -825,7 +935,6 @@ window.updateSortFilter = function(value) {
     elements.sortValue.textContent = sortLabels[value];
 };
 
-// Update dependent bubbles (Model, Symbol, Backdrop)
 function updateDependentBubbles() {
     const hasGiftSelected = activeFilters.gift.length > 0;
     
@@ -838,14 +947,12 @@ function updateDependentBubbles() {
         elements.symbolBubble.classList.add('disabled');
         elements.bgBubble.classList.add('disabled');
         
-        // Clear dependent filters when no gift selected
         activeFilters.model = [];
         activeFilters.symbol = [];
         activeFilters.bg = [];
     }
 }
 
-// Update filter count badges
 function updateFilterCounts() {
     elements.giftCount.textContent = activeFilters.gift.length || '0';
     elements.modelCount.textContent = activeFilters.model.length || '0';
@@ -853,11 +960,9 @@ function updateFilterCounts() {
     elements.bgCount.textContent = activeFilters.bg.length || '0';
 }
 
-// Render active filters as tags (horizontal scroll)
 function renderActiveFilters() {
     let html = '';
     
-    // ID filter
     if (activeFilters.id) {
         html += `
             <div class="filter-tag">
@@ -872,7 +977,6 @@ function renderActiveFilters() {
         `;
     }
     
-    // Gift filters
     activeFilters.gift.forEach(gift => {
         html += `
             <div class="filter-tag">
@@ -887,7 +991,6 @@ function renderActiveFilters() {
         `;
     });
     
-    // Model filters
     activeFilters.model.forEach(model => {
         html += `
             <div class="filter-tag">
@@ -902,7 +1005,6 @@ function renderActiveFilters() {
         `;
     });
     
-    // Symbol filters
     activeFilters.symbol.forEach(symbol => {
         html += `
             <div class="filter-tag">
@@ -917,7 +1019,6 @@ function renderActiveFilters() {
         `;
     });
     
-    // Backdrop filters
     activeFilters.bg.forEach(bg => {
         html += `
             <div class="filter-tag">
@@ -932,7 +1033,6 @@ function renderActiveFilters() {
         `;
     });
     
-    // Sort filter
     if (activeFilters.sort !== 'price-asc') {
         const sortLabels = {
             'price-asc': 'Low to High',
@@ -960,11 +1060,9 @@ function renderActiveFilters() {
         elements.activeFilters.innerHTML = html;
     }
     
-    // Update share button visibility (show only if there are active filters)
     updateShareButtonVisibility();
 }
 
-// Update share button visibility
 function updateShareButtonVisibility() {
     const hasActiveFilters = 
         activeFilters.id !== '' || 
@@ -983,7 +1081,6 @@ function updateShareButtonVisibility() {
     }
 }
 
-// Remove filter functions
 window.removeIdFilter = function() {
     elements.idSearchInput.value = '';
     activeFilters.id = '';
@@ -995,7 +1092,6 @@ window.removeIdFilter = function() {
 window.removeGiftFilter = function(gift) {
     activeFilters.gift = activeFilters.gift.filter(g => g !== gift);
     
-    // If no gift selected, clear dependent filters
     if (activeFilters.gift.length === 0) {
         activeFilters.model = [];
         activeFilters.symbol = [];
@@ -1006,7 +1102,6 @@ window.removeGiftFilter = function(gift) {
     updateFilterCounts();
     renderActiveFilters();
     
-    // If popup is open, refresh content
     if (currentPopupFilter === 'gift') {
         renderPopupContent('gift', elements.popupSearchInput.value);
     }
@@ -1049,58 +1144,46 @@ window.resetSortFilter = function() {
     filterAndSortGifts();
 };
 
-// Clear all filters
 function clearAllFilters() {
-    // Clear ID search
     elements.idSearchInput.value = '';
     activeFilters.id = '';
     
-    // Clear all arrays
     activeFilters.gift = [];
     activeFilters.model = [];
     activeFilters.symbol = [];
     activeFilters.bg = [];
     
-    // Reset sort
     activeFilters.sort = 'price-asc';
     elements.sortValue.textContent = 'Low to High';
     
-    // Update UI
     updateDependentBubbles();
     updateFilterCounts();
     renderActiveFilters();
     updateSearchClearButton();
     
-    // Apply filters
     filterAndSortGifts();
 }
 
-// Filter and sort gifts
 function filterAndSortGifts() {
     filteredGifts = gifts.filter(gift => {
         const giftName = gift.nama || gift.name.split('#')[0].trim();
         
-        // ID filter
         if (activeFilters.id && !gift.id.includes(activeFilters.id)) {
             return false;
         }
         
-        // Gift name filter
         if (activeFilters.gift.length > 0 && !activeFilters.gift.includes(giftName)) {
             return false;
         }
         
-        // Model filter
         if (activeFilters.model.length > 0 && !activeFilters.model.includes(gift.model)) {
             return false;
         }
         
-        // Symbol filter
         if (activeFilters.symbol.length > 0 && !activeFilters.symbol.includes(gift.symbol)) {
             return false;
         }
         
-        // Backdrop filter
         if (activeFilters.bg.length > 0 && !activeFilters.bg.includes(gift.bg)) {
             return false;
         }
@@ -1108,7 +1191,6 @@ function filterAndSortGifts() {
         return true;
     });
     
-    // Apply sorting
     switch(activeFilters.sort) {
         case 'price-asc':
             filteredGifts.sort((a, b) => a.price - b.price);
@@ -1132,7 +1214,6 @@ function filterAndSortGifts() {
     renderActiveFilters();
 }
 
-// Render gifts to grid with Lottie animations - Tombol Play di pojok kanan atas
 function renderGifts() {
     const giftsToRender = filteredGifts.length > 0 ? filteredGifts : gifts;
     
@@ -1179,7 +1260,6 @@ function renderGifts() {
         </div>
     `}).join('');
     
-    // Fix for single card layout
     if (giftsToRender.length === 1) {
         const card = elements.cardsGrid.querySelector('.gift-card');
         if (card) {
@@ -1190,7 +1270,6 @@ function renderGifts() {
     }
 }
 
-// Open bottom sheet with gift details - SINGLE PLAY
 window.openBottomSheet = function(gift) {
     const cleanName = gift.nama || gift.name.split('#')[0].trim();
     
@@ -1228,17 +1307,17 @@ window.openBottomSheet = function(gift) {
     elements.sheetContent.innerHTML = content;
     elements.bottomSheetOverlay.classList.add('active');
     setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
+    document.dispatchEvent(new Event('popupOpened'));
 };
 
-// Close bottom sheet
 window.closeBottomSheet = function() {
     elements.bottomSheet.classList.remove('active');
     setTimeout(() => {
         elements.bottomSheetOverlay.classList.remove('active');
+        document.dispatchEvent(new Event('popupClosed'));
     }, 300);
 };
 
-// Update statistics
 function updateStats() {
     const currentGifts = filteredGifts.length > 0 ? filteredGifts : gifts;
     elements.totalItems.textContent = currentGifts.length;
@@ -1251,7 +1330,6 @@ function updateStats() {
     }
 }
 
-// Format price with K/M suffix
 function formatPrice(price) {
     if (price >= 1000000) {
         return (price / 1000000).toFixed(1) + 'M';
@@ -1262,14 +1340,12 @@ function formatPrice(price) {
     return price.toString();
 }
 
-// Setup scroll to top visibility
 function setupScrollToTop() {
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const cards = document.querySelectorAll('.gift-card');
         const cardCount = cards.length;
         
-        // Show button after scrolling past 2 rows (approximately 2 cards height)
         if (scrollTop > 400 && cardCount >= 2) {
             elements.scrollTopBtn.classList.add('visible');
         } else {
@@ -1278,7 +1354,6 @@ function setupScrollToTop() {
     });
 }
 
-// Show error state
 function showError() {
     elements.loadingState.style.display = 'none';
     elements.cardsGrid.innerHTML = `
@@ -1294,7 +1369,6 @@ function showError() {
     `;
 }
 
-// Close bottom sheet with ESC key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && elements.bottomSheetOverlay.classList.contains('active')) {
         closeBottomSheet();
@@ -1307,9 +1381,7 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Reset all Lottie animations on page load - ENSURE SINGLE PLAY
 window.addEventListener('load', () => {
-    // Force all lottie-players to play only once
     setTimeout(() => {
         document.querySelectorAll('lottie-player').forEach(player => {
             player.setAttribute('loop', 'false');
@@ -1318,7 +1390,6 @@ window.addEventListener('load', () => {
     }, 500);
 });
 
-// Prevent card click when clicking on Lottie play button
 document.addEventListener('click', (e) => {
     const playButton = e.target.closest('.lottie-play-btn');
     if (playButton) {
@@ -1326,9 +1397,8 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// ===== NEW FUNCTIONS FOR SHARE FILTER & TELEGRAM INTEGRATION =====
+// ===== FUNGSI SHARE FILTER (tetap sama) =====
 
-// Toast notification
 function showToast(message, duration = 2000) {
     const toast = document.getElementById('toastNotification');
     const toastMessage = document.getElementById('toastMessage');
@@ -1343,9 +1413,7 @@ function showToast(message, duration = 2000) {
     }, duration);
 }
 
-// Encode current filters to Base64 string
 function encodeFiltersToBase64() {
-    // Create filter object from activeFilters
     const filterData = {
         id: activeFilters.id || '',
         gift: activeFilters.gift || [],
@@ -1355,15 +1423,12 @@ function encodeFiltersToBase64() {
         sort: activeFilters.sort || 'price-asc'
     };
     
-    // Convert to JSON string then to Base64
     const jsonString = JSON.stringify(filterData);
-    return btoa(unescape(encodeURIComponent(jsonString))); // Support Unicode
+    return btoa(unescape(encodeURIComponent(jsonString)));
 }
 
-// Decode Base64 string to filters
 function decodeFiltersFromBase64(encodedString) {
     try {
-        // Decode Base64 to JSON string
         const jsonString = decodeURIComponent(escape(atob(encodedString)));
         const filterData = JSON.parse(jsonString);
         
@@ -1381,12 +1446,10 @@ function decodeFiltersFromBase64(encodedString) {
     }
 }
 
-// Apply filters from encoded string
 function applyFiltersFromEncoded(encodedString) {
     const decodedFilters = decodeFiltersFromBase64(encodedString);
     if (!decodedFilters) return false;
     
-    // Update activeFilters
     activeFilters.id = decodedFilters.id;
     activeFilters.gift = decodedFilters.gift;
     activeFilters.model = decodedFilters.model;
@@ -1394,10 +1457,8 @@ function applyFiltersFromEncoded(encodedString) {
     activeFilters.bg = decodedFilters.bg;
     activeFilters.sort = decodedFilters.sort;
     
-    // Update UI elements
     elements.idSearchInput.value = activeFilters.id;
     
-    // Update sort display
     const sortLabels = {
         'price-asc': 'Low to High',
         'price-desc': 'High to Low',
@@ -1407,37 +1468,31 @@ function applyFiltersFromEncoded(encodedString) {
     };
     elements.sortValue.textContent = sortLabels[activeFilters.sort] || 'Low to High';
     
-    // Update dependent bubbles
     updateDependentBubbles();
     updateFilterCounts();
     updateSearchClearButton();
     
-    // Apply filters
     filterAndSortGifts();
     renderActiveFilters();
     
     return true;
 }
 
-// Generate Telegram share link
 function generateTelegramShareLink() {
     const baseUrl = 'https://t.me/marketaldibot/gifts';
     const encodedFilters = encodeFiltersToBase64();
     return `${baseUrl}?startapp=${encodedFilters}`;
 }
 
-// Generate GitHub Pages direct link (for debugging)
 function generateGitHubDirectLink() {
     const baseUrl = window.location.origin + window.location.pathname;
     const encodedFilters = encodeFiltersToBase64();
     return `${baseUrl}?search=${encodedFilters}`;
 }
 
-// Share filter function
 function shareCurrentFilters() {
     const telegramLink = generateTelegramShareLink();
     
-    // Try to use Telegram's native sharing if available
     if (tg) {
         tg.showPopup({
             title: 'Share Filters',
@@ -1449,11 +1504,9 @@ function shareCurrentFilters() {
             ]
         }, (buttonId) => {
             if (buttonId === 'share') {
-                // Use Telegram's share method if available
                 if (tg.shareToStory) {
                     tg.shareToStory(telegramLink);
                 } else {
-                    // Fallback to copy
                     copyToClipboard(telegramLink);
                 }
             } else if (buttonId === 'copy') {
@@ -1461,25 +1514,20 @@ function shareCurrentFilters() {
             }
         });
     } else {
-        // Fallback for browser testing
         copyToClipboard(telegramLink);
     }
 }
 
-// Copy to clipboard helper
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
         showToast('Link copied to clipboard!');
     }).catch(err => {
         console.error('Failed to copy:', err);
-        // Fallback
         prompt('Copy this link:', text);
     });
 }
 
-// Check for URL parameters on page load
 function checkForUrlParameters() {
-    // Check for Telegram start_param first (from Mini App)
     let encodedFilters = null;
     
     if (tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param) {
@@ -1487,7 +1535,6 @@ function checkForUrlParameters() {
         console.log('Found Telegram start_param:', encodedFilters);
     }
     
-    // If not found in Telegram, check URL query params (for browser testing)
     if (!encodedFilters) {
         const urlParams = new URLSearchParams(window.location.search);
         encodedFilters = urlParams.get('search');
@@ -1497,14 +1544,12 @@ function checkForUrlParameters() {
         }
     }
     
-    // Apply filters if found
     if (encodedFilters) {
         const success = applyFiltersFromEncoded(encodedFilters);
         
         if (success) {
             showToast('Filters applied from shared link!');
             
-            // Add visual feedback to share button
             if (elements.shareFilterBtn) {
                 elements.shareFilterBtn.classList.add('pulse');
                 setTimeout(() => elements.shareFilterBtn.classList.remove('pulse'), 2000);
@@ -1515,6 +1560,9 @@ function checkForUrlParameters() {
     }
 }
 
-// Make functions globally available
+// Export functions ke global scope
 window.shareCurrentFilters = shareCurrentFilters;
 window.copyToClipboard = copyToClipboard;
+window.getTelegramUser = getTelegramUser;
+window.getTelegramUserId = getTelegramUserId;
+window.isTelegramUserPremium = isTelegramUserPremium;
