@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>NFT GIFT • TON Market</title>
+    <title>WINEDASH MARKETPLACE</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Lottie Web Player -->
@@ -18,7 +18,7 @@
     <div class="gradient-bg"></div>
     
     <main class="container">
-        <!-- Header Glassmorphism with Share Button -->
+        <!-- Header Glassmorphism -->
         <header class="glass-header">
             <div class="logo-wrapper">
                 <div class="logo-icon">
@@ -33,53 +33,27 @@
                     </svg>
                 </div>
                 <div class="logo-text">
-                    <span class="brand">NFT GIFT</span>
-                    <span class="brand-sub">TON Market</span>
+                    <span class="brand">WINEDASH</span>
+                    <span class="brand-sub">Gift Marketplace!</span>
                 </div>
             </div>
-            <div style="display: flex; align-items: center; gap: 12px;">
-                <button class="header-share-btn" id="shareFilterBtn" title="Share current filters">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <polyline points="16 6 12 2 8 6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <line x1="12" y1="2" x2="12" y2="15" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-                <div class="header-stats">
-                    <div class="stat-item">
-                        <span class="stat-label">Items</span>
-                        <span class="stat-value" id="total-items">0</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-label">Floor</span>
-                        <span class="stat-value" id="floor-price">0</span>
-                    </div>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Items</span>
+                    <span class="stat-value" id="total-items">0</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-label">Floor</span>
+                    <span class="stat-value" id="floor-price">0</span>
                 </div>
             </div>
         </header>
 
-        <!-- ID Search Section - Simple Input -->
-        <div class="id-search-section glass-panel">
-            <div class="id-search-container">
-                <div class="id-search-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <circle cx="11" cy="11" r="7" stroke-width="1.5"/>
-                        <path d="M16 16L21 21" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <input type="text" id="idSearchInput" class="id-search-input" placeholder="Search by ID...">
-                <button class="id-search-clear" id="idSearchClear">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M18 6L6 18M6 6L18 18" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Filter Categories - Bubble Style -->
+        <!-- Filter & Search Section - Combined -->
         <div class="filter-section glass-panel">
-            <div class="filter-header">
+            <!-- Top Bar: Filters Button and Search -->
+            <div class="filter-top-bar">
                 <button class="filter-toggle" id="filterToggle">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path d="M4 6H20M4 12H16M4 18H10" stroke-width="1.5" stroke-linecap="round"/>
@@ -90,23 +64,26 @@
                     </svg>
                 </button>
                 
-                <div class="filter-actions">
-                    <button class="filter-clear-btn" id="clearAllFilters">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M18 6L6 18M6 6L18 18" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                        Clear
-                    </button>
-                    <button class="filter-apply-btn" id="applyFiltersBtn">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M5 12H19M19 12L15 8M19 12L15 16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Apply
-                    </button>
+                <div class="search-container">
+                    <span class="search-label">Search ID:</span>
+                    <div class="search-wrapper">
+                        <input type="text" id="idSearchInput" class="id-search-input" placeholder="Type ID...">
+                        <button class="id-search-clear" id="idSearchClear">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M18 6L6 18M6 6L18 18" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="search-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="11" cy="11" r="7" stroke-width="1.5"/>
+                                <path d="M16 16L21 21" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Filter Bubbles -->
+            <!-- Filter Bubbles (hidden by default) -->
             <div class="filter-bubbles" id="filterPanel">
                 <!-- Gift Name Bubble -->
                 <div class="filter-bubble" data-filter="gift">
@@ -154,10 +131,62 @@
                 </div>
             </div>
 
-            <!-- Active Filters Tags -->
-            <div class="active-filters-container" id="activeFiltersContainer">
-                <div class="active-filters-title">Active:</div>
-                <div class="active-filters" id="activeFilters"></div>
+            <!-- Active Filters Bar -->
+            <div class="active-filters-bar" id="activeFiltersBar">
+                <div class="active-filters-left">
+                    <span class="active-filters-title">Active:</span>
+                    <div class="active-filters-scroll" id="activeFiltersScroll">
+                        <div class="active-filters" id="activeFilters"></div>
+                    </div>
+                </div>
+                <div class="active-filters-actions">
+                    <button class="filter-action-btn eye-btn" id="viewActiveFiltersBtn" title="View all active filters">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="2" stroke-width="1.5"/>
+                            <path d="M22 12C22 12 19 18 12 18C5 18 2 12 2 12C2 12 5 6 12 6C19 6 22 12 22 12Z" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    <button class="filter-action-btn share-btn" id="shareFilterBtn" title="Share current filters">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="16 6 12 2 8 6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="2" x2="12" y2="15" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Clear & Apply Buttons -->
+            <div class="filter-bottom-actions" id="filterBottomActions">
+                <button class="filter-clear-btn" id="clearAllFilters">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 6L6 18M6 6L18 18" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Clear
+                </button>
+                <button class="filter-apply-btn" id="applyFiltersBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M5 12H19M19 12L15 8M19 12L15 16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Apply
+                </button>
+            </div>
+        </div>
+
+        <!-- Active Filters Popup (Eye Button) -->
+        <div class="active-filters-popup-overlay" id="activeFiltersPopupOverlay">
+            <div class="active-filters-popup glass-panel" id="activeFiltersPopup">
+                <div class="popup-header">
+                    <span class="popup-title">Active Filters</span>
+                    <button class="popup-close" id="activeFiltersPopupClose">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="popup-content" id="activeFiltersPopupContent">
+                    <!-- Dynamic content will be injected here -->
+                </div>
             </div>
         </div>
 
