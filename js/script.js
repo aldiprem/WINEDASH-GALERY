@@ -845,38 +845,30 @@ function renderPopupContent(filterType, searchTerm = '') {
 
 // ===== FUNGSI UNTUK MEMFORMAT NAMA GIFT MENJADI NAMA FILE =====
 function formatGiftNameForFile(giftName) {
-    // Hapus semua spasi
-    let fileName = giftName.replace(/\s+/g, '');
-    
-    // Hapus tanda kutip dan karakter khusus
-    fileName = fileName.replace(/'/g, '');
-    fileName = fileName.replace(/’/g, '');
-    fileName = fileName.replace(/-/g, '');
-    fileName = fileName.replace(/\./g, '');
-    
-    // Hapus karakter non-alfanumerik (kecuali underscore)
-    fileName = fileName.replace(/[^\w]/g, '');
-    
-    return fileName;
+  // Jika nama gift sudah sesuai dengan nama file (tanpa spasi)
+  return giftName; // Langsung return tanpa perubahan
 }
 
 function renderGiftPopup(searchTerm = '') {
-    const filteredGifts = filterOptions.gifts.filter(gift => 
-        gift.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    
-    if (filteredGifts.length === 0) {
-        elements.filterPopupList.innerHTML = '<div class="popup-empty-state">No gifts found</div>';
-        return;
-    }
-    
-    elements.filterPopupList.innerHTML = filteredGifts.map(gift => {
-        const isChecked = activeFilters.gift.includes(gift);
-        const fileName = formatGiftNameForFile(gift);
-        // Gunakan path relatif ke folder images/gifts/
-        const imageUrl = `images/gifts/${fileName}.png`;
-        
-        return `
+  const filteredGifts = filterOptions.gifts.filter(gift =>
+    gift.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  if (filteredGifts.length === 0) {
+    elements.filterPopupList.innerHTML = '<div class="popup-empty-state">No gifts found</div>';
+    return;
+  }
+
+  elements.filterPopupList.innerHTML = filteredGifts.map(gift => {
+    const isChecked = activeFilters.gift.includes(gift);
+    const fileName = formatGiftNameForFile(gift);
+    // Gunakan path absolut dari GitHub Pages
+    // Ganti USERNAME dan REPOSITORY dengan milik Anda
+    const imageUrl = `https://aldiprem.github.io/WINEDASH-GALERY/images/gifts/${fileName}.png`;
+    // Atau jika pakai GitHub Pages:
+    // const imageUrl = `https://USERNAME.github.io/REPOSITORY/images/gifts/${fileName}.png`;
+
+    return `
             <div class="popup-filter-item">
                 <label class="popup-checkbox-container">
                     <input type="checkbox" value="${gift}" ${isChecked ? 'checked' : ''} onchange="toggleGiftFilter('${gift}', this.checked)">
@@ -886,7 +878,7 @@ function renderGiftPopup(searchTerm = '') {
                 </label>
             </div>
         `;
-    }).join('');
+  }).join('');
 }
 
 function renderModelPopup(searchTerm = '') {
