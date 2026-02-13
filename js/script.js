@@ -70,7 +70,7 @@ const elements = {
     shareFilterBtn: document.getElementById('shareFilterBtn'),
     userAvatar: document.getElementById('userAvatar'),
     userName: document.getElementById('userName'),
-    userStatus: document.getElementById('userStatus'),
+    userUsername: document.getElementById('userUsername'),
     userProfile: document.getElementById('userProfile'),
     activeFiltersContainer: document.getElementById('activeFiltersContainer')
 };
@@ -125,39 +125,44 @@ function initializeTelegramApp() {
     }
 }
 
-// Fungsi untuk mengambil foto profil user dari Telegram (via Bot API)
+// Fungsi untuk mengambil foto profil user dari Telegram (via API)
 async function fetchTelegramUserPhoto(userId) {
-    // Catatan: Untuk mengambil foto profil, Anda perlu backend dengan Bot Token
-    // Ini adalah contoh jika Anda memiliki endpoint API sendiri
-    /*
+    // Untuk mengambil foto profil, Anda memerlukan Bot Token dan backend
+    // Berikut adalah contoh jika Anda memiliki endpoint sendiri
+    
     try {
+        // Ganti URL ini dengan endpoint API Anda
         const response = await fetch(`https://your-backend.com/api/telegram/photo/${userId}`);
         if (response.ok) {
             const photoUrl = await response.text();
             if (photoUrl && elements.userAvatar) {
+                // Hapus inisial dan ganti dengan gambar
                 const img = document.createElement('img');
                 img.src = photoUrl;
                 img.alt = 'Profile';
-                elements.userAvatar.innerHTML = '';
-                elements.userAvatar.appendChild(img);
+                img.className = 'avatar-image';
+                img.onload = () => {
+                    // Sembunyikan inisial, tampilkan gambar
+                    const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
+                    if (initialSpan) {
+                        initialSpan.style.display = 'none';
+                    }
+                    elements.userAvatar.appendChild(img);
+                };
+                img.onerror = () => {
+                    console.log('Gagal memuat foto profil');
+                };
             }
         }
     } catch (error) {
         console.error('Error fetching user photo:', error);
-    }
-    */
-    
-    // Untuk sementara, gunakan inisial
-    if (telegramUser && elements.userAvatar) {
-        const initial = telegramUser.first_name ? telegramUser.first_name.charAt(0).toUpperCase() : '?';
-        elements.userAvatar.textContent = initial;
     }
 }
 
 function displayUserInfo(user) {
     if (!user) return;
     
-    // Tampilkan nama
+    // Tampilkan nama lengkap
     if (elements.userName) {
         let displayName = user.first_name;
         if (user.last_name) {
@@ -166,19 +171,20 @@ function displayUserInfo(user) {
         elements.userName.textContent = displayName;
     }
     
-    // Tampilkan username atau status
-    if (elements.userStatus) {
+    // Tampilkan username
+    if (elements.userUsername) {
         if (user.username) {
-            elements.userStatus.textContent = '@' + user.username;
+            elements.userUsername.textContent = '@' + user.username;
         } else {
-            elements.userStatus.textContent = 'Telegram User';
+            elements.userUsername.textContent = 'telegram user';
         }
     }
     
-    // Tampilkan avatar dengan inisial
-    if (elements.userAvatar) {
+    // Tampilkan inisial di avatar
+    const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
+    if (initialSpan) {
         const initial = user.first_name ? user.first_name.charAt(0).toUpperCase() : '?';
-        elements.userAvatar.textContent = initial;
+        initialSpan.textContent = initial;
     }
     
     // Tambahkan class premium jika user premium
@@ -191,11 +197,12 @@ function setGuestUser() {
     if (elements.userName) {
         elements.userName.textContent = 'Guest';
     }
-    if (elements.userStatus) {
-        elements.userStatus.textContent = 'not logged in';
+    if (elements.userUsername) {
+        elements.userUsername.textContent = '';
     }
-    if (elements.userAvatar) {
-        elements.userAvatar.textContent = '?';
+    const initialSpan = elements.userAvatar?.querySelector('.avatar-initial');
+    if (initialSpan) {
+        initialSpan.textContent = '?';
     }
 }
 
