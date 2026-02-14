@@ -11,7 +11,7 @@
     --tg-accent-blue: #5C8BE6;
     --tg-accent-green: #3fcb95;
     --glass-bg: rgba(31, 44, 51, 0.72);
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --glossy-border: rgba(255, 255, 255, 0.08);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
     --blur-amount: 20px;
     --spacing-xs: 4px;
@@ -90,49 +90,12 @@ body {
     flex-direction: column;
 }
 
-/* Ikon gift di popup filter */
-.gift-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
-  object-fit: cover;
-  margin-right: 8px;
-}
-
-/* ===== GIFT ICON DI POPUP FILTER ===== */
-.popup-filter-item .popup-checkbox-container {
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  width: 100% !important;
-}
-
-.popup-filter-item .gift-icon {
-  width: 24px !important;
-  height: 24px !important;
-  border-radius: 6px !important;
-  object-fit: cover !important;
-  margin-right: 4px !important;
-  display: inline-block !important;
-  flex-shrink: 0 !important;
-}
-
-/* Tambahkan border-radius yang konsisten */
-.popup-filter-item .gift-icon[src] {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Pastikan checkbox container tidak terpengaruh style lain */
-.popup-filter-item .popup-checkbox-container input[type="checkbox"] {
-  margin: 0;
-}
-
 /* ===== GLASS COMPONENTS ===== */
 .glass-panel, .gift-card, .bottom-sheet, .scroll-top, .filter-popup, .active-filters-popup {
     backdrop-filter: blur(var(--blur-amount));
     -webkit-backdrop-filter: blur(var(--blur-amount));
     background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     box-shadow: var(--glass-shadow);
 }
 
@@ -189,18 +152,19 @@ body {
     letter-spacing: 0.3px;
 }
 
-/* ===== USER PROFILE (KANAN SEBARIS) ===== */
+/* ===== USER PROFILE ===== */
 .user-profile {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 4px 4px 4px 16px;
+    gap: 8px; /* Kurangi gap sedikit */
+    padding: 6px 20px 6px 12px; /* Tambah padding kanan untuk memperpanjang border */
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: 40px;
     cursor: pointer;
     transition: all 0.2s ease;
     flex-shrink: 0;
+    /* Hapus margin-right: 34px karena tidak diperlukan */
 }
 
 .user-profile:hover {
@@ -211,8 +175,9 @@ body {
 .user-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     line-height: 1.2;
+    margin-left: none;
 }
 
 .user-name {
@@ -223,15 +188,16 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    text-align: left;
 }
 
-.user-username {
-    font-size: 0.7rem;
-    color: var(--tg-text-hint);
-    max-width: 120px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.user-balance {
+    font-size: 0.8rem;
+    gap: 8px;
+    color: var(--tg-accent-white);
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
 }
 
 .user-avatar {
@@ -278,7 +244,7 @@ body {
 
 .user-profile.premium .user-name::after {
     content: " ⭐";
-    color: #ffd700;
+    color: #FFD700;
     font-size: 0.7rem;
 }
 
@@ -292,36 +258,31 @@ body {
     -webkit-backdrop-filter: blur(var(--blur-amount));
 }
 
-.filter-top-bar {
+/* Top Bar Compact */
+.filter-top-bar-compact {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-sm);
+    gap: var(--spacing-sm);
+    width: 100%;
 }
 
-.filter-left {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
-}
-
-.filter-toggle {
+.filter-toggle, .price-filter-toggle {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-sm);
+    border: 1px solid var(--glossy-border);
+    border-radius: 30px;
     padding: 10px 16px;
     color: white;
     cursor: pointer;
     transition: all 0.2s ease;
     font-weight: 500;
     white-space: nowrap;
+    font-size: 0.85rem;
 }
 
-.filter-toggle:hover {
+.filter-toggle:hover, .price-filter-toggle:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
@@ -333,45 +294,11 @@ body {
     transform: rotate(180deg);
 }
 
-.marketplace-stats {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
-    background: rgba(0, 0, 0, 0.2);
-    padding: 6px 16px;
-    border-radius: 40px;
-    border: 1px solid var(--glass-border);
-}
-
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.stat-label {
-    font-size: 0.7rem;
-    color: var(--tg-text-hint);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.stat-value {
-    font-weight: 700;
-    font-size: 1rem;
-    color: white;
-}
-
-.stat-divider {
-    width: 1px;
-    height: 20px;
-    background: var(--glass-border);
-}
-
-.search-wrapper {
+.search-wrapper-compact {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex: 1;
 }
 
 .search-label {
@@ -385,14 +312,15 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    min-width: 180px;
+    flex: 1;
+    min-width: 120px;
 }
 
 .id-search-input {
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-md);
+    border: 1px solid var(--glossy-border);
+    border-radius: 30px;
     padding: 10px 32px 10px 12px;
     color: white;
     font-size: 0.9rem;
@@ -449,7 +377,117 @@ body {
     pointer-events: none;
 }
 
-/* Filter Bubbles Container - Horizontal Scroll */
+/* Price Filter Panel */
+.price-filter-panel {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glossy-border);
+    border-radius: var(--radius-md);
+    display: none;
+}
+
+.price-filter-panel.active {
+    display: block;
+}
+
+.price-inputs {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.price-input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glossy-border);
+    border-radius: 30px;
+    padding: 0 12px;
+}
+
+.price-input-label {
+    font-size: 0.7rem;
+    color: var(--tg-text-hint);
+    text-transform: uppercase;
+}
+
+.price-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.price-input::placeholder {
+    color: var(--tg-text-hint);
+}
+
+.price-search-btn {
+    background: var(--tg-primary);
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.price-search-btn:hover {
+    background: var(--tg-primary-light);
+    transform: scale(1.05);
+}
+
+/* Range Slider */
+.price-range-container {
+    margin-top: var(--spacing-md);
+}
+
+.price-range-slider {
+    height: 4px;
+    margin: 20px 0;
+}
+
+.price-range-slider .noUi-connect {
+    background: var(--tg-primary);
+}
+
+.price-range-slider .noUi-handle {
+    background: white;
+    border: 2px solid var(--tg-primary);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    top: -8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.price-range-slider .noUi-handle::before,
+.price-range-slider .noUi-handle::after {
+    display: none;
+}
+
+.price-range-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--tg-text-secondary);
+}
+
+/* ===== FILTER BUBBLES ===== */
 .filter-bubbles-container {
     margin: var(--spacing-sm) 0;
     max-height: 0;
@@ -461,6 +499,7 @@ body {
 .filter-bubbles-container.active {
     max-height: 60px;
     opacity: 1;
+    margin-top: var(--spacing-md);
 }
 
 .filter-bubbles-scroll {
@@ -493,7 +532,7 @@ body {
     align-items: center;
     gap: 8px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: 30px;
     padding: 8px 16px;
     color: var(--tg-text-secondary);
@@ -541,7 +580,7 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Active Filters Container */
+/* ===== ACTIVE FILTERS ===== */
 .active-filters-container {
     max-height: 0;
     opacity: 0;
@@ -558,7 +597,7 @@ body {
 
 .active-filters-panel {
     background: rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: var(--radius-md);
     padding: var(--spacing-sm);
 }
@@ -586,7 +625,7 @@ body {
 
 .filter-action-btn {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: 30px;
     width: 32px;
     height: 32px;
@@ -646,7 +685,7 @@ body {
 
 .active-filters-content {
     background: rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: var(--radius-sm);
     padding: var(--spacing-xs);
     min-height: 42px;
@@ -780,7 +819,7 @@ body {
     align-items: center;
     margin-bottom: var(--spacing-md);
     padding-bottom: var(--spacing-sm);
-    border-bottom: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glossy-border);
 }
 
 .filter-popup-title {
@@ -797,7 +836,7 @@ body {
 
 .filter-popup-action {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: var(--radius-sm);
     padding: 6px 12px;
     color: var(--tg-text-secondary);
@@ -814,7 +853,7 @@ body {
 
 .filter-popup-close {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -838,7 +877,7 @@ body {
     background: rgba(0, 0, 0, 0.25);
     border-radius: var(--radius-sm);
     padding: 4px 4px 4px var(--spacing-sm);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     margin-bottom: var(--spacing-md);
 }
 
@@ -923,7 +962,7 @@ body {
     width: 18px;
     height: 18px;
     background: rgba(0, 0, 0, 0.25);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: 4px;
     transition: all 0.2s ease;
     flex-shrink: 0;
@@ -964,6 +1003,15 @@ body {
     font-size: 0.85rem;
 }
 
+/* Gift icon in popup */
+.gift-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 /* Radio button style for sort */
 .popup-checkbox-container input[type="radio"] ~ .popup-checkmark {
     border-radius: 50%;
@@ -991,7 +1039,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* ===== ACTIVE FILTERS POPUP (EYE BUTTON) ===== */
+/* ===== ACTIVE FILTERS POPUP ===== */
 .active-filters-popup-overlay {
     position: fixed;
     top: 0;
@@ -1037,7 +1085,7 @@ body {
     align-items: center;
     margin-bottom: var(--spacing-md);
     padding-bottom: var(--spacing-sm);
-    border-bottom: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glossy-border);
 }
 
 .popup-title {
@@ -1048,7 +1096,7 @@ body {
 
 .popup-close {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -1113,7 +1161,7 @@ body {
     color: white;
 }
 
-/* ===== CARDS GRID CONTAINER ===== */
+/* ===== CARDS GRID ===== */
 .cards-grid-container {
     flex: 1;
     min-height: 200px;
@@ -1151,7 +1199,7 @@ body {
     width: 100%;
     backdrop-filter: blur(var(--blur-amount));
     -webkit-backdrop-filter: blur(var(--blur-amount));
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
 }
 
 .gift-card:hover {
@@ -1165,7 +1213,7 @@ body {
     width: 100%;
     padding-bottom: 100%;
     overflow: hidden;
-    border-bottom: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glossy-border);
     background: linear-gradient(135deg, rgba(31,44,51,0.8) 0%, rgba(10,15,20,0.9) 100%);
 }
 
@@ -1289,8 +1337,8 @@ lottie-player {
 .card-slug {
     font-weight: 700;
     color: white;
-    line-height: 1.2;
-    font-size: clamp(0.75rem, 4vw, 1rem);
+    line-height: 1.3;
+    font-size: clamp(0.85rem, 4.5vw, 1.1rem);
     word-break: break-word;
     overflow-wrap: break-word;
     display: -webkit-box;
@@ -1303,10 +1351,11 @@ lottie-player {
 .card-id {
     font-size: 0.7rem;
     color: var(--tg-text-hint);
-    background: rgba(0, 0, 0, 0.2);
-    padding: 4px 8px;
-    border-radius: 20px;
-    letter-spacing: 0.5px;
+    font-weight: 500;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    letter-spacing: 0.3px;
     display: inline-block;
     width: fit-content;
 }
@@ -1317,7 +1366,7 @@ lottie-player {
     align-items: center;
     margin-top: 4px;
     padding-top: 8px;
-    border-top: 1px solid var(--glass-border);
+    border-top: 1px solid var(--glossy-border);
 }
 
 .price-label {
@@ -1329,11 +1378,12 @@ lottie-player {
 .price-value {
     font-weight: 800;
     color: var(--tg-accent-green);
-    font-size: 1rem;
-    letter-spacing: -0.5px;
+    font-size: 0.9rem;
+    letter-spacing: -0.3px;
+    font-family: 'Inter', monospace;
 }
 
-/* ===== SCROLL TO TOP BUTTON ===== */
+/* ===== SCROLL TO TOP ===== */
 .scroll-top {
     position: fixed;
     bottom: 30px;
@@ -1386,7 +1436,7 @@ lottie-player {
     color: white;
 }
 
-/* ===== BOTTOM SHEET - FULL WIDTH (PASTI 100%) ===== */
+/* ===== BOTTOM SHEET ===== */
 .bottom-sheet-overlay {
     position: fixed;
     bottom: 0;
@@ -1409,7 +1459,6 @@ lottie-player {
     -webkit-backdrop-filter: blur(4px);
 }
 
-/* Mencegah scroll pada background saat sheet terbuka */
 body.sheet-open {
     overflow: hidden;
     position: fixed;
@@ -1500,20 +1549,26 @@ body.sheet-open {
 .sheet-item-detail {
     display: flex;
     gap: 16px;
-    align-items: flex-start;
+    margin-bottom: 8px;
     width: 100%;
 }
 
+.sheet-lottie-wrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+}
+
 .sheet-lottie-container {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     border-radius: 16px;
     overflow: hidden;
     background: linear-gradient(135deg, rgba(31,44,51,0.9) 0%, rgba(10,15,20,0.95) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1522,17 +1577,15 @@ body.sheet-open {
     height: 100%;
 }
 
-/* Sheet info - FLEX 1 AGAR MENGAMBIL SISA LEBAR */
 .sheet-info {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    min-width: 0; /* Penting untuk mencegah overflow */
+    gap: 8px;
+    min-width: 0;
     width: 100%;
 }
 
-/* Header Nama dan ID */
 .sheet-name-container {
     display: flex;
     justify-content: space-between;
@@ -1553,31 +1606,30 @@ body.sheet-open {
 .sheet-id {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.6);
-    background: rgba(0, 0, 0, 0.3);
-    padding: 4px 12px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border: none;
     white-space: nowrap;
     flex-shrink: 0;
 }
 
-/* Container data - FULL WIDTH DIPAKSAKAN */
 .sheet-data-container {
-    width: 100% !important;
+    width: 100%;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 14px;
-    padding: 12px 16px;
+    padding: 8px 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
 }
 
-/* Setiap baris data */
 .sheet-data-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 0;
+    padding: 6px 0;
 }
 
 .sheet-data-row:not(:last-child) {
@@ -1605,18 +1657,17 @@ body.sheet-open {
     margin-left: 16px;
 }
 
-/* Price row - terpisah dengan style berbeda */
 .sheet-price-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100% !important;
+    width: 100%;
     background: rgba(63, 203, 149, 0.08);
     border-radius: 14px;
-    padding: 14px 16px;
+    padding: 10px 16px;
     border: 1px solid rgba(63, 203, 149, 0.2);
     box-sizing: border-box;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .sheet-price-label {
@@ -1633,22 +1684,24 @@ body.sheet-open {
     font-size: 1rem;
     font-weight: 700;
     white-space: nowrap;
+    font-family: 'Inter', monospace;
 }
 
-/* Tombol aksi */
+/* Sheet Actions */
 .sheet-actions {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
     width: 100%;
-    margin: 8px 0;
+    margin: 4px 0;
+    align-items: center;
 }
 
 .btn {
-    padding: 12px 16px;
+    padding: 12px 12px;
     border-radius: 30px;
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: 0.85rem;
     text-align: center;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -1657,7 +1710,7 @@ body.sheet-open {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
+    letter-spacing: 0.3px;
 }
 
 .btn-buy {
@@ -1672,6 +1725,65 @@ body.sheet-open {
     color: white;
 }
 
+.sheet-middle-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-telegram-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0088cc, #006699);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.4), 0 0 0 2px rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.btn-telegram-circle:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #00a0e6, #0077aa);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 15px rgba(0, 136, 204, 0.5), 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.btn-telegram-circle svg {
+    width: 26px;
+    height: 26px;
+    fill: white;
+}
+
+.btn-gift-share {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(135, 116, 225, 0.15);
+    border: 1px solid rgba(135, 116, 225, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: var(--tg-primary-light);
+    transition: all 0.2s ease;
+}
+
+.btn-gift-share:hover {
+    background: var(--tg-primary);
+    border-color: var(--tg-primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-gift-share svg {
+    width: 24px;
+    height: 24px;
+}
+
 .btn-buy:hover, .btn-nego:hover {
     transform: translateY(-2px);
 }
@@ -1680,7 +1792,6 @@ body.sheet-open {
     transform: translateY(0);
 }
 
-/* Posted link */
 .sheet-posted {
     display: flex;
     justify-content: center;
@@ -1708,19 +1819,6 @@ body.sheet-open {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* FIX TAMBAHAN - Pastikan SEMUA elemen mengambil lebar penuh */
-.sheet-content > *,
-.sheet-info > *,
-.sheet-item-detail > * {
-    max-width: 100%;
-}
-
-/* Box sizing untuk semua elemen */
-.bottom-sheet,
-.bottom-sheet * {
-    box-sizing: border-box;
-}
-
 /* ===== LOADING STATE ===== */
 .loading-state {
     display: flex;
@@ -1735,7 +1833,7 @@ body.sheet-open {
 .loading-spinner {
     width: 40px;
     height: 40px;
-    border: 3px solid var(--glass-border);
+    border: 3px solid var(--glossy-border);
     border-top-color: var(--tg-primary);
     border-radius: 50%;
     animation: spin 1s infinite linear;
@@ -1754,7 +1852,24 @@ body.sheet-open {
     background: var(--glass-bg);
     border-radius: var(--radius-lg);
     backdrop-filter: blur(var(--blur-amount));
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
+}
+
+.empty-state button {
+    margin-top: 16px;
+    padding: 12px 24px;
+    background: var(--tg-primary);
+    border: none;
+    border-radius: var(--radius-md);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.empty-state button:hover {
+    background: var(--tg-primary-light);
+    transform: translateY(-2px);
 }
 
 /* ===== TOAST NOTIFICATION ===== */
@@ -1766,7 +1881,7 @@ body.sheet-open {
     background: var(--tg-surface);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
+    border: 1px solid var(--glossy-border);
     border-radius: 30px;
     padding: 12px 24px;
     color: white;
@@ -1811,24 +1926,66 @@ body.sheet-open {
     
     .user-profile {
         margin-left: auto;
+        padding: 4px 4px 4px 12px;
     }
     
-    .filter-top-bar {
-        flex-direction: column;
-        align-items: stretch;
+    .user-name {
+        font-size: 0.8rem;
+        max-width: 80px;
     }
     
-    .filter-left {
-        justify-content: space-between;
+    .user-avatar {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
     }
     
-    .search-wrapper {
+    .filter-top-bar-compact {
+        flex-wrap: wrap;
+    }
+    
+    .filter-toggle, .price-filter-toggle {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .search-wrapper-compact {
         width: 100%;
+        order: 3;
+    }
+    
+    .search-label {
+        display: none;
     }
     
     .search-input-container {
-        min-width: auto;
-        flex: 1;
+        width: 100%;
+    }
+    
+    .price-filter-panel {
+        padding: var(--spacing-sm);
+    }
+    
+    .price-inputs {
+        flex-wrap: wrap;
+    }
+    
+    .price-input-group {
+        width: calc(50% - 25px);
+    }
+    
+    .price-search-btn {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .filter-bubbles-container.active {
+        max-height: 50px;
+    }
+    
+    .filter-bubble {
+        padding: 6px 12px;
+        font-size: 0.75rem;
     }
     
     .cards-grid > :only-child {
@@ -1848,46 +2005,72 @@ body.sheet-open {
         height: 48px;
     }
     
+    .scroll-top-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
     .sheet-item-detail {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
-
+    
+    .sheet-lottie-wrapper {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 4px;
+    }
+    
     .sheet-lottie-container {
-      width: 160px;
-      height: 160px;
-      margin-bottom: 8px;
+        width: 160px;
+        height: 160px;
     }
-
+    
     .sheet-name {
-      font-size: 1.1rem;
-      max-width: 60%;
+        font-size: 1.1rem;
+        max-width: 60%;
     }
-
+    
     .sheet-id {
-      font-size: 0.75rem;
-      padding: 3px 10px;
+        font-size: 0.75rem;
     }
-
+    
     .sheet-data-label,
     .sheet-data-value,
     .sheet-price-label,
     .sheet-price-value {
-      font-size: 0.85rem;
+        font-size: 0.85rem;
     }
-
+    
     .btn {
-      padding: 10px 12px;
-      font-size: 0.85rem;
+        padding: 10px 8px;
+        font-size: 0.75rem;
     }
-
+    
+    .btn-telegram-circle,
+    .btn-gift-share {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .btn-telegram-circle svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .btn-gift-share svg {
+        width: 20px;
+        height: 20px;
+    }
+    
     .sheet-close-btn {
-      width: 32px;
-      height: 32px;
+        width: 32px;
+        height: 32px;
     }
-
+    
     .sheet-header {
-      padding: 0 35px;
+        padding: 0 35px;
     }
     
     .lottie-play-btn {
@@ -1912,4 +2095,13 @@ body.sheet-open {
 /* ===== ANTI ZOOM ===== */
 input, select, button {
     font-size: 16px;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: flex !important;
 }
