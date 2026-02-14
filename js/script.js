@@ -29,6 +29,7 @@ const lottieCache = new Map();
 // Telegram Web App
 let tg = null;
 let telegramUser = null;
+let userBalance = 0; // Menyimpan saldo user
 
 // DOM Elements
 const elements = {
@@ -71,8 +72,7 @@ const elements = {
     viewActiveFiltersBtn: document.getElementById('viewActiveFiltersBtn'),
     shareFilterBtn: document.getElementById('shareFilterBtn'),
     userAvatar: document.getElementById('userAvatar'),
-    userName: document.getElementById('userName'),
-    userUsername: document.getElementById('userUsername'),
+    userBalance: document.getElementById('userBalance'), // Element untuk menampilkan saldo
     userProfile: document.getElementById('userProfile'),
     activeFiltersContainer: document.getElementById('activeFiltersContainer'),
     activeFiltersContent: document.getElementById('activeFiltersContent'),
@@ -84,7 +84,7 @@ const elements = {
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
     // Initialize Telegram Web App dan ambil data user
-    initializeTelegramApp();
+    await initializeTelegramApp();
     
     await loadGifts();
     setupEventListeners();
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 // ===== FUNGSI TELEGRAM =====
-function initializeTelegramApp() {
+async function initializeTelegramApp() {
     if (window.Telegram && window.Telegram.WebApp) {
         tg = window.Telegram.WebApp;
         tg.expand();
@@ -114,7 +114,8 @@ function initializeTelegramApp() {
             telegramUser = tg.initDataUnsafe.user;
             console.log('Telegram User Data:', telegramUser);
             
-            // Tampilkan data user di UI
+            // Tampilkan data user di UI dan ambil saldo dari JSON
+            await fetchUserBalance(telegramUser.id);
             displayUserInfo(telegramUser);
             
             // Coba ambil foto profil
@@ -130,6 +131,64 @@ function initializeTelegramApp() {
         console.log('Tidak terdeteksi sebagai Telegram Mini App');
         setGuestUser();
     }
+}
+
+// Fungsi untuk mengambil saldo user dari file JSON
+async function fetchUserBalance(userId) {
+    try {
+        // Path ke file JSON user berdasarkan user_id
+        const userJsonPath = `users/json/${userId}.json`;
+        
+        console.log('Mencoba mengambil data user dari:', userJsonPath);
+        
+        const response = await fetch(userJsonPath);
+        
+        if (!response.ok) {
+            throw new Error(`Gagal mengambil data user: ${response.status}`);
+        }
+        
+        const userData = await response.json();
+        console.log('Data user berhasil diambil:', userData);
+        
+        // Ambil nilai balance dari JSON
+        if (userData && userData.balance !== undefined) {
+            userBalance = userData.balance;
+        } else {
+            // Jika tidak ada field balance, set default 0
+            userBalance = 0;
+            console.warn('Field balance tidak ditemukan dalam JSON, menggunakan default 0');
+        }
+        
+        // Update tampilan saldo
+        updateUserBalanceDisplay();
+        
+    } catch (error) {
+        console.error('Error mengambil data user:', error);
+        // Jika gagal mengambil data, set saldo default 0
+        userBalance = 0;
+        updateUserBalanceDisplay();
+        
+        // Tampilkan pesan error di console tapi tetap lanjutkan
+        console.log('Menggunakan saldo default 0 karena file JSON tidak ditemukan');
+    }
+}
+
+// Fungsi untuk memperbarui tampilan saldo dalam format Rupiah
+function updateUserBalanceDisplay() {
+    if (elements.userBalance) {
+        // Format saldo ke Rupiah
+        const formattedBalance = formatRupiah(userBalance);
+        elements.userBalance.textContent = formattedBalance;
+    }
+}
+
+// Fungsi untuk format angka ke Rupiah
+function formatRupiah(amount) {
+    // Pastikan amount adalah number
+    const numAmount = Number(amount) || 0;
+    
+    // Format ke Rupiah dengan pemisah ribuan
+    return 'Rp ' + numAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
 // Fungsi untuk mengambil foto profil user
@@ -160,21 +219,8 @@ async function fetchTelegramUserPhoto(userId) {
 function displayUserInfo(user) {
     if (!user) return;
     
-    if (elements.userName) {
-        let displayName = user.first_name;
-        if (user.last_name) {
-            displayName += ' ' + user.last_name;
-        }
-        elements.userName.textContent = displayName;
-    }
-    
-    if (elements.userUsername) {
-        if (user.username) {
-            elements.userUsername.textContent = '@' + user.username;
-        } else {
-            elements.userUsername.textContent = 'telegram user';
-        }
-    }
+    // Tidak perlu menampilkan nama di user-info karena hanya menampilkan saldo
+    // Tapi kita tetap bisa menyimpan data untuk keperluan lain
     
     const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
     if (initialSpan) {
@@ -188,12 +234,10 @@ function displayUserInfo(user) {
 }
 
 function setGuestUser() {
-    if (elements.userName) {
-        elements.userName.textContent = 'Guest';
-    }
-    if (elements.userUsername) {
-        elements.userUsername.textContent = '';
-    }
+    // Untuk guest user, set saldo 0
+    userBalance = 0;
+    updateUserBalanceDisplay();
+    
     const initialSpan = elements.userAvatar?.querySelector('.avatar-initial');
     if (initialSpan) {
         initialSpan.textContent = '?';
