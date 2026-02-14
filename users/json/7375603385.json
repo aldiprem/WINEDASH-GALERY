@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 7375603385,
-    "fullname": "keith",
-    "username": "chouiese",
-    "joined_at": null,
-    "first_start": "20.12.2025 12:41:23",
-    "last_start": "01.01.2026 14:39:08",
-    "last_nego": 0,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 0,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": "6336795388928527520",
-    "last_update": 1771015339
-  },
-  "balance": 0,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 87,
-      "user_id": 7375603385,
-      "transaction_id": "37c7d144-f5dc-4c2c-b0e0-b2570d51f516",
-      "amount": 61200,
-      "status": "paid",
-      "created_at": 1766210129,
-      "expired_at": 1766210429,
-      "paid_at": 1766210182,
-      "last_check": 1766210182,
-      "message_id": 30929,
-      "chat_id": 7375603385,
-      "topic_msg_id": 148
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 0
 }
