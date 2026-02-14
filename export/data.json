@@ -2104,5 +2104,18 @@
         "posting": "https://t.me/market_wine/57/None",
         "slug_id": "3Jll9-vP5Y0-dfO4a-M3gdZ",
         "nama": "CloverPin"
+    },
+    {
+        "id": "19145",
+        "name": "JellyBunny #19145",
+        "slug": "JellyBunny-19145",
+        "model": "Space Gel (1.5%)",
+        "symbol": "Mask (0.3%)",
+        "bg": "Mystic Pearl (1.5%)",
+        "price": 0,
+        "saldo": 0,
+        "posting": "https://t.me/market_wine/57/None",
+        "slug_id": "",
+        "nama": "JellyBunny"
     }
 ]
