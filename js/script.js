@@ -92,8 +92,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderGifts();
     setupScrollToTop();
     
-    // Check for URL parameters after loading gifts
+    // Check for URL parameters and gift ID after loading gifts
     checkForUrlParameters();
+    checkForGiftIdInUrl();
     
     // Update search clear button visibility
     updateSearchClearButton();
@@ -1441,7 +1442,7 @@ function renderGifts() {
             <div class="card-content">
                 <div class="card-name-container">
                     <span class="card-slug">${cleanName}</span>
-                    <span class="card-id">#${gift.id}</span>
+                    <span class="card-id">${gift.id}</span>
                 </div>
                 <div class="card-price">
                     <span class="price-label">Price</span>
@@ -1464,7 +1465,7 @@ function renderGifts() {
 // ===== FUNGSI OPEN BOTTOM SHEET - FULL WIDTH =====
 window.openBottomSheet = function(gift) {
     const cleanName = gift.nama || gift.name.split('#')[0].trim();
-    const formattedPrice = formatPrice(gift.price);
+    const formattedPrice = formatPriceRupiah(gift.price);
     
     // Format model, symbol, bg dengan nilai default jika tidak ada
     const modelValue = gift.model || '-';
@@ -1477,23 +1478,32 @@ window.openBottomSheet = function(gift) {
         ? `https://t.me/${postedText.substring(1)}` 
         : `https://t.me/${postedText}`;
     
+    // Generate slug_id dari data gift
+    const slugId = gift.slug_id || generateSlugId(gift);
+    
+    // Generate link share untuk gift ini
+    const shareLink = generateGiftShareLink(slugId);
+    
     const content = `
         <div class="sheet-item-detail">
-            <div class="sheet-lottie-container">
-                <lottie-player
-                    src="https://nft.fragment.com/gift/${gift.slug}.lottie.json"
-                    background="transparent"
-                    speed="1"
-                    style="width: 100%; height: 100%;"
-                    loop="false"
-                    count="1"
-                    autoplay>
-                </lottie-player>
+            <div class="sheet-lottie-wrapper">
+                <div class="sheet-lottie-container">
+                    <lottie-player
+                        src="https://nft.fragment.com/gift/${gift.slug}.lottie.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100%; height: 100%;"
+                        loop="false"
+                        count="1"
+                        autoplay>
+                    </lottie-player>
+                </div>
+                <!-- Tombol Telegram di pojok gambar sudah dihapus -->
             </div>
             <div class="sheet-info">
                 <div class="sheet-name-container">
                     <span class="sheet-name">${cleanName}</span>
-                    <span class="sheet-id">#${gift.id}</span>
+                    <span class="sheet-id">${gift.id}</span>
                 </div>
                 
                 <div class="sheet-data-container">
@@ -1502,14 +1512,12 @@ window.openBottomSheet = function(gift) {
                         <span class="sheet-data-label">Model</span>
                         <span class="sheet-data-value">${modelValue}</span>
                     </div>
-                    <div class="sheet-divider"></div>
                     
                     <!-- Symbol Row -->
                     <div class="sheet-data-row">
                         <span class="sheet-data-label">Symbol</span>
                         <span class="sheet-data-value">${symbolValue}</span>
                     </div>
-                    <div class="sheet-divider"></div>
                     
                     <!-- Backdrop Row -->
                     <div class="sheet-data-row">
@@ -1527,6 +1535,21 @@ window.openBottomSheet = function(gift) {
         </div>
         <div class="sheet-actions">
             <a href="https://t.me/marketaldibot?start=beli_${gift.slug}" class="btn btn-buy" target="_blank">BUY NOW</a>
+            <div class="sheet-middle-buttons">
+                <a href="https://t.me/nft/${gift.slug}" class="btn btn-telegram-circle" target="_blank" title="Open in Telegram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.95 1.24-5.5 3.64-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.36-.48.99-.74 3.84-1.67 6.4-2.78 7.68-3.32 3.66-1.56 4.42-1.83 4.92-1.84.11 0 .36.03.52.16.14.12.18.28.2.4-.02.12 0 .38 0 .38z"/>
+                    </svg>
+                </a>
+                <button class="btn btn-gift-share" onclick="shareGift('${slugId}', event)" title="Share this gift">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        <path d="M7 8V6C7 4.89543 7.89543 4 9 4H15C16.1046 4 17 4.89543 17 6V8" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M12 12V16M12 16L14 14M12 16L10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
             <a href="https://t.me/marketaldibot?start=nego_${gift.slug}" class="btn btn-nego" target="_blank">MAKE OFFER</a>
         </div>
         <div class="sheet-posted">
@@ -1546,6 +1569,21 @@ window.openBottomSheet = function(gift) {
     document.dispatchEvent(new Event('popupOpened'));
 };
 
+// ===== FUNGSI SHARE GIFT =====
+function generateGiftShareLink(slugId) {
+    const baseUrl = 'https://t.me/marketaldibot/gifts';
+    return `${baseUrl}?startapp=gifts_${slugId}`;
+}
+
+window.shareGift = function(slugId, event) {
+    if (event) {
+        event.stopPropagation();
+    }
+    
+    const shareLink = generateGiftShareLink(slugId);
+    copyToClipboard(shareLink);
+};
+
 // ===== FUNGSI CLOSE BOTTOM SHEET =====
 window.closeBottomSheet = function() {
     elements.bottomSheet.classList.remove('active');
@@ -1563,20 +1601,20 @@ function updateStats() {
     
     if (currentGifts.length > 0) {
         const floor = Math.min(...currentGifts.map(g => g.price));
-        elements.floorPrice.textContent = `${formatPrice(floor)}`;
+        elements.floorPrice.textContent = `${formatPriceRupiah(floor)}`;
     } else {
         elements.floorPrice.textContent = '0';
     }
 }
 
+// Format harga ke Rupiah (tanpa desimal)
+function formatPriceRupiah(price) {
+    return 'Rp' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
+// Format harga lama (untuk kompatibilitas)
 function formatPrice(price) {
-    if (price >= 1000000) {
-        return (price / 1000000).toFixed(1) + 'M';
-    }
-    if (price >= 1000) {
-        return (price / 1000).toFixed(1) + 'K';
-    }
-    return price.toString();
+    return formatPriceRupiah(price);
 }
 
 function setupScrollToTop() {
@@ -1765,6 +1803,61 @@ function copyToClipboard(text) {
     });
 }
 
+// ===== FUNGSI UNTUK GENERATE SLUG ID =====
+function generateSlugId(gift) {
+    // Generate slug_id dari data gift jika tidak ada
+    // Format: 5 karakter - 5 karakter - 5 karakter - 5 karakter
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < 20; i++) {
+        if (i > 0 && i % 5 === 0) result += '-';
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
+}
+
+// ===== FUNGSI UNTUK CEK GIFT ID DI URL =====
+function checkForGiftIdInUrl() {
+    let slugId = null;
+    
+    // Cek dari pathname untuk endpoint seperti /gift/Q5O0u-eai2b-sMlwg-OFl3V
+    const pathParts = window.location.pathname.split('/');
+    const giftIndex = pathParts.indexOf('gift');
+    if (giftIndex !== -1 && pathParts.length > giftIndex + 1) {
+        slugId = pathParts[giftIndex + 1];
+        console.log('Found gift slug_id in path:', slugId);
+    }
+    
+    // Cek dari Telegram startapp parameter
+    if (tg && tg.initDataUnsafe && tg.initDataUnsafe.startapp) {
+        const startapp = tg.initDataUnsafe.startapp;
+        if (startapp.startsWith('gifts_')) {
+            slugId = startapp.replace('gifts_', '');
+            console.log('Found gift slug_id in startapp:', slugId);
+        }
+    }
+    
+    // Cek dari URL parameter gift
+    if (!slugId) {
+        const urlParams = new URLSearchParams(window.location.search);
+        slugId = urlParams.get('gift');
+        console.log('Found gift slug_id in search param:', slugId);
+    }
+    
+    if (slugId) {
+        // Cari gift dengan slug_id yang cocok
+        const gift = gifts.find(g => g.slug_id === slugId);
+        if (gift) {
+            // Buka bottom sheet untuk gift tersebut
+            setTimeout(() => {
+                openBottomSheet(gift);
+            }, 500); // Delay sebentar untuk memastikan DOM sudah siap
+        } else {
+            console.log('Gift with slug_id not found:', slugId);
+        }
+    }
+}
+
 function checkForUrlParameters() {
     let encodedFilters = null;
     
@@ -1801,9 +1894,6 @@ function checkForUrlParameters() {
 // Export functions ke global scope
 window.shareCurrentFilters = shareCurrentFilters;
 window.copyToClipboard = copyToClipboard;
-window.getTelegramUser = getTelegramUser;
-window.getTelegramUserId = getTelegramUserId;
-window.isTelegramUserPremium = isTelegramUserPremium;
 window.closeBottomSheet = closeBottomSheet;
 window.closeFilterPopup = closeFilterPopup;
 window.closeActiveFiltersPopup = closeActiveFiltersPopup;
@@ -1818,3 +1908,4 @@ window.removeModelFilter = removeModelFilter;
 window.removeSymbolFilter = removeSymbolFilter;
 window.removeBgFilter = removeBgFilter;
 window.resetSortFilter = resetSortFilter;
+window.shareGift = shareGift;
