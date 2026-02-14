@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 6141782361,
-    "fullname": "shaqu",
-    "username": "LeeRiwkoo",
-    "joined_at": null,
-    "first_start": "05.01.2026 14:22:43",
-    "last_start": "06.01.2026 07:16:12",
-    "last_nego": 0,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 0,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": "6104887972647254422",
-    "last_update": 1771015189
-  },
-  "balance": 200,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 140,
-      "user_id": 6141782361,
-      "transaction_id": "25a67822-f690-4d11-adfa-c55c521c0224",
-      "amount": 143000,
-      "status": "paid",
-      "created_at": 1767597784,
-      "expired_at": 1767598084,
-      "paid_at": 1767600050,
-      "last_check": 1767600050,
-      "message_id": 41800,
-      "chat_id": 6141782361,
-      "topic_msg_id": 277
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 200
 }
