@@ -192,10 +192,9 @@ body {
 }
 
 .user-balance {
-    font-size: 0.8rem;
-    gap: 8px;
-    color: var(--tg-accent-white);
-    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--tg-accent-green);
+    font-weight: 700;
     text-align: left;
     width: 100%;
 }
