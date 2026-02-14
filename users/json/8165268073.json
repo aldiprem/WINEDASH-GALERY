@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 8165268073,
-    "fullname": "Chrysalise.",
-    "username": "lSERENlTY",
-    "joined_at": null,
-    "first_start": "07.01.2026 16:24:52",
-    "last_start": "07.01.2026 16:24:52",
-    "last_nego": 1767778116,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 0,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": "6087126234182652004",
-    "last_update": 1771015217
-  },
-  "balance": 0,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 144,
-      "user_id": 8165268073,
-      "transaction_id": "5741a91a-9ce2-44f6-b3fc-d4a78a747ca9",
-      "amount": 80000,
-      "status": "expired",
-      "created_at": 1767777940,
-      "expired_at": 1767778240,
-      "paid_at": null,
-      "last_check": 1767778241,
-      "message_id": 42629,
-      "chat_id": 8165268073,
-      "topic_msg_id": 291
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 0
 }
