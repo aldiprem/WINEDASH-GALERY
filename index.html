@@ -12,13 +12,16 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@1.7.1/dist/lottie-player.js"></script>
     <!-- Telegram Web App SDK -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- noUiSlider for price range -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
 </head>
 <body>
     <div class="noise"></div>
     <div class="gradient-bg"></div>
     
     <main class="container">
-        <!-- Marketplace Header - Tanpa Glass Panel -->
+        <!-- Marketplace Header -->
         <div class="marketplace-header">
             <div class="brand-section">
                 <div class="marketplace-logo">
@@ -39,66 +42,87 @@
                 </div>
             </div>
             
-            <!-- User Profile Section - Paling Kanan Sebaris -->
+            <!-- User Profile Section - REVISI TOTAL -->
             <div class="user-profile" id="userProfile">
-                <div class="user-info">
-                    <span class="user-name" id="userName">Guest</span>
-                    <span class="user-username" id="userUsername"></span>
-                </div>
                 <div class="user-avatar" id="userAvatar">
                     <span class="avatar-initial">?</span>
+                </div>
+                <div class="user-info">
+                    <span class="user-balance" id="userBalance">Rp0</span>
                 </div>
             </div>
         </div>
 
-        <!-- Filter Section - Digeser ke Atas -->
+        <!-- Filter Section - DESAIN BARU -->
         <div class="filter-section glass-panel">
-            <!-- Top Bar: Filters Button, Stats, and Search -->
-            <div class="filter-top-bar">
-                <div class="filter-left">
-                    <button class="filter-toggle" id="filterToggle">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M4 6H20M4 12H16M4 18H10" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                        <span>Filters</span>
-                        <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M6 9L12 15L18 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    
-                    <div class="marketplace-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Items</span>
-                            <span class="stat-value" id="total-items">0</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-label">Floor</span>
-                            <span class="stat-value" id="floor-price">0</span>
-                        </div>
-                    </div>
-                </div>
+            <!-- Top Bar: Filters Button, Search ID, Price Button -->
+            <div class="filter-top-bar-compact">
+                <button class="filter-toggle" id="filterToggle">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M4 6H20M4 12H16M4 18H10" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>FILTERS</span>
+                    <svg class="toggle-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M6 9L12 15L18 9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
                 
-                <div class="search-wrapper">
-                    <span class="search-label">Search ID</span>
+                <div class="search-wrapper-compact">
+                    <span class="search-label">ID</span>
                     <div class="search-input-container">
-                        <input type="text" id="idSearchInput" class="id-search-input" placeholder="Type ID..." inputmode="numeric" pattern="[0-9]*">
+                        <input type="text" id="idSearchInput" class="id-search-input" placeholder="Search by ID..." inputmode="numeric" pattern="[0-9]*">
                         <button class="id-search-clear" id="idSearchClear">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M18 6L6 18M6 6L18 18" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
                         </button>
                         <div class="search-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <circle cx="11" cy="11" r="7" stroke-width="1.5"/>
                                 <path d="M16 16L21 21" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
                         </div>
                     </div>
                 </div>
+
+                <button class="price-filter-toggle" id="priceFilterToggle">
+                    <span>PRICE</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M19 9L12 16L5 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
 
-            <!-- Filter Bubbles - Horizontal Scroll -->
+            <!-- Price Filter Panel (hidden by default) -->
+            <div class="price-filter-panel" id="priceFilterPanel">
+                <div class="price-inputs">
+                    <div class="price-input-group">
+                        <span class="price-input-label">From</span>
+                        <input type="text" id="priceFrom" class="price-input" placeholder="0" inputmode="numeric" pattern="[0-9]*">
+                    </div>
+                    <div class="price-input-group">
+                        <span class="price-input-label">To</span>
+                        <input type="text" id="priceTo" class="price-input" placeholder="0" inputmode="numeric" pattern="[0-9]*">
+                    </div>
+                    <button class="price-search-btn" id="priceSearchBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="7" stroke-width="1.5"/>
+                            <path d="M16 16L21 21" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Range Slider -->
+                <div class="price-range-container">
+                    <div id="priceRangeSlider" class="price-range-slider"></div>
+                    <div class="price-range-values">
+                        <span class="price-range-min" id="priceRangeMin">0</span>
+                        <span class="price-range-max" id="priceRangeMax">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Bubbles Container (hidden by default) -->
             <div class="filter-bubbles-container" id="filterPanel">
                 <div class="filter-bubbles-scroll">
                     <!-- Gift Name Bubble -->
@@ -252,7 +276,7 @@
             <span class="scroll-top-text">Top</span>
         </div>
 
-        <!-- Bottom Sheet Panel - FULL WIDTH -->
+        <!-- Bottom Sheet Panel -->
         <div class="bottom-sheet-overlay" id="bottomSheetOverlay">
             <div class="bottom-sheet glass-panel" id="bottomSheet">
                 <div class="sheet-header">
