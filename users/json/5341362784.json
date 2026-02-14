@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 5341362784,
-    "fullname": "PABLO ROMERO",
-    "username": "CoarlosSainz",
-    "joined_at": null,
-    "first_start": "30.12.2025 20:17:02",
-    "last_start": "01.01.2026 09:38:45",
-    "last_nego": 1767234975,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 0,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": "6071224306747772052",
-    "last_update": 1771015216
-  },
-  "balance": 1,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 120,
-      "user_id": 5341362784,
-      "transaction_id": "dbee0b38-2b13-402d-8118-4aa25725df04",
-      "amount": 86701,
-      "status": "paid",
-      "created_at": 1767100637,
-      "expired_at": 1767100937,
-      "paid_at": 1767100699,
-      "last_check": 1767100699,
-      "message_id": 37839,
-      "chat_id": 5341362784,
-      "topic_msg_id": 223
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 1
 }
