@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 6776746922,
-    "fullname": "𖠗 kyallani : ✿",
-    "username": "cilsik",
-    "joined_at": null,
-    "first_start": "12.02.2026 19:32:31",
-    "last_start": "12.02.2026 19:48:41",
-    "last_nego": 0,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 1,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": "5791844647012338973",
-    "last_update": 1771015253
-  },
-  "balance": 0,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 177,
-      "user_id": 6776746922,
-      "transaction_id": "3efa9956-02fd-41a1-9c24-24dc556e15ba",
-      "amount": 112200,
-      "status": "paid",
-      "created_at": 1770900282,
-      "expired_at": 1770900582,
-      "paid_at": 1770900322,
-      "last_check": 1770900322,
-      "message_id": 54393,
-      "chat_id": 6776746922,
-      "topic_msg_id": 380
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 0
 }
