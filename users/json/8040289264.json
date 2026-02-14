@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 8040289264,
-    "fullname": "inactive",
-    "username": "pregnaunt",
-    "joined_at": null,
-    "first_start": "30.12.2025 21:35:01",
-    "last_start": "30.12.2025 22:02:52",
-    "last_nego": 0,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 0,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": null,
-    "last_update": 1771015263
-  },
-  "balance": 0,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 123,
-      "user_id": 8040289264,
-      "transaction_id": "b5175523-08f9-43f8-9857-b978490c01a0",
-      "amount": 76500,
-      "status": "paid",
-      "created_at": 1767106248,
-      "expired_at": 1767106548,
-      "paid_at": 1767106294,
-      "last_check": 1767106294,
-      "message_id": 37975,
-      "chat_id": 8040289264,
-      "topic_msg_id": 230
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 0
 }
