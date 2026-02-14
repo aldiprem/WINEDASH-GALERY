@@ -1,30 +1,4 @@
 {
-  "profile": {
     "user_id": 1766117944,
-    "fullname": "van",
-    "username": null,
-    "joined_at": null,
-    "first_start": "02.01.2026 23:00:24",
-    "last_start": "02.01.2026 23:03:21",
-    "last_nego": 1767418687,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 1,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": "6082518185245609679",
-    "last_update": 1771015213
-  },
-  "balance": 560,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 560
 }
