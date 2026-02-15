@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 8255470334,
-    "fullname": "Beby. #Kent17Sessions",
-    "username": "jeongiakn",
-    "joined_at": null,
-    "first_start": "30.12.2025 22:54:49",
-    "last_start": "30.12.2025 22:58:07",
-    "last_nego": 0,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 1,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": "6087095499396681822",
-    "last_update": 1771015235
-  },
-  "balance": 0,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 124,
-      "user_id": 8255470334,
-      "transaction_id": "78df852d-9b91-4b8a-a7e9-1b9efef55a38",
-      "amount": 78540,
-      "status": "paid",
-      "created_at": 1767110188,
-      "expired_at": 1767110488,
-      "paid_at": 1767110218,
-      "last_check": 1767110218,
-      "message_id": 38032,
-      "chat_id": 8255470334,
-      "topic_msg_id": 233
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 0
 }
