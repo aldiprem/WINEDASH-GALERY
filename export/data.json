@@ -2032,8 +2032,8 @@
         "model": "Glacier (3%)",
         "symbol": "Magic Wand (0.6%)",
         "bg": "Tactical Pine (1%)",
-        "price": 0,
-        "saldo": 0,
+        "price": 150000,
+        "saldo": 150000,
         "posting": "https://t.me/market_wine/57/None",
         "slug_id": "",
         "nama": "MousseCake"
