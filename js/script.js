@@ -643,42 +643,43 @@ window.toggleListingStatus = async function(slug) {
     }
 };
 
-// ===== FUNGSI OPEN BOTTOM SHEET UNTUK GIFT USER =====
+// ===== FUNGSI OPEN BOTTOM SHEET UNTUK GIFT USER (DENGAN RIBBON) =====
 window.openUserGiftSheet = function(gift) {
-    const cleanName = gift.formattedName || formatGiftName(gift.nama || gift.slug.split('-')[0]);
-    const formattedPrice = gift.is_listed === 1 ? formatPriceRupiah(gift.price) : 'UNLISTED';
-    const giftId = gift.giftId || extractIdFromSlug(gift.slug);
-    
-    // Gunakan display yang sudah diformat atau format langsung
-    const modelValue = gift.modelDisplay || (gift.model && gift.model_rarity 
-        ? `${gift.model} (${gift.model_rarity})` 
-        : (gift.model || '-'));
-    
-    const symbolValue = gift.symbolDisplay || (gift.symbol && gift.symbol_rarity 
-        ? `${gift.symbol} (${gift.symbol_rarity})` 
-        : (gift.symbol || '-'));
-    
-    const bgValue = gift.bgDisplay || (gift.background && gift.background_rarity 
-        ? `${gift.background} (${gift.background_rarity})` 
-        : (gift.background || '-'));
-    
-    const slugId = gift.slug_id || generateSlugId(gift);
-    
-    // Tentukan teks tombol berdasarkan status is_listed
-    const buttonText = gift.is_listed === 1 ? 'UNLISTED' : 'LISTED';
-    
-    // Ambil posting link dari gift
-    const postedLink = gift.posting || 'https://t.me/market_wine/57/None';
-    
-    // Price row hanya ditampilkan jika listed
-    const priceRow = gift.is_listed === 1 ? `
+  const cleanName = gift.formattedName || formatGiftName(gift.nama || gift.slug.split('-')[0]);
+  const formattedPrice = gift.is_listed === 1 ? formatPriceRupiah(gift.price) : 'UNLISTED';
+  const giftId = gift.giftId || extractIdFromSlug(gift.slug);
+
+  // Gunakan display yang sudah diformat atau format langsung
+  const modelValue = gift.modelDisplay || (gift.model && gift.model_rarity ?
+    `${gift.model} (${gift.model_rarity})` :
+    (gift.model || '-'));
+
+  const symbolValue = gift.symbolDisplay || (gift.symbol && gift.symbol_rarity ?
+    `${gift.symbol} (${gift.symbol_rarity})` :
+    (gift.symbol || '-'));
+
+  const bgValue = gift.bgDisplay || (gift.background && gift.background_rarity ?
+    `${gift.background} (${gift.background_rarity})` :
+    (gift.background || '-'));
+
+  const slugId = gift.slug_id || generateSlugId(gift);
+
+  // Tentukan teks tombol berdasarkan status is_listed
+  const buttonText = gift.is_listed === 1 ? 'UNLISTED' : 'LISTED';
+
+  // Ambil posting link dari gift
+  const postedLink = gift.posting || 'https://t.me/market_wine/57/None';
+
+  // Price row hanya ditampilkan jika listed
+  const priceRow = gift.is_listed === 1 ? `
         <div class="sheet-price-row">
             <span class="sheet-price-label">Price</span>
             <span class="sheet-price-value">💰 ${formattedPrice}</span>
         </div>
     ` : '';
-    
-    const content = `
+
+  // CONTENT DENGAN RIBBON DI LOTTIE PREVIEW
+  const content = `
         <div class="sheet-item-detail">
             <div class="sheet-lottie-wrapper">
                 <div class="sheet-lottie-container">
@@ -691,6 +692,10 @@ window.openUserGiftSheet = function(gift) {
                         count="1"
                         autoplay>
                     </lottie-player>
+                </div>
+                <!-- RIBBON WRAPPER - TAMBAHKAN INI -->
+                <div class="ribbon-gift-wrapper">
+                    <div class="ribbon-gift"></div>
                 </div>
             </div>
             <div class="sheet-info">
@@ -738,13 +743,13 @@ window.openUserGiftSheet = function(gift) {
             </button>
         </div>
     `;
-    
-    elements.sheetContent.innerHTML = content;
-    
-    document.body.classList.add('sheet-open');
-    elements.bottomSheetOverlay.classList.add('active');
-    setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
-    document.dispatchEvent(new Event('popupOpened'));
+
+  elements.sheetContent.innerHTML = content;
+
+  document.body.classList.add('sheet-open');
+  elements.bottomSheetOverlay.classList.add('active');
+  setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
+  document.dispatchEvent(new Event('popupOpened'));
 };
 
 // Fungsi sementara untuk unlist (sekarang menggunakan toggleListingStatus)
