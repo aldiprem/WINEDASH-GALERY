@@ -133,44 +133,36 @@ async function initializeTelegramApp() {
     }
 }
 
-// Fungsi untuk mengambil saldo user dari file JSON
+// Ganti fungsi fetchUserBalance yang lama
 async function fetchUserBalance(userId) {
-    try {
-        // Path ke file JSON user berdasarkan user_id
-        const userJsonPath = `users/json/${userId}.json`;
-        
-        console.log('Mencoba mengambil data user dari:', userJsonPath);
-        
-        const response = await fetch(userJsonPath);
-        
-        if (!response.ok) {
-            throw new Error(`Gagal mengambil data user: ${response.status}`);
-        }
-        
-        const userData = await response.json();
-        console.log('Data user berhasil diambil:', userData);
-        
-        // Ambil nilai balance dari JSON
-        if (userData && userData.balance !== undefined) {
-            userBalance = userData.balance;
-        } else {
-            // Jika tidak ada field balance, set default 0
-            userBalance = 0;
-            console.warn('Field balance tidak ditemukan dalam JSON, menggunakan default 0');
-        }
-        
-        // Update tampilan saldo
-        updateUserBalanceDisplay();
-        
-    } catch (error) {
-        console.error('Error mengambil data user:', error);
-        // Jika gagal mengambil data, set saldo default 0
-        userBalance = 0;
-        updateUserBalanceDisplay();
-        
-        // Tampilkan pesan error di console tapi tetap lanjutkan
-        console.log('Menggunakan saldo default 0 karena file JSON tidak ditemukan');
+  try {
+    const API_BASE_URL = 'https://eddie-lodging-vocal-gary.trycloudflare.com'; // GANTI dengan URL tunnel Anda
+
+    console.log('Mengambil balance user:', userId);
+
+    const response = await fetch(`${API_BASE_URL}/api/user/balance/${userId}`);
+
+    if (!response.ok) {
+      throw new Error(`Gagal mengambil balance: ${response.status}`);
     }
+
+    const data = await response.json();
+
+    if (data.success) {
+      userBalance = data.balance;
+      console.log('Balance berhasil diambil:', userBalance);
+    } else {
+      userBalance = 0;
+      console.warn('Balance tidak ditemukan, default 0');
+    }
+
+    updateUserBalanceDisplay();
+
+  } catch (error) {
+    console.error('Error fetching user balance:', error);
+    userBalance = 0;
+    updateUserBalanceDisplay();
+  }
 }
 
 // Fungsi untuk memperbarui tampilan saldo dalam format Rupiah
@@ -288,36 +280,55 @@ function closeAllPopups() {
     closeActiveFiltersPopup();
 }
 
-// ===== FUNGSI LOAD DATA =====
+// Ganti fungsi loadGifts yang lama dengan ini:
 async function loadGifts() {
-    try {
-        elements.loadingState.style.display = 'flex';
-        const response = await fetch('export/data.json');
-        gifts = await response.json();
-        
-        const giftSet = new Set();
-        const modelSet = new Set();
-        const symbolSet = new Set();
-        const bgSet = new Set();
-        
-        gifts.forEach(gift => {
-            const giftName = gift.nama || gift.name.split('#')[0].trim();
-            giftSet.add(giftName);
-            modelSet.add(gift.model);
-            symbolSet.add(gift.symbol);
-            bgSet.add(gift.bg);
-        });
-        
-        filterOptions.gifts = Array.from(giftSet).sort();
-        filterOptions.models = Array.from(modelSet).sort();
-        filterOptions.symbols = Array.from(symbolSet).sort();
-        filterOptions.bgs = Array.from(bgSet).sort();
-        
-        elements.loadingState.style.display = 'none';
-    } catch (error) {
-        console.error('Error loading gifts:', error);
-        showError();
+  try {
+    elements.loadingState.style.display = 'flex';
+
+    // Gunakan API via tunnel
+    const API_BASE_URL = 'https://intermediate-glory-searches-soldiers.trycloudflare.com';
+    const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
+
+    const data = await response.json();
+
+    if (!data.success) {
+      throw new Error(data.error || 'Unknown error');
+    }
+
+    gifts = data.gifts;
+
+    // Sisa kode sama seperti sebelumnya untuk filter options
+    const giftSet = new Set();
+    const modelSet = new Set();
+    const symbolSet = new Set();
+    const bgSet = new Set();
+
+    gifts.forEach(gift => {
+      const giftName = gift.nama || (gift.name ? gift.name.split('#')[0].trim() : gift.slug.split('-')[0]);
+      giftSet.add(giftName);
+      modelSet.add(gift.model);
+      symbolSet.add(gift.symbol);
+      bgSet.add(gift.bg);
+    });
+
+    filterOptions.gifts = Array.from(giftSet).sort();
+    filterOptions.models = Array.from(modelSet).sort();
+    filterOptions.symbols = Array.from(symbolSet).sort();
+    filterOptions.bgs = Array.from(bgSet).sort();
+
+    elements.loadingState.style.display = 'none';
+
+    // Render setelah data masuk
+    filterAndSortGifts();
+
+  } catch (error) {
+    console.error('Error loading gifts:', error);
+    showError();
+  }
 }
 
 // ===== FUNGSI LOTTIE =====
