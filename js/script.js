@@ -286,7 +286,7 @@ async function loadGifts() {
     elements.loadingState.style.display = 'flex';
 
     // Gunakan API via tunnel
-    const API_BASE_URL = 'https://intermediate-glory-searches-soldiers.trycloudflare.com';
+    const API_BASE_URL = 'https://highlighted-cam-operators-enterprises.trycloudflare.com/api/gifts';
     const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
 
     if (!response.ok) {
