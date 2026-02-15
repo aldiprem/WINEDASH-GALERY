@@ -2063,5 +2063,18 @@
         "posting": "https://t.me/market_wine/57/None",
         "slug_id": "",
         "nama": "VintageCigar"
+    },
+    {
+        "id": "126093",
+        "name": "MousseCake #126093",
+        "slug": "MousseCake-126093",
+        "model": "Mermaid (2.5%)",
+        "symbol": "Cupid’s Arrow (0.2%)",
+        "bg": "Turquoise (1%)",
+        "price": 0,
+        "saldo": 0,
+        "posting": "https://t.me/market_wine/57/None",
+        "slug_id": "",
+        "nama": "MousseCake"
     }
 ]
