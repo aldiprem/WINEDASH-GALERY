@@ -1,8 +1,21 @@
+/* ===== ANTI ZOOM ===== */
+input, select, button {
+    font-size: 16px;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: flex !important;
+}
+
+
 // Global state
 let gifts = [];
 let filteredGifts = [];
-let autoRefreshInterval = null;
-let isRefreshing = false; // Flag untuk mencegah refresh bersamaan
 
 // Filter state
 let activeFilters = {
@@ -65,6 +78,8 @@ const elements = {
     clearAllBtn: document.getElementById('clearAllBtn'),
     popupSearchInput: document.getElementById('popupSearchInput'),
     filterPopupList: document.getElementById('filterPopupList'),
+    totalItems: document.getElementById('total-items'),
+    floorPrice: document.getElementById('floor-price'),
     loadingState: document.getElementById('loadingState'),
     bottomSheetOverlay: document.getElementById('bottomSheetOverlay'),
     bottomSheet: document.getElementById('bottomSheet'),
@@ -104,148 +119,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     checkForGiftIdInUrl();
     updateSearchClearButton();
     updateShareButtonVisibility();
-    startAutoRefresh();
 });
-
-// ===== AUTO REFRESH FUNCTION (SILENT BACKGROUND REFRESH) =====
-function startAutoRefresh() {
-    if (autoRefreshInterval) clearInterval(autoRefreshInterval);
-    
-    autoRefreshInterval = setInterval(async () => {
-        // Cek apakah sedang ada popup/panel terbuka
-        const isAnyPopupOpen = 
-            elements.bottomSheetOverlay?.classList.contains('active') ||
-            elements.filterPopupOverlay?.classList.contains('active') ||
-            elements.activeFiltersPopupOverlay?.classList.contains('active');
-        
-        // Jangan refresh jika ada popup terbuka atau sedang merefresh
-        if (isAnyPopupOpen || isRefreshing) return;
-        
-        isRefreshing = true;
-        
-        try {
-            if (currentPage === 'store') {
-                await refreshGiftsSilently();
-            } else if (currentPage === 'profile' && telegramUser) {
-                await refreshProfileSilently();
-            }
-        } catch (error) {
-            console.error('Auto refresh error:', error);
-        } finally {
-            isRefreshing = false;
-        }
-    }, 5000);
-}
-
-async function refreshGiftsSilently() {
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-        const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
-
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
-        const newGifts = await response.json();
-        if (!Array.isArray(newGifts)) return;
-
-        // Simpan state lama untuk perbandingan
-        const oldGifts = gifts;
-        
-        // Update gifts
-        gifts = newGifts;
-        
-        // Update filter options
-        const giftSet = new Set();
-        const modelSet = new Set();
-        const symbolSet = new Set();
-        const bgSet = new Set();
-
-        gifts.forEach(gift => {
-            const giftName = gift.nama || (gift.name ? gift.name.split('#')[0].trim() : gift.slug.split('-')[0]);
-            giftSet.add(giftName);
-            modelSet.add(gift.model);
-            symbolSet.add(gift.symbol);
-            bgSet.add(gift.bg);
-        });
-
-        filterOptions.gifts = Array.from(giftSet).sort();
-        filterOptions.models = Array.from(modelSet).sort();
-        filterOptions.symbols = Array.from(symbolSet).sort();
-        filterOptions.bgs = Array.from(bgSet).sort();
-
-        // Re-filter dengan filter yang sama
-        const newFilteredGifts = filterGiftsWithCurrentFilters();
-        
-        // Hanya render ulang jika ada perubahan harga
-        const hasPriceChanged = hasPricesChanged(filteredGifts, newFilteredGifts);
-        
-        if (hasPriceChanged) {
-            filteredGifts = newFilteredGifts;
-            renderGifts();
-            renderActiveFilters();
-        } else {
-            filteredGifts = newFilteredGifts;
-        }
-
-        console.log('✅ Silent refresh completed');
-    } catch (error) {
-        console.error('Silent refresh error:', error);
-    }
-}
-
-async function refreshProfileSilently() {
-    if (!telegramUser) return;
-    
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-        const response = await fetch(`${API_BASE_URL}/api/users/${telegramUser.id}`);
-
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
-        const data = await response.json();
-        if (!data.success) return;
-
-        const newUserGifts = data.user.added_gifts || [];
-        const newListedGifts = newUserGifts.filter(gift => gift.is_listed === 1);
-        
-        // Cek apakah ada perubahan harga
-        const oldListedGifts = userGifts.filter(g => g.is_listed === 1);
-        const hasPriceChanged = hasPricesChanged(oldListedGifts, newListedGifts);
-        
-        if (hasPriceChanged) {
-            userGifts = newUserGifts;
-            renderProfilePage(newListedGifts);
-        } else {
-            userGifts = newUserGifts;
-        }
-
-        console.log('✅ Profile silent refresh completed');
-    } catch (error) {
-        console.error('Profile silent refresh error:', error);
-    }
-}
-
-function hasPricesChanged(oldGifts, newGifts) {
-    if (oldGifts.length !== newGifts.length) return true;
-    
-    for (let i = 0; i < oldGifts.length; i++) {
-        if (oldGifts[i].price !== newGifts[i].price) return true;
-    }
-    return false;
-}
-
-function filterGiftsWithCurrentFilters() {
-    return gifts.filter(gift => {
-        const giftName = gift.nama || gift.name.split('#')[0].trim();
-
-        if (activeFilters.id && !gift.id.includes(activeFilters.id)) return false;
-        if (activeFilters.gift.length > 0 && !activeFilters.gift.includes(giftName)) return false;
-        if (activeFilters.model.length > 0 && !activeFilters.model.includes(gift.model)) return false;
-        if (activeFilters.symbol.length > 0 && !activeFilters.symbol.includes(gift.symbol)) return false;
-        if (activeFilters.bg.length > 0 && !activeFilters.bg.includes(gift.bg)) return false;
-
-        return true;
-    });
-}
 
 // ===== FUNGSI TELEGRAM =====
 async function initializeTelegramApp() {
@@ -405,12 +279,10 @@ function closeAllPopups() {
 }
 
 // ===== FUNGSI LOAD GIFTS =====
-async function loadGifts(silent = false) {
-    if (!silent) {
-        elements.loadingState.style.display = 'flex';
-    }
-
+async function loadGifts() {
     try {
+        elements.loadingState.style.display = 'flex';
+
         const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
         const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
 
@@ -444,18 +316,11 @@ async function loadGifts(silent = false) {
         filterOptions.symbols = Array.from(symbolSet).sort();
         filterOptions.bgs = Array.from(bgSet).sort();
 
-        if (!silent) {
-            elements.loadingState.style.display = 'none';
-        } else {
-            elements.loadingState.style.display = 'none';
-        }
-        
+        elements.loadingState.style.display = 'none';
         filterAndSortGifts();
     } catch (error) {
         console.error('Error loading gifts:', error);
-        if (!silent) {
-            showError();
-        }
+        showError();
     }
 }
 
@@ -467,9 +332,6 @@ function setupNavigationListeners() {
 }
 
 function switchPage(page) {
-    // Tutup semua popup terlebih dahulu
-    closeAllPopups();
-    
     currentPage = page;
     
     [navStore, navStats, navProfile].forEach(btn => {
@@ -522,7 +384,7 @@ function showStatsPage() {
     `;
 }
 
-async function showProfilePage(silent = false) {
+async function showProfilePage() {
     const filterSection = document.querySelector('.filter-section');
     if (filterSection) filterSection.style.display = 'none';
     
@@ -543,9 +405,7 @@ async function showProfilePage(silent = false) {
         return;
     }
     
-    if (!silent) {
-        elements.loadingState.style.display = 'flex';
-    }
+    elements.loadingState.style.display = 'flex';
     
     try {
         const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
@@ -569,29 +429,23 @@ async function showProfilePage(silent = false) {
         
         const listedGifts = userGifts.filter(gift => gift.is_listed === 1);
         
-        if (!silent) {
-            elements.loadingState.style.display = 'none';
-        } else {
-            elements.loadingState.style.display = 'none';
-        }
+        elements.loadingState.style.display = 'none';
         renderProfilePage(listedGifts);
         
     } catch (error) {
         console.error('Error loading user gifts:', error);
-        if (!silent) {
-            elements.loadingState.style.display = 'none';
-            elements.cardsGrid.innerHTML = `
-                <div class="empty-state" style="grid-column: 1 / -1;">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
-                        <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
-                        <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <h3>Failed to load your gifts</h3>
-                    <p style="margin-top: 8px;">${error.message}</p>
-                    <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
-                </div>
-            `;
-        }
+        elements.loadingState.style.display = 'none';
+        elements.cardsGrid.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                    <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <h3>Failed to load your gifts</h3>
+                <p style="margin-top: 8px;">${error.message}</p>
+                <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
+            </div>
+        `;
     }
 }
 
@@ -667,86 +521,79 @@ function renderProfilePage(gifts) {
 
 // ===== FUNGSI OPEN BOTTOM SHEET UNTUK GIFT USER =====
 window.openUserGiftSheet = function(gift) {
-    // Close any open bottom sheet first
-    closeBottomSheet();
+    const cleanName = gift.nama || gift.slug.split('-')[0];
+    const formattedPrice = formatPriceRupiah(gift.price);
     
-    // Small delay to ensure proper z-index
-    setTimeout(() => {
-        const cleanName = gift.nama || gift.slug.split('-')[0];
-        const formattedPrice = formatPriceRupiah(gift.price);
-        
-        // Gunakan data dari API gifts yang sudah lengkap dengan rarity
-        const modelValue = gift.model || '-';
-        const symbolValue = gift.symbol || '-';
-        const bgValue = gift.bg || '-';
-        
-        const slugId = gift.slug_id || generateSlugId(gift);
-        
-        const content = `
-            <div class="sheet-item-detail">
-                <div class="sheet-lottie-wrapper">
-                    <div class="sheet-lottie-container">
-                        <lottie-player
-                            src="https://nft.fragment.com/gift/${gift.slug}.lottie.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 100%; height: 100%;"
-                            loop="false"
-                            count="1"
-                            autoplay>
-                        </lottie-player>
-                    </div>
-                </div>
-                <div class="sheet-info">
-                    <div class="sheet-name-container">
-                        <span class="sheet-name">${cleanName}</span>
-                        <span class="sheet-id">${gift.id}</span>
-                    </div>
-                    
-                    <div class="sheet-data-container">
-                        <div class="sheet-data-row">
-                            <span class="sheet-data-label">Model</span>
-                            <span class="sheet-data-value">${modelValue}</span>
-                        </div>
-                        <div class="sheet-data-row">
-                            <span class="sheet-data-label">Symbol</span>
-                            <span class="sheet-data-value">${symbolValue}</span>
-                        </div>
-                        <div class="sheet-data-row">
-                            <span class="sheet-data-label">Backdrop</span>
-                            <span class="sheet-data-value">${bgValue}</span>
-                        </div>
-                    </div>
-                    
-                    <div class="sheet-price-row">
-                        <span class="sheet-price-label">Price</span>
-                        <span class="sheet-price-value">💰 ${formattedPrice}</span>
-                    </div>
+    const modelValue = gift.model || '-';
+    const symbolValue = gift.symbol || '-';
+    const bgValue = gift.bg || '-';
+    
+    const slugId = gift.slug_id || generateSlugId(gift);
+    
+    const content = `
+        <div class="sheet-item-detail">
+            <div class="sheet-lottie-wrapper">
+                <div class="sheet-lottie-container">
+                    <lottie-player
+                        src="https://nft.fragment.com/gift/${gift.slug}.lottie.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100%; height: 100%;"
+                        loop="false"
+                        count="1"
+                        autoplay>
+                    </lottie-player>
                 </div>
             </div>
-            <div class="sheet-actions" style="grid-template-columns: 1fr 1fr;">
-                <button class="btn btn-nego" onclick="unlistGift('${gift.slug}')">UNLISTED</button>
-                <button class="btn btn-buy" onclick="editPrice('${gift.slug}')">EDIT PRICE</button>
+            <div class="sheet-info">
+                <div class="sheet-name-container">
+                    <span class="sheet-name">${cleanName}</span>
+                    <span class="sheet-id">${gift.id}</span>
+                </div>
+                
+                <div class="sheet-data-container">
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Model</span>
+                        <span class="sheet-data-value">${modelValue}</span>
+                    </div>
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Symbol</span>
+                        <span class="sheet-data-value">${symbolValue}</span>
+                    </div>
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Backdrop</span>
+                        <span class="sheet-data-value">${bgValue}</span>
+                    </div>
+                </div>
+                
+                <div class="sheet-price-row">
+                    <span class="sheet-price-label">Price</span>
+                    <span class="sheet-price-value">💰 ${formattedPrice}</span>
+                </div>
             </div>
-            <div class="sheet-share">
-                <button class="btn btn-gift-share" onclick="shareGift('${slugId}', event)" style="width: 100%; padding: 12px;">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-right: 8px;">
-                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" stroke-width="1.5"/>
-                        <polyline points="16 6 12 2 8 6" stroke-width="1.5"/>
-                        <line x1="12" y1="2" x2="12" y2="15" stroke-width="1.5"/>
-                    </svg>
-                    SHARE GIFT
-                </button>
-            </div>
-        `;
-        
-        elements.sheetContent.innerHTML = content;
-        
-        document.body.classList.add('sheet-open');
-        elements.bottomSheetOverlay.classList.add('active');
-        setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
-        document.dispatchEvent(new Event('popupOpened'));
-    }, 100);
+        </div>
+        <div class="sheet-actions" style="grid-template-columns: 1fr 1fr;">
+            <button class="btn btn-nego" onclick="unlistGift('${gift.slug}')">UNLISTED</button>
+            <button class="btn btn-buy" onclick="editPrice('${gift.slug}')">EDIT PRICE</button>
+        </div>
+        <div class="sheet-share">
+            <button class="btn btn-gift-share" onclick="shareGift('${slugId}', event)" style="width: 100%; padding: 12px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-right: 8px;">
+                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" stroke-width="1.5"/>
+                    <polyline points="16 6 12 2 8 6" stroke-width="1.5"/>
+                    <line x1="12" y1="2" x2="12" y2="15" stroke-width="1.5"/>
+                </svg>
+                SHARE GIFT
+            </button>
+        </div>
+    `;
+    
+    elements.sheetContent.innerHTML = content;
+    
+    document.body.classList.add('sheet-open');
+    elements.bottomSheetOverlay.classList.add('active');
+    setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
+    document.dispatchEvent(new Event('popupOpened'));
 };
 
 // Fungsi sementara untuk unlist dan edit price
@@ -755,58 +602,9 @@ window.unlistGift = function(slug) {
     showToast('Unlist feature coming soon!');
 };
 
-// Update fungsi editPrice
-window.editPrice = async function(slug) {
+window.editPrice = function(slug) {
     closeBottomSheet();
-
-    const newPrice = prompt("Enter new price (in Rupiah):", "");
-
-    if (!newPrice) return;
-
-    const priceNumber = parseInt(newPrice.replace(/[^0-9]/g, ''));
-    if (isNaN(priceNumber) || priceNumber <= 0) {
-        showToast('Invalid price!');
-        return;
-    }
-
-    showToast('Updating price...', 0);
-
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-
-        const response = await fetch(`${API_BASE_URL}/api/gift/edit-price`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                slug: slug,
-                price: priceNumber,
-                user_id: telegramUser ? telegramUser.id : null
-            })
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-            showToast('Price updated successfully! ✅');
-
-            // Refresh data setelah update (silent refresh)
-            setTimeout(async () => {
-                if (currentPage === 'profile') {
-                    await refreshProfileSilently();
-                } else {
-                    await refreshGiftsSilently();
-                }
-            }, 1000);
-        } else {
-            showToast(`Error: ${data.error || 'Failed to update price'}`);
-        }
-
-    } catch (error) {
-        console.error('Error updating price:', error);
-        showToast('Failed to update price. Check console for details.');
-    }
+    showToast('Edit price feature coming soon!');
 };
 
 // ===== FUNGSI LOTTIE =====
@@ -1839,6 +1637,60 @@ window.removeBgFilter = function(bg) {
     }
 };
 
+// Update fungsi editPrice
+window.editPrice = async function(slug) {
+  closeBottomSheet();
+
+  // Tampilkan prompt untuk input harga baru
+  const newPrice = prompt("Enter new price (in Rupiah):", "");
+
+  if (!newPrice) return; // User cancel
+
+  // Validasi input
+  const priceNumber = parseInt(newPrice.replace(/[^0-9]/g, ''));
+  if (isNaN(priceNumber) || priceNumber <= 0) {
+    showToast('Invalid price!');
+    return;
+  }
+
+  showToast('Updating price...', 0); // Toast dengan durasi 0 (tidak auto-hide)
+
+  try {
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+
+    const response = await fetch(`${API_BASE_URL}/api/gift/edit-price`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        slug: slug,
+        price: priceNumber,
+        user_id: telegramUser ? telegramUser.id : null
+      })
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      showToast('Price updated successfully! ✅');
+
+      // Refresh halaman profil untuk menampilkan harga baru
+      if (currentPage === 'profile') {
+        setTimeout(() => showProfilePage(), 1500);
+      }
+    } else {
+      showToast(`Error: ${data.error || 'Failed to update price'}`);
+    }
+
+  } catch (error) {
+    console.error('Error updating price:', error);
+    showToast('Failed to update price. Check console for details.');
+  }
+};
+
+
+
 window.resetSortFilter = function() {
     activeFilters.sort = 'price-asc';
     elements.sortValue.textContent = 'Low to High';
@@ -1914,6 +1766,7 @@ function filterAndSortGifts() {
     }
 
     renderGifts();
+    updateStats();
     renderActiveFilters();
 }
 
@@ -1977,101 +1830,94 @@ function renderGifts() {
 
 // ===== FUNGSI OPEN BOTTOM SHEET (UNTUK STORE) =====
 window.openBottomSheet = function(gift) {
-    // Close any open bottom sheet first
-    closeBottomSheet();
+    const cleanName = gift.nama || gift.name.split('#')[0].trim();
+    const formattedPrice = formatPriceRupiah(gift.price);
     
-    // Small delay to ensure proper z-index
-    setTimeout(() => {
-        const cleanName = gift.nama || gift.name.split('#')[0].trim();
-        const formattedPrice = formatPriceRupiah(gift.price);
-        
-        // Gunakan data dari API gifts yang sudah lengkap dengan rarity
-        const modelValue = gift.model || '-';
-        const symbolValue = gift.symbol || '-';
-        const bgValue = gift.bg || '-';
-        
-        const postedText = gift.posting || 'Unknown';
-        const postedLink = postedText.startsWith('@') 
-            ? `https://t.me/${postedText.substring(1)}` 
-            : `https://t.me/${postedText}`;
-        
-        const slugId = gift.slug_id || generateSlugId(gift);
-        
-        const content = `
-            <div class="sheet-item-detail">
-                <div class="sheet-lottie-wrapper">
-                    <div class="sheet-lottie-container">
-                        <lottie-player
-                            src="https://nft.fragment.com/gift/${gift.slug}.lottie.json"
-                            background="transparent"
-                            speed="1"
-                            style="width: 100%; height: 100%;"
-                            loop="false"
-                            count="1"
-                            autoplay>
-                        </lottie-player>
-                    </div>
-                </div>
-                <div class="sheet-info">
-                    <div class="sheet-name-container">
-                        <span class="sheet-name">${cleanName}</span>
-                        <span class="sheet-id">${gift.id}</span>
-                    </div>
-                    
-                    <div class="sheet-data-container">
-                        <div class="sheet-data-row">
-                            <span class="sheet-data-label">Model</span>
-                            <span class="sheet-data-value">${modelValue}</span>
-                        </div>
-                        <div class="sheet-data-row">
-                            <span class="sheet-data-label">Symbol</span>
-                            <span class="sheet-data-value">${symbolValue}</span>
-                        </div>
-                        <div class="sheet-data-row">
-                            <span class="sheet-data-label">Backdrop</span>
-                            <span class="sheet-data-value">${bgValue}</span>
-                        </div>
-                    </div>
-                    
-                    <div class="sheet-price-row">
-                        <span class="sheet-price-label">Price</span>
-                        <span class="sheet-price-value">💰 ${formattedPrice}</span>
-                    </div>
+    const modelValue = gift.model || '-';
+    const symbolValue = gift.symbol || '-';
+    const bgValue = gift.bg || '-';
+    
+    const postedText = gift.posting || 'Unknown';
+    const postedLink = postedText.startsWith('@') 
+        ? `https://t.me/${postedText.substring(1)}` 
+        : `https://t.me/${postedText}`;
+    
+    const slugId = gift.slug_id || generateSlugId(gift);
+    
+    const content = `
+        <div class="sheet-item-detail">
+            <div class="sheet-lottie-wrapper">
+                <div class="sheet-lottie-container">
+                    <lottie-player
+                        src="https://nft.fragment.com/gift/${gift.slug}.lottie.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100%; height: 100%;"
+                        loop="false"
+                        count="1"
+                        autoplay>
+                    </lottie-player>
                 </div>
             </div>
-            <div class="sheet-actions">
-                <a href="https://t.me/marketaldibot?start=beli_${gift.slug}" class="btn btn-buy" target="_blank">BUY NOW</a>
-                <div class="sheet-middle-buttons">
-                    <a href="https://t.me/nft/${gift.slug}" class="btn btn-telegram-circle" target="_blank" title="Open in Telegram">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.95 1.24-5.5 3.64-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.36-.48.99-.74 3.84-1.67 6.4-2.78 7.68-3.32 3.66-1.56 4.42-1.83 4.92-1.84.11 0 .36.03.52.16.14.12.18.28.2.4-.02.12 0 .38 0 .38z"/>
-                        </svg>
-                    </a>
-                    <button class="btn btn-gift-share" onclick="shareGift('${slugId}', event)" title="Share this gift">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="3" y="8" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                            <path d="M7 8V6C7 4.89543 7.89543 4 9 4H15C16.1046 4 17 4.89543 17 6V8" stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M12 12V16M12 16L14 14M12 16L10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="12" cy="12" r="1" fill="currentColor"/>
-                        </svg>
-                    </button>
+            <div class="sheet-info">
+                <div class="sheet-name-container">
+                    <span class="sheet-name">${cleanName}</span>
+                    <span class="sheet-id">${gift.id}</span>
                 </div>
-                <a href="https://t.me/marketaldibot?start=nego_${gift.slug}" class="btn btn-nego" target="_blank">MAKE OFFER</a>
+                
+                <div class="sheet-data-container">
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Model</span>
+                        <span class="sheet-data-value">${modelValue}</span>
+                    </div>
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Symbol</span>
+                        <span class="sheet-data-value">${symbolValue}</span>
+                    </div>
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Backdrop</span>
+                        <span class="sheet-data-value">${bgValue}</span>
+                    </div>
+                </div>
+                
+                <div class="sheet-price-row">
+                    <span class="sheet-price-label">Price</span>
+                    <span class="sheet-price-value">💰 ${formattedPrice}</span>
+                </div>
             </div>
-            <div class="sheet-posted">
-                <a href="${postedLink}" class="sheet-posted-link" target="_blank" rel="noopener noreferrer">
-                    Posted via ${postedText}
+        </div>
+        <div class="sheet-actions">
+            <a href="https://t.me/marketaldibot?start=beli_${gift.slug}" class="btn btn-buy" target="_blank">BUY NOW</a>
+            <div class="sheet-middle-buttons">
+                <a href="https://t.me/nft/${gift.slug}" class="btn btn-telegram-circle" target="_blank" title="Open in Telegram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.95 1.24-5.5 3.64-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.36-.48.99-.74 3.84-1.67 6.4-2.78 7.68-3.32 3.66-1.56 4.42-1.83 4.92-1.84.11 0 .36.03.52.16.14.12.18.28.2.4-.02.12 0 .38 0 .38z"/>
+                    </svg>
                 </a>
+                <button class="btn btn-gift-share" onclick="shareGift('${slugId}', event)" title="Share this gift">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        <path d="M7 8V6C7 4.89543 7.89543 4 9 4H15C16.1046 4 17 4.89543 17 6V8" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M12 12V16M12 16L14 14M12 16L10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                    </svg>
+                </button>
             </div>
-        `;
-        
-        elements.sheetContent.innerHTML = content;
-        
-        document.body.classList.add('sheet-open');
-        elements.bottomSheetOverlay.classList.add('active');
-        setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
-        document.dispatchEvent(new Event('popupOpened'));
-    }, 100);
+            <a href="https://t.me/marketaldibot?start=nego_${gift.slug}" class="btn btn-nego" target="_blank">MAKE OFFER</a>
+        </div>
+        <div class="sheet-posted">
+            <a href="${postedLink}" class="sheet-posted-link" target="_blank" rel="noopener noreferrer">
+                Posted via ${postedText}
+            </a>
+        </div>
+    `;
+    
+    elements.sheetContent.innerHTML = content;
+    
+    document.body.classList.add('sheet-open');
+    elements.bottomSheetOverlay.classList.add('active');
+    setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
+    document.dispatchEvent(new Event('popupOpened'));
 };
 
 // ===== FUNGSI SHARE GIFT =====
@@ -2099,7 +1945,18 @@ window.closeBottomSheet = function() {
     }, 300);
 };
 
-// ===== FUNGSI FORMAT HARGA =====
+function updateStats() {
+    const currentGifts = filteredGifts.length > 0 ? filteredGifts : gifts;
+    elements.totalItems.textContent = currentGifts.length;
+    
+    if (currentGifts.length > 0) {
+        const floor = Math.min(...currentGifts.map(g => g.price));
+        elements.floorPrice.textContent = `${formatPriceRupiah(floor)}`;
+    } else {
+        elements.floorPrice.textContent = '0';
+    }
+}
+
 function formatPriceRupiah(price) {
     return 'Rp' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
@@ -2309,14 +2166,6 @@ function generateSlugId(gift) {
 function checkForGiftIdInUrl() {
     let slugId = null;
     
-    // Cek dari URL path untuk format /gifts_slugId
-    const pathname = window.location.pathname;
-    if (pathname.includes('/gifts_')) {
-        slugId = pathname.split('/gifts_')[1];
-        console.log('Found gift slug_id in path:', slugId);
-    }
-    
-    // Cek dari pathname untuk endpoint seperti /gift/Q5O0u-eai2b-sMlwg-OFl3V
     const pathParts = window.location.pathname.split('/');
     const giftIndex = pathParts.indexOf('gift');
     if (giftIndex !== -1 && pathParts.length > giftIndex + 1) {
@@ -2339,23 +2188,14 @@ function checkForGiftIdInUrl() {
     }
     
     if (slugId) {
-        // Tunggu hingga gifts terload
-        const checkGift = setInterval(() => {
-            const gift = gifts.find(g => g.slug_id === slugId);
-            if (gift) {
-                clearInterval(checkGift);
-                setTimeout(() => {
-                    // Pastikan kita di page store
-                    if (currentPage !== 'store') {
-                        switchPage('store');
-                    }
-                    openBottomSheet(gift);
-                }, 500);
-            }
-        }, 100);
-        
-        // Timeout setelah 5 detik
-        setTimeout(() => clearInterval(checkGift), 5000);
+        const gift = gifts.find(g => g.slug_id === slugId);
+        if (gift) {
+            setTimeout(() => {
+                openBottomSheet(gift);
+            }, 500);
+        } else {
+            console.log('Gift with slug_id not found:', slugId);
+        }
     }
 }
 
