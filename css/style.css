@@ -1908,6 +1908,69 @@ body.sheet-open {
     100% { box-shadow: 0 0 0 0 rgba(135, 116, 225, 0); }
 }
 
+/* ===== BOTTOM NAVIGATION ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(20, 28, 35, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 0 12px;
+  z-index: 100;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 8px 16px;
+  border-radius: 30px;
+  min-width: 80px;
+}
+
+.nav-btn svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.5;
+}
+
+.nav-btn span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-btn.active {
+  color: var(--tg-primary);
+  background: rgba(135, 116, 225, 0.15);
+}
+
+.nav-btn.active svg {
+  stroke: var(--tg-primary);
+}
+
+/* Adjust container padding untuk bottom nav */
+.container {
+  padding-bottom: 80px !important;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
     .container {
@@ -2088,6 +2151,20 @@ body.sheet-open {
         bottom: 20px;
         padding: 10px 20px;
         font-size: 0.85rem;
+    }
+    
+    .nav-btn {
+      min-width: 60px;
+      padding: 6px 8px;
+    }
+  
+    .nav-btn svg {
+      width: 22px;
+      height: 22px;
+    }
+  
+    .nav-btn span {
+      font-size: 0.65rem;
     }
 }
 
