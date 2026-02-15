@@ -1,18 +1,3 @@
-/* ===== ANTI ZOOM ===== */
-input, select, button {
-    font-size: 16px;
-}
-
-/* ===== UTILITY CLASSES ===== */
-.hidden {
-    display: none !important;
-}
-
-.visible {
-    display: flex !important;
-}
-
-
 // Global state
 let gifts = [];
 let filteredGifts = [];
