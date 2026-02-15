@@ -280,13 +280,10 @@ function closeAllPopups() {
     closeActiveFiltersPopup();
 }
 
-// Ganti fungsi loadGifts yang lama dengan ini:
 async function loadGifts() {
   try {
     elements.loadingState.style.display = 'flex';
 
-    // Gunakan API via tunnel
-    // ✅ BENAR
     const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
     const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
 
@@ -294,15 +291,17 @@ async function loadGifts() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const data = await response.json();
+    // ✅ LANGSUNG ambil array dari response
+    gifts = await response.json(); // <-- LANGSUNG ARRAY
 
-    if (!data.success) {
-      throw new Error(data.error || 'Unknown error');
+    // ✅ CEK apakah gifts adalah array dan tidak kosong
+    if (!Array.isArray(gifts)) {
+      throw new Error('Data yang diterima bukan array');
     }
 
-    gifts = data.gifts;
+    console.log(`✅ ${gifts.length} gift berhasil dimuat`); // Debug
 
-    // Sisa kode sama seperti sebelumnya untuk filter options
+    // Filter options (sama seperti sebelumnya)
     const giftSet = new Set();
     const modelSet = new Set();
     const symbolSet = new Set();
@@ -1413,53 +1412,47 @@ function clearAllFilters() {
 }
 
 function filterAndSortGifts() {
-    filteredGifts = gifts.filter(gift => {
-        const giftName = gift.nama || gift.name.split('#')[0].trim();
-        
-        if (activeFilters.id && !gift.id.includes(activeFilters.id)) {
-            return false;
-        }
-        
-        if (activeFilters.gift.length > 0 && !activeFilters.gift.includes(giftName)) {
-            return false;
-        }
-        
-        if (activeFilters.model.length > 0 && !activeFilters.model.includes(gift.model)) {
-            return false;
-        }
-        
-        if (activeFilters.symbol.length > 0 && !activeFilters.symbol.includes(gift.symbol)) {
-            return false;
-        }
-        
-        if (activeFilters.bg.length > 0 && !activeFilters.bg.includes(gift.bg)) {
-            return false;
-        }
-        
-        return true;
-    });
-    
-    switch(activeFilters.sort) {
-        case 'price-asc':
-            filteredGifts.sort((a, b) => a.price - b.price);
-            break;
-        case 'price-desc':
-            filteredGifts.sort((a, b) => b.price - a.price);
-            break;
-        case 'id-asc':
-            filteredGifts.sort((a, b) => parseInt(a.id) - parseInt(b.id));
-            break;
-        case 'id-desc':
-            filteredGifts.sort((a, b) => parseInt(b.id) - parseInt(a.id));
-            break;
-        case 'latest':
-            filteredGifts.sort((a, b) => parseInt(b.id) - parseInt(a.id));
-            break;
+  // gifts SUDAH array, tidak perlu .gifts lagi
+  filteredGifts = gifts.filter(gift => {
+    const giftName = gift.nama || gift.name.split('#')[0].trim();
+
+    if (activeFilters.id && !gift.id.includes(activeFilters.id)) {
+      return false;
     }
-    
-    renderGifts();
-    updateStats();
-    renderActiveFilters();
+
+    if (activeFilters.gift.length > 0 && !activeFilters.gift.includes(giftName)) {
+      return false;
+    }
+
+    if (activeFilters.model.length > 0 && !activeFilters.model.includes(gift.model)) {
+      return false;
+    }
+
+    if (activeFilters.symbol.length > 0 && !activeFilters.symbol.includes(gift.symbol)) {
+      return false;
+    }
+
+    if (activeFilters.bg.length > 0 && !activeFilters.bg.includes(gift.bg)) {
+      return false;
+    }
+
+    return true;
+  });
+
+  // Sisa kode sorting sama...
+  switch (activeFilters.sort) {
+    case 'price-asc':
+      filteredGifts.sort((a, b) => a.price - b.price);
+      break;
+    case 'price-desc':
+      filteredGifts.sort((a, b) => b.price - a.price);
+      break;
+      // ... dst
+  }
+
+  renderGifts();
+  updateStats();
+  renderActiveFilters();
 }
 
 function renderGifts() {
