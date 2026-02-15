@@ -472,8 +472,26 @@ function renderProfilePage(gifts) {
     const giftsHtml = gifts.map(gift => {
         const cleanName = gift.nama || gift.slug.split('-')[0];
         
+        // Format model, symbol, background dengan rarity
+        const modelDisplay = gift.model && gift.model_rarity 
+            ? `${gift.model} (${gift.model_rarity})` 
+            : (gift.model || '-');
+        
+        const symbolDisplay = gift.symbol && gift.symbol_rarity 
+            ? `${gift.symbol} (${gift.symbol_rarity})` 
+            : (gift.symbol || '-');
+        
+        const bgDisplay = gift.background && gift.background_rarity 
+            ? `${gift.background} (${gift.background_rarity})` 
+            : (gift.background || '-');
+        
         return `
-        <div class="gift-card profile-gift-card" onclick="openUserGiftSheet(${JSON.stringify(gift).replace(/"/g, '&quot;')})">
+        <div class="gift-card profile-gift-card" onclick="openUserGiftSheet(${JSON.stringify({
+            ...gift,
+            modelDisplay,
+            symbolDisplay,
+            bgDisplay
+        }).replace(/"/g, '&quot;')})">
             <div class="card-image-wrapper">
                 <img class="fallback-image" src="https://nft.fragment.com/gift/${gift.slug}.medium.jpg" 
                      alt="${gift.name}" 
@@ -504,16 +522,65 @@ function renderProfilePage(gifts) {
     elements.cardsGrid.innerHTML = profileHeader + giftsHtml;
 }
 
+// ===== FUNGSI TOGGLE STATUS JUAL (UNLISTED/LISTED) =====
+window.toggleListingStatus = async function(slug) {
+    closeBottomSheet();
+    
+    showToast('Updating listing status...', 0);
+    
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        
+        const response = await fetch(`${API_BASE_URL}/api/gift/toggle-listing`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                slug: slug,
+                user_id: telegramUser ? telegramUser.id : null
+            })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            showToast(data.message || 'Status updated! ✅');
+            
+            // Refresh profile page
+            setTimeout(() => showProfilePage(), 1000);
+        } else {
+            showToast(`Error: ${data.error || 'Failed to update status'}`);
+        }
+        
+    } catch (error) {
+        console.error('Error toggling listing status:', error);
+        showToast('Failed to update status. Check console for details.');
+    }
+};
+
 // ===== FUNGSI OPEN BOTTOM SHEET UNTUK GIFT USER =====
 window.openUserGiftSheet = function(gift) {
     const cleanName = gift.nama || gift.slug.split('-')[0];
     const formattedPrice = formatPriceRupiah(gift.price);
     
-    const modelValue = gift.model || '-';
-    const symbolValue = gift.symbol || '-';
-    const bgValue = gift.bg || '-';
+    // Gunakan display yang sudah diformat atau format langsung
+    const modelValue = gift.modelDisplay || (gift.model && gift.model_rarity 
+        ? `${gift.model} (${gift.model_rarity})` 
+        : (gift.model || '-'));
+    
+    const symbolValue = gift.symbolDisplay || (gift.symbol && gift.symbol_rarity 
+        ? `${gift.symbol} (${gift.symbol_rarity})` 
+        : (gift.symbol || '-'));
+    
+    const bgValue = gift.bgDisplay || (gift.background && gift.background_rarity 
+        ? `${gift.background} (${gift.background_rarity})` 
+        : (gift.background || '-'));
     
     const slugId = gift.slug_id || generateSlugId(gift);
+    
+    // Tentukan teks tombol berdasarkan status is_listed
+    const buttonText = gift.is_listed === 1 ? 'UNLISTED' : 'LISTED';
     
     const content = `
         <div class="sheet-item-detail">
@@ -558,7 +625,7 @@ window.openUserGiftSheet = function(gift) {
             </div>
         </div>
         <div class="sheet-actions" style="grid-template-columns: 1fr 1fr;">
-            <button class="btn btn-nego" onclick="unlistGift('${gift.slug}')">UNLISTED</button>
+            <button class="btn btn-nego" onclick="toggleListingStatus('${gift.slug}')">${buttonText}</button>
             <button class="btn btn-buy" onclick="editPrice('${gift.slug}')">EDIT PRICE</button>
         </div>
         <div class="sheet-share">
@@ -581,15 +648,59 @@ window.openUserGiftSheet = function(gift) {
     document.dispatchEvent(new Event('popupOpened'));
 };
 
-// Fungsi sementara untuk unlist dan edit price
+// Fungsi sementara untuk unlist (sekarang menggunakan toggleListingStatus)
 window.unlistGift = function(slug) {
-    closeBottomSheet();
-    showToast('Unlist feature coming soon!');
+    toggleListingStatus(slug);
 };
 
-window.editPrice = function(slug) {
+// Update fungsi editPrice
+window.editPrice = async function(slug) {
     closeBottomSheet();
-    showToast('Edit price feature coming soon!');
+
+    const newPrice = prompt("Enter new price (in Rupiah):", "");
+
+    if (!newPrice) return;
+
+    const priceNumber = parseInt(newPrice.replace(/[^0-9]/g, ''));
+    if (isNaN(priceNumber) || priceNumber <= 0) {
+        showToast('Invalid price!');
+        return;
+    }
+
+    showToast('Updating price...', 0);
+
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+
+        const response = await fetch(`${API_BASE_URL}/api/gift/edit-price`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                slug: slug,
+                price: priceNumber,
+                user_id: telegramUser ? telegramUser.id : null
+            })
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            showToast('Price updated successfully! ✅');
+
+            // Refresh halaman profil untuk menampilkan harga baru
+            if (currentPage === 'profile') {
+                setTimeout(() => showProfilePage(), 1500);
+            }
+        } else {
+            showToast(`Error: ${data.error || 'Failed to update price'}`);
+        }
+
+    } catch (error) {
+        console.error('Error updating price:', error);
+        showToast('Failed to update price. Check console for details.');
+    }
 };
 
 // ===== FUNGSI LOTTIE =====
@@ -1622,60 +1733,6 @@ window.removeBgFilter = function(bg) {
     }
 };
 
-// Update fungsi editPrice
-window.editPrice = async function(slug) {
-  closeBottomSheet();
-
-  // Tampilkan prompt untuk input harga baru
-  const newPrice = prompt("Enter new price (in Rupiah):", "");
-
-  if (!newPrice) return; // User cancel
-
-  // Validasi input
-  const priceNumber = parseInt(newPrice.replace(/[^0-9]/g, ''));
-  if (isNaN(priceNumber) || priceNumber <= 0) {
-    showToast('Invalid price!');
-    return;
-  }
-
-  showToast('Updating price...', 0); // Toast dengan durasi 0 (tidak auto-hide)
-
-  try {
-    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-
-    const response = await fetch(`${API_BASE_URL}/api/gift/edit-price`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        slug: slug,
-        price: priceNumber,
-        user_id: telegramUser ? telegramUser.id : null
-      })
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      showToast('Price updated successfully! ✅');
-
-      // Refresh halaman profil untuk menampilkan harga baru
-      if (currentPage === 'profile') {
-        setTimeout(() => showProfilePage(), 1500);
-      }
-    } else {
-      showToast(`Error: ${data.error || 'Failed to update price'}`);
-    }
-
-  } catch (error) {
-    console.error('Error updating price:', error);
-    showToast('Failed to update price. Check console for details.');
-  }
-};
-
-
-
 window.resetSortFilter = function() {
     activeFilters.sort = 'price-asc';
     elements.sortValue.textContent = 'Low to High';
@@ -2238,3 +2295,4 @@ window.shareGift = shareGift;
 window.unlistGift = unlistGift;
 window.editPrice = editPrice;
 window.showProfilePage = showProfilePage;
+window.toggleListingStatus = toggleListingStatus;
