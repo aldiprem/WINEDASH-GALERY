@@ -2,6 +2,7 @@
 let gifts = [];
 let filteredGifts = [];
 let autoRefreshInterval = null;
+let isRefreshing = false; // Flag untuk mencegah refresh bersamaan
 
 // Filter state
 let activeFilters = {
@@ -64,8 +65,6 @@ const elements = {
     clearAllBtn: document.getElementById('clearAllBtn'),
     popupSearchInput: document.getElementById('popupSearchInput'),
     filterPopupList: document.getElementById('filterPopupList'),
-    totalItems: document.getElementById('total-items'),
-    floorPrice: document.getElementById('floor-price'),
     loadingState: document.getElementById('loadingState'),
     bottomSheetOverlay: document.getElementById('bottomSheetOverlay'),
     bottomSheet: document.getElementById('bottomSheet'),
@@ -108,16 +107,144 @@ document.addEventListener('DOMContentLoaded', async () => {
     startAutoRefresh();
 });
 
-// Start auto refresh every 5 seconds
+// ===== AUTO REFRESH FUNCTION (SILENT BACKGROUND REFRESH) =====
 function startAutoRefresh() {
     if (autoRefreshInterval) clearInterval(autoRefreshInterval);
+    
     autoRefreshInterval = setInterval(async () => {
-        if (currentPage === 'store') {
-            await loadGifts(true); // silent refresh
-        } else if (currentPage === 'profile' && telegramUser) {
-            await showProfilePage(true); // silent refresh
+        // Cek apakah sedang ada popup/panel terbuka
+        const isAnyPopupOpen = 
+            elements.bottomSheetOverlay?.classList.contains('active') ||
+            elements.filterPopupOverlay?.classList.contains('active') ||
+            elements.activeFiltersPopupOverlay?.classList.contains('active');
+        
+        // Jangan refresh jika ada popup terbuka atau sedang merefresh
+        if (isAnyPopupOpen || isRefreshing) return;
+        
+        isRefreshing = true;
+        
+        try {
+            if (currentPage === 'store') {
+                await refreshGiftsSilently();
+            } else if (currentPage === 'profile' && telegramUser) {
+                await refreshProfileSilently();
+            }
+        } catch (error) {
+            console.error('Auto refresh error:', error);
+        } finally {
+            isRefreshing = false;
         }
     }, 5000);
+}
+
+async function refreshGiftsSilently() {
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
+
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+        const newGifts = await response.json();
+        if (!Array.isArray(newGifts)) return;
+
+        // Simpan state lama untuk perbandingan
+        const oldGifts = gifts;
+        
+        // Update gifts
+        gifts = newGifts;
+        
+        // Update filter options
+        const giftSet = new Set();
+        const modelSet = new Set();
+        const symbolSet = new Set();
+        const bgSet = new Set();
+
+        gifts.forEach(gift => {
+            const giftName = gift.nama || (gift.name ? gift.name.split('#')[0].trim() : gift.slug.split('-')[0]);
+            giftSet.add(giftName);
+            modelSet.add(gift.model);
+            symbolSet.add(gift.symbol);
+            bgSet.add(gift.bg);
+        });
+
+        filterOptions.gifts = Array.from(giftSet).sort();
+        filterOptions.models = Array.from(modelSet).sort();
+        filterOptions.symbols = Array.from(symbolSet).sort();
+        filterOptions.bgs = Array.from(bgSet).sort();
+
+        // Re-filter dengan filter yang sama
+        const newFilteredGifts = filterGiftsWithCurrentFilters();
+        
+        // Hanya render ulang jika ada perubahan harga
+        const hasPriceChanged = hasPricesChanged(filteredGifts, newFilteredGifts);
+        
+        if (hasPriceChanged) {
+            filteredGifts = newFilteredGifts;
+            renderGifts();
+            renderActiveFilters();
+        } else {
+            filteredGifts = newFilteredGifts;
+        }
+
+        console.log('✅ Silent refresh completed');
+    } catch (error) {
+        console.error('Silent refresh error:', error);
+    }
+}
+
+async function refreshProfileSilently() {
+    if (!telegramUser) return;
+    
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const response = await fetch(`${API_BASE_URL}/api/users/${telegramUser.id}`);
+
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+        const data = await response.json();
+        if (!data.success) return;
+
+        const newUserGifts = data.user.added_gifts || [];
+        const newListedGifts = newUserGifts.filter(gift => gift.is_listed === 1);
+        
+        // Cek apakah ada perubahan harga
+        const oldListedGifts = userGifts.filter(g => g.is_listed === 1);
+        const hasPriceChanged = hasPricesChanged(oldListedGifts, newListedGifts);
+        
+        if (hasPriceChanged) {
+            userGifts = newUserGifts;
+            renderProfilePage(newListedGifts);
+        } else {
+            userGifts = newUserGifts;
+        }
+
+        console.log('✅ Profile silent refresh completed');
+    } catch (error) {
+        console.error('Profile silent refresh error:', error);
+    }
+}
+
+function hasPricesChanged(oldGifts, newGifts) {
+    if (oldGifts.length !== newGifts.length) return true;
+    
+    for (let i = 0; i < oldGifts.length; i++) {
+        if (oldGifts[i].price !== newGifts[i].price) return true;
+    }
+    return false;
+}
+
+function filterGiftsWithCurrentFilters() {
+    return gifts.filter(gift => {
+        const giftName = gift.nama || gift.name.split('#')[0].trim();
+
+        if (activeFilters.id && !gift.id.includes(activeFilters.id)) return false;
+        if (activeFilters.gift.length > 0 && !activeFilters.gift.includes(giftName)) return false;
+        if (activeFilters.model.length > 0 && !activeFilters.model.includes(gift.model)) return false;
+        if (activeFilters.symbol.length > 0 && !activeFilters.symbol.includes(gift.symbol)) return false;
+        if (activeFilters.bg.length > 0 && !activeFilters.bg.includes(gift.bg)) return false;
+
+        return true;
+    });
 }
 
 // ===== FUNGSI TELEGRAM =====
@@ -340,6 +467,9 @@ function setupNavigationListeners() {
 }
 
 function switchPage(page) {
+    // Tutup semua popup terlebih dahulu
+    closeAllPopups();
+    
     currentPage = page;
     
     [navStore, navStats, navProfile].forEach(btn => {
@@ -661,12 +791,14 @@ window.editPrice = async function(slug) {
         if (data.success) {
             showToast('Price updated successfully! ✅');
 
-            // Refresh data setelah update
-            if (currentPage === 'profile') {
-                setTimeout(() => showProfilePage(), 1500);
-            } else {
-                setTimeout(() => loadGifts(), 1500);
-            }
+            // Refresh data setelah update (silent refresh)
+            setTimeout(async () => {
+                if (currentPage === 'profile') {
+                    await refreshProfileSilently();
+                } else {
+                    await refreshGiftsSilently();
+                }
+            }, 1000);
         } else {
             showToast(`Error: ${data.error || 'Failed to update price'}`);
         }
@@ -1782,7 +1914,6 @@ function filterAndSortGifts() {
     }
 
     renderGifts();
-    updateStats();
     renderActiveFilters();
 }
 
@@ -1968,18 +2099,7 @@ window.closeBottomSheet = function() {
     }, 300);
 };
 
-function updateStats() {
-    const currentGifts = filteredGifts.length > 0 ? filteredGifts : gifts;
-    elements.totalItems.textContent = currentGifts.length;
-    
-    if (currentGifts.length > 0) {
-        const floor = Math.min(...currentGifts.map(g => g.price));
-        elements.floorPrice.textContent = `${formatPriceRupiah(floor)}`;
-    } else {
-        elements.floorPrice.textContent = '0';
-    }
-}
-
+// ===== FUNGSI FORMAT HARGA =====
 function formatPriceRupiah(price) {
     return 'Rp' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
