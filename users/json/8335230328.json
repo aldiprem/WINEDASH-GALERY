@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 8335230328,
-    "fullname": "",
-    "username": null,
-    "joined_at": null,
-    "first_start": "24.12.2025 01:07:07",
-    "last_start": "24.12.2025 01:14:03",
-    "last_nego": 0,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 0,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": null,
-    "last_update": 1771015304
-  },
-  "balance": 0,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 100,
-      "user_id": 8335230328,
-      "transaction_id": "ad6c1bc3-1f73-4c01-9857-60c048d7e4cd",
-      "amount": 86700,
-      "status": "paid",
-      "created_at": 1766513583,
-      "expired_at": 1766513883,
-      "paid_at": 1766513626,
-      "last_check": 1766513626,
-      "message_id": 33388,
-      "chat_id": 8335230328,
-      "topic_msg_id": 175
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 0
 }
