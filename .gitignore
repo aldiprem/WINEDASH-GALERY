@@ -1,24 +1,86 @@
-# database
+# ============= DATABASE =============
 *.db
 *.db-shm
 *.db-wal
-
-# telegram sessions
-*.session*
-*.journal
-
-# python
-__pycache__/
-*.pyc
-
-# backup only
+*.db-journal
 backup_*.db
 
+# ============= TELEGRAM SESSIONS =============
+*.session
+*.session-journal
+bot.session
+bot.session-journal
+*.session-*
+
+# ============= PYTHON =============
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# ============= VIRTUAL ENVIRONMENT =============
+myenv/
+venv/
+env/
+.env
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# ============= IDE & EDITOR =============
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============= PROJECT SPECIFIC =============
+# Gambar dan file media
 *.tgs
 photo_*.jpg
-__pycache__/
-*.log
-.env
+*.jpg
+*.jpeg
+*.png
+*.gif
 
-# backend source
-b.py
+# Backup files
+*.bak
+
+# ============= FRONTEND BUILD =============
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ============= LOG FILES =============
+*.log
+logs/
+*.log.*
+
+# ============= ENVIRONMENT VARIABLES =============
+.env
+.env.local
+.env.production
+.env.development
+
+# ============= BACKEND SOURCE =============
+# JANGAN commit file utama bot (opsional)
+# b.py
+# p.py
+# bot.py
+
+# ============= WEBSITE STATIC =============
+# File statis yang dihasilkan (jika ada)
+/export/
+/previews/
+/stringify/
