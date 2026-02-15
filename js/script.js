@@ -136,7 +136,7 @@ async function initializeTelegramApp() {
 // Ganti fungsi fetchUserBalance yang lama
 async function fetchUserBalance(userId) {
   try {
-    const API_BASE_URL = 'https://eddie-lodging-vocal-gary.trycloudflare.com'; // GANTI dengan URL tunnel Anda
+    const API_BASE_URL = 'https://highlighted-cam-operators-enterprises.trycloudflare.com';
 
     console.log('Mengambil balance user:', userId);
 
