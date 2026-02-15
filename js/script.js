@@ -136,7 +136,7 @@ async function initializeTelegramApp() {
 // Ganti fungsi fetchUserBalance yang lama
 async function fetchUserBalance(userId) {
   try {
-    const API_BASE_URL = 'https://highlighted-cam-operators-enterprises.trycloudflare.com';
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
 
     console.log('Mengambil balance user:', userId);
 
@@ -287,7 +287,7 @@ async function loadGifts() {
 
     // Gunakan API via tunnel
     // ✅ BENAR
-    const API_BASE_URL = 'https://highlighted-cam-operators-enterprises.trycloudflare.com';
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
     const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
 
     if (!response.ok) {
