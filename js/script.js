@@ -1622,6 +1622,101 @@ window.removeBgFilter = function(bg) {
     }
 };
 
+// Update fungsi editPrice
+window.editPrice = async function(slug) {
+  closeBottomSheet();
+
+  // Tampilkan prompt untuk input harga baru
+  const newPrice = prompt("Enter new price (in Rupiah):", "");
+
+  if (!newPrice) return; // User cancel
+
+  // Validasi input
+  const priceNumber = parseInt(newPrice.replace(/[^0-9]/g, ''));
+  if (isNaN(priceNumber) || priceNumber <= 0) {
+    showToast('Invalid price!');
+    return;
+  }
+
+  showToast('Updating price...', 0); // Toast dengan durasi 0 (tidak auto-hide)
+
+  try {
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+
+    const response = await fetch(`${API_BASE_URL}/api/gift/edit-price`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        slug: slug,
+        price: priceNumber,
+        user_id: telegramUser ? telegramUser.id : null
+      })
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      showToast('Price updated successfully! ✅');
+
+      // Refresh halaman profil untuk menampilkan harga baru
+      if (currentPage === 'profile') {
+        setTimeout(() => showProfilePage(), 1500);
+      }
+    } else {
+      showToast(`Error: ${data.error || 'Failed to update price'}`);
+    }
+
+  } catch (error) {
+    console.error('Error updating price:', error);
+    showToast('Failed to update price. Check console for details.');
+  }
+};
+
+// Update fungsi unlistGift
+window.unlistGift = async function(slug) {
+  closeBottomSheet();
+
+  if (!confirm('Are you sure you want to unlist this gift?')) {
+    return;
+  }
+
+  showToast('Unlisting gift...', 0);
+
+  try {
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+
+    const response = await fetch(`${API_BASE_URL}/api/gift/unlist`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        slug: slug,
+        user_id: telegramUser ? telegramUser.id : null
+      })
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      showToast('Gift unlisted successfully! ✅');
+
+      // Refresh halaman profil
+      if (currentPage === 'profile') {
+        setTimeout(() => showProfilePage(), 1500);
+      }
+    } else {
+      showToast(`Error: ${data.error || 'Failed to unlist gift'}`);
+    }
+
+  } catch (error) {
+    console.error('Error unlisting gift:', error);
+    showToast('Failed to unlist gift. Check console for details.');
+  }
+};
+
 window.resetSortFilter = function() {
     activeFilters.sort = 'price-asc';
     elements.sortValue.textContent = 'Low to High';
