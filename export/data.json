@@ -2050,5 +2050,18 @@
         "posting": "https://t.me/market_wine/57/None",
         "slug_id": "",
         "nama": "LolPop"
+    },
+    {
+        "id": "4579",
+        "name": "VintageCigar #4579",
+        "slug": "VintageCigar-4579",
+        "model": "Aquaviolet (3%)",
+        "symbol": "Boat (0.2%)",
+        "bg": "Cyberpunk (1.5%)",
+        "price": 0,
+        "saldo": 0,
+        "posting": "https://t.me/market_wine/57/None",
+        "slug_id": "",
+        "nama": "VintageCigar"
     }
 ]
