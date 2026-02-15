@@ -1,3 +1,15 @@
+// ===== FUNGSI UTILITY =====
+function formatGiftName(name) {
+    // Format nama gift: JellyBunny -> Jelly Bunny, PlushPepe -> Plush Pepe
+    return name.replace(/([A-Z])/g, ' $1').trim();
+}
+
+function extractIdFromSlug(slug) {
+    // Extract ID dari slug: JellyBunny-1234 -> 1234
+    const parts = slug.split('-');
+    return parts.length > 1 ? parts[1] : '';
+}
+
 // Global state
 let gifts = [];
 let filteredGifts = [];
@@ -175,20 +187,36 @@ function formatRupiah(amount) {
 async function fetchTelegramUserPhoto(userId) {
     try {
         if (telegramUser) {
-            const name = telegramUser.first_name || 'User';
-            const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=8774E1&color=fff&size=128&bold=true&length=1`;
-            
-            const img = document.createElement('img');
-            img.src = avatarUrl;
-            img.alt = 'Profile';
-            img.className = 'avatar-image';
-            img.onload = () => {
-                const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
-                if (initialSpan) {
-                    initialSpan.style.display = 'none';
-                }
-                elements.userAvatar.appendChild(img);
-            };
+            // Gunakan foto profil asli dari Telegram jika tersedia
+            if (tg && tg.initDataUnsafe && tg.initDataUnsafe.user && tg.initDataUnsafe.user.photo_url) {
+                const img = document.createElement('img');
+                img.src = tg.initDataUnsafe.user.photo_url;
+                img.alt = 'Profile';
+                img.className = 'avatar-image';
+                img.onload = () => {
+                    const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
+                    if (initialSpan) {
+                        initialSpan.style.display = 'none';
+                    }
+                    elements.userAvatar.appendChild(img);
+                };
+            } else {
+                // Fallback ke UI Avatars
+                const name = telegramUser.first_name || 'User';
+                const avatarUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=8774E1&color=fff&size=128&bold=true&length=1`;
+                
+                const img = document.createElement('img');
+                img.src = avatarUrl;
+                img.alt = 'Profile';
+                img.className = 'avatar-image';
+                img.onload = () => {
+                    const initialSpan = elements.userAvatar.querySelector('.avatar-initial');
+                    if (initialSpan) {
+                        initialSpan.style.display = 'none';
+                    }
+                    elements.userAvatar.appendChild(img);
+                };
+            }
         }
     } catch (error) {
         console.error('Error fetching user photo:', error);
@@ -412,10 +440,20 @@ async function showProfilePage() {
         userProfileData = data.user.profile || {};
         userGifts = data.user.added_gifts || [];
         
-        const listedGifts = userGifts.filter(gift => gift.is_listed === 1);
+        // Hitung total sold gifts (gifts dengan is_sold = 1)
+        const soldGiftsCount = userGifts.filter(gift => gift.is_sold === 1).length;
+        
+        // Tampilkan semua gifts, baik listed maupun unlisted
+        // Tapi untuk yang unlisted, price akan ditampilkan 0
+        const allGifts = userGifts.map(gift => {
+            if (gift.is_listed === 0) {
+                return { ...gift, price: 0 };
+            }
+            return gift;
+        });
         
         elements.loadingState.style.display = 'none';
-        renderProfilePage(listedGifts);
+        renderProfilePage(allGifts, soldGiftsCount);
         
     } catch (error) {
         console.error('Error loading user gifts:', error);
@@ -434,7 +472,7 @@ async function showProfilePage() {
     }
 }
 
-function renderProfilePage(gifts) {
+function renderProfilePage(gifts, soldGiftsCount = 0) {
     const firstName = telegramUser.first_name || '';
     const lastName = telegramUser.last_name || '';
     const fullName = `${firstName} ${lastName}`.trim() || 'User';
@@ -450,7 +488,11 @@ function renderProfilePage(gifts) {
                 <h3 class="profile-name">${fullName}</h3>
                 <p class="profile-username">${username}</p>
                 <p class="profile-status ${telegramUser.is_premium ? 'premium' : ''}">${isPremium}</p>
-                <p class="profile-stats">Listed Gifts: ${gifts.length}</p>
+                <div class="profile-stats-container" style="display: flex; gap: 16px;">
+                    <p class="profile-stats">Listed: ${gifts.filter(g => g.is_listed === 1).length}</p>
+                    <p class="profile-stats">Unlisted: ${gifts.filter(g => g.is_listed === 0).length}</p>
+                    <p class="profile-stats">Sold: ${soldGiftsCount}</p>
+                </div>
             </div>
         </div>
     `;
@@ -462,8 +504,8 @@ function renderProfilePage(gifts) {
                     <rect x="3" y="4" width="18" height="16" rx="2" stroke-width="1.5"/>
                     <path d="M8 10H16M8 14H12" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
-                <h3>No listed gifts</h3>
-                <p style="margin-top: 8px;">You haven't listed any gifts yet</p>
+                <h3>No gifts found</h3>
+                <p style="margin-top: 8px;">You don't have any gifts yet</p>
             </div>
         `;
         return;
@@ -471,6 +513,8 @@ function renderProfilePage(gifts) {
     
     const giftsHtml = gifts.map(gift => {
         const cleanName = gift.nama || gift.slug.split('-')[0];
+        const formattedName = formatGiftName(cleanName);
+        const giftId = extractIdFromSlug(gift.slug);
         
         // Format model, symbol, background dengan rarity
         const modelDisplay = gift.model && gift.model_rarity 
@@ -488,9 +532,11 @@ function renderProfilePage(gifts) {
         return `
         <div class="gift-card profile-gift-card" onclick="openUserGiftSheet(${JSON.stringify({
             ...gift,
+            formattedName,
             modelDisplay,
             symbolDisplay,
-            bgDisplay
+            bgDisplay,
+            giftId
         }).replace(/"/g, '&quot;')})">
             <div class="card-image-wrapper">
                 <img class="fallback-image" src="https://nft.fragment.com/gift/${gift.slug}.medium.jpg" 
@@ -508,12 +554,12 @@ function renderProfilePage(gifts) {
             </div>
             <div class="card-content">
                 <div class="card-name-container">
-                    <span class="card-slug">${cleanName}</span>
-                    <span class="card-id">${gift.id}</span>
+                    <span class="card-slug">${formattedName}</span>
+                    <span class="card-id">${giftId}</span>
                 </div>
                 <div class="card-price">
                     <span class="price-label">Price</span>
-                    <span class="price-value">💰 ${formatPrice(gift.price)}</span>
+                    <span class="price-value">💰 ${gift.is_listed === 1 ? formatPrice(gift.price) : 'UNLISTED'}</span>
                 </div>
             </div>
         </div>
@@ -561,8 +607,9 @@ window.toggleListingStatus = async function(slug) {
 
 // ===== FUNGSI OPEN BOTTOM SHEET UNTUK GIFT USER =====
 window.openUserGiftSheet = function(gift) {
-    const cleanName = gift.nama || gift.slug.split('-')[0];
-    const formattedPrice = formatPriceRupiah(gift.price);
+    const cleanName = gift.formattedName || formatGiftName(gift.nama || gift.slug.split('-')[0]);
+    const formattedPrice = gift.is_listed === 1 ? formatPriceRupiah(gift.price) : 'UNLISTED';
+    const giftId = gift.giftId || extractIdFromSlug(gift.slug);
     
     // Gunakan display yang sudah diformat atau format langsung
     const modelValue = gift.modelDisplay || (gift.model && gift.model_rarity 
@@ -582,6 +629,17 @@ window.openUserGiftSheet = function(gift) {
     // Tentukan teks tombol berdasarkan status is_listed
     const buttonText = gift.is_listed === 1 ? 'UNLISTED' : 'LISTED';
     
+    // Ambil posting link dari gift
+    const postedLink = gift.posting || 'https://t.me/market_wine/57/None';
+    
+    // Price row hanya ditampilkan jika listed
+    const priceRow = gift.is_listed === 1 ? `
+        <div class="sheet-price-row">
+            <span class="sheet-price-label">Price</span>
+            <span class="sheet-price-value">💰 ${formattedPrice}</span>
+        </div>
+    ` : '';
+    
     const content = `
         <div class="sheet-item-detail">
             <div class="sheet-lottie-wrapper">
@@ -600,7 +658,7 @@ window.openUserGiftSheet = function(gift) {
             <div class="sheet-info">
                 <div class="sheet-name-container">
                     <span class="sheet-name">${cleanName}</span>
-                    <span class="sheet-id">${gift.id}</span>
+                    <span class="sheet-id">${giftId}</span>
                 </div>
                 
                 <div class="sheet-data-container">
@@ -618,14 +676,17 @@ window.openUserGiftSheet = function(gift) {
                     </div>
                 </div>
                 
-                <div class="sheet-price-row">
-                    <span class="sheet-price-label">Price</span>
-                    <span class="sheet-price-value">💰 ${formattedPrice}</span>
-                </div>
+                ${priceRow}
             </div>
         </div>
-        <div class="sheet-actions" style="grid-template-columns: 1fr 1fr;">
+        <div class="sheet-actions" style="grid-template-columns: 1fr 1fr 1fr;">
             <button class="btn btn-nego" onclick="toggleListingStatus('${gift.slug}')">${buttonText}</button>
+            <a href="${postedLink}" class="btn btn-gift-share" target="_blank" title="View Post" style="width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(135, 116, 225, 0.15); border: 1px solid rgba(135, 116, 225, 0.3); color: var(--tg-primary-light);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M4 4v16h16V4H4z" stroke-width="1.5"/>
+                    <path d="M8 8h8M8 12h6M8 16h4" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </a>
             <button class="btn btn-buy" onclick="editPrice('${gift.slug}')">EDIT PRICE</button>
         </div>
         <div class="sheet-share">
@@ -1833,9 +1894,15 @@ function renderGifts() {
     
     elements.cardsGrid.innerHTML = giftsToRender.map(gift => {
         const cleanName = gift.nama || gift.name.split('#')[0].trim();
+        const formattedName = formatGiftName(cleanName);
+        const giftId = extractIdFromSlug(gift.slug);
         
         return `
-        <div class="gift-card" onclick="openBottomSheet(${JSON.stringify(gift).replace(/"/g, '&quot;')})">
+        <div class="gift-card" onclick="openBottomSheet(${JSON.stringify({
+            ...gift,
+            formattedName,
+            giftId
+        }).replace(/"/g, '&quot;')})">
             <div class="card-image-wrapper">
                 <img class="fallback-image" src="https://nft.fragment.com/gift/${gift.slug}.medium.jpg" alt="${gift.name}" style="display: block; width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.src='https://via.placeholder.com/400?text=NFT+Gift'">
                 <div class="lottie-container" data-slug="${gift.slug}">
@@ -1849,8 +1916,8 @@ function renderGifts() {
             </div>
             <div class="card-content">
                 <div class="card-name-container">
-                    <span class="card-slug">${cleanName}</span>
-                    <span class="card-id">${gift.id}</span>
+                    <span class="card-slug">${formattedName}</span>
+                    <span class="card-id">${giftId}</span>
                 </div>
                 <div class="card-price">
                     <span class="price-label">Price</span>
@@ -1872,8 +1939,9 @@ function renderGifts() {
 
 // ===== FUNGSI OPEN BOTTOM SHEET (UNTUK STORE) =====
 window.openBottomSheet = function(gift) {
-    const cleanName = gift.nama || gift.name.split('#')[0].trim();
+    const cleanName = gift.formattedName || formatGiftName(gift.nama || gift.name.split('#')[0].trim());
     const formattedPrice = formatPriceRupiah(gift.price);
+    const giftId = gift.giftId || extractIdFromSlug(gift.slug);
     
     const modelValue = gift.model || '-';
     const symbolValue = gift.symbol || '-';
@@ -1882,7 +1950,7 @@ window.openBottomSheet = function(gift) {
     const postedText = gift.posting || 'Unknown';
     const postedLink = postedText.startsWith('@') 
         ? `https://t.me/${postedText.substring(1)}` 
-        : `https://t.me/${postedText}`;
+        : postedText;
     
     const slugId = gift.slug_id || generateSlugId(gift);
     
@@ -1904,7 +1972,7 @@ window.openBottomSheet = function(gift) {
             <div class="sheet-info">
                 <div class="sheet-name-container">
                     <span class="sheet-name">${cleanName}</span>
-                    <span class="sheet-id">${gift.id}</span>
+                    <span class="sheet-id">${giftId}</span>
                 </div>
                 
                 <div class="sheet-data-container">
@@ -1989,12 +2057,14 @@ window.closeBottomSheet = function() {
 
 function updateStats() {
     const currentGifts = filteredGifts.length > 0 ? filteredGifts : gifts;
-    elements.totalItems.textContent = currentGifts.length;
+    if (elements.totalItems) {
+        elements.totalItems.textContent = currentGifts.length;
+    }
     
-    if (currentGifts.length > 0) {
+    if (currentGifts.length > 0 && elements.floorPrice) {
         const floor = Math.min(...currentGifts.map(g => g.price));
         elements.floorPrice.textContent = `${formatPriceRupiah(floor)}`;
-    } else {
+    } else if (elements.floorPrice) {
         elements.floorPrice.textContent = '0';
     }
 }
