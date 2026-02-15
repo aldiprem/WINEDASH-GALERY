@@ -286,7 +286,8 @@ async function loadGifts() {
     elements.loadingState.style.display = 'flex';
 
     // Gunakan API via tunnel
-    const API_BASE_URL = 'https://highlighted-cam-operators-enterprises.trycloudflare.com/api/gifts';
+    // ✅ BENAR
+    const API_BASE_URL = 'https://highlighted-cam-operators-enterprises.trycloudflare.com';
     const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
 
     if (!response.ok) {
