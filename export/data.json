@@ -2037,5 +2037,18 @@
         "posting": "https://t.me/market_wine/57/None",
         "slug_id": "",
         "nama": "MousseCake"
+    },
+    {
+        "id": "147936",
+        "name": "LolPop #147936",
+        "slug": "LolPop-147936",
+        "model": "Lagoon (1%)",
+        "symbol": "Fish (0.5%)",
+        "bg": "Moonstone (2%)",
+        "price": 0,
+        "saldo": 0,
+        "posting": "https://t.me/market_wine/57/None",
+        "slug_id": "",
+        "nama": "LolPop"
     }
 ]
