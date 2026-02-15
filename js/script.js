@@ -398,14 +398,14 @@ function showStatsPage() {
 }
 
 async function showProfilePage() {
-    const filterSection = document.querySelector('.filter-section');
-    if (filterSection) filterSection.style.display = 'none';
-    
-    const marketplaceHeader = document.querySelector('.marketplace-header');
-    if (marketplaceHeader) marketplaceHeader.style.display = 'none';
-    
-    if (!telegramUser) {
-        elements.cardsGrid.innerHTML = `
+  const filterSection = document.querySelector('.filter-section');
+  if (filterSection) filterSection.style.display = 'none';
+
+  const marketplaceHeader = document.querySelector('.marketplace-header');
+  if (marketplaceHeader) marketplaceHeader.style.display = 'none';
+
+  if (!telegramUser) {
+    elements.cardsGrid.innerHTML = `
             <div class="empty-state" style="grid-column: 1 / -1;">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
                     <circle cx="12" cy="8" r="4" stroke-width="1.5"/>
@@ -415,50 +415,84 @@ async function showProfilePage() {
                 <p>Open this app from Telegram</p>
             </div>
         `;
-        return;
+    return;
+  }
+
+  elements.loadingState.style.display = 'flex';
+
+  try {
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+    console.log(`Fetching user data from: ${API_BASE_URL}/api/users/${telegramUser.id}`);
+
+    // Fetch data user gifts
+    const userResponse = await fetch(`${API_BASE_URL}/api/users/${telegramUser.id}`);
+
+    if (!userResponse.ok) {
+      throw new Error(`HTTP error! status: ${userResponse.status}`);
     }
-    
-    elements.loadingState.style.display = 'flex';
-    
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-        console.log(`Fetching user data from: ${API_BASE_URL}/api/users/${telegramUser.id}`);
-        
-        const response = await fetch(`${API_BASE_URL}/api/users/${telegramUser.id}`);
-        
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        console.log('User data received:', data);
-        
-        if (!data.success) {
-            throw new Error(data.error || 'Unknown error');
-        }
-        
-        userProfileData = data.user.profile || {};
-        userGifts = data.user.added_gifts || [];
-        
-        // Hitung total sold gifts (gifts dengan is_sold = 1)
-        const soldGiftsCount = userGifts.filter(gift => gift.is_sold === 1).length;
-        
-        // Tampilkan semua gifts, baik listed maupun unlisted
-        // Tapi untuk yang unlisted, price akan ditampilkan 0
-        const allGifts = userGifts.map(gift => {
-            if (gift.is_listed === 0) {
-                return { ...gift, price: 0 };
-            }
-            return gift;
-        });
-        
-        elements.loadingState.style.display = 'none';
-        renderProfilePage(allGifts, soldGiftsCount);
-        
-    } catch (error) {
-        console.error('Error loading user gifts:', error);
-        elements.loadingState.style.display = 'none';
-        elements.cardsGrid.innerHTML = `
+
+    const userData = await userResponse.json();
+    console.log('User data received:', userData);
+
+    if (!userData.success) {
+      throw new Error(userData.error || 'Unknown error');
+    }
+
+    userProfileData = userData.user.profile || {};
+    userGifts = userData.user.added_gifts || [];
+
+    // Fetch all gifts from marketplace untuk mendapatkan field posting
+    console.log('Fetching all gifts from marketplace...');
+    const giftsResponse = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
+
+    if (!giftsResponse.ok) {
+      throw new Error(`HTTP error! status: ${giftsResponse.status}`);
+    }
+
+    const allMarketGifts = await giftsResponse.json();
+    console.log(`✅ ${allMarketGifts.length} gift dari marketplace dimuat`);
+
+    // Buat map untuk mencari posting berdasarkan slug
+    const postingMap = {};
+    allMarketGifts.forEach(gift => {
+      if (gift.slug && gift.posting) {
+        postingMap[gift.slug] = gift.posting;
+      }
+    });
+
+    // Hitung total sold gifts (gifts dengan is_sold = 1)
+    const soldGiftsCount = userGifts.filter(gift => gift.is_sold === 1).length;
+
+    // Gabungkan data userGifts dengan posting dari marketplace
+    // Tampilkan semua gifts, baik listed maupun unlisted
+    const allGifts = userGifts.map(gift => {
+      // Untuk yang unlisted, price akan ditampilkan 0
+      if (gift.is_listed === 0) {
+        return {
+          ...gift,
+          price: 0,
+          // Gunakan posting dari marketplace jika ada, fallback ke posting asli atau default
+          posting: gift.posting || postingMap[gift.slug] || 'https://t.me/market_wine/57/None'
+        };
+      }
+      return {
+        ...gift,
+        // Gunakan posting dari marketplace jika ada, fallback ke posting asli
+        posting: gift.posting || postingMap[gift.slug] || 'https://t.me/market_wine/57/None'
+      };
+    });
+
+    // Log untuk debug (opsional, bisa dihapus nanti)
+    console.log('Sample gift with posting:', allGifts[0]);
+    console.log('Posting map sample:', postingMap);
+
+    elements.loadingState.style.display = 'none';
+    renderProfilePage(allGifts, soldGiftsCount);
+
+  } catch (error) {
+    console.error('Error loading user gifts:', error);
+    elements.loadingState.style.display = 'none';
+    elements.cardsGrid.innerHTML = `
             <div class="empty-state" style="grid-column: 1 / -1;">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
                     <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
@@ -469,7 +503,7 @@ async function showProfilePage() {
                 <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
             </div>
         `;
-    }
+  }
 }
 
 function renderProfilePage(gifts, soldGiftsCount = 0) {
@@ -479,10 +513,14 @@ function renderProfilePage(gifts, soldGiftsCount = 0) {
     const username = telegramUser.username ? `@${telegramUser.username}` : '-';
     const isPremium = telegramUser.is_premium ? '⭐ Premium' : 'Free';
     
+    // Ambil foto profil yang sudah ada di elements.userAvatar
+    // Clone elemen avatar yang sudah ada (dari page store)
+    const avatarElement = elements.userAvatar.cloneNode(true);
+    
     const profileHeader = `
         <div class="profile-header glass-panel">
-            <div class="profile-avatar">
-                <img src="https://ui-avatars.com/api/?name=${encodeURIComponent(firstName)}&background=8774E1&color=fff&size=128&bold=true&length=1" alt="Profile">
+            <div class="profile-avatar" id="profilePageAvatar">
+                ${avatarElement.innerHTML}
             </div>
             <div class="profile-info">
                 <h3 class="profile-name">${fullName}</h3>
