@@ -31,6 +31,10 @@ let tg = null;
 let telegramUser = null;
 let userBalance = 0; // Menyimpan saldo user
 
+// ===== BOTTOM NAVIGATION =====
+let currentPage = 'store'; // store, stats, profile
+let userGifts = []; // Untuk menyimpan gift user
+
 // DOM Elements
 const elements = {
     cardsGrid: document.getElementById('cardsGrid'),
@@ -81,6 +85,11 @@ const elements = {
     sheetHandle: document.querySelector('.sheet-handle')
 };
 
+// Bottom navigation elements
+const navStore = document.getElementById('navStore');
+const navStats = document.getElementById('navStats');
+const navProfile = document.getElementById('navProfile');
+
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
     // Initialize Telegram Web App dan ambil data user
@@ -88,6 +97,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     await loadGifts();
     setupEventListeners();
+    setupNavigationListeners();
     updateFilterCounts();
     renderGifts();
     setupScrollToTop();
@@ -280,6 +290,7 @@ function closeAllPopups() {
     closeActiveFiltersPopup();
 }
 
+// ===== FUNGSI LOAD GIFTS =====
 async function loadGifts() {
   try {
     elements.loadingState.style.display = 'flex';
@@ -292,14 +303,14 @@ async function loadGifts() {
     }
 
     // ✅ LANGSUNG ambil array dari response
-    gifts = await response.json(); // <-- LANGSUNG ARRAY
+    gifts = await response.json();
 
     // ✅ CEK apakah gifts adalah array dan tidak kosong
     if (!Array.isArray(gifts)) {
       throw new Error('Data yang diterima bukan array');
     }
 
-    console.log(`✅ ${gifts.length} gift berhasil dimuat`); // Debug
+    console.log(`✅ ${gifts.length} gift berhasil dimuat`);
 
     // Filter options (sama seperti sebelumnya)
     const giftSet = new Set();
@@ -330,6 +341,256 @@ async function loadGifts() {
     showError();
   }
 }
+
+// ===== FUNGSI NAVIGASI =====
+function setupNavigationListeners() {
+    if (navStore) navStore.addEventListener('click', () => switchPage('store'));
+    if (navStats) navStats.addEventListener('click', () => switchPage('stats'));
+    if (navProfile) navProfile.addEventListener('click', () => switchPage('profile'));
+}
+
+function switchPage(page) {
+    currentPage = page;
+    
+    // Update active class
+    [navStore, navStats, navProfile].forEach(btn => {
+        if (btn) btn.classList.remove('active');
+    });
+    
+    if (page === 'store' && navStore) navStore.classList.add('active');
+    else if (page === 'stats' && navStats) navStats.classList.add('active');
+    else if (page === 'profile' && navProfile) navProfile.classList.add('active');
+    
+    // Update konten
+    if (page === 'store') {
+        showStorePage();
+    } else if (page === 'stats') {
+        showStatsPage();
+    } else if (page === 'profile') {
+        showProfilePage();
+    }
+}
+
+function showStorePage() {
+    // Tampilkan filter section
+    const filterSection = document.querySelector('.filter-section');
+    if (filterSection) filterSection.style.display = 'block';
+    
+    // Tampilkan semua gift
+    filterAndSortGifts();
+}
+
+function showStatsPage() {
+    // Sembunyikan filter section
+    const filterSection = document.querySelector('.filter-section');
+    if (filterSection) filterSection.style.display = 'none';
+    
+    // Tampilkan halaman stats
+    elements.cardsGrid.innerHTML = `
+        <div class="empty-state">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                <path d="M21 12V18C21 19.1046 20.1046 20 19 20H5C3.89543 20 3 19.1046 3 18V6C3 4.89543 3.89543 4 5 4H9" stroke-width="1.5"/>
+                <path d="M15 4H21V10" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 4L12 13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                <circle cx="16" cy="12" r="1" fill="currentColor"/>
+                <circle cx="8" cy="12" r="1" fill="currentColor"/>
+            </svg>
+            <h3>Stats Page</h3>
+            <p style="margin-top: 8px;">Coming soon...</p>
+        </div>
+    `;
+}
+
+async function showProfilePage() {
+    // Sembunyikan filter section
+    const filterSection = document.querySelector('.filter-section');
+    if (filterSection) filterSection.style.display = 'none';
+    
+    if (!telegramUser) {
+        elements.cardsGrid.innerHTML = `
+            <div class="empty-state">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                    <circle cx="12" cy="8" r="4" stroke-width="1.5"/>
+                    <path d="M5 20V19C5 15.1 8.1 12 12 12C15.9 12 19 15.1 19 19V20" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <h3>Please login first</h3>
+                <p style="margin-top: 8px;">Open this app from Telegram</p>
+            </div>
+        `;
+        return;
+    }
+    
+    elements.loadingState.style.display = 'flex';
+    
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const response = await fetch(`${API_BASE_URL}/api/users/${telegramUser.id}`);
+        
+        if (!response.ok) {
+            throw new Error('Failed to fetch user data');
+        }
+        
+        const data = await response.json();
+        
+        if (!data.success) {
+            throw new Error(data.error || 'Unknown error');
+        }
+        
+        // Ambil added_gifts (gifts yang ditambahkan user)
+        userGifts = data.user.added_gifts || [];
+        
+        // Filter hanya yang is_listed = 1
+        const listedGifts = userGifts.filter(gift => gift.is_listed === 1);
+        
+        elements.loadingState.style.display = 'none';
+        
+        if (listedGifts.length === 0) {
+            elements.cardsGrid.innerHTML = `
+                <div class="empty-state">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                        <rect x="3" y="4" width="18" height="16" rx="2" stroke-width="1.5"/>
+                        <path d="M8 10H16M8 14H12" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <h3>No listed gifts</h3>
+                    <p style="margin-top: 8px;">You haven't listed any gifts yet</p>
+                </div>
+            `;
+            return;
+        }
+        
+        // Render gifts user
+        renderUserGifts(listedGifts);
+        
+    } catch (error) {
+        console.error('Error loading user gifts:', error);
+        elements.loadingState.style.display = 'none';
+        elements.cardsGrid.innerHTML = `
+            <div class="empty-state">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                    <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <h3>Failed to load your gifts</h3>
+                <p style="margin-top: 8px;">${error.message}</p>
+                <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
+            </div>
+        `;
+    }
+}
+
+function renderUserGifts(gifts) {
+    elements.cardsGrid.innerHTML = gifts.map(gift => {
+        const cleanName = gift.nama || gift.slug.split('-')[0];
+        
+        return `
+        <div class="gift-card" onclick="openUserGiftSheet(${JSON.stringify(gift).replace(/"/g, '&quot;')})">
+            <div class="card-image-wrapper">
+                <img class="fallback-image" src="https://nft.fragment.com/gift/${gift.slug}.medium.jpg" 
+                     alt="${gift.name}" 
+                     style="display: block; width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" 
+                     onerror="this.src='https://via.placeholder.com/400?text=NFT+Gift'">
+                <div class="lottie-container" data-slug="${gift.slug}">
+                    <div class="lottie-skeleton"></div>
+                </div>
+                <button class="lottie-play-btn" onclick="toggleLottie(this, '${gift.slug}', event)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 5V19L19 12L8 5Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="card-content">
+                <div class="card-name-container">
+                    <span class="card-slug">${cleanName}</span>
+                    <span class="card-id">${gift.id}</span>
+                </div>
+                <div class="card-price">
+                    <span class="price-label">Price</span>
+                    <span class="price-value">💰 ${formatPrice(gift.price)}</span>
+                </div>
+            </div>
+        </div>
+    `}).join('');
+}
+
+// ===== FUNGSI OPEN BOTTOM SHEET UNTUK GIFT USER =====
+window.openUserGiftSheet = function(gift) {
+    const cleanName = gift.nama || gift.slug.split('-')[0];
+    const formattedPrice = formatPriceRupiah(gift.price);
+    
+    // Format model, symbol, bg
+    const modelValue = gift.model || '-';
+    const symbolValue = gift.symbol || '-';
+    const bgValue = gift.bg || '-';
+    
+    const content = `
+        <div class="sheet-item-detail">
+            <div class="sheet-lottie-wrapper">
+                <div class="sheet-lottie-container">
+                    <lottie-player
+                        src="https://nft.fragment.com/gift/${gift.slug}.lottie.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100%; height: 100%;"
+                        loop="false"
+                        count="1"
+                        autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+            <div class="sheet-info">
+                <div class="sheet-name-container">
+                    <span class="sheet-name">${cleanName}</span>
+                    <span class="sheet-id">${gift.id}</span>
+                </div>
+                
+                <div class="sheet-data-container">
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Model</span>
+                        <span class="sheet-data-value">${modelValue}</span>
+                    </div>
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Symbol</span>
+                        <span class="sheet-data-value">${symbolValue}</span>
+                    </div>
+                    <div class="sheet-data-row">
+                        <span class="sheet-data-label">Backdrop</span>
+                        <span class="sheet-data-value">${bgValue}</span>
+                    </div>
+                </div>
+                
+                <div class="sheet-price-row">
+                    <span class="sheet-price-label">Price</span>
+                    <span class="sheet-price-value">💰 ${formattedPrice}</span>
+                </div>
+            </div>
+        </div>
+        <div class="sheet-actions" style="grid-template-columns: 1fr 1fr;">
+            <button class="btn btn-nego" onclick="unlistGift('${gift.slug}')">UNLISTED</button>
+            <button class="btn btn-buy" onclick="editPrice('${gift.slug}')">EDIT PRICE</button>
+        </div>
+    `;
+    
+    elements.sheetContent.innerHTML = content;
+    
+    document.body.classList.add('sheet-open');
+    elements.bottomSheetOverlay.classList.add('active');
+    setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
+    document.dispatchEvent(new Event('popupOpened'));
+};
+
+// Fungsi sementara untuk unlist dan edit price
+window.unlistGift = function(slug) {
+    closeBottomSheet();
+    showToast('Unlist feature coming soon!');
+    // TODO: Implement unlist API
+};
+
+window.editPrice = function(slug) {
+    closeBottomSheet();
+    showToast('Edit price feature coming soon!');
+    // TODO: Implement edit price API
+};
 
 // ===== FUNGSI LOTTIE =====
 function getLottieUrl(slug) {
@@ -901,8 +1162,7 @@ function renderPopupContent(filterType, searchTerm = '') {
 
 // ===== FUNGSI UNTUK MEMFORMAT NAMA GIFT MENJADI NAMA FILE =====
 function formatGiftNameForFile(giftName) {
-  // Jika nama gift sudah sesuai dengan nama file (tanpa spasi)
-  return giftName; // Langsung return tanpa perubahan
+  return giftName;
 }
 
 function renderGiftPopup(searchTerm = '') {
@@ -918,11 +1178,7 @@ function renderGiftPopup(searchTerm = '') {
   elements.filterPopupList.innerHTML = filteredGifts.map(gift => {
     const isChecked = activeFilters.gift.includes(gift);
     const fileName = formatGiftNameForFile(gift);
-    // Gunakan path absolut dari GitHub Pages
-    // Ganti USERNAME dan REPOSITORY dengan milik Anda
     const imageUrl = `https://aldiprem.github.io/WINEDASH-GALERY/images/gifts/${fileName}.png`;
-    // Atau jika pakai GitHub Pages:
-    // const imageUrl = `https://USERNAME.github.io/REPOSITORY/images/gifts/${fileName}.png`;
 
     return `
             <div class="popup-filter-item">
@@ -1412,50 +1668,62 @@ function clearAllFilters() {
 }
 
 function filterAndSortGifts() {
-  // gifts SUDAH array, tidak perlu .gifts lagi
-  filteredGifts = gifts.filter(gift => {
-    const giftName = gift.nama || gift.name.split('#')[0].trim();
+    // Jika di halaman profil, jangan filter gifts
+    if (currentPage !== 'store') return;
+    
+    filteredGifts = gifts.filter(gift => {
+        const giftName = gift.nama || gift.name.split('#')[0].trim();
 
-    if (activeFilters.id && !gift.id.includes(activeFilters.id)) {
-      return false;
+        if (activeFilters.id && !gift.id.includes(activeFilters.id)) {
+            return false;
+        }
+
+        if (activeFilters.gift.length > 0 && !activeFilters.gift.includes(giftName)) {
+            return false;
+        }
+
+        if (activeFilters.model.length > 0 && !activeFilters.model.includes(gift.model)) {
+            return false;
+        }
+
+        if (activeFilters.symbol.length > 0 && !activeFilters.symbol.includes(gift.symbol)) {
+            return false;
+        }
+
+        if (activeFilters.bg.length > 0 && !activeFilters.bg.includes(gift.bg)) {
+            return false;
+        }
+
+        return true;
+    });
+
+    switch (activeFilters.sort) {
+        case 'price-asc':
+            filteredGifts.sort((a, b) => a.price - b.price);
+            break;
+        case 'price-desc':
+            filteredGifts.sort((a, b) => b.price - a.price);
+            break;
+        case 'id-asc':
+            filteredGifts.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+            break;
+        case 'id-desc':
+            filteredGifts.sort((a, b) => parseInt(b.id) - parseInt(a.id));
+            break;
+        case 'latest':
+            filteredGifts.sort((a, b) => parseInt(b.id) - parseInt(a.id));
+            break;
     }
 
-    if (activeFilters.gift.length > 0 && !activeFilters.gift.includes(giftName)) {
-      return false;
-    }
-
-    if (activeFilters.model.length > 0 && !activeFilters.model.includes(gift.model)) {
-      return false;
-    }
-
-    if (activeFilters.symbol.length > 0 && !activeFilters.symbol.includes(gift.symbol)) {
-      return false;
-    }
-
-    if (activeFilters.bg.length > 0 && !activeFilters.bg.includes(gift.bg)) {
-      return false;
-    }
-
-    return true;
-  });
-
-  // Sisa kode sorting sama...
-  switch (activeFilters.sort) {
-    case 'price-asc':
-      filteredGifts.sort((a, b) => a.price - b.price);
-      break;
-    case 'price-desc':
-      filteredGifts.sort((a, b) => b.price - a.price);
-      break;
-      // ... dst
-  }
-
-  renderGifts();
-  updateStats();
-  renderActiveFilters();
+    renderGifts();
+    updateStats();
+    renderActiveFilters();
 }
 
 function renderGifts() {
+    // Jika di halaman profil, jangan render gifts dari sini
+    if (currentPage !== 'store') return;
+    
     const giftsToRender = filteredGifts.length > 0 ? filteredGifts : gifts;
     
     if (giftsToRender.length === 0) {
@@ -1511,27 +1779,21 @@ function renderGifts() {
     }
 }
 
-// ===== FUNGSI OPEN BOTTOM SHEET - FULL WIDTH =====
+// ===== FUNGSI OPEN BOTTOM SHEET =====
 window.openBottomSheet = function(gift) {
     const cleanName = gift.nama || gift.name.split('#')[0].trim();
     const formattedPrice = formatPriceRupiah(gift.price);
     
-    // Format model, symbol, bg dengan nilai default jika tidak ada
     const modelValue = gift.model || '-';
     const symbolValue = gift.symbol || '-';
     const bgValue = gift.bg || '-';
     
-    // Format posted link
     const postedText = gift.posting || 'Unknown';
     const postedLink = postedText.startsWith('@') 
         ? `https://t.me/${postedText.substring(1)}` 
         : `https://t.me/${postedText}`;
     
-    // Generate slug_id dari data gift
     const slugId = gift.slug_id || generateSlugId(gift);
-    
-    // Generate link share untuk gift ini
-    const shareLink = generateGiftShareLink(slugId);
     
     const content = `
         <div class="sheet-item-detail">
@@ -1547,7 +1809,6 @@ window.openBottomSheet = function(gift) {
                         autoplay>
                     </lottie-player>
                 </div>
-                <!-- Tombol Telegram di pojok gambar sudah dihapus -->
             </div>
             <div class="sheet-info">
                 <div class="sheet-name-container">
@@ -1556,26 +1817,20 @@ window.openBottomSheet = function(gift) {
                 </div>
                 
                 <div class="sheet-data-container">
-                    <!-- Model Row -->
                     <div class="sheet-data-row">
                         <span class="sheet-data-label">Model</span>
                         <span class="sheet-data-value">${modelValue}</span>
                     </div>
-                    
-                    <!-- Symbol Row -->
                     <div class="sheet-data-row">
                         <span class="sheet-data-label">Symbol</span>
                         <span class="sheet-data-value">${symbolValue}</span>
                     </div>
-                    
-                    <!-- Backdrop Row -->
                     <div class="sheet-data-row">
                         <span class="sheet-data-label">Backdrop</span>
                         <span class="sheet-data-value">${bgValue}</span>
                     </div>
                 </div>
                 
-                <!-- Price Row -->
                 <div class="sheet-price-row">
                     <span class="sheet-price-label">Price</span>
                     <span class="sheet-price-value">💰 ${formattedPrice}</span>
@@ -1610,9 +1865,7 @@ window.openBottomSheet = function(gift) {
     
     elements.sheetContent.innerHTML = content;
     
-    // Mencegah scroll pada background
     document.body.classList.add('sheet-open');
-    
     elements.bottomSheetOverlay.classList.add('active');
     setTimeout(() => elements.bottomSheet.classList.add('active'), 10);
     document.dispatchEvent(new Event('popupOpened'));
@@ -1638,7 +1891,6 @@ window.closeBottomSheet = function() {
     elements.bottomSheet.classList.remove('active');
     setTimeout(() => {
         elements.bottomSheetOverlay.classList.remove('active');
-        // Kembalikan scroll pada background
         document.body.classList.remove('sheet-open');
         document.dispatchEvent(new Event('popupClosed'));
     }, 300);
@@ -1656,12 +1908,10 @@ function updateStats() {
     }
 }
 
-// Format harga ke Rupiah (tanpa desimal)
 function formatPriceRupiah(price) {
     return 'Rp' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
-// Format harga lama (untuk kompatibilitas)
 function formatPrice(price) {
     return formatPriceRupiah(price);
 }
@@ -1854,8 +2104,6 @@ function copyToClipboard(text) {
 
 // ===== FUNGSI UNTUK GENERATE SLUG ID =====
 function generateSlugId(gift) {
-    // Generate slug_id dari data gift jika tidak ada
-    // Format: 5 karakter - 5 karakter - 5 karakter - 5 karakter
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result = '';
     for (let i = 0; i < 20; i++) {
@@ -1869,7 +2117,6 @@ function generateSlugId(gift) {
 function checkForGiftIdInUrl() {
     let slugId = null;
     
-    // Cek dari pathname untuk endpoint seperti /gift/Q5O0u-eai2b-sMlwg-OFl3V
     const pathParts = window.location.pathname.split('/');
     const giftIndex = pathParts.indexOf('gift');
     if (giftIndex !== -1 && pathParts.length > giftIndex + 1) {
@@ -1877,7 +2124,6 @@ function checkForGiftIdInUrl() {
         console.log('Found gift slug_id in path:', slugId);
     }
     
-    // Cek dari Telegram startapp parameter
     if (tg && tg.initDataUnsafe && tg.initDataUnsafe.startapp) {
         const startapp = tg.initDataUnsafe.startapp;
         if (startapp.startsWith('gifts_')) {
@@ -1886,7 +2132,6 @@ function checkForGiftIdInUrl() {
         }
     }
     
-    // Cek dari URL parameter gift
     if (!slugId) {
         const urlParams = new URLSearchParams(window.location.search);
         slugId = urlParams.get('gift');
@@ -1894,13 +2139,11 @@ function checkForGiftIdInUrl() {
     }
     
     if (slugId) {
-        // Cari gift dengan slug_id yang cocok
         const gift = gifts.find(g => g.slug_id === slugId);
         if (gift) {
-            // Buka bottom sheet untuk gift tersebut
             setTimeout(() => {
                 openBottomSheet(gift);
-            }, 500); // Delay sebentar untuk memastikan DOM sudah siap
+            }, 500);
         } else {
             console.log('Gift with slug_id not found:', slugId);
         }
@@ -1958,3 +2201,6 @@ window.removeSymbolFilter = removeSymbolFilter;
 window.removeBgFilter = removeBgFilter;
 window.resetSortFilter = resetSortFilter;
 window.shareGift = shareGift;
+window.unlistGift = unlistGift;
+window.editPrice = editPrice;
+window.showProfilePage = showProfilePage;
