@@ -1,45 +1,4 @@
 {
-  "profile": {
     "user_id": 8580570223,
-    "fullname": "Jurion Schëltz.",
-    "username": "bAvoidant",
-    "joined_at": null,
-    "first_start": "04.02.2026 18:30:23",
-    "last_start": "04.02.2026 19:22:13",
-    "last_nego": 1770208384,
-    "phone": null,
-    "is_bot": 0,
-    "is_premium": 1,
-    "is_verified": 0,
-    "is_scam": 0,
-    "is_fake": 0,
-    "photo_id": "6084414391831957453",
-    "last_update": 1771015275
-  },
-  "balance": 0,
-  "wicash": 0,
-  "referral": null,
-  "owned_gifts": [],
-  "added_gifts": [],
-  "sold_gifts": [],
-  "rent_gifts": [],
-  "deposits": [
-    {
-      "id": 154,
-      "user_id": 8580570223,
-      "transaction_id": "3f603264-5eac-4e27-b0ee-ba33ff988134",
-      "amount": 150000,
-      "status": "paid",
-      "created_at": 1770168379,
-      "expired_at": 1770168679,
-      "paid_at": 1770168445,
-      "last_check": 1770168445,
-      "message_id": 50833,
-      "chat_id": 8580570223,
-      "topic_msg_id": 334
-    }
-  ],
-  "withdraws": [],
-  "mines_stats": null,
-  "stars_orders": null
+    "balance": 0
 }
