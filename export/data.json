@@ -2024,5 +2024,31 @@
         "saldo": 235000,
         "posting": "https://t.me/market_wine/57/None",
         "nama": "SpringBasket"
+    },
+    {
+        "id": "59774",
+        "name": "LushBouquet #59774",
+        "slug": "LushBouquet-59774",
+        "model": "Skull Flowers (1.5%)",
+        "symbol": "Meat Leg (0.4%)",
+        "bg": "Seal Brown (1.5%)",
+        "price": 0,
+        "saldo": 0,
+        "posting": "https://t.me/market_wine/57/None",
+        "slug_id": "",
+        "nama": "LushBouquet"
+    },
+    {
+        "id": "96957",
+        "name": "MousseCake #96957",
+        "slug": "MousseCake-96957",
+        "model": "Glacier (3%)",
+        "symbol": "Magic Wand (0.6%)",
+        "bg": "Tactical Pine (1%)",
+        "price": 0,
+        "saldo": 0,
+        "posting": "https://t.me/market_wine/57/None",
+        "slug_id": "",
+        "nama": "MousseCake"
     }
 ]
