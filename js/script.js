@@ -10,6 +10,10 @@ function extractIdFromSlug(slug) {
     return parts.length > 1 ? parts[1] : '';
 }
 
+let currentDepositAmount = 0;
+let currentQRData = null;
+let depositCheckInterval = null;
+
 // Global state
 let gifts = [];
 let filteredGifts = [];
@@ -397,6 +401,7 @@ function showStatsPage() {
     `;
 }
 
+// ===== FUNGSI PROFILE PAGE =====
 async function showProfilePage() {
   const filterSection = document.querySelector('.filter-section');
   if (filterSection) filterSection.style.display = 'none';
@@ -406,13 +411,15 @@ async function showProfilePage() {
 
   if (!telegramUser) {
     elements.cardsGrid.innerHTML = `
-            <div class="empty-state" style="grid-column: 1 / -1;">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
-                    <circle cx="12" cy="8" r="4" stroke-width="1.5"/>
-                    <path d="M5 20V19C5 15.1 8.1 12 12 12C15.9 12 19 15.1 19 19V20" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-                <h3>Please login first</h3>
-                <p>Open this app from Telegram</p>
+            <div class="profile-page">
+                <div class="empty-state">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                        <circle cx="12" cy="8" r="4" stroke-width="1.5"/>
+                        <path d="M5 20V19C5 15.1 8.1 12 12 12C15.9 12 19 15.1 19 19V20" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <h3>Please login first</h3>
+                    <p>Open this app from Telegram</p>
+                </div>
             </div>
         `;
     return;
@@ -460,83 +467,134 @@ async function showProfilePage() {
       }
     });
 
-    // Hitung total sold gifts (gifts dengan is_sold = 1)
+    // Hitung total gifts berdasarkan status
+    const listedGifts = userGifts.filter(gift => gift.is_listed === 1).length;
+    const unlistedGifts = userGifts.filter(gift => gift.is_listed === 0 && gift.is_sold !== 1).length;
     const soldGiftsCount = userGifts.filter(gift => gift.is_sold === 1).length;
 
     // Gabungkan data userGifts dengan posting dari marketplace
-    // Tampilkan semua gifts, baik listed maupun unlisted
     const allGifts = userGifts.map(gift => {
-      // Untuk yang unlisted, price akan ditampilkan 0
       if (gift.is_listed === 0) {
         return {
           ...gift,
           price: 0,
-          // Gunakan posting dari marketplace jika ada, fallback ke posting asli atau default
           posting: gift.posting || postingMap[gift.slug] || 'https://t.me/market_wine/57/None'
         };
       }
       return {
         ...gift,
-        // Gunakan posting dari marketplace jika ada, fallback ke posting asli
         posting: gift.posting || postingMap[gift.slug] || 'https://t.me/market_wine/57/None'
       };
     });
 
-    // Log untuk debug (opsional, bisa dihapus nanti)
-    console.log('Sample gift with posting:', allGifts[0]);
-    console.log('Posting map sample:', postingMap);
-
     elements.loadingState.style.display = 'none';
-    renderProfilePage(allGifts, soldGiftsCount);
+
+    // Render profile page dengan balance cards
+    renderProfilePageWithBalance(allGifts, listedGifts, unlistedGifts, soldGiftsCount);
 
   } catch (error) {
     console.error('Error loading user gifts:', error);
     elements.loadingState.style.display = 'none';
     elements.cardsGrid.innerHTML = `
-            <div class="empty-state" style="grid-column: 1 / -1;">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
-                    <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
-                    <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-                <h3>Failed to load your gifts</h3>
-                <p style="margin-top: 8px;">${error.message}</p>
-                <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
+            <div class="profile-page">
+                <div class="empty-state">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                        <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                        <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <h3>Failed to load your gifts</h3>
+                    <p style="margin-top: 8px;">${error.message}</p>
+                    <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
+                </div>
             </div>
         `;
   }
 }
 
-function renderProfilePage(gifts, soldGiftsCount = 0) {
+function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCount) {
     const firstName = telegramUser.first_name || '';
     const lastName = telegramUser.last_name || '';
     const fullName = `${firstName} ${lastName}`.trim() || 'User';
     const username = telegramUser.username ? `@${telegramUser.username}` : '-';
-    const isPremium = telegramUser.is_premium ? '⭐ Premium' : 'Free';
+    const isPremium = telegramUser.is_premium ? 'premium' : '';
     
-    // Ambil foto profil yang sudah ada di elements.userAvatar
-    // Clone elemen avatar yang sudah ada (dari page store)
-    const avatarElement = elements.userAvatar.cloneNode(true);
+    // Format balance
+    const saldoFormatted = formatRupiah(userBalance);
     
-    const profileHeader = `
-        <div class="profile-header glass-panel">
-            <div class="profile-avatar" id="profilePageAvatar">
-                ${avatarElement.innerHTML}
-            </div>
-            <div class="profile-info">
-                <h3 class="profile-name">${fullName}</h3>
-                <p class="profile-username">${username}</p>
-                <p class="profile-status ${telegramUser.is_premium ? 'premium' : ''}">${isPremium}</p>
-                <div class="profile-stats-container" style="display: flex; gap: 16px;">
-                    <p class="profile-stats">Listed: ${gifts.filter(g => g.is_listed === 1).length}</p>
-                    <p class="profile-stats">Unlisted: ${gifts.filter(g => g.is_listed === 0).length}</p>
-                    <p class="profile-stats">Sold: ${soldGiftsCount}</p>
+    // Wicash (contoh: ambil dari user data atau set default 0)
+    const wicashBalance = userProfileData.wicash || 0;
+    const wicashFormatted = formatRupiah(wicashBalance);
+    
+    // Avatar HTML
+    const avatarInitial = firstName.charAt(0).toUpperCase() || '?';
+    
+    const profileHTML = `
+        <div class="profile-page">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="profile-avatar-wrapper">
+                    <div class="profile-avatar ${isPremium}" id="profilePageAvatar">
+                        <span class="avatar-initial">${avatarInitial}</span>
+                    </div>
+                </div>
+                
+                <div class="profile-info">
+                    <h3 class="profile-name">${fullName}</h3>
+                    <p class="profile-username">${username}</p>
+                    <span class="profile-status">${telegramUser.is_premium ? '⭐ Premium' : 'Free'}</span>
+                </div>
+                
+                <!-- Balance Cards & Wallet Button -->
+                <div class="balance-cards">
+                    <div class="balance-card saldo" onclick="openWalletPopup()">
+                        <div class="balance-icon">💰</div>
+                        <div class="balance-info">
+                            <span class="balance-label">Saldo</span>
+                            <span class="balance-value">${saldoFormatted}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="balance-card wicash" onclick="openWalletPopup()">
+                        <div class="balance-icon">💎</div>
+                        <div class="balance-info">
+                            <span class="balance-label">Wicash</span>
+                            <span class="balance-value">${wicashFormatted}</span>
+                        </div>
+                    </div>
+                    
+                    <button class="wallet-button" onclick="openWalletPopup()" title="Financial">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="6" width="20" height="12" rx="2" stroke-width="1.5"/>
+                            <path d="M16 12C16 13.1046 15.1046 14 14 14H10C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10H14C15.1046 10 16 10.8954 16 12Z" stroke-width="1.5"/>
+                            <path d="M18 10H20" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M4 10H6" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
+            
+            <!-- Stats Container - Sejajar 3 kolom dengan garis bayangan -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-value">${listedCount}</div>
+                    <div class="stat-label listed">LISTED</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${unlistedCount}</div>
+                    <div class="stat-label unlisted">UNLISTED</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${soldCount}</div>
+                    <div class="stat-label sold">SOLD</div>
+                </div>
+            </div>
+            
+            <!-- Section Title -->
+            <div class="section-title">My Gifts</div>
     `;
     
     if (gifts.length === 0) {
-        elements.cardsGrid.innerHTML = profileHeader + `
+        elements.cardsGrid.innerHTML = profileHTML + `
             <div class="empty-state" style="grid-column: 1 / -1;">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
                     <rect x="3" y="4" width="18" height="16" rx="2" stroke-width="1.5"/>
@@ -554,56 +612,472 @@ function renderProfilePage(gifts, soldGiftsCount = 0) {
         const formattedName = formatGiftName(cleanName);
         const giftId = extractIdFromSlug(gift.slug);
         
-        // Format model, symbol, background dengan rarity
-        const modelDisplay = gift.model && gift.model_rarity 
-            ? `${gift.model} (${gift.model_rarity})` 
-            : (gift.model || '-');
-        
-        const symbolDisplay = gift.symbol && gift.symbol_rarity 
-            ? `${gift.symbol} (${gift.symbol_rarity})` 
-            : (gift.symbol || '-');
-        
-        const bgDisplay = gift.background && gift.background_rarity 
-            ? `${gift.background} (${gift.background_rarity})` 
-            : (gift.background || '-');
+        // Tentukan status class
+        let statusClass = '';
+        let statusText = '';
+        if (gift.is_sold === 1) {
+            statusClass = 'sold';
+            statusText = 'SOLD';
+        } else if (gift.is_listed === 0) {
+            statusClass = 'unlisted';
+            statusText = 'UNLISTED';
+        } else {
+            statusClass = 'listed';
+            statusText = 'LISTED';
+        }
         
         return `
-        <div class="gift-card profile-gift-card" onclick="openUserGiftSheet(${JSON.stringify({
+        <div class="profile-gift-card ${statusClass}" onclick="openUserGiftSheet(${JSON.stringify({
             ...gift,
             formattedName,
-            modelDisplay,
-            symbolDisplay,
-            bgDisplay,
             giftId
         }).replace(/"/g, '&quot;')})">
-            <div class="card-image-wrapper">
-                <img class="fallback-image" src="https://nft.fragment.com/gift/${gift.slug}.medium.jpg" 
+            <div class="profile-card-image-wrapper">
+                <img class="profile-card-image" src="https://nft.fragment.com/gift/${gift.slug}.medium.jpg" 
                      alt="${gift.name}" 
-                     style="display: block; width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" 
                      onerror="this.src='https://via.placeholder.com/400?text=NFT+Gift'">
-                <div class="lottie-container" data-slug="${gift.slug}">
-                    <div class="lottie-skeleton"></div>
-                </div>
-                <button class="lottie-play-btn" onclick="toggleLottie(this, '${gift.slug}', event)">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 5V19L19 12L8 5Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+                <div class="profile-card-status ${statusClass}">${statusText}</div>
             </div>
-            <div class="card-content">
-                <div class="card-name-container">
-                    <span class="card-slug">${formattedName}</span>
-                    <span class="card-id">${giftId}</span>
-                </div>
-                <div class="card-price">
-                    <span class="price-label">Price</span>
-                    <span class="price-value">💰 ${gift.is_listed === 1 ? formatPrice(gift.price) : 'UNLISTED'}</span>
-                </div>
+            <div class="profile-card-content">
+                <div class="profile-card-name">${formattedName}</div>
+                <div class="profile-card-id">#${giftId}</div>
+                <div class="profile-card-price">💰 ${gift.is_listed === 1 ? formatPrice(gift.price) : '0'}</div>
             </div>
         </div>
     `}).join('');
     
-    elements.cardsGrid.innerHTML = profileHeader + giftsHtml;
+    elements.cardsGrid.innerHTML = profileHTML + `
+        <div class="profile-gifts-grid">
+            ${giftsHtml}
+        </div>
+    `;
+    
+    // Copy foto profil jika sudah ada dari sebelumnya
+    const existingAvatar = document.querySelector('#userAvatar .avatar-image');
+    if (existingAvatar) {
+        const profileAvatar = document.querySelector('#profilePageAvatar');
+        if (profileAvatar) {
+            profileAvatar.innerHTML = '';
+            const imgClone = existingAvatar.cloneNode(true);
+            profileAvatar.appendChild(imgClone);
+        }
+    }
+}
+
+// ===== FUNGSI WALLET POPUP =====
+function openWalletPopup() {
+    // Cek apakah popup sudah ada, jika belum buat
+    let overlay = document.getElementById('walletPopupOverlay');
+    
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'walletPopupOverlay';
+        overlay.className = 'wallet-popup-overlay';
+        
+        const saldoFormatted = formatRupiah(userBalance);
+        const wicashBalance = userProfileData?.wicash || 0;
+        const wicashFormatted = formatRupiah(wicashBalance);
+        
+        overlay.innerHTML = `
+            <div class="wallet-popup" id="walletPopup">
+                <div class="wallet-popup-header">
+                    <h3 class="wallet-popup-title">Financial</h3>
+                    <button class="wallet-popup-close" onclick="closeWalletPopup()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="wallet-balance-display">
+                    <div class="wallet-balance-label">Saldo</div>
+                    <div class="wallet-balance-amount">${saldoFormatted}</div>
+                    <div style="margin-top: 8px; font-size: 14px;">Wicash: ${wicashFormatted}</div>
+                </div>
+                
+                <div class="wallet-actions">
+                    <button class="wallet-action-btn deposit" onclick="openDepositModal()">
+                        <div class="wallet-action-icon">💰</div>
+                        <span class="wallet-action-label">Deposit</span>
+                        <span class="wallet-action-desc">Add funds</span>
+                    </button>
+                    
+                    <button class="wallet-action-btn withdraw" onclick="openWithdrawModal()">
+                        <div class="wallet-action-icon">📤</div>
+                        <span class="wallet-action-label">Withdraw</span>
+                        <span class="wallet-action-desc">Cash out</span>
+                    </button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(overlay);
+    } else {
+        // Update balance
+        const saldoFormatted = formatRupiah(userBalance);
+        const wicashBalance = userProfileData?.wicash || 0;
+        const wicashFormatted = formatRupiah(wicashBalance);
+        
+        const balanceAmount = overlay.querySelector('.wallet-balance-amount');
+        if (balanceAmount) balanceAmount.textContent = saldoFormatted;
+        
+        const wicashText = overlay.querySelector('.wallet-balance-display div:last-child');
+        if (wicashText) wicashText.textContent = `Wicash: ${wicashFormatted}`;
+    }
+    
+    overlay.classList.add('active');
+    setTimeout(() => {
+        const popup = document.getElementById('walletPopup');
+        if (popup) popup.classList.add('active');
+    }, 10);
+    
+    document.dispatchEvent(new Event('popupOpened'));
+}
+
+function closeWalletPopup() {
+    const popup = document.getElementById('walletPopup');
+    const overlay = document.getElementById('walletPopupOverlay');
+    
+    if (popup) popup.classList.remove('active');
+    if (overlay) {
+        setTimeout(() => {
+            overlay.classList.remove('active');
+            document.dispatchEvent(new Event('popupClosed'));
+        }, 300);
+    }
+}
+
+// ===== FUNGSI DEPOSIT MODAL =====
+function openDepositModal() {
+    closeWalletPopup();
+    
+    // Cek apakah modal sudah ada
+    let modal = document.getElementById('depositModal');
+    
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'depositModal';
+        modal.className = 'deposit-modal';
+        
+        modal.innerHTML = `
+            <div class="deposit-modal-content" id="depositModalContent">
+                <div class="deposit-modal-header">
+                    <h3 class="deposit-modal-title">Deposit</h3>
+                    <button class="deposit-modal-close" onclick="closeDepositModal()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="deposit-content" id="depositContent">
+                    <!-- Content will be dynamically loaded -->
+                    <div class="deposit-loading">
+                        <div class="spinner"></div>
+                        <p>Preparing deposit...</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+    }
+    
+    modal.classList.add('active');
+    setTimeout(() => {
+        const content = document.getElementById('depositModalContent');
+        if (content) content.classList.add('active');
+    }, 10);
+    
+    // Load deposit form
+    showDepositForm();
+    
+    document.dispatchEvent(new Event('popupOpened'));
+}
+
+function closeDepositModal() {
+    const modal = document.getElementById('depositModal');
+    const content = document.getElementById('depositModalContent');
+    
+    if (content) content.classList.remove('active');
+    if (modal) {
+        setTimeout(() => {
+            modal.classList.remove('active');
+            document.dispatchEvent(new Event('popupClosed'));
+            
+            // Stop checking interval jika ada
+            if (depositCheckInterval) {
+                clearInterval(depositCheckInterval);
+                depositCheckInterval = null;
+            }
+        }, 300);
+    }
+}
+
+function showDepositForm() {
+    const content = document.getElementById('depositContent');
+    if (!content) return;
+    
+    content.innerHTML = `
+        <div>
+            <p style="margin-bottom: 16px; color: var(--tg-text-hint);">Enter amount to deposit (IDR)</p>
+            
+            <input type="number" id="depositAmount" class="deposit-amount-input" placeholder="10000" min="1000" max="10000000" step="1000">
+            
+            <div class="deposit-quick-amounts">
+                <button class="quick-amount-btn" onclick="setDepositAmount(10000)">10K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(25000)">25K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(50000)">50K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(100000)">100K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(250000)">250K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(500000)">500K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(1000000)">1M</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(2500000)">2.5M</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(5000000)">5M</button>
+            </div>
+            
+            <button class="wallet-action-btn deposit" onclick="processDeposit()" style="width: 100%; margin-top: 24px;">
+                <div class="wallet-action-icon">💰</div>
+                <span class="wallet-action-label">Generate QRIS</span>
+            </button>
+        </div>
+    `;
+}
+
+function setDepositAmount(amount) {
+    const input = document.getElementById('depositAmount');
+    if (input) {
+        input.value = amount;
+        currentDepositAmount = amount;
+    }
+}
+
+async function processDeposit() {
+    const input = document.getElementById('depositAmount');
+    const amount = parseInt(input.value);
+    
+    if (isNaN(amount) || amount < 1000) {
+        showToast('Minimum deposit is Rp 1.000');
+        return;
+    }
+    
+    if (amount > 10000000) {
+        showToast('Maximum deposit is Rp 10.000.000');
+        return;
+    }
+    
+    const content = document.getElementById('depositContent');
+    content.innerHTML = `
+        <div class="deposit-loading">
+            <div class="spinner"></div>
+            <p>Generating QRIS...</p>
+        </div>
+    `;
+    
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        
+        // Panggil API deposit melalui endpoint yang akan kita buat
+        const response = await fetch(`${API_BASE_URL}/api/deposit-request`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                user_id: telegramUser.id,
+                amount: amount
+            })
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            currentQRData = data.data;
+            showQRCode(data.data);
+            
+            // Mulai monitor status deposit
+            startDepositMonitoring(data.data.transaction_id, data.data.expired_at);
+        } else {
+            showToast(`Error: ${data.error || 'Failed to generate QRIS'}`);
+            showDepositForm();
+        }
+        
+    } catch (error) {
+        console.error('Error processing deposit:', error);
+        showToast('Failed to process deposit. Please try again.');
+        showDepositForm();
+    }
+}
+
+function showQRCode(qrData) {
+    const content = document.getElementById('depositContent');
+    if (!content) return;
+    
+    const amountFormatted = formatRupiah(qrData.amount);
+    const expiryDate = new Date(qrData.expired_at * 1000);
+    const expiryTime = expiryDate.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    
+    content.innerHTML = `
+        <div>
+            <div class="qr-code-container">
+                <img src="${qrData.qr_url}" class="qr-code-image" alt="QRIS">
+                <div class="qr-transaction-id">ID: ${qrData.transaction_id}</div>
+                <div class="qr-expiry active">⏰ Expires at ${expiryTime}</div>
+            </div>
+            
+            <div style="text-align: center; margin-bottom: 16px;">
+                <div style="font-size: 20px; font-weight: 700; color: var(--tg-primary);">${amountFormatted}</div>
+            </div>
+            
+            <div style="background: rgba(0,0,0,0.03); border-radius: 12px; padding: 12px; margin-bottom: 16px;">
+                <p style="margin-bottom: 8px;">📱 Scan with:</p>
+                <div style="display: flex; gap: 8px; justify-content: center;">
+                    <span style="padding: 4px 8px; background: #00B3FF; color: white; border-radius: 4px;">DANA</span>
+                    <span style="padding: 4px 8px; background: #01A75B; color: white; border-radius: 4px;">OVO</span>
+                    <span style="padding: 4px 8px; background: #0054B2; color: white; border-radius: 4px;">GoPay</span>
+                    <span style="padding: 4px 8px; background: #D32F2F; color: white; border-radius: 4px;">ShopeePay</span>
+                </div>
+            </div>
+            
+            <p style="font-size: 12px; color: var(--tg-text-hint); text-align: center;">
+                Scan QRIS above using your e-wallet.<br>
+                Do not change the amount when paying.<br>
+                Balance will be added automatically.
+            </p>
+            
+            <button class="wallet-action-btn deposit" onclick="closeDepositModal()" style="width: 100%; margin-top: 16px;">
+                <span class="wallet-action-label">Close</span>
+            </button>
+        </div>
+    `;
+}
+
+function startDepositMonitoring(transactionId, expiredAt) {
+    // Stop existing interval
+    if (depositCheckInterval) {
+        clearInterval(depositCheckInterval);
+    }
+    
+    // Check every 3 seconds
+    depositCheckInterval = setInterval(async () => {
+        const now = Math.floor(Date.now() / 1000);
+        
+        // Check if expired
+        if (now > expiredAt) {
+            clearInterval(depositCheckInterval);
+            depositCheckInterval = null;
+            
+            showToast('Deposit expired. Please try again.');
+            closeDepositModal();
+            return;
+        }
+        
+        try {
+            const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+            const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
+            const data = await response.json();
+            
+            if (data.success && data.data.status === 'paid') {
+                clearInterval(depositCheckInterval);
+                depositCheckInterval = null;
+                
+                // Update user balance
+                userBalance = data.data.new_balance;
+                
+                showToast('✅ Deposit successful! Balance added.');
+                
+                // Update display
+                updateUserBalanceDisplay();
+                
+                // Close modal after 2 seconds
+                setTimeout(() => {
+                    closeDepositModal();
+                    
+                    // Refresh profile to show new balance
+                    if (currentPage === 'profile') {
+                        showProfilePage();
+                    }
+                }, 2000);
+            }
+        } catch (error) {
+            console.error('Error checking deposit status:', error);
+        }
+    }, 3000);
+}
+
+// ===== FUNGSI WITHDRAW =====
+function openWithdrawModal() {
+    closeWalletPopup();
+    
+    // Sederhana: redirect ke bot untuk withdraw
+    if (confirm('Withdraw will be processed via bot. Open Telegram?')) {
+        window.open('https://t.me/marketaldibot', '_blank');
+    }
+}
+
+// ===== UPDATE EXISTING FUNCTIONS =====
+// Update fungsi editPrice untuk refresh profile
+window.editPrice = async function(slug) {
+    closeBottomSheet();
+
+    const newPrice = prompt("Enter new price (in Rupiah):", "");
+
+    if (!newPrice) return;
+
+    const priceNumber = parseInt(newPrice.replace(/[^0-9]/g, ''));
+    if (isNaN(priceNumber) || priceNumber <= 0) {
+        showToast('Invalid price!');
+        return;
+    }
+
+    showToast('Updating price...', 0);
+
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+
+        const response = await fetch(`${API_BASE_URL}/api/gift/edit-price`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                slug: slug,
+                price: priceNumber,
+                user_id: telegramUser ? telegramUser.id : null
+            })
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            showToast('Price updated successfully! ✅');
+
+            // Refresh halaman profil untuk menampilkan harga baru
+            if (currentPage === 'profile') {
+                setTimeout(() => showProfilePage(), 1500);
+            }
+        } else {
+            showToast(`Error: ${data.error || 'Failed to update price'}`);
+        }
+
+    } catch (error) {
+        console.error('Error updating price:', error);
+        showToast('Failed to update price. Check console for details.');
+    }
+};
+
+// Fungsi untuk update balance display
+function updateUserBalanceDisplay() {
+    if (elements.userBalance) {
+        const formattedBalance = formatRupiah(userBalance);
+        elements.userBalance.textContent = formattedBalance;
+    }
+    
+    // Update balance di profile page jika ada
+    const saldoCards = document.querySelectorAll('.balance-card.saldo .balance-value');
+    saldoCards.forEach(card => {
+        card.textContent = formatRupiah(userBalance);
+    });
 }
 
 // ===== FUNGSI TOGGLE STATUS JUAL (UNLISTED/LISTED) =====
@@ -2382,7 +2856,14 @@ function checkForUrlParameters() {
     }
 }
 
-// Export functions ke global scope
+// Export functions ke global
+window.openWalletPopup = openWalletPopup;
+window.closeWalletPopup = closeWalletPopup;
+window.openDepositModal = openDepositModal;
+window.closeDepositModal = closeDepositModal;
+window.setDepositAmount = setDepositAmount;
+window.processDeposit = processDeposit;
+window.openWithdrawModal = openWithdrawModal;
 window.shareCurrentFilters = shareCurrentFilters;
 window.copyToClipboard = copyToClipboard;
 window.closeBottomSheet = closeBottomSheet;
