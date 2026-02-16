@@ -3043,7 +3043,7 @@ body.sheet-open {
     gap: 6px;
     font-size: 14px;
     font-weight: 600;
-    color: #005ACE8C;
+    color: #ffffff; /* Warna putih untuk teks "Expires at" */
 }
 
 .countdown-timer {
@@ -3055,20 +3055,20 @@ body.sheet-open {
     padding: 4px 10px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #8D8D8DCC;
+    color: #4CAF50; /* Hijau terang */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
 }
 
 .countdown-timer.danger {
-    color: #FF0000AB;
+    color: #FF5252; /* Merah terang */
     background: rgba(255, 82, 82, 0.2);
     border-color: rgba(255, 82, 82, 0.4);
     animation: pulse-danger 1s infinite;
 }
 
 .countdown-timer.expired {
-    color: #626262D6;
+    color: #9E9E9E; /* Abu-abu */
     background: rgba(158, 158, 158, 0.2);
     border-color: rgba(158, 158, 158, 0.3);
     animation: none;
@@ -3106,6 +3106,7 @@ body.sheet-open {
 .expiry-label {
     font-size: 16px;
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+    color: #ffffff;
 }
 
 /* Deposit Loading - tidak berubah */
