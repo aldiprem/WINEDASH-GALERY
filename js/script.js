@@ -945,8 +945,13 @@ function renderHistoryList(type) {
         const date = new Date(item.created_at * 1000).toLocaleDateString('id-ID');
         const time = new Date(item.created_at * 1000).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
         
+        // 🔥 UBAH: Untuk status pending, langsung buka deposit modal tanpa popup lagi
+        const onClick = type === 'deposit' && status === 'pending' 
+            ? `openDepositModalWithHistory('${item.transaction_id}')` 
+            : '';
+        
         return `
-        <div class="history-item ${status}" onclick="${type === 'deposit' && status === 'pending' ? `showPendingDeposit('${item.transaction_id}')` : ''}">
+        <div class="history-item ${status}" onclick="${onClick}">
             <div class="history-item-header">
                 <span class="history-item-status ${status}">
                     <span class="history-status-icon" style="background: ${statusColor}20; color: ${statusColor}">${statusIcon}</span>
@@ -962,38 +967,40 @@ function renderHistoryList(type) {
     `}).join('');
 }
 
-async function showPendingDeposit(transactionId) {
-  try {
-    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-    const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
-    const data = await response.json();
+// 🔥 FUNGSI BARU: Buka deposit modal langsung dari history tanpa popup
+async function openDepositModalWithHistory(transactionId) {
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
+        const data = await response.json();
 
-    if (data.success) {
-      closeHistoryPopup();
+        if (data.success) {
+            // Cek apakah status masih pending
+            if (data.data.status === 'pending') {
+                // Hitung sisa waktu expired
+                const now = Math.floor(Date.now() / 1000);
+                const expiredAt = data.data.expired_at || (now + 300); // Default 5 menit
 
-      // Cek apakah status masih pending
-      if (data.data.status === 'pending') {
-        // Hitung sisa waktu expired
-        const now = Math.floor(Date.now() / 1000);
-        const expiredAt = data.data.expired_at || (now + 300); // Default 5 menit
+                const qrData = {
+                    transaction_id: transactionId,
+                    amount: data.data.amount,
+                    qr_url: data.data.qr_url,
+                    expired_at: expiredAt
+                };
 
-        const qrData = {
-          transaction_id: transactionId,
-          amount: data.data.amount,
-          qr_url: data.data.qr_url,
-          expired_at: expiredAt
-        };
-
-        // Buka deposit modal dengan QR code
-        openDepositModalWithQR(qrData);
-      } else {
-        showToast(`Deposit status: ${data.data.status.toUpperCase()}`);
-      }
+                // Tutup history popup dulu
+                closeHistoryPopup();
+                
+                // Buka deposit modal dengan QR code
+                openDepositModalWithQR(qrData);
+            } else {
+                showToast(`Deposit status: ${data.data.status.toUpperCase()}`);
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching deposit status:', error);
+        showToast('Failed to load deposit details');
     }
-  } catch (error) {
-    console.error('Error fetching deposit status:', error);
-    showToast('Failed to load deposit details');
-  }
 }
 
 function closeHistoryPopup() {
@@ -1177,19 +1184,21 @@ function setDepositAmount(amount) {
 }
 
 function showQRCode(qrData) {
-    const content = document.getElementById('depositContent');
-    if (!content) return;
+  const content = document.getElementById('depositContent');
+  if (!content) return;
 
-    const amountFormatted = formatRupiah(qrData.amount);
-    const expiryDate = new Date(qrData.expired_at * 1000);
-    const expiryTime = expiryDate.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const amountFormatted = formatRupiah(qrData.amount);
+  const expiryTimestamp = qrData.expired_at * 1000; // Konversi ke milliseconds
 
-    content.innerHTML = `
+  content.innerHTML = `
         <div>
             <div class="qr-code-container">
                 <img src="${qrData.qr_url}" class="qr-code-image" alt="QRIS">
                 <div class="qr-transaction-id">ID: ${qrData.transaction_id}</div>
-                <div class="qr-expiry active">⏰ Expires at ${expiryTime}</div>
+                <div class="qr-expiry active">
+                    <span class="expiry-label">⏰</span>
+                    <span class="countdown-timer" id="countdownTimer" data-expiry="${expiryTimestamp}">05:00</span>
+                </div>
             </div>
             
             <div style="text-align: center; margin-bottom: 16px;">
@@ -1217,6 +1226,65 @@ function showQRCode(qrData) {
             </button>
         </div>
     `;
+
+  // 🔥 MULAI HITUNG MUNDUR
+  startCountdown(expiryTimestamp);
+}
+
+// 🔥 FUNGSI BARU: Hitung mundur countdown
+function startCountdown(expiryTimestamp) {
+  const timerElement = document.getElementById('countdownTimer');
+  if (!timerElement) return;
+
+  // Hapus interval sebelumnya jika ada
+  if (window.countdownInterval) {
+    clearInterval(window.countdownInterval);
+  }
+
+  function updateCountdown() {
+    const now = Date.now();
+    const distance = expiryTimestamp - now;
+
+    if (distance <= 0) {
+      // Waktu habis
+      timerElement.textContent = '00:00';
+      timerElement.style.color = '#F44336';
+
+      // Hentikan interval
+      if (window.countdownInterval) {
+        clearInterval(window.countdownInterval);
+        window.countdownInterval = null;
+      }
+
+      // Update tampilan expired
+      const expiryElement = timerElement.closest('.qr-expiry');
+      if (expiryElement) {
+        expiryElement.innerHTML = '<span class="expiry-label">⏰</span> <span style="color: #F44336;">EXPIRED</span>';
+      }
+      return;
+    }
+
+    // Hitung menit dan detik
+    const minutes = Math.floor(distance / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Format 2 digit
+    const minutesStr = minutes.toString().padStart(2, '0');
+    const secondsStr = seconds.toString().padStart(2, '0');
+
+    timerElement.textContent = `${minutesStr}:${secondsStr}`;
+
+    // Ubah warna jika kurang dari 1 menit
+    if (distance < 60000) { // < 1 menit
+      timerElement.style.color = '#F44336';
+    } else {
+      timerElement.style.color = 'inherit';
+    }
+  }
+
+  // Update setiap detik
+  updateCountdown(); // Jalankan langsung
+  window.countdownInterval = setInterval(updateCountdown, 1000);
 }
 
 function startDepositMonitoring(transactionId, expiredAt) {
