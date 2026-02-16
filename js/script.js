@@ -2075,7 +2075,7 @@ window.openBottomSheet = function(gift) {
 // ===== FUNGSI SHARE GIFT =====
 function generateGiftShareLink(slugId) {
     const baseUrl = 'https://t.me/marketaldibot/gifts';
-    return `${baseUrl}?startapp=gifts_${slugId}`;
+    return `${baseUrl}?search=${slugId}`;
 }
 
 window.shareGift = function(slugId, event) {
