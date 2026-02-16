@@ -522,7 +522,7 @@ async function fetchDepositHistory(userId) {
       const data = await response.json();
       if (data.success) {
         userDepositHistory = data.data || [];
-        console.log('Deposit history loaded:', userDepositHistory);
+        console.log('✅ Deposit history refreshed:', userDepositHistory.length, 'records');
 
         // Debug: hitung status
         const counts = {
@@ -530,7 +530,13 @@ async function fetchDepositHistory(userId) {
           paid: userDepositHistory.filter(d => d.status === 'paid').length,
           expired: userDepositHistory.filter(d => d.status === 'expired').length
         };
-        console.log('Deposit status counts:', counts);
+        console.log('📊 Deposit status counts:', counts);
+
+        const historyPopup = document.getElementById('historyPopupOverlay');
+        if (historyPopup && historyPopup.classList.contains('active')) {
+          const activeTab = document.querySelector('.history-tab.active')?.textContent.toLowerCase() || 'deposit';
+          updateHistoryPopupContent(historyPopup, activeTab);
+        }
       }
     }
   } catch (error) {
@@ -850,15 +856,23 @@ function openHistoryPopup() {
 }
 
 function updateHistoryPopupContent(overlay, tab = 'deposit') {
-    overlay.innerHTML = `
+  overlay.innerHTML = `
         <div class="history-popup" id="historyPopup">
             <div class="history-popup-header">
                 <h3 class="history-popup-title">Transaction History</h3>
-                <button class="history-popup-close" onclick="closeHistoryPopup()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </button>
+                <div style="display: flex; gap: 8px;">
+                    <button class="history-popup-refresh" onclick="refreshHistory()" title="Refresh">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M23 4v6h-6M1 20v-6h6" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="history-popup-close" onclick="closeHistoryPopup()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
             
             <div class="history-popup-content">
@@ -874,6 +888,23 @@ function updateHistoryPopupContent(overlay, tab = 'deposit') {
         </div>
     `;
 }
+
+// Fungsi refresh
+window.refreshHistory = async function() {
+  if (telegramUser) {
+    showToast('Refreshing history...');
+    await fetchDepositHistory(telegramUser.id);
+    await fetchWithdrawHistory(telegramUser.id);
+
+    const overlay = document.getElementById('historyPopupOverlay');
+    if (overlay && overlay.classList.contains('active')) {
+      const activeTab = document.querySelector('.history-tab.active')?.textContent.toLowerCase() || 'deposit';
+      updateHistoryPopupContent(overlay, activeTab);
+    }
+
+    showToast('History refreshed!');
+  }
+};
 
 function switchHistoryTab(tab) {
     const overlay = document.getElementById('historyPopupOverlay');
@@ -1118,6 +1149,13 @@ async function processDeposit() {
       currentQRData = data.data;
       showQRCode(data.data);
       startDepositMonitoring(data.data.transaction_id, data.data.expired_at);
+
+      setTimeout(() => {
+        if (currentPage === 'profile') {
+          fetchDepositHistory(telegramUser.id);
+        }
+      }, 1000);
+
     } else {
       showToast(`Error: ${data.error || 'Failed to generate QRIS'}`);
       showDepositForm();
@@ -1135,63 +1173,6 @@ function setDepositAmount(amount) {
     if (input) {
         input.value = amount;
         currentDepositAmount = amount;
-    }
-}
-
-async function processDeposit() {
-    const input = document.getElementById('depositAmount');
-    const amount = parseInt(input.value);
-
-    if (isNaN(amount) || amount < 1000) {
-        showToast('Minimum deposit is Rp 1.000');
-        return;
-    }
-
-    if (amount > 10000000) {
-        showToast('Maximum deposit is Rp 10.000.000');
-        return;
-    }
-
-    const content = document.getElementById('depositContent');
-    content.innerHTML = `
-        <div class="deposit-loading">
-            <div class="spinner"></div>
-            <p>Generating QRIS...</p>
-        </div>
-    `;
-
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-
-        // Panggil API deposit
-        const response = await fetch(`${API_BASE_URL}/api/deposit-request`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                user_id: telegramUser.id,
-                amount: amount
-            })
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-            currentQRData = data.data;
-            showQRCode(data.data);
-
-            // Mulai monitor status deposit
-            startDepositMonitoring(data.data.transaction_id, data.data.expired_at);
-        } else {
-            showToast(`Error: ${data.error || 'Failed to generate QRIS'}`);
-            showDepositForm();
-        }
-
-    } catch (error) {
-        console.error('Error processing deposit:', error);
-        showToast('Failed to process deposit. Please try again.');
-        showDepositForm();
     }
 }
 
