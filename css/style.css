@@ -2408,7 +2408,7 @@ body.sheet-open {
     color: #8774E1;
 }
 
-/* ===== FINANCE POPUP STYLES ===== */
+/* ===== FINANCE POPUP STYLES - V2 (REDESIGN) ===== */
 .finance-popup-overlay {
     position: fixed;
     top: 0;
@@ -2432,17 +2432,63 @@ body.sheet-open {
 }
 
 .finance-popup {
-    background: rgba(20, 28, 35, 0.95);
+    background: rgba(20, 28, 35, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-radius: 32px;
+    border-radius: 28px;
     width: 90%;
-    max-width: 380px;
+    max-width: 340px; /* Diperkecil */
     transform: scale(0.9);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(135, 116, 225, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    position: relative;
+}
+
+/* Animasi cahaya bergerak di border */
+.finance-popup::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(135, 116, 225, 0.8),
+        rgba(92, 139, 230, 0.8),
+        rgba(63, 203, 149, 0.8),
+        transparent
+    );
+    border-radius: 30px;
+    z-index: -1;
+    animation: borderLight 3s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes borderLight {
+    0% {
+        transform: rotate(0deg);
+        filter: blur(4px);
+    }
+    25% {
+        transform: rotate(90deg);
+        filter: blur(6px);
+    }
+    50% {
+        transform: rotate(180deg);
+        filter: blur(4px);
+    }
+    75% {
+        transform: rotate(270deg);
+        filter: blur(6px);
+    }
+    100% {
+        transform: rotate(360deg);
+        filter: blur(4px);
+    }
 }
 
 .finance-popup.active {
@@ -2453,12 +2499,12 @@ body.sheet-open {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 24px;
+    padding: 16px 20px; /* Diperkecil */
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .finance-popup-title {
-    font-size: 20px;
+    font-size: 18px; /* Diperkecil */
     font-weight: 700;
     background: linear-gradient(135deg, #8774E1, #B583E3);
     -webkit-background-clip: text;
@@ -2466,9 +2512,9 @@ body.sheet-open {
 }
 
 .finance-popup-close {
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
+    width: 32px; /* Diperkecil */
+    height: 32px; /* Diperkecil */
+    border-radius: 16px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
@@ -2486,14 +2532,15 @@ body.sheet-open {
 }
 
 .finance-popup-content {
-    padding: 24px;
+    padding: 16px 20px; /* Diperkecil */
 }
 
+/* Balance Display - REDESIGN */
 .finance-balance-display {
-    background: rgba(135, 116, 225, 0.1);
-    border-radius: 24px;
-    padding: 20px;
-    margin-bottom: 24px;
+    background: rgba(135, 116, 225, 0.08);
+    border-radius: 18px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
     border: 1px solid rgba(135, 116, 225, 0.2);
 }
 
@@ -2502,43 +2549,57 @@ body.sheet-open {
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;
+    position: relative;
 }
 
 .finance-balance-row:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 4px;
 }
 
 .finance-balance-label {
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: rgba(255, 255, 255, 0.7);
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
+    font-weight: 500;
+    min-width: 80px; /* Fixed width untuk label */
+    flex-shrink: 0;
 }
 
+/* Ikon SVG kustom untuk balance */
 .finance-balance-icon {
-    width: 28px;
-    height: 28px;
-    border-radius: 14px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    flex-shrink: 0;
 }
 
-.finance-balance-icon.saldo {
-    background: linear-gradient(135deg, #8774E1, #B583E3);
-    color: white;
+.finance-balance-icon.saldo svg {
+    width: 14px;
+    height: 14px;
+    fill: white;
 }
 
-.finance-balance-icon.wicash {
-    background: linear-gradient(135deg, #FFD700, #FFEB3B);
-    color: #000;
+.finance-balance-icon.wicash svg {
+    width: 14px;
+    height: 14px;
+    fill: #000;
 }
 
 .finance-balance-amount {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: right;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 12px;
 }
 
 .finance-balance-amount.saldo {
@@ -2549,91 +2610,82 @@ body.sheet-open {
     color: #FFD700;
 }
 
+/* Action Buttons - LEBIH KECIL */
 .finance-action-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 16px;
+    gap: 10px;
+    margin-bottom: 12px;
 }
 
 .finance-action-btn {
-    padding: 16px;
-    border-radius: 20px;
+    padding: 12px 8px; /* Diperkecil */
+    border-radius: 16px; /* Diperkecil */
     border: none;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 4px; /* Diperkecil */
     color: white;
 }
 
 .finance-action-btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     border-color: rgba(135, 116, 225, 0.3);
-    box-shadow: 0 8px 20px rgba(135, 116, 225, 0.2);
-    background: rgba(135, 116, 225, 0.1);
+    box-shadow: 0 6px 15px rgba(135, 116, 225, 0.15);
+    background: rgba(135, 116, 225, 0.08);
 }
 
-.finance-action-btn.deposit {
-    background: linear-gradient(135deg, rgba(135, 116, 225, 0.15), rgba(181, 131, 227, 0.15));
+/* Ikon SVG kustom untuk action buttons */
+.finance-action-icon {
+    width: 32px; /* Diperkecil */
+    height: 32px; /* Diperkecil */
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.finance-action-btn.withdraw {
-    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 235, 59, 0.1));
+.finance-action-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.finance-action-btn.deposit .finance-action-icon {
+    background: linear-gradient(135deg, #8774E1, #B583E3);
+}
+
+.finance-action-btn.withdraw .finance-action-icon {
+    background: linear-gradient(135deg, #FFD700, #FFEB3B);
 }
 
 .finance-action-btn.history {
     grid-column: span 2;
     flex-direction: row;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.02);
     border-color: rgba(255, 255, 255, 0.1);
-}
-
-.finance-action-btn.history:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(135, 116, 225, 0.3);
-}
-
-.finance-action-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-}
-
-.finance-action-btn.deposit .finance-action-icon {
-    background: linear-gradient(135deg, #8774E1, #B583E3);
-    color: white;
-}
-
-.finance-action-btn.withdraw .finance-action-icon {
-    background: linear-gradient(135deg, #FFD700, #FFEB3B);
-    color: #000;
+    padding: 10px 12px; /* Diperkecil */
 }
 
 .finance-action-btn.history .finance-action-icon {
     background: linear-gradient(135deg, #4CAF50, #8BC34A);
-    color: white;
 }
 
 .finance-action-label {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px; /* Diperkecil */
 }
 
 .finance-action-desc {
-    font-size: 11px;
+    font-size: 10px; /* Diperkecil */
     color: rgba(255, 255, 255, 0.5);
 }
 
