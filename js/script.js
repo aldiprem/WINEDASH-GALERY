@@ -1188,7 +1188,7 @@ function showQRCode(qrData) {
   if (!content) return;
 
   const amountFormatted = formatRupiah(qrData.amount);
-  const expiryTimestamp = qrData.expired_at * 1000; // Konversi ke milliseconds
+  const expiryTimestamp = qrData.expired_at * 1000;
 
   content.innerHTML = `
         <div>
@@ -1227,11 +1227,11 @@ function showQRCode(qrData) {
         </div>
     `;
 
-  // 🔥 MULAI HITUNG MUNDUR
+  // Mulai hitung mundur
   startCountdown(expiryTimestamp);
 }
 
-// 🔥 FUNGSI BARU: Hitung mundur countdown
+// 🔥 FUNGSI BARU: Hitung mundur countdown dengan class
 function startCountdown(expiryTimestamp) {
   const timerElement = document.getElementById('countdownTimer');
   if (!timerElement) return;
@@ -1248,7 +1248,8 @@ function startCountdown(expiryTimestamp) {
     if (distance <= 0) {
       // Waktu habis
       timerElement.textContent = '00:00';
-      timerElement.style.color = '#F44336';
+      timerElement.classList.remove('danger');
+      timerElement.classList.add('expired');
 
       // Hentikan interval
       if (window.countdownInterval) {
@@ -1259,7 +1260,7 @@ function startCountdown(expiryTimestamp) {
       // Update tampilan expired
       const expiryElement = timerElement.closest('.qr-expiry');
       if (expiryElement) {
-        expiryElement.innerHTML = '<span class="expiry-label">⏰</span> <span style="color: #F44336;">EXPIRED</span>';
+        expiryElement.innerHTML = '<span class="expiry-label">⏰</span> <span class="countdown-timer expired">EXPIRED</span>';
       }
       return;
     }
@@ -1274,11 +1275,12 @@ function startCountdown(expiryTimestamp) {
 
     timerElement.textContent = `${minutesStr}:${secondsStr}`;
 
-    // Ubah warna jika kurang dari 1 menit
+    // Tambah/remove class berdasarkan sisa waktu
     if (distance < 60000) { // < 1 menit
-      timerElement.style.color = '#F44336';
+      timerElement.classList.add('danger');
+      timerElement.classList.remove('expired');
     } else {
-      timerElement.style.color = 'inherit';
+      timerElement.classList.remove('danger', 'expired');
     }
   }
 
