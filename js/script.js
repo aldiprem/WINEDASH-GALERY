@@ -36,6 +36,9 @@ let filterOptions = {
     bgs: []
 };
 
+let userDepositHistory = [];
+let userWithdrawHistory = [];
+
 // Current active popup
 let currentPopupFilter = null;
 
@@ -401,16 +404,16 @@ function showStatsPage() {
     `;
 }
 
-// ===== FUNGSI PROFILE PAGE =====
+// ===== FUNGSI PROFILE PAGE YANG DIPERBAIKI =====
 async function showProfilePage() {
-  const filterSection = document.querySelector('.filter-section');
-  if (filterSection) filterSection.style.display = 'none';
+    const filterSection = document.querySelector('.filter-section');
+    if (filterSection) filterSection.style.display = 'none';
 
-  const marketplaceHeader = document.querySelector('.marketplace-header');
-  if (marketplaceHeader) marketplaceHeader.style.display = 'none';
+    const marketplaceHeader = document.querySelector('.marketplace-header');
+    if (marketplaceHeader) marketplaceHeader.style.display = 'none';
 
-  if (!telegramUser) {
-    elements.cardsGrid.innerHTML = `
+    if (!telegramUser) {
+        elements.cardsGrid.innerHTML = `
             <div class="profile-page">
                 <div class="empty-state">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
@@ -422,93 +425,117 @@ async function showProfilePage() {
                 </div>
             </div>
         `;
-    return;
-  }
-
-  elements.loadingState.style.display = 'flex';
-
-  try {
-    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-    console.log(`Fetching user data from: ${API_BASE_URL}/api/users/${telegramUser.id}`);
-
-    // Fetch data user gifts
-    const userResponse = await fetch(`${API_BASE_URL}/api/users/${telegramUser.id}`);
-
-    if (!userResponse.ok) {
-      throw new Error(`HTTP error! status: ${userResponse.status}`);
+        return;
     }
 
-    const userData = await userResponse.json();
-    console.log('User data received:', userData);
+    elements.loadingState.style.display = 'flex';
 
-    if (!userData.success) {
-      throw new Error(userData.error || 'Unknown error');
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        
+        // Fetch data user gifts
+        const userResponse = await fetch(`${API_BASE_URL}/api/users/${telegramUser.id}`);
+
+        if (!userResponse.ok) {
+            throw new Error(`HTTP error! status: ${userResponse.status}`);
+        }
+
+        const userData = await userResponse.json();
+
+        if (!userData.success) {
+            throw new Error(userData.error || 'Unknown error');
+        }
+
+        userProfileData = userData.user.profile || {};
+        userGifts = userData.user.added_gifts || [];
+
+        // Fetch deposit history
+        await fetchDepositHistory(telegramUser.id);
+        
+        // Fetch withdraw history
+        await fetchWithdrawHistory(telegramUser.id);
+
+        // Fetch all gifts from marketplace
+        const giftsResponse = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
+
+        if (!giftsResponse.ok) {
+            throw new Error(`HTTP error! status: ${giftsResponse.status}`);
+        }
+
+        const allMarketGifts = await giftsResponse.json();
+
+        // Buat map untuk mencari posting berdasarkan slug
+        const postingMap = {};
+        allMarketGifts.forEach(gift => {
+            if (gift.slug && gift.posting) {
+                postingMap[gift.slug] = gift.posting;
+            }
+        });
+
+        // Hitung total gifts berdasarkan status
+        const listedGifts = userGifts.filter(gift => gift.is_listed === 1).length;
+        const unlistedGifts = userGifts.filter(gift => gift.is_listed === 0 && gift.is_sold !== 1).length;
+        const soldGiftsCount = userGifts.filter(gift => gift.is_sold === 1).length;
+
+        // Gabungkan data userGifts dengan posting dari marketplace
+        const allGifts = userGifts.map(gift => {
+            if (gift.is_listed === 0) {
+                return {
+                    ...gift,
+                    price: 0,
+                    posting: gift.posting || postingMap[gift.slug] || 'https://t.me/market_wine/57/None'
+                };
+            }
+            return {
+                ...gift,
+                posting: gift.posting || postingMap[gift.slug] || 'https://t.me/market_wine/57/None'
+            };
+        });
+
+        elements.loadingState.style.display = 'none';
+
+        // Render profile page dengan balance cards
+        renderProfilePageWithBalance(allGifts, listedGifts, unlistedGifts, soldGiftsCount);
+
+    } catch (error) {
+        console.error('Error loading user gifts:', error);
+        elements.loadingState.style.display = 'none';
+        showProfileError(error.message);
     }
+}
 
-    userProfileData = userData.user.profile || {};
-    userGifts = userData.user.added_gifts || [];
-
-    // Fetch all gifts from marketplace untuk mendapatkan field posting
-    console.log('Fetching all gifts from marketplace...');
-    const giftsResponse = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
-
-    if (!giftsResponse.ok) {
-      throw new Error(`HTTP error! status: ${giftsResponse.status}`);
+async function fetchDepositHistory(userId) {
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const response = await fetch(`${API_BASE_URL}/api/deposit-history?user_id=${userId}`);
+        
+        if (response.ok) {
+            const data = await response.json();
+            if (data.success) {
+                userDepositHistory = data.data || [];
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching deposit history:', error);
+        userDepositHistory = [];
     }
+}
 
-    const allMarketGifts = await giftsResponse.json();
-    console.log(`✅ ${allMarketGifts.length} gift dari marketplace dimuat`);
-
-    // Buat map untuk mencari posting berdasarkan slug
-    const postingMap = {};
-    allMarketGifts.forEach(gift => {
-      if (gift.slug && gift.posting) {
-        postingMap[gift.slug] = gift.posting;
-      }
-    });
-
-    // Hitung total gifts berdasarkan status
-    const listedGifts = userGifts.filter(gift => gift.is_listed === 1).length;
-    const unlistedGifts = userGifts.filter(gift => gift.is_listed === 0 && gift.is_sold !== 1).length;
-    const soldGiftsCount = userGifts.filter(gift => gift.is_sold === 1).length;
-
-    // Gabungkan data userGifts dengan posting dari marketplace
-    const allGifts = userGifts.map(gift => {
-      if (gift.is_listed === 0) {
-        return {
-          ...gift,
-          price: 0,
-          posting: gift.posting || postingMap[gift.slug] || 'https://t.me/market_wine/57/None'
-        };
-      }
-      return {
-        ...gift,
-        posting: gift.posting || postingMap[gift.slug] || 'https://t.me/market_wine/57/None'
-      };
-    });
-
-    elements.loadingState.style.display = 'none';
-
-    // Render profile page dengan balance cards
-    renderProfilePageWithBalance(allGifts, listedGifts, unlistedGifts, soldGiftsCount);
-
-  } catch (error) {
-    console.error('Error loading user gifts:', error);
-    elements.loadingState.style.display = 'none';
-    elements.cardsGrid.innerHTML = `
-            <div class="profile-page">
-                <div class="empty-state">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
-                        <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
-                        <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <h3>Failed to load your gifts</h3>
-                    <p style="margin-top: 8px;">${error.message}</p>
-                    <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
-                </div>
-            </div>
-        `;
-  }
+async function fetchWithdrawHistory(userId) {
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const response = await fetch(`${API_BASE_URL}/api/withdraw-history?user_id=${userId}`);
+        
+        if (response.ok) {
+            const data = await response.json();
+            if (data.success) {
+                userWithdrawHistory = data.data || [];
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching withdraw history:', error);
+        userWithdrawHistory = [];
+    }
 }
 
 function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCount) {
@@ -516,12 +543,10 @@ function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCou
     const lastName = telegramUser.last_name || '';
     const fullName = `${firstName} ${lastName}`.trim() || 'User';
     const username = telegramUser.username ? `@${telegramUser.username}` : '-';
-    const isPremium = telegramUser.is_premium ? 'premium' : '';
+    const isPremium = telegramUser.is_premium;
     
     // Format balance
     const saldoFormatted = formatRupiah(userBalance);
-    
-    // Wicash (contoh: ambil dari user data atau set default 0)
     const wicashBalance = userProfileData.wicash || 0;
     const wicashFormatted = formatRupiah(wicashBalance);
     
@@ -531,38 +556,37 @@ function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCou
     const profileHTML = `
         <div class="profile-page">
             <!-- Profile Header -->
-            <div class="profile-header">
+            <div class="profile-header glass-panel">
                 <div class="profile-avatar-wrapper">
-                    <div class="profile-avatar ${isPremium}" id="profilePageAvatar">
+                    <div class="profile-avatar" id="profilePageAvatar">
                         <span class="avatar-initial">${avatarInitial}</span>
+                    </div>
+                    <div class="profile-premium-badge ${isPremium ? '' : 'free'}">
+                        ${isPremium ? '⭐' : '🔹'}
                     </div>
                 </div>
                 
                 <div class="profile-info">
                     <h3 class="profile-name">${fullName}</h3>
                     <p class="profile-username">${username}</p>
-                    <span class="profile-status">${telegramUser.is_premium ? '⭐ Premium' : 'Free'}</span>
                 </div>
                 
-                <!-- Balance Cards & Wallet Button -->
-                <div class="balance-cards">
-                    <div class="balance-card saldo" onclick="openWalletPopup()">
-                        <div class="balance-icon">💰</div>
-                        <div class="balance-info">
-                            <span class="balance-label">Saldo</span>
-                            <span class="balance-value">${saldoFormatted}</span>
+                <!-- Combined Balance Card -->
+                <div class="profile-balance-card" onclick="openFinancePopup()">
+                    <div class="balances">
+                        <div class="balance-item saldo">
+                            <div class="balance-icon">💰</div>
+                            <span class="balance-text">Saldo</span>
+                            <span class="balance-amount">${saldoFormatted}</span>
+                        </div>
+                        <div class="balance-item wicash">
+                            <div class="balance-icon">💎</div>
+                            <span class="balance-text">Wicash</span>
+                            <span class="balance-amount">${wicashFormatted}</span>
                         </div>
                     </div>
                     
-                    <div class="balance-card wicash" onclick="openWalletPopup()">
-                        <div class="balance-icon">💎</div>
-                        <div class="balance-info">
-                            <span class="balance-label">Wicash</span>
-                            <span class="balance-value">${wicashFormatted}</span>
-                        </div>
-                    </div>
-                    
-                    <button class="wallet-button" onclick="openWalletPopup()" title="Financial">
+                    <button class="finance-button" onclick="event.stopPropagation(); openFinancePopup()">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <rect x="2" y="6" width="20" height="12" rx="2" stroke-width="1.5"/>
                             <path d="M16 12C16 13.1046 15.1046 14 14 14H10C8.89543 14 8 13.1046 8 12C8 10.8954 8.89543 10 10 10H14C15.1046 10 16 10.8954 16 12Z" stroke-width="1.5"/>
@@ -573,7 +597,7 @@ function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCou
                 </div>
             </div>
             
-            <!-- Stats Container - Sejajar 3 kolom dengan garis bayangan -->
+            <!-- Stats Container -->
             <div class="stats-container">
                 <div class="stat-item">
                     <div class="stat-value">${listedCount}</div>
@@ -595,7 +619,7 @@ function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCou
     
     if (gifts.length === 0) {
         elements.cardsGrid.innerHTML = profileHTML + `
-            <div class="empty-state" style="grid-column: 1 / -1;">
+            <div class="empty-state">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
                     <rect x="3" y="4" width="18" height="16" rx="2" stroke-width="1.5"/>
                     <path d="M8 10H16M8 14H12" stroke-width="1.5" stroke-linecap="round"/>
@@ -612,7 +636,6 @@ function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCou
         const formattedName = formatGiftName(cleanName);
         const giftId = extractIdFromSlug(gift.slug);
         
-        // Tentukan status class
         let statusClass = '';
         let statusText = '';
         if (gift.is_sold === 1) {
@@ -664,79 +687,90 @@ function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCou
     }
 }
 
-// ===== FUNGSI WALLET POPUP =====
-function openWalletPopup() {
-    // Cek apakah popup sudah ada, jika belum buat
-    let overlay = document.getElementById('walletPopupOverlay');
+// ===== FUNGSI FINANCE POPUP =====
+function openFinancePopup() {
+    let overlay = document.getElementById('financePopupOverlay');
     
     if (!overlay) {
         overlay = document.createElement('div');
-        overlay.id = 'walletPopupOverlay';
-        overlay.className = 'wallet-popup-overlay';
-        
-        const saldoFormatted = formatRupiah(userBalance);
-        const wicashBalance = userProfileData?.wicash || 0;
-        const wicashFormatted = formatRupiah(wicashBalance);
-        
-        overlay.innerHTML = `
-            <div class="wallet-popup" id="walletPopup">
-                <div class="wallet-popup-header">
-                    <h3 class="wallet-popup-title">Financial</h3>
-                    <button class="wallet-popup-close" onclick="closeWalletPopup()">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </div>
-                
-                <div class="wallet-balance-display">
-                    <div class="wallet-balance-label">Saldo</div>
-                    <div class="wallet-balance-amount">${saldoFormatted}</div>
-                    <div style="margin-top: 8px; font-size: 14px;">Wicash: ${wicashFormatted}</div>
-                </div>
-                
-                <div class="wallet-actions">
-                    <button class="wallet-action-btn deposit" onclick="openDepositModal()">
-                        <div class="wallet-action-icon">💰</div>
-                        <span class="wallet-action-label">Deposit</span>
-                        <span class="wallet-action-desc">Add funds</span>
-                    </button>
-                    
-                    <button class="wallet-action-btn withdraw" onclick="openWithdrawModal()">
-                        <div class="wallet-action-icon">📤</div>
-                        <span class="wallet-action-label">Withdraw</span>
-                        <span class="wallet-action-desc">Cash out</span>
-                    </button>
-                </div>
-            </div>
-        `;
+        overlay.id = 'financePopupOverlay';
+        overlay.className = 'finance-popup-overlay';
         
         document.body.appendChild(overlay);
-    } else {
-        // Update balance
-        const saldoFormatted = formatRupiah(userBalance);
-        const wicashBalance = userProfileData?.wicash || 0;
-        const wicashFormatted = formatRupiah(wicashBalance);
-        
-        const balanceAmount = overlay.querySelector('.wallet-balance-amount');
-        if (balanceAmount) balanceAmount.textContent = saldoFormatted;
-        
-        const wicashText = overlay.querySelector('.wallet-balance-display div:last-child');
-        if (wicashText) wicashText.textContent = `Wicash: ${wicashFormatted}`;
     }
+    
+    updateFinancePopupContent(overlay);
     
     overlay.classList.add('active');
     setTimeout(() => {
-        const popup = document.getElementById('walletPopup');
+        const popup = overlay.querySelector('.finance-popup');
         if (popup) popup.classList.add('active');
     }, 10);
     
     document.dispatchEvent(new Event('popupOpened'));
 }
 
-function closeWalletPopup() {
-    const popup = document.getElementById('walletPopup');
-    const overlay = document.getElementById('walletPopupOverlay');
+function updateFinancePopupContent(overlay) {
+    const saldoFormatted = formatRupiah(userBalance);
+    const wicashBalance = userProfileData?.wicash || 0;
+    const wicashFormatted = formatRupiah(wicashBalance);
+    
+    overlay.innerHTML = `
+        <div class="finance-popup" id="financePopup">
+            <div class="finance-popup-header">
+                <h3 class="finance-popup-title">Financial</h3>
+                <button class="finance-popup-close" onclick="closeFinancePopup()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="finance-popup-content">
+                <div class="finance-balance-display">
+                    <div class="finance-balance-row">
+                        <span class="finance-balance-label">
+                            <span class="finance-balance-icon saldo">💰</span>
+                            Saldo
+                        </span>
+                        <span class="finance-balance-amount saldo">${saldoFormatted}</span>
+                    </div>
+                    <div class="finance-balance-row">
+                        <span class="finance-balance-label">
+                            <span class="finance-balance-icon wicash">💎</span>
+                            Wicash
+                        </span>
+                        <span class="finance-balance-amount wicash">${wicashFormatted}</span>
+                    </div>
+                </div>
+                
+                <div class="finance-action-buttons">
+                    <button class="finance-action-btn deposit" onclick="openDepositModal()">
+                        <div class="finance-action-icon">💰</div>
+                        <span class="finance-action-label">Deposit</span>
+                        <span class="finance-action-desc">Add funds</span>
+                    </button>
+                    
+                    <button class="finance-action-btn withdraw" onclick="openWithdrawModal()">
+                        <div class="finance-action-icon">📤</div>
+                        <span class="finance-action-label">Withdraw</span>
+                        <span class="finance-action-desc">Cash out</span>
+                    </button>
+                    
+                    <button class="finance-action-btn history" onclick="openHistoryPopup()">
+                        <div class="finance-action-icon">🎬</div>
+                        <span class="finance-action-label">History</span>
+                        <span class="finance-action-desc">View transactions</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function closeFinancePopup() {
+    const overlay = document.getElementById('financePopupOverlay');
+    const popup = document.getElementById('financePopup');
     
     if (popup) popup.classList.remove('active');
     if (overlay) {
@@ -747,38 +781,148 @@ function closeWalletPopup() {
     }
 }
 
-// ===== FUNGSI DEPOSIT MODAL =====
-function openDepositModal() {
-    closeWalletPopup();
+// ===== FUNGSI HISTORY POPUP =====
+function openHistoryPopup() {
+    closeFinancePopup();
     
-    // Cek apakah modal sudah ada
+    let overlay = document.getElementById('historyPopupOverlay');
+    
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'historyPopupOverlay';
+        overlay.className = 'history-popup-overlay';
+        
+        document.body.appendChild(overlay);
+    }
+    
+    updateHistoryPopupContent(overlay, 'deposit');
+    
+    overlay.classList.add('active');
+    setTimeout(() => {
+        const popup = overlay.querySelector('.history-popup');
+        if (popup) popup.classList.add('active');
+    }, 10);
+    
+    document.dispatchEvent(new Event('popupOpened'));
+}
+
+function updateHistoryPopupContent(overlay, tab = 'deposit') {
+    overlay.innerHTML = `
+        <div class="history-popup" id="historyPopup">
+            <div class="history-popup-header">
+                <h3 class="history-popup-title">Transaction History</h3>
+                <button class="history-popup-close" onclick="closeHistoryPopup()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="history-popup-content">
+                <div class="history-tabs">
+                    <button class="history-tab ${tab === 'deposit' ? 'active' : ''}" onclick="switchHistoryTab('deposit')">Deposit</button>
+                    <button class="history-tab ${tab === 'withdraw' ? 'active' : ''}" onclick="switchHistoryTab('withdraw')">Withdraw</button>
+                </div>
+                
+                <div class="history-list" id="historyList">
+                    ${renderHistoryList(tab)}
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function switchHistoryTab(tab) {
+    const overlay = document.getElementById('historyPopupOverlay');
+    if (overlay) {
+        updateHistoryPopupContent(overlay, tab);
+    }
+}
+
+function renderHistoryList(type) {
+    const history = type === 'deposit' ? userDepositHistory : userWithdrawHistory;
+    
+    if (history.length === 0) {
+        return `
+            <div class="history-empty">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.3;">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                    <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <p>No ${type} history found</p>
+            </div>
+        `;
+    }
+    
+    return history.map(item => {
+        const status = item.status || 'pending';
+        const statusIcon = {
+            'pending': '⏳',
+            'paid': '✅',
+            'expired': '❌'
+        }[status] || '⏳';
+        
+        const statusColor = {
+            'pending': '#FF9800',
+            'paid': '#4CAF50',
+            'expired': '#F44336'
+        }[status];
+        
+        const date = new Date(item.created_at * 1000).toLocaleDateString('id-ID');
+        const time = new Date(item.created_at * 1000).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+        
+        return `
+        <div class="history-item ${status}" onclick="${type === 'deposit' && status === 'pending' ? `showPendingDeposit('${item.transaction_id}')` : ''}">
+            <div class="history-item-header">
+                <span class="history-item-status ${status}">
+                    <span class="history-status-icon" style="background: ${statusColor}20; color: ${statusColor}">${statusIcon}</span>
+                    ${status.toUpperCase()}
+                </span>
+                <span class="history-item-amount">${formatRupiah(item.amount)}</span>
+            </div>
+            <div class="history-item-detail">
+                <span class="history-item-id">${item.transaction_id?.substring(0, 8)}...</span>
+                <span>${date} ${time}</span>
+            </div>
+        </div>
+    `}).join('');
+}
+
+async function showPendingDeposit(transactionId) {
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
+        const data = await response.json();
+        
+        if (data.success) {
+            closeHistoryPopup();
+            
+            // Tampilkan QRIS yang sudah ada
+            const qrData = {
+                transaction_id: transactionId,
+                amount: data.data.amount,
+                qr_url: data.data.qr_url,
+                expired_at: data.data.expired_at
+            };
+            
+            // Buka deposit modal dengan QR code
+            openDepositModalWithQR(qrData);
+        }
+    } catch (error) {
+        console.error('Error fetching deposit status:', error);
+        showToast('Failed to load deposit details');
+    }
+}
+
+function openDepositModalWithQR(qrData) {
+    closeHistoryPopup();
+    
     let modal = document.getElementById('depositModal');
     
     if (!modal) {
         modal = document.createElement('div');
         modal.id = 'depositModal';
         modal.className = 'deposit-modal';
-        
-        modal.innerHTML = `
-            <div class="deposit-modal-content" id="depositModalContent">
-                <div class="deposit-modal-header">
-                    <h3 class="deposit-modal-title">Deposit</h3>
-                    <button class="deposit-modal-close" onclick="closeDepositModal()">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </div>
-                
-                <div class="deposit-content" id="depositContent">
-                    <!-- Content will be dynamically loaded -->
-                    <div class="deposit-loading">
-                        <div class="spinner"></div>
-                        <p>Preparing deposit...</p>
-                    </div>
-                </div>
-            </div>
-        `;
         
         document.body.appendChild(modal);
     }
@@ -789,333 +933,40 @@ function openDepositModal() {
         if (content) content.classList.add('active');
     }, 10);
     
-    // Load deposit form
-    showDepositForm();
+    showQRCode(qrData);
+    startDepositMonitoring(qrData.transaction_id, qrData.expired_at);
     
     document.dispatchEvent(new Event('popupOpened'));
 }
 
-function closeDepositModal() {
-    const modal = document.getElementById('depositModal');
-    const content = document.getElementById('depositModalContent');
+function closeHistoryPopup() {
+    const overlay = document.getElementById('historyPopupOverlay');
+    const popup = document.getElementById('historyPopup');
     
-    if (content) content.classList.remove('active');
-    if (modal) {
+    if (popup) popup.classList.remove('active');
+    if (overlay) {
         setTimeout(() => {
-            modal.classList.remove('active');
+            overlay.classList.remove('active');
             document.dispatchEvent(new Event('popupClosed'));
-            
-            // Stop checking interval jika ada
-            if (depositCheckInterval) {
-                clearInterval(depositCheckInterval);
-                depositCheckInterval = null;
-            }
         }, 300);
     }
 }
 
-function showDepositForm() {
-    const content = document.getElementById('depositContent');
-    if (!content) return;
-    
-    content.innerHTML = `
-        <div>
-            <p style="margin-bottom: 16px; color: var(--tg-text-hint);">Enter amount to deposit (IDR)</p>
-            
-            <input type="number" id="depositAmount" class="deposit-amount-input" placeholder="10000" min="1000" max="10000000" step="1000">
-            
-            <div class="deposit-quick-amounts">
-                <button class="quick-amount-btn" onclick="setDepositAmount(10000)">10K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(25000)">25K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(50000)">50K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(100000)">100K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(250000)">250K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(500000)">500K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(1000000)">1M</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(2500000)">2.5M</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(5000000)">5M</button>
+function showProfileError(message) {
+    elements.cardsGrid.innerHTML = `
+        <div class="profile-page">
+            <div class="empty-state">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                    <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <h3>Failed to load your gifts</h3>
+                <p style="margin-top: 8px;">${message}</p>
+                <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
             </div>
-            
-            <button class="wallet-action-btn deposit" onclick="processDeposit()" style="width: 100%; margin-top: 24px;">
-                <div class="wallet-action-icon">💰</div>
-                <span class="wallet-action-label">Generate QRIS</span>
-            </button>
         </div>
     `;
 }
-
-function setDepositAmount(amount) {
-    const input = document.getElementById('depositAmount');
-    if (input) {
-        input.value = amount;
-        currentDepositAmount = amount;
-    }
-}
-
-async function processDeposit() {
-    const input = document.getElementById('depositAmount');
-    const amount = parseInt(input.value);
-    
-    if (isNaN(amount) || amount < 1000) {
-        showToast('Minimum deposit is Rp 1.000');
-        return;
-    }
-    
-    if (amount > 10000000) {
-        showToast('Maximum deposit is Rp 10.000.000');
-        return;
-    }
-    
-    const content = document.getElementById('depositContent');
-    content.innerHTML = `
-        <div class="deposit-loading">
-            <div class="spinner"></div>
-            <p>Generating QRIS...</p>
-        </div>
-    `;
-    
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-        
-        // Panggil API deposit melalui endpoint yang akan kita buat
-        const response = await fetch(`${API_BASE_URL}/api/deposit-request`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                user_id: telegramUser.id,
-                amount: amount
-            })
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-            currentQRData = data.data;
-            showQRCode(data.data);
-            
-            // Mulai monitor status deposit
-            startDepositMonitoring(data.data.transaction_id, data.data.expired_at);
-        } else {
-            showToast(`Error: ${data.error || 'Failed to generate QRIS'}`);
-            showDepositForm();
-        }
-        
-    } catch (error) {
-        console.error('Error processing deposit:', error);
-        showToast('Failed to process deposit. Please try again.');
-        showDepositForm();
-    }
-}
-
-function showQRCode(qrData) {
-    const content = document.getElementById('depositContent');
-    if (!content) return;
-    
-    const amountFormatted = formatRupiah(qrData.amount);
-    const expiryDate = new Date(qrData.expired_at * 1000);
-    const expiryTime = expiryDate.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-    
-    content.innerHTML = `
-        <div>
-            <div class="qr-code-container">
-                <img src="${qrData.qr_url}" class="qr-code-image" alt="QRIS">
-                <div class="qr-transaction-id">ID: ${qrData.transaction_id}</div>
-                <div class="qr-expiry active">⏰ Expires at ${expiryTime}</div>
-            </div>
-            
-            <div style="text-align: center; margin-bottom: 16px;">
-                <div style="font-size: 20px; font-weight: 700; color: var(--tg-primary);">${amountFormatted}</div>
-            </div>
-            
-            <div style="background: rgba(0,0,0,0.03); border-radius: 12px; padding: 12px; margin-bottom: 16px;">
-                <p style="margin-bottom: 8px;">📱 Scan with:</p>
-                <div style="display: flex; gap: 8px; justify-content: center;">
-                    <span style="padding: 4px 8px; background: #00B3FF; color: white; border-radius: 4px;">DANA</span>
-                    <span style="padding: 4px 8px; background: #01A75B; color: white; border-radius: 4px;">OVO</span>
-                    <span style="padding: 4px 8px; background: #0054B2; color: white; border-radius: 4px;">GoPay</span>
-                    <span style="padding: 4px 8px; background: #D32F2F; color: white; border-radius: 4px;">ShopeePay</span>
-                </div>
-            </div>
-            
-            <p style="font-size: 12px; color: var(--tg-text-hint); text-align: center;">
-                Scan QRIS above using your e-wallet.<br>
-                Do not change the amount when paying.<br>
-                Balance will be added automatically.
-            </p>
-            
-            <button class="wallet-action-btn deposit" onclick="closeDepositModal()" style="width: 100%; margin-top: 16px;">
-                <span class="wallet-action-label">Close</span>
-            </button>
-        </div>
-    `;
-}
-
-function startDepositMonitoring(transactionId, expiredAt) {
-    // Stop existing interval
-    if (depositCheckInterval) {
-        clearInterval(depositCheckInterval);
-    }
-    
-    // Check every 3 seconds
-    depositCheckInterval = setInterval(async () => {
-        const now = Math.floor(Date.now() / 1000);
-        
-        // Check if expired
-        if (now > expiredAt) {
-            clearInterval(depositCheckInterval);
-            depositCheckInterval = null;
-            
-            showToast('Deposit expired. Please try again.');
-            closeDepositModal();
-            return;
-        }
-        
-        try {
-            const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-            const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
-            const data = await response.json();
-            
-            if (data.success && data.data.status === 'paid') {
-                clearInterval(depositCheckInterval);
-                depositCheckInterval = null;
-                
-                // Update user balance
-                userBalance = data.data.new_balance;
-                
-                showToast('✅ Deposit successful! Balance added.');
-                
-                // Update display
-                updateUserBalanceDisplay();
-                
-                // Close modal after 2 seconds
-                setTimeout(() => {
-                    closeDepositModal();
-                    
-                    // Refresh profile to show new balance
-                    if (currentPage === 'profile') {
-                        showProfilePage();
-                    }
-                }, 2000);
-            }
-        } catch (error) {
-            console.error('Error checking deposit status:', error);
-        }
-    }, 3000);
-}
-
-// ===== FUNGSI WITHDRAW =====
-function openWithdrawModal() {
-    closeWalletPopup();
-    
-    // Sederhana: redirect ke bot untuk withdraw
-    if (confirm('Withdraw will be processed via bot. Open Telegram?')) {
-        window.open('https://t.me/marketaldibot', '_blank');
-    }
-}
-
-// ===== UPDATE EXISTING FUNCTIONS =====
-// Update fungsi editPrice untuk refresh profile
-window.editPrice = async function(slug) {
-    closeBottomSheet();
-
-    const newPrice = prompt("Enter new price (in Rupiah):", "");
-
-    if (!newPrice) return;
-
-    const priceNumber = parseInt(newPrice.replace(/[^0-9]/g, ''));
-    if (isNaN(priceNumber) || priceNumber <= 0) {
-        showToast('Invalid price!');
-        return;
-    }
-
-    showToast('Updating price...', 0);
-
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-
-        const response = await fetch(`${API_BASE_URL}/api/gift/edit-price`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                slug: slug,
-                price: priceNumber,
-                user_id: telegramUser ? telegramUser.id : null
-            })
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-            showToast('Price updated successfully! ✅');
-
-            // Refresh halaman profil untuk menampilkan harga baru
-            if (currentPage === 'profile') {
-                setTimeout(() => showProfilePage(), 1500);
-            }
-        } else {
-            showToast(`Error: ${data.error || 'Failed to update price'}`);
-        }
-
-    } catch (error) {
-        console.error('Error updating price:', error);
-        showToast('Failed to update price. Check console for details.');
-    }
-};
-
-// Fungsi untuk update balance display
-function updateUserBalanceDisplay() {
-    if (elements.userBalance) {
-        const formattedBalance = formatRupiah(userBalance);
-        elements.userBalance.textContent = formattedBalance;
-    }
-    
-    // Update balance di profile page jika ada
-    const saldoCards = document.querySelectorAll('.balance-card.saldo .balance-value');
-    saldoCards.forEach(card => {
-        card.textContent = formatRupiah(userBalance);
-    });
-}
-
-// ===== FUNGSI TOGGLE STATUS JUAL (UNLISTED/LISTED) =====
-window.toggleListingStatus = async function(slug) {
-    closeBottomSheet();
-    
-    showToast('Updating listing status...', 0);
-    
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-        
-        const response = await fetch(`${API_BASE_URL}/api/gift/toggle-listing`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                slug: slug,
-                user_id: telegramUser ? telegramUser.id : null
-            })
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-            showToast(data.message || 'Status updated! ✅');
-            
-            // Refresh profile page
-            setTimeout(() => showProfilePage(), 1000);
-        } else {
-            showToast(`Error: ${data.error || 'Failed to update status'}`);
-        }
-        
-    } catch (error) {
-        console.error('Error toggling listing status:', error);
-        showToast('Failed to update status. Check console for details.');
-    }
-};
 
 // ===== FUNGSI OPEN BOTTOM SHEET UNTUK GIFT USER =====
 window.openUserGiftSheet = function(gift) {
@@ -2857,6 +2708,11 @@ function checkForUrlParameters() {
 }
 
 // Export functions ke global
+window.openFinancePopup = openFinancePopup;
+window.closeFinancePopup = closeFinancePopup;
+window.openHistoryPopup = openHistoryPopup;
+window.closeHistoryPopup = closeHistoryPopup;
+window.switchHistoryTab = switchHistoryTab;
 window.openWalletPopup = openWalletPopup;
 window.closeWalletPopup = closeWalletPopup;
 window.openDepositModal = openDepositModal;
