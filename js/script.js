@@ -168,7 +168,7 @@ async function initializeTelegramApp() {
 
 async function fetchUserBalance(userId) {
     try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
         const response = await fetch(`${API_BASE_URL}/api/user/balance/${userId}`);
 
         if (!response.ok) {
@@ -312,7 +312,7 @@ async function loadGifts() {
     try {
         elements.loadingState.style.display = 'flex';
 
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
         const response = await fetch(`${API_BASE_URL}/api/gifts?limit=1000`);
 
         if (!response.ok) {
@@ -440,7 +440,7 @@ async function showProfilePage() {
     elements.loadingState.style.display = 'flex';
 
     try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
         
         // Fetch data user gifts
         const userResponse = await fetch(`${API_BASE_URL}/api/users/${telegramUser.id}`);
@@ -515,7 +515,7 @@ async function showProfilePage() {
 
 async function fetchDepositHistory(userId) {
   try {
-    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+    const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
     const response = await fetch(`${API_BASE_URL}/api/deposit-history?user_id=${userId}`);
 
     if (response.ok) {
@@ -547,7 +547,7 @@ async function fetchDepositHistory(userId) {
 
 async function fetchWithdrawHistory(userId) {
     try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
         const response = await fetch(`${API_BASE_URL}/api/withdraw-history?user_id=${userId}`);
         
         if (response.ok) {
@@ -970,7 +970,7 @@ function renderHistoryList(type) {
 // 🔥 FUNGSI BARU: Buka deposit modal langsung dari history tanpa popup
 async function openDepositModalWithHistory(transactionId) {
     try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
         const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
         const data = await response.json();
 
@@ -1137,7 +1137,7 @@ async function processDeposit() {
     `;
 
   try {
-    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+    const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
 
     const response = await fetch(`${API_BASE_URL}/api/deposit-request`, {
       method: 'POST',
@@ -1310,7 +1310,7 @@ function startDepositMonitoring(transactionId, expiredAt) {
         }
 
         try {
-            const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+            const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
             const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
             const data = await response.json();
 
@@ -1504,7 +1504,7 @@ window.editPrice = async function(slug) {
     showToast('Updating price...', 0);
 
     try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+        const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com';
 
         const response = await fetch(`${API_BASE_URL}/api/gift/edit-price`, {
             method: 'POST',
