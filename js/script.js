@@ -341,11 +341,7 @@ async function loadGifts() {
 function setupNavigationListeners() {
     if (navStore) navStore.addEventListener('click', () => switchPage('store'));
     if (navStats) navStats.addEventListener('click', () => switchPage('stats'));
-    if (navProfile) {
-      navProfile.addEventListener('click', () => {
-        window.location.href = generateProfileLink();
-      });
-    }
+    if (navProfile) navProfile.addEventListener('click', () => switchPage('profile'));
 }
 
 function switchPage(page) {
@@ -2262,30 +2258,6 @@ function generateTelegramShareLink() {
     return `${baseUrl}?startapp=${encodedFilters}`;
 }
 
-function generateProfileLink(userId = null) {
-  const baseUrl = window.location.origin + window.location.pathname.replace(/\/?$/, '/');
-
-  if (userId) {
-    // Format: https://aldiprem.github.io/WINEDASH-GALERY/?profil=1234567890
-    return `${baseUrl}?profil=${userId}`;
-  } else {
-    // Format: https://aldiprem.github.io/WINEDASH-GALERY/profil
-    return `${baseUrl}profil`;
-  }
-}
-
-function generateTelegramProfileLink(userId = null) {
-  const baseTgUrl = 'https://t.me/marketaldibot/gifts';
-
-  if (userId) {
-    // Format: https://t.me/marketaldibot/gifts?startapp=profil_1234567890
-    return `${baseTgUrl}?startapp=profil_${userId}`;
-  } else {
-    // Format: https://t.me/marketaldibot/gifts?startapp=profil
-    return `${baseTgUrl}?startapp=profil`;
-  }
-}
-
 function generateGitHubDirectLink() {
     const baseUrl = window.location.origin + window.location.pathname;
     const encodedFilters = encodeFiltersToBase64();
@@ -2378,102 +2350,36 @@ function checkForGiftIdInUrl() {
 }
 
 function checkForUrlParameters() {
-  let paramValue = null;
-  let paramSource = null;
-
-  // ===== CEK DARI TELEGRAM STARTAPP =====
-  if (tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param) {
-    paramValue = tg.initDataUnsafe.start_param;
-    paramSource = 'telegram';
-    console.log('📱 From Telegram startapp:', paramValue);
-  }
-
-  // ===== CEK DARI PATH URL (CONTOH: /profil) =====
-  if (!paramValue) {
-    const pathname = window.location.pathname;
-    // Ambil segment terakhir dari path
-    const pathSegments = pathname.split('/').filter(s => s.length > 0);
-    const lastSegment = pathSegments[pathSegments.length - 1];
-
-    // Cek apakah itu "profil" atau "profile" (case insensitive)
-    if (lastSegment && (lastSegment.toLowerCase() === 'profil' || lastSegment.toLowerCase() === 'profile')) {
-      paramValue = 'profil';
-      paramSource = 'path';
-      console.log('🛣️ From path profile:', paramValue);
+    let encodedFilters = null;
+    
+    if (tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param) {
+        encodedFilters = tg.initDataUnsafe.start_param;
+        console.log('Found Telegram start_param:', encodedFilters);
     }
-  }
-
-  // ===== CEK DARI QUERY PARAMETER (CONTOH: ?profil=1234567890) =====
-  if (!paramValue) {
-    const urlParams = new URLSearchParams(window.location.search);
-
-    // Cek parameter "profil"
-    const profilParam = urlParams.get('profil');
-    if (profilParam) {
-      paramValue = `profil_${profilParam}`;
-      paramSource = 'query';
-      console.log('🔍 From query profile:', profilParam);
+    
+    if (!encodedFilters) {
+        const urlParams = new URLSearchParams(window.location.search);
+        encodedFilters = urlParams.get('search');
+        
+        if (encodedFilters) {
+            console.log('Found URL search param:', encodedFilters);
+        }
     }
-
-    // Cek parameter "profile" (alternatif)
-    if (!paramValue) {
-      const profileParam = urlParams.get('profile');
-      if (profileParam) {
-        paramValue = `profil_${profileParam}`;
-        paramSource = 'query';
-        console.log('🔍 From query profile:', profileParam);
-      }
+    
+    if (encodedFilters) {
+        const success = applyFiltersFromEncoded(encodedFilters);
+        
+        if (success) {
+            showToast('Filters applied from shared link!');
+            
+            if (elements.shareFilterBtn) {
+                elements.shareFilterBtn.classList.add('pulse');
+                setTimeout(() => elements.shareFilterBtn.classList.remove('pulse'), 2000);
+            }
+        } else {
+            showToast('Failed to apply filters', 3000);
+        }
     }
-
-    // Cek parameter "user" (alternatif lain)
-    if (!paramValue) {
-      const userParam = urlParams.get('user');
-      if (userParam) {
-        paramValue = `profil_${userParam}`;
-        paramSource = 'query';
-        console.log('🔍 From query user:', userParam);
-      }
-    }
-  }
-
-  // ===== PROSES PARAMETER =====
-  if (paramValue) {
-    console.log(`✅ Parameter ditemukan dari ${paramSource}:`, paramValue);
-
-    // Handle parameter untuk profil
-    if (paramValue === 'profil' || paramValue === 'profile') {
-      console.log('📋 Membuka halaman profil');
-      switchPage('profile');
-      return true;
-    }
-
-    // Handle parameter dengan ID (profil_1234567890)
-    if (paramValue.startsWith('profil_')) {
-      const userId = paramValue.replace('profil_', '');
-      console.log('👤 Membuka profil user ID:', userId);
-
-      // Buka halaman profil
-      switchPage('profile');
-
-      // TODO: Jika perlu load profil user tertentu
-      // Anda bisa menambahkan logic untuk load user lain di sini
-
-      return true;
-    }
-
-    // Handle filter seperti sebelumnya
-    const success = applyFiltersFromEncoded(paramValue);
-    if (success) {
-      showToast('Filters applied from shared link!');
-      if (elements.shareFilterBtn) {
-        elements.shareFilterBtn.classList.add('pulse');
-        setTimeout(() => elements.shareFilterBtn.classList.remove('pulse'), 2000);
-      }
-      return true;
-    }
-  }
-
-  return false;
 }
 
 // Export functions ke global scope
