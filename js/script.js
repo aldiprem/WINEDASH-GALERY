@@ -760,7 +760,7 @@ function updateFinancePopupContent(overlay) {
             <div class="finance-popup-header">
                 <h3 class="finance-popup-title">Financial</h3>
                 <button class="finance-popup-close" onclick="closeFinancePopup()">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M18 6L6 18M6 6L18 18" stroke-linecap="round"/>
                     </svg>
                 </button>
@@ -770,61 +770,35 @@ function updateFinancePopupContent(overlay) {
                 <div class="finance-balance-display">
                     <div class="finance-balance-row">
                         <span class="finance-balance-label">
-                            <span class="finance-balance-icon saldo">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                                    <line x1="9" y1="9" x2="9.01" y2="9"/>
-                                    <line x1="15" y1="9" x2="15.01" y2="9"/>
-                                </svg>
-                            </span>
+                            <span class="finance-balance-icon saldo">💰</span>
                             Saldo
                         </span>
-                        <span class="finance-balance-amount saldo">${saldoFormatted}</span>
+                        <span class="finance-balance-amount">${saldoFormatted}</span>
                     </div>
                     <div class="finance-balance-row">
                         <span class="finance-balance-label">
-                            <span class="finance-balance-icon wicash">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2L15 9H22L16 14L19 21L12 16.5L5 21L8 14L2 9H9L12 2Z"/>
-                                </svg>
-                            </span>
+                            <span class="finance-balance-icon wicash">💎</span>
                             Wicash
                         </span>
-                        <span class="finance-balance-amount wicash">${wicashFormatted}</span>
+                        <span class="finance-balance-amount">${wicashFormatted}</span>
                     </div>
                 </div>
                 
                 <div class="finance-action-buttons">
                     <button class="finance-action-btn deposit" onclick="openDepositModal()">
-                        <div class="finance-action-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                                <rect x="2" y="6" width="20" height="12" rx="2"/>
-                                <path d="M12 10v4M10 12h4"/>
-                            </svg>
-                        </div>
+                        <span class="finance-action-icon">💰</span>
                         <span class="finance-action-label">Deposit</span>
                         <span class="finance-action-desc">Add funds</span>
                     </button>
                     
                     <button class="finance-action-btn withdraw" onclick="openWithdrawModal()">
-                        <div class="finance-action-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
-                                <rect x="2" y="6" width="20" height="12" rx="2"/>
-                                <path d="M12 14v-4M10 12h4"/>
-                            </svg>
-                        </div>
+                        <span class="finance-action-icon">📤</span>
                         <span class="finance-action-label">Withdraw</span>
                         <span class="finance-action-desc">Cash out</span>
                     </button>
                     
                     <button class="finance-action-btn history" onclick="openHistoryPopup()">
-                        <div class="finance-action-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
-                            </svg>
-                        </div>
+                        <span class="finance-action-icon">📋</span>
                         <span class="finance-action-label">History</span>
                         <span class="finance-action-desc">View transactions</span>
                     </button>
