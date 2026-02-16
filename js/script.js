@@ -2074,7 +2074,7 @@ window.openBottomSheet = function(gift) {
 
 // ===== FUNGSI SHARE GIFT =====
 function generateGiftShareLink(slugId) {
-    const baseUrl = 'https://t.me/marketaldibot/gifts';
+    const baseUrl = window.location.origin + window.location.pathname;
     return `${baseUrl}?search=${slugId}`;
 }
 
@@ -2262,15 +2262,15 @@ function generateTelegramShareLink() {
     return `${baseUrl}?startapp=${encodedFilters}`;
 }
 
-function generateProfileLink(userId = null) {
-  const baseUrl = window.location.origin + window.location.pathname.replace(/\/?$/, '/');
+function generateProfileShareLink(userId = null) {
+  const baseUrl = window.location.origin + window.location.pathname;
 
   if (userId) {
-    // Format: https://aldiprem.github.io/WINEDASH-GALERY/?profil=1234567890
-    return `${baseUrl}?profil=profil_${userId}`;
+    // Untuk profil user tertentu
+    return `${baseUrl}?search=profil_${userId}`;
   } else {
-    // Format: https://aldiprem.github.io/WINEDASH-GALERY/profil
-    return `${baseUrl}?profil=profil`;
+    // Untuk profil sendiri
+    return `${baseUrl}?search=profil`;
   }
 }
 
