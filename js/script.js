@@ -1028,13 +1028,14 @@ function closeDepositModal() {
     }
 }
 
+// ===== FUNGSI DEPOSIT - PERBAIKI BAGIAN INI =====
 function showDepositForm() {
-    const content = document.getElementById('depositContent');
-    if (!content) return;
+  const content = document.getElementById('depositContent');
+  if (!content) return;
 
-    content.innerHTML = `
+  content.innerHTML = `
         <div>
-            <p style="margin-bottom: 16px; color: var(--tg-text-hint);">Enter amount to deposit (IDR)</p>
+            <p style="margin-bottom: 16px; color: rgba(255,255,255,0.6);">Enter amount to deposit (IDR)</p>
             
             <input type="number" id="depositAmount" class="deposit-amount-input" placeholder="10000" min="1000" max="10000000" step="1000">
             
@@ -1050,12 +1051,66 @@ function showDepositForm() {
                 <button class="quick-amount-btn" onclick="setDepositAmount(5000000)">5M</button>
             </div>
             
-            <button class="finance-action-btn deposit" onclick="processDeposit()" style="width: 100%; margin-top: 24px;">
-                <div class="finance-action-icon">💰</div>
+            <button class="finance-action-btn deposit" onclick="processDeposit()">
+                <span class="finance-action-icon">💰</span>
                 <span class="finance-action-label">Generate QRIS</span>
             </button>
         </div>
     `;
+}
+
+async function processDeposit() {
+  const input = document.getElementById('depositAmount');
+  const amount = parseInt(input.value);
+
+  if (isNaN(amount) || amount < 1000) {
+    showToast('Minimum deposit is Rp 1.000');
+    return;
+  }
+
+  if (amount > 10000000) {
+    showToast('Maximum deposit is Rp 10.000.000');
+    return;
+  }
+
+  const content = document.getElementById('depositContent');
+  content.innerHTML = `
+        <div class="deposit-loading">
+            <div class="spinner"></div>
+            <p>Generating QRIS...</p>
+        </div>
+    `;
+
+  try {
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+
+    const response = await fetch(`${API_BASE_URL}/api/deposit-request`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        user_id: telegramUser.id,
+        amount: amount
+      })
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      currentQRData = data.data;
+      showQRCode(data.data);
+      startDepositMonitoring(data.data.transaction_id, data.data.expired_at);
+    } else {
+      showToast(`Error: ${data.error || 'Failed to generate QRIS'}`);
+      showDepositForm();
+    }
+
+  } catch (error) {
+    console.error('Error processing deposit:', error);
+    showToast('Failed to process deposit. Please try again.');
+    showDepositForm();
+  }
 }
 
 function setDepositAmount(amount) {
