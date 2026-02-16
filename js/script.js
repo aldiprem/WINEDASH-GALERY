@@ -10,6 +10,20 @@ function extractIdFromSlug(slug) {
     return parts.length > 1 ? parts[1] : '';
 }
 
+function formatRupiah(amount) {
+    const numAmount = Number(amount) || 0;
+    return 'Rp ' + numAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
+function formatPriceRupiah(price) {
+    return 'Rp' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
+
+function formatPrice(price) {
+    return formatPriceRupiah(price);
+}
+
+// ===== STATE VARIABLES =====
 let currentDepositAmount = 0;
 let currentQRData = null;
 let depositCheckInterval = null;
@@ -110,7 +124,7 @@ const navStore = document.getElementById('navStore');
 const navStats = document.getElementById('navStats');
 const navProfile = document.getElementById('navProfile');
 
-// Initialize
+// ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', async () => {
     await initializeTelegramApp();
     await loadGifts();
@@ -184,11 +198,6 @@ function updateUserBalanceDisplay() {
         const formattedBalance = formatRupiah(userBalance);
         elements.userBalance.textContent = formattedBalance;
     }
-}
-
-function formatRupiah(amount) {
-    const numAmount = Number(amount) || 0;
-    return 'Rp ' + numAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 }
 
 async function fetchTelegramUserPhoto(userId) {
@@ -404,7 +413,7 @@ function showStatsPage() {
     `;
 }
 
-// ===== FUNGSI PROFILE PAGE YANG DIPERBAIKI =====
+// ===== FUNGSI PROFILE PAGE =====
 async function showProfilePage() {
     const filterSection = document.querySelector('.filter-section');
     if (filterSection) filterSection.style.display = 'none';
@@ -687,6 +696,22 @@ function renderProfilePageWithBalance(gifts, listedCount, unlistedCount, soldCou
     }
 }
 
+function showProfileError(message) {
+    elements.cardsGrid.innerHTML = `
+        <div class="profile-page">
+            <div class="empty-state">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
+                    <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+                    <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <h3>Failed to load your gifts</h3>
+                <p style="margin-top: 8px;">${message}</p>
+                <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
+            </div>
+        </div>
+    `;
+}
+
 // ===== FUNGSI FINANCE POPUP =====
 function openFinancePopup() {
     let overlay = document.getElementById('financePopupOverlay');
@@ -783,11 +808,11 @@ function closeFinancePopup() {
 
 // ===== FUNGSI WALLET POPUP (UNTUK KOMPATIBILITAS) =====
 function openWalletPopup() {
-  openFinancePopup(); // Redirect ke finance popup
+    openFinancePopup();
 }
 
 function closeWalletPopup() {
-  closeFinancePopup(); // Redirect ke close finance popup
+    closeFinancePopup();
 }
 
 // ===== FUNGSI HISTORY POPUP =====
@@ -813,299 +838,6 @@ function openHistoryPopup() {
     }, 10);
     
     document.dispatchEvent(new Event('popupOpened'));
-}
-
-function openDepositModal() {
-  closeFinancePopup();
-
-  // Cek apakah modal sudah ada
-  let modal = document.getElementById('depositModal');
-
-  if (!modal) {
-    modal = document.createElement('div');
-    modal.id = 'depositModal';
-    modal.className = 'deposit-modal';
-
-    modal.innerHTML = `
-            <div class="deposit-modal-content" id="depositModalContent">
-                <div class="deposit-modal-header">
-                    <h3 class="deposit-modal-title">Deposit</h3>
-                    <button class="deposit-modal-close" onclick="closeDepositModal()">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </button>
-                </div>
-                
-                <div class="deposit-content" id="depositContent">
-                    <!-- Content will be dynamically loaded -->
-                    <div class="deposit-loading">
-                        <div class="spinner"></div>
-                        <p>Preparing deposit...</p>
-                    </div>
-                </div>
-            </div>
-        `;
-
-    document.body.appendChild(modal);
-  }
-
-  modal.classList.add('active');
-  setTimeout(() => {
-    const content = document.getElementById('depositModalContent');
-    if (content) content.classList.add('active');
-  }, 10);
-
-  // Load deposit form
-  showDepositForm();
-
-  document.dispatchEvent(new Event('popupOpened'));
-}
-
-function closeDepositModal() {
-  const modal = document.getElementById('depositModal');
-  const content = document.getElementById('depositModalContent');
-
-  if (content) content.classList.remove('active');
-  if (modal) {
-    setTimeout(() => {
-      modal.classList.remove('active');
-      document.dispatchEvent(new Event('popupClosed'));
-
-      // Stop checking interval jika ada
-      if (depositCheckInterval) {
-        clearInterval(depositCheckInterval);
-        depositCheckInterval = null;
-      }
-    }, 300);
-  }
-}
-
-function showDepositForm() {
-  const content = document.getElementById('depositContent');
-  if (!content) return;
-
-  content.innerHTML = `
-        <div>
-            <p style="margin-bottom: 16px; color: var(--tg-text-hint);">Enter amount to deposit (IDR)</p>
-            
-            <input type="number" id="depositAmount" class="deposit-amount-input" placeholder="10000" min="1000" max="10000000" step="1000">
-            
-            <div class="deposit-quick-amounts">
-                <button class="quick-amount-btn" onclick="setDepositAmount(10000)">10K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(25000)">25K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(50000)">50K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(100000)">100K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(250000)">250K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(500000)">500K</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(1000000)">1M</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(2500000)">2.5M</button>
-                <button class="quick-amount-btn" onclick="setDepositAmount(5000000)">5M</button>
-            </div>
-            
-            <button class="finance-action-btn deposit" onclick="processDeposit()" style="width: 100%; margin-top: 24px;">
-                <div class="finance-action-icon">💰</div>
-                <span class="finance-action-label">Generate QRIS</span>
-            </button>
-        </div>
-    `;
-}
-
-function setDepositAmount(amount) {
-  const input = document.getElementById('depositAmount');
-  if (input) {
-    input.value = amount;
-    currentDepositAmount = amount;
-  }
-}
-
-async function processDeposit() {
-  const input = document.getElementById('depositAmount');
-  const amount = parseInt(input.value);
-
-  if (isNaN(amount) || amount < 1000) {
-    showToast('Minimum deposit is Rp 1.000');
-    return;
-  }
-
-  if (amount > 10000000) {
-    showToast('Maximum deposit is Rp 10.000.000');
-    return;
-  }
-
-  const content = document.getElementById('depositContent');
-  content.innerHTML = `
-        <div class="deposit-loading">
-            <div class="spinner"></div>
-            <p>Generating QRIS...</p>
-        </div>
-    `;
-
-  try {
-    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-
-    // Panggil API deposit
-    const response = await fetch(`${API_BASE_URL}/api/deposit-request`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        user_id: telegramUser.id,
-        amount: amount
-      })
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      currentQRData = data.data;
-      showQRCode(data.data);
-
-      // Mulai monitor status deposit
-      startDepositMonitoring(data.data.transaction_id, data.data.expired_at);
-    } else {
-      showToast(`Error: ${data.error || 'Failed to generate QRIS'}`);
-      showDepositForm();
-    }
-
-  } catch (error) {
-    console.error('Error processing deposit:', error);
-    showToast('Failed to process deposit. Please try again.');
-    showDepositForm();
-  }
-}
-
-function showQRCode(qrData) {
-  const content = document.getElementById('depositContent');
-  if (!content) return;
-
-  const amountFormatted = formatRupiah(qrData.amount);
-  const expiryDate = new Date(qrData.expired_at * 1000);
-  const expiryTime = expiryDate.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-
-  content.innerHTML = `
-        <div>
-            <div class="qr-code-container">
-                <img src="${qrData.qr_url}" class="qr-code-image" alt="QRIS">
-                <div class="qr-transaction-id">ID: ${qrData.transaction_id}</div>
-                <div class="qr-expiry active">⏰ Expires at ${expiryTime}</div>
-            </div>
-            
-            <div style="text-align: center; margin-bottom: 16px;">
-                <div style="font-size: 20px; font-weight: 700; color: var(--tg-primary);">${amountFormatted}</div>
-            </div>
-            
-            <div style="background: rgba(0,0,0,0.03); border-radius: 12px; padding: 12px; margin-bottom: 16px;">
-                <p style="margin-bottom: 8px;">📱 Scan with:</p>
-                <div style="display: flex; gap: 8px; justify-content: center;">
-                    <span style="padding: 4px 8px; background: #00B3FF; color: white; border-radius: 4px;">DANA</span>
-                    <span style="padding: 4px 8px; background: #01A75B; color: white; border-radius: 4px;">OVO</span>
-                    <span style="padding: 4px 8px; background: #0054B2; color: white; border-radius: 4px;">GoPay</span>
-                    <span style="padding: 4px 8px; background: #D32F2F; color: white; border-radius: 4px;">ShopeePay</span>
-                </div>
-            </div>
-            
-            <p style="font-size: 12px; color: var(--tg-text-hint); text-align: center;">
-                Scan QRIS above using your e-wallet.<br>
-                Do not change the amount when paying.<br>
-                Balance will be added automatically.
-            </p>
-            
-            <button class="finance-action-btn deposit" onclick="closeDepositModal()" style="width: 100%; margin-top: 16px;">
-                <span class="finance-action-label">Close</span>
-            </button>
-        </div>
-    `;
-}
-
-function startDepositMonitoring(transactionId, expiredAt) {
-  // Stop existing interval
-  if (depositCheckInterval) {
-    clearInterval(depositCheckInterval);
-  }
-
-  // Check every 3 seconds
-  depositCheckInterval = setInterval(async () => {
-    const now = Math.floor(Date.now() / 1000);
-
-    // Check if expired
-    if (now > expiredAt) {
-      clearInterval(depositCheckInterval);
-      depositCheckInterval = null;
-
-      showToast('Deposit expired. Please try again.');
-      closeDepositModal();
-      return;
-    }
-
-    try {
-      const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-      const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
-      const data = await response.json();
-
-      if (data.success && data.data.status === 'paid') {
-        clearInterval(depositCheckInterval);
-        depositCheckInterval = null;
-
-        // Update user balance
-        userBalance = data.data.new_balance;
-
-        showToast('✅ Deposit successful! Balance added.');
-
-        // Update display
-        updateUserBalanceDisplay();
-
-        // Close modal after 2 seconds
-        setTimeout(() => {
-          closeDepositModal();
-
-          // Refresh profile to show new balance
-          if (currentPage === 'profile') {
-            showProfilePage();
-          }
-        }, 2000);
-      }
-    } catch (error) {
-      console.error('Error checking deposit status:', error);
-    }
-  }, 3000);
-}
-
-// ===== FUNGSI WITHDRAW =====
-function openWithdrawModal() {
-  closeFinancePopup();
-
-  // Redirect ke bot untuk withdraw
-  if (confirm('Withdraw will be processed via bot. Open Telegram?')) {
-    window.open('https://t.me/marketaldibot', '_blank');
-  }
-}
-
-// ===== FUNGSI OPEN DEPOSIT MODAL DENGAN QR (untuk history) =====
-function openDepositModalWithQR(qrData) {
-  closeHistoryPopup();
-
-  let modal = document.getElementById('depositModal');
-
-  if (!modal) {
-    modal = document.createElement('div');
-    modal.id = 'depositModal';
-    modal.className = 'deposit-modal';
-
-    document.body.appendChild(modal);
-  }
-
-  modal.classList.add('active');
-  setTimeout(() => {
-    const content = document.getElementById('depositModalContent');
-    if (content) content.classList.add('active');
-  }, 10);
-
-  showQRCode(qrData);
-  startDepositMonitoring(qrData.transaction_id, qrData.expired_at);
-
-  document.dispatchEvent(new Event('popupOpened'));
 }
 
 function updateHistoryPopupContent(overlay, tab = 'deposit') {
@@ -1216,31 +948,6 @@ async function showPendingDeposit(transactionId) {
     }
 }
 
-function openDepositModalWithQR(qrData) {
-    closeHistoryPopup();
-    
-    let modal = document.getElementById('depositModal');
-    
-    if (!modal) {
-        modal = document.createElement('div');
-        modal.id = 'depositModal';
-        modal.className = 'deposit-modal';
-        
-        document.body.appendChild(modal);
-    }
-    
-    modal.classList.add('active');
-    setTimeout(() => {
-        const content = document.getElementById('depositModalContent');
-        if (content) content.classList.add('active');
-    }, 10);
-    
-    showQRCode(qrData);
-    startDepositMonitoring(qrData.transaction_id, qrData.expired_at);
-    
-    document.dispatchEvent(new Event('popupOpened'));
-}
-
 function closeHistoryPopup() {
     const overlay = document.getElementById('historyPopupOverlay');
     const popup = document.getElementById('historyPopup');
@@ -1254,20 +961,298 @@ function closeHistoryPopup() {
     }
 }
 
-function showProfileError(message) {
-    elements.cardsGrid.innerHTML = `
-        <div class="profile-page">
-            <div class="empty-state">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-bottom: 16px; opacity: 0.5;">
-                    <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
-                    <path d="M12 8V12M12 16H12.01" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-                <h3>Failed to load your gifts</h3>
-                <p style="margin-top: 8px;">${message}</p>
-                <button onclick="showProfilePage()" style="margin-top: 16px; padding: 12px 24px; background: var(--tg-primary); border: none; border-radius: var(--radius-md); color: white; font-weight: 600; cursor: pointer;">Try Again</button>
+// ===== FUNGSI DEPOSIT =====
+function openDepositModal() {
+    closeFinancePopup();
+
+    // Cek apakah modal sudah ada
+    let modal = document.getElementById('depositModal');
+
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'depositModal';
+        modal.className = 'deposit-modal';
+
+        modal.innerHTML = `
+            <div class="deposit-modal-content" id="depositModalContent">
+                <div class="deposit-modal-header">
+                    <h3 class="deposit-modal-title">Deposit</h3>
+                    <button class="deposit-modal-close" onclick="closeDepositModal()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="deposit-content" id="depositContent">
+                    <!-- Content will be dynamically loaded -->
+                    <div class="deposit-loading">
+                        <div class="spinner"></div>
+                        <p>Preparing deposit...</p>
+                    </div>
+                </div>
             </div>
+        `;
+
+        document.body.appendChild(modal);
+    }
+
+    modal.classList.add('active');
+    setTimeout(() => {
+        const content = document.getElementById('depositModalContent');
+        if (content) content.classList.add('active');
+    }, 10);
+
+    // Load deposit form
+    showDepositForm();
+
+    document.dispatchEvent(new Event('popupOpened'));
+}
+
+function closeDepositModal() {
+    const modal = document.getElementById('depositModal');
+    const content = document.getElementById('depositModalContent');
+
+    if (content) content.classList.remove('active');
+    if (modal) {
+        setTimeout(() => {
+            modal.classList.remove('active');
+            document.dispatchEvent(new Event('popupClosed'));
+
+            // Stop checking interval jika ada
+            if (depositCheckInterval) {
+                clearInterval(depositCheckInterval);
+                depositCheckInterval = null;
+            }
+        }, 300);
+    }
+}
+
+function showDepositForm() {
+    const content = document.getElementById('depositContent');
+    if (!content) return;
+
+    content.innerHTML = `
+        <div>
+            <p style="margin-bottom: 16px; color: var(--tg-text-hint);">Enter amount to deposit (IDR)</p>
+            
+            <input type="number" id="depositAmount" class="deposit-amount-input" placeholder="10000" min="1000" max="10000000" step="1000">
+            
+            <div class="deposit-quick-amounts">
+                <button class="quick-amount-btn" onclick="setDepositAmount(10000)">10K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(25000)">25K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(50000)">50K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(100000)">100K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(250000)">250K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(500000)">500K</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(1000000)">1M</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(2500000)">2.5M</button>
+                <button class="quick-amount-btn" onclick="setDepositAmount(5000000)">5M</button>
+            </div>
+            
+            <button class="finance-action-btn deposit" onclick="processDeposit()" style="width: 100%; margin-top: 24px;">
+                <div class="finance-action-icon">💰</div>
+                <span class="finance-action-label">Generate QRIS</span>
+            </button>
         </div>
     `;
+}
+
+function setDepositAmount(amount) {
+    const input = document.getElementById('depositAmount');
+    if (input) {
+        input.value = amount;
+        currentDepositAmount = amount;
+    }
+}
+
+async function processDeposit() {
+    const input = document.getElementById('depositAmount');
+    const amount = parseInt(input.value);
+
+    if (isNaN(amount) || amount < 1000) {
+        showToast('Minimum deposit is Rp 1.000');
+        return;
+    }
+
+    if (amount > 10000000) {
+        showToast('Maximum deposit is Rp 10.000.000');
+        return;
+    }
+
+    const content = document.getElementById('depositContent');
+    content.innerHTML = `
+        <div class="deposit-loading">
+            <div class="spinner"></div>
+            <p>Generating QRIS...</p>
+        </div>
+    `;
+
+    try {
+        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+
+        // Panggil API deposit
+        const response = await fetch(`${API_BASE_URL}/api/deposit-request`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                user_id: telegramUser.id,
+                amount: amount
+            })
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            currentQRData = data.data;
+            showQRCode(data.data);
+
+            // Mulai monitor status deposit
+            startDepositMonitoring(data.data.transaction_id, data.data.expired_at);
+        } else {
+            showToast(`Error: ${data.error || 'Failed to generate QRIS'}`);
+            showDepositForm();
+        }
+
+    } catch (error) {
+        console.error('Error processing deposit:', error);
+        showToast('Failed to process deposit. Please try again.');
+        showDepositForm();
+    }
+}
+
+function showQRCode(qrData) {
+    const content = document.getElementById('depositContent');
+    if (!content) return;
+
+    const amountFormatted = formatRupiah(qrData.amount);
+    const expiryDate = new Date(qrData.expired_at * 1000);
+    const expiryTime = expiryDate.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+    content.innerHTML = `
+        <div>
+            <div class="qr-code-container">
+                <img src="${qrData.qr_url}" class="qr-code-image" alt="QRIS">
+                <div class="qr-transaction-id">ID: ${qrData.transaction_id}</div>
+                <div class="qr-expiry active">⏰ Expires at ${expiryTime}</div>
+            </div>
+            
+            <div style="text-align: center; margin-bottom: 16px;">
+                <div style="font-size: 20px; font-weight: 700; color: var(--tg-primary);">${amountFormatted}</div>
+            </div>
+            
+            <div style="background: rgba(0,0,0,0.03); border-radius: 12px; padding: 12px; margin-bottom: 16px;">
+                <p style="margin-bottom: 8px;">📱 Scan with:</p>
+                <div style="display: flex; gap: 8px; justify-content: center;">
+                    <span style="padding: 4px 8px; background: #00B3FF; color: white; border-radius: 4px;">DANA</span>
+                    <span style="padding: 4px 8px; background: #01A75B; color: white; border-radius: 4px;">OVO</span>
+                    <span style="padding: 4px 8px; background: #0054B2; color: white; border-radius: 4px;">GoPay</span>
+                    <span style="padding: 4px 8px; background: #D32F2F; color: white; border-radius: 4px;">ShopeePay</span>
+                </div>
+            </div>
+            
+            <p style="font-size: 12px; color: var(--tg-text-hint); text-align: center;">
+                Scan QRIS above using your e-wallet.<br>
+                Do not change the amount when paying.<br>
+                Balance will be added automatically.
+            </p>
+            
+            <button class="finance-action-btn deposit" onclick="closeDepositModal()" style="width: 100%; margin-top: 16px;">
+                <span class="finance-action-label">Close</span>
+            </button>
+        </div>
+    `;
+}
+
+function startDepositMonitoring(transactionId, expiredAt) {
+    // Stop existing interval
+    if (depositCheckInterval) {
+        clearInterval(depositCheckInterval);
+    }
+
+    // Check every 3 seconds
+    depositCheckInterval = setInterval(async () => {
+        const now = Math.floor(Date.now() / 1000);
+
+        // Check if expired
+        if (now > expiredAt) {
+            clearInterval(depositCheckInterval);
+            depositCheckInterval = null;
+
+            showToast('Deposit expired. Please try again.');
+            closeDepositModal();
+            return;
+        }
+
+        try {
+            const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+            const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
+            const data = await response.json();
+
+            if (data.success && data.data.status === 'paid') {
+                clearInterval(depositCheckInterval);
+                depositCheckInterval = null;
+
+                // Update user balance
+                userBalance = data.data.new_balance;
+
+                showToast('✅ Deposit successful! Balance added.');
+
+                // Update display
+                updateUserBalanceDisplay();
+
+                // Close modal after 2 seconds
+                setTimeout(() => {
+                    closeDepositModal();
+
+                    // Refresh profile to show new balance
+                    if (currentPage === 'profile') {
+                        showProfilePage();
+                    }
+                }, 2000);
+            }
+        } catch (error) {
+            console.error('Error checking deposit status:', error);
+        }
+    }, 3000);
+}
+
+// ===== FUNGSI OPEN DEPOSIT MODAL DENGAN QR (untuk history) =====
+function openDepositModalWithQR(qrData) {
+    closeHistoryPopup();
+
+    let modal = document.getElementById('depositModal');
+
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'depositModal';
+        modal.className = 'deposit-modal';
+
+        document.body.appendChild(modal);
+    }
+
+    modal.classList.add('active');
+    setTimeout(() => {
+        const content = document.getElementById('depositModalContent');
+        if (content) content.classList.add('active');
+    }, 10);
+
+    showQRCode(qrData);
+    startDepositMonitoring(qrData.transaction_id, qrData.expired_at);
+
+    document.dispatchEvent(new Event('popupOpened'));
+}
+
+// ===== FUNGSI WITHDRAW =====
+function openWithdrawModal() {
+    closeFinancePopup();
+
+    // Redirect ke bot untuk withdraw
+    if (confirm('Withdraw will be processed via bot. Open Telegram?')) {
+        window.open('https://t.me/marketaldibot', '_blank');
+    }
 }
 
 // ===== FUNGSI OPEN BOTTOM SHEET UNTUK GIFT USER =====
@@ -2734,14 +2719,6 @@ function updateStats() {
     }
 }
 
-function formatPriceRupiah(price) {
-    return 'Rp' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-}
-
-function formatPrice(price) {
-    return formatPriceRupiah(price);
-}
-
 function setupScrollToTop() {
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -3009,7 +2986,7 @@ function checkForUrlParameters() {
     }
 }
 
-// Export functions ke global
+// ===== EXPORT FUNCTIONS KE GLOBAL =====
 window.openFinancePopup = openFinancePopup;
 window.closeFinancePopup = closeFinancePopup;
 window.openHistoryPopup = openHistoryPopup;
@@ -3043,3 +3020,4 @@ window.unlistGift = unlistGift;
 window.editPrice = editPrice;
 window.showProfilePage = showProfilePage;
 window.toggleListingStatus = toggleListingStatus;
+window.openUserGiftSheet = openUserGiftSheet;
