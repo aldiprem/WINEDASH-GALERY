@@ -2262,15 +2262,16 @@ function generateTelegramShareLink() {
     return `${baseUrl}?startapp=${encodedFilters}`;
 }
 
-function generateProfileShareLink(userId = null) {
-  const baseUrl = window.location.origin + window.location.pathname;
+// ===== FUNGSI UNTUK LINK PROFIL DENGAN PATH =====
+function generateProfileLink(userId = null) {
+  const baseUrl = window.location.origin + window.location.pathname.replace(/\/?$/, '/');
 
   if (userId) {
-    // Untuk profil user tertentu
-    return `${baseUrl}?search=profil_${userId}`;
+    // Contoh: https://aldiprem.github.io/WINEDASH-GALERY/profil?user=1234567890
+    return `${baseUrl}profil?user=${userId}`;
   } else {
-    // Untuk profil sendiri
-    return `${baseUrl}?search=profil`;
+    // Contoh: https://aldiprem.github.io/WINEDASH-GALERY/profil
+    return `${baseUrl}profil`;
   }
 }
 
