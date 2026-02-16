@@ -2267,10 +2267,10 @@ function generateProfileLink(userId = null) {
 
   if (userId) {
     // Format: https://aldiprem.github.io/WINEDASH-GALERY/?profil=1234567890
-    return `${baseUrl}?profil=${userId}`;
+    return `${baseUrl}?profil=profil_${userId}`;
   } else {
     // Format: https://aldiprem.github.io/WINEDASH-GALERY/profil
-    return `${baseUrl}profil`;
+    return `${baseUrl}?profil=profil`;
   }
 }
 
