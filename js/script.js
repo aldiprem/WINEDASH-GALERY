@@ -514,20 +514,29 @@ async function showProfilePage() {
 }
 
 async function fetchDepositHistory(userId) {
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-        const response = await fetch(`${API_BASE_URL}/api/deposit-history?user_id=${userId}`);
-        
-        if (response.ok) {
-            const data = await response.json();
-            if (data.success) {
-                userDepositHistory = data.data || [];
-            }
-        }
-    } catch (error) {
-        console.error('Error fetching deposit history:', error);
-        userDepositHistory = [];
+  try {
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+    const response = await fetch(`${API_BASE_URL}/api/deposit-history?user_id=${userId}`);
+
+    if (response.ok) {
+      const data = await response.json();
+      if (data.success) {
+        userDepositHistory = data.data || [];
+        console.log('Deposit history loaded:', userDepositHistory);
+
+        // Debug: hitung status
+        const counts = {
+          pending: userDepositHistory.filter(d => d.status === 'pending').length,
+          paid: userDepositHistory.filter(d => d.status === 'paid').length,
+          expired: userDepositHistory.filter(d => d.status === 'expired').length
+        };
+        console.log('Deposit status counts:', counts);
+      }
     }
+  } catch (error) {
+    console.error('Error fetching deposit history:', error);
+    userDepositHistory = [];
+  }
 }
 
 async function fetchWithdrawHistory(userId) {
@@ -923,29 +932,37 @@ function renderHistoryList(type) {
 }
 
 async function showPendingDeposit(transactionId) {
-    try {
-        const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
-        const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
-        const data = await response.json();
-        
-        if (data.success) {
-            closeHistoryPopup();
-            
-            // Tampilkan QRIS yang sudah ada
-            const qrData = {
-                transaction_id: transactionId,
-                amount: data.data.amount,
-                qr_url: data.data.qr_url,
-                expired_at: data.data.expired_at
-            };
-            
-            // Buka deposit modal dengan QR code
-            openDepositModalWithQR(qrData);
-        }
-    } catch (error) {
-        console.error('Error fetching deposit status:', error);
-        showToast('Failed to load deposit details');
+  try {
+    const API_BASE_URL = 'https://involved-sue-tan-hundreds.trycloudflare.com';
+    const response = await fetch(`${API_BASE_URL}/api/deposit-status?transaction_id=${transactionId}`);
+    const data = await response.json();
+
+    if (data.success) {
+      closeHistoryPopup();
+
+      // Cek apakah status masih pending
+      if (data.data.status === 'pending') {
+        // Hitung sisa waktu expired
+        const now = Math.floor(Date.now() / 1000);
+        const expiredAt = data.data.expired_at || (now + 300); // Default 5 menit
+
+        const qrData = {
+          transaction_id: transactionId,
+          amount: data.data.amount,
+          qr_url: data.data.qr_url,
+          expired_at: expiredAt
+        };
+
+        // Buka deposit modal dengan QR code
+        openDepositModalWithQR(qrData);
+      } else {
+        showToast(`Deposit status: ${data.data.status.toUpperCase()}`);
+      }
     }
+  } catch (error) {
+    console.error('Error fetching deposit status:', error);
+    showToast('Failed to load deposit details');
+  }
 }
 
 function closeHistoryPopup() {
