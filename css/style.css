@@ -156,15 +156,14 @@ body {
 .user-profile {
     display: flex;
     align-items: center;
-    gap: 8px; /* Kurangi gap sedikit */
-    padding: 6px 20px 6px 12px; /* Tambah padding kanan untuk memperpanjang border */
+    gap: 8px;
+    padding: 6px 20px 6px 12px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--glossy-border);
     border-radius: 40px;
     cursor: pointer;
     transition: all 0.2s ease;
     flex-shrink: 0;
-    /* Hapus margin-right: 34px karena tidak diperlukan */
 }
 
 .user-profile:hover {
@@ -1873,27 +1872,27 @@ body.sheet-open {
 
 /* ===== TOAST NOTIFICATION ===== */
 .toast-notification {
-  position: fixed;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%) translateY(100px);
-  background: var(--tg-theme-bg-color, #ffffff);
-  padding: 12px 24px;
-  border-radius: 30px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(135, 116, 225, 0.3);
-  z-index: 3000;
-  opacity: 0;
-  transition: all 0.3s ease;
-  max-width: 90%;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--tg-theme-bg-color, #ffffff);
+    padding: 12px 24px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(135, 116, 225, 0.3);
+    z-index: 3000;
+    opacity: 0;
+    transition: all 0.3s ease;
+    max-width: 90%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .toast-notification.show {
-  transform: translateX(-50%) translateY(0);
-  opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
 }
 
 /* ===== PULSE ANIMATION ===== */
@@ -1909,65 +1908,65 @@ body.sheet-open {
 
 /* ===== BOTTOM NAVIGATION ===== */
 .bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: rgba(20, 28, 35, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 8px 0 12px;
-  z-index: 100;
-  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(20, 28, 35, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 8px 0 12px;
+    z-index: 100;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  background: transparent;
-  border: none;
-  color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 8px 16px;
-  border-radius: 30px;
-  min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 8px 16px;
+    border-radius: 30px;
+    min-width: 80px;
 }
 
 .nav-btn svg {
-  width: 24px;
-  height: 24px;
-  stroke-width: 1.5;
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5;
 }
 
 .nav-btn span {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .nav-btn:hover {
-  color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .nav-btn.active {
-  color: var(--tg-primary);
-  background: rgba(135, 116, 225, 0.15);
+    color: var(--tg-primary);
+    background: rgba(135, 116, 225, 0.15);
 }
 
 .nav-btn.active svg {
-  stroke: var(--tg-primary);
+    stroke: var(--tg-primary);
 }
 
 /* Adjust container padding untuk bottom nav */
 .container {
-  padding-bottom: 80px !important;
+    padding-bottom: 80px !important;
 }
 
 /* ===== PROFILE PAGE STYLES ===== */
@@ -3032,44 +3031,45 @@ body.sheet-open {
     }
     
     .nav-btn {
-      min-width: 60px;
-      padding: 6px 8px;
+        min-width: 60px;
+        padding: 6px 8px;
     }
-  
+    
     .nav-btn svg {
-      width: 22px;
-      height: 22px;
+        width: 22px;
+        height: 22px;
     }
-  
+    
     .nav-btn span {
-      font-size: 0.65rem;
+        font-size: 0.65rem;
     }
     
     .profile-header {
-      flex-direction: column;
-      text-align: center;
-      gap: 12px;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
     }
-  
+    
     .profile-avatar {
-      width: 100px;
-      height: 100px;
+        width: 100px;
+        height: 100px;
     }
+    
     .balance-card {
-      padding: 6px 12px;
+        padding: 6px 12px;
     }
-
+    
     .balance-value {
-      font-size: 13px;
+        font-size: 13px;
     }
-
+    
     .wallet-button {
-      width: 40px;
-      height: 40px;
+        width: 40px;
+        height: 40px;
     }
-
+    
     .profile-gifts-grid {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
