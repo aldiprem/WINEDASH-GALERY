@@ -1,5 +1,5 @@
 // ===== KONFIGURASI =====
-const API_BASE_URL = 'https://picking-scholar-defensive-charged.trycloudflare.com';
+const API_BASE_URL = 'https://picking-scholar-defensive-charged.trycloudflare.com/api';
 const SLUG = 'PlushPepe-1';
 
 // ===== DOM ELEMENTS =====
