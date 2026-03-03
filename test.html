@@ -3,282 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Plush Pepe #1 - TGS Gift</title>
+    <title>Plush Pepe #1 - Telegram Gift</title>
     <style>
-        /* === RESET DAN GAYA DASAR === */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
         }
 
-        body, html {
+        html, body {
             width: 100%;
             height: 100%;
-            background-color: transparent !important; /* PENTING: Latar transparan */
+            background: transparent !important;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
         }
 
-        /* Kontainer utama dengan latar transparan */
-        .container {
+        body {
+            background: transparent !important;
+        }
+
+        .gift-container {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: transparent !important;
-            position: relative;
+            background: transparent !important;
+            padding: 20px;
         }
 
-        /* Wrapper untuk animasi TGS */
-        .tgs-wrapper {
+        .animation-wrapper {
             width: 100%;
             max-width: 400px;
-            aspect-ratio: 1 / 1;
-            background-color: transparent !important;
+            aspect-ratio: 1;
             position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background: transparent !important;
         }
 
-        /* Canvas untuk render TGS */
-        #tgs-canvas {
+        #lottie-container {
             width: 100%;
             height: 100%;
-            display: block;
-            background-color: transparent !important;
-            image-rendering: crisp-edges; /* Optimasi untuk kualitas */
+            background: transparent !important;
         }
 
-        /* Indikator loading minimalis */
-        .tgs-loading {
-            position: absolute;
-            color: #999;
-            font-size: 14px;
-            background-color: transparent;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            pointer-events: none;
-            z-index: 1;
+        /* Pastikan semua elemen SVG dari Lottie transparan */
+        #lottie-container svg {
+            background: transparent !important;
         }
 
-        /* Gaya info gift yang transparan */
-        .gift-info {
-            margin-top: 20px;
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-size: 15px;
+        .gift-title {
+            margin-top: 24px;
+            padding: 10px 24px;
+            font-size: 16px;
             font-weight: 500;
-            background-color: rgba(128, 128, 128, 0.1);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: #000000;
+            border-radius: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--tg-theme-text-color, #000000);
             transition: all 0.2s ease;
         }
 
-        /* Tema gelap Telegram */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--tg-theme-hint-color, #999999);
+            font-size: 14px;
+            z-index: 1;
+            background: transparent;
+        }
+
+        /* Dark mode support via Telegram theme */
         @media (prefers-color-scheme: dark) {
-            .gift-info {
-                color: #ffffff;
-                background-color: rgba(0, 0, 0, 0.3);
-                border-color: rgba(255, 255, 255, 0.05);
+            .gift-title {
+                background: rgba(0, 0, 0, 0.2);
+                border-color: rgba(255, 255, 255, 0.1);
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="tgs-wrapper">
-            <!-- Canvas untuk render TGS -->
-            <canvas id="tgs-canvas"></canvas>
-            <!-- Loading indicator (akan hilang setelah render) -->
-            <div class="tgs-loading" id="loading">Memuat sticker...</div>
+    <div class="gift-container">
+        <div class="animation-wrapper">
+            <div id="lottie-container"></div>
+            <div class="loading" id="loading">Memuat animasi...</div>
         </div>
-        
-        <div class="gift-info" id="giftInfo">
-            🎁 Plush Pepe #1
-        </div>
+        <div class="gift-title" id="giftTitle">Plush Pepe #1</div>
     </div>
 
-    <!-- Library RLOTTIE untuk TGS (lebih ringan dari Lottie Web) -->
-    <script src="https://unpkg.com/@lottiefiles/rlottie@1.4.0/rlottie.js"></script>
+    <!-- Telegram Web App SDK (wajib untuk Mini App) -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     
+    <!-- Lottie Web Player -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
     <script>
         (function() {
-            // URL TGS dari Fragment.com (format .tgs)
-            const TGS_URL = 'https://nft.fragment.com/gift/PlushPepe-1.tgs';
+            // Inisialisasi Telegram Web App
+            const tg = window.Telegram?.WebApp;
             
-            // Dapatkan elemen yang diperlukan
-            const canvas = document.getElementById('tgs-canvas');
-            const loadingEl = document.getElementById('loading');
-            const giftInfo = document.getElementById('giftInfo');
-            
-            // Pastikan canvas ada
-            if (!canvas) {
-                console.error('Canvas tidak ditemukan!');
-                return;
-            }
-
-            // Konfigurasi dimensi canvas
-            const ctx = canvas.getContext('2d', { alpha: true }); // alpha: true untuk transparansi
-            canvas.width = 512;
-            canvas.height = 512;
-
-            // Fungsi untuk memuat dan merender TGS
-            async function loadTGS() {
+            if (tg) {
+                // Konfigurasi dasar Telegram Mini App
+                tg.ready(); // Memberitahu Telegram bahwa app siap
+                tg.expand(); // Memperluas ke full screen
+                tg.disableVerticalSwipes(); // Mencegah swipe gesture
+                
+                // Set background transparan (jika didukung versi Telegram)
+                if (tg.setBackgroundColor) {
+                    tg.setBackgroundColor('#00000000');
+                }
+                
+                // Sembunyikan tombol back (jika didukung)
                 try {
-                    // Tampilkan loading
-                    if (loadingEl) loadingEl.style.display = 'block';
-
-                    // Fetch file TGS
-                    const response = await fetch(TGS_URL);
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    
-                    // Dapatkan array buffer dari TGS
-                    const tgsData = await response.arrayBuffer();
-                    
-                    // Inisialisasi RLottie dengan data TGS
-                    const animation = new rlottie.RLottie();
-                    
-                    // Load dari buffer
-                    const success = await animation.loadFromBuffer(new Uint8Array(tgsData));
-                    
-                    if (!success) {
-                        throw new Error('Gagal memuat data TGS');
-                    }
-
-                    // Dapatkan informasi animasi
-                    const frameCount = animation.totalFrame();
-                    const fps = animation.fps();
-                    
-                    console.log(`✅ TGS loaded: ${frameCount} frames, ${fps} fps`);
-
-                    // Sembunyikan loading
-                    if (loadingEl) {
-                        loadingEl.style.opacity = '0';
-                        setTimeout(() => {
-                            if (loadingEl && loadingEl.parentNode) {
-                                loadingEl.style.display = 'none';
-                            }
-                        }, 300);
-                    }
-
-                    // Variabel untuk animasi
-                    let currentFrame = 0;
-                    let lastTimestamp = 0;
-                    const frameDuration = 1000 / fps; // Durasi per frame dalam ms
-
-                    // Fungsi render frame
-                    function renderFrame(timestamp) {
-                        if (!lastTimestamp) {
-                            lastTimestamp = timestamp;
-                        }
-
-                        // Hitung delta waktu
-                        const deltaTime = timestamp - lastTimestamp;
-                        
-                        // Update frame berdasarkan waktu
-                        if (deltaTime >= frameDuration) {
-                            // Render frame saat ini ke canvas
-                            const imageData = animation.render(currentFrame, canvas.width, canvas.height);
-                            
-                            // Konversi ImageData ke canvas
-                            if (imageData && imageData.data) {
-                                ctx.clearRect(0, 0, canvas.width, canvas.height); // Bersihkan canvas
-                                ctx.putImageData(imageData, 0, 0); // Render frame baru
-                            }
-                            
-                            // Update frame berikutnya
-                            currentFrame = (currentFrame + 1) % frameCount;
-                            lastTimestamp = timestamp;
-                        }
-
-                        // Lanjutkan animasi
-                        requestAnimationFrame(renderFrame);
-                    }
-
-                    // Mulai animasi
-                    requestAnimationFrame(renderFrame);
-
-                } catch (error) {
-                    console.error('❌ Error loading TGS:', error);
-                    if (loadingEl) {
-                        loadingEl.textContent = 'Gagal memuat sticker';
-                        loadingEl.style.color = '#ff4444';
-                    }
-                    
-                    // Fallback: Coba dengan format Lottie JSON
-                    console.log('Mencoba fallback ke Lottie JSON...');
-                    loadLottieFallback();
+                    tg.BackButton?.hide();
+                } catch (e) {
+                    console.log('BackButton not supported in this version');
                 }
+                
+                console.log('✅ Telegram Web App initialized', {
+                    version: tg.version,
+                    platform: tg.platform,
+                    theme: tg.colorScheme
+                });
             }
 
-            // Fungsi fallback ke Lottie JSON jika TGS gagal
-            function loadLottieFallback() {
-                const script = document.createElement('script');
-                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js';
-                script.onload = function() {
-                    lottie.loadAnimation({
-                        container: canvas,
-                        renderer: 'canvas',
-                        loop: true,
-                        autoplay: true,
-                        path: 'https://nft.fragment.com/gift/PlushPepe-1.lottie.json',
-                        rendererSettings: {
-                            clearCanvas: true,
-                            context: ctx,
-                            preserveAspectRatio: 'xMidYMid meet'
-                        }
-                    });
-                    
-                    if (loadingEl) {
-                        loadingEl.style.display = 'none';
-                    }
-                };
-                document.head.appendChild(script);
+            // Konfigurasi Lottie
+            const container = document.getElementById('lottie-container');
+            const loading = document.getElementById('loading');
+            const giftTitle = document.getElementById('giftTitle');
+
+            // URL Lottie JSON
+            const LOTTIE_URL = 'https://nft.fragment.com/gift/PlushPepe-1.lottie.json';
+
+            // Sesuaikan warna teks dengan tema Telegram
+            if (tg && giftTitle) {
+                giftTitle.style.color = tg.themeParams?.text_color || 
+                                        (tg.colorScheme === 'dark' ? '#ffffff' : '#000000');
             }
 
-            // Mulai load TGS
-            loadTGS();
+            // Load animasi Lottie dengan konfigurasi transparan
+            const anim = lottie.loadAnimation({
+                container: container,
+                renderer: 'svg', // SVG memberikan transparansi terbaik
+                loop: true,
+                autoplay: true,
+                path: LOTTIE_URL,
+                rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid meet',
+                    clearCanvas: true,
+                    progressiveLoad: true,
+                    hideOnTransparent: true, // Penting untuk transparansi
+                    className: 'lottie-animation'
+                }
+            });
 
-            // === INTEGRASI TELEGRAM WEB APP ===
-            // Load Telegram Web App SDK
-            const telegramScript = document.createElement('script');
-            telegramScript.src = 'https://telegram.org/js/telegram-web-app.js';
-            telegramScript.onload = function() {
-                if (window.Telegram && Telegram.WebApp) {
-                    // Inisialisasi Telegram Web App
-                    const webapp = Telegram.WebApp;
-                    
-                    // Perluas ke full screen
-                    webapp.expand();
-                    
-                    // Sembunyikan tombol back
-                    webapp.BackButton.hide();
-                    
-                    // Set background transparan
-                    webapp.setBackgroundColor ? webapp.setBackgroundColor('#00000000') : null;
-                    
-                    // Dapatkan tema warna
-                    const theme = webapp.themeParams;
-                    
-                    // Sesuaikan warna teks info dengan tema Telegram
-                    if (giftInfo) {
-                        giftInfo.style.color = theme.text_color || (webapp.colorScheme === 'dark' ? '#ffffff' : '#000000');
+            // Event ketika animasi mulai dimuat
+            anim.addEventListener('data_ready', () => {
+                console.log('📦 Data animasi siap');
+            });
+
+            // Event ketika animasi berhasil dimuat dan ditampilkan
+            anim.addEventListener('DOMLoaded', () => {
+                console.log('✅ Animasi berhasil dimuat');
+                
+                // Hapus loading indicator
+                if (loading) {
+                    loading.style.opacity = '0';
+                    setTimeout(() => {
+                        loading.style.display = 'none';
+                    }, 300);
+                }
+
+                // Pastikan semua elemen SVG memiliki background transparan
+                const svgElements = container.getElementsByTagName('svg');
+                for (let svg of svgElements) {
+                    svg.style.backgroundColor = 'transparent';
+                    svg.style.background = 'transparent';
+                }
+            });
+
+            // Error handling
+            anim.addEventListener('data_failed', (error) => {
+                console.error('❌ Gagal memuat data animasi:', error);
+                if (loading) {
+                    loading.textContent = 'Gagal memuat animasi';
+                    loading.style.color = '#ff4444';
+                }
+            });
+
+            // Force background transparan setiap frame (untuk jaga-jaga)
+            function ensureTransparentBackground() {
+                const svgs = container.getElementsByTagName('svg');
+                for (let svg of svgs) {
+                    if (svg.style.backgroundColor !== 'transparent') {
+                        svg.style.backgroundColor = 'transparent';
+                        svg.style.background = 'transparent';
                     }
                     
-                    console.log('✅ Telegram Web App initialized');
+                    // Cek dan bersihkan elemen rect putih yang mungkin muncul
+                    const rects = svg.getElementsByTagName('rect');
+                    for (let rect of rects) {
+                        if (rect.getAttribute('fill') === '#ffffff' || 
+                            rect.getAttribute('fill') === 'white' ||
+                            rect.getAttribute('style')?.includes('background')) {
+                            rect.setAttribute('fill', 'transparent');
+                            rect.setAttribute('opacity', '0');
+                        }
+                    }
                 }
-            };
-            document.head.appendChild(telegramScript);
+                requestAnimationFrame(ensureTransparentBackground);
+            }
+
+            // Jalankan pemeriksaan transparansi setelah animasi dimuat
+            anim.addEventListener('DOMLoaded', () => {
+                setTimeout(ensureTransparentBackground, 100);
+            });
+
+            // Bersihkan resource saat halaman ditutup
+            window.addEventListener('beforeunload', () => {
+                if (anim) {
+                    anim.destroy();
+                }
+            });
+
+            // Debug: tampilkan informasi di console
+            console.log('🚀 Memulai animasi dari:', LOTTIE_URL);
 
         })();
     </script>
