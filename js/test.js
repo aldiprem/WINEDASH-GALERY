@@ -1,5 +1,5 @@
 // ===== KONFIGURASI =====
-const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com'; // Ganti dengan IP server Anda
+const API_BASE_URL = 'https://picking-scholar-defensive-charged.trycloudflare.com';
 const SLUG = 'PlushPepe-1';
 
 // ===== DOM ELEMENTS =====
