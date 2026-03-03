@@ -52,7 +52,7 @@ async function loadGiftInfo() {
     // Tampilkan skeleton loading
     showAttributeSkeletons();
 
-    const response = await fetch(`${API_BASE_URL}/api/info/${SLUG}`);
+    const response = await fetch(`${API_BASE_URL}/info/${SLUG}`);
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
