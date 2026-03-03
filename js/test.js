@@ -1,5 +1,5 @@
 // ===== KONFIGURASI =====
-const API_BASE_URL = 'http://207.180.194.191:5000/api'; // Ganti dengan IP server Anda
+const API_BASE_URL = 'https://typing-debug-adapters-breeding.trycloudflare.com'; // Ganti dengan IP server Anda
 const SLUG = 'PlushPepe-1';
 
 // ===== DOM ELEMENTS =====
